@@ -1,0 +1,12 @@
+C:\Users\Clini\source\repos\EstadisticasDucos\EstadisticasDucos\bin\Debug\EstadisticasDucos.exe.config
+C:\Users\Clini\source\repos\EstadisticasDucos\EstadisticasDucos\bin\Debug\EstadisticasDucos.exe
+C:\Users\Clini\source\repos\EstadisticasDucos\EstadisticasDucos\bin\Debug\EstadisticasDucos.pdb
+C:\Users\Clini\source\repos\EstadisticasDucos\EstadisticasDucos\bin\Debug\EstadisticasDucos.xml
+C:\Users\Clini\source\repos\EstadisticasDucos\EstadisticasDucos\obj\Debug\EstadisticasDucos.vbproj.AssemblyReference.cache
+C:\Users\Clini\source\repos\EstadisticasDucos\EstadisticasDucos\obj\Debug\EstadisticasDucos.Form1.resources
+C:\Users\Clini\source\repos\EstadisticasDucos\EstadisticasDucos\obj\Debug\EstadisticasDucos.Resources.resources
+C:\Users\Clini\source\repos\EstadisticasDucos\EstadisticasDucos\obj\Debug\EstadisticasDucos.vbproj.GenerateResource.cache
+C:\Users\Clini\source\repos\EstadisticasDucos\EstadisticasDucos\obj\Debug\EstadisticasDucos.vbproj.CoreCompileInputs.cache
+C:\Users\Clini\source\repos\EstadisticasDucos\EstadisticasDucos\obj\Debug\EstadisticasDucos.exe
+C:\Users\Clini\source\repos\EstadisticasDucos\EstadisticasDucos\obj\Debug\EstadisticasDucos.xml
+C:\Users\Clini\source\repos\EstadisticasDucos\EstadisticasDucos\obj\Debug\EstadisticasDucos.pdb

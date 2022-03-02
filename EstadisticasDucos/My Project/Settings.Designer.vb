@@ -63,6 +63,1314 @@ Namespace My
                 Return CType(Me("DataConnectionString"),String)
             End Get
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Hora00() As String
+            Get
+                Return CType(Me("Hora00"),String)
+            End Get
+            Set
+                Me("Hora00") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Hora01() As String
+            Get
+                Return CType(Me("Hora01"),String)
+            End Get
+            Set
+                Me("Hora01") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Hora02() As String
+            Get
+                Return CType(Me("Hora02"),String)
+            End Get
+            Set
+                Me("Hora02") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Hora03() As String
+            Get
+                Return CType(Me("Hora03"),String)
+            End Get
+            Set
+                Me("Hora03") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Hora04() As String
+            Get
+                Return CType(Me("Hora04"),String)
+            End Get
+            Set
+                Me("Hora04") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Hora05() As String
+            Get
+                Return CType(Me("Hora05"),String)
+            End Get
+            Set
+                Me("Hora05") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Hora06() As String
+            Get
+                Return CType(Me("Hora06"),String)
+            End Get
+            Set
+                Me("Hora06") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Hora07() As String
+            Get
+                Return CType(Me("Hora07"),String)
+            End Get
+            Set
+                Me("Hora07") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Hora08() As String
+            Get
+                Return CType(Me("Hora08"),String)
+            End Get
+            Set
+                Me("Hora08") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Hora09() As String
+            Get
+                Return CType(Me("Hora09"),String)
+            End Get
+            Set
+                Me("Hora09") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Hora10() As String
+            Get
+                Return CType(Me("Hora10"),String)
+            End Get
+            Set
+                Me("Hora10") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Hora11() As String
+            Get
+                Return CType(Me("Hora11"),String)
+            End Get
+            Set
+                Me("Hora11") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Hora12() As String
+            Get
+                Return CType(Me("Hora12"),String)
+            End Get
+            Set
+                Me("Hora12") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Hora13() As String
+            Get
+                Return CType(Me("Hora13"),String)
+            End Get
+            Set
+                Me("Hora13") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Hora14() As String
+            Get
+                Return CType(Me("Hora14"),String)
+            End Get
+            Set
+                Me("Hora14") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Hora15() As String
+            Get
+                Return CType(Me("Hora15"),String)
+            End Get
+            Set
+                Me("Hora15") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Hora16() As String
+            Get
+                Return CType(Me("Hora16"),String)
+            End Get
+            Set
+                Me("Hora16") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Hora17() As String
+            Get
+                Return CType(Me("Hora17"),String)
+            End Get
+            Set
+                Me("Hora17") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Hora18() As String
+            Get
+                Return CType(Me("Hora18"),String)
+            End Get
+            Set
+                Me("Hora18") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Hora19() As String
+            Get
+                Return CType(Me("Hora19"),String)
+            End Get
+            Set
+                Me("Hora19") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Hora20() As String
+            Get
+                Return CType(Me("Hora20"),String)
+            End Get
+            Set
+                Me("Hora20") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Hora21() As String
+            Get
+                Return CType(Me("Hora21"),String)
+            End Get
+            Set
+                Me("Hora21") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Hora22() As String
+            Get
+                Return CType(Me("Hora22"),String)
+            End Get
+            Set
+                Me("Hora22") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Hora23() As String
+            Get
+                Return CType(Me("Hora23"),String)
+            End Get
+            Set
+                Me("Hora23") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Precio00() As String
+            Get
+                Return CType(Me("Precio00"),String)
+            End Get
+            Set
+                Me("Precio00") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Precio01() As String
+            Get
+                Return CType(Me("Precio01"),String)
+            End Get
+            Set
+                Me("Precio01") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Precio02() As String
+            Get
+                Return CType(Me("Precio02"),String)
+            End Get
+            Set
+                Me("Precio02") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Precio03() As String
+            Get
+                Return CType(Me("Precio03"),String)
+            End Get
+            Set
+                Me("Precio03") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Precio04() As String
+            Get
+                Return CType(Me("Precio04"),String)
+            End Get
+            Set
+                Me("Precio04") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Precio05() As String
+            Get
+                Return CType(Me("Precio05"),String)
+            End Get
+            Set
+                Me("Precio05") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Precio06() As String
+            Get
+                Return CType(Me("Precio06"),String)
+            End Get
+            Set
+                Me("Precio06") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Precio07() As String
+            Get
+                Return CType(Me("Precio07"),String)
+            End Get
+            Set
+                Me("Precio07") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Precio08() As String
+            Get
+                Return CType(Me("Precio08"),String)
+            End Get
+            Set
+                Me("Precio08") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Precio09() As String
+            Get
+                Return CType(Me("Precio09"),String)
+            End Get
+            Set
+                Me("Precio09") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Precio10() As String
+            Get
+                Return CType(Me("Precio10"),String)
+            End Get
+            Set
+                Me("Precio10") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Precio11() As String
+            Get
+                Return CType(Me("Precio11"),String)
+            End Get
+            Set
+                Me("Precio11") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Precio12() As String
+            Get
+                Return CType(Me("Precio12"),String)
+            End Get
+            Set
+                Me("Precio12") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Precio13() As String
+            Get
+                Return CType(Me("Precio13"),String)
+            End Get
+            Set
+                Me("Precio13") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Precio14() As String
+            Get
+                Return CType(Me("Precio14"),String)
+            End Get
+            Set
+                Me("Precio14") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Precio15() As String
+            Get
+                Return CType(Me("Precio15"),String)
+            End Get
+            Set
+                Me("Precio15") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Precio16() As String
+            Get
+                Return CType(Me("Precio16"),String)
+            End Get
+            Set
+                Me("Precio16") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Precio17() As String
+            Get
+                Return CType(Me("Precio17"),String)
+            End Get
+            Set
+                Me("Precio17") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Precio18() As String
+            Get
+                Return CType(Me("Precio18"),String)
+            End Get
+            Set
+                Me("Precio18") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Precio19() As String
+            Get
+                Return CType(Me("Precio19"),String)
+            End Get
+            Set
+                Me("Precio19") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Precio20() As String
+            Get
+                Return CType(Me("Precio20"),String)
+            End Get
+            Set
+                Me("Precio20") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Precio21() As String
+            Get
+                Return CType(Me("Precio21"),String)
+            End Get
+            Set
+                Me("Precio21") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Precio22() As String
+            Get
+                Return CType(Me("Precio22"),String)
+            End Get
+            Set
+                Me("Precio22") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Precio23() As String
+            Get
+                Return CType(Me("Precio23"),String)
+            End Get
+            Set
+                Me("Precio23") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesBalance01() As String
+            Get
+                Return CType(Me("MesBalance01"),String)
+            End Get
+            Set
+                Me("MesBalance01") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesBalance02() As String
+            Get
+                Return CType(Me("MesBalance02"),String)
+            End Get
+            Set
+                Me("MesBalance02") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesBalance03() As String
+            Get
+                Return CType(Me("MesBalance03"),String)
+            End Get
+            Set
+                Me("MesBalance03") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesBalance04() As String
+            Get
+                Return CType(Me("MesBalance04"),String)
+            End Get
+            Set
+                Me("MesBalance04") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesBalance05() As String
+            Get
+                Return CType(Me("MesBalance05"),String)
+            End Get
+            Set
+                Me("MesBalance05") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesBalance06() As String
+            Get
+                Return CType(Me("MesBalance06"),String)
+            End Get
+            Set
+                Me("MesBalance06") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesBalance07() As String
+            Get
+                Return CType(Me("MesBalance07"),String)
+            End Get
+            Set
+                Me("MesBalance07") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesBalance08() As String
+            Get
+                Return CType(Me("MesBalance08"),String)
+            End Get
+            Set
+                Me("MesBalance08") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesBalance09() As String
+            Get
+                Return CType(Me("MesBalance09"),String)
+            End Get
+            Set
+                Me("MesBalance09") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesBalance10() As String
+            Get
+                Return CType(Me("MesBalance10"),String)
+            End Get
+            Set
+                Me("MesBalance10") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesBalance11() As String
+            Get
+                Return CType(Me("MesBalance11"),String)
+            End Get
+            Set
+                Me("MesBalance11") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesBalance12() As String
+            Get
+                Return CType(Me("MesBalance12"),String)
+            End Get
+            Set
+                Me("MesBalance12") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesBalance13() As String
+            Get
+                Return CType(Me("MesBalance13"),String)
+            End Get
+            Set
+                Me("MesBalance13") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesBalance14() As String
+            Get
+                Return CType(Me("MesBalance14"),String)
+            End Get
+            Set
+                Me("MesBalance14") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesBalance15() As String
+            Get
+                Return CType(Me("MesBalance15"),String)
+            End Get
+            Set
+                Me("MesBalance15") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesBalance16() As String
+            Get
+                Return CType(Me("MesBalance16"),String)
+            End Get
+            Set
+                Me("MesBalance16") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesBalance17() As String
+            Get
+                Return CType(Me("MesBalance17"),String)
+            End Get
+            Set
+                Me("MesBalance17") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesBalance18() As String
+            Get
+                Return CType(Me("MesBalance18"),String)
+            End Get
+            Set
+                Me("MesBalance18") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesBalance19() As String
+            Get
+                Return CType(Me("MesBalance19"),String)
+            End Get
+            Set
+                Me("MesBalance19") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesBalance20() As String
+            Get
+                Return CType(Me("MesBalance20"),String)
+            End Get
+            Set
+                Me("MesBalance20") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesBalance21() As String
+            Get
+                Return CType(Me("MesBalance21"),String)
+            End Get
+            Set
+                Me("MesBalance21") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesBalance22() As String
+            Get
+                Return CType(Me("MesBalance22"),String)
+            End Get
+            Set
+                Me("MesBalance22") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesBalance23() As String
+            Get
+                Return CType(Me("MesBalance23"),String)
+            End Get
+            Set
+                Me("MesBalance23") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesBalance24() As String
+            Get
+                Return CType(Me("MesBalance24"),String)
+            End Get
+            Set
+                Me("MesBalance24") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesBalance25() As String
+            Get
+                Return CType(Me("MesBalance25"),String)
+            End Get
+            Set
+                Me("MesBalance25") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesBalance26() As String
+            Get
+                Return CType(Me("MesBalance26"),String)
+            End Get
+            Set
+                Me("MesBalance26") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesBalance27() As String
+            Get
+                Return CType(Me("MesBalance27"),String)
+            End Get
+            Set
+                Me("MesBalance27") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesBalance28() As String
+            Get
+                Return CType(Me("MesBalance28"),String)
+            End Get
+            Set
+                Me("MesBalance28") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesBalance29() As String
+            Get
+                Return CType(Me("MesBalance29"),String)
+            End Get
+            Set
+                Me("MesBalance29") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesBalance30() As String
+            Get
+                Return CType(Me("MesBalance30"),String)
+            End Get
+            Set
+                Me("MesBalance30") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesBalance31() As String
+            Get
+                Return CType(Me("MesBalance31"),String)
+            End Get
+            Set
+                Me("MesBalance31") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesPrecio01() As String
+            Get
+                Return CType(Me("MesPrecio01"),String)
+            End Get
+            Set
+                Me("MesPrecio01") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesPrecio02() As String
+            Get
+                Return CType(Me("MesPrecio02"),String)
+            End Get
+            Set
+                Me("MesPrecio02") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesPrecio03() As String
+            Get
+                Return CType(Me("MesPrecio03"),String)
+            End Get
+            Set
+                Me("MesPrecio03") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesPrecio04() As String
+            Get
+                Return CType(Me("MesPrecio04"),String)
+            End Get
+            Set
+                Me("MesPrecio04") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesPrecio05() As String
+            Get
+                Return CType(Me("MesPrecio05"),String)
+            End Get
+            Set
+                Me("MesPrecio05") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesPrecio06() As String
+            Get
+                Return CType(Me("MesPrecio06"),String)
+            End Get
+            Set
+                Me("MesPrecio06") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesPrecio07() As String
+            Get
+                Return CType(Me("MesPrecio07"),String)
+            End Get
+            Set
+                Me("MesPrecio07") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesPrecio08() As String
+            Get
+                Return CType(Me("MesPrecio08"),String)
+            End Get
+            Set
+                Me("MesPrecio08") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesPrecio09() As String
+            Get
+                Return CType(Me("MesPrecio09"),String)
+            End Get
+            Set
+                Me("MesPrecio09") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesPrecio10() As String
+            Get
+                Return CType(Me("MesPrecio10"),String)
+            End Get
+            Set
+                Me("MesPrecio10") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesPrecio11() As String
+            Get
+                Return CType(Me("MesPrecio11"),String)
+            End Get
+            Set
+                Me("MesPrecio11") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesPrecio12() As String
+            Get
+                Return CType(Me("MesPrecio12"),String)
+            End Get
+            Set
+                Me("MesPrecio12") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesPrecio13() As String
+            Get
+                Return CType(Me("MesPrecio13"),String)
+            End Get
+            Set
+                Me("MesPrecio13") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesPrecio15() As String
+            Get
+                Return CType(Me("MesPrecio15"),String)
+            End Get
+            Set
+                Me("MesPrecio15") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesPrecio16() As String
+            Get
+                Return CType(Me("MesPrecio16"),String)
+            End Get
+            Set
+                Me("MesPrecio16") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesPrecio17() As String
+            Get
+                Return CType(Me("MesPrecio17"),String)
+            End Get
+            Set
+                Me("MesPrecio17") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesPrecio18() As String
+            Get
+                Return CType(Me("MesPrecio18"),String)
+            End Get
+            Set
+                Me("MesPrecio18") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesPrecio19() As String
+            Get
+                Return CType(Me("MesPrecio19"),String)
+            End Get
+            Set
+                Me("MesPrecio19") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesPrecio20() As String
+            Get
+                Return CType(Me("MesPrecio20"),String)
+            End Get
+            Set
+                Me("MesPrecio20") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesPrecio21() As String
+            Get
+                Return CType(Me("MesPrecio21"),String)
+            End Get
+            Set
+                Me("MesPrecio21") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesPrecio22() As String
+            Get
+                Return CType(Me("MesPrecio22"),String)
+            End Get
+            Set
+                Me("MesPrecio22") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesPrecio23() As String
+            Get
+                Return CType(Me("MesPrecio23"),String)
+            End Get
+            Set
+                Me("MesPrecio23") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesPrecio24() As String
+            Get
+                Return CType(Me("MesPrecio24"),String)
+            End Get
+            Set
+                Me("MesPrecio24") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesPrecio25() As String
+            Get
+                Return CType(Me("MesPrecio25"),String)
+            End Get
+            Set
+                Me("MesPrecio25") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesPrecio26() As String
+            Get
+                Return CType(Me("MesPrecio26"),String)
+            End Get
+            Set
+                Me("MesPrecio26") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesPrecio27() As String
+            Get
+                Return CType(Me("MesPrecio27"),String)
+            End Get
+            Set
+                Me("MesPrecio27") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesPrecio28() As String
+            Get
+                Return CType(Me("MesPrecio28"),String)
+            End Get
+            Set
+                Me("MesPrecio28") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesPrecio29() As String
+            Get
+                Return CType(Me("MesPrecio29"),String)
+            End Get
+            Set
+                Me("MesPrecio29") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesPrecio30() As String
+            Get
+                Return CType(Me("MesPrecio30"),String)
+            End Get
+            Set
+                Me("MesPrecio30") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MesPrecio31() As String
+            Get
+                Return CType(Me("MesPrecio31"),String)
+            End Get
+            Set
+                Me("MesPrecio31") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

@@ -45,27 +45,198 @@ Public Class Form1
             lstBalanceTiempoReal.Items.RemoveAt(0)
             lstDUCOTiempoReal.Items.RemoveAt(0)
         End If
-        lstBalanceHora.Items.Clear()
-        lstDucoHora.Items.Clear()
-        For I As Integer = 0 To 23
-            If I > 9 Then
-                lstDucoHora.Items.Add("Hora: " & I & ":00 = " & PrecioHora(I))
-                'lstBalanceHora.Items.Add("Hora: " & I & ":00 = " & BalanceHora(I))
-            Else
-                lstDucoHora.Items.Add("Hora: 0" & I & ":00 = " & PrecioHora(I))
-                ' lstBalanceHora.Items.Add("Hora: 0" & I & ":00 = " & BalanceHora(I))
-            End If
-        Next
+
         Select Case Hour(Now)
-            Case 0 : If lblBalanceHora00.Text <> "" Then lblBalanceHora00.Text = txtbalance.Text
-            Case 12 : If lblBalanceHora12.Text <> "" Then lblBalanceHora12.Text = txtbalance.Text
+            Case 0
+                lblBalanceHora00.Text = txtbalance.Text
+                lblPrecio00.Text = txtDucoprice.Text
+                lblBalanceHora01.Text = "0"
+                lblBalanceHora02.Text = "0"
+                    lblBalanceHora03.Text = "0"
+                    lblBalanceHora04.Text = "0"
+                    lblBalanceHora05.Text = "0"
+                    lblBalanceHora06.Text = "0"
+                    lblBalanceHora07.Text = "0"
+                    lblBalanceHora08.Text = "0"
+                    lblBalanceHora09.Text = "0"
+                    lblBalanceHora10.Text = "0"
+                    lblBalanceHora11.Text = "0"
+                    lblBalanceHora12.Text = "0"
+                    lblBalanceHora13.Text = "0"
+                    lblBalanceHora14.Text = "0"
+                    lblBalanceHora15.Text = "0"
+                    lblBalanceHora16.Text = "0"
+                    lblBalanceHora17.Text = "0"
+                    lblBalanceHora18.Text = "0"
+                    lblBalanceHora19.Text = "0"
+                    lblBalanceHora20.Text = "0"
+                    lblBalanceHora21.Text = "0"
+                    lblBalanceHora22.Text = "0"
+                    lblBalanceHora23.Text = "0"
+
+                    lblPrecio01.Text = "0"
+                    lblPrecio02.Text = "0"
+                    lblPrecio03.Text = "0"
+                    lblPrecio04.Text = "0"
+                    lblPrecio05.Text = "0"
+                    lblPrecio06.Text = "0"
+                    lblPrecio07.Text = "0"
+                    lblPrecio08.Text = "0"
+                    lblPrecio09.Text = "0"
+                    lblPrecio10.Text = "0"
+                    lblPrecio11.Text = "0"
+                    lblPrecio12.Text = "0"
+                    lblPrecio13.Text = "0"
+                    lblPrecio14.Text = "0"
+                    lblPrecio15.Text = "0"
+                    lblPrecio16.Text = "0"
+                    lblPrecio17.Text = "0"
+                    lblPrecio18.Text = "0"
+                    lblPrecio19.Text = "0"
+                    lblPrecio20.Text = "0"
+                    lblPrecio21.Text = "0"
+                lblPrecio22.Text = "0"
+                lblPrecio23.Text = "0"
+                Select Case DateAndTime.Day(Now)
+                    Case 1
+                        If Hour(Now) = 0 And Minute(Now) = 0 Then
+                            lblMesBalance01.Text = "0"
+                            lblMesBalance02.Text = "0"
+                            lblMesBalance03.Text = "0"
+                            lblMesBalance04.Text = "0"
+                            lblMesBalance05.Text = "0"
+                            lblMesBalance06.Text = "0"
+                            lblMesBalance07.Text = "0"
+                            lblMesBalance08.Text = "0"
+                            lblMesBalance09.Text = "0"
+                            lblMesBalance10.Text = "0"
+                            lblMesBalance11.Text = "0"
+                            lblMesBalance12.Text = "0"
+                            lblMesBalance13.Text = "0"
+                            lblMesBalance14.Text = "0"
+                            lblMesBalance15.Text = "0"
+                            lblMesBalance16.Text = "0"
+                            lblMesBalance17.Text = "0"
+                            lblMesBalance18.Text = "0"
+                            lblMesBalance19.Text = "0"
+                            lblMesBalance20.Text = "0"
+                            lblMesBalance21.Text = "0"
+                            lblMesBalance22.Text = "0"
+                            lblMesBalance23.Text = "0"
+                            lblMesBalance24.Text = "0"
+                            lblMesBalance25.Text = "0"
+                            lblMesBalance26.Text = "0"
+                            lblMesBalance27.Text = "0"
+                            lblMesBalance28.Text = "0"
+                            lblMesBalance29.Text = "0"
+                            lblMesBalance30.Text = "0"
+                            lblMesBalance31.Text = "0"
+
+                            lblMesPrecio01.Text = "0"
+                            lblMesPrecio02.Text = "0"
+                            lblMesPrecio03.Text = "0"
+                            lblMesPrecio04.Text = "0"
+                            lblMesPrecio05.Text = "0"
+                            lblMesPrecio06.Text = "0"
+                            lblMesPrecio07.Text = "0"
+                            lblMesPrecio08.Text = "0"
+                            lblMesPrecio09.Text = "0"
+                            lblMesPrecio10.Text = "0"
+                            lblMesPrecio11.Text = "0"
+                            lblMesPrecio12.Text = "0"
+                            lblMesPrecio13.Text = "0"
+                            lblMesPrecio14.Text = "0"
+                            lblMesPrecio15.Text = "0"
+                            lblMesPrecio16.Text = "0"
+                            lblMesPrecio17.Text = "0"
+                            lblMesPrecio18.Text = "0"
+                            lblMesPrecio19.Text = "0"
+                            lblMesPrecio20.Text = "0"
+                            lblMesPrecio21.Text = "0"
+                            lblMesPrecio22.Text = "0"
+                            lblMesPrecio23.Text = "0"
+                            lblMesPrecio24.Text = "0"
+                            lblMesPrecio25.Text = "0"
+                            lblMesPrecio26.Text = "0"
+                            lblMesPrecio27.Text = "0"
+                            lblMesPrecio28.Text = "0"
+                            lblMesPrecio29.Text = "0"
+                            lblMesPrecio30.Text = "0"
+                            lblMesPrecio31.Text = "0"
+                        End If
+                        If lblMesBalance01.Text = "0" Then lblMesBalance01.Text = txtbalance.Text : lblMesPrecio01.Text = txtDucoprice.Text
+
+                    Case 2 : If lblMesBalance02.Text = "0" Then lblMesBalance02.Text = txtbalance.Text : lblMesPrecio02.Text = txtDucoprice.Text
+                    Case 3 : If lblMesBalance03.Text = "0" Then lblMesBalance03.Text = txtbalance.Text : lblMesPrecio03.Text = txtDucoprice.Text
+                    Case 4 : If lblMesBalance04.Text = "0" Then lblMesBalance04.Text = txtbalance.Text : lblMesPrecio04.Text = txtDucoprice.Text
+                    Case 5 : If lblMesBalance05.Text = "0" Then lblMesBalance05.Text = txtbalance.Text : lblMesPrecio05.Text = txtDucoprice.Text
+                    Case 6 : If lblMesBalance06.Text = "0" Then lblMesBalance06.Text = txtbalance.Text : lblMesPrecio06.Text = txtDucoprice.Text
+                    Case 7 : If lblMesBalance07.Text = "0" Then lblMesBalance07.Text = txtbalance.Text : lblMesPrecio07.Text = txtDucoprice.Text
+                    Case 8 : If lblMesBalance08.Text = "0" Then lblMesBalance08.Text = txtbalance.Text : lblMesPrecio08.Text = txtDucoprice.Text
+                    Case 9 : If lblMesBalance09.Text = "0" Then lblMesBalance09.Text = txtbalance.Text : lblMesPrecio09.Text = txtDucoprice.Text
+                    Case 10 : If lblMesBalance10.Text = "0" Then lblMesBalance10.Text = txtbalance.Text : lblMesPrecio10.Text = txtDucoprice.Text
+                    Case 11 : If lblMesBalance11.Text = "0" Then lblMesBalance11.Text = txtbalance.Text : lblMesPrecio11.Text = txtDucoprice.Text
+                    Case 12 : If lblMesBalance12.Text = "0" Then lblMesBalance12.Text = txtbalance.Text : lblMesPrecio12.Text = txtDucoprice.Text
+                    Case 13 : If lblMesBalance13.Text = "0" Then lblMesBalance13.Text = txtbalance.Text : lblMesPrecio13.Text = txtDucoprice.Text
+                    Case 14 : If lblMesBalance14.Text = "0" Then lblMesBalance14.Text = txtbalance.Text : lblMesPrecio14.Text = txtDucoprice.Text
+                    Case 15 : If lblMesBalance15.Text = "0" Then lblMesBalance15.Text = txtbalance.Text : lblMesPrecio15.Text = txtDucoprice.Text
+                    Case 16 : If lblMesBalance16.Text = "0" Then lblMesBalance16.Text = txtbalance.Text : lblMesPrecio16.Text = txtDucoprice.Text
+                    Case 17 : If lblMesBalance17.Text = "0" Then lblMesBalance17.Text = txtbalance.Text : lblMesPrecio17.Text = txtDucoprice.Text
+                    Case 18 : If lblMesBalance18.Text = "0" Then lblMesBalance18.Text = txtbalance.Text : lblMesPrecio18.Text = txtDucoprice.Text
+                    Case 19 : If lblMesBalance19.Text = "0" Then lblMesBalance19.Text = txtbalance.Text : lblMesPrecio19.Text = txtDucoprice.Text
+                    Case 20 : If lblMesBalance20.Text = "0" Then lblMesBalance20.Text = txtbalance.Text : lblMesPrecio20.Text = txtDucoprice.Text
+                    Case 21 : If lblMesBalance21.Text = "0" Then lblMesBalance21.Text = txtbalance.Text : lblMesPrecio21.Text = txtDucoprice.Text
+                    Case 22 : If lblMesBalance22.Text = "0" Then lblMesBalance22.Text = txtbalance.Text : lblMesPrecio22.Text = txtDucoprice.Text
+                    Case 23 : If lblMesBalance23.Text = "0" Then lblMesBalance23.Text = txtbalance.Text : lblMesPrecio23.Text = txtDucoprice.Text
+                    Case 24 : If lblMesBalance24.Text = "0" Then lblMesBalance24.Text = txtbalance.Text : lblMesPrecio24.Text = txtDucoprice.Text
+                    Case 25 : If lblMesBalance25.Text = "0" Then lblMesBalance25.Text = txtbalance.Text : lblMesPrecio25.Text = txtDucoprice.Text
+                    Case 26 : If lblMesBalance26.Text = "0" Then lblMesBalance26.Text = txtbalance.Text : lblMesPrecio26.Text = txtDucoprice.Text
+                    Case 27 : If lblMesBalance27.Text = "0" Then lblMesBalance27.Text = txtbalance.Text : lblMesPrecio27.Text = txtDucoprice.Text
+                    Case 28 : If lblMesBalance28.Text = "0" Then lblMesBalance28.Text = txtbalance.Text : lblMesPrecio28.Text = txtDucoprice.Text
+                    Case 29 : If lblMesBalance29.Text = "0" Then lblMesBalance29.Text = txtbalance.Text : lblMesPrecio29.Text = txtDucoprice.Text
+                    Case 30 : If lblMesBalance30.Text = "0" Then lblMesBalance30.Text = txtbalance.Text : lblMesPrecio30.Text = txtDucoprice.Text
+                    Case 31 : If lblMesBalance31.Text = "0" Then lblMesBalance31.Text = txtbalance.Text : lblMesPrecio31.Text = txtDucoprice.Text
+
+                End Select
+
+            Case 1 : If lblBalanceHora01.Text = "0" Then lblBalanceHora01.Text = txtbalance.Text : lblPrecio01.Text = txtDucoprice.Text
+            Case 2 : If lblBalanceHora02.Text = "0" Then lblBalanceHora02.Text = txtbalance.Text : lblPrecio02.Text = txtDucoprice.Text
+            Case 3 : If lblBalanceHora03.Text = "0" Then lblBalanceHora03.Text = txtbalance.Text : lblPrecio03.Text = txtDucoprice.Text
+            Case 4 : If lblBalanceHora04.Text = "0" Then lblBalanceHora04.Text = txtbalance.Text : lblPrecio04.Text = txtDucoprice.Text
+            Case 5 : If lblBalanceHora05.Text = "0" Then lblBalanceHora05.Text = txtbalance.Text : lblPrecio05.Text = txtDucoprice.Text
+            Case 6 : If lblBalanceHora06.Text = "0" Then lblBalanceHora06.Text = txtbalance.Text : lblPrecio06.Text = txtDucoprice.Text
+            Case 7 : If lblBalanceHora07.Text = "0" Then lblBalanceHora07.Text = txtbalance.Text : lblPrecio07.Text = txtDucoprice.Text
+            Case 8 : If lblBalanceHora08.Text = "0" Then lblBalanceHora08.Text = txtbalance.Text : lblPrecio08.Text = txtDucoprice.Text
+            Case 9 : If lblBalanceHora09.Text = "0" Then lblBalanceHora09.Text = txtbalance.Text : lblPrecio09.Text = txtDucoprice.Text
+            Case 10 : If lblBalanceHora10.Text = "0" Then lblBalanceHora10.Text = txtbalance.Text : lblPrecio10.Text = txtDucoprice.Text
+            Case 11 : If lblBalanceHora11.Text = "0" Then lblBalanceHora11.Text = txtbalance.Text : lblPrecio11.Text = txtDucoprice.Text
+            Case 12 : If lblBalanceHora12.Text = "0" Then lblBalanceHora12.Text = txtbalance.Text : lblPrecio12.Text = txtDucoprice.Text
+            Case 13 : If lblBalanceHora13.Text = "0" Then lblBalanceHora13.Text = txtbalance.Text : lblPrecio13.Text = txtDucoprice.Text
+            Case 14 : If lblBalanceHora14.Text = "0" Then lblBalanceHora14.Text = txtbalance.Text : lblPrecio14.Text = txtDucoprice.Text
+            Case 15 : If lblBalanceHora15.Text = "0" Then lblBalanceHora15.Text = txtbalance.Text : lblPrecio15.Text = txtDucoprice.Text
+            Case 16 : If lblBalanceHora16.Text = "0" Then lblBalanceHora16.Text = txtbalance.Text : lblPrecio16.Text = txtDucoprice.Text
+            Case 17 : If lblBalanceHora17.Text = "0" Then lblBalanceHora17.Text = txtbalance.Text : lblPrecio17.Text = txtDucoprice.Text
+            Case 18 : If lblBalanceHora18.Text = "0" Then lblBalanceHora18.Text = txtbalance.Text : lblPrecio18.Text = txtDucoprice.Text
+            Case 19 : If lblBalanceHora19.Text = "0" Then lblBalanceHora19.Text = txtbalance.Text : lblPrecio19.Text = txtDucoprice.Text
+            Case 20 : If lblBalanceHora20.Text = "0" Then lblBalanceHora20.Text = txtbalance.Text : lblPrecio20.Text = txtDucoprice.Text
+            Case 21 : If lblBalanceHora21.Text = "0" Then lblBalanceHora21.Text = txtbalance.Text : lblPrecio21.Text = txtDucoprice.Text
+            Case 22 : If lblBalanceHora22.Text = "0" Then lblBalanceHora22.Text = txtbalance.Text : lblPrecio22.Text = txtDucoprice.Text
+            Case 23 : If lblBalanceHora23.Text = "0" Then lblBalanceHora23.Text = txtbalance.Text : lblPrecio23.Text = txtDucoprice.Text
         End Select
     End Sub
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         Actualizar()
     End Sub
 
-    Private Sub Label9_Click(sender As Object, e As EventArgs) Handles Label9.Click
+    Private Sub lblMesBalance31_Click(sender As Object, e As EventArgs) Handles lblMesBalance31.Click
+
+    End Sub
+
+    Private Sub lblMesBalance01_Click(sender As Object, e As EventArgs) Handles lblMesBalance01.Click
+
+    End Sub
+
+    Private Sub lstBalanceTiempoReal_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lstBalanceTiempoReal.SelectedIndexChanged
 
     End Sub
 End Class

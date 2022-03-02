@@ -10,3 +10,7 @@ C:\Users\Clini\source\repos\EstadisticasDucos\EstadisticasDucos\obj\Debug\Estadi
 C:\Users\Clini\source\repos\EstadisticasDucos\EstadisticasDucos\obj\Debug\EstadisticasDucos.exe
 C:\Users\Clini\source\repos\EstadisticasDucos\EstadisticasDucos\obj\Debug\EstadisticasDucos.xml
 C:\Users\Clini\source\repos\EstadisticasDucos\EstadisticasDucos\obj\Debug\EstadisticasDucos.pdb
+C:\Users\Clini\source\repos\EstadisticasDucos\EstadisticasDucos\bin\Debug\EstadisticasDucos.exe.manifest
+C:\Users\Clini\source\repos\EstadisticasDucos\EstadisticasDucos\bin\Debug\EstadisticasDucos.application
+C:\Users\Clini\source\repos\EstadisticasDucos\EstadisticasDucos\obj\Debug\EstadisticasDucos.exe.manifest
+C:\Users\Clini\source\repos\EstadisticasDucos\EstadisticasDucos\obj\Debug\EstadisticasDucos.application

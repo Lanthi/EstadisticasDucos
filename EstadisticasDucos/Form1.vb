@@ -259,4 +259,8 @@ Public Class Form1
     Private Sub lblHora_Click(sender As Object, e As EventArgs) Handles lblHora.Click
 
     End Sub
+
+    Private Sub txtDucoprice_TextChanged(sender As Object, e As EventArgs) Handles txtDucoprice.TextChanged
+        lblGanado.Text = Format(CDec(txtbalance.Text) * CDec(txtDucoprice.Text), "0.00") & "€"
+    End Sub
 End Class

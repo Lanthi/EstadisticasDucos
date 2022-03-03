@@ -1,0 +1,16 @@
+C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\bin\Release\EstadisticasDucos.exe.config
+C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\bin\Release\EstadisticasDucos.exe.manifest
+C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\bin\Release\EstadisticasDucos.application
+C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\bin\Release\EstadisticasDucos.exe
+C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\bin\Release\EstadisticasDucos.pdb
+C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\bin\Release\EstadisticasDucos.xml
+C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\obj\Release\EstadisticasDucos.vbproj.AssemblyReference.cache
+C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\obj\Release\EstadisticasDucos.Form1.resources
+C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\obj\Release\EstadisticasDucos.Resources.resources
+C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\obj\Release\EstadisticasDucos.vbproj.GenerateResource.cache
+C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\obj\Release\EstadisticasDucos.vbproj.CoreCompileInputs.cache
+C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\obj\Release\EstadisticasDucos.exe.manifest
+C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\obj\Release\EstadisticasDucos.application
+C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\obj\Release\EstadisticasDucos.exe
+C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\obj\Release\EstadisticasDucos.xml
+C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\obj\Release\EstadisticasDucos.pdb

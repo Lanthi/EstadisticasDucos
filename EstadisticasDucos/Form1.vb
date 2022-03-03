@@ -6,9 +6,13 @@ Public Class Form1
     Dim ContadorRemove As Integer = 0
     Dim BalanceHora(23) As Decimal
     Dim PrecioHora(23) As Decimal
+    Dim Hora As Integer
+    Dim MInutos As Integer
+    Dim Segundos As Integer
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Actualizar()
         Timer1.Enabled = True
+        lblHora.Text = DateAndTime.TimeValue(Now)
     End Sub
     Private Sub Actualizar()
         Dim uriString2 As String = "https://server.duinocoin.com/balances/Lanthi"
@@ -52,49 +56,49 @@ Public Class Form1
                 lblPrecio00.Text = txtDucoprice.Text
                 lblBalanceHora01.Text = "0"
                 lblBalanceHora02.Text = "0"
-                    lblBalanceHora03.Text = "0"
-                    lblBalanceHora04.Text = "0"
-                    lblBalanceHora05.Text = "0"
-                    lblBalanceHora06.Text = "0"
-                    lblBalanceHora07.Text = "0"
-                    lblBalanceHora08.Text = "0"
-                    lblBalanceHora09.Text = "0"
-                    lblBalanceHora10.Text = "0"
-                    lblBalanceHora11.Text = "0"
-                    lblBalanceHora12.Text = "0"
-                    lblBalanceHora13.Text = "0"
-                    lblBalanceHora14.Text = "0"
-                    lblBalanceHora15.Text = "0"
-                    lblBalanceHora16.Text = "0"
-                    lblBalanceHora17.Text = "0"
-                    lblBalanceHora18.Text = "0"
-                    lblBalanceHora19.Text = "0"
-                    lblBalanceHora20.Text = "0"
-                    lblBalanceHora21.Text = "0"
-                    lblBalanceHora22.Text = "0"
-                    lblBalanceHora23.Text = "0"
+                lblBalanceHora03.Text = "0"
+                lblBalanceHora04.Text = "0"
+                lblBalanceHora05.Text = "0"
+                lblBalanceHora06.Text = "0"
+                lblBalanceHora07.Text = "0"
+                lblBalanceHora08.Text = "0"
+                lblBalanceHora09.Text = "0"
+                lblBalanceHora10.Text = "0"
+                lblBalanceHora11.Text = "0"
+                lblBalanceHora12.Text = "0"
+                lblBalanceHora13.Text = "0"
+                lblBalanceHora14.Text = "0"
+                lblBalanceHora15.Text = "0"
+                lblBalanceHora16.Text = "0"
+                lblBalanceHora17.Text = "0"
+                lblBalanceHora18.Text = "0"
+                lblBalanceHora19.Text = "0"
+                lblBalanceHora20.Text = "0"
+                lblBalanceHora21.Text = "0"
+                lblBalanceHora22.Text = "0"
+                lblBalanceHora23.Text = "0"
 
-                    lblPrecio01.Text = "0"
-                    lblPrecio02.Text = "0"
-                    lblPrecio03.Text = "0"
-                    lblPrecio04.Text = "0"
-                    lblPrecio05.Text = "0"
-                    lblPrecio06.Text = "0"
-                    lblPrecio07.Text = "0"
-                    lblPrecio08.Text = "0"
-                    lblPrecio09.Text = "0"
-                    lblPrecio10.Text = "0"
-                    lblPrecio11.Text = "0"
-                    lblPrecio12.Text = "0"
-                    lblPrecio13.Text = "0"
-                    lblPrecio14.Text = "0"
-                    lblPrecio15.Text = "0"
-                    lblPrecio16.Text = "0"
-                    lblPrecio17.Text = "0"
-                    lblPrecio18.Text = "0"
-                    lblPrecio19.Text = "0"
-                    lblPrecio20.Text = "0"
-                    lblPrecio21.Text = "0"
+                lblPrecio01.Text = "0"
+                lblPrecio02.Text = "0"
+                lblPrecio03.Text = "0"
+                lblPrecio04.Text = "0"
+                lblPrecio05.Text = "0"
+                lblPrecio06.Text = "0"
+                lblPrecio07.Text = "0"
+                lblPrecio08.Text = "0"
+                lblPrecio09.Text = "0"
+                lblPrecio10.Text = "0"
+                lblPrecio11.Text = "0"
+                lblPrecio12.Text = "0"
+                lblPrecio13.Text = "0"
+                lblPrecio14.Text = "0"
+                lblPrecio15.Text = "0"
+                lblPrecio16.Text = "0"
+                lblPrecio17.Text = "0"
+                lblPrecio18.Text = "0"
+                lblPrecio19.Text = "0"
+                lblPrecio20.Text = "0"
+                lblPrecio21.Text = "0"
                 lblPrecio22.Text = "0"
                 lblPrecio23.Text = "0"
                 Select Case DateAndTime.Day(Now)
@@ -225,18 +229,34 @@ Public Class Form1
         End Select
     End Sub
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        Actualizar()
+
+        Hora = DateAndTime.Hour(Now)
+        MInutos = DateAndTime.Minute(Now)
+        Segundos = DateAndTime.Second(Now)
+        If Segundos <= 9 Then
+            If MInutos <= 9 Then
+                lblHora.Text = Hora & ":0" & MInutos & ":0" & Segundos
+            Else
+                lblHora.Text = Hora & ":" & MInutos & ":0" & Segundos
+            End If
+        Else
+            If MInutos <= 9 Then
+                lblHora.Text = Hora & ":0" & MInutos & ":" & Segundos
+            Else
+                lblHora.Text = Hora & ":" & MInutos & ":" & Segundos
+            End If
+
+        End If
+        Select Case MInutos
+            Case 0 : If Segundos = 0 Then Actualizar()
+            Case 15 : If Segundos = 0 Then Actualizar()
+            Case 30 : If Segundos = 0 Then Actualizar()
+            Case 45 : If Segundos = 0 Then Actualizar()
+        End Select
+
     End Sub
 
-    Private Sub lblMesBalance31_Click(sender As Object, e As EventArgs) Handles lblMesBalance31.Click
-
-    End Sub
-
-    Private Sub lblMesBalance01_Click(sender As Object, e As EventArgs) Handles lblMesBalance01.Click
-
-    End Sub
-
-    Private Sub lstBalanceTiempoReal_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lstBalanceTiempoReal.SelectedIndexChanged
+    Private Sub lblHora_Click(sender As Object, e As EventArgs) Handles lblHora.Click
 
     End Sub
 End Class

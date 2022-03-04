@@ -9,6 +9,7 @@ Public Class Form1
     Dim Hora As Integer
     Dim MInutos As Integer
     Dim Segundos As Integer
+    Dim ContadorTiempo As Integer = 0
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Actualizar()
         Timer1.Enabled = True
@@ -27,7 +28,7 @@ Public Class Form1
         ' txtUsuario.Text = dict2.item("result").item("balance").item("username")
         txtbalance.Text = dict2.item("result").item("balance")
 
-        Dim uriString As String = "https://server.duinocoin.com/statistics"
+        Dim uriString As String = "https://server.duinocoin.com/api.json"
         Dim uri As New Uri(uriString)
         Dim Request As HttpWebRequest = HttpWebRequest.Create(uri)
         Request.Method = "GET"
@@ -36,19 +37,21 @@ Public Class Form1
         Dim Raw As String = Read.ReadToEnd()
         Dim dict As Object = New JavaScriptSerializer().Deserialize(Of Dictionary(Of String, Object))(Raw)
         txtDucoprice.Text = dict.item("Duco price")
-        Añadir()
-    End Sub
-    Private Sub Añadir()
+
         lstBalanceTiempoReal.Items.Add(txtbalance.Text)
         lstDUCOTiempoReal.Items.Add(txtDucoprice.Text)
         BalanceHora(Hour(Now)) = txtbalance.Text
         PrecioHora(Hour(Now)) = txtDucoprice.Text
-        'Chart1.Series(0).Points.Add(txtbalance.Text)
+        Label26.Text = CDec(txtDucoprice.Text)
+        Chart1.Series(0).Points.Add(CDec(txtDucoprice.Text))
         ContadorRemove += 1
         If ContadorRemove > Remover Then
             lstBalanceTiempoReal.Items.RemoveAt(0)
             lstDUCOTiempoReal.Items.RemoveAt(0)
         End If
+
+    End Sub
+    Private Sub Añadir()
 
         Select Case Hour(Now)
             Case 0
@@ -248,12 +251,12 @@ Public Class Form1
 
         End If
         Select Case MInutos
-            Case 0 : If Segundos = 0 Then Actualizar()
-            Case 15 : If Segundos = 0 Then Actualizar()
-            Case 30 : If Segundos = 0 Then Actualizar()
-            Case 45 : If Segundos = 0 Then Actualizar()
+            Case 0 : If Segundos = 0 Then Añadir()
+            Case 15 : If Segundos = 0 Then Añadir()
+            Case 30 : If Segundos = 0 Then Añadir()
+            Case 45 : If Segundos = 0 Then Añadir()
         End Select
-
+        If Segundos = 0 Then Actualizar()
     End Sub
 
     Private Sub lblHora_Click(sender As Object, e As EventArgs) Handles lblHora.Click

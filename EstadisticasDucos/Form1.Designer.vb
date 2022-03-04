@@ -23,6 +23,9 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.txtbalance = New System.Windows.Forms.TextBox()
         Me.Label35 = New System.Windows.Forms.Label()
@@ -198,6 +201,9 @@ Partial Class Form1
         Me.lblBalanceHora01 = New System.Windows.Forms.Label()
         Me.lblHora = New System.Windows.Forms.Label()
         Me.lblGanado = New System.Windows.Forms.Label()
+        Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart()
+        Me.Label26 = New System.Windows.Forms.Label()
+        CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'txtbalance
@@ -2093,11 +2099,39 @@ Partial Class Form1
         Me.lblGanado.Text = "00,00€"
         Me.lblGanado.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
+        'Chart1
+        '
+        ChartArea1.Name = "ChartArea1"
+        Me.Chart1.ChartAreas.Add(ChartArea1)
+        Legend1.Name = "Legend1"
+        Me.Chart1.Legends.Add(Legend1)
+        Me.Chart1.Location = New System.Drawing.Point(16, 505)
+        Me.Chart1.Name = "Chart1"
+        Series1.ChartArea = "ChartArea1"
+        Series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line
+        Series1.IsVisibleInLegend = False
+        Series1.Legend = "Legend1"
+        Series1.Name = "Series1"
+        Me.Chart1.Series.Add(Series1)
+        Me.Chart1.Size = New System.Drawing.Size(1278, 202)
+        Me.Chart1.TabIndex = 135
+        '
+        'Label26
+        '
+        Me.Label26.AutoSize = True
+        Me.Label26.Location = New System.Drawing.Point(38, 342)
+        Me.Label26.Name = "Label26"
+        Me.Label26.Size = New System.Drawing.Size(45, 13)
+        Me.Label26.TabIndex = 136
+        Me.Label26.Text = "Label26"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1260, 629)
+        Me.ClientSize = New System.Drawing.Size(1306, 749)
+        Me.Controls.Add(Me.Label26)
+        Me.Controls.Add(Me.Chart1)
         Me.Controls.Add(Me.lblGanado)
         Me.Controls.Add(Me.lblHora)
         Me.Controls.Add(Me.lblMesPrecio31)
@@ -2275,6 +2309,7 @@ Partial Class Form1
         Me.Name = "Form1"
         Me.Text = "Estadisticas Ducos"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
+        CType(Me.Chart1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -2453,4 +2488,6 @@ Partial Class Form1
     Friend WithEvents lblMesPrecio31 As Label
     Friend WithEvents lblHora As Label
     Friend WithEvents lblGanado As Label
+    Friend WithEvents Chart1 As DataVisualization.Charting.Chart
+    Friend WithEvents Label26 As Label
 End Class

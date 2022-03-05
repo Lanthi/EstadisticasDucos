@@ -29,4 +29,3 @@ C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\obj\Debug\Estadi
 C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\obj\Debug\EstadisticasDucos.exe
 C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\obj\Debug\EstadisticasDucos.xml
 C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\obj\Debug\EstadisticasDucos.pdb
-C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\obj\Debug\EstadisticasDucos.vbproj.AssemblyReference.cache

@@ -14,6 +14,9 @@ Public Class Form1
         Actualizar()
         Timer1.Enabled = True
         lblHora.Text = DateAndTime.TimeValue(Now)
+        Chart1.ChartAreas(0).AxisY.Minimum = CDec(txtDucoprice.Text) - 0.000001
+        Chart2.ChartAreas(0).AxisY.Minimum = Format(CDec(txtbalance.Text) - 0.1, "00000.000")
+
     End Sub
     Private Sub Actualizar()
         Dim uriString2 As String = "https://server.duinocoin.com/balances/Lanthi"
@@ -42,14 +45,17 @@ Public Class Form1
         lstDUCOTiempoReal.Items.Add(txtDucoprice.Text)
         BalanceHora(Hour(Now)) = txtbalance.Text
         PrecioHora(Hour(Now)) = txtDucoprice.Text
-        Label26.Text = CDec(txtDucoprice.Text)
-        Chart1.Series(0).Points.Add(CDec(txtDucoprice.Text))
+        Dim Valor As Decimal = Format(CDec(txtbalance.Text), "00000.000")
+        Dim Valor2 As Decimal = CDec(txtDucoprice.Text)
+        Chart1.Series(0).Points.AddXY(TimeValue(Now), valor2)
+        Chart2.Series(0).Points.AddXY(TimeValue(Now), Valor)
         ContadorRemove += 1
         If ContadorRemove > Remover Then
             lstBalanceTiempoReal.Items.RemoveAt(0)
             lstDUCOTiempoReal.Items.RemoveAt(0)
         End If
-
+        Chart1.ChartAreas(0).AxisY.Maximum = CDec(txtDucoprice.Text) + 0.000001
+        Chart2.ChartAreas(0).AxisY.Maximum = Format(CDec(txtbalance.Text) + 0.1, "00000.000")
     End Sub
     Private Sub Añadir()
 
@@ -256,7 +262,18 @@ Public Class Form1
             Case 30 : If Segundos = 0 Then Añadir()
             Case 45 : If Segundos = 0 Then Añadir()
         End Select
-        If Segundos = 0 Then Actualizar()
+        'If Segundos = 0 Then Actualizar()
+        Select Case Segundos
+            Case 0 : Actualizar()
+            Case 10 : Actualizar()
+            Case 20 : Actualizar()
+            Case 30 : Actualizar()
+            Case 40 : Actualizar()
+            Case 50 : Actualizar()
+        End Select
+
+
+
     End Sub
 
     Private Sub lblHora_Click(sender As Object, e As EventArgs) Handles lblHora.Click
@@ -264,6 +281,6 @@ Public Class Form1
     End Sub
 
     Private Sub txtDucoprice_TextChanged(sender As Object, e As EventArgs) Handles txtDucoprice.TextChanged
-        lblGanado.Text = Format(CDec(txtbalance.Text) * CDec(txtDucoprice.Text), "0.00") & "€"
+        lblGanado.Text = Format(CDec(txtbalance.Text) * CDec(txtDucoprice.Text), "0000.0000") & "€"
     End Sub
 End Class

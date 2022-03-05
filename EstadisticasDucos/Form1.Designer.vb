@@ -207,8 +207,8 @@ Partial Class Form1
         Me.txtbalance = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.txtDucoprice = New System.Windows.Forms.Label()
         Me.Label27 = New System.Windows.Forms.Label()
+        Me.txtDucoprice = New System.Windows.Forms.Label()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Chart2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -2174,25 +2174,25 @@ Partial Class Form1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Duco price:"
         '
-        'txtDucoprice
-        '
-        Me.txtDucoprice.Font = New System.Drawing.Font("Digital Display", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDucoprice.Location = New System.Drawing.Point(46, 22)
-        Me.txtDucoprice.Name = "txtDucoprice"
-        Me.txtDucoprice.Size = New System.Drawing.Size(123, 29)
-        Me.txtDucoprice.TabIndex = 0
-        Me.txtDucoprice.Text = "0,00033811"
-        Me.txtDucoprice.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
         'Label27
         '
         Me.Label27.Font = New System.Drawing.Font("Digital Display", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label27.Location = New System.Drawing.Point(165, 12)
+        Me.Label27.Location = New System.Drawing.Point(208, 12)
         Me.Label27.Name = "Label27"
         Me.Label27.Size = New System.Drawing.Size(21, 33)
         Me.Label27.TabIndex = 0
         Me.Label27.Text = "€"
         Me.Label27.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'txtDucoprice
+        '
+        Me.txtDucoprice.Font = New System.Drawing.Font("Digital Display", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtDucoprice.Location = New System.Drawing.Point(9, 17)
+        Me.txtDucoprice.Name = "txtDucoprice"
+        Me.txtDucoprice.Size = New System.Drawing.Size(205, 29)
+        Me.txtDucoprice.TabIndex = 0
+        Me.txtDucoprice.Text = "0,00033811"
+        Me.txtDucoprice.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Form1
         '

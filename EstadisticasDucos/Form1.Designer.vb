@@ -30,10 +30,6 @@ Partial Class Form1
         Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
         Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Me.txtbalance = New System.Windows.Forms.TextBox()
-        Me.Label35 = New System.Windows.Forms.Label()
-        Me.txtDucoprice = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.lstBalanceTiempoReal = New System.Windows.Forms.ListBox()
         Me.lstDUCOTiempoReal = New System.Windows.Forms.ListBox()
@@ -206,44 +202,18 @@ Partial Class Form1
         Me.lblGanado = New System.Windows.Forms.Label()
         Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.Chart2 = New System.Windows.Forms.DataVisualization.Charting.Chart()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.ckEstadisticas = New System.Windows.Forms.CheckBox()
+        Me.Label26 = New System.Windows.Forms.Label()
+        Me.txtbalance = New System.Windows.Forms.Label()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.txtDucoprice = New System.Windows.Forms.Label()
+        Me.Label27 = New System.Windows.Forms.Label()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Chart2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'txtbalance
-        '
-        Me.txtbalance.Location = New System.Drawing.Point(81, 54)
-        Me.txtbalance.Name = "txtbalance"
-        Me.txtbalance.ReadOnly = True
-        Me.txtbalance.Size = New System.Drawing.Size(115, 20)
-        Me.txtbalance.TabIndex = 4
-        '
-        'Label35
-        '
-        Me.Label35.AutoSize = True
-        Me.Label35.Location = New System.Drawing.Point(26, 54)
-        Me.Label35.Name = "Label35"
-        Me.Label35.Size = New System.Drawing.Size(49, 13)
-        Me.Label35.TabIndex = 8
-        Me.Label35.Text = "Balance:"
-        '
-        'txtDucoprice
-        '
-        Me.txtDucoprice.Location = New System.Drawing.Point(81, 80)
-        Me.txtDucoprice.Name = "txtDucoprice"
-        Me.txtDucoprice.ReadOnly = True
-        Me.txtDucoprice.Size = New System.Drawing.Size(115, 20)
-        Me.txtDucoprice.TabIndex = 9
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(13, 83)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(62, 13)
-        Me.Label1.TabIndex = 10
-        Me.Label1.Text = "Duco price:"
         '
         'Timer1
         '
@@ -252,7 +222,7 @@ Partial Class Form1
         'lstBalanceTiempoReal
         '
         Me.lstBalanceTiempoReal.FormattingEnabled = True
-        Me.lstBalanceTiempoReal.Location = New System.Drawing.Point(245, 25)
+        Me.lstBalanceTiempoReal.Location = New System.Drawing.Point(251, 21)
         Me.lstBalanceTiempoReal.Name = "lstBalanceTiempoReal"
         Me.lstBalanceTiempoReal.Size = New System.Drawing.Size(112, 394)
         Me.lstBalanceTiempoReal.TabIndex = 11
@@ -260,7 +230,7 @@ Partial Class Form1
         'lstDUCOTiempoReal
         '
         Me.lstDUCOTiempoReal.FormattingEnabled = True
-        Me.lstDUCOTiempoReal.Location = New System.Drawing.Point(363, 25)
+        Me.lstDUCOTiempoReal.Location = New System.Drawing.Point(369, 21)
         Me.lstDUCOTiempoReal.Name = "lstDUCOTiempoReal"
         Me.lstDUCOTiempoReal.Size = New System.Drawing.Size(71, 394)
         Me.lstDUCOTiempoReal.TabIndex = 11
@@ -2087,7 +2057,7 @@ Partial Class Form1
         Me.lblHora.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblHora.Font = New System.Drawing.Font("Digital Display", 42.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblHora.ForeColor = System.Drawing.Color.White
-        Me.lblHora.Location = New System.Drawing.Point(12, 157)
+        Me.lblHora.Location = New System.Drawing.Point(14, 199)
         Me.lblHora.Name = "lblHora"
         Me.lblHora.Size = New System.Drawing.Size(225, 90)
         Me.lblHora.TabIndex = 133
@@ -2097,9 +2067,9 @@ Partial Class Form1
         'lblGanado
         '
         Me.lblGanado.Font = New System.Drawing.Font("Digital Display", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblGanado.Location = New System.Drawing.Point(12, 106)
+        Me.lblGanado.Location = New System.Drawing.Point(14, 148)
         Me.lblGanado.Name = "lblGanado"
-        Me.lblGanado.Size = New System.Drawing.Size(233, 41)
+        Me.lblGanado.Size = New System.Drawing.Size(234, 41)
         Me.lblGanado.TabIndex = 134
         Me.lblGanado.Text = "0000,0000€"
         Me.lblGanado.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -2145,26 +2115,93 @@ Partial Class Form1
         Me.Chart2.Size = New System.Drawing.Size(1314, 222)
         Me.Chart2.TabIndex = 135
         '
-        'CheckBox1
+        'ckEstadisticas
         '
-        Me.CheckBox1.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CheckBox1.Checked = True
-        Me.CheckBox1.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.CheckBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox1.Location = New System.Drawing.Point(12, 257)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(225, 51)
-        Me.CheckBox1.TabIndex = 136
-        Me.CheckBox1.Text = "Mostrar estadisticas"
-        Me.CheckBox1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.ckEstadisticas.Appearance = System.Windows.Forms.Appearance.Button
+        Me.ckEstadisticas.Checked = True
+        Me.ckEstadisticas.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.ckEstadisticas.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ckEstadisticas.Location = New System.Drawing.Point(14, 299)
+        Me.ckEstadisticas.Name = "ckEstadisticas"
+        Me.ckEstadisticas.Size = New System.Drawing.Size(225, 51)
+        Me.ckEstadisticas.TabIndex = 136
+        Me.ckEstadisticas.Text = "Mostrar estadisticas"
+        Me.ckEstadisticas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.ckEstadisticas.UseVisualStyleBackColor = True
+        '
+        'Label26
+        '
+        Me.Label26.AutoSize = True
+        Me.Label26.Font = New System.Drawing.Font("Duco", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label26.Location = New System.Drawing.Point(207, 30)
+        Me.Label26.Name = "Label26"
+        Me.Label26.Size = New System.Drawing.Size(23, 15)
+        Me.Label26.TabIndex = 137
+        Me.Label26.Text = "a"
+        '
+        'txtbalance
+        '
+        Me.txtbalance.Font = New System.Drawing.Font("Digital Display", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtbalance.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.txtbalance.Location = New System.Drawing.Point(2, 27)
+        Me.txtbalance.Name = "txtbalance"
+        Me.txtbalance.Size = New System.Drawing.Size(209, 20)
+        Me.txtbalance.TabIndex = 138
+        Me.txtbalance.Text = "001556,4935395516786"
+        Me.txtbalance.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.Label26)
+        Me.GroupBox1.Controls.Add(Me.txtbalance)
+        Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Location = New System.Drawing.Point(9, 9)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(236, 62)
+        Me.GroupBox1.TabIndex = 139
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Balance"
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.Label27)
+        Me.GroupBox2.Controls.Add(Me.txtDucoprice)
+        Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox2.Location = New System.Drawing.Point(9, 77)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(236, 56)
+        Me.GroupBox2.TabIndex = 140
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Duco price:"
+        '
+        'txtDucoprice
+        '
+        Me.txtDucoprice.Font = New System.Drawing.Font("Digital Display", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtDucoprice.Location = New System.Drawing.Point(46, 22)
+        Me.txtDucoprice.Name = "txtDucoprice"
+        Me.txtDucoprice.Size = New System.Drawing.Size(123, 29)
+        Me.txtDucoprice.TabIndex = 0
+        Me.txtDucoprice.Text = "0,00033811"
+        Me.txtDucoprice.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label27
+        '
+        Me.Label27.Font = New System.Drawing.Font("Digital Display", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label27.Location = New System.Drawing.Point(165, 12)
+        Me.Label27.Name = "Label27"
+        Me.Label27.Size = New System.Drawing.Size(21, 33)
+        Me.Label27.TabIndex = 0
+        Me.Label27.Text = "€"
+        Me.Label27.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1344, 729)
-        Me.Controls.Add(Me.CheckBox1)
+        Me.Controls.Add(Me.GroupBox2)
+        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.ckEstadisticas)
         Me.Controls.Add(Me.Chart2)
         Me.Controls.Add(Me.Chart1)
         Me.Controls.Add(Me.lblGanado)
@@ -2336,24 +2373,19 @@ Partial Class Form1
         Me.Controls.Add(Me.lblBalanceHora01)
         Me.Controls.Add(Me.lstDUCOTiempoReal)
         Me.Controls.Add(Me.lstBalanceTiempoReal)
-        Me.Controls.Add(Me.txtDucoprice)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.txtbalance)
-        Me.Controls.Add(Me.Label35)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
         Me.Text = "Estadisticas Ducos"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Chart2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
+        Me.GroupBox2.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents txtbalance As TextBox
-    Friend WithEvents Label35 As Label
-    Friend WithEvents txtDucoprice As TextBox
-    Friend WithEvents Label1 As Label
     Friend WithEvents Timer1 As Timer
     Friend WithEvents lstBalanceTiempoReal As ListBox
     Friend WithEvents lstDUCOTiempoReal As ListBox
@@ -2526,5 +2558,11 @@ Partial Class Form1
     Friend WithEvents lblGanado As Label
     Friend WithEvents Chart1 As DataVisualization.Charting.Chart
     Friend WithEvents Chart2 As DataVisualization.Charting.Chart
-    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents ckEstadisticas As CheckBox
+    Friend WithEvents Label26 As Label
+    Friend WithEvents txtbalance As Label
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents txtDucoprice As Label
+    Friend WithEvents Label27 As Label
 End Class

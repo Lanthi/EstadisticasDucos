@@ -40,22 +40,26 @@ Public Class Form1
         Dim dict As Object = New JavaScriptSerializer().Deserialize(Of Dictionary(Of String, Object))(Raw)
         txtDucoprice.Text = dict.item("Duco price")
         txtbalance.Text = dict2.item("result").item("balance")
-
+        lblGanado.Text = Format(CDec(txtbalance.Text) * CDec(txtDucoprice.Text), "0000.0000") & "€"
         lstBalanceTiempoReal.Items.Add(txtbalance.Text)
         lstDUCOTiempoReal.Items.Add(txtDucoprice.Text)
         BalanceHora(Hour(Now)) = txtbalance.Text
         PrecioHora(Hour(Now)) = txtDucoprice.Text
-        Dim Valor As Decimal = Format(CDec(txtbalance.Text), "00000.000")
-        Dim Valor2 As Decimal = CDec(txtDucoprice.Text)
-        Chart1.Series(0).Points.AddXY(TimeValue(Now), valor2)
-        Chart2.Series(0).Points.AddXY(TimeValue(Now), Valor)
         ContadorRemove += 1
         If ContadorRemove > Remover Then
             lstBalanceTiempoReal.Items.RemoveAt(0)
             lstDUCOTiempoReal.Items.RemoveAt(0)
         End If
-        Chart1.ChartAreas(0).AxisY.Maximum = CDec(txtDucoprice.Text) + 0.000001
-        Chart2.ChartAreas(0).AxisY.Maximum = Format(CDec(txtbalance.Text) + 0.1, "00000.000")
+        If ckEstadisticas.Checked = True Then
+            Dim Valor As Decimal = Format(CDec(txtbalance.Text), "00000.000")
+            Dim Valor2 As Decimal = CDec(txtDucoprice.Text)
+            Chart1.Series(0).Points.AddXY(TimeValue(Now), Valor2)
+            Chart2.Series(0).Points.AddXY(TimeValue(Now), Valor)
+
+            Chart1.ChartAreas(0).AxisY.Maximum = CDec(txtDucoprice.Text) + 0.000001
+            Chart2.ChartAreas(0).AxisY.Maximum = Format(CDec(txtbalance.Text) + 0.1, "00000.000")
+
+        End If
     End Sub
     Private Sub Añadir()
 
@@ -264,7 +268,17 @@ Public Class Form1
         End Select
         If Segundos = 0 Then Actualizar()
     End Sub
-    Private Sub txtbalance_TextChanged(sender As Object, e As EventArgs) Handles txtbalance.TextChanged
-        lblGanado.Text = Format(CDec(txtbalance.Text) * CDec(txtDucoprice.Text), "0000.0000") & "€"
+    Private Sub txtbalance_TextChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub ckEstadisticas_CheckedChanged(sender As Object, e As EventArgs) Handles ckEstadisticas.CheckedChanged
+        If ckEstadisticas.Checked = True Then
+            Chart1.Visible = True
+            Chart2.Visible = True
+        Else
+            Chart1.Visible = False
+            Chart2.Visible = False
+        End If
     End Sub
 End Class

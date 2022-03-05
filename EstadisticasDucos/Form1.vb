@@ -29,7 +29,6 @@ Public Class Form1
         Dim dict2 As Object = New JavaScriptSerializer().Deserialize(Of Dictionary(Of String, Object))(Raw2)
         Dim HasesUsuario As Integer = 0
         ' txtUsuario.Text = dict2.item("result").item("balance").item("username")
-        txtbalance.Text = dict2.item("result").item("balance")
 
         Dim uriString As String = "https://server.duinocoin.com/api.json"
         Dim uri As New Uri(uriString)
@@ -40,6 +39,7 @@ Public Class Form1
         Dim Raw As String = Read.ReadToEnd()
         Dim dict As Object = New JavaScriptSerializer().Deserialize(Of Dictionary(Of String, Object))(Raw)
         txtDucoprice.Text = dict.item("Duco price")
+        txtbalance.Text = dict2.item("result").item("balance")
 
         lstBalanceTiempoReal.Items.Add(txtbalance.Text)
         lstDUCOTiempoReal.Items.Add(txtDucoprice.Text)
@@ -262,25 +262,9 @@ Public Class Form1
             Case 30 : If Segundos = 0 Then Añadir()
             Case 45 : If Segundos = 0 Then Añadir()
         End Select
-        'If Segundos = 0 Then Actualizar()
-        Select Case Segundos
-            Case 0 : Actualizar()
-            Case 10 : Actualizar()
-            Case 20 : Actualizar()
-            Case 30 : Actualizar()
-            Case 40 : Actualizar()
-            Case 50 : Actualizar()
-        End Select
-
-
-
+        If Segundos = 0 Then Actualizar()
     End Sub
-
-    Private Sub lblHora_Click(sender As Object, e As EventArgs) Handles lblHora.Click
-
-    End Sub
-
-    Private Sub txtDucoprice_TextChanged(sender As Object, e As EventArgs) Handles txtDucoprice.TextChanged
+    Private Sub txtbalance_TextChanged(sender As Object, e As EventArgs) Handles txtbalance.TextChanged
         lblGanado.Text = Format(CDec(txtbalance.Text) * CDec(txtDucoprice.Text), "0000.0000") & "€"
     End Sub
 End Class

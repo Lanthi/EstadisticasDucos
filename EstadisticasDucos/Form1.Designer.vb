@@ -206,6 +206,7 @@ Partial Class Form1
         Me.lblGanado = New System.Windows.Forms.Label()
         Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.Chart2 = New System.Windows.Forms.DataVisualization.Charting.Chart()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Chart2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -2144,11 +2145,26 @@ Partial Class Form1
         Me.Chart2.Size = New System.Drawing.Size(1314, 222)
         Me.Chart2.TabIndex = 135
         '
+        'CheckBox1
+        '
+        Me.CheckBox1.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CheckBox1.Checked = True
+        Me.CheckBox1.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.CheckBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox1.Location = New System.Drawing.Point(12, 257)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(225, 51)
+        Me.CheckBox1.TabIndex = 136
+        Me.CheckBox1.Text = "Mostrar estadisticas"
+        Me.CheckBox1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.CheckBox1.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1344, 729)
+        Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.Chart2)
         Me.Controls.Add(Me.Chart1)
         Me.Controls.Add(Me.lblGanado)
@@ -2510,4 +2526,5 @@ Partial Class Form1
     Friend WithEvents lblGanado As Label
     Friend WithEvents Chart1 As DataVisualization.Charting.Chart
     Friend WithEvents Chart2 As DataVisualization.Charting.Chart
+    Friend WithEvents CheckBox1 As CheckBox
 End Class

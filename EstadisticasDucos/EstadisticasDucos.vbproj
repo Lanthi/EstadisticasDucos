@@ -26,7 +26,7 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <UpdateUrl>http://localhost/Estadisticas/</UpdateUrl>
-    <ApplicationRevision>20</ApplicationRevision>
+    <ApplicationRevision>40</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -138,14 +138,13 @@
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
-      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <Generator>PublicVbMyResourcesResXFileCodeGenerator</Generator>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Digital Display.ttf" />
     <None Include="EstadisticasDucos_TemporaryKey.pfx" />
     <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
@@ -172,7 +171,41 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="duco.ico" />
+    <Content Include="duco.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="duco.ico">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="EstadisticasDucos.pdb">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="EstadisticasDucos.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

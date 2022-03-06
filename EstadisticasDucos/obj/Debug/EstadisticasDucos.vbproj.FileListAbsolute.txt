@@ -14,6 +14,7 @@ C:\Users\Clini\source\repos\EstadisticasDucos\EstadisticasDucos\bin\Debug\Estadi
 C:\Users\Clini\source\repos\EstadisticasDucos\EstadisticasDucos\bin\Debug\EstadisticasDucos.application
 C:\Users\Clini\source\repos\EstadisticasDucos\EstadisticasDucos\obj\Debug\EstadisticasDucos.exe.manifest
 C:\Users\Clini\source\repos\EstadisticasDucos\EstadisticasDucos\obj\Debug\EstadisticasDucos.application
+C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\bin\Debug\duco.ico
 C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\bin\Debug\EstadisticasDucos.exe.config
 C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\bin\Debug\EstadisticasDucos.exe.manifest
 C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\bin\Debug\EstadisticasDucos.application
@@ -29,4 +30,3 @@ C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\obj\Debug\Estadi
 C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\obj\Debug\EstadisticasDucos.exe
 C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\obj\Debug\EstadisticasDucos.xml
 C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\obj\Debug\EstadisticasDucos.pdb
-C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\obj\Debug\EstadisticasDucos.vbproj.AssemblyReference.cache

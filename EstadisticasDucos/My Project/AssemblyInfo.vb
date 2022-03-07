@@ -1,4 +1,5 @@
-﻿Imports System
+﻿Imports System.Resources
+Imports System
 Imports System.Reflection
 Imports System.Runtime.InteropServices
 
@@ -10,10 +11,10 @@ Imports System.Runtime.InteropServices
 
 <Assembly: AssemblyTitle("EstadisticasDucos")>
 <Assembly: AssemblyDescription("")>
-<Assembly: AssemblyCompany("")>
+<Assembly: AssemblyCompany("Lanthi Com")>
 <Assembly: AssemblyProduct("EstadisticasDucos")>
 <Assembly: AssemblyCopyright("Copyright ©  2022")>
-<Assembly: AssemblyTrademark("")>
+<Assembly: AssemblyTrademark("Lanthi")>
 
 <Assembly: ComVisible(False)>
 
@@ -33,3 +34,4 @@ Imports System.Runtime.InteropServices
 
 <Assembly: AssemblyVersion("1.0.0.0")>
 <Assembly: AssemblyFileVersion("1.0.0.0")>
+<Assembly: NeutralResourcesLanguage("es-ES")>

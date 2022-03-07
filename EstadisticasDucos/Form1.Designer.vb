@@ -3114,7 +3114,7 @@ Partial Class Form1
         Me.Chart4.ChartAreas.Add(ChartArea4)
         Legend4.Name = "Legend1"
         Me.Chart4.Legends.Add(Legend4)
-        Me.Chart4.Location = New System.Drawing.Point(-51, 599)
+        Me.Chart4.Location = New System.Drawing.Point(-51, 605)
         Me.Chart4.Name = "Chart4"
         Series4.ChartArea = "ChartArea1"
         Series4.Color = System.Drawing.Color.Lime

@@ -14,32 +14,64 @@ Public Class Form1
         Actualizar()
         Timer1.Enabled = True
         lblHora.Text = DateAndTime.TimeValue(Now)
-        Chart1.ChartAreas(0).AxisY.Minimum = CDec(txtDucoprice.Text) - 0.000001
+        '  Chart1.ChartAreas(0).AxisY.Minimum = CDec(txtDucoprice.Text) - 0.000001
         Chart2.ChartAreas(0).AxisY.Minimum = Format(CDec(txtbalance.Text) - 0.1, "00000.000")
         'lblHoraDiferencia00.Text = CDec(lblBalanceHora00.Text)
-        If lblBalanceHora01.Text <> 0 And lblBalanceHora00.Text <> 0 Then lblHoraDiferencia01.Text = CDec(lblBalanceHora01.Text) - CDec(lblBalanceHora00.Text)
-        If lblBalanceHora02.Text <> 0 And lblBalanceHora01.Text <> 0 Then lblHoraDiferencia02.Text = CDec(lblBalanceHora02.Text) - CDec(lblBalanceHora01.Text)
-        If lblBalanceHora03.Text <> 0 And lblBalanceHora02.Text <> 0 Then lblHoraDiferencia03.Text = CDec(lblBalanceHora03.Text) - CDec(lblBalanceHora02.Text)
-        If lblBalanceHora04.Text <> 0 And lblBalanceHora03.Text <> 0 Then lblHoraDiferencia04.Text = CDec(lblBalanceHora04.Text) - CDec(lblBalanceHora03.Text)
-        If lblBalanceHora05.Text <> 0 And lblBalanceHora04.Text <> 0 Then lblHoraDiferencia05.Text = CDec(lblBalanceHora05.Text) - CDec(lblBalanceHora04.Text)
-        If lblBalanceHora06.Text <> 0 And lblBalanceHora05.Text <> 0 Then lblHoraDiferencia06.Text = CDec(lblBalanceHora06.Text) - CDec(lblBalanceHora05.Text)
-        If lblBalanceHora07.Text <> 0 And lblBalanceHora06.Text <> 0 Then lblHoraDiferencia07.Text = CDec(lblBalanceHora07.Text) - CDec(lblBalanceHora06.Text)
-        If lblBalanceHora08.Text <> 0 And lblBalanceHora07.Text <> 0 Then lblHoraDiferencia08.Text = CDec(lblBalanceHora08.Text) - CDec(lblBalanceHora07.Text)
-        If lblBalanceHora09.Text <> 0 And lblBalanceHora08.Text <> 0 Then lblHoraDiferencia09.Text = CDec(lblBalanceHora09.Text) - CDec(lblBalanceHora08.Text)
-        If lblBalanceHora10.Text <> 0 And lblBalanceHora09.Text <> 0 Then lblHoraDiferencia10.Text = CDec(lblBalanceHora10.Text) - CDec(lblBalanceHora09.Text)
-        If lblBalanceHora11.Text <> 0 And lblBalanceHora10.Text <> 0 Then lblHoraDiferencia11.Text = CDec(lblBalanceHora11.Text) - CDec(lblBalanceHora10.Text)
-        If lblBalanceHora12.Text <> 0 And lblBalanceHora11.Text <> 0 Then lblHoraDiferencia12.Text = CDec(lblBalanceHora12.Text) - CDec(lblBalanceHora11.Text)
-        If lblBalanceHora13.Text <> 0 And lblBalanceHora12.Text <> 0 Then lblHoraDiferencia13.Text = CDec(lblBalanceHora13.Text) - CDec(lblBalanceHora12.Text)
-        If lblBalanceHora14.Text <> 0 And lblBalanceHora13.Text <> 0 Then lblHoraDiferencia14.Text = CDec(lblBalanceHora14.Text) - CDec(lblBalanceHora13.Text)
-        If lblBalanceHora15.Text <> 0 And lblBalanceHora14.Text <> 0 Then lblHoraDiferencia15.Text = CDec(lblBalanceHora15.Text) - CDec(lblBalanceHora14.Text)
-        If lblBalanceHora16.Text <> 0 And lblBalanceHora15.Text <> 0 Then lblHoraDiferencia16.Text = CDec(lblBalanceHora16.Text) - CDec(lblBalanceHora15.Text)
-        If lblBalanceHora17.Text <> 0 And lblBalanceHora16.Text <> 0 Then lblHoraDiferencia17.Text = CDec(lblBalanceHora17.Text) - CDec(lblBalanceHora16.Text)
-        If lblBalanceHora18.Text <> 0 And lblBalanceHora17.Text <> 0 Then lblHoraDiferencia18.Text = CDec(lblBalanceHora18.Text) - CDec(lblBalanceHora17.Text)
-        If lblBalanceHora19.Text <> 0 And lblBalanceHora18.Text <> 0 Then lblHoraDiferencia19.Text = CDec(lblBalanceHora19.Text) - CDec(lblBalanceHora18.Text)
-        If lblBalanceHora20.Text <> 0 And lblBalanceHora19.Text <> 0 Then lblHoraDiferencia20.Text = CDec(lblBalanceHora20.Text) - CDec(lblBalanceHora19.Text)
-        If lblBalanceHora21.Text <> 0 And lblBalanceHora20.Text <> 0 Then lblHoraDiferencia21.Text = CDec(lblBalanceHora21.Text) - CDec(lblBalanceHora20.Text)
-        If lblBalanceHora22.Text <> 0 And lblBalanceHora21.Text <> 0 Then lblHoraDiferencia22.Text = CDec(lblBalanceHora22.Text) - CDec(lblBalanceHora21.Text)
-        If lblBalanceHora23.Text <> 0 And lblBalanceHora22.Text <> 0 Then lblHoraDiferencia23.Text = CDec(lblBalanceHora23.Text) - CDec(lblBalanceHora22.Text)
+        If lblBalanceHora01.Text <> 0 And lblBalanceHora00.Text <> 0 Then lblHoraDiferencia00.Text = CDec(lblBalanceHora01.Text) - CDec(lblBalanceHora00.Text)
+        If lblBalanceHora02.Text <> 0 And lblBalanceHora01.Text <> 0 Then lblHoraDiferencia01.Text = CDec(lblBalanceHora02.Text) - CDec(lblBalanceHora01.Text)
+        If lblBalanceHora03.Text <> 0 And lblBalanceHora02.Text <> 0 Then lblHoraDiferencia02.Text = CDec(lblBalanceHora03.Text) - CDec(lblBalanceHora02.Text)
+        If lblBalanceHora04.Text <> 0 And lblBalanceHora03.Text <> 0 Then lblHoraDiferencia03.Text = CDec(lblBalanceHora04.Text) - CDec(lblBalanceHora03.Text)
+        If lblBalanceHora05.Text <> 0 And lblBalanceHora04.Text <> 0 Then lblHoraDiferencia04.Text = CDec(lblBalanceHora05.Text) - CDec(lblBalanceHora04.Text)
+        If lblBalanceHora06.Text <> 0 And lblBalanceHora05.Text <> 0 Then lblHoraDiferencia05.Text = CDec(lblBalanceHora06.Text) - CDec(lblBalanceHora05.Text)
+        If lblBalanceHora07.Text <> 0 And lblBalanceHora06.Text <> 0 Then lblHoraDiferencia06.Text = CDec(lblBalanceHora07.Text) - CDec(lblBalanceHora06.Text)
+        If lblBalanceHora08.Text <> 0 And lblBalanceHora07.Text <> 0 Then lblHoraDiferencia07.Text = CDec(lblBalanceHora08.Text) - CDec(lblBalanceHora07.Text)
+        If lblBalanceHora09.Text <> 0 And lblBalanceHora08.Text <> 0 Then lblHoraDiferencia08.Text = CDec(lblBalanceHora09.Text) - CDec(lblBalanceHora08.Text)
+        If lblBalanceHora10.Text <> 0 And lblBalanceHora09.Text <> 0 Then lblHoraDiferencia09.Text = CDec(lblBalanceHora10.Text) - CDec(lblBalanceHora09.Text)
+        If lblBalanceHora11.Text <> 0 And lblBalanceHora10.Text <> 0 Then lblHoraDiferencia10.Text = CDec(lblBalanceHora11.Text) - CDec(lblBalanceHora10.Text)
+        If lblBalanceHora12.Text <> 0 And lblBalanceHora11.Text <> 0 Then lblHoraDiferencia11.Text = CDec(lblBalanceHora12.Text) - CDec(lblBalanceHora11.Text)
+        If lblBalanceHora13.Text <> 0 And lblBalanceHora12.Text <> 0 Then lblHoraDiferencia12.Text = CDec(lblBalanceHora13.Text) - CDec(lblBalanceHora12.Text)
+        If lblBalanceHora14.Text <> 0 And lblBalanceHora13.Text <> 0 Then lblHoraDiferencia13.Text = CDec(lblBalanceHora14.Text) - CDec(lblBalanceHora13.Text)
+        If lblBalanceHora15.Text <> 0 And lblBalanceHora14.Text <> 0 Then lblHoraDiferencia14.Text = CDec(lblBalanceHora15.Text) - CDec(lblBalanceHora14.Text)
+        If lblBalanceHora16.Text <> 0 And lblBalanceHora15.Text <> 0 Then lblHoraDiferencia15.Text = CDec(lblBalanceHora16.Text) - CDec(lblBalanceHora15.Text)
+        If lblBalanceHora17.Text <> 0 And lblBalanceHora16.Text <> 0 Then lblHoraDiferencia16.Text = CDec(lblBalanceHora17.Text) - CDec(lblBalanceHora16.Text)
+        If lblBalanceHora18.Text <> 0 And lblBalanceHora17.Text <> 0 Then lblHoraDiferencia17.Text = CDec(lblBalanceHora18.Text) - CDec(lblBalanceHora17.Text)
+        If lblBalanceHora19.Text <> 0 And lblBalanceHora18.Text <> 0 Then lblHoraDiferencia18.Text = CDec(lblBalanceHora19.Text) - CDec(lblBalanceHora18.Text)
+        If lblBalanceHora20.Text <> 0 And lblBalanceHora19.Text <> 0 Then lblHoraDiferencia19.Text = CDec(lblBalanceHora20.Text) - CDec(lblBalanceHora19.Text)
+        If lblBalanceHora21.Text <> 0 And lblBalanceHora20.Text <> 0 Then lblHoraDiferencia20.Text = CDec(lblBalanceHora21.Text) - CDec(lblBalanceHora20.Text)
+        If lblBalanceHora22.Text <> 0 And lblBalanceHora21.Text <> 0 Then lblHoraDiferencia21.Text = CDec(lblBalanceHora22.Text) - CDec(lblBalanceHora21.Text)
+        If lblBalanceHora23.Text <> 0 And lblBalanceHora22.Text <> 0 Then lblHoraDiferencia22.Text = CDec(lblBalanceHora23.Text) - CDec(lblBalanceHora22.Text)
+        If lblMesBalance01.Text <> 0 And lblMesBalance02.Text <> 0 Then lblMesDifencia01.Text = CDec(lblMesBalance01.Text) - CDec(lblMesBalance01.Text)
+        If lblMesBalance02.Text <> 0 And lblMesBalance01.Text <> 0 Then lblMesDifencia01.Text = CDec(lblMesBalance02.Text) - CDec(lblMesBalance01.Text)
+        If lblMesBalance03.Text <> 0 And lblMesBalance02.Text <> 0 Then lblMesDifencia02.Text = CDec(lblMesBalance03.Text) - CDec(lblMesBalance02.Text)
+        If lblMesBalance04.Text <> 0 And lblMesBalance03.Text <> 0 Then lblMesDifencia03.Text = CDec(lblMesBalance04.Text) - CDec(lblMesBalance03.Text)
+        If lblMesBalance05.Text <> 0 And lblMesBalance04.Text <> 0 Then lblMesDifencia04.Text = CDec(lblMesBalance05.Text) - CDec(lblMesBalance04.Text)
+        If lblMesBalance06.Text <> 0 And lblMesBalance05.Text <> 0 Then lblMesDifencia05.Text = CDec(lblMesBalance06.Text) - CDec(lblMesBalance05.Text)
+        If lblMesBalance07.Text <> 0 And lblMesBalance06.Text <> 0 Then lblMesDifencia06.Text = CDec(lblMesBalance07.Text) - CDec(lblMesBalance06.Text)
+        If lblMesBalance08.Text <> 0 And lblMesBalance07.Text <> 0 Then lblMesDifencia07.Text = CDec(lblMesBalance08.Text) - CDec(lblMesBalance07.Text)
+        If lblMesBalance09.Text <> 0 And lblMesBalance08.Text <> 0 Then lblMesDifencia08.Text = CDec(lblMesBalance09.Text) - CDec(lblMesBalance08.Text)
+        If lblMesBalance10.Text <> 0 And lblMesBalance09.Text <> 0 Then lblMesDifencia09.Text = CDec(lblMesBalance10.Text) - CDec(lblMesBalance09.Text)
+        If lblMesBalance11.Text <> 0 And lblMesBalance10.Text <> 0 Then lblMesDifencia10.Text = CDec(lblMesBalance11.Text) - CDec(lblMesBalance10.Text)
+        If lblMesBalance12.Text <> 0 And lblMesBalance11.Text <> 0 Then lblMesDifencia11.Text = CDec(lblMesBalance12.Text) - CDec(lblMesBalance11.Text)
+        If lblMesBalance13.Text <> 0 And lblMesBalance12.Text <> 0 Then lblMesDifencia12.Text = CDec(lblMesBalance13.Text) - CDec(lblMesBalance12.Text)
+        If lblMesBalance14.Text <> 0 And lblMesBalance13.Text <> 0 Then lblMesDifencia13.Text = CDec(lblMesBalance14.Text) - CDec(lblMesBalance13.Text)
+        If lblMesBalance15.Text <> 0 And lblMesBalance14.Text <> 0 Then lblMesDifencia14.Text = CDec(lblMesBalance15.Text) - CDec(lblMesBalance14.Text)
+        If lblMesBalance16.Text <> 0 And lblMesBalance15.Text <> 0 Then lblMesDifencia15.Text = CDec(lblMesBalance16.Text) - CDec(lblMesBalance15.Text)
+        If lblMesBalance17.Text <> 0 And lblMesBalance16.Text <> 0 Then lblMesDifencia16.Text = CDec(lblMesBalance17.Text) - CDec(lblMesBalance16.Text)
+        If lblMesBalance18.Text <> 0 And lblMesBalance17.Text <> 0 Then lblMesDifencia17.Text = CDec(lblMesBalance18.Text) - CDec(lblMesBalance17.Text)
+        If lblMesBalance19.Text <> 0 And lblMesBalance18.Text <> 0 Then lblMesDifencia18.Text = CDec(lblMesBalance19.Text) - CDec(lblMesBalance18.Text)
+        If lblMesBalance20.Text <> 0 And lblMesBalance19.Text <> 0 Then lblMesDifencia19.Text = CDec(lblMesBalance20.Text) - CDec(lblMesBalance19.Text)
+        If lblMesBalance21.Text <> 0 And lblMesBalance20.Text <> 0 Then lblMesDifencia20.Text = CDec(lblMesBalance21.Text) - CDec(lblMesBalance20.Text)
+        If lblMesBalance22.Text <> 0 And lblMesBalance21.Text <> 0 Then lblMesDifencia21.Text = CDec(lblMesBalance22.Text) - CDec(lblMesBalance21.Text)
+        If lblMesBalance23.Text <> 0 And lblMesBalance22.Text <> 0 Then lblMesDifencia22.Text = CDec(lblMesBalance23.Text) - CDec(lblMesBalance22.Text)
+        If lblMesBalance24.Text <> 0 And lblMesBalance23.Text <> 0 Then lblMesDifencia23.Text = CDec(lblMesBalance24.Text) - CDec(lblMesBalance23.Text)
+        If lblMesBalance25.Text <> 0 And lblMesBalance24.Text <> 0 Then lblMesDifencia24.Text = CDec(lblMesBalance25.Text) - CDec(lblMesBalance24.Text)
+        If lblMesBalance26.Text <> 0 And lblMesBalance25.Text <> 0 Then lblMesDifencia25.Text = CDec(lblMesBalance26.Text) - CDec(lblMesBalance25.Text)
+        If lblMesBalance27.Text <> 0 And lblMesBalance26.Text <> 0 Then lblMesDifencia26.Text = CDec(lblMesBalance27.Text) - CDec(lblMesBalance26.Text)
+        If lblMesBalance28.Text <> 0 And lblMesBalance27.Text <> 0 Then lblMesDifencia27.Text = CDec(lblMesBalance28.Text) - CDec(lblMesBalance27.Text)
+        If lblMesBalance29.Text <> 0 And lblMesBalance28.Text <> 0 Then lblMesDifencia28.Text = CDec(lblMesBalance29.Text) - CDec(lblMesBalance28.Text)
+        If lblMesBalance30.Text <> 0 And lblMesBalance29.Text <> 0 Then lblMesDifencia29.Text = CDec(lblMesBalance30.Text) - CDec(lblMesBalance29.Text)
+        If lblMesBalance31.Text <> 0 And lblMesBalance30.Text <> 0 Then lblMesDifencia30.Text = CDec(lblMesBalance31.Text) - CDec(lblMesBalance30.Text)
+
         lblTotalHora.Text = 0
         lblTotalHora.Text += CDec(lblHoraDiferencia00.Text)
         lblTotalHora.Text += CDec(lblHoraDiferencia01.Text)
@@ -65,8 +97,65 @@ Public Class Form1
         lblTotalHora.Text += CDec(lblHoraDiferencia21.Text)
         lblTotalHora.Text += CDec(lblHoraDiferencia22.Text)
         lblTotalHora.Text += CDec(lblHoraDiferencia23.Text)
-        MostrarMes()
+        lblTotalMes.Text = 0
+        lblTotalMes.Text += CDec(lblMesDifencia01.Text)
+        lblTotalMes.Text += CDec(lblMesDifencia02.Text)
+        lblTotalMes.Text += CDec(lblMesDifencia03.Text)
+        lblTotalMes.Text += CDec(lblMesDifencia04.Text)
+        lblTotalMes.Text += CDec(lblMesDifencia05.Text)
+        lblTotalMes.Text += CDec(lblMesDifencia06.Text)
+        lblTotalMes.Text += CDec(lblMesDifencia07.Text)
+        lblTotalMes.Text += CDec(lblMesDifencia08.Text)
+        lblTotalMes.Text += CDec(lblMesDifencia09.Text)
+        lblTotalMes.Text += CDec(lblMesDifencia10.Text)
+        lblTotalMes.Text += CDec(lblMesDifencia11.Text)
+        lblTotalMes.Text += CDec(lblMesDifencia12.Text)
+        lblTotalMes.Text += CDec(lblMesDifencia13.Text)
+        lblTotalMes.Text += CDec(lblMesDifencia14.Text)
+        lblTotalMes.Text += CDec(lblMesDifencia15.Text)
+        lblTotalMes.Text += CDec(lblMesDifencia16.Text)
+        lblTotalMes.Text += CDec(lblMesDifencia17.Text)
+        lblTotalMes.Text += CDec(lblMesDifencia18.Text)
+        lblTotalMes.Text += CDec(lblMesDifencia19.Text)
+        lblTotalMes.Text += CDec(lblMesDifencia20.Text)
+        lblTotalMes.Text += CDec(lblMesDifencia21.Text)
+        lblTotalMes.Text += CDec(lblMesDifencia22.Text)
+        lblTotalMes.Text += CDec(lblMesDifencia23.Text)
+        lblTotalMes.Text += CDec(lblMesDifencia24.Text)
+        lblTotalMes.Text += CDec(lblMesDifencia25.Text)
+        lblTotalMes.Text += CDec(lblMesDifencia26.Text)
+        lblTotalMes.Text += CDec(lblMesDifencia27.Text)
+        lblTotalMes.Text += CDec(lblMesDifencia28.Text)
+        lblTotalMes.Text += CDec(lblMesDifencia29.Text)
+        lblTotalMes.Text += CDec(lblMesDifencia30.Text)
+        lblTotalMes.Text += CDec(lblMesDifencia31.Text)
 
+        MostrarMes()
+        Chart3.Series(0).Points.Clear()
+        Chart3.Series(0).Points.AddXY(TimeValue("00:00"), CDec(lblHoraDiferencia00.Text))
+        Chart3.Series(0).Points.AddXY(TimeValue("01:00"), CDec(lblHoraDiferencia01.Text))
+        Chart3.Series(0).Points.AddXY(TimeValue("02:00"), CDec(lblHoraDiferencia02.Text))
+        Chart3.Series(0).Points.AddXY(TimeValue("03:00"), CDec(lblHoraDiferencia03.Text))
+        Chart3.Series(0).Points.AddXY(TimeValue("04:00"), CDec(lblHoraDiferencia04.Text))
+        Chart3.Series(0).Points.AddXY(TimeValue("05:00"), CDec(lblHoraDiferencia05.Text))
+        Chart3.Series(0).Points.AddXY(TimeValue("06:00"), CDec(lblHoraDiferencia06.Text))
+        Chart3.Series(0).Points.AddXY(TimeValue("07:00"), CDec(lblHoraDiferencia07.Text))
+        Chart3.Series(0).Points.AddXY(TimeValue("08:00"), CDec(lblHoraDiferencia08.Text))
+        Chart3.Series(0).Points.AddXY(TimeValue("09:00"), CDec(lblHoraDiferencia09.Text))
+        Chart3.Series(0).Points.AddXY(TimeValue("10:00"), CDec(lblHoraDiferencia10.Text))
+        Chart3.Series(0).Points.AddXY(TimeValue("11:00"), CDec(lblHoraDiferencia11.Text))
+        Chart3.Series(0).Points.AddXY(TimeValue("12:00"), CDec(lblHoraDiferencia12.Text))
+        Chart3.Series(0).Points.AddXY(TimeValue("13:00"), CDec(lblHoraDiferencia13.Text))
+        Chart3.Series(0).Points.AddXY(TimeValue("14:00"), CDec(lblHoraDiferencia14.Text))
+        Chart3.Series(0).Points.AddXY(TimeValue("15:00"), CDec(lblHoraDiferencia15.Text))
+        Chart3.Series(0).Points.AddXY(TimeValue("16:00"), CDec(lblHoraDiferencia16.Text))
+        Chart3.Series(0).Points.AddXY(TimeValue("17:00"), CDec(lblHoraDiferencia17.Text))
+        Chart3.Series(0).Points.AddXY(TimeValue("18:00"), CDec(lblHoraDiferencia18.Text))
+        Chart3.Series(0).Points.AddXY(TimeValue("19:00"), CDec(lblHoraDiferencia19.Text))
+        Chart3.Series(0).Points.AddXY(TimeValue("20:00"), CDec(lblHoraDiferencia20.Text))
+        Chart3.Series(0).Points.AddXY(TimeValue("21:00"), CDec(lblHoraDiferencia21.Text))
+        Chart3.Series(0).Points.AddXY(TimeValue("22:00"), CDec(lblHoraDiferencia22.Text))
+        Chart3.Series(0).Points.AddXY(TimeValue("23:00"), CDec(lblHoraDiferencia23.Text))
 
     End Sub
     Private Sub MostrarMes()
@@ -148,31 +237,7 @@ Public Class Form1
                 lblMesDaily.Location = New Point(56, 500)
                 gpMes.Size = New Size(333, 539)
         End Select
-        Chart3.Series(0).Points.Clear()
-        Chart3.Series(0).Points.AddXY(TimeValue("00:00"), CDec(lblHoraDiferencia00.Text))
-        Chart3.Series(0).Points.AddXY(TimeValue("01:00"), CDec(lblHoraDiferencia01.Text))
-        Chart3.Series(0).Points.AddXY(TimeValue("02:00"), CDec(lblHoraDiferencia02.Text))
-        Chart3.Series(0).Points.AddXY(TimeValue("03:00"), CDec(lblHoraDiferencia03.Text))
-        Chart3.Series(0).Points.AddXY(TimeValue("04:00"), CDec(lblHoraDiferencia04.Text))
-        Chart3.Series(0).Points.AddXY(TimeValue("05:00"), CDec(lblHoraDiferencia05.Text))
-        Chart3.Series(0).Points.AddXY(TimeValue("06:00"), CDec(lblHoraDiferencia06.Text))
-        Chart3.Series(0).Points.AddXY(TimeValue("07:00"), CDec(lblHoraDiferencia07.Text))
-        Chart3.Series(0).Points.AddXY(TimeValue("08:00"), CDec(lblHoraDiferencia08.Text))
-        Chart3.Series(0).Points.AddXY(TimeValue("09:00"), CDec(lblHoraDiferencia09.Text))
-        Chart3.Series(0).Points.AddXY(TimeValue("10:00"), CDec(lblHoraDiferencia10.Text))
-        Chart3.Series(0).Points.AddXY(TimeValue("11:00"), CDec(lblHoraDiferencia11.Text))
-        Chart3.Series(0).Points.AddXY(TimeValue("12:00"), CDec(lblHoraDiferencia12.Text))
-        Chart3.Series(0).Points.AddXY(TimeValue("13:00"), CDec(lblHoraDiferencia13.Text))
-        Chart3.Series(0).Points.AddXY(TimeValue("14:00"), CDec(lblHoraDiferencia14.Text))
-        Chart3.Series(0).Points.AddXY(TimeValue("15:00"), CDec(lblHoraDiferencia15.Text))
-        Chart3.Series(0).Points.AddXY(TimeValue("16:00"), CDec(lblHoraDiferencia16.Text))
-        Chart3.Series(0).Points.AddXY(TimeValue("17:00"), CDec(lblHoraDiferencia17.Text))
-        Chart3.Series(0).Points.AddXY(TimeValue("18:00"), CDec(lblHoraDiferencia18.Text))
-        Chart3.Series(0).Points.AddXY(TimeValue("19:00"), CDec(lblHoraDiferencia19.Text))
-        Chart3.Series(0).Points.AddXY(TimeValue("20:00"), CDec(lblHoraDiferencia20.Text))
-        Chart3.Series(0).Points.AddXY(TimeValue("21:00"), CDec(lblHoraDiferencia21.Text))
-        Chart3.Series(0).Points.AddXY(TimeValue("22:00"), CDec(lblHoraDiferencia22.Text))
-        Chart3.Series(0).Points.AddXY(TimeValue("23:00"), CDec(lblHoraDiferencia23.Text))
+
     End Sub
     Private Sub Actualizar()
         Dim uriString2 As String = "https://server.duinocoin.com/balances/Lanthi"
@@ -183,8 +248,6 @@ Public Class Form1
         Dim Read2 = New StreamReader(Response2.GetResponseStream())
         Dim Raw2 As String = Read2.ReadToEnd()
         Dim dict2 As Object = New JavaScriptSerializer().Deserialize(Of Dictionary(Of String, Object))(Raw2)
-        Dim HasesUsuario As Integer = 0
-        ' txtUsuario.Text = dict2.item("result").item("balance").item("username")
 
         Dim uriString As String = "https://server.duinocoin.com/api.json"
         Dim uri As New Uri(uriString)
@@ -209,13 +272,38 @@ Public Class Form1
         If ckEstadisticas.Checked = True Then
             Dim Valor As Decimal = Format(CDec(txtbalance.Text), "00000.000")
             Dim Valor2 As Decimal = CDec(txtDucoprice.Text)
-            If Chart1.ChartAreas(0).AxisY.Minimum <Valor2 Then
-                Chart1.ChartAreas(0).AxisY.Minimum = CDec(txtDucoprice.Text) - 0.000001
+            If Chart1.ChartAreas(0).AxisY.Minimum < Valor2 Then
+                'Chart1.ChartAreas(0).AxisY.Minimum = CDec(txtDucoprice.Text) - 0.000001
             End If
             Chart1.Series(0).Points.AddXY(TimeValue(Now), Valor2)
             Chart2.Series(0).Points.AddXY(TimeValue(Now), Valor)
-            Chart1.ChartAreas(0).AxisY.Maximum = CDec(txtDucoprice.Text) + 0.000001
+            'Chart1.ChartAreas(0).AxisY.Maximum = CDec(txtDucoprice.Text) + 0.000001
             Chart2.ChartAreas(0).AxisY.Maximum = Format(CDec(txtbalance.Text) + 0.1, "00000.000")
+            Chart3.Series(0).Points.Clear()
+            Chart3.Series(0).Points.AddXY(TimeValue("00:00"), CDec(lblHoraDiferencia00.Text))
+            Chart3.Series(0).Points.AddXY(TimeValue("01:00"), CDec(lblHoraDiferencia01.Text))
+            Chart3.Series(0).Points.AddXY(TimeValue("02:00"), CDec(lblHoraDiferencia02.Text))
+            Chart3.Series(0).Points.AddXY(TimeValue("03:00"), CDec(lblHoraDiferencia03.Text))
+            Chart3.Series(0).Points.AddXY(TimeValue("04:00"), CDec(lblHoraDiferencia04.Text))
+            Chart3.Series(0).Points.AddXY(TimeValue("05:00"), CDec(lblHoraDiferencia05.Text))
+            Chart3.Series(0).Points.AddXY(TimeValue("06:00"), CDec(lblHoraDiferencia06.Text))
+            Chart3.Series(0).Points.AddXY(TimeValue("07:00"), CDec(lblHoraDiferencia07.Text))
+            Chart3.Series(0).Points.AddXY(TimeValue("08:00"), CDec(lblHoraDiferencia08.Text))
+            Chart3.Series(0).Points.AddXY(TimeValue("09:00"), CDec(lblHoraDiferencia09.Text))
+            Chart3.Series(0).Points.AddXY(TimeValue("10:00"), CDec(lblHoraDiferencia10.Text))
+            Chart3.Series(0).Points.AddXY(TimeValue("11:00"), CDec(lblHoraDiferencia11.Text))
+            Chart3.Series(0).Points.AddXY(TimeValue("12:00"), CDec(lblHoraDiferencia12.Text))
+            Chart3.Series(0).Points.AddXY(TimeValue("13:00"), CDec(lblHoraDiferencia13.Text))
+            Chart3.Series(0).Points.AddXY(TimeValue("14:00"), CDec(lblHoraDiferencia14.Text))
+            Chart3.Series(0).Points.AddXY(TimeValue("15:00"), CDec(lblHoraDiferencia15.Text))
+            Chart3.Series(0).Points.AddXY(TimeValue("16:00"), CDec(lblHoraDiferencia16.Text))
+            Chart3.Series(0).Points.AddXY(TimeValue("17:00"), CDec(lblHoraDiferencia17.Text))
+            Chart3.Series(0).Points.AddXY(TimeValue("18:00"), CDec(lblHoraDiferencia18.Text))
+            Chart3.Series(0).Points.AddXY(TimeValue("19:00"), CDec(lblHoraDiferencia19.Text))
+            Chart3.Series(0).Points.AddXY(TimeValue("20:00"), CDec(lblHoraDiferencia20.Text))
+            Chart3.Series(0).Points.AddXY(TimeValue("21:00"), CDec(lblHoraDiferencia21.Text))
+            Chart3.Series(0).Points.AddXY(TimeValue("22:00"), CDec(lblHoraDiferencia22.Text))
+            Chart3.Series(0).Points.AddXY(TimeValue("23:00"), CDec(lblHoraDiferencia23.Text))
         End If
     End Sub
     Private Sub Añadir()
@@ -399,30 +487,87 @@ Public Class Form1
 
                 End Select
 
-            Case 1 : If lblBalanceHora01.Text = "0" Then lblBalanceHora01.Text = txtbalance.Text : lblPrecio01.Text = txtDucoprice.Text : lblHoraDiferencia01.Text = CDec(lblBalanceHora01.Text) - CDec(lblBalanceHora00.Text)
-            Case 2 : If lblBalanceHora02.Text = "0" Then lblBalanceHora02.Text = txtbalance.Text : lblPrecio02.Text = txtDucoprice.Text : lblHoraDiferencia02.Text = CDec(lblBalanceHora02.Text) - CDec(lblBalanceHora01.Text)
-            Case 3 : If lblBalanceHora03.Text = "0" Then lblBalanceHora03.Text = txtbalance.Text : lblPrecio03.Text = txtDucoprice.Text : lblHoraDiferencia03.Text = CDec(lblBalanceHora03.Text) - CDec(lblBalanceHora02.Text)
-            Case 4 : If lblBalanceHora04.Text = "0" Then lblBalanceHora04.Text = txtbalance.Text : lblPrecio04.Text = txtDucoprice.Text : lblHoraDiferencia04.Text = CDec(lblBalanceHora04.Text) - CDec(lblBalanceHora03.Text)
-            Case 5 : If lblBalanceHora05.Text = "0" Then lblBalanceHora05.Text = txtbalance.Text : lblPrecio05.Text = txtDucoprice.Text : lblHoraDiferencia05.Text = CDec(lblBalanceHora05.Text) - CDec(lblBalanceHora04.Text)
-            Case 6 : If lblBalanceHora06.Text = "0" Then lblBalanceHora06.Text = txtbalance.Text : lblPrecio06.Text = txtDucoprice.Text : lblHoraDiferencia06.Text = CDec(lblBalanceHora06.Text) - CDec(lblBalanceHora05.Text)
-            Case 7 : If lblBalanceHora07.Text = "0" Then lblBalanceHora07.Text = txtbalance.Text : lblPrecio07.Text = txtDucoprice.Text : lblHoraDiferencia07.Text = CDec(lblBalanceHora07.Text) - CDec(lblBalanceHora06.Text)
-            Case 8 : If lblBalanceHora08.Text = "0" Then lblBalanceHora08.Text = txtbalance.Text : lblPrecio08.Text = txtDucoprice.Text : lblHoraDiferencia08.Text = CDec(lblBalanceHora08.Text) - CDec(lblBalanceHora07.Text)
-            Case 9 : If lblBalanceHora09.Text = "0" Then lblBalanceHora09.Text = txtbalance.Text : lblPrecio09.Text = txtDucoprice.Text : lblHoraDiferencia09.Text = CDec(lblBalanceHora09.Text) - CDec(lblBalanceHora08.Text)
-            Case 10 : If lblBalanceHora10.Text = "0" Then lblBalanceHora10.Text = txtbalance.Text : lblPrecio10.Text = txtDucoprice.Text : lblHoraDiferencia10.Text = CDec(lblBalanceHora10.Text) - CDec(lblBalanceHora09.Text)
-            Case 11 : If lblBalanceHora11.Text = "0" Then lblBalanceHora11.Text = txtbalance.Text : lblPrecio11.Text = txtDucoprice.Text : lblHoraDiferencia11.Text = CDec(lblBalanceHora11.Text) - CDec(lblBalanceHora10.Text)
-            Case 12 : If lblBalanceHora12.Text = "0" Then lblBalanceHora12.Text = txtbalance.Text : lblPrecio12.Text = txtDucoprice.Text : lblHoraDiferencia12.Text = CDec(lblBalanceHora12.Text) - CDec(lblBalanceHora11.Text)
-            Case 13 : If lblBalanceHora13.Text = "0" Then lblBalanceHora13.Text = txtbalance.Text : lblPrecio13.Text = txtDucoprice.Text : lblHoraDiferencia13.Text = CDec(lblBalanceHora13.Text) - CDec(lblBalanceHora12.Text)
-            Case 14 : If lblBalanceHora14.Text = "0" Then lblBalanceHora14.Text = txtbalance.Text : lblPrecio14.Text = txtDucoprice.Text : lblHoraDiferencia14.Text = CDec(lblBalanceHora14.Text) - CDec(lblBalanceHora13.Text)
-            Case 15 : If lblBalanceHora15.Text = "0" Then lblBalanceHora15.Text = txtbalance.Text : lblPrecio15.Text = txtDucoprice.Text : lblHoraDiferencia15.Text = CDec(lblBalanceHora15.Text) - CDec(lblBalanceHora14.Text)
-            Case 16 : If lblBalanceHora16.Text = "0" Then lblBalanceHora16.Text = txtbalance.Text : lblPrecio16.Text = txtDucoprice.Text : lblHoraDiferencia16.Text = CDec(lblBalanceHora16.Text) - CDec(lblBalanceHora15.Text)
-            Case 17 : If lblBalanceHora17.Text = "0" Then lblBalanceHora17.Text = txtbalance.Text : lblPrecio17.Text = txtDucoprice.Text : lblHoraDiferencia17.Text = CDec(lblBalanceHora17.Text) - CDec(lblBalanceHora16.Text)
-            Case 18 : If lblBalanceHora18.Text = "0" Then lblBalanceHora18.Text = txtbalance.Text : lblPrecio18.Text = txtDucoprice.Text : lblHoraDiferencia18.Text = CDec(lblBalanceHora18.Text) - CDec(lblBalanceHora17.Text)
-            Case 19 : If lblBalanceHora19.Text = "0" Then lblBalanceHora19.Text = txtbalance.Text : lblPrecio19.Text = txtDucoprice.Text : lblHoraDiferencia19.Text = CDec(lblBalanceHora19.Text) - CDec(lblBalanceHora18.Text)
-            Case 20 : If lblBalanceHora20.Text = "0" Then lblBalanceHora20.Text = txtbalance.Text : lblPrecio20.Text = txtDucoprice.Text : lblHoraDiferencia20.Text = CDec(lblBalanceHora20.Text) - CDec(lblBalanceHora19.Text)
-            Case 21 : If lblBalanceHora21.Text = "0" Then lblBalanceHora21.Text = txtbalance.Text : lblPrecio21.Text = txtDucoprice.Text : lblHoraDiferencia21.Text = CDec(lblBalanceHora21.Text) - CDec(lblBalanceHora20.Text)
-            Case 22 : If lblBalanceHora22.Text = "0" Then lblBalanceHora22.Text = txtbalance.Text : lblPrecio22.Text = txtDucoprice.Text : lblHoraDiferencia22.Text = CDec(lblBalanceHora22.Text) - CDec(lblBalanceHora21.Text)
-            Case 23 : If lblBalanceHora23.Text = "0" Then lblBalanceHora23.Text = txtbalance.Text : lblPrecio23.Text = txtDucoprice.Text : lblHoraDiferencia23.Text = CDec(lblBalanceHora23.Text) - CDec(lblBalanceHora22.Text)
+            Case 1 : If lblBalanceHora01.Text = "0" Then lblBalanceHora01.Text = txtbalance.Text : lblPrecio01.Text = txtDucoprice.Text
+            Case 2 : If lblBalanceHora02.Text = "0" Then lblBalanceHora02.Text = txtbalance.Text : lblPrecio02.Text = txtDucoprice.Text
+            Case 3 : If lblBalanceHora03.Text = "0" Then lblBalanceHora03.Text = txtbalance.Text : lblPrecio03.Text = txtDucoprice.Text
+            Case 4 : If lblBalanceHora04.Text = "0" Then lblBalanceHora04.Text = txtbalance.Text : lblPrecio04.Text = txtDucoprice.Text
+            Case 5 : If lblBalanceHora05.Text = "0" Then lblBalanceHora05.Text = txtbalance.Text : lblPrecio05.Text = txtDucoprice.Text
+            Case 6 : If lblBalanceHora06.Text = "0" Then lblBalanceHora06.Text = txtbalance.Text : lblPrecio06.Text = txtDucoprice.Text
+            Case 7 : If lblBalanceHora07.Text = "0" Then lblBalanceHora07.Text = txtbalance.Text : lblPrecio07.Text = txtDucoprice.Text
+            Case 8 : If lblBalanceHora08.Text = "0" Then lblBalanceHora08.Text = txtbalance.Text : lblPrecio08.Text = txtDucoprice.Text
+            Case 9 : If lblBalanceHora09.Text = "0" Then lblBalanceHora09.Text = txtbalance.Text : lblPrecio09.Text = txtDucoprice.Text
+            Case 10 : If lblBalanceHora10.Text = "0" Then lblBalanceHora10.Text = txtbalance.Text : lblPrecio10.Text = txtDucoprice.Text
+            Case 11 : If lblBalanceHora11.Text = "0" Then lblBalanceHora11.Text = txtbalance.Text : lblPrecio11.Text = txtDucoprice.Text
+            Case 12 : If lblBalanceHora12.Text = "0" Then lblBalanceHora12.Text = txtbalance.Text : lblPrecio12.Text = txtDucoprice.Text
+            Case 13 : If lblBalanceHora13.Text = "0" Then lblBalanceHora13.Text = txtbalance.Text : lblPrecio13.Text = txtDucoprice.Text
+            Case 14 : If lblBalanceHora14.Text = "0" Then lblBalanceHora14.Text = txtbalance.Text : lblPrecio14.Text = txtDucoprice.Text
+            Case 15 : If lblBalanceHora15.Text = "0" Then lblBalanceHora15.Text = txtbalance.Text : lblPrecio15.Text = txtDucoprice.Text
+            Case 16 : If lblBalanceHora16.Text = "0" Then lblBalanceHora16.Text = txtbalance.Text : lblPrecio16.Text = txtDucoprice.Text
+            Case 17 : If lblBalanceHora17.Text = "0" Then lblBalanceHora17.Text = txtbalance.Text : lblPrecio17.Text = txtDucoprice.Text
+            Case 18 : If lblBalanceHora18.Text = "0" Then lblBalanceHora18.Text = txtbalance.Text : lblPrecio18.Text = txtDucoprice.Text
+            Case 19 : If lblBalanceHora19.Text = "0" Then lblBalanceHora19.Text = txtbalance.Text : lblPrecio19.Text = txtDucoprice.Text
+            Case 20 : If lblBalanceHora20.Text = "0" Then lblBalanceHora20.Text = txtbalance.Text : lblPrecio20.Text = txtDucoprice.Text
+            Case 21 : If lblBalanceHora21.Text = "0" Then lblBalanceHora21.Text = txtbalance.Text : lblPrecio21.Text = txtDucoprice.Text
+            Case 22 : If lblBalanceHora22.Text = "0" Then lblBalanceHora22.Text = txtbalance.Text : lblPrecio22.Text = txtDucoprice.Text
+            Case 23 : If lblBalanceHora23.Text = "0" Then lblBalanceHora23.Text = txtbalance.Text : lblPrecio23.Text = txtDucoprice.Text
         End Select
+        If lblBalanceHora01.Text <> 0 And lblBalanceHora00.Text <> 0 Then lblHoraDiferencia00.Text = CDec(lblBalanceHora01.Text) - CDec(lblBalanceHora00.Text)
+        If lblBalanceHora02.Text <> 0 And lblBalanceHora01.Text <> 0 Then lblHoraDiferencia01.Text = CDec(lblBalanceHora02.Text) - CDec(lblBalanceHora01.Text)
+        If lblBalanceHora03.Text <> 0 And lblBalanceHora02.Text <> 0 Then lblHoraDiferencia02.Text = CDec(lblBalanceHora03.Text) - CDec(lblBalanceHora02.Text)
+        If lblBalanceHora04.Text <> 0 And lblBalanceHora03.Text <> 0 Then lblHoraDiferencia03.Text = CDec(lblBalanceHora04.Text) - CDec(lblBalanceHora03.Text)
+        If lblBalanceHora05.Text <> 0 And lblBalanceHora04.Text <> 0 Then lblHoraDiferencia04.Text = CDec(lblBalanceHora05.Text) - CDec(lblBalanceHora04.Text)
+        If lblBalanceHora06.Text <> 0 And lblBalanceHora05.Text <> 0 Then lblHoraDiferencia05.Text = CDec(lblBalanceHora06.Text) - CDec(lblBalanceHora05.Text)
+        If lblBalanceHora07.Text <> 0 And lblBalanceHora06.Text <> 0 Then lblHoraDiferencia06.Text = CDec(lblBalanceHora07.Text) - CDec(lblBalanceHora06.Text)
+        If lblBalanceHora08.Text <> 0 And lblBalanceHora07.Text <> 0 Then lblHoraDiferencia07.Text = CDec(lblBalanceHora08.Text) - CDec(lblBalanceHora07.Text)
+        If lblBalanceHora09.Text <> 0 And lblBalanceHora08.Text <> 0 Then lblHoraDiferencia08.Text = CDec(lblBalanceHora09.Text) - CDec(lblBalanceHora08.Text)
+        If lblBalanceHora10.Text <> 0 And lblBalanceHora09.Text <> 0 Then lblHoraDiferencia09.Text = CDec(lblBalanceHora10.Text) - CDec(lblBalanceHora09.Text)
+        If lblBalanceHora11.Text <> 0 And lblBalanceHora10.Text <> 0 Then lblHoraDiferencia10.Text = CDec(lblBalanceHora11.Text) - CDec(lblBalanceHora10.Text)
+        If lblBalanceHora12.Text <> 0 And lblBalanceHora11.Text <> 0 Then lblHoraDiferencia11.Text = CDec(lblBalanceHora12.Text) - CDec(lblBalanceHora11.Text)
+        If lblBalanceHora13.Text <> 0 And lblBalanceHora12.Text <> 0 Then lblHoraDiferencia12.Text = CDec(lblBalanceHora13.Text) - CDec(lblBalanceHora12.Text)
+        If lblBalanceHora14.Text <> 0 And lblBalanceHora13.Text <> 0 Then lblHoraDiferencia13.Text = CDec(lblBalanceHora14.Text) - CDec(lblBalanceHora13.Text)
+        If lblBalanceHora15.Text <> 0 And lblBalanceHora14.Text <> 0 Then lblHoraDiferencia14.Text = CDec(lblBalanceHora15.Text) - CDec(lblBalanceHora14.Text)
+        If lblBalanceHora16.Text <> 0 And lblBalanceHora15.Text <> 0 Then lblHoraDiferencia15.Text = CDec(lblBalanceHora16.Text) - CDec(lblBalanceHora15.Text)
+        If lblBalanceHora17.Text <> 0 And lblBalanceHora16.Text <> 0 Then lblHoraDiferencia16.Text = CDec(lblBalanceHora17.Text) - CDec(lblBalanceHora16.Text)
+        If lblBalanceHora18.Text <> 0 And lblBalanceHora17.Text <> 0 Then lblHoraDiferencia17.Text = CDec(lblBalanceHora18.Text) - CDec(lblBalanceHora17.Text)
+        If lblBalanceHora19.Text <> 0 And lblBalanceHora18.Text <> 0 Then lblHoraDiferencia18.Text = CDec(lblBalanceHora19.Text) - CDec(lblBalanceHora18.Text)
+        If lblBalanceHora20.Text <> 0 And lblBalanceHora19.Text <> 0 Then lblHoraDiferencia19.Text = CDec(lblBalanceHora20.Text) - CDec(lblBalanceHora19.Text)
+        If lblBalanceHora21.Text <> 0 And lblBalanceHora20.Text <> 0 Then lblHoraDiferencia20.Text = CDec(lblBalanceHora21.Text) - CDec(lblBalanceHora20.Text)
+        If lblBalanceHora22.Text <> 0 And lblBalanceHora21.Text <> 0 Then lblHoraDiferencia21.Text = CDec(lblBalanceHora22.Text) - CDec(lblBalanceHora21.Text)
+        If lblBalanceHora23.Text <> 0 And lblBalanceHora22.Text <> 0 Then lblHoraDiferencia22.Text = CDec(lblBalanceHora23.Text) - CDec(lblBalanceHora22.Text)
+        lblHoraDiferencia23.Text = CDec(lblBalanceHora23.Text) - CDec(lblBalanceHora22.Text)
+
+        If lblMesBalance01.Text <> 0 And lblMesBalance02.Text <> 0 Then lblMesDifencia01.Text = CDec(lblMesBalance01.Text) - CDec(lblMesBalance01.Text)
+        If lblMesBalance02.Text <> 0 And lblMesBalance01.Text <> 0 Then lblMesDifencia01.Text = CDec(lblMesBalance02.Text) - CDec(lblMesBalance01.Text)
+        If lblMesBalance03.Text <> 0 And lblMesBalance02.Text <> 0 Then lblMesDifencia02.Text = CDec(lblMesBalance03.Text) - CDec(lblMesBalance02.Text)
+        If lblMesBalance04.Text <> 0 And lblMesBalance03.Text <> 0 Then lblMesDifencia03.Text = CDec(lblMesBalance04.Text) - CDec(lblMesBalance03.Text)
+        If lblMesBalance05.Text <> 0 And lblMesBalance04.Text <> 0 Then lblMesDifencia04.Text = CDec(lblMesBalance05.Text) - CDec(lblMesBalance04.Text)
+        If lblMesBalance06.Text <> 0 And lblMesBalance05.Text <> 0 Then lblMesDifencia05.Text = CDec(lblMesBalance06.Text) - CDec(lblMesBalance05.Text)
+        If lblMesBalance07.Text <> 0 And lblMesBalance06.Text <> 0 Then lblMesDifencia06.Text = CDec(lblMesBalance07.Text) - CDec(lblMesBalance06.Text)
+        If lblMesBalance08.Text <> 0 And lblMesBalance07.Text <> 0 Then lblMesDifencia07.Text = CDec(lblMesBalance08.Text) - CDec(lblMesBalance07.Text)
+        If lblMesBalance09.Text <> 0 And lblMesBalance08.Text <> 0 Then lblMesDifencia08.Text = CDec(lblMesBalance09.Text) - CDec(lblMesBalance08.Text)
+        If lblMesBalance10.Text <> 0 And lblMesBalance09.Text <> 0 Then lblMesDifencia09.Text = CDec(lblMesBalance10.Text) - CDec(lblMesBalance09.Text)
+        If lblMesBalance11.Text <> 0 And lblMesBalance10.Text <> 0 Then lblMesDifencia10.Text = CDec(lblMesBalance11.Text) - CDec(lblMesBalance10.Text)
+        If lblMesBalance12.Text <> 0 And lblMesBalance11.Text <> 0 Then lblMesDifencia11.Text = CDec(lblMesBalance12.Text) - CDec(lblMesBalance11.Text)
+        If lblMesBalance13.Text <> 0 And lblMesBalance12.Text <> 0 Then lblMesDifencia12.Text = CDec(lblMesBalance13.Text) - CDec(lblMesBalance12.Text)
+        If lblMesBalance14.Text <> 0 And lblMesBalance13.Text <> 0 Then lblMesDifencia13.Text = CDec(lblMesBalance14.Text) - CDec(lblMesBalance13.Text)
+        If lblMesBalance15.Text <> 0 And lblMesBalance14.Text <> 0 Then lblMesDifencia14.Text = CDec(lblMesBalance15.Text) - CDec(lblMesBalance14.Text)
+        If lblMesBalance16.Text <> 0 And lblMesBalance15.Text <> 0 Then lblMesDifencia15.Text = CDec(lblMesBalance16.Text) - CDec(lblMesBalance15.Text)
+        If lblMesBalance17.Text <> 0 And lblMesBalance16.Text <> 0 Then lblMesDifencia16.Text = CDec(lblMesBalance17.Text) - CDec(lblMesBalance16.Text)
+        If lblMesBalance18.Text <> 0 And lblMesBalance17.Text <> 0 Then lblMesDifencia17.Text = CDec(lblMesBalance18.Text) - CDec(lblMesBalance17.Text)
+        If lblMesBalance19.Text <> 0 And lblMesBalance18.Text <> 0 Then lblMesDifencia18.Text = CDec(lblMesBalance19.Text) - CDec(lblMesBalance18.Text)
+        If lblMesBalance20.Text <> 0 And lblMesBalance19.Text <> 0 Then lblMesDifencia19.Text = CDec(lblMesBalance20.Text) - CDec(lblMesBalance19.Text)
+        If lblMesBalance21.Text <> 0 And lblMesBalance20.Text <> 0 Then lblMesDifencia20.Text = CDec(lblMesBalance21.Text) - CDec(lblMesBalance20.Text)
+        If lblMesBalance22.Text <> 0 And lblMesBalance21.Text <> 0 Then lblMesDifencia21.Text = CDec(lblMesBalance22.Text) - CDec(lblMesBalance21.Text)
+        If lblMesBalance23.Text <> 0 And lblMesBalance22.Text <> 0 Then lblMesDifencia22.Text = CDec(lblMesBalance23.Text) - CDec(lblMesBalance22.Text)
+        If lblMesBalance24.Text <> 0 And lblMesBalance23.Text <> 0 Then lblMesDifencia23.Text = CDec(lblMesBalance24.Text) - CDec(lblMesBalance23.Text)
+        If lblMesBalance25.Text <> 0 And lblMesBalance24.Text <> 0 Then lblMesDifencia24.Text = CDec(lblMesBalance25.Text) - CDec(lblMesBalance24.Text)
+        If lblMesBalance26.Text <> 0 And lblMesBalance25.Text <> 0 Then lblMesDifencia25.Text = CDec(lblMesBalance26.Text) - CDec(lblMesBalance25.Text)
+        If lblMesBalance27.Text <> 0 And lblMesBalance26.Text <> 0 Then lblMesDifencia26.Text = CDec(lblMesBalance27.Text) - CDec(lblMesBalance26.Text)
+        If lblMesBalance28.Text <> 0 And lblMesBalance27.Text <> 0 Then lblMesDifencia27.Text = CDec(lblMesBalance28.Text) - CDec(lblMesBalance27.Text)
+        If lblMesBalance29.Text <> 0 And lblMesBalance28.Text <> 0 Then lblMesDifencia28.Text = CDec(lblMesBalance29.Text) - CDec(lblMesBalance28.Text)
+        If lblMesBalance30.Text <> 0 And lblMesBalance29.Text <> 0 Then lblMesDifencia29.Text = CDec(lblMesBalance30.Text) - CDec(lblMesBalance29.Text)
+        If lblMesBalance31.Text <> 0 And lblMesBalance30.Text <> 0 Then lblMesDifencia30.Text = CDec(lblMesBalance31.Text) - CDec(lblMesBalance30.Text)
+        lblMesDifencia31.Text = CDec(lblMesBalance31.Text) - CDec(lblMesBalance30.Text)
         lblTotalHora.Text = 0
         lblTotalHora.Text += CDec(lblHoraDiferencia00.Text)
         lblTotalHora.Text += CDec(lblHoraDiferencia01.Text)
@@ -483,7 +628,6 @@ Public Class Form1
         lblTotalMes.Text += CDec(lblMesDifencia31.Text)
     End Sub
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-
         Hora = DateAndTime.Hour(Now)
         MInutos = DateAndTime.Minute(Now)
         Segundos = DateAndTime.Second(Now)
@@ -503,16 +647,12 @@ Public Class Form1
         End If
         Select Case MInutos
             Case 0 : If Segundos = 0 Then Añadir()
-            Case 15 : If Segundos = 0 Then Añadir()
-            Case 30 : If Segundos = 0 Then Añadir()
-            Case 45 : If Segundos = 0 Then Añadir()
+                ' Case 15 : If Segundos = 0 Then Añadir()
+                'Case 30 : If Segundos = 0 Then Añadir()
+                'Case 45 : If Segundos = 0 Then Añadir()
         End Select
         If Segundos = 0 Then Actualizar()
     End Sub
-    Private Sub txtbalance_TextChanged(sender As Object, e As EventArgs)
-
-    End Sub
-
     Private Sub ckEstadisticas_CheckedChanged(sender As Object, e As EventArgs) Handles ckEstadisticas.CheckedChanged
         If ckEstadisticas.Checked = True Then
             Chart1.Visible = True
@@ -522,14 +662,4 @@ Public Class Form1
             Chart2.Visible = False
         End If
     End Sub
-    Private Sub lblBalanceHora01_TextChanged(sender As Object, e As EventArgs) Handles lblBalanceHora01.TextChanged
-        lblHoraDiferencia01.Text = CDec(lblBalanceHora00.Text) - CDec(lblBalanceHora01.Text)
-    End Sub
-    Private Sub lblBalanceHora02_TextChanged(sender As Object, e As EventArgs) Handles lblBalanceHora02.TextChanged
-        '  lblHoraDiferencia02.Text = CDec(lblBalanceHora01.Text) - CDec(lblBalanceHora02.Text)
-    End Sub
-    Private Sub lblBalanceHora03_TextChanged(sender As Object, e As EventArgs) Handles lblBalanceHora03.TextChanged
-        'lblHoraDiferencia03.Text = CDec(lblBalanceHora02.Text) - CDec(lblBalanceHora01.Text)
-    End Sub
-
 End Class

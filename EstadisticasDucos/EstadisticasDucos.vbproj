@@ -15,11 +15,11 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>C:\Users\Clini\source\repos\EstadisticasDucos\EstadisticasDucos\publish\</PublishUrl>
+    <PublishUrl>C:\AppServ\www\Estadisticas\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
-    <UpdateMode>Background</UpdateMode>
+    <UpdateMode>Foreground</UpdateMode>
     <UpdateInterval>7</UpdateInterval>
     <UpdateIntervalUnits>Days</UpdateIntervalUnits>
     <UpdatePeriodically>false</UpdatePeriodically>
@@ -27,14 +27,10 @@
     <MapFileExtensions>true</MapFileExtensions>
     <UpdateUrl>http://localhost/Estadisticas/</UpdateUrl>
     <TargetCulture>es</TargetCulture>
-    <ProductName>Monitor Duco</ProductName>
-    <PublisherName>Lanthi</PublisherName>
-    <SuiteName>Duco Stadistica</SuiteName>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>54</ApplicationRevision>
+    <ApplicationRevision>76</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
-    <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>

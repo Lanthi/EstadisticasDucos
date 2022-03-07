@@ -32,6 +32,10 @@ Partial Class Form1
         Dim ChartArea3 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
         Dim Legend3 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
         Dim Series3 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea4 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend4 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series4 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Series5 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.lstBalanceTiempoReal = New System.Windows.Forms.ListBox()
@@ -128,41 +132,6 @@ Partial Class Form1
         Me.lblTotalHora = New System.Windows.Forms.Label()
         Me.Label28 = New System.Windows.Forms.Label()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.lblMesDifencia01 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia02 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia03 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia04 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia05 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia06 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia07 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia08 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia10 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia09 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia11 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia12 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia13 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia14 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia19 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia16 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia20 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia15 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia22 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia17 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia21 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia18 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia23 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia24 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia25 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia27 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia26 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia28 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia29 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia30 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia31 = New System.Windows.Forms.Label()
-        Me.lblTotalMes = New System.Windows.Forms.Label()
-        Me.lblMesDaily = New System.Windows.Forms.Label()
-        Me.gpMes = New System.Windows.Forms.GroupBox()
-        Me.Chart3 = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.lblBalanceHora10 = New System.Windows.Forms.Label()
         Me.lblBalanceHora18 = New System.Windows.Forms.Label()
         Me.lblPrecio00 = New System.Windows.Forms.Label()
@@ -212,6 +181,40 @@ Partial Class Form1
         Me.lblBalanceHora07 = New System.Windows.Forms.Label()
         Me.lblBalanceHora09 = New System.Windows.Forms.Label()
         Me.lblBalanceHora08 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia01 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia02 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia03 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia04 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia05 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia06 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia07 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia08 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia10 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia09 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia11 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia12 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia13 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia14 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia19 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia16 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia20 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia15 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia22 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia17 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia21 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia18 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia23 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia24 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia25 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia27 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia26 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia28 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia29 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia30 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia31 = New System.Windows.Forms.Label()
+        Me.lblTotalMes = New System.Windows.Forms.Label()
+        Me.lblMesDaily = New System.Windows.Forms.Label()
+        Me.gpMes = New System.Windows.Forms.GroupBox()
         Me.lblMesBalance01 = New System.Windows.Forms.Label()
         Me.lblMesBalance02 = New System.Windows.Forms.Label()
         Me.lblMesBalance03 = New System.Windows.Forms.Label()
@@ -274,6 +277,8 @@ Partial Class Form1
         Me.lblMesPrecio04 = New System.Windows.Forms.Label()
         Me.lblMesPrecio06 = New System.Windows.Forms.Label()
         Me.lblMesPrecio05 = New System.Windows.Forms.Label()
+        Me.Chart3 = New System.Windows.Forms.DataVisualization.Charting.Chart()
+        Me.Chart4 = New System.Windows.Forms.DataVisualization.Charting.Chart()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Chart2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -281,6 +286,7 @@ Partial Class Form1
         Me.GroupBox3.SuspendLayout()
         Me.gpMes.SuspendLayout()
         CType(Me.Chart3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Chart4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Timer1
@@ -290,7 +296,7 @@ Partial Class Form1
         'lstBalanceTiempoReal
         '
         Me.lstBalanceTiempoReal.FormattingEnabled = True
-        Me.lstBalanceTiempoReal.Location = New System.Drawing.Point(1404, 12)
+        Me.lstBalanceTiempoReal.Location = New System.Drawing.Point(1410, 12)
         Me.lstBalanceTiempoReal.Name = "lstBalanceTiempoReal"
         Me.lstBalanceTiempoReal.Size = New System.Drawing.Size(112, 394)
         Me.lstBalanceTiempoReal.TabIndex = 11
@@ -914,18 +920,17 @@ Partial Class Form1
         Me.Chart1.ChartAreas.Add(ChartArea1)
         Legend1.Name = "Legend1"
         Me.Chart1.Legends.Add(Legend1)
-        Me.Chart1.Location = New System.Drawing.Point(-22, 476)
+        Me.Chart1.Location = New System.Drawing.Point(890, 205)
         Me.Chart1.Name = "Chart1"
         Series1.BorderWidth = 3
         Series1.ChartArea = "ChartArea1"
         Series1.Color = System.Drawing.Color.Lime
         Series1.IsVisibleInLegend = False
-        Series1.IsXValueIndexed = True
         Series1.Legend = "Legend1"
         Series1.Name = "Series1"
         Series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
         Me.Chart1.Series.Add(Series1)
-        Me.Chart1.Size = New System.Drawing.Size(629, 140)
+        Me.Chart1.Size = New System.Drawing.Size(490, 204)
         Me.Chart1.TabIndex = 135
         '
         'Chart2
@@ -934,19 +939,17 @@ Partial Class Form1
         Me.Chart2.ChartAreas.Add(ChartArea2)
         Legend2.Name = "Legend1"
         Me.Chart2.Legends.Add(Legend2)
-        Me.Chart2.Location = New System.Drawing.Point(-60, 606)
+        Me.Chart2.Location = New System.Drawing.Point(923, 405)
         Me.Chart2.Name = "Chart2"
         Series2.BorderWidth = 3
         Series2.ChartArea = "ChartArea1"
-        Series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
         Series2.Color = System.Drawing.Color.Red
         Series2.IsVisibleInLegend = False
-        Series2.IsXValueIndexed = True
         Series2.Legend = "Legend1"
         Series2.Name = "Series1"
         Series2.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
         Me.Chart2.Series.Add(Series2)
-        Me.Chart2.Size = New System.Drawing.Size(1488, 138)
+        Me.Chart2.Size = New System.Drawing.Size(457, 204)
         Me.Chart2.TabIndex = 135
         '
         'ckEstadisticas
@@ -1388,498 +1391,6 @@ Partial Class Form1
         Me.GroupBox3.TabIndex = 143
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Balance Hour"
-        '
-        'lblMesDifencia01
-        '
-        Me.lblMesDifencia01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesDifencia01.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesDifencia01.Location = New System.Drawing.Point(219, 25)
-        Me.lblMesDifencia01.Name = "lblMesDifencia01"
-        Me.lblMesDifencia01.Size = New System.Drawing.Size(100, 18)
-        Me.lblMesDifencia01.TabIndex = 144
-        Me.lblMesDifencia01.Text = "0"
-        '
-        'lblMesDifencia02
-        '
-        Me.lblMesDifencia02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesDifencia02.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesDifencia02.Location = New System.Drawing.Point(219, 42)
-        Me.lblMesDifencia02.Name = "lblMesDifencia02"
-        Me.lblMesDifencia02.Size = New System.Drawing.Size(100, 18)
-        Me.lblMesDifencia02.TabIndex = 144
-        Me.lblMesDifencia02.Text = "0"
-        '
-        'lblMesDifencia03
-        '
-        Me.lblMesDifencia03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesDifencia03.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesDifencia03.Location = New System.Drawing.Point(219, 59)
-        Me.lblMesDifencia03.Name = "lblMesDifencia03"
-        Me.lblMesDifencia03.Size = New System.Drawing.Size(100, 18)
-        Me.lblMesDifencia03.TabIndex = 144
-        Me.lblMesDifencia03.Text = "0"
-        '
-        'lblMesDifencia04
-        '
-        Me.lblMesDifencia04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesDifencia04.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesDifencia04.Location = New System.Drawing.Point(219, 76)
-        Me.lblMesDifencia04.Name = "lblMesDifencia04"
-        Me.lblMesDifencia04.Size = New System.Drawing.Size(100, 18)
-        Me.lblMesDifencia04.TabIndex = 144
-        Me.lblMesDifencia04.Text = "0"
-        '
-        'lblMesDifencia05
-        '
-        Me.lblMesDifencia05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesDifencia05.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesDifencia05.Location = New System.Drawing.Point(219, 93)
-        Me.lblMesDifencia05.Name = "lblMesDifencia05"
-        Me.lblMesDifencia05.Size = New System.Drawing.Size(100, 18)
-        Me.lblMesDifencia05.TabIndex = 144
-        Me.lblMesDifencia05.Text = "0"
-        '
-        'lblMesDifencia06
-        '
-        Me.lblMesDifencia06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesDifencia06.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesDifencia06.Location = New System.Drawing.Point(219, 110)
-        Me.lblMesDifencia06.Name = "lblMesDifencia06"
-        Me.lblMesDifencia06.Size = New System.Drawing.Size(100, 18)
-        Me.lblMesDifencia06.TabIndex = 144
-        Me.lblMesDifencia06.Text = "0"
-        '
-        'lblMesDifencia07
-        '
-        Me.lblMesDifencia07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesDifencia07.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesDifencia07.Location = New System.Drawing.Point(219, 127)
-        Me.lblMesDifencia07.Name = "lblMesDifencia07"
-        Me.lblMesDifencia07.Size = New System.Drawing.Size(100, 18)
-        Me.lblMesDifencia07.TabIndex = 144
-        Me.lblMesDifencia07.Text = "0"
-        '
-        'lblMesDifencia08
-        '
-        Me.lblMesDifencia08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesDifencia08.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesDifencia08.Location = New System.Drawing.Point(219, 144)
-        Me.lblMesDifencia08.Name = "lblMesDifencia08"
-        Me.lblMesDifencia08.Size = New System.Drawing.Size(100, 18)
-        Me.lblMesDifencia08.TabIndex = 144
-        Me.lblMesDifencia08.Text = "0"
-        '
-        'lblMesDifencia10
-        '
-        Me.lblMesDifencia10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesDifencia10.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesDifencia10.Location = New System.Drawing.Point(219, 178)
-        Me.lblMesDifencia10.Name = "lblMesDifencia10"
-        Me.lblMesDifencia10.Size = New System.Drawing.Size(100, 18)
-        Me.lblMesDifencia10.TabIndex = 144
-        Me.lblMesDifencia10.Text = "0"
-        '
-        'lblMesDifencia09
-        '
-        Me.lblMesDifencia09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesDifencia09.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesDifencia09.Location = New System.Drawing.Point(219, 161)
-        Me.lblMesDifencia09.Name = "lblMesDifencia09"
-        Me.lblMesDifencia09.Size = New System.Drawing.Size(100, 18)
-        Me.lblMesDifencia09.TabIndex = 144
-        Me.lblMesDifencia09.Text = "0"
-        '
-        'lblMesDifencia11
-        '
-        Me.lblMesDifencia11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesDifencia11.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesDifencia11.Location = New System.Drawing.Point(219, 195)
-        Me.lblMesDifencia11.Name = "lblMesDifencia11"
-        Me.lblMesDifencia11.Size = New System.Drawing.Size(100, 18)
-        Me.lblMesDifencia11.TabIndex = 144
-        Me.lblMesDifencia11.Text = "0"
-        '
-        'lblMesDifencia12
-        '
-        Me.lblMesDifencia12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesDifencia12.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesDifencia12.Location = New System.Drawing.Point(219, 212)
-        Me.lblMesDifencia12.Name = "lblMesDifencia12"
-        Me.lblMesDifencia12.Size = New System.Drawing.Size(100, 18)
-        Me.lblMesDifencia12.TabIndex = 144
-        Me.lblMesDifencia12.Text = "0"
-        '
-        'lblMesDifencia13
-        '
-        Me.lblMesDifencia13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesDifencia13.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesDifencia13.Location = New System.Drawing.Point(219, 229)
-        Me.lblMesDifencia13.Name = "lblMesDifencia13"
-        Me.lblMesDifencia13.Size = New System.Drawing.Size(100, 18)
-        Me.lblMesDifencia13.TabIndex = 144
-        Me.lblMesDifencia13.Text = "0"
-        '
-        'lblMesDifencia14
-        '
-        Me.lblMesDifencia14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesDifencia14.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesDifencia14.Location = New System.Drawing.Point(219, 246)
-        Me.lblMesDifencia14.Name = "lblMesDifencia14"
-        Me.lblMesDifencia14.Size = New System.Drawing.Size(100, 18)
-        Me.lblMesDifencia14.TabIndex = 144
-        Me.lblMesDifencia14.Text = "0"
-        '
-        'lblMesDifencia19
-        '
-        Me.lblMesDifencia19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesDifencia19.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesDifencia19.Location = New System.Drawing.Point(219, 331)
-        Me.lblMesDifencia19.Name = "lblMesDifencia19"
-        Me.lblMesDifencia19.Size = New System.Drawing.Size(100, 18)
-        Me.lblMesDifencia19.TabIndex = 144
-        Me.lblMesDifencia19.Text = "0"
-        '
-        'lblMesDifencia16
-        '
-        Me.lblMesDifencia16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesDifencia16.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesDifencia16.Location = New System.Drawing.Point(219, 280)
-        Me.lblMesDifencia16.Name = "lblMesDifencia16"
-        Me.lblMesDifencia16.Size = New System.Drawing.Size(100, 18)
-        Me.lblMesDifencia16.TabIndex = 144
-        Me.lblMesDifencia16.Text = "0"
-        '
-        'lblMesDifencia20
-        '
-        Me.lblMesDifencia20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesDifencia20.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesDifencia20.Location = New System.Drawing.Point(219, 348)
-        Me.lblMesDifencia20.Name = "lblMesDifencia20"
-        Me.lblMesDifencia20.Size = New System.Drawing.Size(100, 18)
-        Me.lblMesDifencia20.TabIndex = 144
-        Me.lblMesDifencia20.Text = "0"
-        '
-        'lblMesDifencia15
-        '
-        Me.lblMesDifencia15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesDifencia15.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesDifencia15.Location = New System.Drawing.Point(219, 263)
-        Me.lblMesDifencia15.Name = "lblMesDifencia15"
-        Me.lblMesDifencia15.Size = New System.Drawing.Size(100, 18)
-        Me.lblMesDifencia15.TabIndex = 144
-        Me.lblMesDifencia15.Text = "0"
-        '
-        'lblMesDifencia22
-        '
-        Me.lblMesDifencia22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesDifencia22.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesDifencia22.Location = New System.Drawing.Point(219, 382)
-        Me.lblMesDifencia22.Name = "lblMesDifencia22"
-        Me.lblMesDifencia22.Size = New System.Drawing.Size(100, 18)
-        Me.lblMesDifencia22.TabIndex = 144
-        Me.lblMesDifencia22.Text = "0"
-        '
-        'lblMesDifencia17
-        '
-        Me.lblMesDifencia17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesDifencia17.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesDifencia17.Location = New System.Drawing.Point(219, 297)
-        Me.lblMesDifencia17.Name = "lblMesDifencia17"
-        Me.lblMesDifencia17.Size = New System.Drawing.Size(100, 18)
-        Me.lblMesDifencia17.TabIndex = 144
-        Me.lblMesDifencia17.Text = "0"
-        '
-        'lblMesDifencia21
-        '
-        Me.lblMesDifencia21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesDifencia21.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesDifencia21.Location = New System.Drawing.Point(219, 365)
-        Me.lblMesDifencia21.Name = "lblMesDifencia21"
-        Me.lblMesDifencia21.Size = New System.Drawing.Size(100, 18)
-        Me.lblMesDifencia21.TabIndex = 144
-        Me.lblMesDifencia21.Text = "0"
-        '
-        'lblMesDifencia18
-        '
-        Me.lblMesDifencia18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesDifencia18.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesDifencia18.Location = New System.Drawing.Point(219, 314)
-        Me.lblMesDifencia18.Name = "lblMesDifencia18"
-        Me.lblMesDifencia18.Size = New System.Drawing.Size(100, 18)
-        Me.lblMesDifencia18.TabIndex = 144
-        Me.lblMesDifencia18.Text = "0"
-        '
-        'lblMesDifencia23
-        '
-        Me.lblMesDifencia23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesDifencia23.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesDifencia23.Location = New System.Drawing.Point(219, 399)
-        Me.lblMesDifencia23.Name = "lblMesDifencia23"
-        Me.lblMesDifencia23.Size = New System.Drawing.Size(100, 18)
-        Me.lblMesDifencia23.TabIndex = 144
-        Me.lblMesDifencia23.Text = "0"
-        '
-        'lblMesDifencia24
-        '
-        Me.lblMesDifencia24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesDifencia24.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesDifencia24.Location = New System.Drawing.Point(219, 416)
-        Me.lblMesDifencia24.Name = "lblMesDifencia24"
-        Me.lblMesDifencia24.Size = New System.Drawing.Size(100, 18)
-        Me.lblMesDifencia24.TabIndex = 144
-        Me.lblMesDifencia24.Text = "0"
-        '
-        'lblMesDifencia25
-        '
-        Me.lblMesDifencia25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesDifencia25.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesDifencia25.Location = New System.Drawing.Point(219, 433)
-        Me.lblMesDifencia25.Name = "lblMesDifencia25"
-        Me.lblMesDifencia25.Size = New System.Drawing.Size(100, 18)
-        Me.lblMesDifencia25.TabIndex = 144
-        Me.lblMesDifencia25.Text = "0"
-        '
-        'lblMesDifencia27
-        '
-        Me.lblMesDifencia27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesDifencia27.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesDifencia27.Location = New System.Drawing.Point(219, 467)
-        Me.lblMesDifencia27.Name = "lblMesDifencia27"
-        Me.lblMesDifencia27.Size = New System.Drawing.Size(100, 18)
-        Me.lblMesDifencia27.TabIndex = 144
-        Me.lblMesDifencia27.Text = "0"
-        '
-        'lblMesDifencia26
-        '
-        Me.lblMesDifencia26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesDifencia26.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesDifencia26.Location = New System.Drawing.Point(219, 450)
-        Me.lblMesDifencia26.Name = "lblMesDifencia26"
-        Me.lblMesDifencia26.Size = New System.Drawing.Size(100, 18)
-        Me.lblMesDifencia26.TabIndex = 144
-        Me.lblMesDifencia26.Text = "0"
-        '
-        'lblMesDifencia28
-        '
-        Me.lblMesDifencia28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesDifencia28.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesDifencia28.Location = New System.Drawing.Point(219, 484)
-        Me.lblMesDifencia28.Name = "lblMesDifencia28"
-        Me.lblMesDifencia28.Size = New System.Drawing.Size(100, 18)
-        Me.lblMesDifencia28.TabIndex = 144
-        Me.lblMesDifencia28.Text = "0"
-        '
-        'lblMesDifencia29
-        '
-        Me.lblMesDifencia29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesDifencia29.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesDifencia29.Location = New System.Drawing.Point(219, 501)
-        Me.lblMesDifencia29.Name = "lblMesDifencia29"
-        Me.lblMesDifencia29.Size = New System.Drawing.Size(100, 18)
-        Me.lblMesDifencia29.TabIndex = 144
-        Me.lblMesDifencia29.Text = "0"
-        '
-        'lblMesDifencia30
-        '
-        Me.lblMesDifencia30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesDifencia30.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesDifencia30.Location = New System.Drawing.Point(219, 518)
-        Me.lblMesDifencia30.Name = "lblMesDifencia30"
-        Me.lblMesDifencia30.Size = New System.Drawing.Size(100, 18)
-        Me.lblMesDifencia30.TabIndex = 144
-        Me.lblMesDifencia30.Text = "0"
-        '
-        'lblMesDifencia31
-        '
-        Me.lblMesDifencia31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesDifencia31.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesDifencia31.Location = New System.Drawing.Point(219, 535)
-        Me.lblMesDifencia31.Name = "lblMesDifencia31"
-        Me.lblMesDifencia31.Size = New System.Drawing.Size(100, 18)
-        Me.lblMesDifencia31.TabIndex = 144
-        Me.lblMesDifencia31.Text = "0"
-        '
-        'lblTotalMes
-        '
-        Me.lblTotalMes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTotalMes.Font = New System.Drawing.Font("Duco", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTotalMes.ForeColor = System.Drawing.Color.Blue
-        Me.lblTotalMes.Location = New System.Drawing.Point(147, 549)
-        Me.lblTotalMes.Name = "lblTotalMes"
-        Me.lblTotalMes.Size = New System.Drawing.Size(172, 28)
-        Me.lblTotalMes.TabIndex = 143
-        Me.lblTotalMes.Text = "0"
-        Me.lblTotalMes.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'lblMesDaily
-        '
-        Me.lblMesDaily.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesDaily.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.lblMesDaily.Location = New System.Drawing.Point(56, 554)
-        Me.lblMesDaily.Name = "lblMesDaily"
-        Me.lblMesDaily.Size = New System.Drawing.Size(91, 18)
-        Me.lblMesDaily.TabIndex = 144
-        Me.lblMesDaily.Text = "Monthly Total:"
-        Me.lblMesDaily.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'gpMes
-        '
-        Me.gpMes.Controls.Add(Me.lblMesDifencia03)
-        Me.gpMes.Controls.Add(Me.lblMesDifencia31)
-        Me.gpMes.Controls.Add(Me.lblMesDifencia30)
-        Me.gpMes.Controls.Add(Me.lblMesBalance01)
-        Me.gpMes.Controls.Add(Me.lblMesDifencia29)
-        Me.gpMes.Controls.Add(Me.lblMesBalance02)
-        Me.gpMes.Controls.Add(Me.lblMesDifencia28)
-        Me.gpMes.Controls.Add(Me.lblMesBalance03)
-        Me.gpMes.Controls.Add(Me.lblMesDifencia24)
-        Me.gpMes.Controls.Add(Me.lblMesBalance04)
-        Me.gpMes.Controls.Add(Me.lblMesDifencia23)
-        Me.gpMes.Controls.Add(Me.lblMesBalance05)
-        Me.gpMes.Controls.Add(Me.lblMesDifencia12)
-        Me.gpMes.Controls.Add(Me.lblMesBalance06)
-        Me.gpMes.Controls.Add(Me.lblMesDifencia18)
-        Me.gpMes.Controls.Add(Me.lblMesBalance07)
-        Me.gpMes.Controls.Add(Me.lblMesDifencia26)
-        Me.gpMes.Controls.Add(Me.lblMesBalance08)
-        Me.gpMes.Controls.Add(Me.lblMesDifencia11)
-        Me.gpMes.Controls.Add(Me.lblMesBalance09)
-        Me.gpMes.Controls.Add(Me.lblMesDifencia21)
-        Me.gpMes.Controls.Add(Me.lblMesBalance10)
-        Me.gpMes.Controls.Add(Me.lblMesDifencia06)
-        Me.gpMes.Controls.Add(Me.lblMesBalance11)
-        Me.gpMes.Controls.Add(Me.lblMesDifencia17)
-        Me.gpMes.Controls.Add(Me.lblMesBalance12)
-        Me.gpMes.Controls.Add(Me.lblMesDifencia27)
-        Me.gpMes.Controls.Add(Me.lblMesBalance13)
-        Me.gpMes.Controls.Add(Me.lblMesDifencia09)
-        Me.gpMes.Controls.Add(Me.lblMesBalance14)
-        Me.gpMes.Controls.Add(Me.lblMesDifencia22)
-        Me.gpMes.Controls.Add(Me.lblMesBalance15)
-        Me.gpMes.Controls.Add(Me.lblMesDifencia05)
-        Me.gpMes.Controls.Add(Me.lblMesBalance16)
-        Me.gpMes.Controls.Add(Me.lblMesDifencia15)
-        Me.gpMes.Controls.Add(Me.lblMesBalance17)
-        Me.gpMes.Controls.Add(Me.lblMesDifencia25)
-        Me.gpMes.Controls.Add(Me.lblMesBalance18)
-        Me.gpMes.Controls.Add(Me.lblMesDifencia10)
-        Me.gpMes.Controls.Add(Me.lblMesBalance19)
-        Me.gpMes.Controls.Add(Me.lblMesDifencia20)
-        Me.gpMes.Controls.Add(Me.lblMesBalance20)
-        Me.gpMes.Controls.Add(Me.lblMesBalance21)
-        Me.gpMes.Controls.Add(Me.lblMesDifencia16)
-        Me.gpMes.Controls.Add(Me.lblMesBalance22)
-        Me.gpMes.Controls.Add(Me.lblMesDifencia08)
-        Me.gpMes.Controls.Add(Me.lblMesBalance23)
-        Me.gpMes.Controls.Add(Me.lblMesDifencia19)
-        Me.gpMes.Controls.Add(Me.lblMesBalance24)
-        Me.gpMes.Controls.Add(Me.lblMesDifencia04)
-        Me.gpMes.Controls.Add(Me.Label74)
-        Me.gpMes.Controls.Add(Me.lblMesDifencia14)
-        Me.gpMes.Controls.Add(Me.lblMesBalance25)
-        Me.gpMes.Controls.Add(Me.lblMesDifencia07)
-        Me.gpMes.Controls.Add(Me.Label73)
-        Me.gpMes.Controls.Add(Me.lblMesDifencia13)
-        Me.gpMes.Controls.Add(Me.lblMesBalance26)
-        Me.gpMes.Controls.Add(Me.lblMesDifencia02)
-        Me.gpMes.Controls.Add(Me.Label72)
-        Me.gpMes.Controls.Add(Me.lblMesDifencia01)
-        Me.gpMes.Controls.Add(Me.lblMesBalance27)
-        Me.gpMes.Controls.Add(Me.Label71)
-        Me.gpMes.Controls.Add(Me.lblMesBalance28)
-        Me.gpMes.Controls.Add(Me.Label70)
-        Me.gpMes.Controls.Add(Me.lblMesBalance29)
-        Me.gpMes.Controls.Add(Me.Label69)
-        Me.gpMes.Controls.Add(Me.lblMesBalance30)
-        Me.gpMes.Controls.Add(Me.lblMesPrecio31)
-        Me.gpMes.Controls.Add(Me.Label68)
-        Me.gpMes.Controls.Add(Me.lblMesPrecio30)
-        Me.gpMes.Controls.Add(Me.lblMesBalance31)
-        Me.gpMes.Controls.Add(Me.lblMesPrecio29)
-        Me.gpMes.Controls.Add(Me.Label67)
-        Me.gpMes.Controls.Add(Me.lblMesPrecio28)
-        Me.gpMes.Controls.Add(Me.Label66)
-        Me.gpMes.Controls.Add(Me.lblMesPrecio27)
-        Me.gpMes.Controls.Add(Me.Label65)
-        Me.gpMes.Controls.Add(Me.lblMesPrecio26)
-        Me.gpMes.Controls.Add(Me.Label64)
-        Me.gpMes.Controls.Add(Me.lblMesPrecio25)
-        Me.gpMes.Controls.Add(Me.Label63)
-        Me.gpMes.Controls.Add(Me.lblMesPrecio24)
-        Me.gpMes.Controls.Add(Me.Label62)
-        Me.gpMes.Controls.Add(Me.lblMesPrecio23)
-        Me.gpMes.Controls.Add(Me.Label61)
-        Me.gpMes.Controls.Add(Me.lblMesPrecio22)
-        Me.gpMes.Controls.Add(Me.Label60)
-        Me.gpMes.Controls.Add(Me.lblMesPrecio21)
-        Me.gpMes.Controls.Add(Me.Label59)
-        Me.gpMes.Controls.Add(Me.lblMesPrecio20)
-        Me.gpMes.Controls.Add(Me.Label58)
-        Me.gpMes.Controls.Add(Me.lblMesPrecio19)
-        Me.gpMes.Controls.Add(Me.Label57)
-        Me.gpMes.Controls.Add(Me.lblMesPrecio18)
-        Me.gpMes.Controls.Add(Me.Label56)
-        Me.gpMes.Controls.Add(Me.lblMesPrecio17)
-        Me.gpMes.Controls.Add(Me.Label55)
-        Me.gpMes.Controls.Add(Me.lblMesPrecio16)
-        Me.gpMes.Controls.Add(Me.Label54)
-        Me.gpMes.Controls.Add(Me.lblMesPrecio15)
-        Me.gpMes.Controls.Add(Me.Label53)
-        Me.gpMes.Controls.Add(Me.lblMesPrecio14)
-        Me.gpMes.Controls.Add(Me.Label52)
-        Me.gpMes.Controls.Add(Me.lblMesPrecio13)
-        Me.gpMes.Controls.Add(Me.Label100)
-        Me.gpMes.Controls.Add(Me.lblMesPrecio12)
-        Me.gpMes.Controls.Add(Me.lblMesPrecio01)
-        Me.gpMes.Controls.Add(Me.lblMesPrecio11)
-        Me.gpMes.Controls.Add(Me.Label103)
-        Me.gpMes.Controls.Add(Me.lblMesPrecio10)
-        Me.gpMes.Controls.Add(Me.lblMesPrecio02)
-        Me.gpMes.Controls.Add(Me.lblMesPrecio09)
-        Me.gpMes.Controls.Add(Me.Label106)
-        Me.gpMes.Controls.Add(Me.lblMesPrecio08)
-        Me.gpMes.Controls.Add(Me.lblMesPrecio03)
-        Me.gpMes.Controls.Add(Me.lbl31)
-        Me.gpMes.Controls.Add(Me.Label109)
-        Me.gpMes.Controls.Add(Me.lblMesPrecio07)
-        Me.gpMes.Controls.Add(Me.lblMesPrecio04)
-        Me.gpMes.Controls.Add(Me.lbl30)
-        Me.gpMes.Controls.Add(Me.lbl28)
-        Me.gpMes.Controls.Add(Me.lblMesPrecio06)
-        Me.gpMes.Controls.Add(Me.lblMesPrecio05)
-        Me.gpMes.Controls.Add(Me.lbl29)
-        Me.gpMes.Controls.Add(Me.lblMesDaily)
-        Me.gpMes.Controls.Add(Me.lblTotalMes)
-        Me.gpMes.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.gpMes.Location = New System.Drawing.Point(578, 9)
-        Me.gpMes.Name = "gpMes"
-        Me.gpMes.Size = New System.Drawing.Size(333, 593)
-        Me.gpMes.TabIndex = 146
-        Me.gpMes.TabStop = False
-        Me.gpMes.Text = "Balance Month"
-        '
-        'Chart3
-        '
-        ChartArea3.Name = "ChartArea1"
-        Me.Chart3.ChartAreas.Add(ChartArea3)
-        Legend3.Name = "Legend1"
-        Me.Chart3.Legends.Add(Legend3)
-        Me.Chart3.Location = New System.Drawing.Point(893, 1)
-        Me.Chart3.Name = "Chart3"
-        Series3.ChartArea = "ChartArea1"
-        Series3.Color = System.Drawing.Color.Fuchsia
-        Series3.EmptyPointStyle.IsValueShownAsLabel = True
-        Series3.EmptyPointStyle.IsVisibleInLegend = False
-        Series3.IsVisibleInLegend = False
-        Series3.LabelFormat = "0.00"
-        Series3.Legend = "Legend1"
-        Series3.Name = "Series1"
-        Series3.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Series3.YValuesPerPoint = 4
-        Me.Chart3.Series.Add(Series3)
-        Me.Chart3.Size = New System.Drawing.Size(492, 277)
-        Me.Chart3.TabIndex = 147
-        Me.Chart3.Text = "Chart3"
         '
         'lblBalanceHora10
         '
@@ -2419,6 +1930,475 @@ Partial Class Form1
         Me.lblBalanceHora08.Size = New System.Drawing.Size(111, 18)
         Me.lblBalanceHora08.TabIndex = 12
         Me.lblBalanceHora08.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora08
+        '
+        'lblMesDifencia01
+        '
+        Me.lblMesDifencia01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesDifencia01.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesDifencia01.Location = New System.Drawing.Point(219, 25)
+        Me.lblMesDifencia01.Name = "lblMesDifencia01"
+        Me.lblMesDifencia01.Size = New System.Drawing.Size(100, 18)
+        Me.lblMesDifencia01.TabIndex = 144
+        Me.lblMesDifencia01.Text = "0"
+        '
+        'lblMesDifencia02
+        '
+        Me.lblMesDifencia02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesDifencia02.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesDifencia02.Location = New System.Drawing.Point(219, 42)
+        Me.lblMesDifencia02.Name = "lblMesDifencia02"
+        Me.lblMesDifencia02.Size = New System.Drawing.Size(100, 18)
+        Me.lblMesDifencia02.TabIndex = 144
+        Me.lblMesDifencia02.Text = "0"
+        '
+        'lblMesDifencia03
+        '
+        Me.lblMesDifencia03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesDifencia03.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesDifencia03.Location = New System.Drawing.Point(219, 59)
+        Me.lblMesDifencia03.Name = "lblMesDifencia03"
+        Me.lblMesDifencia03.Size = New System.Drawing.Size(100, 18)
+        Me.lblMesDifencia03.TabIndex = 144
+        Me.lblMesDifencia03.Text = "0"
+        '
+        'lblMesDifencia04
+        '
+        Me.lblMesDifencia04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesDifencia04.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesDifencia04.Location = New System.Drawing.Point(219, 76)
+        Me.lblMesDifencia04.Name = "lblMesDifencia04"
+        Me.lblMesDifencia04.Size = New System.Drawing.Size(100, 18)
+        Me.lblMesDifencia04.TabIndex = 144
+        Me.lblMesDifencia04.Text = "0"
+        '
+        'lblMesDifencia05
+        '
+        Me.lblMesDifencia05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesDifencia05.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesDifencia05.Location = New System.Drawing.Point(219, 93)
+        Me.lblMesDifencia05.Name = "lblMesDifencia05"
+        Me.lblMesDifencia05.Size = New System.Drawing.Size(100, 18)
+        Me.lblMesDifencia05.TabIndex = 144
+        Me.lblMesDifencia05.Text = "0"
+        '
+        'lblMesDifencia06
+        '
+        Me.lblMesDifencia06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesDifencia06.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesDifencia06.Location = New System.Drawing.Point(219, 110)
+        Me.lblMesDifencia06.Name = "lblMesDifencia06"
+        Me.lblMesDifencia06.Size = New System.Drawing.Size(100, 18)
+        Me.lblMesDifencia06.TabIndex = 144
+        Me.lblMesDifencia06.Text = "0"
+        '
+        'lblMesDifencia07
+        '
+        Me.lblMesDifencia07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesDifencia07.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesDifencia07.Location = New System.Drawing.Point(219, 127)
+        Me.lblMesDifencia07.Name = "lblMesDifencia07"
+        Me.lblMesDifencia07.Size = New System.Drawing.Size(100, 18)
+        Me.lblMesDifencia07.TabIndex = 144
+        Me.lblMesDifencia07.Text = "0"
+        '
+        'lblMesDifencia08
+        '
+        Me.lblMesDifencia08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesDifencia08.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesDifencia08.Location = New System.Drawing.Point(219, 144)
+        Me.lblMesDifencia08.Name = "lblMesDifencia08"
+        Me.lblMesDifencia08.Size = New System.Drawing.Size(100, 18)
+        Me.lblMesDifencia08.TabIndex = 144
+        Me.lblMesDifencia08.Text = "0"
+        '
+        'lblMesDifencia10
+        '
+        Me.lblMesDifencia10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesDifencia10.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesDifencia10.Location = New System.Drawing.Point(219, 178)
+        Me.lblMesDifencia10.Name = "lblMesDifencia10"
+        Me.lblMesDifencia10.Size = New System.Drawing.Size(100, 18)
+        Me.lblMesDifencia10.TabIndex = 144
+        Me.lblMesDifencia10.Text = "0"
+        '
+        'lblMesDifencia09
+        '
+        Me.lblMesDifencia09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesDifencia09.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesDifencia09.Location = New System.Drawing.Point(219, 161)
+        Me.lblMesDifencia09.Name = "lblMesDifencia09"
+        Me.lblMesDifencia09.Size = New System.Drawing.Size(100, 18)
+        Me.lblMesDifencia09.TabIndex = 144
+        Me.lblMesDifencia09.Text = "0"
+        '
+        'lblMesDifencia11
+        '
+        Me.lblMesDifencia11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesDifencia11.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesDifencia11.Location = New System.Drawing.Point(219, 195)
+        Me.lblMesDifencia11.Name = "lblMesDifencia11"
+        Me.lblMesDifencia11.Size = New System.Drawing.Size(100, 18)
+        Me.lblMesDifencia11.TabIndex = 144
+        Me.lblMesDifencia11.Text = "0"
+        '
+        'lblMesDifencia12
+        '
+        Me.lblMesDifencia12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesDifencia12.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesDifencia12.Location = New System.Drawing.Point(219, 212)
+        Me.lblMesDifencia12.Name = "lblMesDifencia12"
+        Me.lblMesDifencia12.Size = New System.Drawing.Size(100, 18)
+        Me.lblMesDifencia12.TabIndex = 144
+        Me.lblMesDifencia12.Text = "0"
+        '
+        'lblMesDifencia13
+        '
+        Me.lblMesDifencia13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesDifencia13.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesDifencia13.Location = New System.Drawing.Point(219, 229)
+        Me.lblMesDifencia13.Name = "lblMesDifencia13"
+        Me.lblMesDifencia13.Size = New System.Drawing.Size(100, 18)
+        Me.lblMesDifencia13.TabIndex = 144
+        Me.lblMesDifencia13.Text = "0"
+        '
+        'lblMesDifencia14
+        '
+        Me.lblMesDifencia14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesDifencia14.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesDifencia14.Location = New System.Drawing.Point(219, 246)
+        Me.lblMesDifencia14.Name = "lblMesDifencia14"
+        Me.lblMesDifencia14.Size = New System.Drawing.Size(100, 18)
+        Me.lblMesDifencia14.TabIndex = 144
+        Me.lblMesDifencia14.Text = "0"
+        '
+        'lblMesDifencia19
+        '
+        Me.lblMesDifencia19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesDifencia19.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesDifencia19.Location = New System.Drawing.Point(219, 331)
+        Me.lblMesDifencia19.Name = "lblMesDifencia19"
+        Me.lblMesDifencia19.Size = New System.Drawing.Size(100, 18)
+        Me.lblMesDifencia19.TabIndex = 144
+        Me.lblMesDifencia19.Text = "0"
+        '
+        'lblMesDifencia16
+        '
+        Me.lblMesDifencia16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesDifencia16.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesDifencia16.Location = New System.Drawing.Point(219, 280)
+        Me.lblMesDifencia16.Name = "lblMesDifencia16"
+        Me.lblMesDifencia16.Size = New System.Drawing.Size(100, 18)
+        Me.lblMesDifencia16.TabIndex = 144
+        Me.lblMesDifencia16.Text = "0"
+        '
+        'lblMesDifencia20
+        '
+        Me.lblMesDifencia20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesDifencia20.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesDifencia20.Location = New System.Drawing.Point(219, 348)
+        Me.lblMesDifencia20.Name = "lblMesDifencia20"
+        Me.lblMesDifencia20.Size = New System.Drawing.Size(100, 18)
+        Me.lblMesDifencia20.TabIndex = 144
+        Me.lblMesDifencia20.Text = "0"
+        '
+        'lblMesDifencia15
+        '
+        Me.lblMesDifencia15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesDifencia15.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesDifencia15.Location = New System.Drawing.Point(219, 263)
+        Me.lblMesDifencia15.Name = "lblMesDifencia15"
+        Me.lblMesDifencia15.Size = New System.Drawing.Size(100, 18)
+        Me.lblMesDifencia15.TabIndex = 144
+        Me.lblMesDifencia15.Text = "0"
+        '
+        'lblMesDifencia22
+        '
+        Me.lblMesDifencia22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesDifencia22.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesDifencia22.Location = New System.Drawing.Point(219, 382)
+        Me.lblMesDifencia22.Name = "lblMesDifencia22"
+        Me.lblMesDifencia22.Size = New System.Drawing.Size(100, 18)
+        Me.lblMesDifencia22.TabIndex = 144
+        Me.lblMesDifencia22.Text = "0"
+        '
+        'lblMesDifencia17
+        '
+        Me.lblMesDifencia17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesDifencia17.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesDifencia17.Location = New System.Drawing.Point(219, 297)
+        Me.lblMesDifencia17.Name = "lblMesDifencia17"
+        Me.lblMesDifencia17.Size = New System.Drawing.Size(100, 18)
+        Me.lblMesDifencia17.TabIndex = 144
+        Me.lblMesDifencia17.Text = "0"
+        '
+        'lblMesDifencia21
+        '
+        Me.lblMesDifencia21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesDifencia21.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesDifencia21.Location = New System.Drawing.Point(219, 365)
+        Me.lblMesDifencia21.Name = "lblMesDifencia21"
+        Me.lblMesDifencia21.Size = New System.Drawing.Size(100, 18)
+        Me.lblMesDifencia21.TabIndex = 144
+        Me.lblMesDifencia21.Text = "0"
+        '
+        'lblMesDifencia18
+        '
+        Me.lblMesDifencia18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesDifencia18.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesDifencia18.Location = New System.Drawing.Point(219, 314)
+        Me.lblMesDifencia18.Name = "lblMesDifencia18"
+        Me.lblMesDifencia18.Size = New System.Drawing.Size(100, 18)
+        Me.lblMesDifencia18.TabIndex = 144
+        Me.lblMesDifencia18.Text = "0"
+        '
+        'lblMesDifencia23
+        '
+        Me.lblMesDifencia23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesDifencia23.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesDifencia23.Location = New System.Drawing.Point(219, 399)
+        Me.lblMesDifencia23.Name = "lblMesDifencia23"
+        Me.lblMesDifencia23.Size = New System.Drawing.Size(100, 18)
+        Me.lblMesDifencia23.TabIndex = 144
+        Me.lblMesDifencia23.Text = "0"
+        '
+        'lblMesDifencia24
+        '
+        Me.lblMesDifencia24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesDifencia24.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesDifencia24.Location = New System.Drawing.Point(219, 416)
+        Me.lblMesDifencia24.Name = "lblMesDifencia24"
+        Me.lblMesDifencia24.Size = New System.Drawing.Size(100, 18)
+        Me.lblMesDifencia24.TabIndex = 144
+        Me.lblMesDifencia24.Text = "0"
+        '
+        'lblMesDifencia25
+        '
+        Me.lblMesDifencia25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesDifencia25.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesDifencia25.Location = New System.Drawing.Point(219, 433)
+        Me.lblMesDifencia25.Name = "lblMesDifencia25"
+        Me.lblMesDifencia25.Size = New System.Drawing.Size(100, 18)
+        Me.lblMesDifencia25.TabIndex = 144
+        Me.lblMesDifencia25.Text = "0"
+        '
+        'lblMesDifencia27
+        '
+        Me.lblMesDifencia27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesDifencia27.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesDifencia27.Location = New System.Drawing.Point(219, 467)
+        Me.lblMesDifencia27.Name = "lblMesDifencia27"
+        Me.lblMesDifencia27.Size = New System.Drawing.Size(100, 18)
+        Me.lblMesDifencia27.TabIndex = 144
+        Me.lblMesDifencia27.Text = "0"
+        '
+        'lblMesDifencia26
+        '
+        Me.lblMesDifencia26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesDifencia26.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesDifencia26.Location = New System.Drawing.Point(219, 450)
+        Me.lblMesDifencia26.Name = "lblMesDifencia26"
+        Me.lblMesDifencia26.Size = New System.Drawing.Size(100, 18)
+        Me.lblMesDifencia26.TabIndex = 144
+        Me.lblMesDifencia26.Text = "0"
+        '
+        'lblMesDifencia28
+        '
+        Me.lblMesDifencia28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesDifencia28.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesDifencia28.Location = New System.Drawing.Point(219, 484)
+        Me.lblMesDifencia28.Name = "lblMesDifencia28"
+        Me.lblMesDifencia28.Size = New System.Drawing.Size(100, 18)
+        Me.lblMesDifencia28.TabIndex = 144
+        Me.lblMesDifencia28.Text = "0"
+        '
+        'lblMesDifencia29
+        '
+        Me.lblMesDifencia29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesDifencia29.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesDifencia29.Location = New System.Drawing.Point(219, 501)
+        Me.lblMesDifencia29.Name = "lblMesDifencia29"
+        Me.lblMesDifencia29.Size = New System.Drawing.Size(100, 18)
+        Me.lblMesDifencia29.TabIndex = 144
+        Me.lblMesDifencia29.Text = "0"
+        '
+        'lblMesDifencia30
+        '
+        Me.lblMesDifencia30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesDifencia30.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesDifencia30.Location = New System.Drawing.Point(219, 518)
+        Me.lblMesDifencia30.Name = "lblMesDifencia30"
+        Me.lblMesDifencia30.Size = New System.Drawing.Size(100, 18)
+        Me.lblMesDifencia30.TabIndex = 144
+        Me.lblMesDifencia30.Text = "0"
+        '
+        'lblMesDifencia31
+        '
+        Me.lblMesDifencia31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesDifencia31.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesDifencia31.Location = New System.Drawing.Point(219, 535)
+        Me.lblMesDifencia31.Name = "lblMesDifencia31"
+        Me.lblMesDifencia31.Size = New System.Drawing.Size(100, 18)
+        Me.lblMesDifencia31.TabIndex = 144
+        Me.lblMesDifencia31.Text = "0"
+        '
+        'lblTotalMes
+        '
+        Me.lblTotalMes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTotalMes.Font = New System.Drawing.Font("Duco", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTotalMes.ForeColor = System.Drawing.Color.Blue
+        Me.lblTotalMes.Location = New System.Drawing.Point(147, 549)
+        Me.lblTotalMes.Name = "lblTotalMes"
+        Me.lblTotalMes.Size = New System.Drawing.Size(172, 28)
+        Me.lblTotalMes.TabIndex = 143
+        Me.lblTotalMes.Text = "0"
+        Me.lblTotalMes.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'lblMesDaily
+        '
+        Me.lblMesDaily.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesDaily.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.lblMesDaily.Location = New System.Drawing.Point(56, 554)
+        Me.lblMesDaily.Name = "lblMesDaily"
+        Me.lblMesDaily.Size = New System.Drawing.Size(91, 18)
+        Me.lblMesDaily.TabIndex = 144
+        Me.lblMesDaily.Text = "Monthly Total:"
+        Me.lblMesDaily.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'gpMes
+        '
+        Me.gpMes.Controls.Add(Me.lblMesDifencia03)
+        Me.gpMes.Controls.Add(Me.lblMesDifencia31)
+        Me.gpMes.Controls.Add(Me.lblMesDifencia30)
+        Me.gpMes.Controls.Add(Me.lblMesBalance01)
+        Me.gpMes.Controls.Add(Me.lblMesDifencia29)
+        Me.gpMes.Controls.Add(Me.lblMesBalance02)
+        Me.gpMes.Controls.Add(Me.lblMesDifencia28)
+        Me.gpMes.Controls.Add(Me.lblMesBalance03)
+        Me.gpMes.Controls.Add(Me.lblMesDifencia24)
+        Me.gpMes.Controls.Add(Me.lblMesBalance04)
+        Me.gpMes.Controls.Add(Me.lblMesDifencia23)
+        Me.gpMes.Controls.Add(Me.lblMesBalance05)
+        Me.gpMes.Controls.Add(Me.lblMesDifencia12)
+        Me.gpMes.Controls.Add(Me.lblMesBalance06)
+        Me.gpMes.Controls.Add(Me.lblMesDifencia18)
+        Me.gpMes.Controls.Add(Me.lblMesBalance07)
+        Me.gpMes.Controls.Add(Me.lblMesDifencia26)
+        Me.gpMes.Controls.Add(Me.lblMesBalance08)
+        Me.gpMes.Controls.Add(Me.lblMesDifencia11)
+        Me.gpMes.Controls.Add(Me.lblMesBalance09)
+        Me.gpMes.Controls.Add(Me.lblMesDifencia21)
+        Me.gpMes.Controls.Add(Me.lblMesBalance10)
+        Me.gpMes.Controls.Add(Me.lblMesDifencia06)
+        Me.gpMes.Controls.Add(Me.lblMesBalance11)
+        Me.gpMes.Controls.Add(Me.lblMesDifencia17)
+        Me.gpMes.Controls.Add(Me.lblMesBalance12)
+        Me.gpMes.Controls.Add(Me.lblMesDifencia27)
+        Me.gpMes.Controls.Add(Me.lblMesBalance13)
+        Me.gpMes.Controls.Add(Me.lblMesDifencia09)
+        Me.gpMes.Controls.Add(Me.lblMesBalance14)
+        Me.gpMes.Controls.Add(Me.lblMesDifencia22)
+        Me.gpMes.Controls.Add(Me.lblMesBalance15)
+        Me.gpMes.Controls.Add(Me.lblMesDifencia05)
+        Me.gpMes.Controls.Add(Me.lblMesBalance16)
+        Me.gpMes.Controls.Add(Me.lblMesDifencia15)
+        Me.gpMes.Controls.Add(Me.lblMesBalance17)
+        Me.gpMes.Controls.Add(Me.lblMesDifencia25)
+        Me.gpMes.Controls.Add(Me.lblMesBalance18)
+        Me.gpMes.Controls.Add(Me.lblMesDifencia10)
+        Me.gpMes.Controls.Add(Me.lblMesBalance19)
+        Me.gpMes.Controls.Add(Me.lblMesDifencia20)
+        Me.gpMes.Controls.Add(Me.lblMesBalance20)
+        Me.gpMes.Controls.Add(Me.lblMesBalance21)
+        Me.gpMes.Controls.Add(Me.lblMesDifencia16)
+        Me.gpMes.Controls.Add(Me.lblMesBalance22)
+        Me.gpMes.Controls.Add(Me.lblMesDifencia08)
+        Me.gpMes.Controls.Add(Me.lblMesBalance23)
+        Me.gpMes.Controls.Add(Me.lblMesDifencia19)
+        Me.gpMes.Controls.Add(Me.lblMesBalance24)
+        Me.gpMes.Controls.Add(Me.lblMesDifencia04)
+        Me.gpMes.Controls.Add(Me.Label74)
+        Me.gpMes.Controls.Add(Me.lblMesDifencia14)
+        Me.gpMes.Controls.Add(Me.lblMesBalance25)
+        Me.gpMes.Controls.Add(Me.lblMesDifencia07)
+        Me.gpMes.Controls.Add(Me.Label73)
+        Me.gpMes.Controls.Add(Me.lblMesDifencia13)
+        Me.gpMes.Controls.Add(Me.lblMesBalance26)
+        Me.gpMes.Controls.Add(Me.lblMesDifencia02)
+        Me.gpMes.Controls.Add(Me.Label72)
+        Me.gpMes.Controls.Add(Me.lblMesDifencia01)
+        Me.gpMes.Controls.Add(Me.lblMesBalance27)
+        Me.gpMes.Controls.Add(Me.Label71)
+        Me.gpMes.Controls.Add(Me.lblMesBalance28)
+        Me.gpMes.Controls.Add(Me.Label70)
+        Me.gpMes.Controls.Add(Me.lblMesBalance29)
+        Me.gpMes.Controls.Add(Me.Label69)
+        Me.gpMes.Controls.Add(Me.lblMesBalance30)
+        Me.gpMes.Controls.Add(Me.lblMesPrecio31)
+        Me.gpMes.Controls.Add(Me.Label68)
+        Me.gpMes.Controls.Add(Me.lblMesPrecio30)
+        Me.gpMes.Controls.Add(Me.lblMesBalance31)
+        Me.gpMes.Controls.Add(Me.lblMesPrecio29)
+        Me.gpMes.Controls.Add(Me.Label67)
+        Me.gpMes.Controls.Add(Me.lblMesPrecio28)
+        Me.gpMes.Controls.Add(Me.Label66)
+        Me.gpMes.Controls.Add(Me.lblMesPrecio27)
+        Me.gpMes.Controls.Add(Me.Label65)
+        Me.gpMes.Controls.Add(Me.lblMesPrecio26)
+        Me.gpMes.Controls.Add(Me.Label64)
+        Me.gpMes.Controls.Add(Me.lblMesPrecio25)
+        Me.gpMes.Controls.Add(Me.Label63)
+        Me.gpMes.Controls.Add(Me.lblMesPrecio24)
+        Me.gpMes.Controls.Add(Me.Label62)
+        Me.gpMes.Controls.Add(Me.lblMesPrecio23)
+        Me.gpMes.Controls.Add(Me.Label61)
+        Me.gpMes.Controls.Add(Me.lblMesPrecio22)
+        Me.gpMes.Controls.Add(Me.Label60)
+        Me.gpMes.Controls.Add(Me.lblMesPrecio21)
+        Me.gpMes.Controls.Add(Me.Label59)
+        Me.gpMes.Controls.Add(Me.lblMesPrecio20)
+        Me.gpMes.Controls.Add(Me.Label58)
+        Me.gpMes.Controls.Add(Me.lblMesPrecio19)
+        Me.gpMes.Controls.Add(Me.Label57)
+        Me.gpMes.Controls.Add(Me.lblMesPrecio18)
+        Me.gpMes.Controls.Add(Me.Label56)
+        Me.gpMes.Controls.Add(Me.lblMesPrecio17)
+        Me.gpMes.Controls.Add(Me.Label55)
+        Me.gpMes.Controls.Add(Me.lblMesPrecio16)
+        Me.gpMes.Controls.Add(Me.Label54)
+        Me.gpMes.Controls.Add(Me.lblMesPrecio15)
+        Me.gpMes.Controls.Add(Me.Label53)
+        Me.gpMes.Controls.Add(Me.lblMesPrecio14)
+        Me.gpMes.Controls.Add(Me.Label52)
+        Me.gpMes.Controls.Add(Me.lblMesPrecio13)
+        Me.gpMes.Controls.Add(Me.Label100)
+        Me.gpMes.Controls.Add(Me.lblMesPrecio12)
+        Me.gpMes.Controls.Add(Me.lblMesPrecio01)
+        Me.gpMes.Controls.Add(Me.lblMesPrecio11)
+        Me.gpMes.Controls.Add(Me.Label103)
+        Me.gpMes.Controls.Add(Me.lblMesPrecio10)
+        Me.gpMes.Controls.Add(Me.lblMesPrecio02)
+        Me.gpMes.Controls.Add(Me.lblMesPrecio09)
+        Me.gpMes.Controls.Add(Me.Label106)
+        Me.gpMes.Controls.Add(Me.lblMesPrecio08)
+        Me.gpMes.Controls.Add(Me.lblMesPrecio03)
+        Me.gpMes.Controls.Add(Me.lbl31)
+        Me.gpMes.Controls.Add(Me.Label109)
+        Me.gpMes.Controls.Add(Me.lblMesPrecio07)
+        Me.gpMes.Controls.Add(Me.lblMesPrecio04)
+        Me.gpMes.Controls.Add(Me.lbl30)
+        Me.gpMes.Controls.Add(Me.lbl28)
+        Me.gpMes.Controls.Add(Me.lblMesPrecio06)
+        Me.gpMes.Controls.Add(Me.lblMesPrecio05)
+        Me.gpMes.Controls.Add(Me.lbl29)
+        Me.gpMes.Controls.Add(Me.lblMesDaily)
+        Me.gpMes.Controls.Add(Me.lblTotalMes)
+        Me.gpMes.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gpMes.Location = New System.Drawing.Point(578, 9)
+        Me.gpMes.Name = "gpMes"
+        Me.gpMes.Size = New System.Drawing.Size(333, 593)
+        Me.gpMes.TabIndex = 146
+        Me.gpMes.TabStop = False
+        Me.gpMes.Text = "Balance Month"
         '
         'lblMesBalance01
         '
@@ -3102,12 +3082,69 @@ Partial Class Form1
         Me.lblMesPrecio05.TabIndex = 112
         Me.lblMesPrecio05.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio05
         '
+        'Chart3
+        '
+        ChartArea3.Name = "ChartArea1"
+        Me.Chart3.ChartAreas.Add(ChartArea3)
+        Legend3.Name = "Legend1"
+        Me.Chart3.Legends.Add(Legend3)
+        Me.Chart3.Location = New System.Drawing.Point(923, 11)
+        Me.Chart3.Name = "Chart3"
+        Series3.ChartArea = "ChartArea1"
+        Series3.Color = System.Drawing.Color.Fuchsia
+        Series3.EmptyPointStyle.IsValueShownAsLabel = True
+        Series3.EmptyPointStyle.IsVisibleInLegend = False
+        Series3.IsVisibleInLegend = False
+        Series3.LabelFormat = "0.00"
+        Series3.Legend = "Legend1"
+        Series3.Name = "Series1"
+        Series3.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Series3.YValuesPerPoint = 4
+        Me.Chart3.Series.Add(Series3)
+        Me.Chart3.Size = New System.Drawing.Size(457, 204)
+        Me.Chart3.TabIndex = 147
+        Me.Chart3.Text = "Chart3"
+        '
+        'Chart4
+        '
+        ChartArea4.AxisX.MajorGrid.Interval = 0R
+        ChartArea4.AxisX.MajorGrid.IntervalOffset = 0R
+        ChartArea4.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
+        ChartArea4.Name = "ChartArea1"
+        Me.Chart4.ChartAreas.Add(ChartArea4)
+        Legend4.Name = "Legend1"
+        Me.Chart4.Legends.Add(Legend4)
+        Me.Chart4.Location = New System.Drawing.Point(-51, 599)
+        Me.Chart4.Name = "Chart4"
+        Series4.ChartArea = "ChartArea1"
+        Series4.Color = System.Drawing.Color.Lime
+        Series4.IsVisibleInLegend = False
+        Series4.IsXValueIndexed = True
+        Series4.Legend = "Legend1"
+        Series4.Name = "Series1"
+        Series4.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[String]
+        Series4.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
+        Series5.ChartArea = "ChartArea1"
+        Series5.Color = System.Drawing.Color.Blue
+        Series5.IsVisibleInLegend = False
+        Series5.IsXValueIndexed = True
+        Series5.Legend = "Legend1"
+        Series5.Name = "Series2"
+        Series5.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[String]
+        Series5.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
+        Me.Chart4.Series.Add(Series4)
+        Me.Chart4.Series.Add(Series5)
+        Me.Chart4.Size = New System.Drawing.Size(1471, 138)
+        Me.Chart4.TabIndex = 148
+        Me.Chart4.Text = "Chart4"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1345, 735)
+        Me.ClientSize = New System.Drawing.Size(1432, 735)
+        Me.Controls.Add(Me.Chart4)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.ckEstadisticas)
@@ -3117,9 +3154,9 @@ Partial Class Form1
         Me.Controls.Add(Me.lstBalanceTiempoReal)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.gpMes)
+        Me.Controls.Add(Me.Chart3)
         Me.Controls.Add(Me.Chart2)
         Me.Controls.Add(Me.Chart1)
-        Me.Controls.Add(Me.Chart3)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
         Me.Text = "Estadisticas Ducos"
@@ -3132,6 +3169,7 @@ Partial Class Form1
         Me.GroupBox3.ResumeLayout(False)
         Me.gpMes.ResumeLayout(False)
         CType(Me.Chart3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Chart4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -3376,4 +3414,5 @@ Partial Class Form1
     Friend WithEvents lblMesDaily As Label
     Friend WithEvents gpMes As GroupBox
     Friend WithEvents Chart3 As DataVisualization.Charting.Chart
+    Friend WithEvents Chart4 As DataVisualization.Charting.Chart
 End Class

@@ -38,6 +38,9 @@ Partial Class Form1
         Dim ChartArea5 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
         Dim Legend5 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
         Dim Series5 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea6 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend6 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series6 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.lstBalanceTiempoReal = New System.Windows.Forms.ListBox()
@@ -281,6 +284,7 @@ Partial Class Form1
         Me.Chart5 = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.Chart3 = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.Chart4 = New System.Windows.Forms.DataVisualization.Charting.Chart()
+        Me.Chart6 = New System.Windows.Forms.DataVisualization.Charting.Chart()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Chart2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -290,6 +294,7 @@ Partial Class Form1
         CType(Me.Chart5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Chart3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Chart4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Chart6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Timer1
@@ -931,6 +936,7 @@ Partial Class Form1
         Series1.IsVisibleInLegend = False
         Series1.Legend = "Legend1"
         Series1.Name = "Series1"
+        Series1.ToolTip = "#VAL"
         Series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
         Me.Chart1.Series.Add(Series1)
         Me.Chart1.Size = New System.Drawing.Size(490, 204)
@@ -950,6 +956,7 @@ Partial Class Form1
         Series2.IsVisibleInLegend = False
         Series2.Legend = "Legend1"
         Series2.Name = "Series1"
+        Series2.ToolTip = "#VAL"
         Series2.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
         Me.Chart2.Series.Add(Series2)
         Me.Chart2.Size = New System.Drawing.Size(457, 204)
@@ -3087,6 +3094,7 @@ Partial Class Form1
         Series3.IsVisibleInLegend = False
         Series3.Legend = "Legend1"
         Series3.Name = "Series1"
+        Series3.ToolTip = "#VAL"
         Series3.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[String]
         Series3.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
         Me.Chart5.Series.Add(Series3)
@@ -3109,6 +3117,7 @@ Partial Class Form1
         Series4.LabelFormat = "0.00"
         Series4.Legend = "Legend1"
         Series4.Name = "Series1"
+        Series4.ToolTip = "#VAL"
         Series4.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
         Series4.YValuesPerPoint = 4
         Me.Chart3.Series.Add(Series4)
@@ -3132,18 +3141,43 @@ Partial Class Form1
         Series5.IsVisibleInLegend = False
         Series5.Legend = "Legend1"
         Series5.Name = "Series1"
+        Series5.ToolTip = "#VAL"
         Series5.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[String]
         Series5.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
         Me.Chart4.Series.Add(Series5)
         Me.Chart4.Size = New System.Drawing.Size(727, 138)
         Me.Chart4.TabIndex = 150
         '
+        'Chart6
+        '
+        ChartArea6.AxisX.MajorGrid.Interval = 0R
+        ChartArea6.AxisX.MajorGrid.IntervalOffset = 0R
+        ChartArea6.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
+        ChartArea6.Name = "ChartArea1"
+        Me.Chart6.ChartAreas.Add(ChartArea6)
+        Legend6.Name = "Legend1"
+        Me.Chart6.Legends.Add(Legend6)
+        Me.Chart6.Location = New System.Drawing.Point(-32, 482)
+        Me.Chart6.Name = "Chart6"
+        Series6.BorderWidth = 2
+        Series6.ChartArea = "ChartArea1"
+        Series6.Color = System.Drawing.Color.DarkOrchid
+        Series6.IsVisibleInLegend = False
+        Series6.Legend = "Legend1"
+        Series6.Name = "Series1"
+        Series6.ToolTip = "#VAL"
+        Series6.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[String]
+        Series6.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
+        Me.Chart6.Series.Add(Series6)
+        Me.Chart6.Size = New System.Drawing.Size(646, 123)
+        Me.Chart6.TabIndex = 151
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1432, 735)
+        Me.ClientSize = New System.Drawing.Size(1370, 735)
         Me.Controls.Add(Me.lblHora)
         Me.Controls.Add(Me.Chart5)
         Me.Controls.Add(Me.Chart4)
@@ -3157,6 +3191,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Chart3)
         Me.Controls.Add(Me.Chart2)
         Me.Controls.Add(Me.Chart1)
+        Me.Controls.Add(Me.Chart6)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
         Me.Text = "Estadisticas Ducos"
@@ -3171,6 +3206,7 @@ Partial Class Form1
         CType(Me.Chart5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Chart3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Chart4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Chart6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -3416,4 +3452,5 @@ Partial Class Form1
     Friend WithEvents Chart3 As DataVisualization.Charting.Chart
     Friend WithEvents Chart5 As DataVisualization.Charting.Chart
     Friend WithEvents Chart4 As DataVisualization.Charting.Chart
+    Friend WithEvents Chart6 As DataVisualization.Charting.Chart
 End Class

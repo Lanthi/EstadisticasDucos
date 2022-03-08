@@ -4,10 +4,8 @@ Imports System.Web.Script.Serialization
 Public Class Form1
     Dim Remover As Integer = 30
     Dim ContadorRemove As Integer = 0
-    Dim BalanceHora(23) As Decimal
-    Dim PrecioHora(23) As Decimal
     Dim Hora As Integer
-    Dim MInutos As Integer
+    Dim Minutos As Integer = DateAndTime.Minute(Now)
     Dim Segundos As Integer
     Dim ContadorTiempo As Integer = 0
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -153,7 +151,6 @@ Public Class Form1
         Chart3.Series(0).Points.AddXY(TimeValue("21:00"), CDec(lblHoraDiferencia21.Text))
         Chart3.Series(0).Points.AddXY(TimeValue("22:00"), CDec(lblHoraDiferencia22.Text))
         Chart3.Series(0).Points.AddXY(TimeValue("23:00"), CDec(lblHoraDiferencia23.Text))
-
     End Sub
     Private Sub MostrarMes()
         Dim Dato As Date = DateAndTime.Now
@@ -234,7 +231,6 @@ Public Class Form1
                 lblMesDaily.Location = New Point(56, 500)
                 gpMes.Size = New Size(333, 539)
         End Select
-
     End Sub
     Private Sub Actualizar()
         Dim uriString2 As String = "https://server.duinocoin.com/balances/Lanthi"
@@ -245,7 +241,6 @@ Public Class Form1
         Dim Read2 = New StreamReader(Response2.GetResponseStream())
         Dim Raw2 As String = Read2.ReadToEnd()
         Dim dict2 As Object = New JavaScriptSerializer().Deserialize(Of Dictionary(Of String, Object))(Raw2)
-
         Dim uriString As String = "https://server.duinocoin.com/api.json"
         Dim uri As New Uri(uriString)
         Dim Request As HttpWebRequest = HttpWebRequest.Create(uri)
@@ -259,18 +254,11 @@ Public Class Form1
         lblGanado.Text = Format(CDec(txtbalance.Text) * CDec(txtDucoprice.Text), "0000.0000") & "€"
         lstBalanceTiempoReal.Items.Add(txtbalance.Text)
         lstDUCOTiempoReal.Items.Add(txtDucoprice.Text)
-        BalanceHora(Hour(Now)) = txtbalance.Text
-        PrecioHora(Hour(Now)) = txtDucoprice.Text
         ContadorRemove += 1
         If ContadorRemove > Remover Then
             lstBalanceTiempoReal.Items.RemoveAt(0)
             lstDUCOTiempoReal.Items.RemoveAt(0)
         End If
-        '    Chart1.ChartAreas(0).AxisY.Minimum = CDec(txtDucoprice.Text) - 0.000001
-
-        Dim Valor As Decimal = Format(CDec(txtbalance.Text), "00000.000")
-        Dim Valor2 As Decimal = CDec(txtDucoprice.Text)
-
         Select Case Hour(Now)
             Case 0 : If lblBalanceHora00.Text <> 0 Then lblHoraDiferencia00.Text = CDec(txtbalance.Text) - CDec(lblBalanceHora00.Text)
             Case 1 : If lblBalanceHora01.Text <> 0 Then lblHoraDiferencia01.Text = CDec(txtbalance.Text) - CDec(lblBalanceHora01.Text)
@@ -529,7 +517,7 @@ Public Class Form1
         Chart5.Series(0).Points.AddXY("Day 30", CDec(lblMesPrecio30.Text))
         Chart4.Series(0).Points.AddXY("Day 31", CDec(lblMesBalance31.Text))
         Chart5.Series(0).Points.AddXY("Day 31", CDec(lblMesPrecio31.Text))
-
+        Chart6.Series(0).Points.AddXY(DateAndTime.Minute(Now), CDec(txtDucoprice.Text))
     End Sub
     Private Sub Añadir()
         Select Case Hour(Now)
@@ -760,9 +748,6 @@ Public Class Form1
         If lblBalanceHora22.Text <> 0 And lblBalanceHora21.Text <> 0 Then lblHoraDiferencia21.Text = CDec(lblBalanceHora22.Text) - CDec(lblBalanceHora21.Text)
         If lblBalanceHora23.Text <> 0 And lblBalanceHora22.Text <> 0 Then lblHoraDiferencia22.Text = CDec(lblBalanceHora23.Text) - CDec(lblBalanceHora22.Text)
 
-
-
-
         If lblMesBalance01.Text <> 0 And lblMesBalance02.Text <> 0 Then lblMesDifencia01.Text = CDec(lblMesBalance01.Text) - CDec(lblMesBalance01.Text)
         If lblMesBalance02.Text <> 0 And lblMesBalance01.Text <> 0 Then lblMesDifencia01.Text = CDec(lblMesBalance02.Text) - CDec(lblMesBalance01.Text)
         If lblMesBalance03.Text <> 0 And lblMesBalance02.Text <> 0 Then lblMesDifencia02.Text = CDec(lblMesBalance03.Text) - CDec(lblMesBalance02.Text)
@@ -853,6 +838,8 @@ Public Class Form1
         lblTotalMes.Text += CDec(lblMesDifencia29.Text)
         lblTotalMes.Text += CDec(lblMesDifencia30.Text)
         lblTotalMes.Text += CDec(lblMesDifencia31.Text)
+        Chart6.Series(0).Points.Clear()
+        Chart6.Series(0).Points.AddXY(DateAndTime.Minute(Now), CDec(txtDucoprice.Text))
         My.Settings.Save()
     End Sub
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick

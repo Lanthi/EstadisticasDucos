@@ -932,6 +932,7 @@ Partial Class Form1
         Me.Chart1.Name = "Chart1"
         Series1.BorderWidth = 3
         Series1.ChartArea = "ChartArea1"
+        Series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
         Series1.Color = System.Drawing.Color.Lime
         Series1.IsVisibleInLegend = False
         Series1.Legend = "Legend1"
@@ -952,6 +953,7 @@ Partial Class Form1
         Me.Chart2.Name = "Chart2"
         Series2.BorderWidth = 3
         Series2.ChartArea = "ChartArea1"
+        Series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
         Series2.Color = System.Drawing.Color.Red
         Series2.IsVisibleInLegend = False
         Series2.Legend = "Legend1"
@@ -3098,7 +3100,7 @@ Partial Class Form1
         Series3.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[String]
         Series3.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
         Me.Chart5.Series.Add(Series3)
-        Me.Chart5.Size = New System.Drawing.Size(734, 138)
+        Me.Chart5.Size = New System.Drawing.Size(697, 138)
         Me.Chart5.TabIndex = 149
         '
         'Chart3
@@ -3109,7 +3111,9 @@ Partial Class Form1
         Me.Chart3.Legends.Add(Legend4)
         Me.Chart3.Location = New System.Drawing.Point(923, 11)
         Me.Chart3.Name = "Chart3"
+        Series4.BorderWidth = 2
         Series4.ChartArea = "ChartArea1"
+        Series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
         Series4.Color = System.Drawing.Color.Fuchsia
         Series4.EmptyPointStyle.IsValueShownAsLabel = True
         Series4.EmptyPointStyle.IsVisibleInLegend = False
@@ -3178,9 +3182,9 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1370, 735)
-        Me.Controls.Add(Me.lblHora)
         Me.Controls.Add(Me.Chart5)
         Me.Controls.Add(Me.Chart4)
+        Me.Controls.Add(Me.lblHora)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.lblGanado)

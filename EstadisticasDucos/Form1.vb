@@ -1,5 +1,6 @@
 ﻿Imports System.Net
 Imports System.IO
+Imports System.Drawing.Graphics
 Imports System.Web.Script.Serialization
 Public Class Form1
     Dim Remover As Integer = 30
@@ -8,9 +9,20 @@ Public Class Form1
     Dim Minutos As Integer = DateAndTime.Minute(Now)
     Dim Segundos As Integer
     Dim ContadorTiempo As Integer = 0
+    Dim cuadro As Rectangle = New Rectangle(50, 50, 150, 150)
+    Dim trazo As Pen = New Pen(Brushes.Gold, 30)
+    Dim ángulo As Single = 180
+    Dim letras As New Font("Arial", 25)
+    Dim sf As New StringFormat With {.Alignment = StringAlignment.Center, .LineAlignment = StringAlignment.Center}
+
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Actualizar()
         Timer1.Enabled = True
+        'ángulo = 180.0!
+        e.Graphics.DrawString(((ángulo) / 1.8).ToString("N0") & "%", letras, Brushes.Black, cuadro, sf)
+
+        e.Graphics.DrawArc(trazo, cuadro, 180, ángulo)
+        Invalidate()
         lblHora.Text = DateAndTime.TimeValue(Now)
         If lblBalanceHora01.Text <> 0 And lblBalanceHora00.Text <> 0 Then lblHoraDiferencia00.Text = CDec(lblBalanceHora01.Text) - CDec(lblBalanceHora00.Text)
         If lblBalanceHora02.Text <> 0 And lblBalanceHora01.Text <> 0 Then lblHoraDiferencia01.Text = CDec(lblBalanceHora02.Text) - CDec(lblBalanceHora01.Text)
@@ -867,5 +879,13 @@ Public Class Form1
                 'Case 45 : If Segundos = 0 Then Añadir()
         End Select
         If Segundos = 0 Then Actualizar()
+    End Sub
+
+    Private Sub Form1_Paint(sender As Object, e As PaintEventArgs) Handles Me.Paint
+
+    End Sub
+
+    Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
+
     End Sub
 End Class

@@ -9,9 +9,9 @@ Public Class Form1
     Dim Minutos As Integer = DateAndTime.Minute(Now)
     Dim Segundos As Integer
     Dim ContadorTiempo As Integer = 0
-    Dim cuadro As Rectangle = New Rectangle(50, 50, 150, 150)
+    Dim cuadro As Rectangle = New Rectangle(50, 500, 150, 150)
     Dim trazo As Pen = New Pen(Brushes.Gold, 30)
-    Dim ángulo As Single = 180
+    Dim ángulo As Single = 50
     Dim letras As New Font("Arial", 25)
     Dim sf As New StringFormat With {.Alignment = StringAlignment.Center, .LineAlignment = StringAlignment.Center}
 
@@ -19,9 +19,7 @@ Public Class Form1
         Actualizar()
         Timer1.Enabled = True
         'ángulo = 180.0!
-        e.Graphics.DrawString(((ángulo) / 1.8).ToString("N0") & "%", letras, Brushes.Black, cuadro, sf)
 
-        e.Graphics.DrawArc(trazo, cuadro, 180, ángulo)
         Invalidate()
         lblHora.Text = DateAndTime.TimeValue(Now)
         If lblBalanceHora01.Text <> 0 And lblBalanceHora00.Text <> 0 Then lblHoraDiferencia00.Text = CDec(lblBalanceHora01.Text) - CDec(lblBalanceHora00.Text)
@@ -185,8 +183,8 @@ Public Class Form1
                 lblMesBalance29.Visible = True
                 lblMesPrecio29.Visible = True
                 lblMesDifencia29.Visible = True
-                lblTotalMes.Location = New Point(147, 549)
-                lblMesDaily.Location = New Point(56, 554)
+                lblTotalMes.Location = New Point(147, 551)
+                lblMesDaily.Location = New Point(11, 554)
                 gpMes.Size = New Size(333, 593)
             Case 30
                 lbl31.Visible = False
@@ -203,8 +201,8 @@ Public Class Form1
                 lblMesBalance29.Visible = True
                 lblMesPrecio29.Visible = True
                 lblMesDifencia29.Visible = True
-                lblTotalMes.Location = New Point(147, 531)
-                lblMesDaily.Location = New Point(56, 536)
+                lblTotalMes.Location = New Point(147, 534)
+                lblMesDaily.Location = New Point(11, 537)
                 gpMes.Size = New Size(333, 575)
             Case 29
                 lbl31.Visible = False
@@ -221,8 +219,8 @@ Public Class Form1
                 lblMesBalance29.Visible = True
                 lblMesPrecio29.Visible = True
                 lblMesDifencia29.Visible = True
-                lblTotalMes.Location = New Point(147, 513)
-                lblMesDaily.Location = New Point(56, 518)
+                lblTotalMes.Location = New Point(147, 516)
+                lblMesDaily.Location = New Point(11, 519)
                 gpMes.Size = New Size(333, 557)
             Case 28
                 lbl31.Visible = False
@@ -239,13 +237,13 @@ Public Class Form1
                 lblMesBalance29.Visible = False
                 lblMesPrecio29.Visible = False
                 lblMesDifencia29.Visible = False
-                lblTotalMes.Location = New Point(147, 495)
-                lblMesDaily.Location = New Point(56, 500)
+                lblTotalMes.Location = New Point(147, 498)
+                lblMesDaily.Location = New Point(11, 501)
                 gpMes.Size = New Size(333, 539)
         End Select
     End Sub
     Private Sub Actualizar()
-        Dim uriString2 As String = "https://server.duinocoin.com/balances/Lanthi"
+        Dim uriString2 As String = "https://server.duinocoin.com/users/Lanthi"
         Dim uri2 As New Uri(uriString2)
         Dim Request2 As HttpWebRequest = HttpWebRequest.Create(uri2)
         Request2.Method = "GET"
@@ -261,8 +259,8 @@ Public Class Form1
         Dim Read = New StreamReader(Response.GetResponseStream())
         Dim Raw As String = Read.ReadToEnd()
         Dim dict As Object = New JavaScriptSerializer().Deserialize(Of Dictionary(Of String, Object))(Raw)
-        txtDucoprice.Text = dict.item("Duco price")
-        txtbalance.Text = dict2.item("result").item("balance")
+        txtDucoprice.Text = CDec(dict.item("Duco price"))
+        txtbalance.Text = dict2.item("result").item("balance").item("balance")
         lblGanado.Text = Format(CDec(txtbalance.Text) * CDec(txtDucoprice.Text), "0000.0000") & "€"
         lstBalanceTiempoReal.Items.Add(txtbalance.Text)
         lstDUCOTiempoReal.Items.Add(txtDucoprice.Text)
@@ -271,6 +269,25 @@ Public Class Form1
             lstBalanceTiempoReal.Items.RemoveAt(0)
             lstDUCOTiempoReal.Items.RemoveAt(0)
         End If
+        TreeView1.Nodes.Clear()
+        For I As Integer = 4 To 0 Step -1
+            If dict2.item("result").item("transactions").item(I).item("sender") = "Lanthi" Then
+                TreeView1.Nodes.Add("Enviado: " & dict2.item("result").item("transactions").item(I).item("amount") & " enviado a " & dict2.item("result").item("transactions").item(I).item("recipient"))
+            Else
+                TreeView1.Nodes.Add("Recibido: " & dict2.item("result").item("transactions").item(I).item("amount") & " recibido de " & dict2.item("result").item("transactions").item(I).item("sender"))
+            End If
+
+            TreeView1.Nodes.Add("Fecha/hora: " & dict2.item("result").item("transactions").item(I).item("datetime"))
+            TreeView1.Nodes.Add("Hash: " & dict2.item("result").item("transactions").item(I).item("hash"))
+            ' TreeView1.Nodes.Add("ID: " & dict2.item("result").item("transactions").item(I).item("id"))
+            TreeView1.Nodes.Add("Memo: " & dict2.item("result").item("transactions").item(I).item("memo"))
+            'TreeView1.Nodes.Add("Receptor: " & dict2.item("result").item("transactions").item(I).item("recipient"))
+            'TreeView1.Nodes.Add("Enviado: " & dict2.item("result").item("transactions").item(I).item("sender"))
+            If I <> 0 Then TreeView1.Nodes.Add("")
+        Next
+
+        TreeView1.ExpandAll()
+
         Select Case Hour(Now)
             Case 0 : If lblBalanceHora00.Text <> 0 Then lblHoraDiferencia00.Text = CDec(txtbalance.Text) - CDec(lblBalanceHora00.Text)
             Case 1 : If lblBalanceHora01.Text <> 0 Then lblHoraDiferencia01.Text = CDec(txtbalance.Text) - CDec(lblBalanceHora01.Text)
@@ -882,10 +899,8 @@ Public Class Form1
     End Sub
 
     Private Sub Form1_Paint(sender As Object, e As PaintEventArgs) Handles Me.Paint
+        e.Graphics.DrawString(((ángulo) / 1.8).ToString("N0") & "%", letras, Brushes.Black, cuadro, sf)
 
-    End Sub
-
-    Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
-
+        e.Graphics.DrawArc(trazo, cuadro, 180, ángulo)
     End Sub
 End Class

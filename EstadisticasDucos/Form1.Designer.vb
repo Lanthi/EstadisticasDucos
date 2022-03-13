@@ -23,24 +23,24 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim ChartArea7 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend7 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series7 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea8 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend8 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series8 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea9 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend9 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series9 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea10 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend10 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series10 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea11 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend11 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series11 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea12 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend12 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series12 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea3 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend3 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series3 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea4 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend4 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series4 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea5 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend5 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series5 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea6 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend6 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series6 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.lstBalanceTiempoReal = New System.Windows.Forms.ListBox()
@@ -138,6 +138,7 @@ Partial Class Form1
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.lblBalanceHora10 = New System.Windows.Forms.Label()
         Me.lblBalanceHora18 = New System.Windows.Forms.Label()
+        Me.Label31 = New System.Windows.Forms.Label()
         Me.lblPrecio00 = New System.Windows.Forms.Label()
         Me.lblPrecio23 = New System.Windows.Forms.Label()
         Me.lblPrecio22 = New System.Windows.Forms.Label()
@@ -161,7 +162,9 @@ Partial Class Form1
         Me.lblPrecio04 = New System.Windows.Forms.Label()
         Me.lblPrecio03 = New System.Windows.Forms.Label()
         Me.lblPrecio02 = New System.Windows.Forms.Label()
+        Me.Label30 = New System.Windows.Forms.Label()
         Me.lblHoraDiferencia00 = New System.Windows.Forms.Label()
+        Me.Label29 = New System.Windows.Forms.Label()
         Me.lblPrecio01 = New System.Windows.Forms.Label()
         Me.lblBalanceHora00 = New System.Windows.Forms.Label()
         Me.lblBalanceHora01 = New System.Windows.Forms.Label()
@@ -184,6 +187,7 @@ Partial Class Form1
         Me.lblBalanceHora11 = New System.Windows.Forms.Label()
         Me.lblBalanceHora07 = New System.Windows.Forms.Label()
         Me.lblBalanceHora09 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.lblBalanceHora08 = New System.Windows.Forms.Label()
         Me.lblMesDifencia01 = New System.Windows.Forms.Label()
         Me.lblMesDifencia02 = New System.Windows.Forms.Label()
@@ -287,6 +291,7 @@ Partial Class Form1
         Me.Chart6 = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.TreeView1 = New System.Windows.Forms.TreeView()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
@@ -328,243 +333,267 @@ Partial Class Form1
         '
         'Label2
         '
+        Me.Label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(17, 27)
+        Me.Label2.Location = New System.Drawing.Point(18, 44)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(42, 18)
         Me.Label2.TabIndex = 13
-        Me.Label2.Text = "00:00 :"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label2.Text = "00:00"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label3
         '
+        Me.Label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(17, 418)
+        Me.Label3.Location = New System.Drawing.Point(18, 435)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(42, 18)
         Me.Label3.TabIndex = 34
-        Me.Label3.Text = "23:00 :"
-        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label3.Text = "23:00"
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label4
         '
+        Me.Label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(17, 401)
+        Me.Label4.Location = New System.Drawing.Point(18, 418)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(42, 18)
         Me.Label4.TabIndex = 33
-        Me.Label4.Text = "22:00 :"
-        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label4.Text = "22:00"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label5
         '
+        Me.Label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(17, 384)
+        Me.Label5.Location = New System.Drawing.Point(18, 401)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(42, 18)
         Me.Label5.TabIndex = 32
-        Me.Label5.Text = "21:00 :"
-        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label5.Text = "21:00"
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label6
         '
+        Me.Label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(17, 367)
+        Me.Label6.Location = New System.Drawing.Point(18, 384)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(42, 18)
         Me.Label6.TabIndex = 31
-        Me.Label6.Text = "20:00 :"
-        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label6.Text = "20:00"
+        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label7
         '
+        Me.Label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(17, 350)
+        Me.Label7.Location = New System.Drawing.Point(18, 367)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(42, 18)
         Me.Label7.TabIndex = 30
-        Me.Label7.Text = "19:00 :"
-        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label7.Text = "19:00"
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label8
         '
+        Me.Label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(17, 333)
+        Me.Label8.Location = New System.Drawing.Point(18, 350)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(42, 18)
         Me.Label8.TabIndex = 29
-        Me.Label8.Text = "18:00 :"
-        Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label8.Text = "18:00"
+        Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label9
         '
+        Me.Label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(17, 316)
+        Me.Label9.Location = New System.Drawing.Point(18, 333)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(42, 18)
         Me.Label9.TabIndex = 28
-        Me.Label9.Text = "17:00 :"
-        Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label9.Text = "17:00"
+        Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label10
         '
+        Me.Label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(17, 299)
+        Me.Label10.Location = New System.Drawing.Point(18, 316)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(42, 18)
         Me.Label10.TabIndex = 27
-        Me.Label10.Text = "16:00 :"
-        Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label10.Text = "16:00"
+        Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label11
         '
+        Me.Label11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(17, 282)
+        Me.Label11.Location = New System.Drawing.Point(18, 299)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(42, 18)
         Me.Label11.TabIndex = 26
-        Me.Label11.Text = "15:00 :"
-        Me.Label11.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label11.Text = "15:00"
+        Me.Label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label12
         '
+        Me.Label12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(17, 265)
+        Me.Label12.Location = New System.Drawing.Point(18, 282)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(42, 18)
         Me.Label12.TabIndex = 25
-        Me.Label12.Text = "14:00 :"
-        Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label12.Text = "14:00"
+        Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label13
         '
+        Me.Label13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(17, 248)
+        Me.Label13.Location = New System.Drawing.Point(18, 265)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(42, 18)
         Me.Label13.TabIndex = 24
-        Me.Label13.Text = "13:00 :"
-        Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label13.Text = "13:00"
+        Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label14
         '
+        Me.Label14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(17, 231)
+        Me.Label14.Location = New System.Drawing.Point(18, 248)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(42, 18)
         Me.Label14.TabIndex = 23
-        Me.Label14.Text = "12:00 :"
-        Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label14.Text = "12:00"
+        Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label15
         '
+        Me.Label15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(17, 214)
+        Me.Label15.Location = New System.Drawing.Point(18, 231)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(42, 18)
         Me.Label15.TabIndex = 22
-        Me.Label15.Text = "11:00 :"
-        Me.Label15.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label15.Text = "11:00"
+        Me.Label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label16
         '
+        Me.Label16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(17, 197)
+        Me.Label16.Location = New System.Drawing.Point(18, 214)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(42, 18)
         Me.Label16.TabIndex = 21
-        Me.Label16.Text = "10:00 :"
-        Me.Label16.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label16.Text = "10:00"
+        Me.Label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label17
         '
+        Me.Label17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(17, 180)
+        Me.Label17.Location = New System.Drawing.Point(18, 197)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(42, 18)
         Me.Label17.TabIndex = 20
-        Me.Label17.Text = "09:00 :"
-        Me.Label17.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label17.Text = "09:00"
+        Me.Label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label18
         '
+        Me.Label18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.Location = New System.Drawing.Point(17, 163)
+        Me.Label18.Location = New System.Drawing.Point(18, 180)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(42, 18)
         Me.Label18.TabIndex = 19
-        Me.Label18.Text = "08:00 :"
-        Me.Label18.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label18.Text = "08:00"
+        Me.Label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label19
         '
+        Me.Label19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label19.Location = New System.Drawing.Point(17, 146)
+        Me.Label19.Location = New System.Drawing.Point(18, 163)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(42, 18)
         Me.Label19.TabIndex = 18
-        Me.Label19.Text = "07:00 :"
-        Me.Label19.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label19.Text = "07:00"
+        Me.Label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label20
         '
+        Me.Label20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.Location = New System.Drawing.Point(17, 129)
+        Me.Label20.Location = New System.Drawing.Point(18, 146)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(42, 18)
         Me.Label20.TabIndex = 17
-        Me.Label20.Text = "06:00 :"
-        Me.Label20.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label20.Text = "06:00"
+        Me.Label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label21
         '
+        Me.Label21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label21.Location = New System.Drawing.Point(17, 112)
+        Me.Label21.Location = New System.Drawing.Point(18, 129)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(42, 18)
         Me.Label21.TabIndex = 16
-        Me.Label21.Text = "05:00 :"
-        Me.Label21.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label21.Text = "05:00"
+        Me.Label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label22
         '
+        Me.Label22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label22.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label22.Location = New System.Drawing.Point(17, 95)
+        Me.Label22.Location = New System.Drawing.Point(18, 112)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(42, 18)
         Me.Label22.TabIndex = 15
-        Me.Label22.Text = "04:00 :"
-        Me.Label22.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label22.Text = "04:00"
+        Me.Label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label23
         '
+        Me.Label23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label23.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label23.Location = New System.Drawing.Point(17, 78)
+        Me.Label23.Location = New System.Drawing.Point(18, 95)
         Me.Label23.Name = "Label23"
         Me.Label23.Size = New System.Drawing.Size(42, 18)
         Me.Label23.TabIndex = 14
-        Me.Label23.Text = "03:00 :"
-        Me.Label23.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label23.Text = "03:00"
+        Me.Label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label24
         '
+        Me.Label24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label24.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label24.Location = New System.Drawing.Point(17, 61)
+        Me.Label24.Location = New System.Drawing.Point(18, 78)
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(42, 18)
         Me.Label24.TabIndex = 35
-        Me.Label24.Text = "02:00 :"
-        Me.Label24.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label24.Text = "02:00"
+        Me.Label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label25
         '
+        Me.Label25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label25.Location = New System.Drawing.Point(17, 44)
+        Me.Label25.Location = New System.Drawing.Point(18, 61)
         Me.Label25.Name = "Label25"
         Me.Label25.Size = New System.Drawing.Size(42, 18)
         Me.Label25.TabIndex = 36
-        Me.Label25.Text = "01:00 :"
-        Me.Label25.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label25.Text = "01:00"
+        Me.Label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label52
         '
@@ -914,7 +943,7 @@ Partial Class Form1
         Me.lblHora.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblHora.Font = New System.Drawing.Font("Digital Display", 42.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblHora.ForeColor = System.Drawing.Color.White
-        Me.lblHora.Location = New System.Drawing.Point(17, 443)
+        Me.lblHora.Location = New System.Drawing.Point(17, 203)
         Me.lblHora.Name = "lblHora"
         Me.lblHora.Size = New System.Drawing.Size(225, 90)
         Me.lblHora.TabIndex = 133
@@ -924,7 +953,7 @@ Partial Class Form1
         'lblGanado
         '
         Me.lblGanado.Font = New System.Drawing.Font("Digital Display", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblGanado.Location = New System.Drawing.Point(17, 391)
+        Me.lblGanado.Location = New System.Drawing.Point(17, 151)
         Me.lblGanado.Name = "lblGanado"
         Me.lblGanado.Size = New System.Drawing.Size(234, 41)
         Me.lblGanado.TabIndex = 134
@@ -933,43 +962,43 @@ Partial Class Form1
         '
         'Chart1
         '
-        ChartArea7.Name = "ChartArea1"
-        Me.Chart1.ChartAreas.Add(ChartArea7)
-        Legend7.Name = "Legend1"
-        Me.Chart1.Legends.Add(Legend7)
+        ChartArea1.Name = "ChartArea1"
+        Me.Chart1.ChartAreas.Add(ChartArea1)
+        Legend1.Name = "Legend1"
+        Me.Chart1.Legends.Add(Legend1)
         Me.Chart1.Location = New System.Drawing.Point(518, 3)
         Me.Chart1.Name = "Chart1"
-        Series7.BorderWidth = 3
-        Series7.ChartArea = "ChartArea1"
-        Series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
-        Series7.Color = System.Drawing.Color.Lime
-        Series7.IsVisibleInLegend = False
-        Series7.Legend = "Legend1"
-        Series7.Name = "Series1"
-        Series7.ToolTip = "#VAL"
-        Series7.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Me.Chart1.Series.Add(Series7)
+        Series1.BorderWidth = 3
+        Series1.ChartArea = "ChartArea1"
+        Series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
+        Series1.Color = System.Drawing.Color.Lime
+        Series1.IsVisibleInLegend = False
+        Series1.Legend = "Legend1"
+        Series1.Name = "Series1"
+        Series1.ToolTip = "#VAL"
+        Series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Me.Chart1.Series.Add(Series1)
         Me.Chart1.Size = New System.Drawing.Size(563, 204)
         Me.Chart1.TabIndex = 135
         '
         'Chart2
         '
-        ChartArea8.Name = "ChartArea1"
-        Me.Chart2.ChartAreas.Add(ChartArea8)
-        Legend8.Name = "Legend1"
-        Me.Chart2.Legends.Add(Legend8)
+        ChartArea2.Name = "ChartArea1"
+        Me.Chart2.ChartAreas.Add(ChartArea2)
+        Legend2.Name = "Legend1"
+        Me.Chart2.Legends.Add(Legend2)
         Me.Chart2.Location = New System.Drawing.Point(6, 226)
         Me.Chart2.Name = "Chart2"
-        Series8.BorderWidth = 3
-        Series8.ChartArea = "ChartArea1"
-        Series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
-        Series8.Color = System.Drawing.Color.Red
-        Series8.IsVisibleInLegend = False
-        Series8.Legend = "Legend1"
-        Series8.Name = "Series1"
-        Series8.ToolTip = "#VAL"
-        Series8.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Me.Chart2.Series.Add(Series8)
+        Series2.BorderWidth = 3
+        Series2.ChartArea = "ChartArea1"
+        Series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
+        Series2.Color = System.Drawing.Color.Red
+        Series2.IsVisibleInLegend = False
+        Series2.Legend = "Legend1"
+        Series2.Name = "Series1"
+        Series2.ToolTip = "#VAL"
+        Series2.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Me.Chart2.Series.Add(Series2)
         Me.Chart2.Size = New System.Drawing.Size(497, 204)
         Me.Chart2.TabIndex = 135
         '
@@ -999,7 +1028,7 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.Label26)
         Me.GroupBox1.Controls.Add(Me.txtbalance)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 252)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 9)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(236, 62)
         Me.GroupBox1.TabIndex = 139
@@ -1011,7 +1040,7 @@ Partial Class Form1
         Me.GroupBox2.Controls.Add(Me.Label27)
         Me.GroupBox2.Controls.Add(Me.txtDucoprice)
         Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox2.Location = New System.Drawing.Point(12, 320)
+        Me.GroupBox2.Location = New System.Drawing.Point(12, 80)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(236, 56)
         Me.GroupBox2.TabIndex = 140
@@ -1042,238 +1071,261 @@ Partial Class Form1
         '
         Me.lblHoraDiferencia01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblHoraDiferencia01.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHoraDiferencia01.Location = New System.Drawing.Point(238, 44)
+        Me.lblHoraDiferencia01.Location = New System.Drawing.Point(239, 61)
         Me.lblHoraDiferencia01.Name = "lblHoraDiferencia01"
         Me.lblHoraDiferencia01.Size = New System.Drawing.Size(65, 18)
         Me.lblHoraDiferencia01.TabIndex = 141
         Me.lblHoraDiferencia01.Text = "0"
+        Me.lblHoraDiferencia01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblHoraDiferencia02
         '
         Me.lblHoraDiferencia02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblHoraDiferencia02.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHoraDiferencia02.Location = New System.Drawing.Point(238, 61)
+        Me.lblHoraDiferencia02.Location = New System.Drawing.Point(239, 78)
         Me.lblHoraDiferencia02.Name = "lblHoraDiferencia02"
         Me.lblHoraDiferencia02.Size = New System.Drawing.Size(65, 18)
         Me.lblHoraDiferencia02.TabIndex = 141
         Me.lblHoraDiferencia02.Text = "0"
+        Me.lblHoraDiferencia02.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblHoraDiferencia03
         '
         Me.lblHoraDiferencia03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblHoraDiferencia03.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHoraDiferencia03.Location = New System.Drawing.Point(238, 78)
+        Me.lblHoraDiferencia03.Location = New System.Drawing.Point(239, 95)
         Me.lblHoraDiferencia03.Name = "lblHoraDiferencia03"
         Me.lblHoraDiferencia03.Size = New System.Drawing.Size(65, 18)
         Me.lblHoraDiferencia03.TabIndex = 141
         Me.lblHoraDiferencia03.Text = "0"
+        Me.lblHoraDiferencia03.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblHoraDiferencia04
         '
         Me.lblHoraDiferencia04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblHoraDiferencia04.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHoraDiferencia04.Location = New System.Drawing.Point(238, 95)
+        Me.lblHoraDiferencia04.Location = New System.Drawing.Point(239, 112)
         Me.lblHoraDiferencia04.Name = "lblHoraDiferencia04"
         Me.lblHoraDiferencia04.Size = New System.Drawing.Size(65, 18)
         Me.lblHoraDiferencia04.TabIndex = 141
         Me.lblHoraDiferencia04.Text = "0"
+        Me.lblHoraDiferencia04.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblHoraDiferencia05
         '
         Me.lblHoraDiferencia05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblHoraDiferencia05.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHoraDiferencia05.Location = New System.Drawing.Point(238, 112)
+        Me.lblHoraDiferencia05.Location = New System.Drawing.Point(239, 129)
         Me.lblHoraDiferencia05.Name = "lblHoraDiferencia05"
         Me.lblHoraDiferencia05.Size = New System.Drawing.Size(65, 18)
         Me.lblHoraDiferencia05.TabIndex = 141
         Me.lblHoraDiferencia05.Text = "0"
+        Me.lblHoraDiferencia05.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblHoraDiferencia06
         '
         Me.lblHoraDiferencia06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblHoraDiferencia06.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHoraDiferencia06.Location = New System.Drawing.Point(238, 129)
+        Me.lblHoraDiferencia06.Location = New System.Drawing.Point(239, 146)
         Me.lblHoraDiferencia06.Name = "lblHoraDiferencia06"
         Me.lblHoraDiferencia06.Size = New System.Drawing.Size(65, 18)
         Me.lblHoraDiferencia06.TabIndex = 141
         Me.lblHoraDiferencia06.Text = "0"
+        Me.lblHoraDiferencia06.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblHoraDiferencia07
         '
         Me.lblHoraDiferencia07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblHoraDiferencia07.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHoraDiferencia07.Location = New System.Drawing.Point(238, 146)
+        Me.lblHoraDiferencia07.Location = New System.Drawing.Point(239, 163)
         Me.lblHoraDiferencia07.Name = "lblHoraDiferencia07"
         Me.lblHoraDiferencia07.Size = New System.Drawing.Size(65, 18)
         Me.lblHoraDiferencia07.TabIndex = 141
         Me.lblHoraDiferencia07.Text = "0"
+        Me.lblHoraDiferencia07.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblHoraDiferencia08
         '
         Me.lblHoraDiferencia08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblHoraDiferencia08.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHoraDiferencia08.Location = New System.Drawing.Point(238, 163)
+        Me.lblHoraDiferencia08.Location = New System.Drawing.Point(239, 180)
         Me.lblHoraDiferencia08.Name = "lblHoraDiferencia08"
         Me.lblHoraDiferencia08.Size = New System.Drawing.Size(65, 18)
         Me.lblHoraDiferencia08.TabIndex = 141
         Me.lblHoraDiferencia08.Text = "0"
+        Me.lblHoraDiferencia08.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblHoraDiferencia09
         '
         Me.lblHoraDiferencia09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblHoraDiferencia09.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHoraDiferencia09.Location = New System.Drawing.Point(238, 180)
+        Me.lblHoraDiferencia09.Location = New System.Drawing.Point(239, 197)
         Me.lblHoraDiferencia09.Name = "lblHoraDiferencia09"
         Me.lblHoraDiferencia09.Size = New System.Drawing.Size(65, 18)
         Me.lblHoraDiferencia09.TabIndex = 141
         Me.lblHoraDiferencia09.Text = "0"
+        Me.lblHoraDiferencia09.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblHoraDiferencia10
         '
         Me.lblHoraDiferencia10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblHoraDiferencia10.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHoraDiferencia10.Location = New System.Drawing.Point(238, 197)
+        Me.lblHoraDiferencia10.Location = New System.Drawing.Point(239, 214)
         Me.lblHoraDiferencia10.Name = "lblHoraDiferencia10"
         Me.lblHoraDiferencia10.Size = New System.Drawing.Size(65, 18)
         Me.lblHoraDiferencia10.TabIndex = 141
         Me.lblHoraDiferencia10.Text = "0"
+        Me.lblHoraDiferencia10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblHoraDiferencia11
         '
         Me.lblHoraDiferencia11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblHoraDiferencia11.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHoraDiferencia11.Location = New System.Drawing.Point(238, 214)
+        Me.lblHoraDiferencia11.Location = New System.Drawing.Point(239, 231)
         Me.lblHoraDiferencia11.Name = "lblHoraDiferencia11"
         Me.lblHoraDiferencia11.Size = New System.Drawing.Size(65, 18)
         Me.lblHoraDiferencia11.TabIndex = 141
         Me.lblHoraDiferencia11.Text = "0"
+        Me.lblHoraDiferencia11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblHoraDiferencia12
         '
         Me.lblHoraDiferencia12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblHoraDiferencia12.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHoraDiferencia12.Location = New System.Drawing.Point(238, 231)
+        Me.lblHoraDiferencia12.Location = New System.Drawing.Point(239, 248)
         Me.lblHoraDiferencia12.Name = "lblHoraDiferencia12"
         Me.lblHoraDiferencia12.Size = New System.Drawing.Size(65, 18)
         Me.lblHoraDiferencia12.TabIndex = 141
         Me.lblHoraDiferencia12.Text = "0"
+        Me.lblHoraDiferencia12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblHoraDiferencia13
         '
         Me.lblHoraDiferencia13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblHoraDiferencia13.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHoraDiferencia13.Location = New System.Drawing.Point(238, 248)
+        Me.lblHoraDiferencia13.Location = New System.Drawing.Point(239, 265)
         Me.lblHoraDiferencia13.Name = "lblHoraDiferencia13"
         Me.lblHoraDiferencia13.Size = New System.Drawing.Size(65, 18)
         Me.lblHoraDiferencia13.TabIndex = 141
         Me.lblHoraDiferencia13.Text = "0"
+        Me.lblHoraDiferencia13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblHoraDiferencia14
         '
         Me.lblHoraDiferencia14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblHoraDiferencia14.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHoraDiferencia14.Location = New System.Drawing.Point(238, 265)
+        Me.lblHoraDiferencia14.Location = New System.Drawing.Point(239, 282)
         Me.lblHoraDiferencia14.Name = "lblHoraDiferencia14"
         Me.lblHoraDiferencia14.Size = New System.Drawing.Size(65, 18)
         Me.lblHoraDiferencia14.TabIndex = 141
         Me.lblHoraDiferencia14.Text = "0"
+        Me.lblHoraDiferencia14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblHoraDiferencia15
         '
         Me.lblHoraDiferencia15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblHoraDiferencia15.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHoraDiferencia15.Location = New System.Drawing.Point(238, 282)
+        Me.lblHoraDiferencia15.Location = New System.Drawing.Point(239, 299)
         Me.lblHoraDiferencia15.Name = "lblHoraDiferencia15"
         Me.lblHoraDiferencia15.Size = New System.Drawing.Size(65, 18)
         Me.lblHoraDiferencia15.TabIndex = 141
         Me.lblHoraDiferencia15.Text = "0"
+        Me.lblHoraDiferencia15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblHoraDiferencia16
         '
         Me.lblHoraDiferencia16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblHoraDiferencia16.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHoraDiferencia16.Location = New System.Drawing.Point(238, 299)
+        Me.lblHoraDiferencia16.Location = New System.Drawing.Point(239, 316)
         Me.lblHoraDiferencia16.Name = "lblHoraDiferencia16"
         Me.lblHoraDiferencia16.Size = New System.Drawing.Size(65, 18)
         Me.lblHoraDiferencia16.TabIndex = 141
         Me.lblHoraDiferencia16.Text = "0"
+        Me.lblHoraDiferencia16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblHoraDiferencia17
         '
         Me.lblHoraDiferencia17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblHoraDiferencia17.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHoraDiferencia17.Location = New System.Drawing.Point(238, 316)
+        Me.lblHoraDiferencia17.Location = New System.Drawing.Point(239, 333)
         Me.lblHoraDiferencia17.Name = "lblHoraDiferencia17"
         Me.lblHoraDiferencia17.Size = New System.Drawing.Size(65, 18)
         Me.lblHoraDiferencia17.TabIndex = 141
         Me.lblHoraDiferencia17.Text = "0"
+        Me.lblHoraDiferencia17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblHoraDiferencia18
         '
         Me.lblHoraDiferencia18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblHoraDiferencia18.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHoraDiferencia18.Location = New System.Drawing.Point(238, 333)
+        Me.lblHoraDiferencia18.Location = New System.Drawing.Point(239, 350)
         Me.lblHoraDiferencia18.Name = "lblHoraDiferencia18"
         Me.lblHoraDiferencia18.Size = New System.Drawing.Size(65, 18)
         Me.lblHoraDiferencia18.TabIndex = 141
         Me.lblHoraDiferencia18.Text = "0"
+        Me.lblHoraDiferencia18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblHoraDiferencia19
         '
         Me.lblHoraDiferencia19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblHoraDiferencia19.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHoraDiferencia19.Location = New System.Drawing.Point(238, 350)
+        Me.lblHoraDiferencia19.Location = New System.Drawing.Point(239, 367)
         Me.lblHoraDiferencia19.Name = "lblHoraDiferencia19"
         Me.lblHoraDiferencia19.Size = New System.Drawing.Size(65, 18)
         Me.lblHoraDiferencia19.TabIndex = 141
         Me.lblHoraDiferencia19.Text = "0"
+        Me.lblHoraDiferencia19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblHoraDiferencia20
         '
         Me.lblHoraDiferencia20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblHoraDiferencia20.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHoraDiferencia20.Location = New System.Drawing.Point(238, 367)
+        Me.lblHoraDiferencia20.Location = New System.Drawing.Point(239, 384)
         Me.lblHoraDiferencia20.Name = "lblHoraDiferencia20"
         Me.lblHoraDiferencia20.Size = New System.Drawing.Size(65, 18)
         Me.lblHoraDiferencia20.TabIndex = 141
         Me.lblHoraDiferencia20.Text = "0"
+        Me.lblHoraDiferencia20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblHoraDiferencia21
         '
         Me.lblHoraDiferencia21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblHoraDiferencia21.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHoraDiferencia21.Location = New System.Drawing.Point(238, 384)
+        Me.lblHoraDiferencia21.Location = New System.Drawing.Point(239, 401)
         Me.lblHoraDiferencia21.Name = "lblHoraDiferencia21"
         Me.lblHoraDiferencia21.Size = New System.Drawing.Size(65, 18)
         Me.lblHoraDiferencia21.TabIndex = 141
         Me.lblHoraDiferencia21.Text = "0"
+        Me.lblHoraDiferencia21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblHoraDiferencia22
         '
         Me.lblHoraDiferencia22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblHoraDiferencia22.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHoraDiferencia22.Location = New System.Drawing.Point(238, 401)
+        Me.lblHoraDiferencia22.Location = New System.Drawing.Point(239, 418)
         Me.lblHoraDiferencia22.Name = "lblHoraDiferencia22"
         Me.lblHoraDiferencia22.Size = New System.Drawing.Size(65, 18)
         Me.lblHoraDiferencia22.TabIndex = 141
         Me.lblHoraDiferencia22.Text = "0"
+        Me.lblHoraDiferencia22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblHoraDiferencia23
         '
         Me.lblHoraDiferencia23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblHoraDiferencia23.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHoraDiferencia23.Location = New System.Drawing.Point(238, 418)
+        Me.lblHoraDiferencia23.Location = New System.Drawing.Point(239, 435)
         Me.lblHoraDiferencia23.Name = "lblHoraDiferencia23"
         Me.lblHoraDiferencia23.Size = New System.Drawing.Size(65, 18)
         Me.lblHoraDiferencia23.TabIndex = 141
         Me.lblHoraDiferencia23.Text = "0"
+        Me.lblHoraDiferencia23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblTotalHora
         '
         Me.lblTotalHora.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblTotalHora.Font = New System.Drawing.Font("Duco", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTotalHora.ForeColor = System.Drawing.Color.Blue
-        Me.lblTotalHora.Location = New System.Drawing.Point(167, 431)
+        Me.lblTotalHora.Location = New System.Drawing.Point(168, 448)
         Me.lblTotalHora.Name = "lblTotalHora"
         Me.lblTotalHora.Size = New System.Drawing.Size(136, 28)
         Me.lblTotalHora.TabIndex = 141
@@ -1282,11 +1334,12 @@ Partial Class Form1
         '
         'Label28
         '
-        Me.Label28.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label28.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label28.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Label28.Location = New System.Drawing.Point(97, 438)
+        Me.Label28.Location = New System.Drawing.Point(18, 452)
         Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(72, 18)
+        Me.Label28.Size = New System.Drawing.Size(152, 24)
         Me.Label28.TabIndex = 142
         Me.Label28.Text = "Daily Total:"
         Me.Label28.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -1307,6 +1360,7 @@ Partial Class Form1
         Me.GroupBox3.Controls.Add(Me.lblHoraDiferencia12)
         Me.GroupBox3.Controls.Add(Me.lblHoraDiferencia21)
         Me.GroupBox3.Controls.Add(Me.lblHoraDiferencia04)
+        Me.GroupBox3.Controls.Add(Me.Label31)
         Me.GroupBox3.Controls.Add(Me.lblPrecio00)
         Me.GroupBox3.Controls.Add(Me.lblPrecio23)
         Me.GroupBox3.Controls.Add(Me.lblHoraDiferencia16)
@@ -1341,7 +1395,9 @@ Partial Class Form1
         Me.GroupBox3.Controls.Add(Me.lblPrecio03)
         Me.GroupBox3.Controls.Add(Me.lblHoraDiferencia01)
         Me.GroupBox3.Controls.Add(Me.lblPrecio02)
+        Me.GroupBox3.Controls.Add(Me.Label30)
         Me.GroupBox3.Controls.Add(Me.lblHoraDiferencia00)
+        Me.GroupBox3.Controls.Add(Me.Label29)
         Me.GroupBox3.Controls.Add(Me.lblPrecio01)
         Me.GroupBox3.Controls.Add(Me.lblBalanceHora00)
         Me.GroupBox3.Controls.Add(Me.lblBalanceHora01)
@@ -1364,6 +1420,7 @@ Partial Class Form1
         Me.GroupBox3.Controls.Add(Me.lblBalanceHora11)
         Me.GroupBox3.Controls.Add(Me.lblBalanceHora07)
         Me.GroupBox3.Controls.Add(Me.lblBalanceHora09)
+        Me.GroupBox3.Controls.Add(Me.Label1)
         Me.GroupBox3.Controls.Add(Me.lblBalanceHora08)
         Me.GroupBox3.Controls.Add(Me.Label2)
         Me.GroupBox3.Controls.Add(Me.Label4)
@@ -1394,7 +1451,7 @@ Partial Class Form1
         Me.GroupBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox3.Location = New System.Drawing.Point(16, 15)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(318, 474)
+        Me.GroupBox3.Size = New System.Drawing.Size(318, 504)
         Me.GroupBox3.TabIndex = 143
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Balance Hour"
@@ -1404,539 +1461,636 @@ Partial Class Form1
         Me.lblBalanceHora10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblBalanceHora10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblBalanceHora10.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora10.Location = New System.Drawing.Point(57, 197)
+        Me.lblBalanceHora10.Location = New System.Drawing.Point(58, 214)
         Me.lblBalanceHora10.Name = "lblBalanceHora10"
         Me.lblBalanceHora10.Size = New System.Drawing.Size(111, 18)
         Me.lblBalanceHora10.TabIndex = 12
         Me.lblBalanceHora10.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora10
+        Me.lblBalanceHora10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblBalanceHora18
         '
         Me.lblBalanceHora18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblBalanceHora18.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora18", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblBalanceHora18.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora18.Location = New System.Drawing.Point(57, 333)
+        Me.lblBalanceHora18.Location = New System.Drawing.Point(58, 350)
         Me.lblBalanceHora18.Name = "lblBalanceHora18"
         Me.lblBalanceHora18.Size = New System.Drawing.Size(111, 18)
         Me.lblBalanceHora18.TabIndex = 12
         Me.lblBalanceHora18.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora18
+        Me.lblBalanceHora18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label31
+        '
+        Me.Label31.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.Label31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label31.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label31.Location = New System.Drawing.Point(168, 22)
+        Me.Label31.Name = "Label31"
+        Me.Label31.Size = New System.Drawing.Size(72, 24)
+        Me.Label31.TabIndex = 37
+        Me.Label31.Text = "Precio"
+        Me.Label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblPrecio00
         '
         Me.lblPrecio00.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblPrecio00.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio00", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblPrecio00.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio00.Location = New System.Drawing.Point(167, 27)
+        Me.lblPrecio00.Location = New System.Drawing.Point(168, 44)
         Me.lblPrecio00.Name = "lblPrecio00"
         Me.lblPrecio00.Size = New System.Drawing.Size(72, 18)
         Me.lblPrecio00.TabIndex = 37
         Me.lblPrecio00.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio00
+        Me.lblPrecio00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblPrecio23
         '
         Me.lblPrecio23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblPrecio23.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio23", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblPrecio23.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio23.Location = New System.Drawing.Point(167, 418)
+        Me.lblPrecio23.Location = New System.Drawing.Point(168, 435)
         Me.lblPrecio23.Name = "lblPrecio23"
         Me.lblPrecio23.Size = New System.Drawing.Size(72, 18)
         Me.lblPrecio23.TabIndex = 58
         Me.lblPrecio23.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio23
+        Me.lblPrecio23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblPrecio22
         '
         Me.lblPrecio22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblPrecio22.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio22", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblPrecio22.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio22.Location = New System.Drawing.Point(167, 401)
+        Me.lblPrecio22.Location = New System.Drawing.Point(168, 418)
         Me.lblPrecio22.Name = "lblPrecio22"
         Me.lblPrecio22.Size = New System.Drawing.Size(72, 18)
         Me.lblPrecio22.TabIndex = 57
         Me.lblPrecio22.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio22
+        Me.lblPrecio22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblPrecio21
         '
         Me.lblPrecio21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblPrecio21.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio21", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblPrecio21.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio21.Location = New System.Drawing.Point(167, 384)
+        Me.lblPrecio21.Location = New System.Drawing.Point(168, 401)
         Me.lblPrecio21.Name = "lblPrecio21"
         Me.lblPrecio21.Size = New System.Drawing.Size(72, 18)
         Me.lblPrecio21.TabIndex = 56
         Me.lblPrecio21.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio21
+        Me.lblPrecio21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblPrecio20
         '
         Me.lblPrecio20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblPrecio20.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio20", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblPrecio20.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio20.Location = New System.Drawing.Point(167, 367)
+        Me.lblPrecio20.Location = New System.Drawing.Point(168, 384)
         Me.lblPrecio20.Name = "lblPrecio20"
         Me.lblPrecio20.Size = New System.Drawing.Size(72, 18)
         Me.lblPrecio20.TabIndex = 55
         Me.lblPrecio20.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio20
+        Me.lblPrecio20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblPrecio19
         '
         Me.lblPrecio19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblPrecio19.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio19", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblPrecio19.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio19.Location = New System.Drawing.Point(167, 350)
+        Me.lblPrecio19.Location = New System.Drawing.Point(168, 367)
         Me.lblPrecio19.Name = "lblPrecio19"
         Me.lblPrecio19.Size = New System.Drawing.Size(72, 18)
         Me.lblPrecio19.TabIndex = 54
         Me.lblPrecio19.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio19
+        Me.lblPrecio19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblPrecio18
         '
         Me.lblPrecio18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblPrecio18.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio18", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblPrecio18.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio18.Location = New System.Drawing.Point(167, 333)
+        Me.lblPrecio18.Location = New System.Drawing.Point(168, 350)
         Me.lblPrecio18.Name = "lblPrecio18"
         Me.lblPrecio18.Size = New System.Drawing.Size(72, 18)
         Me.lblPrecio18.TabIndex = 53
         Me.lblPrecio18.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio18
+        Me.lblPrecio18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblPrecio17
         '
         Me.lblPrecio17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblPrecio17.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio17", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblPrecio17.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio17.Location = New System.Drawing.Point(167, 316)
+        Me.lblPrecio17.Location = New System.Drawing.Point(168, 333)
         Me.lblPrecio17.Name = "lblPrecio17"
         Me.lblPrecio17.Size = New System.Drawing.Size(72, 18)
         Me.lblPrecio17.TabIndex = 52
         Me.lblPrecio17.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio17
+        Me.lblPrecio17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblPrecio16
         '
         Me.lblPrecio16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblPrecio16.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio16", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblPrecio16.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio16.Location = New System.Drawing.Point(167, 299)
+        Me.lblPrecio16.Location = New System.Drawing.Point(168, 316)
         Me.lblPrecio16.Name = "lblPrecio16"
         Me.lblPrecio16.Size = New System.Drawing.Size(72, 18)
         Me.lblPrecio16.TabIndex = 51
         Me.lblPrecio16.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio16
+        Me.lblPrecio16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblPrecio15
         '
         Me.lblPrecio15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblPrecio15.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio15", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblPrecio15.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio15.Location = New System.Drawing.Point(167, 282)
+        Me.lblPrecio15.Location = New System.Drawing.Point(168, 299)
         Me.lblPrecio15.Name = "lblPrecio15"
         Me.lblPrecio15.Size = New System.Drawing.Size(72, 18)
         Me.lblPrecio15.TabIndex = 50
         Me.lblPrecio15.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio15
+        Me.lblPrecio15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblPrecio14
         '
         Me.lblPrecio14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblPrecio14.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio14", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblPrecio14.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio14.Location = New System.Drawing.Point(167, 265)
+        Me.lblPrecio14.Location = New System.Drawing.Point(168, 282)
         Me.lblPrecio14.Name = "lblPrecio14"
         Me.lblPrecio14.Size = New System.Drawing.Size(72, 18)
         Me.lblPrecio14.TabIndex = 49
         Me.lblPrecio14.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio14
+        Me.lblPrecio14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblPrecio13
         '
         Me.lblPrecio13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblPrecio13.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio13", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblPrecio13.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio13.Location = New System.Drawing.Point(167, 248)
+        Me.lblPrecio13.Location = New System.Drawing.Point(168, 265)
         Me.lblPrecio13.Name = "lblPrecio13"
         Me.lblPrecio13.Size = New System.Drawing.Size(72, 18)
         Me.lblPrecio13.TabIndex = 48
         Me.lblPrecio13.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio13
+        Me.lblPrecio13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblPrecio12
         '
         Me.lblPrecio12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblPrecio12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblPrecio12.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio12.Location = New System.Drawing.Point(167, 231)
+        Me.lblPrecio12.Location = New System.Drawing.Point(168, 248)
         Me.lblPrecio12.Name = "lblPrecio12"
         Me.lblPrecio12.Size = New System.Drawing.Size(72, 18)
         Me.lblPrecio12.TabIndex = 47
         Me.lblPrecio12.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio12
+        Me.lblPrecio12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblPrecio11
         '
         Me.lblPrecio11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblPrecio11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblPrecio11.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio11.Location = New System.Drawing.Point(167, 214)
+        Me.lblPrecio11.Location = New System.Drawing.Point(168, 231)
         Me.lblPrecio11.Name = "lblPrecio11"
         Me.lblPrecio11.Size = New System.Drawing.Size(72, 18)
         Me.lblPrecio11.TabIndex = 46
         Me.lblPrecio11.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio11
+        Me.lblPrecio11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblPrecio10
         '
         Me.lblPrecio10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblPrecio10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblPrecio10.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio10.Location = New System.Drawing.Point(167, 197)
+        Me.lblPrecio10.Location = New System.Drawing.Point(168, 214)
         Me.lblPrecio10.Name = "lblPrecio10"
         Me.lblPrecio10.Size = New System.Drawing.Size(72, 18)
         Me.lblPrecio10.TabIndex = 45
         Me.lblPrecio10.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio10
+        Me.lblPrecio10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblPrecio09
         '
         Me.lblPrecio09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblPrecio09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblPrecio09.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio09.Location = New System.Drawing.Point(167, 180)
+        Me.lblPrecio09.Location = New System.Drawing.Point(168, 197)
         Me.lblPrecio09.Name = "lblPrecio09"
         Me.lblPrecio09.Size = New System.Drawing.Size(72, 18)
         Me.lblPrecio09.TabIndex = 44
         Me.lblPrecio09.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio09
+        Me.lblPrecio09.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblPrecio08
         '
         Me.lblPrecio08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblPrecio08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblPrecio08.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio08.Location = New System.Drawing.Point(167, 163)
+        Me.lblPrecio08.Location = New System.Drawing.Point(168, 180)
         Me.lblPrecio08.Name = "lblPrecio08"
         Me.lblPrecio08.Size = New System.Drawing.Size(72, 18)
         Me.lblPrecio08.TabIndex = 43
         Me.lblPrecio08.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio08
+        Me.lblPrecio08.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblPrecio07
         '
         Me.lblPrecio07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblPrecio07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblPrecio07.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio07.Location = New System.Drawing.Point(167, 146)
+        Me.lblPrecio07.Location = New System.Drawing.Point(168, 163)
         Me.lblPrecio07.Name = "lblPrecio07"
         Me.lblPrecio07.Size = New System.Drawing.Size(72, 18)
         Me.lblPrecio07.TabIndex = 42
         Me.lblPrecio07.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio07
+        Me.lblPrecio07.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblPrecio06
         '
         Me.lblPrecio06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblPrecio06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblPrecio06.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio06.Location = New System.Drawing.Point(167, 129)
+        Me.lblPrecio06.Location = New System.Drawing.Point(168, 146)
         Me.lblPrecio06.Name = "lblPrecio06"
         Me.lblPrecio06.Size = New System.Drawing.Size(72, 18)
         Me.lblPrecio06.TabIndex = 41
         Me.lblPrecio06.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio06
+        Me.lblPrecio06.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblPrecio05
         '
         Me.lblPrecio05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblPrecio05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblPrecio05.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio05.Location = New System.Drawing.Point(167, 112)
+        Me.lblPrecio05.Location = New System.Drawing.Point(168, 129)
         Me.lblPrecio05.Name = "lblPrecio05"
         Me.lblPrecio05.Size = New System.Drawing.Size(72, 18)
         Me.lblPrecio05.TabIndex = 40
         Me.lblPrecio05.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio05
+        Me.lblPrecio05.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblPrecio04
         '
         Me.lblPrecio04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblPrecio04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblPrecio04.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio04.Location = New System.Drawing.Point(167, 95)
+        Me.lblPrecio04.Location = New System.Drawing.Point(168, 112)
         Me.lblPrecio04.Name = "lblPrecio04"
         Me.lblPrecio04.Size = New System.Drawing.Size(72, 18)
         Me.lblPrecio04.TabIndex = 39
         Me.lblPrecio04.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio04
+        Me.lblPrecio04.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblPrecio03
         '
         Me.lblPrecio03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblPrecio03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblPrecio03.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio03.Location = New System.Drawing.Point(167, 78)
+        Me.lblPrecio03.Location = New System.Drawing.Point(168, 95)
         Me.lblPrecio03.Name = "lblPrecio03"
         Me.lblPrecio03.Size = New System.Drawing.Size(72, 18)
         Me.lblPrecio03.TabIndex = 38
         Me.lblPrecio03.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio03
+        Me.lblPrecio03.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblPrecio02
         '
         Me.lblPrecio02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblPrecio02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblPrecio02.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio02.Location = New System.Drawing.Point(167, 61)
+        Me.lblPrecio02.Location = New System.Drawing.Point(168, 78)
         Me.lblPrecio02.Name = "lblPrecio02"
         Me.lblPrecio02.Size = New System.Drawing.Size(72, 18)
         Me.lblPrecio02.TabIndex = 59
         Me.lblPrecio02.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio02
+        Me.lblPrecio02.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label30
+        '
+        Me.Label30.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.Label30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label30.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label30.Location = New System.Drawing.Point(239, 22)
+        Me.Label30.Name = "Label30"
+        Me.Label30.Size = New System.Drawing.Size(65, 24)
+        Me.Label30.TabIndex = 141
+        Me.Label30.Text = "Ganacia"
+        Me.Label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblHoraDiferencia00
         '
         Me.lblHoraDiferencia00.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblHoraDiferencia00.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "ValorHora00", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblHoraDiferencia00.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHoraDiferencia00.Location = New System.Drawing.Point(238, 27)
+        Me.lblHoraDiferencia00.Location = New System.Drawing.Point(239, 44)
         Me.lblHoraDiferencia00.Name = "lblHoraDiferencia00"
         Me.lblHoraDiferencia00.Size = New System.Drawing.Size(65, 18)
         Me.lblHoraDiferencia00.TabIndex = 141
         Me.lblHoraDiferencia00.Text = Global.EstadisticasDucos.My.MySettings.Default.ValorHora00
+        Me.lblHoraDiferencia00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label29
+        '
+        Me.Label29.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.Label29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label29.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label29.Location = New System.Drawing.Point(58, 22)
+        Me.Label29.Name = "Label29"
+        Me.Label29.Size = New System.Drawing.Size(111, 24)
+        Me.Label29.TabIndex = 12
+        Me.Label29.Text = "Ducos"
+        Me.Label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblPrecio01
         '
         Me.lblPrecio01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblPrecio01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblPrecio01.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio01.Location = New System.Drawing.Point(167, 44)
+        Me.lblPrecio01.Location = New System.Drawing.Point(168, 61)
         Me.lblPrecio01.Name = "lblPrecio01"
         Me.lblPrecio01.Size = New System.Drawing.Size(72, 18)
         Me.lblPrecio01.TabIndex = 60
         Me.lblPrecio01.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio01
+        Me.lblPrecio01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblBalanceHora00
         '
         Me.lblBalanceHora00.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblBalanceHora00.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora00", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblBalanceHora00.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora00.Location = New System.Drawing.Point(57, 27)
+        Me.lblBalanceHora00.Location = New System.Drawing.Point(58, 44)
         Me.lblBalanceHora00.Name = "lblBalanceHora00"
         Me.lblBalanceHora00.Size = New System.Drawing.Size(111, 18)
         Me.lblBalanceHora00.TabIndex = 12
         Me.lblBalanceHora00.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora00
+        Me.lblBalanceHora00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblBalanceHora01
         '
         Me.lblBalanceHora01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblBalanceHora01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblBalanceHora01.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora01.Location = New System.Drawing.Point(57, 44)
+        Me.lblBalanceHora01.Location = New System.Drawing.Point(58, 61)
         Me.lblBalanceHora01.Name = "lblBalanceHora01"
         Me.lblBalanceHora01.Size = New System.Drawing.Size(111, 18)
         Me.lblBalanceHora01.TabIndex = 12
         Me.lblBalanceHora01.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora01
+        Me.lblBalanceHora01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblBalanceHora23
         '
         Me.lblBalanceHora23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblBalanceHora23.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora23", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblBalanceHora23.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora23.Location = New System.Drawing.Point(57, 418)
+        Me.lblBalanceHora23.Location = New System.Drawing.Point(58, 435)
         Me.lblBalanceHora23.Name = "lblBalanceHora23"
         Me.lblBalanceHora23.Size = New System.Drawing.Size(111, 18)
         Me.lblBalanceHora23.TabIndex = 12
         Me.lblBalanceHora23.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora23
+        Me.lblBalanceHora23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblBalanceHora22
         '
         Me.lblBalanceHora22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblBalanceHora22.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora22", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblBalanceHora22.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora22.Location = New System.Drawing.Point(57, 401)
+        Me.lblBalanceHora22.Location = New System.Drawing.Point(58, 418)
         Me.lblBalanceHora22.Name = "lblBalanceHora22"
         Me.lblBalanceHora22.Size = New System.Drawing.Size(111, 18)
         Me.lblBalanceHora22.TabIndex = 12
         Me.lblBalanceHora22.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora22
+        Me.lblBalanceHora22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblBalanceHora02
         '
         Me.lblBalanceHora02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblBalanceHora02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblBalanceHora02.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora02.Location = New System.Drawing.Point(57, 61)
+        Me.lblBalanceHora02.Location = New System.Drawing.Point(58, 78)
         Me.lblBalanceHora02.Name = "lblBalanceHora02"
         Me.lblBalanceHora02.Size = New System.Drawing.Size(111, 18)
         Me.lblBalanceHora02.TabIndex = 12
         Me.lblBalanceHora02.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora02
+        Me.lblBalanceHora02.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblBalanceHora21
         '
         Me.lblBalanceHora21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblBalanceHora21.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora21", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblBalanceHora21.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora21.Location = New System.Drawing.Point(57, 384)
+        Me.lblBalanceHora21.Location = New System.Drawing.Point(58, 401)
         Me.lblBalanceHora21.Name = "lblBalanceHora21"
         Me.lblBalanceHora21.Size = New System.Drawing.Size(111, 18)
         Me.lblBalanceHora21.TabIndex = 12
         Me.lblBalanceHora21.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora21
+        Me.lblBalanceHora21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblBalanceHora20
         '
         Me.lblBalanceHora20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblBalanceHora20.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora20", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblBalanceHora20.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora20.Location = New System.Drawing.Point(57, 367)
+        Me.lblBalanceHora20.Location = New System.Drawing.Point(58, 384)
         Me.lblBalanceHora20.Name = "lblBalanceHora20"
         Me.lblBalanceHora20.Size = New System.Drawing.Size(111, 18)
         Me.lblBalanceHora20.TabIndex = 12
         Me.lblBalanceHora20.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora20
+        Me.lblBalanceHora20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblBalanceHora03
         '
         Me.lblBalanceHora03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblBalanceHora03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblBalanceHora03.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora03.Location = New System.Drawing.Point(57, 78)
+        Me.lblBalanceHora03.Location = New System.Drawing.Point(58, 95)
         Me.lblBalanceHora03.Name = "lblBalanceHora03"
         Me.lblBalanceHora03.Size = New System.Drawing.Size(111, 18)
         Me.lblBalanceHora03.TabIndex = 12
         Me.lblBalanceHora03.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora03
+        Me.lblBalanceHora03.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblBalanceHora19
         '
         Me.lblBalanceHora19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblBalanceHora19.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora19", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblBalanceHora19.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora19.Location = New System.Drawing.Point(57, 350)
+        Me.lblBalanceHora19.Location = New System.Drawing.Point(58, 367)
         Me.lblBalanceHora19.Name = "lblBalanceHora19"
         Me.lblBalanceHora19.Size = New System.Drawing.Size(111, 18)
         Me.lblBalanceHora19.TabIndex = 12
         Me.lblBalanceHora19.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora19
+        Me.lblBalanceHora19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblBalanceHora17
         '
         Me.lblBalanceHora17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblBalanceHora17.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora17", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblBalanceHora17.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora17.Location = New System.Drawing.Point(57, 316)
+        Me.lblBalanceHora17.Location = New System.Drawing.Point(58, 333)
         Me.lblBalanceHora17.Name = "lblBalanceHora17"
         Me.lblBalanceHora17.Size = New System.Drawing.Size(111, 18)
         Me.lblBalanceHora17.TabIndex = 12
         Me.lblBalanceHora17.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora17
+        Me.lblBalanceHora17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblBalanceHora04
         '
         Me.lblBalanceHora04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblBalanceHora04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblBalanceHora04.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora04.Location = New System.Drawing.Point(57, 95)
+        Me.lblBalanceHora04.Location = New System.Drawing.Point(58, 112)
         Me.lblBalanceHora04.Name = "lblBalanceHora04"
         Me.lblBalanceHora04.Size = New System.Drawing.Size(111, 18)
         Me.lblBalanceHora04.TabIndex = 12
         Me.lblBalanceHora04.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora04
+        Me.lblBalanceHora04.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblBalanceHora16
         '
         Me.lblBalanceHora16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblBalanceHora16.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora16", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblBalanceHora16.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora16.Location = New System.Drawing.Point(57, 299)
+        Me.lblBalanceHora16.Location = New System.Drawing.Point(58, 316)
         Me.lblBalanceHora16.Name = "lblBalanceHora16"
         Me.lblBalanceHora16.Size = New System.Drawing.Size(111, 18)
         Me.lblBalanceHora16.TabIndex = 12
         Me.lblBalanceHora16.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora16
+        Me.lblBalanceHora16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblBalanceHora15
         '
         Me.lblBalanceHora15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblBalanceHora15.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora15", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblBalanceHora15.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora15.Location = New System.Drawing.Point(57, 282)
+        Me.lblBalanceHora15.Location = New System.Drawing.Point(58, 299)
         Me.lblBalanceHora15.Name = "lblBalanceHora15"
         Me.lblBalanceHora15.Size = New System.Drawing.Size(111, 18)
         Me.lblBalanceHora15.TabIndex = 12
         Me.lblBalanceHora15.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora15
+        Me.lblBalanceHora15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblBalanceHora05
         '
         Me.lblBalanceHora05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblBalanceHora05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblBalanceHora05.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora05.Location = New System.Drawing.Point(57, 112)
+        Me.lblBalanceHora05.Location = New System.Drawing.Point(58, 129)
         Me.lblBalanceHora05.Name = "lblBalanceHora05"
         Me.lblBalanceHora05.Size = New System.Drawing.Size(111, 18)
         Me.lblBalanceHora05.TabIndex = 12
         Me.lblBalanceHora05.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora05
+        Me.lblBalanceHora05.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblBalanceHora14
         '
         Me.lblBalanceHora14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblBalanceHora14.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora14", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblBalanceHora14.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora14.Location = New System.Drawing.Point(57, 265)
+        Me.lblBalanceHora14.Location = New System.Drawing.Point(58, 282)
         Me.lblBalanceHora14.Name = "lblBalanceHora14"
         Me.lblBalanceHora14.Size = New System.Drawing.Size(111, 18)
         Me.lblBalanceHora14.TabIndex = 12
         Me.lblBalanceHora14.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora14
+        Me.lblBalanceHora14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblBalanceHora13
         '
         Me.lblBalanceHora13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblBalanceHora13.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora13", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblBalanceHora13.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora13.Location = New System.Drawing.Point(57, 248)
+        Me.lblBalanceHora13.Location = New System.Drawing.Point(58, 265)
         Me.lblBalanceHora13.Name = "lblBalanceHora13"
         Me.lblBalanceHora13.Size = New System.Drawing.Size(111, 18)
         Me.lblBalanceHora13.TabIndex = 12
         Me.lblBalanceHora13.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora13
+        Me.lblBalanceHora13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblBalanceHora06
         '
         Me.lblBalanceHora06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblBalanceHora06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblBalanceHora06.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora06.Location = New System.Drawing.Point(57, 129)
+        Me.lblBalanceHora06.Location = New System.Drawing.Point(58, 146)
         Me.lblBalanceHora06.Name = "lblBalanceHora06"
         Me.lblBalanceHora06.Size = New System.Drawing.Size(111, 18)
         Me.lblBalanceHora06.TabIndex = 12
         Me.lblBalanceHora06.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora06
+        Me.lblBalanceHora06.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblBalanceHora12
         '
         Me.lblBalanceHora12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblBalanceHora12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblBalanceHora12.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora12.Location = New System.Drawing.Point(57, 231)
+        Me.lblBalanceHora12.Location = New System.Drawing.Point(58, 248)
         Me.lblBalanceHora12.Name = "lblBalanceHora12"
         Me.lblBalanceHora12.Size = New System.Drawing.Size(111, 18)
         Me.lblBalanceHora12.TabIndex = 12
         Me.lblBalanceHora12.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora12
+        Me.lblBalanceHora12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblBalanceHora11
         '
         Me.lblBalanceHora11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblBalanceHora11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblBalanceHora11.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora11.Location = New System.Drawing.Point(57, 214)
+        Me.lblBalanceHora11.Location = New System.Drawing.Point(58, 231)
         Me.lblBalanceHora11.Name = "lblBalanceHora11"
         Me.lblBalanceHora11.Size = New System.Drawing.Size(111, 18)
         Me.lblBalanceHora11.TabIndex = 12
         Me.lblBalanceHora11.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora11
+        Me.lblBalanceHora11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblBalanceHora07
         '
         Me.lblBalanceHora07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblBalanceHora07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblBalanceHora07.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora07.Location = New System.Drawing.Point(57, 146)
+        Me.lblBalanceHora07.Location = New System.Drawing.Point(58, 163)
         Me.lblBalanceHora07.Name = "lblBalanceHora07"
         Me.lblBalanceHora07.Size = New System.Drawing.Size(111, 18)
         Me.lblBalanceHora07.TabIndex = 12
         Me.lblBalanceHora07.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora07
+        Me.lblBalanceHora07.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblBalanceHora09
         '
         Me.lblBalanceHora09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblBalanceHora09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblBalanceHora09.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora09.Location = New System.Drawing.Point(57, 180)
+        Me.lblBalanceHora09.Location = New System.Drawing.Point(58, 197)
         Me.lblBalanceHora09.Name = "lblBalanceHora09"
         Me.lblBalanceHora09.Size = New System.Drawing.Size(111, 18)
         Me.lblBalanceHora09.TabIndex = 12
         Me.lblBalanceHora09.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora09
+        Me.lblBalanceHora09.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label1
+        '
+        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.Label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(18, 22)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(42, 24)
+        Me.Label1.TabIndex = 13
+        Me.Label1.Text = "Hora"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblBalanceHora08
         '
         Me.lblBalanceHora08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblBalanceHora08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblBalanceHora08.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora08.Location = New System.Drawing.Point(57, 163)
+        Me.lblBalanceHora08.Location = New System.Drawing.Point(58, 180)
         Me.lblBalanceHora08.Name = "lblBalanceHora08"
         Me.lblBalanceHora08.Size = New System.Drawing.Size(111, 18)
         Me.lblBalanceHora08.TabIndex = 12
         Me.lblBalanceHora08.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora08
+        Me.lblBalanceHora08.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblMesDifencia01
         '
@@ -2262,11 +2416,12 @@ Partial Class Form1
         '
         'lblMesDaily
         '
-        Me.lblMesDaily.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesDaily.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesDaily.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblMesDaily.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.lblMesDaily.Location = New System.Drawing.Point(56, 556)
+        Me.lblMesDaily.Location = New System.Drawing.Point(11, 554)
         Me.lblMesDaily.Name = "lblMesDaily"
-        Me.lblMesDaily.Size = New System.Drawing.Size(91, 18)
+        Me.lblMesDaily.Size = New System.Drawing.Size(137, 25)
         Me.lblMesDaily.TabIndex = 144
         Me.lblMesDaily.Text = "Monthly Total:"
         Me.lblMesDaily.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -2397,8 +2552,8 @@ Partial Class Form1
         Me.gpMes.Controls.Add(Me.lblMesPrecio06)
         Me.gpMes.Controls.Add(Me.lblMesPrecio05)
         Me.gpMes.Controls.Add(Me.lbl29)
-        Me.gpMes.Controls.Add(Me.lblMesDaily)
         Me.gpMes.Controls.Add(Me.lblTotalMes)
+        Me.gpMes.Controls.Add(Me.lblMesDaily)
         Me.gpMes.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gpMes.Location = New System.Drawing.Point(348, 15)
         Me.gpMes.Name = "gpMes"
@@ -3091,97 +3246,97 @@ Partial Class Form1
         '
         'Chart5
         '
-        ChartArea9.AxisX.MajorGrid.Interval = 0R
-        ChartArea9.AxisX.MajorGrid.IntervalOffset = 0R
-        ChartArea9.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
-        ChartArea9.Name = "ChartArea1"
-        Me.Chart5.ChartAreas.Add(ChartArea9)
-        Legend9.Name = "Legend1"
-        Me.Chart5.Legends.Add(Legend9)
+        ChartArea3.AxisX.MajorGrid.Interval = 0R
+        ChartArea3.AxisX.MajorGrid.IntervalOffset = 0R
+        ChartArea3.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
+        ChartArea3.Name = "ChartArea1"
+        Me.Chart5.ChartAreas.Add(ChartArea3)
+        Legend3.Name = "Legend1"
+        Me.Chart5.Legends.Add(Legend3)
         Me.Chart5.Location = New System.Drawing.Point(564, 413)
         Me.Chart5.Name = "Chart5"
-        Series9.ChartArea = "ChartArea1"
-        Series9.Color = System.Drawing.Color.OrangeRed
-        Series9.IsVisibleInLegend = False
-        Series9.Legend = "Legend1"
-        Series9.Name = "Series1"
-        Series9.ToolTip = "#VAL"
-        Series9.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[String]
-        Series9.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
-        Me.Chart5.Series.Add(Series9)
+        Series3.ChartArea = "ChartArea1"
+        Series3.Color = System.Drawing.Color.OrangeRed
+        Series3.IsVisibleInLegend = False
+        Series3.Legend = "Legend1"
+        Series3.Name = "Series1"
+        Series3.ToolTip = "#VAL"
+        Series3.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[String]
+        Series3.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
+        Me.Chart5.Series.Add(Series3)
         Me.Chart5.Size = New System.Drawing.Size(526, 138)
         Me.Chart5.TabIndex = 149
         '
         'Chart3
         '
-        ChartArea10.Name = "ChartArea1"
-        Me.Chart3.ChartAreas.Add(ChartArea10)
-        Legend10.Name = "Legend1"
-        Me.Chart3.Legends.Add(Legend10)
+        ChartArea4.Name = "ChartArea1"
+        Me.Chart3.ChartAreas.Add(ChartArea4)
+        Legend4.Name = "Legend1"
+        Me.Chart3.Legends.Add(Legend4)
         Me.Chart3.Location = New System.Drawing.Point(6, 6)
         Me.Chart3.Name = "Chart3"
-        Series10.BorderWidth = 2
-        Series10.ChartArea = "ChartArea1"
-        Series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
-        Series10.Color = System.Drawing.Color.Fuchsia
-        Series10.EmptyPointStyle.IsValueShownAsLabel = True
-        Series10.EmptyPointStyle.IsVisibleInLegend = False
-        Series10.IsVisibleInLegend = False
-        Series10.LabelFormat = "0.00"
-        Series10.Legend = "Legend1"
-        Series10.Name = "Series1"
-        Series10.ToolTip = "#VAL"
-        Series10.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Series10.YValuesPerPoint = 4
-        Me.Chart3.Series.Add(Series10)
+        Series4.BorderWidth = 2
+        Series4.ChartArea = "ChartArea1"
+        Series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
+        Series4.Color = System.Drawing.Color.Fuchsia
+        Series4.EmptyPointStyle.IsValueShownAsLabel = True
+        Series4.EmptyPointStyle.IsVisibleInLegend = False
+        Series4.IsVisibleInLegend = False
+        Series4.LabelFormat = "0.00"
+        Series4.Legend = "Legend1"
+        Series4.Name = "Series1"
+        Series4.ToolTip = "#VAL"
+        Series4.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Series4.YValuesPerPoint = 4
+        Me.Chart3.Series.Add(Series4)
         Me.Chart3.Size = New System.Drawing.Size(506, 204)
         Me.Chart3.TabIndex = 147
         Me.Chart3.Text = "Chart3"
         '
         'Chart4
         '
-        ChartArea11.AxisX.MajorGrid.Interval = 0R
-        ChartArea11.AxisX.MajorGrid.IntervalOffset = 0R
-        ChartArea11.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
-        ChartArea11.Name = "ChartArea1"
-        Me.Chart4.ChartAreas.Add(ChartArea11)
-        Legend11.Name = "Legend1"
-        Me.Chart4.Legends.Add(Legend11)
+        ChartArea5.AxisX.MajorGrid.Interval = 0R
+        ChartArea5.AxisX.MajorGrid.IntervalOffset = 0R
+        ChartArea5.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
+        ChartArea5.Name = "ChartArea1"
+        Me.Chart4.ChartAreas.Add(ChartArea5)
+        Legend5.Name = "Legend1"
+        Me.Chart4.Legends.Add(Legend5)
         Me.Chart4.Location = New System.Drawing.Point(6, 423)
         Me.Chart4.Name = "Chart4"
-        Series11.ChartArea = "ChartArea1"
-        Series11.Color = System.Drawing.Color.Lime
-        Series11.IsVisibleInLegend = False
-        Series11.Legend = "Legend1"
-        Series11.Name = "Series1"
-        Series11.ToolTip = "#VAL"
-        Series11.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[String]
-        Series11.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
-        Me.Chart4.Series.Add(Series11)
+        Series5.ChartArea = "ChartArea1"
+        Series5.Color = System.Drawing.Color.Lime
+        Series5.IsVisibleInLegend = False
+        Series5.Legend = "Legend1"
+        Series5.Name = "Series1"
+        Series5.ToolTip = "#VAL"
+        Series5.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[String]
+        Series5.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
+        Me.Chart4.Series.Add(Series5)
         Me.Chart4.Size = New System.Drawing.Size(558, 138)
         Me.Chart4.TabIndex = 150
         '
         'Chart6
         '
-        ChartArea12.AxisX.MajorGrid.Interval = 0R
-        ChartArea12.AxisX.MajorGrid.IntervalOffset = 0R
-        ChartArea12.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
-        ChartArea12.Name = "ChartArea1"
-        Me.Chart6.ChartAreas.Add(ChartArea12)
-        Legend12.Name = "Legend1"
-        Me.Chart6.Legends.Add(Legend12)
+        ChartArea6.AxisX.MajorGrid.Interval = 0R
+        ChartArea6.AxisX.MajorGrid.IntervalOffset = 0R
+        ChartArea6.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
+        ChartArea6.Name = "ChartArea1"
+        Me.Chart6.ChartAreas.Add(ChartArea6)
+        Legend6.Name = "Legend1"
+        Me.Chart6.Legends.Add(Legend6)
         Me.Chart6.Location = New System.Drawing.Point(527, 238)
         Me.Chart6.Name = "Chart6"
-        Series12.BorderWidth = 2
-        Series12.ChartArea = "ChartArea1"
-        Series12.Color = System.Drawing.Color.DarkOrchid
-        Series12.IsVisibleInLegend = False
-        Series12.Legend = "Legend1"
-        Series12.Name = "Series1"
-        Series12.ToolTip = "#VAL"
-        Series12.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[String]
-        Series12.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
-        Me.Chart6.Series.Add(Series12)
+        Series6.BorderWidth = 2
+        Series6.ChartArea = "ChartArea1"
+        Series6.Color = System.Drawing.Color.DarkOrchid
+        Series6.IsVisibleInLegend = False
+        Series6.Legend = "Legend1"
+        Series6.Name = "Series1"
+        Series6.ToolTip = "#VAL"
+        Series6.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[String]
+        Series6.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
+        Me.Chart6.Series.Add(Series6)
         Me.Chart6.Size = New System.Drawing.Size(554, 179)
         Me.Chart6.TabIndex = 151
         '
@@ -3199,6 +3354,8 @@ Partial Class Form1
         '
         'TabPage1
         '
+        Me.TabPage1.BackColor = System.Drawing.Color.White
+        Me.TabPage1.Controls.Add(Me.TreeView1)
         Me.TabPage1.Controls.Add(Me.GroupBox3)
         Me.TabPage1.Controls.Add(Me.gpMes)
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
@@ -3207,7 +3364,15 @@ Partial Class Form1
         Me.TabPage1.Size = New System.Drawing.Size(1096, 679)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Table Date"
-        Me.TabPage1.UseVisualStyleBackColor = True
+        '
+        'TreeView1
+        '
+        Me.TreeView1.Location = New System.Drawing.Point(694, 24)
+        Me.TreeView1.Name = "TreeView1"
+        Me.TreeView1.ShowLines = False
+        Me.TreeView1.ShowPlusMinus = False
+        Me.TreeView1.Size = New System.Drawing.Size(391, 393)
+        Me.TreeView1.TabIndex = 147
         '
         'TabPage2
         '
@@ -3530,4 +3695,9 @@ Partial Class Form1
     Friend WithEvents TabPage3 As TabPage
     Friend WithEvents TabPage4 As TabPage
     Friend WithEvents Timer2 As Timer
+    Friend WithEvents TreeView1 As TreeView
+    Friend WithEvents Label31 As Label
+    Friend WithEvents Label30 As Label
+    Friend WithEvents Label29 As Label
+    Friend WithEvents Label1 As Label
 End Class

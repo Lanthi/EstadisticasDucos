@@ -302,6 +302,19 @@ Partial Class Form1
         Me.TabPage4 = New System.Windows.Forms.TabPage()
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
+        Me.Label39 = New System.Windows.Forms.Label()
+        Me.Label38 = New System.Windows.Forms.Label()
+        Me.lblGanadoDolar = New System.Windows.Forms.Label()
+        Me.GroupBox6 = New System.Windows.Forms.GroupBox()
+        Me.lblValorEuro = New System.Windows.Forms.Label()
+        Me.GroupBox7 = New System.Windows.Forms.GroupBox()
+        Me.lblEstimadoMesDetalle = New System.Windows.Forms.Label()
+        Me.Label41 = New System.Windows.Forms.Label()
+        Me.lblEstimadoMes = New System.Windows.Forms.Label()
+        Me.lblEstimadoDetalle = New System.Windows.Forms.Label()
+        Me.Label37 = New System.Windows.Forms.Label()
+        Me.lblEstimado = New System.Windows.Forms.Label()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Chart2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -316,6 +329,9 @@ Partial Class Form1
         Me.TabPage1.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
         Me.TabPage2.SuspendLayout()
+        Me.GroupBox5.SuspendLayout()
+        Me.GroupBox6.SuspendLayout()
+        Me.GroupBox7.SuspendLayout()
         Me.SuspendLayout()
         '
         'Timer1
@@ -948,23 +964,24 @@ Partial Class Form1
         Me.lblHora.BackColor = System.Drawing.Color.Green
         Me.lblHora.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblHora.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.lblHora.Font = New System.Drawing.Font("Digital Display", 42.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHora.Font = New System.Drawing.Font("Digital Display", 44.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblHora.ForeColor = System.Drawing.Color.White
-        Me.lblHora.Location = New System.Drawing.Point(17, 203)
+        Me.lblHora.Location = New System.Drawing.Point(12, 456)
         Me.lblHora.Name = "lblHora"
-        Me.lblHora.Size = New System.Drawing.Size(225, 90)
+        Me.lblHora.Size = New System.Drawing.Size(236, 90)
         Me.lblHora.TabIndex = 133
         Me.lblHora.Text = "00:00:00"
         Me.lblHora.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lblGanado
         '
-        Me.lblGanado.Font = New System.Drawing.Font("Digital Display", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblGanado.Location = New System.Drawing.Point(17, 151)
+        Me.lblGanado.Font = New System.Drawing.Font("Digital Display", 35.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblGanado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.lblGanado.Location = New System.Drawing.Point(1, 60)
         Me.lblGanado.Name = "lblGanado"
-        Me.lblGanado.Size = New System.Drawing.Size(234, 41)
+        Me.lblGanado.Size = New System.Drawing.Size(210, 41)
         Me.lblGanado.TabIndex = 134
-        Me.lblGanado.Text = "0000,0000€"
+        Me.lblGanado.Text = "0000,0000"
         Me.lblGanado.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Chart1
@@ -973,7 +990,7 @@ Partial Class Form1
         Me.Chart1.ChartAreas.Add(ChartArea1)
         Legend1.Name = "Legend1"
         Me.Chart1.Legends.Add(Legend1)
-        Me.Chart1.Location = New System.Drawing.Point(518, 3)
+        Me.Chart1.Location = New System.Drawing.Point(-23, 203)
         Me.Chart1.Name = "Chart1"
         Series1.BorderWidth = 3
         Series1.ChartArea = "ChartArea1"
@@ -985,7 +1002,7 @@ Partial Class Form1
         Series1.ToolTip = "#VAL"
         Series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
         Me.Chart1.Series.Add(Series1)
-        Me.Chart1.Size = New System.Drawing.Size(563, 204)
+        Me.Chart1.Size = New System.Drawing.Size(562, 190)
         Me.Chart1.TabIndex = 135
         '
         'Chart2
@@ -994,7 +1011,7 @@ Partial Class Form1
         Me.Chart2.ChartAreas.Add(ChartArea2)
         Legend2.Name = "Legend1"
         Me.Chart2.Legends.Add(Legend2)
-        Me.Chart2.Location = New System.Drawing.Point(6, 226)
+        Me.Chart2.Location = New System.Drawing.Point(-10, 0)
         Me.Chart2.Name = "Chart2"
         Series2.BorderWidth = 3
         Series2.ChartArea = "ChartArea1"
@@ -1006,7 +1023,7 @@ Partial Class Form1
         Series2.ToolTip = "#VAL"
         Series2.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
         Me.Chart2.Series.Add(Series2)
-        Me.Chart2.Size = New System.Drawing.Size(497, 204)
+        Me.Chart2.Size = New System.Drawing.Size(549, 204)
         Me.Chart2.TabIndex = 135
         '
         'Label26
@@ -1056,20 +1073,21 @@ Partial Class Form1
         '
         'Label27
         '
-        Me.Label27.Font = New System.Drawing.Font("Digital Display", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label27.Location = New System.Drawing.Point(208, 12)
+        Me.Label27.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label27.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Label27.Location = New System.Drawing.Point(207, 18)
         Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(21, 33)
+        Me.Label27.Size = New System.Drawing.Size(18, 33)
         Me.Label27.TabIndex = 0
-        Me.Label27.Text = "€"
+        Me.Label27.Text = "$"
         Me.Label27.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'txtDucoprice
         '
         Me.txtDucoprice.Font = New System.Drawing.Font("Digital Display", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDucoprice.Location = New System.Drawing.Point(9, 17)
+        Me.txtDucoprice.Location = New System.Drawing.Point(9, 20)
         Me.txtDucoprice.Name = "txtDucoprice"
-        Me.txtDucoprice.Size = New System.Drawing.Size(205, 29)
+        Me.txtDucoprice.Size = New System.Drawing.Size(204, 29)
         Me.txtDucoprice.TabIndex = 0
         Me.txtDucoprice.Text = "0,00033811"
         Me.txtDucoprice.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -3405,7 +3423,7 @@ Partial Class Form1
         Me.Chart5.ChartAreas.Add(ChartArea3)
         Legend3.Name = "Legend1"
         Me.Chart5.Legends.Add(Legend3)
-        Me.Chart5.Location = New System.Drawing.Point(564, 413)
+        Me.Chart5.Location = New System.Drawing.Point(499, 203)
         Me.Chart5.Name = "Chart5"
         Series3.ChartArea = "ChartArea1"
         Series3.Color = System.Drawing.Color.OrangeRed
@@ -3416,7 +3434,7 @@ Partial Class Form1
         Series3.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[String]
         Series3.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
         Me.Chart5.Series.Add(Series3)
-        Me.Chart5.Size = New System.Drawing.Size(526, 138)
+        Me.Chart5.Size = New System.Drawing.Size(613, 199)
         Me.Chart5.TabIndex = 149
         '
         'Chart3
@@ -3425,7 +3443,7 @@ Partial Class Form1
         Me.Chart3.ChartAreas.Add(ChartArea4)
         Legend4.Name = "Legend1"
         Me.Chart3.Legends.Add(Legend4)
-        Me.Chart3.Location = New System.Drawing.Point(6, 6)
+        Me.Chart3.Location = New System.Drawing.Point(-39, 388)
         Me.Chart3.Name = "Chart3"
         Series4.BorderWidth = 2
         Series4.ChartArea = "ChartArea1"
@@ -3441,7 +3459,7 @@ Partial Class Form1
         Series4.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
         Series4.YValuesPerPoint = 4
         Me.Chart3.Series.Add(Series4)
-        Me.Chart3.Size = New System.Drawing.Size(506, 204)
+        Me.Chart3.Size = New System.Drawing.Size(1205, 153)
         Me.Chart3.TabIndex = 147
         Me.Chart3.Text = "Chart3"
         '
@@ -3454,7 +3472,7 @@ Partial Class Form1
         Me.Chart4.ChartAreas.Add(ChartArea5)
         Legend5.Name = "Legend1"
         Me.Chart4.Legends.Add(Legend5)
-        Me.Chart4.Location = New System.Drawing.Point(6, 423)
+        Me.Chart4.Location = New System.Drawing.Point(514, 0)
         Me.Chart4.Name = "Chart4"
         Series5.ChartArea = "ChartArea1"
         Series5.Color = System.Drawing.Color.Lime
@@ -3465,7 +3483,7 @@ Partial Class Form1
         Series5.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[String]
         Series5.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
         Me.Chart4.Series.Add(Series5)
-        Me.Chart4.Size = New System.Drawing.Size(558, 138)
+        Me.Chart4.Size = New System.Drawing.Size(598, 213)
         Me.Chart4.TabIndex = 150
         '
         'Chart6
@@ -3477,23 +3495,25 @@ Partial Class Form1
         Me.Chart6.ChartAreas.Add(ChartArea6)
         Legend6.Name = "Legend1"
         Me.Chart6.Legends.Add(Legend6)
-        Me.Chart6.Location = New System.Drawing.Point(527, 238)
+        Me.Chart6.Location = New System.Drawing.Point(-40, 528)
         Me.Chart6.Name = "Chart6"
         Series6.BorderWidth = 2
         Series6.ChartArea = "ChartArea1"
+        Series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line
         Series6.Color = System.Drawing.Color.DarkOrchid
         Series6.IsVisibleInLegend = False
         Series6.Legend = "Legend1"
         Series6.Name = "Series1"
         Series6.ToolTip = "#VAL"
-        Series6.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[String]
+        Series6.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
         Series6.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
         Me.Chart6.Series.Add(Series6)
-        Me.Chart6.Size = New System.Drawing.Size(554, 179)
+        Me.Chart6.Size = New System.Drawing.Size(1196, 150)
         Me.Chart6.TabIndex = 151
         '
         'TabControl1
         '
+        Me.TabControl1.Appearance = System.Windows.Forms.TabAppearance.Buttons
         Me.TabControl1.Controls.Add(Me.TabPage1)
         Me.TabControl1.Controls.Add(Me.TabPage2)
         Me.TabControl1.Controls.Add(Me.TabPage3)
@@ -3510,10 +3530,10 @@ Partial Class Form1
         Me.TabPage1.Controls.Add(Me.GroupBox4)
         Me.TabPage1.Controls.Add(Me.GroupBox3)
         Me.TabPage1.Controls.Add(Me.gpMes)
-        Me.TabPage1.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage1.Location = New System.Drawing.Point(4, 25)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(1096, 679)
+        Me.TabPage1.Size = New System.Drawing.Size(1096, 676)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Table Date"
         '
@@ -3526,7 +3546,7 @@ Partial Class Form1
         Me.GroupBox4.Size = New System.Drawing.Size(394, 436)
         Me.GroupBox4.TabIndex = 148
         Me.GroupBox4.TabStop = False
-        Me.GroupBox4.Text = "Last Transactions"
+        Me.GroupBox4.Text = "Last 5 Transactions"
         '
         'TreeView1
         '
@@ -3540,34 +3560,34 @@ Partial Class Form1
         '
         'TabPage2
         '
-        Me.TabPage2.Controls.Add(Me.Chart3)
+        Me.TabPage2.BackColor = System.Drawing.Color.White
         Me.TabPage2.Controls.Add(Me.Chart4)
         Me.TabPage2.Controls.Add(Me.Chart5)
-        Me.TabPage2.Controls.Add(Me.Chart1)
-        Me.TabPage2.Controls.Add(Me.Chart2)
         Me.TabPage2.Controls.Add(Me.Chart6)
-        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage2.Controls.Add(Me.Chart3)
+        Me.TabPage2.Controls.Add(Me.Chart2)
+        Me.TabPage2.Controls.Add(Me.Chart1)
+        Me.TabPage2.Location = New System.Drawing.Point(4, 25)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(1096, 679)
+        Me.TabPage2.Size = New System.Drawing.Size(1096, 676)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Grafic"
-        Me.TabPage2.UseVisualStyleBackColor = True
         '
         'TabPage3
         '
-        Me.TabPage3.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage3.Location = New System.Drawing.Point(4, 25)
         Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Size = New System.Drawing.Size(1096, 679)
+        Me.TabPage3.Size = New System.Drawing.Size(1096, 676)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "Server"
         Me.TabPage3.UseVisualStyleBackColor = True
         '
         'TabPage4
         '
-        Me.TabPage4.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage4.Location = New System.Drawing.Point(4, 25)
         Me.TabPage4.Name = "TabPage4"
-        Me.TabPage4.Size = New System.Drawing.Size(1096, 679)
+        Me.TabPage4.Size = New System.Drawing.Size(1096, 676)
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "Miners"
         Me.TabPage4.UseVisualStyleBackColor = True
@@ -3579,12 +3599,159 @@ Partial Class Form1
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(17, 303)
+        Me.Button1.Location = New System.Drawing.Point(12, 563)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(74, 52)
         Me.Button1.TabIndex = 149
         Me.Button1.Text = "Reset"
         Me.Button1.UseVisualStyleBackColor = True
+        '
+        'GroupBox5
+        '
+        Me.GroupBox5.Controls.Add(Me.Label39)
+        Me.GroupBox5.Controls.Add(Me.Label38)
+        Me.GroupBox5.Controls.Add(Me.lblGanadoDolar)
+        Me.GroupBox5.Controls.Add(Me.lblGanado)
+        Me.GroupBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox5.Location = New System.Drawing.Point(12, 144)
+        Me.GroupBox5.Name = "GroupBox5"
+        Me.GroupBox5.Size = New System.Drawing.Size(236, 109)
+        Me.GroupBox5.TabIndex = 149
+        Me.GroupBox5.TabStop = False
+        Me.GroupBox5.Text = "Gain"
+        '
+        'Label39
+        '
+        Me.Label39.Font = New System.Drawing.Font("Digital Display", 35.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label39.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label39.Location = New System.Drawing.Point(207, 59)
+        Me.Label39.Name = "Label39"
+        Me.Label39.Size = New System.Drawing.Size(28, 41)
+        Me.Label39.TabIndex = 135
+        Me.Label39.Text = "€"
+        Me.Label39.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label38
+        '
+        Me.Label38.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label38.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Label38.Location = New System.Drawing.Point(200, 26)
+        Me.Label38.Name = "Label38"
+        Me.Label38.Size = New System.Drawing.Size(26, 33)
+        Me.Label38.TabIndex = 0
+        Me.Label38.Text = "$"
+        Me.Label38.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lblGanadoDolar
+        '
+        Me.lblGanadoDolar.Font = New System.Drawing.Font("Digital Display", 35.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblGanadoDolar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.lblGanadoDolar.Location = New System.Drawing.Point(1, 22)
+        Me.lblGanadoDolar.Name = "lblGanadoDolar"
+        Me.lblGanadoDolar.Size = New System.Drawing.Size(210, 41)
+        Me.lblGanadoDolar.TabIndex = 134
+        Me.lblGanadoDolar.Text = "0000,0000"
+        Me.lblGanadoDolar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'GroupBox6
+        '
+        Me.GroupBox6.Controls.Add(Me.lblValorEuro)
+        Me.GroupBox6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox6.Location = New System.Drawing.Point(11, 259)
+        Me.GroupBox6.Name = "GroupBox6"
+        Me.GroupBox6.Size = New System.Drawing.Size(236, 75)
+        Me.GroupBox6.TabIndex = 149
+        Me.GroupBox6.TabStop = False
+        Me.GroupBox6.Text = "USD Equals"
+        '
+        'lblValorEuro
+        '
+        Me.lblValorEuro.Font = New System.Drawing.Font("Digital Display", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblValorEuro.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.lblValorEuro.Location = New System.Drawing.Point(3, 25)
+        Me.lblValorEuro.Name = "lblValorEuro"
+        Me.lblValorEuro.Size = New System.Drawing.Size(230, 41)
+        Me.lblValorEuro.TabIndex = 134
+        Me.lblValorEuro.Text = "0,000000000000€"
+        Me.lblValorEuro.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'GroupBox7
+        '
+        Me.GroupBox7.Controls.Add(Me.lblEstimadoMesDetalle)
+        Me.GroupBox7.Controls.Add(Me.Label41)
+        Me.GroupBox7.Controls.Add(Me.lblEstimadoMes)
+        Me.GroupBox7.Controls.Add(Me.lblEstimadoDetalle)
+        Me.GroupBox7.Controls.Add(Me.Label37)
+        Me.GroupBox7.Controls.Add(Me.lblEstimado)
+        Me.GroupBox7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox7.Location = New System.Drawing.Point(12, 337)
+        Me.GroupBox7.Name = "GroupBox7"
+        Me.GroupBox7.Size = New System.Drawing.Size(236, 99)
+        Me.GroupBox7.TabIndex = 149
+        Me.GroupBox7.TabStop = False
+        Me.GroupBox7.Text = "Earning about"
+        '
+        'lblEstimadoMesDetalle
+        '
+        Me.lblEstimadoMesDetalle.AutoSize = True
+        Me.lblEstimadoMesDetalle.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEstimadoMesDetalle.Location = New System.Drawing.Point(132, 68)
+        Me.lblEstimadoMesDetalle.Name = "lblEstimadoMesDetalle"
+        Me.lblEstimadoMesDetalle.Size = New System.Drawing.Size(103, 16)
+        Me.lblEstimadoMesDetalle.TabIndex = 152
+        Me.lblEstimadoMesDetalle.Text = "monthly (≈0.012)"
+        '
+        'Label41
+        '
+        Me.Label41.AutoSize = True
+        Me.Label41.Font = New System.Drawing.Font("Duco", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label41.Location = New System.Drawing.Point(113, 69)
+        Me.Label41.Name = "Label41"
+        Me.Label41.Size = New System.Drawing.Size(23, 15)
+        Me.Label41.TabIndex = 151
+        Me.Label41.Text = "a"
+        '
+        'lblEstimadoMes
+        '
+        Me.lblEstimadoMes.Font = New System.Drawing.Font("Digital Display", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEstimadoMes.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.lblEstimadoMes.Location = New System.Drawing.Point(3, 54)
+        Me.lblEstimadoMes.Name = "lblEstimadoMes"
+        Me.lblEstimadoMes.Size = New System.Drawing.Size(115, 41)
+        Me.lblEstimadoMes.TabIndex = 150
+        Me.lblEstimadoMes.Text = "00000,00"
+        Me.lblEstimadoMes.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblEstimadoDetalle
+        '
+        Me.lblEstimadoDetalle.AutoSize = True
+        Me.lblEstimadoDetalle.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEstimadoDetalle.Location = New System.Drawing.Point(131, 36)
+        Me.lblEstimadoDetalle.Name = "lblEstimadoDetalle"
+        Me.lblEstimadoDetalle.Size = New System.Drawing.Size(86, 16)
+        Me.lblEstimadoDetalle.TabIndex = 149
+        Me.lblEstimadoDetalle.Text = "daily (≈0.012)"
+        '
+        'Label37
+        '
+        Me.Label37.AutoSize = True
+        Me.Label37.Font = New System.Drawing.Font("Duco", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label37.Location = New System.Drawing.Point(112, 37)
+        Me.Label37.Name = "Label37"
+        Me.Label37.Size = New System.Drawing.Size(23, 15)
+        Me.Label37.TabIndex = 137
+        Me.Label37.Text = "a"
+        '
+        'lblEstimado
+        '
+        Me.lblEstimado.Font = New System.Drawing.Font("Digital Display", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEstimado.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.lblEstimado.Location = New System.Drawing.Point(2, 22)
+        Me.lblEstimado.Name = "lblEstimado"
+        Me.lblEstimado.Size = New System.Drawing.Size(115, 41)
+        Me.lblEstimado.TabIndex = 134
+        Me.lblEstimado.Text = "00000,00"
+        Me.lblEstimado.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Form1
         '
@@ -3592,12 +3759,14 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1370, 735)
+        Me.Controls.Add(Me.GroupBox7)
+        Me.Controls.Add(Me.GroupBox6)
+        Me.Controls.Add(Me.GroupBox5)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.lblHora)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.lblGanado)
         Me.Controls.Add(Me.lstDUCOTiempoReal)
         Me.Controls.Add(Me.lstBalanceTiempoReal)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -3619,6 +3788,10 @@ Partial Class Form1
         Me.TabPage1.ResumeLayout(False)
         Me.GroupBox4.ResumeLayout(False)
         Me.TabPage2.ResumeLayout(False)
+        Me.GroupBox5.ResumeLayout(False)
+        Me.GroupBox6.ResumeLayout(False)
+        Me.GroupBox7.ResumeLayout(False)
+        Me.GroupBox7.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -3882,4 +4055,17 @@ Partial Class Form1
     Friend WithEvents Label33 As Label
     Friend WithEvents Label32 As Label
     Friend WithEvents Button1 As Button
+    Friend WithEvents GroupBox5 As GroupBox
+    Friend WithEvents GroupBox6 As GroupBox
+    Friend WithEvents lblValorEuro As Label
+    Friend WithEvents GroupBox7 As GroupBox
+    Friend WithEvents lblEstimadoDetalle As Label
+    Friend WithEvents Label37 As Label
+    Friend WithEvents lblEstimado As Label
+    Friend WithEvents Label39 As Label
+    Friend WithEvents Label38 As Label
+    Friend WithEvents lblGanadoDolar As Label
+    Friend WithEvents lblEstimadoMesDetalle As Label
+    Friend WithEvents Label41 As Label
+    Friend WithEvents lblEstimadoMes As Label
 End Class

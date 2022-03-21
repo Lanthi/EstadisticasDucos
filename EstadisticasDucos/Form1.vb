@@ -23,6 +23,7 @@ Public Class Form1
     Dim EstimadoNuevo As Decimal = 0
     Dim ValorEstimado As Decimal
     Dim ValorEstimadoMes As Decimal
+    Dim ContadorEstimacion As Integer = 0
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
             For I As Integer = 0 To 30
@@ -326,13 +327,9 @@ Public Class Form1
                     End If
 
                 End If
-
-
-
-
+                ContadorEstimacion += 1
+                If ContadorEstimacion >= 50 Then Chart6.Series(0).Points.RemoveAt(0)
             End If
-
-
             lblValorEuro.Text = Euro & "€"
             lblGanado.Text = Format(CDec(txtbalance.Text) * CDec(txtDucoprice.Text) * Euro, "###0.0000")
             lblGanadoDolar.Text = Format(CDec(txtbalance.Text) * CDec(txtDucoprice.Text), "###0.0000")
@@ -630,6 +627,15 @@ Public Class Form1
             Chart5.Series(0).Points.AddXY("Day 30", CDec(lblMesPrecio30.Text))
             Chart4.Series(0).Points.AddXY("Day 31", CDec(lblMesBalance31.Text))
             Chart5.Series(0).Points.AddXY("Day 31", CDec(lblMesPrecio31.Text))
+            Chart7.Series(0).Points.Clear()
+            Chart7.Series(0).Points.AddXY("Arduino", dict.item("Miner distribution").item("Arduino"))
+            Chart7.Series(0).Points.AddXY("CPU", dict.item("Miner distribution").item("CPU"))
+            Chart7.Series(0).Points.AddXY("ESP32", dict.item("Miner distribution").item("ESP32"))
+            Chart7.Series(0).Points.AddXY("ESP8266", dict.item("Miner distribution").item("ESP8266"))
+            Chart7.Series(0).Points.AddXY("Other", dict.item("Miner distribution").item("Other"))
+            Chart7.Series(0).Points.AddXY("Phone", dict.item("Miner distribution").item("Phone"))
+            Chart7.Series(0).Points.AddXY("RPi", dict.item("Miner distribution").item("RPi"))
+            Chart7.Series(0).Points.AddXY("Web", dict.item("Miner distribution").item("Web"))
         Catch ex As Exception
             MsgBox("Error!!" & vbCrLf & ex.Message)
         End Try

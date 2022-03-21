@@ -41,6 +41,9 @@ Partial Class Form1
         Dim ChartArea6 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
         Dim Legend6 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
         Dim Series6 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea7 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend7 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series7 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.lstBalanceTiempoReal = New System.Windows.Forms.ListBox()
@@ -315,6 +318,7 @@ Partial Class Form1
         Me.lblEstimadoDetalle = New System.Windows.Forms.Label()
         Me.Label37 = New System.Windows.Forms.Label()
         Me.lblEstimado = New System.Windows.Forms.Label()
+        Me.Chart7 = New System.Windows.Forms.DataVisualization.Charting.Chart()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Chart2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -329,9 +333,11 @@ Partial Class Form1
         Me.TabPage1.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
         Me.TabPage2.SuspendLayout()
+        Me.TabPage3.SuspendLayout()
         Me.GroupBox5.SuspendLayout()
         Me.GroupBox6.SuspendLayout()
         Me.GroupBox7.SuspendLayout()
+        CType(Me.Chart7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Timer1
@@ -3576,12 +3582,13 @@ Partial Class Form1
         '
         'TabPage3
         '
+        Me.TabPage3.BackColor = System.Drawing.Color.White
+        Me.TabPage3.Controls.Add(Me.Chart7)
         Me.TabPage3.Location = New System.Drawing.Point(4, 25)
         Me.TabPage3.Name = "TabPage3"
         Me.TabPage3.Size = New System.Drawing.Size(1096, 676)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "Server"
-        Me.TabPage3.UseVisualStyleBackColor = True
         '
         'TabPage4
         '
@@ -3605,6 +3612,7 @@ Partial Class Form1
         Me.Button1.TabIndex = 149
         Me.Button1.Text = "Reset"
         Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.Visible = False
         '
         'GroupBox5
         '
@@ -3753,6 +3761,25 @@ Partial Class Form1
         Me.lblEstimado.Text = "00000,00"
         Me.lblEstimado.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
+        'Chart7
+        '
+        ChartArea7.Name = "ChartArea1"
+        Me.Chart7.ChartAreas.Add(ChartArea7)
+        Legend7.Name = "Legend1"
+        Me.Chart7.Legends.Add(Legend7)
+        Me.Chart7.Location = New System.Drawing.Point(0, -4)
+        Me.Chart7.Name = "Chart7"
+        Series7.ChartArea = "ChartArea1"
+        Series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie
+        Series7.IsValueShownAsLabel = True
+        Series7.Label = "#VALX:#VAL"
+        Series7.Legend = "Legend1"
+        Series7.Name = "Series1"
+        Me.Chart7.Series.Add(Series7)
+        Me.Chart7.Size = New System.Drawing.Size(529, 450)
+        Me.Chart7.TabIndex = 0
+        Me.Chart7.Text = "Chart7"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -3788,10 +3815,12 @@ Partial Class Form1
         Me.TabPage1.ResumeLayout(False)
         Me.GroupBox4.ResumeLayout(False)
         Me.TabPage2.ResumeLayout(False)
+        Me.TabPage3.ResumeLayout(False)
         Me.GroupBox5.ResumeLayout(False)
         Me.GroupBox6.ResumeLayout(False)
         Me.GroupBox7.ResumeLayout(False)
         Me.GroupBox7.PerformLayout()
+        CType(Me.Chart7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -4068,4 +4097,5 @@ Partial Class Form1
     Friend WithEvents lblEstimadoMesDetalle As Label
     Friend WithEvents Label41 As Label
     Friend WithEvents lblEstimadoMes As Label
+    Friend WithEvents Chart7 As DataVisualization.Charting.Chart
 End Class

@@ -23,27 +23,24 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea3 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend3 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series3 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea4 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend4 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series4 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea5 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend5 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series5 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea6 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend6 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series6 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea7 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend7 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series7 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea37 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend37 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series37 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea38 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend38 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series38 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea39 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend39 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series39 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea40 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend40 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series40 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea41 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend41 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series41 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea42 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend42 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series42 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.lstBalanceTiempoReal = New System.Windows.Forms.ListBox()
@@ -312,13 +309,93 @@ Partial Class Form1
         Me.GroupBox6 = New System.Windows.Forms.GroupBox()
         Me.lblValorEuro = New System.Windows.Forms.Label()
         Me.GroupBox7 = New System.Windows.Forms.GroupBox()
-        Me.lblEstimadoMesDetalle = New System.Windows.Forms.Label()
-        Me.Label41 = New System.Windows.Forms.Label()
         Me.lblEstimadoMes = New System.Windows.Forms.Label()
-        Me.lblEstimadoDetalle = New System.Windows.Forms.Label()
-        Me.Label37 = New System.Windows.Forms.Label()
         Me.lblEstimado = New System.Windows.Forms.Label()
-        Me.Chart7 = New System.Windows.Forms.DataVisualization.Charting.Chart()
+        Me.GroupBox8 = New System.Windows.Forms.GroupBox()
+        Me.txtDucopriceXMG = New System.Windows.Forms.TextBox()
+        Me.Label40 = New System.Windows.Forms.Label()
+        Me.txtDucopriceTRX = New System.Windows.Forms.TextBox()
+        Me.Label42 = New System.Windows.Forms.Label()
+        Me.txtDucopriceNANO = New System.Windows.Forms.TextBox()
+        Me.Label43 = New System.Windows.Forms.Label()
+        Me.txtDucopriceBCH = New System.Windows.Forms.TextBox()
+        Me.Label44 = New System.Windows.Forms.Label()
+        Me.txtDucoSushiSwapprice = New System.Windows.Forms.TextBox()
+        Me.Label45 = New System.Windows.Forms.Label()
+        Me.txtDucoPancakeSwapprice = New System.Windows.Forms.TextBox()
+        Me.Label46 = New System.Windows.Forms.Label()
+        Me.txtDucoNodeSprice = New System.Windows.Forms.TextBox()
+        Me.Label47 = New System.Windows.Forms.Label()
+        Me.txtDucoJustSwapprice = New System.Windows.Forms.TextBox()
+        Me.Label48 = New System.Windows.Forms.Label()
+        Me.txtDucoprice1 = New System.Windows.Forms.TextBox()
+        Me.Label49 = New System.Windows.Forms.Label()
+        Me.GroupBox9 = New System.Windows.Forms.GroupBox()
+        Me.txtJailed = New System.Windows.Forms.TextBox()
+        Me.Label50 = New System.Windows.Forms.Label()
+        Me.txtBanned = New System.Windows.Forms.TextBox()
+        Me.Label51 = New System.Windows.Forms.Label()
+        Me.GroupBox10 = New System.Windows.Forms.GroupBox()
+        Me.txtMinedblocks = New System.Windows.Forms.TextBox()
+        Me.txtActiveconnections = New System.Windows.Forms.TextBox()
+        Me.Label75 = New System.Windows.Forms.Label()
+        Me.Label76 = New System.Windows.Forms.Label()
+        Me.txtLastupdate = New System.Windows.Forms.TextBox()
+        Me.Label77 = New System.Windows.Forms.Label()
+        Me.Label78 = New System.Windows.Forms.Label()
+        Me.txtDUCOS1hashrate = New System.Windows.Forms.TextBox()
+        Me.txtLastsync = New System.Windows.Forms.TextBox()
+        Me.txtServerversion = New System.Windows.Forms.TextBox()
+        Me.Label79 = New System.Windows.Forms.Label()
+        Me.Label80 = New System.Windows.Forms.Label()
+        Me.Label81 = New System.Windows.Forms.Label()
+        Me.txtNetenergyusage = New System.Windows.Forms.TextBox()
+        Me.txtServerRAMusage = New System.Windows.Forms.TextBox()
+        Me.Label82 = New System.Windows.Forms.Label()
+        Me.txtLastblockhash = New System.Windows.Forms.TextBox()
+        Me.Label83 = New System.Windows.Forms.Label()
+        Me.Label84 = New System.Windows.Forms.Label()
+        Me.txtOpenthreads = New System.Windows.Forms.TextBox()
+        Me.txtServerCPUusage = New System.Windows.Forms.TextBox()
+        Me.Label85 = New System.Windows.Forms.Label()
+        Me.Label86 = New System.Windows.Forms.Label()
+        Me.txtPoolhashrate = New System.Windows.Forms.TextBox()
+        Me.txtRegisteredusers = New System.Windows.Forms.TextBox()
+        Me.Label87 = New System.Windows.Forms.Label()
+        Me.GroupBox11 = New System.Windows.Forms.GroupBox()
+        Me.txtAll = New System.Windows.Forms.TextBox()
+        Me.Label88 = New System.Windows.Forms.Label()
+        Me.txtESP32 = New System.Windows.Forms.TextBox()
+        Me.txtCPU = New System.Windows.Forms.TextBox()
+        Me.Label89 = New System.Windows.Forms.Label()
+        Me.Label90 = New System.Windows.Forms.Label()
+        Me.txtWeb = New System.Windows.Forms.TextBox()
+        Me.Label91 = New System.Windows.Forms.Label()
+        Me.txtRPi = New System.Windows.Forms.TextBox()
+        Me.Label92 = New System.Windows.Forms.Label()
+        Me.txtPhone = New System.Windows.Forms.TextBox()
+        Me.Label93 = New System.Windows.Forms.Label()
+        Me.txtOther = New System.Windows.Forms.TextBox()
+        Me.Label94 = New System.Windows.Forms.Label()
+        Me.txtESP8266 = New System.Windows.Forms.TextBox()
+        Me.Label95 = New System.Windows.Forms.Label()
+        Me.txtArduinos = New System.Windows.Forms.TextBox()
+        Me.Label96 = New System.Windows.Forms.Label()
+        Me.GroupBox12 = New System.Windows.Forms.GroupBox()
+        Me.TreeView2 = New System.Windows.Forms.TreeView()
+        Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
+        Me.GroupBox13 = New System.Windows.Forms.GroupBox()
+        Me.lstboxTop10 = New System.Windows.Forms.ListBox()
+        Me.GroupBox14 = New System.Windows.Forms.GroupBox()
+        Me.lblHases = New System.Windows.Forms.Label()
+        Me.lblMineros = New System.Windows.Forms.Label()
+        Me.Label41 = New System.Windows.Forms.Label()
+        Me.lblEstimadoMesDetalle = New System.Windows.Forms.Label()
+        Me.Label37 = New System.Windows.Forms.Label()
+        Me.lblEstimadoDetalle = New System.Windows.Forms.Label()
+        Me.Label97 = New System.Windows.Forms.Label()
+        Me.lblHaseEstiquta = New System.Windows.Forms.Label()
+        Me.Label36 = New System.Windows.Forms.Label()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Chart2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -334,10 +411,17 @@ Partial Class Form1
         Me.GroupBox4.SuspendLayout()
         Me.TabPage2.SuspendLayout()
         Me.TabPage3.SuspendLayout()
+        Me.TabPage4.SuspendLayout()
         Me.GroupBox5.SuspendLayout()
         Me.GroupBox6.SuspendLayout()
         Me.GroupBox7.SuspendLayout()
-        CType(Me.Chart7, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox8.SuspendLayout()
+        Me.GroupBox9.SuspendLayout()
+        Me.GroupBox10.SuspendLayout()
+        Me.GroupBox11.SuspendLayout()
+        Me.GroupBox12.SuspendLayout()
+        Me.GroupBox13.SuspendLayout()
+        Me.GroupBox14.SuspendLayout()
         Me.SuspendLayout()
         '
         'Timer1
@@ -972,7 +1056,7 @@ Partial Class Form1
         Me.lblHora.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblHora.Font = New System.Drawing.Font("Digital Display", 44.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblHora.ForeColor = System.Drawing.Color.White
-        Me.lblHora.Location = New System.Drawing.Point(12, 456)
+        Me.lblHora.Location = New System.Drawing.Point(11, 632)
         Me.lblHora.Name = "lblHora"
         Me.lblHora.Size = New System.Drawing.Size(236, 90)
         Me.lblHora.TabIndex = 133
@@ -992,43 +1076,43 @@ Partial Class Form1
         '
         'Chart1
         '
-        ChartArea1.Name = "ChartArea1"
-        Me.Chart1.ChartAreas.Add(ChartArea1)
-        Legend1.Name = "Legend1"
-        Me.Chart1.Legends.Add(Legend1)
+        ChartArea37.Name = "ChartArea1"
+        Me.Chart1.ChartAreas.Add(ChartArea37)
+        Legend37.Name = "Legend1"
+        Me.Chart1.Legends.Add(Legend37)
         Me.Chart1.Location = New System.Drawing.Point(-23, 203)
         Me.Chart1.Name = "Chart1"
-        Series1.BorderWidth = 3
-        Series1.ChartArea = "ChartArea1"
-        Series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
-        Series1.Color = System.Drawing.Color.Lime
-        Series1.IsVisibleInLegend = False
-        Series1.Legend = "Legend1"
-        Series1.Name = "Series1"
-        Series1.ToolTip = "#VAL"
-        Series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Me.Chart1.Series.Add(Series1)
+        Series37.BorderWidth = 3
+        Series37.ChartArea = "ChartArea1"
+        Series37.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
+        Series37.Color = System.Drawing.Color.Lime
+        Series37.IsVisibleInLegend = False
+        Series37.Legend = "Legend1"
+        Series37.Name = "Series1"
+        Series37.ToolTip = "#VAL"
+        Series37.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Me.Chart1.Series.Add(Series37)
         Me.Chart1.Size = New System.Drawing.Size(562, 190)
         Me.Chart1.TabIndex = 135
         '
         'Chart2
         '
-        ChartArea2.Name = "ChartArea1"
-        Me.Chart2.ChartAreas.Add(ChartArea2)
-        Legend2.Name = "Legend1"
-        Me.Chart2.Legends.Add(Legend2)
+        ChartArea38.Name = "ChartArea1"
+        Me.Chart2.ChartAreas.Add(ChartArea38)
+        Legend38.Name = "Legend1"
+        Me.Chart2.Legends.Add(Legend38)
         Me.Chart2.Location = New System.Drawing.Point(-10, 0)
         Me.Chart2.Name = "Chart2"
-        Series2.BorderWidth = 3
-        Series2.ChartArea = "ChartArea1"
-        Series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
-        Series2.Color = System.Drawing.Color.Red
-        Series2.IsVisibleInLegend = False
-        Series2.Legend = "Legend1"
-        Series2.Name = "Series1"
-        Series2.ToolTip = "#VAL"
-        Series2.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Me.Chart2.Series.Add(Series2)
+        Series38.BorderWidth = 3
+        Series38.ChartArea = "ChartArea1"
+        Series38.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
+        Series38.Color = System.Drawing.Color.Red
+        Series38.IsVisibleInLegend = False
+        Series38.Legend = "Legend1"
+        Series38.Name = "Series1"
+        Series38.ToolTip = "#VAL"
+        Series38.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Me.Chart2.Series.Add(Series38)
         Me.Chart2.Size = New System.Drawing.Size(549, 204)
         Me.Chart2.TabIndex = 135
         '
@@ -3422,98 +3506,98 @@ Partial Class Form1
         '
         'Chart5
         '
-        ChartArea3.AxisX.MajorGrid.Interval = 0R
-        ChartArea3.AxisX.MajorGrid.IntervalOffset = 0R
-        ChartArea3.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
-        ChartArea3.Name = "ChartArea1"
-        Me.Chart5.ChartAreas.Add(ChartArea3)
-        Legend3.Name = "Legend1"
-        Me.Chart5.Legends.Add(Legend3)
+        ChartArea39.AxisX.MajorGrid.Interval = 0R
+        ChartArea39.AxisX.MajorGrid.IntervalOffset = 0R
+        ChartArea39.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
+        ChartArea39.Name = "ChartArea1"
+        Me.Chart5.ChartAreas.Add(ChartArea39)
+        Legend39.Name = "Legend1"
+        Me.Chart5.Legends.Add(Legend39)
         Me.Chart5.Location = New System.Drawing.Point(499, 203)
         Me.Chart5.Name = "Chart5"
-        Series3.ChartArea = "ChartArea1"
-        Series3.Color = System.Drawing.Color.OrangeRed
-        Series3.IsVisibleInLegend = False
-        Series3.Legend = "Legend1"
-        Series3.Name = "Series1"
-        Series3.ToolTip = "#VAL"
-        Series3.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[String]
-        Series3.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
-        Me.Chart5.Series.Add(Series3)
+        Series39.ChartArea = "ChartArea1"
+        Series39.Color = System.Drawing.Color.OrangeRed
+        Series39.IsVisibleInLegend = False
+        Series39.Legend = "Legend1"
+        Series39.Name = "Series1"
+        Series39.ToolTip = "#VAL"
+        Series39.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[String]
+        Series39.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
+        Me.Chart5.Series.Add(Series39)
         Me.Chart5.Size = New System.Drawing.Size(613, 199)
         Me.Chart5.TabIndex = 149
         '
         'Chart3
         '
-        ChartArea4.Name = "ChartArea1"
-        Me.Chart3.ChartAreas.Add(ChartArea4)
-        Legend4.Name = "Legend1"
-        Me.Chart3.Legends.Add(Legend4)
+        ChartArea40.Name = "ChartArea1"
+        Me.Chart3.ChartAreas.Add(ChartArea40)
+        Legend40.Name = "Legend1"
+        Me.Chart3.Legends.Add(Legend40)
         Me.Chart3.Location = New System.Drawing.Point(-39, 388)
         Me.Chart3.Name = "Chart3"
-        Series4.BorderWidth = 2
-        Series4.ChartArea = "ChartArea1"
-        Series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
-        Series4.Color = System.Drawing.Color.Fuchsia
-        Series4.EmptyPointStyle.IsValueShownAsLabel = True
-        Series4.EmptyPointStyle.IsVisibleInLegend = False
-        Series4.IsVisibleInLegend = False
-        Series4.LabelFormat = "0.00"
-        Series4.Legend = "Legend1"
-        Series4.Name = "Series1"
-        Series4.ToolTip = "#VAL"
-        Series4.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Series4.YValuesPerPoint = 4
-        Me.Chart3.Series.Add(Series4)
+        Series40.BorderWidth = 2
+        Series40.ChartArea = "ChartArea1"
+        Series40.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
+        Series40.Color = System.Drawing.Color.Fuchsia
+        Series40.EmptyPointStyle.IsValueShownAsLabel = True
+        Series40.EmptyPointStyle.IsVisibleInLegend = False
+        Series40.IsVisibleInLegend = False
+        Series40.LabelFormat = "0.00"
+        Series40.Legend = "Legend1"
+        Series40.Name = "Series1"
+        Series40.ToolTip = "#VAL"
+        Series40.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Series40.YValuesPerPoint = 4
+        Me.Chart3.Series.Add(Series40)
         Me.Chart3.Size = New System.Drawing.Size(1205, 153)
         Me.Chart3.TabIndex = 147
         Me.Chart3.Text = "Chart3"
         '
         'Chart4
         '
-        ChartArea5.AxisX.MajorGrid.Interval = 0R
-        ChartArea5.AxisX.MajorGrid.IntervalOffset = 0R
-        ChartArea5.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
-        ChartArea5.Name = "ChartArea1"
-        Me.Chart4.ChartAreas.Add(ChartArea5)
-        Legend5.Name = "Legend1"
-        Me.Chart4.Legends.Add(Legend5)
+        ChartArea41.AxisX.MajorGrid.Interval = 0R
+        ChartArea41.AxisX.MajorGrid.IntervalOffset = 0R
+        ChartArea41.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
+        ChartArea41.Name = "ChartArea1"
+        Me.Chart4.ChartAreas.Add(ChartArea41)
+        Legend41.Name = "Legend1"
+        Me.Chart4.Legends.Add(Legend41)
         Me.Chart4.Location = New System.Drawing.Point(514, 0)
         Me.Chart4.Name = "Chart4"
-        Series5.ChartArea = "ChartArea1"
-        Series5.Color = System.Drawing.Color.Lime
-        Series5.IsVisibleInLegend = False
-        Series5.Legend = "Legend1"
-        Series5.Name = "Series1"
-        Series5.ToolTip = "#VAL"
-        Series5.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[String]
-        Series5.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
-        Me.Chart4.Series.Add(Series5)
+        Series41.ChartArea = "ChartArea1"
+        Series41.Color = System.Drawing.Color.Lime
+        Series41.IsVisibleInLegend = False
+        Series41.Legend = "Legend1"
+        Series41.Name = "Series1"
+        Series41.ToolTip = "#VAL"
+        Series41.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[String]
+        Series41.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
+        Me.Chart4.Series.Add(Series41)
         Me.Chart4.Size = New System.Drawing.Size(598, 213)
         Me.Chart4.TabIndex = 150
         '
         'Chart6
         '
-        ChartArea6.AxisX.MajorGrid.Interval = 0R
-        ChartArea6.AxisX.MajorGrid.IntervalOffset = 0R
-        ChartArea6.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
-        ChartArea6.Name = "ChartArea1"
-        Me.Chart6.ChartAreas.Add(ChartArea6)
-        Legend6.Name = "Legend1"
-        Me.Chart6.Legends.Add(Legend6)
+        ChartArea42.AxisX.MajorGrid.Interval = 0R
+        ChartArea42.AxisX.MajorGrid.IntervalOffset = 0R
+        ChartArea42.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
+        ChartArea42.Name = "ChartArea1"
+        Me.Chart6.ChartAreas.Add(ChartArea42)
+        Legend42.Name = "Legend1"
+        Me.Chart6.Legends.Add(Legend42)
         Me.Chart6.Location = New System.Drawing.Point(-40, 528)
         Me.Chart6.Name = "Chart6"
-        Series6.BorderWidth = 2
-        Series6.ChartArea = "ChartArea1"
-        Series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line
-        Series6.Color = System.Drawing.Color.DarkOrchid
-        Series6.IsVisibleInLegend = False
-        Series6.Legend = "Legend1"
-        Series6.Name = "Series1"
-        Series6.ToolTip = "#VAL"
-        Series6.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Series6.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
-        Me.Chart6.Series.Add(Series6)
+        Series42.BorderWidth = 2
+        Series42.ChartArea = "ChartArea1"
+        Series42.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line
+        Series42.Color = System.Drawing.Color.DarkOrchid
+        Series42.IsVisibleInLegend = False
+        Series42.Legend = "Legend1"
+        Series42.Name = "Series1"
+        Series42.ToolTip = "#VAL"
+        Series42.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Series42.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
+        Me.Chart6.Series.Add(Series42)
         Me.Chart6.Size = New System.Drawing.Size(1196, 150)
         Me.Chart6.TabIndex = 151
         '
@@ -3536,6 +3620,7 @@ Partial Class Form1
         Me.TabPage1.Controls.Add(Me.GroupBox4)
         Me.TabPage1.Controls.Add(Me.GroupBox3)
         Me.TabPage1.Controls.Add(Me.gpMes)
+        Me.TabPage1.Controls.Add(Me.Button1)
         Me.TabPage1.Location = New System.Drawing.Point(4, 25)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
@@ -3583,7 +3668,11 @@ Partial Class Form1
         'TabPage3
         '
         Me.TabPage3.BackColor = System.Drawing.Color.White
-        Me.TabPage3.Controls.Add(Me.Chart7)
+        Me.TabPage3.Controls.Add(Me.GroupBox13)
+        Me.TabPage3.Controls.Add(Me.GroupBox8)
+        Me.TabPage3.Controls.Add(Me.GroupBox9)
+        Me.TabPage3.Controls.Add(Me.GroupBox10)
+        Me.TabPage3.Controls.Add(Me.GroupBox11)
         Me.TabPage3.Location = New System.Drawing.Point(4, 25)
         Me.TabPage3.Name = "TabPage3"
         Me.TabPage3.Size = New System.Drawing.Size(1096, 676)
@@ -3592,6 +3681,7 @@ Partial Class Form1
         '
         'TabPage4
         '
+        Me.TabPage4.Controls.Add(Me.GroupBox12)
         Me.TabPage4.Location = New System.Drawing.Point(4, 25)
         Me.TabPage4.Name = "TabPage4"
         Me.TabPage4.Size = New System.Drawing.Size(1096, 676)
@@ -3606,7 +3696,7 @@ Partial Class Form1
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(12, 563)
+        Me.Button1.Location = New System.Drawing.Point(16, 525)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(74, 52)
         Me.Button1.TabIndex = 149
@@ -3692,32 +3782,12 @@ Partial Class Form1
         Me.GroupBox7.Controls.Add(Me.Label37)
         Me.GroupBox7.Controls.Add(Me.lblEstimado)
         Me.GroupBox7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox7.Location = New System.Drawing.Point(12, 337)
+        Me.GroupBox7.Location = New System.Drawing.Point(11, 340)
         Me.GroupBox7.Name = "GroupBox7"
         Me.GroupBox7.Size = New System.Drawing.Size(236, 99)
         Me.GroupBox7.TabIndex = 149
         Me.GroupBox7.TabStop = False
         Me.GroupBox7.Text = "Earning about"
-        '
-        'lblEstimadoMesDetalle
-        '
-        Me.lblEstimadoMesDetalle.AutoSize = True
-        Me.lblEstimadoMesDetalle.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblEstimadoMesDetalle.Location = New System.Drawing.Point(132, 68)
-        Me.lblEstimadoMesDetalle.Name = "lblEstimadoMesDetalle"
-        Me.lblEstimadoMesDetalle.Size = New System.Drawing.Size(103, 16)
-        Me.lblEstimadoMesDetalle.TabIndex = 152
-        Me.lblEstimadoMesDetalle.Text = "monthly (≈0.012)"
-        '
-        'Label41
-        '
-        Me.Label41.AutoSize = True
-        Me.Label41.Font = New System.Drawing.Font("Duco", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label41.Location = New System.Drawing.Point(113, 69)
-        Me.Label41.Name = "Label41"
-        Me.Label41.Size = New System.Drawing.Size(23, 15)
-        Me.Label41.TabIndex = 151
-        Me.Label41.Text = "a"
         '
         'lblEstimadoMes
         '
@@ -3730,26 +3800,6 @@ Partial Class Form1
         Me.lblEstimadoMes.Text = "00000,00"
         Me.lblEstimadoMes.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'lblEstimadoDetalle
-        '
-        Me.lblEstimadoDetalle.AutoSize = True
-        Me.lblEstimadoDetalle.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblEstimadoDetalle.Location = New System.Drawing.Point(131, 36)
-        Me.lblEstimadoDetalle.Name = "lblEstimadoDetalle"
-        Me.lblEstimadoDetalle.Size = New System.Drawing.Size(86, 16)
-        Me.lblEstimadoDetalle.TabIndex = 149
-        Me.lblEstimadoDetalle.Text = "daily (≈0.012)"
-        '
-        'Label37
-        '
-        Me.Label37.AutoSize = True
-        Me.Label37.Font = New System.Drawing.Font("Duco", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label37.Location = New System.Drawing.Point(112, 37)
-        Me.Label37.Name = "Label37"
-        Me.Label37.Size = New System.Drawing.Size(23, 15)
-        Me.Label37.TabIndex = 137
-        Me.Label37.Text = "a"
-        '
         'lblEstimado
         '
         Me.lblEstimado.Font = New System.Drawing.Font("Digital Display", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -3761,24 +3811,892 @@ Partial Class Form1
         Me.lblEstimado.Text = "00000,00"
         Me.lblEstimado.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'Chart7
+        'GroupBox8
         '
-        ChartArea7.Name = "ChartArea1"
-        Me.Chart7.ChartAreas.Add(ChartArea7)
-        Legend7.Name = "Legend1"
-        Me.Chart7.Legends.Add(Legend7)
-        Me.Chart7.Location = New System.Drawing.Point(0, -4)
-        Me.Chart7.Name = "Chart7"
-        Series7.ChartArea = "ChartArea1"
-        Series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie
-        Series7.IsValueShownAsLabel = True
-        Series7.Label = "#VALX:#VAL"
-        Series7.Legend = "Legend1"
-        Series7.Name = "Series1"
-        Me.Chart7.Series.Add(Series7)
-        Me.Chart7.Size = New System.Drawing.Size(529, 450)
-        Me.Chart7.TabIndex = 0
-        Me.Chart7.Text = "Chart7"
+        Me.GroupBox8.Controls.Add(Me.txtDucopriceXMG)
+        Me.GroupBox8.Controls.Add(Me.Label40)
+        Me.GroupBox8.Controls.Add(Me.txtDucopriceTRX)
+        Me.GroupBox8.Controls.Add(Me.Label42)
+        Me.GroupBox8.Controls.Add(Me.txtDucopriceNANO)
+        Me.GroupBox8.Controls.Add(Me.Label43)
+        Me.GroupBox8.Controls.Add(Me.txtDucopriceBCH)
+        Me.GroupBox8.Controls.Add(Me.Label44)
+        Me.GroupBox8.Controls.Add(Me.txtDucoSushiSwapprice)
+        Me.GroupBox8.Controls.Add(Me.Label45)
+        Me.GroupBox8.Controls.Add(Me.txtDucoPancakeSwapprice)
+        Me.GroupBox8.Controls.Add(Me.Label46)
+        Me.GroupBox8.Controls.Add(Me.txtDucoNodeSprice)
+        Me.GroupBox8.Controls.Add(Me.Label47)
+        Me.GroupBox8.Controls.Add(Me.txtDucoJustSwapprice)
+        Me.GroupBox8.Controls.Add(Me.Label48)
+        Me.GroupBox8.Controls.Add(Me.txtDucoprice1)
+        Me.GroupBox8.Controls.Add(Me.Label49)
+        Me.GroupBox8.Location = New System.Drawing.Point(323, 17)
+        Me.GroupBox8.Name = "GroupBox8"
+        Me.GroupBox8.Size = New System.Drawing.Size(250, 267)
+        Me.GroupBox8.TabIndex = 29
+        Me.GroupBox8.TabStop = False
+        Me.GroupBox8.Text = "Price"
+        '
+        'txtDucopriceXMG
+        '
+        Me.txtDucopriceXMG.BackColor = System.Drawing.Color.White
+        Me.txtDucopriceXMG.Location = New System.Drawing.Point(152, 227)
+        Me.txtDucopriceXMG.Name = "txtDucopriceXMG"
+        Me.txtDucopriceXMG.ReadOnly = True
+        Me.txtDucopriceXMG.Size = New System.Drawing.Size(78, 20)
+        Me.txtDucopriceXMG.TabIndex = 0
+        '
+        'Label40
+        '
+        Me.Label40.AutoSize = True
+        Me.Label40.Location = New System.Drawing.Point(15, 227)
+        Me.Label40.Name = "Label40"
+        Me.Label40.Size = New System.Drawing.Size(89, 13)
+        Me.Label40.TabIndex = 1
+        Me.Label40.Text = "Duco price XMG:"
+        '
+        'txtDucopriceTRX
+        '
+        Me.txtDucopriceTRX.BackColor = System.Drawing.Color.White
+        Me.txtDucopriceTRX.Location = New System.Drawing.Point(152, 201)
+        Me.txtDucopriceTRX.Name = "txtDucopriceTRX"
+        Me.txtDucopriceTRX.ReadOnly = True
+        Me.txtDucopriceTRX.Size = New System.Drawing.Size(78, 20)
+        Me.txtDucopriceTRX.TabIndex = 0
+        '
+        'Label42
+        '
+        Me.Label42.AutoSize = True
+        Me.Label42.Location = New System.Drawing.Point(15, 201)
+        Me.Label42.Name = "Label42"
+        Me.Label42.Size = New System.Drawing.Size(87, 13)
+        Me.Label42.TabIndex = 1
+        Me.Label42.Text = "Duco price TRX:"
+        '
+        'txtDucopriceNANO
+        '
+        Me.txtDucopriceNANO.BackColor = System.Drawing.Color.White
+        Me.txtDucopriceNANO.Location = New System.Drawing.Point(152, 175)
+        Me.txtDucopriceNANO.Name = "txtDucopriceNANO"
+        Me.txtDucopriceNANO.ReadOnly = True
+        Me.txtDucopriceNANO.Size = New System.Drawing.Size(78, 20)
+        Me.txtDucopriceNANO.TabIndex = 0
+        '
+        'Label43
+        '
+        Me.Label43.AutoSize = True
+        Me.Label43.Location = New System.Drawing.Point(15, 175)
+        Me.Label43.Name = "Label43"
+        Me.Label43.Size = New System.Drawing.Size(96, 13)
+        Me.Label43.TabIndex = 1
+        Me.Label43.Text = "Duco price NANO:"
+        '
+        'txtDucopriceBCH
+        '
+        Me.txtDucopriceBCH.BackColor = System.Drawing.Color.White
+        Me.txtDucopriceBCH.Location = New System.Drawing.Point(152, 149)
+        Me.txtDucopriceBCH.Name = "txtDucopriceBCH"
+        Me.txtDucopriceBCH.ReadOnly = True
+        Me.txtDucopriceBCH.Size = New System.Drawing.Size(78, 20)
+        Me.txtDucopriceBCH.TabIndex = 0
+        '
+        'Label44
+        '
+        Me.Label44.AutoSize = True
+        Me.Label44.Location = New System.Drawing.Point(15, 149)
+        Me.Label44.Name = "Label44"
+        Me.Label44.Size = New System.Drawing.Size(87, 13)
+        Me.Label44.TabIndex = 1
+        Me.Label44.Text = "Duco price BCH:"
+        '
+        'txtDucoSushiSwapprice
+        '
+        Me.txtDucoSushiSwapprice.BackColor = System.Drawing.Color.White
+        Me.txtDucoSushiSwapprice.Location = New System.Drawing.Point(152, 123)
+        Me.txtDucoSushiSwapprice.Name = "txtDucoSushiSwapprice"
+        Me.txtDucoSushiSwapprice.ReadOnly = True
+        Me.txtDucoSushiSwapprice.Size = New System.Drawing.Size(78, 20)
+        Me.txtDucoSushiSwapprice.TabIndex = 0
+        '
+        'Label45
+        '
+        Me.Label45.AutoSize = True
+        Me.Label45.Location = New System.Drawing.Point(15, 123)
+        Me.Label45.Name = "Label45"
+        Me.Label45.Size = New System.Drawing.Size(118, 13)
+        Me.Label45.TabIndex = 1
+        Me.Label45.Text = "Duco SushiSwap price:"
+        '
+        'txtDucoPancakeSwapprice
+        '
+        Me.txtDucoPancakeSwapprice.BackColor = System.Drawing.Color.White
+        Me.txtDucoPancakeSwapprice.Location = New System.Drawing.Point(152, 97)
+        Me.txtDucoPancakeSwapprice.Name = "txtDucoPancakeSwapprice"
+        Me.txtDucoPancakeSwapprice.ReadOnly = True
+        Me.txtDucoPancakeSwapprice.Size = New System.Drawing.Size(78, 20)
+        Me.txtDucoPancakeSwapprice.TabIndex = 0
+        '
+        'Label46
+        '
+        Me.Label46.AutoSize = True
+        Me.Label46.Location = New System.Drawing.Point(15, 97)
+        Me.Label46.Name = "Label46"
+        Me.Label46.Size = New System.Drawing.Size(135, 13)
+        Me.Label46.TabIndex = 1
+        Me.Label46.Text = "Duco PancakeSwap price:"
+        '
+        'txtDucoNodeSprice
+        '
+        Me.txtDucoNodeSprice.BackColor = System.Drawing.Color.White
+        Me.txtDucoNodeSprice.Location = New System.Drawing.Point(152, 71)
+        Me.txtDucoNodeSprice.Name = "txtDucoNodeSprice"
+        Me.txtDucoNodeSprice.ReadOnly = True
+        Me.txtDucoNodeSprice.Size = New System.Drawing.Size(78, 20)
+        Me.txtDucoNodeSprice.TabIndex = 0
+        '
+        'Label47
+        '
+        Me.Label47.AutoSize = True
+        Me.Label47.Location = New System.Drawing.Point(15, 71)
+        Me.Label47.Name = "Label47"
+        Me.Label47.Size = New System.Drawing.Size(101, 13)
+        Me.Label47.TabIndex = 1
+        Me.Label47.Text = "Duco Node-S price:"
+        '
+        'txtDucoJustSwapprice
+        '
+        Me.txtDucoJustSwapprice.BackColor = System.Drawing.Color.White
+        Me.txtDucoJustSwapprice.Location = New System.Drawing.Point(152, 45)
+        Me.txtDucoJustSwapprice.Name = "txtDucoJustSwapprice"
+        Me.txtDucoJustSwapprice.ReadOnly = True
+        Me.txtDucoJustSwapprice.Size = New System.Drawing.Size(78, 20)
+        Me.txtDucoJustSwapprice.TabIndex = 0
+        '
+        'Label48
+        '
+        Me.Label48.AutoSize = True
+        Me.Label48.Location = New System.Drawing.Point(15, 45)
+        Me.Label48.Name = "Label48"
+        Me.Label48.Size = New System.Drawing.Size(111, 13)
+        Me.Label48.TabIndex = 1
+        Me.Label48.Text = "Duco SunSwap price:"
+        '
+        'txtDucoprice1
+        '
+        Me.txtDucoprice1.BackColor = System.Drawing.Color.White
+        Me.txtDucoprice1.Location = New System.Drawing.Point(152, 19)
+        Me.txtDucoprice1.Name = "txtDucoprice1"
+        Me.txtDucoprice1.ReadOnly = True
+        Me.txtDucoprice1.Size = New System.Drawing.Size(78, 20)
+        Me.txtDucoprice1.TabIndex = 0
+        '
+        'Label49
+        '
+        Me.Label49.AutoSize = True
+        Me.Label49.Location = New System.Drawing.Point(15, 19)
+        Me.Label49.Name = "Label49"
+        Me.Label49.Size = New System.Drawing.Size(62, 13)
+        Me.Label49.TabIndex = 1
+        Me.Label49.Text = "Duco price:"
+        '
+        'GroupBox9
+        '
+        Me.GroupBox9.Controls.Add(Me.txtJailed)
+        Me.GroupBox9.Controls.Add(Me.Label50)
+        Me.GroupBox9.Controls.Add(Me.txtBanned)
+        Me.GroupBox9.Controls.Add(Me.Label51)
+        Me.GroupBox9.Location = New System.Drawing.Point(13, 384)
+        Me.GroupBox9.Name = "GroupBox9"
+        Me.GroupBox9.Size = New System.Drawing.Size(297, 51)
+        Me.GroupBox9.TabIndex = 28
+        Me.GroupBox9.TabStop = False
+        Me.GroupBox9.Text = "Kolka"
+        '
+        'txtJailed
+        '
+        Me.txtJailed.BackColor = System.Drawing.Color.White
+        Me.txtJailed.Location = New System.Drawing.Point(210, 19)
+        Me.txtJailed.Name = "txtJailed"
+        Me.txtJailed.ReadOnly = True
+        Me.txtJailed.Size = New System.Drawing.Size(52, 20)
+        Me.txtJailed.TabIndex = 18
+        Me.txtJailed.Text = "0"
+        Me.txtJailed.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label50
+        '
+        Me.Label50.AutoSize = True
+        Me.Label50.BackColor = System.Drawing.Color.White
+        Me.Label50.Location = New System.Drawing.Point(169, 22)
+        Me.Label50.Name = "Label50"
+        Me.Label50.Size = New System.Drawing.Size(37, 13)
+        Me.Label50.TabIndex = 19
+        Me.Label50.Text = "Jailed:"
+        '
+        'txtBanned
+        '
+        Me.txtBanned.BackColor = System.Drawing.Color.White
+        Me.txtBanned.Location = New System.Drawing.Point(95, 19)
+        Me.txtBanned.Name = "txtBanned"
+        Me.txtBanned.ReadOnly = True
+        Me.txtBanned.Size = New System.Drawing.Size(52, 20)
+        Me.txtBanned.TabIndex = 18
+        Me.txtBanned.Text = "0"
+        Me.txtBanned.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label51
+        '
+        Me.Label51.AutoSize = True
+        Me.Label51.BackColor = System.Drawing.Color.White
+        Me.Label51.Location = New System.Drawing.Point(42, 22)
+        Me.Label51.Name = "Label51"
+        Me.Label51.Size = New System.Drawing.Size(47, 13)
+        Me.Label51.TabIndex = 19
+        Me.Label51.Text = "Banned:"
+        '
+        'GroupBox10
+        '
+        Me.GroupBox10.Controls.Add(Me.txtMinedblocks)
+        Me.GroupBox10.Controls.Add(Me.txtActiveconnections)
+        Me.GroupBox10.Controls.Add(Me.Label75)
+        Me.GroupBox10.Controls.Add(Me.Label76)
+        Me.GroupBox10.Controls.Add(Me.txtLastupdate)
+        Me.GroupBox10.Controls.Add(Me.Label77)
+        Me.GroupBox10.Controls.Add(Me.Label78)
+        Me.GroupBox10.Controls.Add(Me.txtDUCOS1hashrate)
+        Me.GroupBox10.Controls.Add(Me.txtLastsync)
+        Me.GroupBox10.Controls.Add(Me.txtServerversion)
+        Me.GroupBox10.Controls.Add(Me.Label79)
+        Me.GroupBox10.Controls.Add(Me.Label80)
+        Me.GroupBox10.Controls.Add(Me.Label81)
+        Me.GroupBox10.Controls.Add(Me.txtNetenergyusage)
+        Me.GroupBox10.Controls.Add(Me.txtServerRAMusage)
+        Me.GroupBox10.Controls.Add(Me.Label82)
+        Me.GroupBox10.Controls.Add(Me.txtLastblockhash)
+        Me.GroupBox10.Controls.Add(Me.Label83)
+        Me.GroupBox10.Controls.Add(Me.Label84)
+        Me.GroupBox10.Controls.Add(Me.txtOpenthreads)
+        Me.GroupBox10.Controls.Add(Me.txtServerCPUusage)
+        Me.GroupBox10.Controls.Add(Me.Label85)
+        Me.GroupBox10.Controls.Add(Me.Label86)
+        Me.GroupBox10.Controls.Add(Me.txtPoolhashrate)
+        Me.GroupBox10.Controls.Add(Me.txtRegisteredusers)
+        Me.GroupBox10.Controls.Add(Me.Label87)
+        Me.GroupBox10.Location = New System.Drawing.Point(13, 17)
+        Me.GroupBox10.Name = "GroupBox10"
+        Me.GroupBox10.Size = New System.Drawing.Size(297, 361)
+        Me.GroupBox10.TabIndex = 27
+        Me.GroupBox10.TabStop = False
+        Me.GroupBox10.Text = "Server Statistics"
+        '
+        'txtMinedblocks
+        '
+        Me.txtMinedblocks.BackColor = System.Drawing.Color.White
+        Me.txtMinedblocks.Location = New System.Drawing.Point(117, 331)
+        Me.txtMinedblocks.Name = "txtMinedblocks"
+        Me.txtMinedblocks.ReadOnly = True
+        Me.txtMinedblocks.Size = New System.Drawing.Size(174, 20)
+        Me.txtMinedblocks.TabIndex = 18
+        '
+        'txtActiveconnections
+        '
+        Me.txtActiveconnections.BackColor = System.Drawing.Color.White
+        Me.txtActiveconnections.Location = New System.Drawing.Point(117, 19)
+        Me.txtActiveconnections.Name = "txtActiveconnections"
+        Me.txtActiveconnections.ReadOnly = True
+        Me.txtActiveconnections.Size = New System.Drawing.Size(174, 20)
+        Me.txtActiveconnections.TabIndex = 2
+        '
+        'Label75
+        '
+        Me.Label75.AutoSize = True
+        Me.Label75.Location = New System.Drawing.Point(38, 334)
+        Me.Label75.Name = "Label75"
+        Me.Label75.Size = New System.Drawing.Size(73, 13)
+        Me.Label75.TabIndex = 19
+        Me.Label75.Text = "Mined blocks:"
+        '
+        'Label76
+        '
+        Me.Label76.AutoSize = True
+        Me.Label76.Location = New System.Drawing.Point(13, 22)
+        Me.Label76.Name = "Label76"
+        Me.Label76.Size = New System.Drawing.Size(101, 13)
+        Me.Label76.TabIndex = 3
+        Me.Label76.Text = "Active connections:"
+        '
+        'txtLastupdate
+        '
+        Me.txtLastupdate.BackColor = System.Drawing.Color.White
+        Me.txtLastupdate.Location = New System.Drawing.Point(117, 305)
+        Me.txtLastupdate.Name = "txtLastupdate"
+        Me.txtLastupdate.ReadOnly = True
+        Me.txtLastupdate.Size = New System.Drawing.Size(174, 20)
+        Me.txtLastupdate.TabIndex = 18
+        '
+        'Label77
+        '
+        Me.Label77.AutoSize = True
+        Me.Label77.Location = New System.Drawing.Point(37, 230)
+        Me.Label77.Name = "Label77"
+        Me.Label77.Size = New System.Drawing.Size(78, 13)
+        Me.Label77.TabIndex = 19
+        Me.Label77.Text = "Server version:"
+        '
+        'Label78
+        '
+        Me.Label78.AutoSize = True
+        Me.Label78.Location = New System.Drawing.Point(45, 308)
+        Me.Label78.Name = "Label78"
+        Me.Label78.Size = New System.Drawing.Size(66, 13)
+        Me.Label78.TabIndex = 19
+        Me.Label78.Text = "Last update:"
+        '
+        'txtDUCOS1hashrate
+        '
+        Me.txtDUCOS1hashrate.BackColor = System.Drawing.Color.White
+        Me.txtDUCOS1hashrate.Location = New System.Drawing.Point(117, 45)
+        Me.txtDUCOS1hashrate.Name = "txtDUCOS1hashrate"
+        Me.txtDUCOS1hashrate.ReadOnly = True
+        Me.txtDUCOS1hashrate.Size = New System.Drawing.Size(174, 20)
+        Me.txtDUCOS1hashrate.TabIndex = 4
+        '
+        'txtLastsync
+        '
+        Me.txtLastsync.BackColor = System.Drawing.Color.White
+        Me.txtLastsync.Location = New System.Drawing.Point(117, 279)
+        Me.txtLastsync.Name = "txtLastsync"
+        Me.txtLastsync.ReadOnly = True
+        Me.txtLastsync.Size = New System.Drawing.Size(174, 20)
+        Me.txtLastsync.TabIndex = 18
+        '
+        'txtServerversion
+        '
+        Me.txtServerversion.BackColor = System.Drawing.Color.White
+        Me.txtServerversion.Location = New System.Drawing.Point(117, 227)
+        Me.txtServerversion.Name = "txtServerversion"
+        Me.txtServerversion.ReadOnly = True
+        Me.txtServerversion.Size = New System.Drawing.Size(174, 20)
+        Me.txtServerversion.TabIndex = 18
+        '
+        'Label79
+        '
+        Me.Label79.AutoSize = True
+        Me.Label79.Location = New System.Drawing.Point(56, 279)
+        Me.Label79.Name = "Label79"
+        Me.Label79.Size = New System.Drawing.Size(55, 13)
+        Me.Label79.TabIndex = 19
+        Me.Label79.Text = "Last sync:"
+        '
+        'Label80
+        '
+        Me.Label80.AutoSize = True
+        Me.Label80.Location = New System.Drawing.Point(15, 48)
+        Me.Label80.Name = "Label80"
+        Me.Label80.Size = New System.Drawing.Size(101, 13)
+        Me.Label80.TabIndex = 5
+        Me.Label80.Text = "DUCO-S1 hashrate:"
+        '
+        'Label81
+        '
+        Me.Label81.AutoSize = True
+        Me.Label81.Location = New System.Drawing.Point(15, 204)
+        Me.Label81.Name = "Label81"
+        Me.Label81.Size = New System.Drawing.Size(100, 13)
+        Me.Label81.TabIndex = 17
+        Me.Label81.Text = "Server RAM usage:"
+        '
+        'txtNetenergyusage
+        '
+        Me.txtNetenergyusage.BackColor = System.Drawing.Color.White
+        Me.txtNetenergyusage.Location = New System.Drawing.Point(117, 71)
+        Me.txtNetenergyusage.Name = "txtNetenergyusage"
+        Me.txtNetenergyusage.ReadOnly = True
+        Me.txtNetenergyusage.Size = New System.Drawing.Size(174, 20)
+        Me.txtNetenergyusage.TabIndex = 6
+        '
+        'txtServerRAMusage
+        '
+        Me.txtServerRAMusage.BackColor = System.Drawing.Color.White
+        Me.txtServerRAMusage.Location = New System.Drawing.Point(117, 201)
+        Me.txtServerRAMusage.Name = "txtServerRAMusage"
+        Me.txtServerRAMusage.ReadOnly = True
+        Me.txtServerRAMusage.Size = New System.Drawing.Size(174, 20)
+        Me.txtServerRAMusage.TabIndex = 16
+        '
+        'Label82
+        '
+        Me.Label82.AutoSize = True
+        Me.Label82.Location = New System.Drawing.Point(20, 74)
+        Me.Label82.Name = "Label82"
+        Me.Label82.Size = New System.Drawing.Size(94, 13)
+        Me.Label82.TabIndex = 7
+        Me.Label82.Text = "Net energy usage:"
+        '
+        'txtLastblockhash
+        '
+        Me.txtLastblockhash.BackColor = System.Drawing.Color.White
+        Me.txtLastblockhash.Location = New System.Drawing.Point(117, 253)
+        Me.txtLastblockhash.Name = "txtLastblockhash"
+        Me.txtLastblockhash.ReadOnly = True
+        Me.txtLastblockhash.Size = New System.Drawing.Size(174, 20)
+        Me.txtLastblockhash.TabIndex = 18
+        '
+        'Label83
+        '
+        Me.Label83.AutoSize = True
+        Me.Label83.Location = New System.Drawing.Point(26, 256)
+        Me.Label83.Name = "Label83"
+        Me.Label83.Size = New System.Drawing.Size(85, 13)
+        Me.Label83.TabIndex = 19
+        Me.Label83.Text = "Last block hash:"
+        '
+        'Label84
+        '
+        Me.Label84.AutoSize = True
+        Me.Label84.Location = New System.Drawing.Point(18, 178)
+        Me.Label84.Name = "Label84"
+        Me.Label84.Size = New System.Drawing.Size(98, 13)
+        Me.Label84.TabIndex = 15
+        Me.Label84.Text = "Server CPU usage:"
+        '
+        'txtOpenthreads
+        '
+        Me.txtOpenthreads.BackColor = System.Drawing.Color.White
+        Me.txtOpenthreads.Location = New System.Drawing.Point(117, 97)
+        Me.txtOpenthreads.Name = "txtOpenthreads"
+        Me.txtOpenthreads.ReadOnly = True
+        Me.txtOpenthreads.Size = New System.Drawing.Size(174, 20)
+        Me.txtOpenthreads.TabIndex = 8
+        '
+        'txtServerCPUusage
+        '
+        Me.txtServerCPUusage.BackColor = System.Drawing.Color.White
+        Me.txtServerCPUusage.Location = New System.Drawing.Point(117, 175)
+        Me.txtServerCPUusage.Name = "txtServerCPUusage"
+        Me.txtServerCPUusage.ReadOnly = True
+        Me.txtServerCPUusage.Size = New System.Drawing.Size(174, 20)
+        Me.txtServerCPUusage.TabIndex = 14
+        '
+        'Label85
+        '
+        Me.Label85.AutoSize = True
+        Me.Label85.Location = New System.Drawing.Point(40, 100)
+        Me.Label85.Name = "Label85"
+        Me.Label85.Size = New System.Drawing.Size(74, 13)
+        Me.Label85.TabIndex = 9
+        Me.Label85.Text = "Open threads:"
+        '
+        'Label86
+        '
+        Me.Label86.AutoSize = True
+        Me.Label86.Location = New System.Drawing.Point(25, 152)
+        Me.Label86.Name = "Label86"
+        Me.Label86.Size = New System.Drawing.Size(89, 13)
+        Me.Label86.TabIndex = 13
+        Me.Label86.Text = "Registered users:"
+        '
+        'txtPoolhashrate
+        '
+        Me.txtPoolhashrate.BackColor = System.Drawing.Color.White
+        Me.txtPoolhashrate.Location = New System.Drawing.Point(117, 123)
+        Me.txtPoolhashrate.Name = "txtPoolhashrate"
+        Me.txtPoolhashrate.ReadOnly = True
+        Me.txtPoolhashrate.Size = New System.Drawing.Size(174, 20)
+        Me.txtPoolhashrate.TabIndex = 10
+        '
+        'txtRegisteredusers
+        '
+        Me.txtRegisteredusers.BackColor = System.Drawing.Color.White
+        Me.txtRegisteredusers.Location = New System.Drawing.Point(117, 149)
+        Me.txtRegisteredusers.Name = "txtRegisteredusers"
+        Me.txtRegisteredusers.ReadOnly = True
+        Me.txtRegisteredusers.Size = New System.Drawing.Size(174, 20)
+        Me.txtRegisteredusers.TabIndex = 12
+        '
+        'Label87
+        '
+        Me.Label87.AutoSize = True
+        Me.Label87.Location = New System.Drawing.Point(41, 126)
+        Me.Label87.Name = "Label87"
+        Me.Label87.Size = New System.Drawing.Size(75, 13)
+        Me.Label87.TabIndex = 11
+        Me.Label87.Text = "Pool hashrate:"
+        '
+        'GroupBox11
+        '
+        Me.GroupBox11.Controls.Add(Me.txtAll)
+        Me.GroupBox11.Controls.Add(Me.Label88)
+        Me.GroupBox11.Controls.Add(Me.txtESP32)
+        Me.GroupBox11.Controls.Add(Me.txtCPU)
+        Me.GroupBox11.Controls.Add(Me.Label89)
+        Me.GroupBox11.Controls.Add(Me.Label90)
+        Me.GroupBox11.Controls.Add(Me.txtWeb)
+        Me.GroupBox11.Controls.Add(Me.Label91)
+        Me.GroupBox11.Controls.Add(Me.txtRPi)
+        Me.GroupBox11.Controls.Add(Me.Label92)
+        Me.GroupBox11.Controls.Add(Me.txtPhone)
+        Me.GroupBox11.Controls.Add(Me.Label93)
+        Me.GroupBox11.Controls.Add(Me.txtOther)
+        Me.GroupBox11.Controls.Add(Me.Label94)
+        Me.GroupBox11.Controls.Add(Me.txtESP8266)
+        Me.GroupBox11.Controls.Add(Me.Label95)
+        Me.GroupBox11.Controls.Add(Me.txtArduinos)
+        Me.GroupBox11.Controls.Add(Me.Label96)
+        Me.GroupBox11.Location = New System.Drawing.Point(13, 441)
+        Me.GroupBox11.Name = "GroupBox11"
+        Me.GroupBox11.Size = New System.Drawing.Size(297, 169)
+        Me.GroupBox11.TabIndex = 26
+        Me.GroupBox11.TabStop = False
+        Me.GroupBox11.Text = "Distribución de los Mineros:"
+        '
+        'txtAll
+        '
+        Me.txtAll.BackColor = System.Drawing.Color.White
+        Me.txtAll.Location = New System.Drawing.Point(95, 24)
+        Me.txtAll.Name = "txtAll"
+        Me.txtAll.ReadOnly = True
+        Me.txtAll.Size = New System.Drawing.Size(52, 20)
+        Me.txtAll.TabIndex = 22
+        Me.txtAll.Text = "0"
+        Me.txtAll.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label88
+        '
+        Me.Label88.Location = New System.Drawing.Point(40, 52)
+        Me.Label88.Name = "Label88"
+        Me.Label88.Size = New System.Drawing.Size(51, 13)
+        Me.Label88.TabIndex = 23
+        Me.Label88.Text = "Arduinos:"
+        Me.Label88.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'txtESP32
+        '
+        Me.txtESP32.BackColor = System.Drawing.Color.White
+        Me.txtESP32.Location = New System.Drawing.Point(95, 75)
+        Me.txtESP32.Name = "txtESP32"
+        Me.txtESP32.ReadOnly = True
+        Me.txtESP32.Size = New System.Drawing.Size(52, 20)
+        Me.txtESP32.TabIndex = 22
+        Me.txtESP32.Text = "0"
+        Me.txtESP32.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'txtCPU
+        '
+        Me.txtCPU.BackColor = System.Drawing.Color.White
+        Me.txtCPU.Location = New System.Drawing.Point(210, 46)
+        Me.txtCPU.Name = "txtCPU"
+        Me.txtCPU.ReadOnly = True
+        Me.txtCPU.Size = New System.Drawing.Size(52, 20)
+        Me.txtCPU.TabIndex = 22
+        Me.txtCPU.Text = "0"
+        Me.txtCPU.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label89
+        '
+        Me.Label89.Location = New System.Drawing.Point(40, 78)
+        Me.Label89.Name = "Label89"
+        Me.Label89.Size = New System.Drawing.Size(51, 13)
+        Me.Label89.TabIndex = 23
+        Me.Label89.Text = "ESP32:"
+        Me.Label89.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label90
+        '
+        Me.Label90.BackColor = System.Drawing.Color.White
+        Me.Label90.Location = New System.Drawing.Point(155, 49)
+        Me.Label90.Name = "Label90"
+        Me.Label90.Size = New System.Drawing.Size(51, 13)
+        Me.Label90.TabIndex = 23
+        Me.Label90.Text = "CPU:"
+        Me.Label90.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'txtWeb
+        '
+        Me.txtWeb.BackColor = System.Drawing.Color.White
+        Me.txtWeb.Location = New System.Drawing.Point(210, 127)
+        Me.txtWeb.Name = "txtWeb"
+        Me.txtWeb.ReadOnly = True
+        Me.txtWeb.Size = New System.Drawing.Size(52, 20)
+        Me.txtWeb.TabIndex = 22
+        Me.txtWeb.Text = "0"
+        Me.txtWeb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label91
+        '
+        Me.Label91.BackColor = System.Drawing.Color.White
+        Me.Label91.Location = New System.Drawing.Point(165, 130)
+        Me.Label91.Name = "Label91"
+        Me.Label91.Size = New System.Drawing.Size(41, 13)
+        Me.Label91.TabIndex = 23
+        Me.Label91.Text = "Web:"
+        Me.Label91.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'txtRPi
+        '
+        Me.txtRPi.BackColor = System.Drawing.Color.White
+        Me.txtRPi.Location = New System.Drawing.Point(95, 127)
+        Me.txtRPi.Name = "txtRPi"
+        Me.txtRPi.ReadOnly = True
+        Me.txtRPi.Size = New System.Drawing.Size(52, 20)
+        Me.txtRPi.TabIndex = 22
+        Me.txtRPi.Text = "0"
+        Me.txtRPi.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label92
+        '
+        Me.Label92.Location = New System.Drawing.Point(50, 130)
+        Me.Label92.Name = "Label92"
+        Me.Label92.Size = New System.Drawing.Size(41, 13)
+        Me.Label92.TabIndex = 23
+        Me.Label92.Text = "RPi:"
+        Me.Label92.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'txtPhone
+        '
+        Me.txtPhone.BackColor = System.Drawing.Color.White
+        Me.txtPhone.Location = New System.Drawing.Point(210, 98)
+        Me.txtPhone.Name = "txtPhone"
+        Me.txtPhone.ReadOnly = True
+        Me.txtPhone.Size = New System.Drawing.Size(52, 20)
+        Me.txtPhone.TabIndex = 22
+        Me.txtPhone.Text = "0"
+        Me.txtPhone.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label93
+        '
+        Me.Label93.BackColor = System.Drawing.Color.White
+        Me.Label93.Location = New System.Drawing.Point(151, 101)
+        Me.Label93.Name = "Label93"
+        Me.Label93.Size = New System.Drawing.Size(55, 13)
+        Me.Label93.TabIndex = 23
+        Me.Label93.Text = "Phone:"
+        Me.Label93.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'txtOther
+        '
+        Me.txtOther.BackColor = System.Drawing.Color.White
+        Me.txtOther.Location = New System.Drawing.Point(95, 101)
+        Me.txtOther.Name = "txtOther"
+        Me.txtOther.ReadOnly = True
+        Me.txtOther.Size = New System.Drawing.Size(52, 20)
+        Me.txtOther.TabIndex = 22
+        Me.txtOther.Text = "0"
+        Me.txtOther.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label94
+        '
+        Me.Label94.Location = New System.Drawing.Point(36, 104)
+        Me.Label94.Name = "Label94"
+        Me.Label94.Size = New System.Drawing.Size(55, 13)
+        Me.Label94.TabIndex = 23
+        Me.Label94.Text = "Other:"
+        Me.Label94.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'txtESP8266
+        '
+        Me.txtESP8266.BackColor = System.Drawing.Color.White
+        Me.txtESP8266.Location = New System.Drawing.Point(210, 72)
+        Me.txtESP8266.Name = "txtESP8266"
+        Me.txtESP8266.ReadOnly = True
+        Me.txtESP8266.Size = New System.Drawing.Size(52, 20)
+        Me.txtESP8266.TabIndex = 22
+        Me.txtESP8266.Text = "0"
+        Me.txtESP8266.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label95
+        '
+        Me.Label95.BackColor = System.Drawing.Color.White
+        Me.Label95.Location = New System.Drawing.Point(155, 75)
+        Me.Label95.Name = "Label95"
+        Me.Label95.Size = New System.Drawing.Size(51, 13)
+        Me.Label95.TabIndex = 23
+        Me.Label95.Text = "ESP8266:"
+        Me.Label95.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'txtArduinos
+        '
+        Me.txtArduinos.BackColor = System.Drawing.Color.White
+        Me.txtArduinos.Location = New System.Drawing.Point(95, 49)
+        Me.txtArduinos.Name = "txtArduinos"
+        Me.txtArduinos.ReadOnly = True
+        Me.txtArduinos.Size = New System.Drawing.Size(52, 20)
+        Me.txtArduinos.TabIndex = 20
+        Me.txtArduinos.Text = "0"
+        Me.txtArduinos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label96
+        '
+        Me.Label96.Location = New System.Drawing.Point(38, 27)
+        Me.Label96.Name = "Label96"
+        Me.Label96.Size = New System.Drawing.Size(53, 17)
+        Me.Label96.TabIndex = 21
+        Me.Label96.Text = "Alls:"
+        Me.Label96.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'GroupBox12
+        '
+        Me.GroupBox12.Controls.Add(Me.TreeView2)
+        Me.GroupBox12.Location = New System.Drawing.Point(16, 9)
+        Me.GroupBox12.Name = "GroupBox12"
+        Me.GroupBox12.Size = New System.Drawing.Size(274, 650)
+        Me.GroupBox12.TabIndex = 30
+        Me.GroupBox12.TabStop = False
+        Me.GroupBox12.Text = "Mineros"
+        '
+        'TreeView2
+        '
+        Me.TreeView2.FullRowSelect = True
+        Me.TreeView2.ImageIndex = 5
+        Me.TreeView2.ImageList = Me.ImageList1
+        Me.TreeView2.Location = New System.Drawing.Point(6, 16)
+        Me.TreeView2.Name = "TreeView2"
+        Me.TreeView2.SelectedImageIndex = 5
+        Me.TreeView2.Size = New System.Drawing.Size(262, 625)
+        Me.TreeView2.TabIndex = 0
+        '
+        'ImageList1
+        '
+        Me.ImageList1.ImageStream = CType(resources.GetObject("ImageList1.ImageStream"), System.Windows.Forms.ImageListStreamer)
+        Me.ImageList1.TransparentColor = System.Drawing.Color.Transparent
+        Me.ImageList1.Images.SetKeyName(0, "AVRMiner.ico")
+        Me.ImageList1.Images.SetKeyName(1, "PCMiner.ico")
+        Me.ImageList1.Images.SetKeyName(2, "WebMiner.ico")
+        Me.ImageList1.Images.SetKeyName(3, "wemos.gif")
+        Me.ImageList1.Images.SetKeyName(4, "arduino.gif")
+        Me.ImageList1.Images.SetKeyName(5, "Node.ico")
+        Me.ImageList1.Images.SetKeyName(6, "duco.ico")
+        Me.ImageList1.Images.SetKeyName(7, "esp32.png")
+        Me.ImageList1.Images.SetKeyName(8, "ESP8266.png")
+        '
+        'GroupBox13
+        '
+        Me.GroupBox13.Controls.Add(Me.lstboxTop10)
+        Me.GroupBox13.Location = New System.Drawing.Point(324, 296)
+        Me.GroupBox13.Name = "GroupBox13"
+        Me.GroupBox13.Size = New System.Drawing.Size(249, 161)
+        Me.GroupBox13.TabIndex = 30
+        Me.GroupBox13.TabStop = False
+        Me.GroupBox13.Text = "Top 10 richest miners"
+        '
+        'lstboxTop10
+        '
+        Me.lstboxTop10.FormattingEnabled = True
+        Me.lstboxTop10.Location = New System.Drawing.Point(7, 16)
+        Me.lstboxTop10.Name = "lstboxTop10"
+        Me.lstboxTop10.Size = New System.Drawing.Size(231, 134)
+        Me.lstboxTop10.TabIndex = 0
+        '
+        'GroupBox14
+        '
+        Me.GroupBox14.Controls.Add(Me.lblHaseEstiquta)
+        Me.GroupBox14.Controls.Add(Me.lblHases)
+        Me.GroupBox14.Controls.Add(Me.Label97)
+        Me.GroupBox14.Controls.Add(Me.Label36)
+        Me.GroupBox14.Controls.Add(Me.lblMineros)
+        Me.GroupBox14.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox14.Location = New System.Drawing.Point(11, 447)
+        Me.GroupBox14.Name = "GroupBox14"
+        Me.GroupBox14.Size = New System.Drawing.Size(236, 99)
+        Me.GroupBox14.TabIndex = 153
+        Me.GroupBox14.TabStop = False
+        Me.GroupBox14.Text = "Miners"
+        '
+        'lblHases
+        '
+        Me.lblHases.Font = New System.Drawing.Font("Digital Display", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHases.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.lblHases.Location = New System.Drawing.Point(5, 55)
+        Me.lblHases.Name = "lblHases"
+        Me.lblHases.Size = New System.Drawing.Size(170, 41)
+        Me.lblHases.TabIndex = 150
+        Me.lblHases.Text = "000,00"
+        Me.lblHases.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblMineros
+        '
+        Me.lblMineros.Font = New System.Drawing.Font("Digital Display", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMineros.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.lblMineros.Location = New System.Drawing.Point(132, 23)
+        Me.lblMineros.Name = "lblMineros"
+        Me.lblMineros.Size = New System.Drawing.Size(43, 41)
+        Me.lblMineros.TabIndex = 134
+        Me.lblMineros.Text = "00"
+        Me.lblMineros.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label41
+        '
+        Me.Label41.AutoSize = True
+        Me.Label41.Font = New System.Drawing.Font("Duco", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label41.Location = New System.Drawing.Point(113, 69)
+        Me.Label41.Name = "Label41"
+        Me.Label41.Size = New System.Drawing.Size(23, 15)
+        Me.Label41.TabIndex = 151
+        Me.Label41.Text = "a"
+        '
+        'lblEstimadoMesDetalle
+        '
+        Me.lblEstimadoMesDetalle.AutoSize = True
+        Me.lblEstimadoMesDetalle.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEstimadoMesDetalle.Location = New System.Drawing.Point(132, 68)
+        Me.lblEstimadoMesDetalle.Name = "lblEstimadoMesDetalle"
+        Me.lblEstimadoMesDetalle.Size = New System.Drawing.Size(103, 16)
+        Me.lblEstimadoMesDetalle.TabIndex = 152
+        Me.lblEstimadoMesDetalle.Text = "monthly (≈0.012)"
+        '
+        'Label37
+        '
+        Me.Label37.AutoSize = True
+        Me.Label37.Font = New System.Drawing.Font("Duco", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label37.Location = New System.Drawing.Point(112, 37)
+        Me.Label37.Name = "Label37"
+        Me.Label37.Size = New System.Drawing.Size(23, 15)
+        Me.Label37.TabIndex = 137
+        Me.Label37.Text = "a"
+        '
+        'lblEstimadoDetalle
+        '
+        Me.lblEstimadoDetalle.AutoSize = True
+        Me.lblEstimadoDetalle.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEstimadoDetalle.Location = New System.Drawing.Point(131, 36)
+        Me.lblEstimadoDetalle.Name = "lblEstimadoDetalle"
+        Me.lblEstimadoDetalle.Size = New System.Drawing.Size(86, 16)
+        Me.lblEstimadoDetalle.TabIndex = 149
+        Me.lblEstimadoDetalle.Text = "daily (≈0.012)"
+        '
+        'Label97
+        '
+        Me.Label97.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label97.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label97.Location = New System.Drawing.Point(2, 20)
+        Me.Label97.Name = "Label97"
+        Me.Label97.Size = New System.Drawing.Size(133, 41)
+        Me.Label97.TabIndex = 134
+        Me.Label97.Text = "Miners:"
+        Me.Label97.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblHaseEstiquta
+        '
+        Me.lblHaseEstiquta.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHaseEstiquta.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.lblHaseEstiquta.Location = New System.Drawing.Point(166, 55)
+        Me.lblHaseEstiquta.Name = "lblHaseEstiquta"
+        Me.lblHaseEstiquta.Size = New System.Drawing.Size(67, 41)
+        Me.lblHaseEstiquta.TabIndex = 150
+        Me.lblHaseEstiquta.Text = "Kh/s"
+        Me.lblHaseEstiquta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label36
+        '
+        Me.Label36.Font = New System.Drawing.Font("Digital Display", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label36.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label36.Location = New System.Drawing.Point(167, 23)
+        Me.Label36.Name = "Label36"
+        Me.Label36.Size = New System.Drawing.Size(60, 41)
+        Me.Label36.TabIndex = 134
+        Me.Label36.Text = "/50"
+        Me.Label36.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Form1
         '
@@ -3786,10 +4704,10 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1370, 735)
+        Me.Controls.Add(Me.GroupBox14)
         Me.Controls.Add(Me.GroupBox7)
         Me.Controls.Add(Me.GroupBox6)
         Me.Controls.Add(Me.GroupBox5)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.lblHora)
         Me.Controls.Add(Me.GroupBox2)
@@ -3816,11 +4734,22 @@ Partial Class Form1
         Me.GroupBox4.ResumeLayout(False)
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage3.ResumeLayout(False)
+        Me.TabPage4.ResumeLayout(False)
         Me.GroupBox5.ResumeLayout(False)
         Me.GroupBox6.ResumeLayout(False)
         Me.GroupBox7.ResumeLayout(False)
         Me.GroupBox7.PerformLayout()
-        CType(Me.Chart7, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox8.ResumeLayout(False)
+        Me.GroupBox8.PerformLayout()
+        Me.GroupBox9.ResumeLayout(False)
+        Me.GroupBox9.PerformLayout()
+        Me.GroupBox10.ResumeLayout(False)
+        Me.GroupBox10.PerformLayout()
+        Me.GroupBox11.ResumeLayout(False)
+        Me.GroupBox11.PerformLayout()
+        Me.GroupBox12.ResumeLayout(False)
+        Me.GroupBox13.ResumeLayout(False)
+        Me.GroupBox14.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -4088,14 +5017,94 @@ Partial Class Form1
     Friend WithEvents GroupBox6 As GroupBox
     Friend WithEvents lblValorEuro As Label
     Friend WithEvents GroupBox7 As GroupBox
-    Friend WithEvents lblEstimadoDetalle As Label
-    Friend WithEvents Label37 As Label
     Friend WithEvents lblEstimado As Label
     Friend WithEvents Label39 As Label
     Friend WithEvents Label38 As Label
     Friend WithEvents lblGanadoDolar As Label
+    Friend WithEvents lblEstimadoMes As Label
+    Friend WithEvents GroupBox8 As GroupBox
+    Friend WithEvents txtDucopriceXMG As TextBox
+    Friend WithEvents Label40 As Label
+    Friend WithEvents txtDucopriceTRX As TextBox
+    Friend WithEvents Label42 As Label
+    Friend WithEvents txtDucopriceNANO As TextBox
+    Friend WithEvents Label43 As Label
+    Friend WithEvents txtDucopriceBCH As TextBox
+    Friend WithEvents Label44 As Label
+    Friend WithEvents txtDucoSushiSwapprice As TextBox
+    Friend WithEvents Label45 As Label
+    Friend WithEvents txtDucoPancakeSwapprice As TextBox
+    Friend WithEvents Label46 As Label
+    Friend WithEvents txtDucoNodeSprice As TextBox
+    Friend WithEvents Label47 As Label
+    Friend WithEvents txtDucoJustSwapprice As TextBox
+    Friend WithEvents Label48 As Label
+    Friend WithEvents txtDucoprice1 As TextBox
+    Friend WithEvents Label49 As Label
+    Friend WithEvents GroupBox9 As GroupBox
+    Friend WithEvents txtJailed As TextBox
+    Friend WithEvents Label50 As Label
+    Friend WithEvents txtBanned As TextBox
+    Friend WithEvents Label51 As Label
+    Friend WithEvents GroupBox10 As GroupBox
+    Friend WithEvents txtMinedblocks As TextBox
+    Friend WithEvents txtActiveconnections As TextBox
+    Friend WithEvents Label75 As Label
+    Friend WithEvents Label76 As Label
+    Friend WithEvents txtLastupdate As TextBox
+    Friend WithEvents Label77 As Label
+    Friend WithEvents Label78 As Label
+    Friend WithEvents txtDUCOS1hashrate As TextBox
+    Friend WithEvents txtLastsync As TextBox
+    Friend WithEvents txtServerversion As TextBox
+    Friend WithEvents Label79 As Label
+    Friend WithEvents Label80 As Label
+    Friend WithEvents Label81 As Label
+    Friend WithEvents txtNetenergyusage As TextBox
+    Friend WithEvents txtServerRAMusage As TextBox
+    Friend WithEvents Label82 As Label
+    Friend WithEvents txtLastblockhash As TextBox
+    Friend WithEvents Label83 As Label
+    Friend WithEvents Label84 As Label
+    Friend WithEvents txtOpenthreads As TextBox
+    Friend WithEvents txtServerCPUusage As TextBox
+    Friend WithEvents Label85 As Label
+    Friend WithEvents Label86 As Label
+    Friend WithEvents txtPoolhashrate As TextBox
+    Friend WithEvents txtRegisteredusers As TextBox
+    Friend WithEvents Label87 As Label
+    Friend WithEvents GroupBox11 As GroupBox
+    Friend WithEvents txtAll As TextBox
+    Friend WithEvents Label88 As Label
+    Friend WithEvents txtESP32 As TextBox
+    Friend WithEvents txtCPU As TextBox
+    Friend WithEvents Label89 As Label
+    Friend WithEvents Label90 As Label
+    Friend WithEvents txtWeb As TextBox
+    Friend WithEvents Label91 As Label
+    Friend WithEvents txtRPi As TextBox
+    Friend WithEvents Label92 As Label
+    Friend WithEvents txtPhone As TextBox
+    Friend WithEvents Label93 As Label
+    Friend WithEvents txtOther As TextBox
+    Friend WithEvents Label94 As Label
+    Friend WithEvents txtESP8266 As TextBox
+    Friend WithEvents Label95 As Label
+    Friend WithEvents txtArduinos As TextBox
+    Friend WithEvents Label96 As Label
+    Friend WithEvents GroupBox12 As GroupBox
+    Friend WithEvents TreeView2 As TreeView
+    Friend WithEvents ImageList1 As ImageList
+    Friend WithEvents GroupBox13 As GroupBox
+    Friend WithEvents lstboxTop10 As ListBox
+    Friend WithEvents GroupBox14 As GroupBox
+    Friend WithEvents lblHases As Label
+    Friend WithEvents lblMineros As Label
     Friend WithEvents lblEstimadoMesDetalle As Label
     Friend WithEvents Label41 As Label
-    Friend WithEvents lblEstimadoMes As Label
-    Friend WithEvents Chart7 As DataVisualization.Charting.Chart
+    Friend WithEvents lblEstimadoDetalle As Label
+    Friend WithEvents Label37 As Label
+    Friend WithEvents lblHaseEstiquta As Label
+    Friend WithEvents Label97 As Label
+    Friend WithEvents Label36 As Label
 End Class

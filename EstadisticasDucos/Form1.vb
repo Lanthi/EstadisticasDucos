@@ -24,6 +24,8 @@ Public Class Form1
     Dim ValorEstimado As Decimal
     Dim ValorEstimadoMes As Decimal
     Dim ContadorEstimacion As Integer = 0
+    Dim Euro As Decimal = 0
+    Public Mineros(0, 7) As String
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
             For I As Integer = 0 To 30
@@ -259,7 +261,6 @@ Public Class Form1
     End Sub
     Private Sub Actualizar()
         Try
-            Dim Euro As Decimal
             Dim uriString3 As String = "http://www.floatrates.com/daily/eur.json"
             Dim uri3 As New Uri(uriString3)
             Dim Request3 As HttpWebRequest = HttpWebRequest.Create(uri3)
@@ -268,7 +269,7 @@ Public Class Form1
             Dim Read3 = New StreamReader(Response3.GetResponseStream())
             Dim Raw3 As String = Read3.ReadToEnd()
             Dim dict3 As Object = New JavaScriptSerializer().Deserialize(Of Dictionary(Of String, Object))(Raw3)
-
+            Dim HasesUsuario As Integer = 0
             Dim uriString2 As String = "https://server.duinocoin.com/users/Lanthi"
             Dim uri2 As New Uri(uriString2)
             Dim Request2 As HttpWebRequest = HttpWebRequest.Create(uri2)
@@ -308,24 +309,18 @@ Public Class Form1
                     Case "31" : Segundoss = "30"
                     Case "32" : Segundoss = "30"
                 End Select
-
                 If Segundos <= 9 Then
                     If Minutos <= 9 Then
-                        ' lblHora.Text = Hora & ":0" & Minutos & ":0" & Segundos
                         Chart6.Series(0).Points.AddXY(Hora & ":0" & Minutos & ":0" & Segundoss, CDec(Format(ValorEstimado, "###0.00")))
                     Else
-                        ' lblHora.Text = Hora & ":" & Minutos & ":0" & Segundos
                         Chart6.Series(0).Points.AddXY(Hora & ":" & Minutos & ":0" & Segundoss, CDec(Format(ValorEstimado, "###0.00")))
                     End If
                 Else
                     If Minutos <= 9 Then
-                        ' lblHora.Text = Hora & ":0" & Minutos & ":" & Segundos
                         Chart6.Series(0).Points.AddXY(Hora & ":0" & Minutos & ":" & Segundoss, CDec(Format(ValorEstimado, "###0.00")))
                     Else
-                        ' lblHora.Text = Hora & ":" & Minutos & ":" & Segundos
                         Chart6.Series(0).Points.AddXY(Hora & ":" & Minutos & ":" & Segundoss, CDec(Format(ValorEstimado, "###0.00")))
                     End If
-
                 End If
                 ContadorEstimacion += 1
                 If ContadorEstimacion >= 50 Then Chart6.Series(0).Points.RemoveAt(0)
@@ -368,6 +363,105 @@ Public Class Form1
                 If I <> 0 Then TreeView1.Nodes.Add("")
             Next
             TreeView1.ExpandAll()
+
+            TreeView2.Sorted = False
+            Dim Contador As Integer = dict2.item("result").item("miners").Count
+            ReDim Mineros(Contador, 7)
+            TreeView2.Nodes.Clear()
+            TreeView2.Nodes.Add("Mineros" & " (" & Contador & ")")
+
+
+            For T As Integer = 0 To Contador - 1
+                Mineros(T, 0) = dict2.item("result").item("miners").item(T).item("identifier") & " (" & CalcularHases(dict2.item("result").item("miners").item(T).item("hashrate")) & ")"
+                Mineros(T, 1) = "Accepted: " & dict2.item("result").item("miners").item(T).item("accepted")
+                Mineros(T, 2) = "Algorithm: " & dict2.item("result").item("miners").item(T).item("algorithm")
+                Mineros(T, 3) = "Diff: " & dict2.item("result").item("miners").item(T).item("diff")
+                Mineros(T, 4) = "Hashrate: " & CalcularHases(dict2.item("result").item("miners").item(T).item("hashrate"))
+                HasesUsuario += dict2.item("result").item("miners").item(T).item("hashrate")
+                Mineros(T, 5) = "Pool: " & dict2.item("result").item("miners").item(T).item("pool")
+                Mineros(T, 6) = "Rejected: " & dict2.item("result").item("miners").item(T).item("rejected")
+                Mineros(T, 7) = "Soft.: " & dict2.item("result").item("miners").item(T).item("software")
+                'TreeView1.Nodes(0).Nodes(I).Nodes.Add("Soft.: " & dict2.item("result").item("miners").item(I).item("software"))
+                TreeView2.Nodes(0).Nodes.Add(Mineros(T, 0))
+                For A As Integer = 0 To 7
+                    TreeView2.Nodes(0).Nodes(T).Nodes.Add(Mineros(T, A))
+                Next A
+
+                Select Case dict2.item("result").item("miners").item(T).item("software")
+                    Case "Official AVR Miner 3.0"
+                        TreeView2.Nodes(0).Nodes(T).ImageIndex = 0
+                        TreeView2.Nodes(0).Nodes(T).SelectedImageIndex = 0
+                    Case "Official PC Miner 3.0"
+                        TreeView2.Nodes(0).Nodes(T).ImageIndex = 1
+                        TreeView2.Nodes(0).Nodes(T).SelectedImageIndex = 1
+                    Case "Official ESP32 Miner 3.0"
+                        TreeView2.Nodes(0).Nodes(T).ImageIndex = 7
+                        TreeView2.Nodes(0).Nodes(T).SelectedImageIndex = 7
+                    Case "Official ESP8266 Miner 3.0"
+                        TreeView2.Nodes(0).Nodes(T).ImageIndex = 8
+                        TreeView2.Nodes(0).Nodes(T).SelectedImageIndex = 8
+                    Case "Official Web Miner 2.8"
+                        TreeView2.Nodes(0).Nodes(T).ImageIndex = 2
+                        TreeView2.Nodes(0).Nodes(T).SelectedImageIndex = 2
+                End Select
+                TreeView2.Refresh()
+
+            Next
+
+            GroupBox8.Text = "Miners (" & Contador & ") " & CalcularHases(HasesUsuario)
+            TabPage4.Text = "Miners (" & Contador & ")"
+            lblHases.Text = CalcularHases1(HasesUsuario)
+            lblMineros.Text = Contador
+            'TreeView1.ExpandAll()
+            'TreeView1.SelectedNode = TreeView1.Nodes(0)
+            TreeView2.Nodes(0).ImageIndex = 6
+            TreeView2.Nodes(0).SelectedImageIndex = 6
+            TreeView2.Nodes(0).Expand()
+            '  TreeView1.Nodes(0).Nodes(1).SelectedImageIndex = 3
+            ' TreeView1.Sort()
+            TreeView2.Sorted = True
+
+            txtDucoNodeSprice.Text = CDec(dict.item("Duco Node-S price"))
+            txtDucoPancakeSwapprice.Text = CDec(dict.item("Duco PancakeSwap price"))
+            txtDucoSushiSwapprice.Text = CDec(dict.item("Duco SushiSwap price"))
+
+            txtDucoJustSwapprice.Text = CDec(dict.item("Duco SunSwap price"))
+            txtDucoprice1.Text = CDec(dict.item("Duco price"))
+
+            txtDucopriceBCH.Text = CDec(dict.item("Duco price BCH"))
+            txtDucopriceNANO.Text = CDec(dict.item("Duco price NANO"))
+            txtDucopriceTRX.Text = CDec(dict.item("Duco price TRX"))
+            txtDucopriceXMG.Text = CDec(dict.item("Duco price XMG"))
+
+            txtActiveconnections.Text = dict.item("Active connections")
+            txtDUCOS1hashrate.Text = dict.item("DUCO-S1 hashrate")
+            txtNetenergyusage.Text = dict.item("Net energy usage")
+            txtOpenthreads.Text = dict.item("Open threads")
+            txtPoolhashrate.Text = dict.item("Pool hashrate")
+            txtRegisteredusers.Text = dict.item("Registered users")
+            txtServerCPUusage.Text = dict.item("Server CPU usage") & " %"
+            txtServerRAMusage.Text = dict.item("Server RAM usage") & " %"
+            txtServerversion.Text = dict.item("Server version") & " v"
+            txtAll.Text = dict.item("Miner distribution").item("All")
+            txtArduinos.Text = dict.item("Miner distribution").item("Arduino")
+            txtCPU.Text = dict.item("Miner distribution").item("CPU")
+            txtESP32.Text = dict.item("Miner distribution").item("ESP32")
+            txtESP8266.Text = dict.item("Miner distribution").item("ESP8266")
+            txtOther.Text = dict.item("Miner distribution").item("Other")
+            txtPhone.Text = dict.item("Miner distribution").item("Phone")
+            txtRPi.Text = dict.item("Miner distribution").item("RPi")
+            txtWeb.Text = dict.item("Miner distribution").item("Web")
+            txtLastblockhash.Text = dict.item("Last block hash")
+            txtBanned.Text = dict.item("Kolka").item("Banned")
+            txtJailed.Text = dict.item("Kolka").item("Jailed")
+            txtLastsync.Text = dict.item("Last sync")
+            txtLastupdate.Text = dict.item("Last update")
+            txtMinedblocks.Text = dict.item("Mined blocks")
+            lstboxTop10.Items.Clear()
+            For K As Integer = 0 To 9
+                lstboxTop10.Items.Add(dict.item("Top 10 richest miners").item(K))
+            Next
+
             Select Case Hour(Now)
                 Case 0 : If lblBalanceHora00.Text <> 0 Then lblHoraDiferencia00.Text = CDec(txtbalance.Text) - CDec(lblBalanceHora00.Text)
                 Case 1 : If lblBalanceHora01.Text <> 0 Then lblHoraDiferencia01.Text = CDec(txtbalance.Text) - CDec(lblBalanceHora01.Text)
@@ -627,19 +721,29 @@ Public Class Form1
             Chart5.Series(0).Points.AddXY("Day 30", CDec(lblMesPrecio30.Text))
             Chart4.Series(0).Points.AddXY("Day 31", CDec(lblMesBalance31.Text))
             Chart5.Series(0).Points.AddXY("Day 31", CDec(lblMesPrecio31.Text))
-            Chart7.Series(0).Points.Clear()
-            Chart7.Series(0).Points.AddXY("Arduino", dict.item("Miner distribution").item("Arduino"))
-            Chart7.Series(0).Points.AddXY("CPU", dict.item("Miner distribution").item("CPU"))
-            Chart7.Series(0).Points.AddXY("ESP32", dict.item("Miner distribution").item("ESP32"))
-            Chart7.Series(0).Points.AddXY("ESP8266", dict.item("Miner distribution").item("ESP8266"))
-            Chart7.Series(0).Points.AddXY("Other", dict.item("Miner distribution").item("Other"))
-            Chart7.Series(0).Points.AddXY("Phone", dict.item("Miner distribution").item("Phone"))
-            Chart7.Series(0).Points.AddXY("RPi", dict.item("Miner distribution").item("RPi"))
-            Chart7.Series(0).Points.AddXY("Web", dict.item("Miner distribution").item("Web"))
+
         Catch ex As Exception
             MsgBox("Error!!" & vbCrLf & ex.Message)
         End Try
     End Sub
+    Function CalcularHases(Hases As Integer) As String
+        If Hases >= 10000 And Hases < 100000 Then
+            CalcularHases = Format(Hases / 1000, "0.00") & " Kh/s"
+        ElseIf Hases >= 100000 Then
+            CalcularHases = Format(Hases / 1000000, "0.00") & " MH/s"
+        Else
+            CalcularHases = Hases & " H/s"
+        End If
+    End Function
+    Function CalcularHases1(Hases As Integer) As String
+        If Hases >= 10000 And Hases < 100000 Then
+            CalcularHases1 = Format(Hases / 1000, "0.00") : lblHaseEstiquta.Text = "Kh/s"
+        ElseIf Hases >= 100000 Then
+            CalcularHases1 = Format(Hases / 1000000, "0.00") : lblHaseEstiquta.Text = "MH/s"
+        Else
+            CalcularHases1 = Hases : lblHaseEstiquta.Text = "H/s"
+        End If
+    End Function
     Private Sub Añadir()
         Try
 

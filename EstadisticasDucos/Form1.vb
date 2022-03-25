@@ -28,13 +28,13 @@ Public Class Form1
     Public Mineros(0, 7) As String
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
+            lblHora.Text = DateAndTime.TimeValue(Now)
             For I As Integer = 0 To 30
                 Transacion(I) = 0
             Next
             Actualizar()
             Añadir()
             Timer1.Enabled = True
-            lblHora.Text = DateAndTime.TimeValue(Now)
             If lblBalanceHora01.Text <> 0 And lblBalanceHora00.Text <> 0 Then lblHoraDiferencia00.Text = CDec(lblBalanceHora01.Text) - CDec(lblBalanceHora00.Text)
             If lblBalanceHora02.Text <> 0 And lblBalanceHora01.Text <> 0 Then lblHoraDiferencia01.Text = CDec(lblBalanceHora02.Text) - CDec(lblBalanceHora01.Text)
             If lblBalanceHora03.Text <> 0 And lblBalanceHora02.Text <> 0 Then lblHoraDiferencia02.Text = CDec(lblBalanceHora03.Text) - CDec(lblBalanceHora02.Text)
@@ -58,37 +58,41 @@ Public Class Form1
             If lblBalanceHora21.Text <> 0 And lblBalanceHora20.Text <> 0 Then lblHoraDiferencia20.Text = CDec(lblBalanceHora21.Text) - CDec(lblBalanceHora20.Text)
             If lblBalanceHora22.Text <> 0 And lblBalanceHora21.Text <> 0 Then lblHoraDiferencia21.Text = CDec(lblBalanceHora22.Text) - CDec(lblBalanceHora21.Text)
             If lblBalanceHora23.Text <> 0 And lblBalanceHora22.Text <> 0 Then lblHoraDiferencia22.Text = CDec(lblBalanceHora23.Text) - CDec(lblBalanceHora22.Text)
-            If lblMesBalance01.Text <> 0 And lblMesBalance02.Text <> 0 Then lblMesDifencia01.Text = CDec(lblMesBalance01.Text) - CDec(lblMesBalance01.Text) + Transacion(31)
-            If lblMesBalance02.Text <> 0 And lblMesBalance01.Text <> 0 Then lblMesDifencia01.Text = CDec(lblMesBalance02.Text) - CDec(lblMesBalance01.Text) + Transacion(1)
-            If lblMesBalance03.Text <> 0 And lblMesBalance02.Text <> 0 Then lblMesDifencia02.Text = CDec(lblMesBalance03.Text) - CDec(lblMesBalance02.Text) + Transacion(2)
-            If lblMesBalance04.Text <> 0 And lblMesBalance03.Text <> 0 Then lblMesDifencia03.Text = CDec(lblMesBalance04.Text) - CDec(lblMesBalance03.Text) + Transacion(3)
-            If lblMesBalance05.Text <> 0 And lblMesBalance04.Text <> 0 Then lblMesDifencia04.Text = CDec(lblMesBalance05.Text) - CDec(lblMesBalance04.Text) + Transacion(4)
-            If lblMesBalance06.Text <> 0 And lblMesBalance05.Text <> 0 Then lblMesDifencia05.Text = CDec(lblMesBalance06.Text) - CDec(lblMesBalance05.Text) + Transacion(5)
-            If lblMesBalance07.Text <> 0 And lblMesBalance06.Text <> 0 Then lblMesDifencia06.Text = CDec(lblMesBalance07.Text) - CDec(lblMesBalance06.Text) + Transacion(6)
-            If lblMesBalance08.Text <> 0 And lblMesBalance07.Text <> 0 Then lblMesDifencia07.Text = CDec(lblMesBalance08.Text) - CDec(lblMesBalance07.Text) + Transacion(7)
-            If lblMesBalance09.Text <> 0 And lblMesBalance08.Text <> 0 Then lblMesDifencia08.Text = CDec(lblMesBalance09.Text) - CDec(lblMesBalance08.Text) + Transacion(8)
-            If lblMesBalance10.Text <> 0 And lblMesBalance09.Text <> 0 Then lblMesDifencia09.Text = CDec(lblMesBalance10.Text) - CDec(lblMesBalance09.Text) + Transacion(9)
-            If lblMesBalance11.Text <> 0 And lblMesBalance10.Text <> 0 Then lblMesDifencia10.Text = CDec(lblMesBalance11.Text) - CDec(lblMesBalance10.Text) + Transacion(10)
-            If lblMesBalance12.Text <> 0 And lblMesBalance11.Text <> 0 Then lblMesDifencia11.Text = CDec(lblMesBalance12.Text) - CDec(lblMesBalance11.Text) + Transacion(11)
-            If lblMesBalance13.Text <> 0 And lblMesBalance12.Text <> 0 Then lblMesDifencia12.Text = CDec(lblMesBalance13.Text) - CDec(lblMesBalance12.Text) + Transacion(12)
-            If lblMesBalance14.Text <> 0 And lblMesBalance13.Text <> 0 Then lblMesDifencia13.Text = CDec(lblMesBalance14.Text) - CDec(lblMesBalance13.Text) + Transacion(13)
-            If lblMesBalance15.Text <> 0 And lblMesBalance14.Text <> 0 Then lblMesDifencia14.Text = CDec(lblMesBalance15.Text) - CDec(lblMesBalance14.Text) + Transacion(14)
-            If lblMesBalance16.Text <> 0 And lblMesBalance15.Text <> 0 Then lblMesDifencia15.Text = CDec(lblMesBalance16.Text) - CDec(lblMesBalance15.Text) + Transacion(15)
-            If lblMesBalance17.Text <> 0 And lblMesBalance16.Text <> 0 Then lblMesDifencia16.Text = CDec(lblMesBalance17.Text) - CDec(lblMesBalance16.Text) + Transacion(16)
-            If lblMesBalance18.Text <> 0 And lblMesBalance17.Text <> 0 Then lblMesDifencia17.Text = CDec(lblMesBalance18.Text) - CDec(lblMesBalance17.Text) + Transacion(17)
-            If lblMesBalance19.Text <> 0 And lblMesBalance18.Text <> 0 Then lblMesDifencia18.Text = CDec(lblMesBalance19.Text) - CDec(lblMesBalance18.Text) + Transacion(18)
-            If lblMesBalance20.Text <> 0 And lblMesBalance19.Text <> 0 Then lblMesDifencia19.Text = CDec(lblMesBalance20.Text) - CDec(lblMesBalance19.Text) + Transacion(19)
-            If lblMesBalance21.Text <> 0 And lblMesBalance20.Text <> 0 Then lblMesDifencia20.Text = CDec(lblMesBalance21.Text) - CDec(lblMesBalance20.Text) + Transacion(20)
-            If lblMesBalance22.Text <> 0 And lblMesBalance21.Text <> 0 Then lblMesDifencia21.Text = CDec(lblMesBalance22.Text) - CDec(lblMesBalance21.Text) + Transacion(21)
-            If lblMesBalance23.Text <> 0 And lblMesBalance22.Text <> 0 Then lblMesDifencia22.Text = CDec(lblMesBalance23.Text) - CDec(lblMesBalance22.Text) + Transacion(22)
-            If lblMesBalance24.Text <> 0 And lblMesBalance23.Text <> 0 Then lblMesDifencia23.Text = CDec(lblMesBalance24.Text) - CDec(lblMesBalance23.Text) + Transacion(23)
-            If lblMesBalance25.Text <> 0 And lblMesBalance24.Text <> 0 Then lblMesDifencia24.Text = CDec(lblMesBalance25.Text) - CDec(lblMesBalance24.Text) + Transacion(24)
-            If lblMesBalance26.Text <> 0 And lblMesBalance25.Text <> 0 Then lblMesDifencia25.Text = CDec(lblMesBalance26.Text) - CDec(lblMesBalance25.Text) + Transacion(25)
-            If lblMesBalance27.Text <> 0 And lblMesBalance26.Text <> 0 Then lblMesDifencia26.Text = CDec(lblMesBalance27.Text) - CDec(lblMesBalance26.Text) + Transacion(26)
-            If lblMesBalance28.Text <> 0 And lblMesBalance27.Text <> 0 Then lblMesDifencia27.Text = CDec(lblMesBalance28.Text) - CDec(lblMesBalance27.Text) + Transacion(27)
-            If lblMesBalance29.Text <> 0 And lblMesBalance28.Text <> 0 Then lblMesDifencia28.Text = CDec(lblMesBalance29.Text) - CDec(lblMesBalance28.Text) + Transacion(28)
-            If lblMesBalance30.Text <> 0 And lblMesBalance29.Text <> 0 Then lblMesDifencia29.Text = CDec(lblMesBalance30.Text) - CDec(lblMesBalance29.Text) + Transacion(29)
-            If lblMesBalance31.Text <> 0 And lblMesBalance30.Text <> 0 Then lblMesDifencia30.Text = CDec(lblMesBalance31.Text) - CDec(lblMesBalance30.Text) + Transacion(30)
+            If lblMesBalance01.Text <> 0 And lblMesBalance02.Text <> 0 Then lblMesDifencia01.Text = CDec(lblMesBalance01.Text) - CDec(lblMesBalance01.Text) - CDec(Transacion(31))
+            If lblMesBalance02.Text <> 0 And lblMesBalance01.Text <> 0 Then lblMesDifencia01.Text = CDec(lblMesBalance02.Text) - CDec(lblMesBalance01.Text) - CDec(Transacion(1))
+            If lblMesBalance03.Text <> 0 And lblMesBalance02.Text <> 0 Then lblMesDifencia02.Text = CDec(lblMesBalance03.Text) - CDec(lblMesBalance02.Text) - CDec(Transacion(2))
+            If lblMesBalance04.Text <> 0 And lblMesBalance03.Text <> 0 Then lblMesDifencia03.Text = CDec(lblMesBalance04.Text) - CDec(lblMesBalance03.Text) - CDec(Transacion(3))
+            If lblMesBalance05.Text <> 0 And lblMesBalance04.Text <> 0 Then lblMesDifencia04.Text = CDec(lblMesBalance05.Text) - CDec(lblMesBalance04.Text) - CDec(Transacion(4))
+            If lblMesBalance06.Text <> 0 And lblMesBalance05.Text <> 0 Then lblMesDifencia05.Text = CDec(lblMesBalance06.Text) - CDec(lblMesBalance05.Text) - CDec(Transacion(5))
+            If lblMesBalance07.Text <> 0 And lblMesBalance06.Text <> 0 Then lblMesDifencia06.Text = CDec(lblMesBalance07.Text) - CDec(lblMesBalance06.Text) - CDec(Transacion(6))
+            If lblMesBalance08.Text <> 0 And lblMesBalance07.Text <> 0 Then lblMesDifencia07.Text = CDec(lblMesBalance08.Text) - CDec(lblMesBalance07.Text) - CDec(Transacion(7))
+            If lblMesBalance09.Text <> 0 And lblMesBalance08.Text <> 0 Then lblMesDifencia08.Text = CDec(lblMesBalance09.Text) - CDec(lblMesBalance08.Text) - CDec(Transacion(8))
+            If lblMesBalance10.Text <> 0 And lblMesBalance09.Text <> 0 Then lblMesDifencia09.Text = CDec(lblMesBalance10.Text) - CDec(lblMesBalance09.Text) - CDec(Transacion(9))
+            If lblMesBalance11.Text <> 0 And lblMesBalance10.Text <> 0 Then lblMesDifencia10.Text = CDec(lblMesBalance11.Text) - CDec(lblMesBalance10.Text) - CDec(Transacion(10))
+            If lblMesBalance12.Text <> 0 And lblMesBalance11.Text <> 0 Then lblMesDifencia11.Text = CDec(lblMesBalance12.Text) - CDec(lblMesBalance11.Text) - CDec(Transacion(11))
+            If lblMesBalance13.Text <> 0 And lblMesBalance12.Text <> 0 Then lblMesDifencia12.Text = CDec(lblMesBalance13.Text) - CDec(lblMesBalance12.Text) - CDec(Transacion(12))
+            If lblMesBalance14.Text <> 0 And lblMesBalance13.Text <> 0 Then lblMesDifencia13.Text = CDec(lblMesBalance14.Text) - CDec(lblMesBalance13.Text) - CDec(Transacion(13))
+            If lblMesBalance15.Text <> 0 And lblMesBalance14.Text <> 0 Then lblMesDifencia14.Text = CDec(lblMesBalance15.Text) - CDec(lblMesBalance14.Text) - CDec(Transacion(14))
+            If lblMesBalance16.Text <> 0 And lblMesBalance15.Text <> 0 Then lblMesDifencia15.Text = CDec(lblMesBalance16.Text) - CDec(lblMesBalance15.Text) - CDec(Transacion(15))
+            If lblMesBalance17.Text <> 0 And lblMesBalance16.Text <> 0 Then lblMesDifencia16.Text = CDec(lblMesBalance17.Text) - CDec(lblMesBalance16.Text) - CDec(Transacion(16))
+            If lblMesBalance18.Text <> 0 And lblMesBalance17.Text <> 0 Then lblMesDifencia17.Text = CDec(lblMesBalance18.Text) - CDec(lblMesBalance17.Text) - CDec(Transacion(17))
+            If lblMesBalance19.Text <> 0 And lblMesBalance18.Text <> 0 Then lblMesDifencia18.Text = CDec(lblMesBalance19.Text) - CDec(lblMesBalance18.Text) - CDec(Transacion(18))
+            If lblMesBalance20.Text <> 0 And lblMesBalance19.Text <> 0 Then lblMesDifencia19.Text = CDec(lblMesBalance20.Text) - CDec(lblMesBalance19.Text) - CDec(Transacion(19))
+            If lblMesBalance21.Text <> 0 And lblMesBalance20.Text <> 0 Then lblMesDifencia20.Text = CDec(lblMesBalance21.Text) - CDec(lblMesBalance20.Text) - CDec(Transacion(20))
+            If lblMesBalance22.Text <> 0 And lblMesBalance21.Text <> 0 Then lblMesDifencia21.Text = CDec(lblMesBalance22.Text) - CDec(lblMesBalance21.Text) - CDec(Transacion(21))
+            If lblMesBalance23.Text <> 0 And lblMesBalance22.Text <> 0 Then lblMesDifencia22.Text = CDec(lblMesBalance23.Text) - CDec(lblMesBalance22.Text) - CDec(Transacion(22))
+            If lblMesBalance24.Text <> 0 And lblMesBalance23.Text <> 0 Then lblMesDifencia23.Text = CDec(lblMesBalance24.Text) - CDec(lblMesBalance23.Text) - CDec(Transacion(23))
+            If lblMesBalance25.Text <> 0 And lblMesBalance24.Text <> 0 Then lblMesDifencia24.Text = CDec(lblMesBalance25.Text) - CDec(lblMesBalance24.Text) - CDec(Transacion(24))
+            If lblMesBalance26.Text <> 0 And lblMesBalance25.Text <> 0 Then lblMesDifencia25.Text = CDec(lblMesBalance26.Text) - CDec(lblMesBalance25.Text) - CDec(Transacion(25))
+            If lblMesBalance27.Text <> 0 And lblMesBalance26.Text <> 0 Then lblMesDifencia26.Text = CDec(lblMesBalance27.Text) - CDec(lblMesBalance26.Text) - CDec(Transacion(26))
+            If lblMesBalance28.Text <> 0 And lblMesBalance27.Text <> 0 Then lblMesDifencia27.Text = CDec(lblMesBalance28.Text) - CDec(lblMesBalance27.Text) - CDec(Transacion(27))
+            If lblMesBalance29.Text <> 0 And lblMesBalance28.Text <> 0 Then lblMesDifencia28.Text = CDec(lblMesBalance29.Text) - CDec(lblMesBalance28.Text) - CDec(Transacion(28))
+            If lblMesBalance30.Text <> 0 And lblMesBalance29.Text <> 0 Then lblMesDifencia29.Text = CDec(lblMesBalance30.Text) - CDec(lblMesBalance29.Text) - CDec(Transacion(29))
+            If lblMesBalance31.Text <> 0 And lblMesBalance30.Text <> 0 Then lblMesDifencia30.Text = CDec(lblMesBalance31.Text) - CDec(lblMesBalance30.Text) - CDec(Transacion(30))
+
+
+
+
 
             lblTotalHora.Text = 0
             lblTotalHora.Text += CDec(lblHoraDiferencia00.Text)
@@ -200,9 +204,9 @@ Public Class Form1
                 lblMesBalance29.Visible = True
                 lblMesPrecio29.Visible = True
                 lblMesDifencia29.Visible = True
-                lblTotalMes.Location = New Point(156, 568)
-                lblMesDaily.Location = New Point(13, 571)
-                gpMes.Size = New Size(333, 607)
+                lblTotalMes.Location = New Point(221, 567)
+                lblMesDaily.Location = New Point(13, 567)
+                gpMes.Size = New Size(411, 607)
             Case 30
                 lbl31.Visible = False
                 lblMesBalance31.Visible = False
@@ -218,9 +222,9 @@ Public Class Form1
                 lblMesBalance29.Visible = True
                 lblMesPrecio29.Visible = True
                 lblMesDifencia29.Visible = True
-                lblTotalMes.Location = New Point(156, 551)
-                lblMesDaily.Location = New Point(13, 554)
-                gpMes.Size = New Size(333, 593)
+                lblTotalMes.Location = New Point(221, 551)
+                lblMesDaily.Location = New Point(13, 551)
+                gpMes.Size = New Size(411, 593)
             Case 29
                 lbl31.Visible = False
                 lblMesBalance31.Visible = False
@@ -236,9 +240,9 @@ Public Class Form1
                 lblMesBalance29.Visible = True
                 lblMesPrecio29.Visible = True
                 lblMesDifencia29.Visible = True
-                lblTotalMes.Location = New Point(156, 534)
-                lblMesDaily.Location = New Point(13, 537)
-                gpMes.Size = New Size(333, 577)
+                lblTotalMes.Location = New Point(221, 534)
+                lblMesDaily.Location = New Point(13, 534)
+                gpMes.Size = New Size(411, 577)
             Case 28
                 lbl31.Visible = False
                 lblMesBalance31.Visible = False
@@ -254,9 +258,9 @@ Public Class Form1
                 lblMesBalance29.Visible = False
                 lblMesPrecio29.Visible = False
                 lblMesDifencia29.Visible = False
-                lblTotalMes.Location = New Point(156, 517)
-                lblMesDaily.Location = New Point(13, 520)
-                gpMes.Size = New Size(333, 558)
+                lblTotalMes.Location = New Point(221, 517)
+                lblMesDaily.Location = New Point(13, 517)
+                gpMes.Size = New Size(411, 558)
         End Select
     End Sub
     Private Sub Actualizar()
@@ -342,6 +346,9 @@ Public Class Form1
             Else
                 Mesis = DateAndTime.Month(Now)
             End If
+            For I As Integer = 0 To 31
+                Transacion(I) = 0
+            Next
             For I As Integer = 4 To 0 Step -1
                 EnviosDias(I) = Mid(dict2.item("result").item("transactions").item(I).item("datetime"), 1, 2)
                 EnviosMes(I) = Mid(dict2.item("result").item("transactions").item(I).item("datetime"), 4, 2)
@@ -349,10 +356,10 @@ Public Class Form1
 
                 If dict2.item("result").item("transactions").item(I).item("sender") = "Lanthi" Then
                     TreeView1.Nodes.Add("Enviado: " & dict2.item("result").item("transactions").item(I).item("amount") & " Ducos enviado a " & dict2.item("result").item("transactions").item(I).item("recipient"))
-                    If Transacion(EnviosDias(I)) = 0 Then If EnviosMes(I) = Mesis Then Transacion(EnviosDias(I)) += CDec(dict2.item("result").item("transactions").item(I).item("amount"))
+                    If EnviosMes(I) = Mesis Then Transacion(EnviosDias(I)) -= CDec(dict2.item("result").item("transactions").item(I).item("amount"))
                 Else
                     TreeView1.Nodes.Add("Recibido: " & dict2.item("result").item("transactions").item(I).item("amount") & " Ducos recibido de " & dict2.item("result").item("transactions").item(I).item("sender"))
-                    If Transacion(EnviosDias(I)) = 0 Then If EnviosMes(I) = DateAndTime.Month(Now) Then Transacion(EnviosDias(I)) -= CDec(dict2.item("result").item("transactions").item(I).item("amount"))
+                    If EnviosMes(I) = Mesis Then Transacion(EnviosDias(I)) += CDec(dict2.item("result").item("transactions").item(I).item("amount"))
                 End If
                 TreeView1.Nodes.Add("Fecha/hora: " & dict2.item("result").item("transactions").item(I).item("datetime"))
                 TreeView1.Nodes.Add("Hash: " & dict2.item("result").item("transactions").item(I).item("hash"))
@@ -363,6 +370,37 @@ Public Class Form1
                 If I <> 0 Then TreeView1.Nodes.Add("")
             Next
             TreeView1.ExpandAll()
+            lblTransacionMes01.Text = Transacion(1)
+            lblTransacionMes02.Text = Transacion(2)
+            lblTransacionMes03.Text = Transacion(3)
+            lblTransacionMes04.Text = Transacion(4)
+            lblTransacionMes05.Text = Transacion(5)
+            lblTransacionMes06.Text = Transacion(6)
+            lblTransacionMes07.Text = Transacion(7)
+            lblTransacionMes08.Text = Transacion(8)
+            lblTransacionMes09.Text = Transacion(9)
+            lblTransacionMes10.Text = Transacion(10)
+            lblTransacionMes11.Text = Transacion(11)
+            lblTransacionMes12.Text = Transacion(12)
+            lblTransacionMes13.Text = Transacion(13)
+            lblTransacionMes14.Text = Transacion(14)
+            lblTransacionMes15.Text = Transacion(15)
+            lblTransacionMes16.Text = Transacion(16)
+            lblTransacionMes17.Text = Transacion(17)
+            lblTransacionMes18.Text = Transacion(18)
+            lblTransacionMes19.Text = Transacion(19)
+            lblTransacionMes20.Text = Transacion(20)
+            lblTransacionMes21.Text = Transacion(21)
+            lblTransacionMes22.Text = Transacion(22)
+            lblTransacionMes23.Text = Transacion(23)
+            lblTransacionMes24.Text = Transacion(24)
+            lblTransacionMes25.Text = Transacion(25)
+            lblTransacionMes26.Text = Transacion(26)
+            lblTransacionMes27.Text = Transacion(27)
+            lblTransacionMes28.Text = Transacion(28)
+            lblTransacionMes29.Text = Transacion(29)
+            lblTransacionMes30.Text = Transacion(30)
+            lblTransacionMes31.Text = Transacion(31)
 
             TreeView2.Sorted = False
             Dim Contador As Integer = dict2.item("result").item("miners").Count
@@ -489,37 +527,37 @@ Public Class Form1
                 Case 23 : If lblBalanceHora23.Text <> 0 Then lblHoraDiferencia23.Text = CDec(txtbalance.Text) - CDec(lblBalanceHora23.Text)
             End Select
             Select Case DateAndTime.Day(Now)
-                Case 1 : If lblMesBalance01.Text <> 0 Then lblMesDifencia01.Text = CDec(txtbalance.Text) - CDec(lblMesBalance01.Text) + Transacion(31)
-                Case 2 : If lblMesBalance02.Text <> 0 Then lblMesDifencia02.Text = CDec(txtbalance.Text) - CDec(lblMesBalance02.Text) + Transacion(1)
-                Case 3 : If lblMesBalance03.Text <> 0 Then lblMesDifencia03.Text = CDec(txtbalance.Text) - CDec(lblMesBalance03.Text) + Transacion(2)
-                Case 4 : If lblMesBalance04.Text <> 0 Then lblMesDifencia04.Text = CDec(txtbalance.Text) - CDec(lblMesBalance04.Text) + Transacion(3)
-                Case 5 : If lblMesBalance05.Text <> 0 Then lblMesDifencia05.Text = CDec(txtbalance.Text) - CDec(lblMesBalance05.Text) + Transacion(4)
-                Case 6 : If lblMesBalance06.Text <> 0 Then lblMesDifencia06.Text = CDec(txtbalance.Text) - CDec(lblMesBalance06.Text) + Transacion(5)
-                Case 7 : If lblMesBalance07.Text <> 0 Then lblMesDifencia07.Text = CDec(txtbalance.Text) - CDec(lblMesBalance07.Text) + Transacion(6)
-                Case 8 : If lblMesBalance08.Text <> 0 Then lblMesDifencia08.Text = CDec(txtbalance.Text) - CDec(lblMesBalance08.Text) + Transacion(7)
-                Case 9 : If lblMesBalance09.Text <> 0 Then lblMesDifencia09.Text = CDec(txtbalance.Text) - CDec(lblMesBalance09.Text) + Transacion(8)
-                Case 10 : If lblMesBalance10.Text <> 0 Then lblMesDifencia10.Text = CDec(txtbalance.Text) - CDec(lblMesBalance10.Text) + Transacion(9)
-                Case 11 : If lblMesBalance11.Text <> 0 Then lblMesDifencia11.Text = CDec(txtbalance.Text) - CDec(lblMesBalance11.Text) + Transacion(10)
-                Case 12 : If lblMesBalance12.Text <> 0 Then lblMesDifencia12.Text = CDec(txtbalance.Text) - CDec(lblMesBalance12.Text) + Transacion(11)
-                Case 13 : If lblMesBalance13.Text <> 0 Then lblMesDifencia13.Text = CDec(txtbalance.Text) - CDec(lblMesBalance13.Text) + Transacion(12)
-                Case 14 : If lblMesBalance14.Text <> 0 Then lblMesDifencia14.Text = CDec(txtbalance.Text) - CDec(lblMesBalance14.Text) + Transacion(13)
-                Case 15 : If lblMesBalance15.Text <> 0 Then lblMesDifencia15.Text = CDec(txtbalance.Text) - CDec(lblMesBalance15.Text) + Transacion(14)
-                Case 16 : If lblMesBalance16.Text <> 0 Then lblMesDifencia16.Text = CDec(txtbalance.Text) - CDec(lblMesBalance16.Text) + Transacion(15)
-                Case 17 : If lblMesBalance17.Text <> 0 Then lblMesDifencia17.Text = CDec(txtbalance.Text) - CDec(lblMesBalance17.Text) + Transacion(16)
-                Case 18 : If lblMesBalance18.Text <> 0 Then lblMesDifencia18.Text = CDec(txtbalance.Text) - CDec(lblMesBalance18.Text) + Transacion(17)
-                Case 19 : If lblMesBalance19.Text <> 0 Then lblMesDifencia19.Text = CDec(txtbalance.Text) - CDec(lblMesBalance19.Text) + Transacion(18)
-                Case 20 : If lblMesBalance20.Text <> 0 Then lblMesDifencia20.Text = CDec(txtbalance.Text) - CDec(lblMesBalance20.Text) + Transacion(19)
-                Case 21 : If lblMesBalance21.Text <> 0 Then lblMesDifencia21.Text = CDec(txtbalance.Text) - CDec(lblMesBalance21.Text) + Transacion(20)
-                Case 22 : If lblMesBalance22.Text <> 0 Then lblMesDifencia22.Text = CDec(txtbalance.Text) - CDec(lblMesBalance22.Text) + Transacion(21)
-                Case 23 : If lblMesBalance23.Text <> 0 Then lblMesDifencia23.Text = CDec(txtbalance.Text) - CDec(lblMesBalance23.Text) + Transacion(22)
-                Case 24 : If lblMesBalance24.Text <> 0 Then lblMesDifencia24.Text = CDec(txtbalance.Text) - CDec(lblMesBalance24.Text) + Transacion(23)
-                Case 25 : If lblMesBalance25.Text <> 0 Then lblMesDifencia25.Text = CDec(txtbalance.Text) - CDec(lblMesBalance25.Text) + Transacion(24)
-                Case 26 : If lblMesBalance26.Text <> 0 Then lblMesDifencia26.Text = CDec(txtbalance.Text) - CDec(lblMesBalance26.Text) + Transacion(25)
-                Case 27 : If lblMesBalance27.Text <> 0 Then lblMesDifencia27.Text = CDec(txtbalance.Text) - CDec(lblMesBalance27.Text) + Transacion(26)
-                Case 28 : If lblMesBalance28.Text <> 0 Then lblMesDifencia28.Text = CDec(txtbalance.Text) - CDec(lblMesBalance28.Text) + Transacion(27)
-                Case 29 : If lblMesBalance29.Text <> 0 Then lblMesDifencia29.Text = CDec(txtbalance.Text) - CDec(lblMesBalance29.Text) + Transacion(28)
-                Case 30 : If lblMesBalance30.Text <> 0 Then lblMesDifencia30.Text = CDec(txtbalance.Text) - CDec(lblMesBalance30.Text) + Transacion(29)
-                Case 31 : If lblMesBalance31.Text <> 0 Then lblMesDifencia31.Text = CDec(txtbalance.Text) - CDec(lblMesBalance01.Text) + Transacion(30)
+                Case 1 : If lblMesBalance01.Text <> 0 Then lblMesDifencia01.Text = CDec(txtbalance.Text) - CDec(lblMesBalance01.Text) - CDec(Transacion(1))
+                Case 2 : If lblMesBalance02.Text <> 0 Then lblMesDifencia02.Text = CDec(txtbalance.Text) - CDec(lblMesBalance02.Text) - CDec(Transacion(2))
+                Case 3 : If lblMesBalance03.Text <> 0 Then lblMesDifencia03.Text = CDec(txtbalance.Text) - CDec(lblMesBalance03.Text) - CDec(Transacion(3))
+                Case 4 : If lblMesBalance04.Text <> 0 Then lblMesDifencia04.Text = CDec(txtbalance.Text) - CDec(lblMesBalance04.Text) - CDec(Transacion(4))
+                Case 5 : If lblMesBalance05.Text <> 0 Then lblMesDifencia05.Text = CDec(txtbalance.Text) - CDec(lblMesBalance05.Text) - CDec(Transacion(5))
+                Case 6 : If lblMesBalance06.Text <> 0 Then lblMesDifencia06.Text = CDec(txtbalance.Text) - CDec(lblMesBalance06.Text) - CDec(Transacion(6))
+                Case 7 : If lblMesBalance07.Text <> 0 Then lblMesDifencia07.Text = CDec(txtbalance.Text) - CDec(lblMesBalance07.Text) - CDec(Transacion(7))
+                Case 8 : If lblMesBalance08.Text <> 0 Then lblMesDifencia08.Text = CDec(txtbalance.Text) - CDec(lblMesBalance08.Text) - CDec(Transacion(8))
+                Case 9 : If lblMesBalance09.Text <> 0 Then lblMesDifencia09.Text = CDec(txtbalance.Text) - CDec(lblMesBalance09.Text) - CDec(Transacion(9))
+                Case 10 : If lblMesBalance10.Text <> 0 Then lblMesDifencia10.Text = CDec(txtbalance.Text) - CDec(lblMesBalance10.Text) - CDec(Transacion(10))
+                Case 11 : If lblMesBalance11.Text <> 0 Then lblMesDifencia11.Text = CDec(txtbalance.Text) - CDec(lblMesBalance11.Text) - CDec(Transacion(11))
+                Case 12 : If lblMesBalance12.Text <> 0 Then lblMesDifencia12.Text = CDec(txtbalance.Text) - CDec(lblMesBalance12.Text) - CDec(Transacion(12))
+                Case 13 : If lblMesBalance13.Text <> 0 Then lblMesDifencia13.Text = CDec(txtbalance.Text) - CDec(lblMesBalance13.Text) - CDec(Transacion(13))
+                Case 14 : If lblMesBalance14.Text <> 0 Then lblMesDifencia14.Text = CDec(txtbalance.Text) - CDec(lblMesBalance14.Text) - CDec(Transacion(14))
+                Case 15 : If lblMesBalance15.Text <> 0 Then lblMesDifencia15.Text = CDec(txtbalance.Text) - CDec(lblMesBalance15.Text) - CDec(Transacion(15))
+                Case 16 : If lblMesBalance16.Text <> 0 Then lblMesDifencia16.Text = CDec(txtbalance.Text) - CDec(lblMesBalance16.Text) - CDec(Transacion(16))
+                Case 17 : If lblMesBalance17.Text <> 0 Then lblMesDifencia17.Text = CDec(txtbalance.Text) - CDec(lblMesBalance17.Text) - CDec(Transacion(17))
+                Case 18 : If lblMesBalance18.Text <> 0 Then lblMesDifencia18.Text = CDec(txtbalance.Text) - CDec(lblMesBalance18.Text) - CDec(Transacion(18))
+                Case 19 : If lblMesBalance19.Text <> 0 Then lblMesDifencia19.Text = CDec(txtbalance.Text) - CDec(lblMesBalance19.Text) - CDec(Transacion(19))
+                Case 20 : If lblMesBalance20.Text <> 0 Then lblMesDifencia20.Text = CDec(txtbalance.Text) - CDec(lblMesBalance20.Text) - CDec(Transacion(20))
+                Case 21 : If lblMesBalance21.Text <> 0 Then lblMesDifencia21.Text = CDec(txtbalance.Text) - CDec(lblMesBalance21.Text) - CDec(Transacion(21))
+                Case 22 : If lblMesBalance22.Text <> 0 Then lblMesDifencia22.Text = CDec(txtbalance.Text) - CDec(lblMesBalance22.Text) - CDec(Transacion(22))
+                Case 23 : If lblMesBalance23.Text <> 0 Then lblMesDifencia23.Text = CDec(txtbalance.Text) - CDec(lblMesBalance23.Text) - CDec(Transacion(23))
+                Case 24 : If lblMesBalance24.Text <> 0 Then lblMesDifencia24.Text = CDec(txtbalance.Text) - CDec(lblMesBalance24.Text) - CDec(Transacion(24))
+                Case 25 : If lblMesBalance25.Text <> 0 Then lblMesDifencia25.Text = CDec(txtbalance.Text) - CDec(lblMesBalance25.Text) - CDec(Transacion(25))
+                Case 26 : If lblMesBalance26.Text <> 0 Then lblMesDifencia26.Text = CDec(txtbalance.Text) - CDec(lblMesBalance26.Text) - CDec(Transacion(26))
+                Case 27 : If lblMesBalance27.Text <> 0 Then lblMesDifencia27.Text = CDec(txtbalance.Text) - CDec(lblMesBalance27.Text) - CDec(Transacion(27))
+                Case 28 : If lblMesBalance28.Text <> 0 Then lblMesDifencia28.Text = CDec(txtbalance.Text) - CDec(lblMesBalance28.Text) - CDec(Transacion(28))
+                Case 29 : If lblMesBalance29.Text <> 0 Then lblMesDifencia29.Text = CDec(txtbalance.Text) - CDec(lblMesBalance29.Text) - CDec(Transacion(29))
+                Case 30 : If lblMesBalance30.Text <> 0 Then lblMesDifencia30.Text = CDec(txtbalance.Text) - CDec(lblMesBalance30.Text) - CDec(Transacion(30))
+                Case 31 : If lblMesBalance31.Text <> 0 Then lblMesDifencia31.Text = CDec(txtbalance.Text) - CDec(lblMesBalance01.Text) - CDec(Transacion(31))
             End Select
 
             lblTotalHora.Text = 0
@@ -975,37 +1013,39 @@ Public Class Form1
             If lblBalanceHora22.Text <> 0 And lblBalanceHora21.Text <> 0 Then lblHoraDiferencia21.Text = CDec(lblBalanceHora22.Text) - CDec(lblBalanceHora21.Text)
             If lblBalanceHora23.Text <> 0 And lblBalanceHora22.Text <> 0 Then lblHoraDiferencia22.Text = CDec(lblBalanceHora23.Text) - CDec(lblBalanceHora22.Text)
 
-            If lblMesBalance01.Text <> 0 And lblMesBalance02.Text <> 0 Then lblMesDifencia01.Text = CDec(lblMesBalance01.Text) - CDec(lblMesBalance01.Text)
-            If lblMesBalance02.Text <> 0 And lblMesBalance01.Text <> 0 Then lblMesDifencia01.Text = CDec(lblMesBalance02.Text) - CDec(lblMesBalance01.Text)
-            If lblMesBalance03.Text <> 0 And lblMesBalance02.Text <> 0 Then lblMesDifencia02.Text = CDec(lblMesBalance03.Text) - CDec(lblMesBalance02.Text)
-            If lblMesBalance04.Text <> 0 And lblMesBalance03.Text <> 0 Then lblMesDifencia03.Text = CDec(lblMesBalance04.Text) - CDec(lblMesBalance03.Text)
-            If lblMesBalance05.Text <> 0 And lblMesBalance04.Text <> 0 Then lblMesDifencia04.Text = CDec(lblMesBalance05.Text) - CDec(lblMesBalance04.Text)
-            If lblMesBalance06.Text <> 0 And lblMesBalance05.Text <> 0 Then lblMesDifencia05.Text = CDec(lblMesBalance06.Text) - CDec(lblMesBalance05.Text)
-            If lblMesBalance07.Text <> 0 And lblMesBalance06.Text <> 0 Then lblMesDifencia06.Text = CDec(lblMesBalance07.Text) - CDec(lblMesBalance06.Text)
-            If lblMesBalance08.Text <> 0 And lblMesBalance07.Text <> 0 Then lblMesDifencia07.Text = CDec(lblMesBalance08.Text) - CDec(lblMesBalance07.Text)
-            If lblMesBalance09.Text <> 0 And lblMesBalance08.Text <> 0 Then lblMesDifencia08.Text = CDec(lblMesBalance09.Text) - CDec(lblMesBalance08.Text)
-            If lblMesBalance10.Text <> 0 And lblMesBalance09.Text <> 0 Then lblMesDifencia09.Text = CDec(lblMesBalance10.Text) - CDec(lblMesBalance09.Text)
-            If lblMesBalance11.Text <> 0 And lblMesBalance10.Text <> 0 Then lblMesDifencia10.Text = CDec(lblMesBalance11.Text) - CDec(lblMesBalance10.Text)
-            If lblMesBalance12.Text <> 0 And lblMesBalance11.Text <> 0 Then lblMesDifencia11.Text = CDec(lblMesBalance12.Text) - CDec(lblMesBalance11.Text)
-            If lblMesBalance13.Text <> 0 And lblMesBalance12.Text <> 0 Then lblMesDifencia12.Text = CDec(lblMesBalance13.Text) - CDec(lblMesBalance12.Text)
-            If lblMesBalance14.Text <> 0 And lblMesBalance13.Text <> 0 Then lblMesDifencia13.Text = CDec(lblMesBalance14.Text) - CDec(lblMesBalance13.Text)
-            If lblMesBalance15.Text <> 0 And lblMesBalance14.Text <> 0 Then lblMesDifencia14.Text = CDec(lblMesBalance15.Text) - CDec(lblMesBalance14.Text)
-            If lblMesBalance16.Text <> 0 And lblMesBalance15.Text <> 0 Then lblMesDifencia15.Text = CDec(lblMesBalance16.Text) - CDec(lblMesBalance15.Text)
-            If lblMesBalance17.Text <> 0 And lblMesBalance16.Text <> 0 Then lblMesDifencia16.Text = CDec(lblMesBalance17.Text) - CDec(lblMesBalance16.Text)
-            If lblMesBalance18.Text <> 0 And lblMesBalance17.Text <> 0 Then lblMesDifencia17.Text = CDec(lblMesBalance18.Text) - CDec(lblMesBalance17.Text)
-            If lblMesBalance19.Text <> 0 And lblMesBalance18.Text <> 0 Then lblMesDifencia18.Text = CDec(lblMesBalance19.Text) - CDec(lblMesBalance18.Text)
-            If lblMesBalance20.Text <> 0 And lblMesBalance19.Text <> 0 Then lblMesDifencia19.Text = CDec(lblMesBalance20.Text) - CDec(lblMesBalance19.Text)
-            If lblMesBalance21.Text <> 0 And lblMesBalance20.Text <> 0 Then lblMesDifencia20.Text = CDec(lblMesBalance21.Text) - CDec(lblMesBalance20.Text)
-            If lblMesBalance22.Text <> 0 And lblMesBalance21.Text <> 0 Then lblMesDifencia21.Text = CDec(lblMesBalance22.Text) - CDec(lblMesBalance21.Text)
-            If lblMesBalance23.Text <> 0 And lblMesBalance22.Text <> 0 Then lblMesDifencia22.Text = CDec(lblMesBalance23.Text) - CDec(lblMesBalance22.Text)
-            If lblMesBalance24.Text <> 0 And lblMesBalance23.Text <> 0 Then lblMesDifencia23.Text = CDec(lblMesBalance24.Text) - CDec(lblMesBalance23.Text)
-            If lblMesBalance25.Text <> 0 And lblMesBalance24.Text <> 0 Then lblMesDifencia24.Text = CDec(lblMesBalance25.Text) - CDec(lblMesBalance24.Text)
-            If lblMesBalance26.Text <> 0 And lblMesBalance25.Text <> 0 Then lblMesDifencia25.Text = CDec(lblMesBalance26.Text) - CDec(lblMesBalance25.Text)
-            If lblMesBalance27.Text <> 0 And lblMesBalance26.Text <> 0 Then lblMesDifencia26.Text = CDec(lblMesBalance27.Text) - CDec(lblMesBalance26.Text)
-            If lblMesBalance28.Text <> 0 And lblMesBalance27.Text <> 0 Then lblMesDifencia27.Text = CDec(lblMesBalance28.Text) - CDec(lblMesBalance27.Text)
-            If lblMesBalance29.Text <> 0 And lblMesBalance28.Text <> 0 Then lblMesDifencia28.Text = CDec(lblMesBalance29.Text) - CDec(lblMesBalance28.Text)
-            If lblMesBalance30.Text <> 0 And lblMesBalance29.Text <> 0 Then lblMesDifencia29.Text = CDec(lblMesBalance30.Text) - CDec(lblMesBalance29.Text)
-            If lblMesBalance31.Text <> 0 And lblMesBalance30.Text <> 0 Then lblMesDifencia30.Text = CDec(lblMesBalance31.Text) - CDec(lblMesBalance30.Text)
+            If lblMesBalance01.Text <> 0 And lblMesBalance02.Text <> 0 Then lblMesDifencia01.Text = CDec(lblMesBalance01.Text) - CDec(lblMesBalance01.Text) - CDec(Transacion(31))
+            If lblMesBalance02.Text <> 0 And lblMesBalance01.Text <> 0 Then lblMesDifencia01.Text = CDec(lblMesBalance02.Text) - CDec(lblMesBalance01.Text) - CDec(Transacion(1))
+            If lblMesBalance03.Text <> 0 And lblMesBalance02.Text <> 0 Then lblMesDifencia02.Text = CDec(lblMesBalance03.Text) - CDec(lblMesBalance02.Text) - CDec(Transacion(2))
+            If lblMesBalance04.Text <> 0 And lblMesBalance03.Text <> 0 Then lblMesDifencia03.Text = CDec(lblMesBalance04.Text) - CDec(lblMesBalance03.Text) - CDec(Transacion(3))
+            If lblMesBalance05.Text <> 0 And lblMesBalance04.Text <> 0 Then lblMesDifencia04.Text = CDec(lblMesBalance05.Text) - CDec(lblMesBalance04.Text) - CDec(Transacion(4))
+            If lblMesBalance06.Text <> 0 And lblMesBalance05.Text <> 0 Then lblMesDifencia05.Text = CDec(lblMesBalance06.Text) - CDec(lblMesBalance05.Text) - CDec(Transacion(5))
+            If lblMesBalance07.Text <> 0 And lblMesBalance06.Text <> 0 Then lblMesDifencia06.Text = CDec(lblMesBalance07.Text) - CDec(lblMesBalance06.Text) - CDec(Transacion(6))
+            If lblMesBalance08.Text <> 0 And lblMesBalance07.Text <> 0 Then lblMesDifencia07.Text = CDec(lblMesBalance08.Text) - CDec(lblMesBalance07.Text) - CDec(Transacion(7))
+            If lblMesBalance09.Text <> 0 And lblMesBalance08.Text <> 0 Then lblMesDifencia08.Text = CDec(lblMesBalance09.Text) - CDec(lblMesBalance08.Text) - CDec(Transacion(8))
+            If lblMesBalance10.Text <> 0 And lblMesBalance09.Text <> 0 Then lblMesDifencia09.Text = CDec(lblMesBalance10.Text) - CDec(lblMesBalance09.Text) - CDec(Transacion(9))
+            If lblMesBalance11.Text <> 0 And lblMesBalance10.Text <> 0 Then lblMesDifencia10.Text = CDec(lblMesBalance11.Text) - CDec(lblMesBalance10.Text) - CDec(Transacion(10))
+            If lblMesBalance12.Text <> 0 And lblMesBalance11.Text <> 0 Then lblMesDifencia11.Text = CDec(lblMesBalance12.Text) - CDec(lblMesBalance11.Text) - CDec(Transacion(11))
+            If lblMesBalance13.Text <> 0 And lblMesBalance12.Text <> 0 Then lblMesDifencia12.Text = CDec(lblMesBalance13.Text) - CDec(lblMesBalance12.Text) - CDec(Transacion(12))
+            If lblMesBalance14.Text <> 0 And lblMesBalance13.Text <> 0 Then lblMesDifencia13.Text = CDec(lblMesBalance14.Text) - CDec(lblMesBalance13.Text) - CDec(Transacion(13))
+            If lblMesBalance15.Text <> 0 And lblMesBalance14.Text <> 0 Then lblMesDifencia14.Text = CDec(lblMesBalance15.Text) - CDec(lblMesBalance14.Text) - CDec(Transacion(14))
+            If lblMesBalance16.Text <> 0 And lblMesBalance15.Text <> 0 Then lblMesDifencia15.Text = CDec(lblMesBalance16.Text) - CDec(lblMesBalance15.Text) - CDec(Transacion(15))
+            If lblMesBalance17.Text <> 0 And lblMesBalance16.Text <> 0 Then lblMesDifencia16.Text = CDec(lblMesBalance17.Text) - CDec(lblMesBalance16.Text) - CDec(Transacion(16))
+            If lblMesBalance18.Text <> 0 And lblMesBalance17.Text <> 0 Then lblMesDifencia17.Text = CDec(lblMesBalance18.Text) - CDec(lblMesBalance17.Text) - CDec(Transacion(17))
+            If lblMesBalance19.Text <> 0 And lblMesBalance18.Text <> 0 Then lblMesDifencia18.Text = CDec(lblMesBalance19.Text) - CDec(lblMesBalance18.Text) - CDec(Transacion(18))
+            If lblMesBalance20.Text <> 0 And lblMesBalance19.Text <> 0 Then lblMesDifencia19.Text = CDec(lblMesBalance20.Text) - CDec(lblMesBalance19.Text) - CDec(Transacion(19))
+            If lblMesBalance21.Text <> 0 And lblMesBalance20.Text <> 0 Then lblMesDifencia20.Text = CDec(lblMesBalance21.Text) - CDec(lblMesBalance20.Text) - CDec(Transacion(20))
+            If lblMesBalance22.Text <> 0 And lblMesBalance21.Text <> 0 Then lblMesDifencia21.Text = CDec(lblMesBalance22.Text) - CDec(lblMesBalance21.Text) - CDec(Transacion(21))
+            If lblMesBalance23.Text <> 0 And lblMesBalance22.Text <> 0 Then lblMesDifencia22.Text = CDec(lblMesBalance23.Text) - CDec(lblMesBalance22.Text) - CDec(Transacion(22))
+            If lblMesBalance24.Text <> 0 And lblMesBalance23.Text <> 0 Then lblMesDifencia23.Text = CDec(lblMesBalance24.Text) - CDec(lblMesBalance23.Text) - CDec(Transacion(23))
+            If lblMesBalance25.Text <> 0 And lblMesBalance24.Text <> 0 Then lblMesDifencia24.Text = CDec(lblMesBalance25.Text) - CDec(lblMesBalance24.Text) - CDec(Transacion(24))
+            If lblMesBalance26.Text <> 0 And lblMesBalance25.Text <> 0 Then lblMesDifencia25.Text = CDec(lblMesBalance26.Text) - CDec(lblMesBalance25.Text) - CDec(Transacion(25))
+            If lblMesBalance27.Text <> 0 And lblMesBalance26.Text <> 0 Then lblMesDifencia26.Text = CDec(lblMesBalance27.Text) - CDec(lblMesBalance26.Text) - CDec(Transacion(26))
+            If lblMesBalance28.Text <> 0 And lblMesBalance27.Text <> 0 Then lblMesDifencia27.Text = CDec(lblMesBalance28.Text) - CDec(lblMesBalance27.Text) - CDec(Transacion(27))
+            If lblMesBalance29.Text <> 0 And lblMesBalance28.Text <> 0 Then lblMesDifencia28.Text = CDec(lblMesBalance29.Text) - CDec(lblMesBalance28.Text) - CDec(Transacion(28))
+            If lblMesBalance30.Text <> 0 And lblMesBalance29.Text <> 0 Then lblMesDifencia29.Text = CDec(lblMesBalance30.Text) - CDec(lblMesBalance29.Text) - CDec(Transacion(29))
+            If lblMesBalance31.Text <> 0 And lblMesBalance30.Text <> 0 Then lblMesDifencia30.Text = CDec(lblMesBalance31.Text) - CDec(lblMesBalance30.Text) - CDec(Transacion(30))
+
+
 
             lblTotalHora.Text = 0
             lblTotalHora.Text += CDec(lblHoraDiferencia00.Text)

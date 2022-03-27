@@ -180,7 +180,7 @@ Public Class Form1
             Chart3.Series(0).Points.AddXY(TimeValue("23:00"), CDec(lblHoraDiferencia23.Text))
             Chart6.Series(0).Points.AddXY(Format(DateAndTime.TimeValue(Now), "HH:mm:ss"), CDec(Format(ValorEstimado, "###0.00")))
         Catch ex As Exception
-            MsgBox("Error!!" & vbCrLf & ex.Message)
+            ' MsgBox("Error!!" & vbCrLf & ex.Message)
         End Try
     End Sub
     Private Sub MostrarMes()
@@ -761,7 +761,7 @@ Public Class Form1
             Chart5.Series(0).Points.AddXY("Day 31", CDec(lblMesPrecio31.Text))
 
         Catch ex As Exception
-            MsgBox("Error!!" & vbCrLf & ex.Message)
+            'MsgBox("Error!!" & vbCrLf & ex.Message)
         End Try
     End Sub
     Function CalcularHases(Hases As Integer) As String
@@ -774,9 +774,9 @@ Public Class Form1
         End If
     End Function
     Function CalcularHases1(Hases As Integer) As String
-        If Hases >= 10000 And Hases < 100000 Then
+        If Hases >= 100000 And Hases < 1000000 Then
             CalcularHases1 = Format(Hases / 1000, "0.00") : lblHaseEstiquta.Text = "Kh/s"
-        ElseIf Hases >= 100000 Then
+        ElseIf Hases >= 1000000 Then
             CalcularHases1 = Format(Hases / 1000000, "0.00") : lblHaseEstiquta.Text = "MH/s"
         Else
             CalcularHases1 = Hases : lblHaseEstiquta.Text = "H/s"
@@ -1110,7 +1110,7 @@ Public Class Form1
 
             My.Settings.Save()
         Catch ex As Exception
-            MsgBox("Error!!" & vbCrLf & ex.Message)
+            'MsgBox("Error!!" & vbCrLf & ex.Message)
         End Try
 
     End Sub
@@ -1141,7 +1141,7 @@ Public Class Form1
             End Select
             If Minutos = 0 Then Añadir()
         Catch ex As Exception
-            MsgBox("Error!!" & vbCrLf & ex.Message)
+            ' MsgBox("Error!!" & vbCrLf & ex.Message)
         End Try
     End Sub
 
@@ -1229,4 +1229,5 @@ Public Class Form1
         lblTotalHora.Text = 0
         lblTotalMes.Text = 0
     End Sub
+
 End Class

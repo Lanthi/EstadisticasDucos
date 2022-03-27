@@ -4376,145 +4376,133 @@ Partial Class Form1
         'Label129
         '
         Me.Label129.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label129.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.Label129.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label129.Location = New System.Drawing.Point(37, 44)
         Me.Label129.Name = "Label129"
         Me.Label129.Size = New System.Drawing.Size(79, 18)
         Me.Label129.TabIndex = 177
-        Me.Label129.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance01
+        Me.Label129.Text = "0"
         Me.Label129.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label130
         '
         Me.Label130.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label130.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.Label130.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label130.Location = New System.Drawing.Point(37, 61)
         Me.Label130.Name = "Label130"
         Me.Label130.Size = New System.Drawing.Size(79, 18)
         Me.Label130.TabIndex = 184
-        Me.Label130.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance02
+        Me.Label130.Text = "0"
         Me.Label130.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label131
         '
         Me.Label131.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label131.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.Label131.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label131.Location = New System.Drawing.Point(37, 78)
         Me.Label131.Name = "Label131"
         Me.Label131.Size = New System.Drawing.Size(79, 18)
         Me.Label131.TabIndex = 180
-        Me.Label131.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance03
+        Me.Label131.Text = "0"
         Me.Label131.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label133
         '
         Me.Label133.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label133.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.Label133.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label133.Location = New System.Drawing.Point(37, 95)
         Me.Label133.Name = "Label133"
         Me.Label133.Size = New System.Drawing.Size(79, 18)
         Me.Label133.TabIndex = 181
-        Me.Label133.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance04
+        Me.Label133.Text = "0"
         Me.Label133.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label134
         '
         Me.Label134.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label134.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.Label134.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label134.Location = New System.Drawing.Point(37, 112)
         Me.Label134.Name = "Label134"
         Me.Label134.Size = New System.Drawing.Size(79, 18)
         Me.Label134.TabIndex = 182
-        Me.Label134.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance05
+        Me.Label134.Text = "0"
         Me.Label134.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label135
         '
         Me.Label135.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label135.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.Label135.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label135.Location = New System.Drawing.Point(37, 129)
         Me.Label135.Name = "Label135"
         Me.Label135.Size = New System.Drawing.Size(79, 18)
         Me.Label135.TabIndex = 183
-        Me.Label135.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance06
+        Me.Label135.Text = "0"
         Me.Label135.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label136
         '
         Me.Label136.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label136.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.Label136.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label136.Location = New System.Drawing.Point(37, 146)
         Me.Label136.Name = "Label136"
         Me.Label136.Size = New System.Drawing.Size(79, 18)
         Me.Label136.TabIndex = 189
-        Me.Label136.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance07
+        Me.Label136.Text = "0"
         Me.Label136.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label137
         '
         Me.Label137.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label137.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.Label137.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label137.Location = New System.Drawing.Point(37, 163)
         Me.Label137.Name = "Label137"
         Me.Label137.Size = New System.Drawing.Size(79, 18)
         Me.Label137.TabIndex = 185
-        Me.Label137.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance08
+        Me.Label137.Text = "0"
         Me.Label137.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label138
         '
         Me.Label138.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label138.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.Label138.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label138.Location = New System.Drawing.Point(37, 180)
         Me.Label138.Name = "Label138"
         Me.Label138.Size = New System.Drawing.Size(79, 18)
         Me.Label138.TabIndex = 186
-        Me.Label138.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance09
+        Me.Label138.Text = "0"
         Me.Label138.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label139
         '
         Me.Label139.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label139.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.Label139.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label139.Location = New System.Drawing.Point(37, 197)
         Me.Label139.Name = "Label139"
         Me.Label139.Size = New System.Drawing.Size(79, 18)
         Me.Label139.TabIndex = 187
-        Me.Label139.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance10
+        Me.Label139.Text = "0"
         Me.Label139.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label140
         '
         Me.Label140.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label140.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.Label140.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label140.Location = New System.Drawing.Point(37, 214)
         Me.Label140.Name = "Label140"
         Me.Label140.Size = New System.Drawing.Size(79, 18)
         Me.Label140.TabIndex = 188
-        Me.Label140.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance11
+        Me.Label140.Text = "0"
         Me.Label140.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label141
         '
         Me.Label141.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label141.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.Label141.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label141.Location = New System.Drawing.Point(37, 231)
         Me.Label141.Name = "Label141"
         Me.Label141.Size = New System.Drawing.Size(79, 18)
         Me.Label141.TabIndex = 179
-        Me.Label141.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance12
+        Me.Label141.Text = "0"
         Me.Label141.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label142
@@ -4676,145 +4664,133 @@ Partial Class Form1
         'Label156
         '
         Me.Label156.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label156.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.Label156.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label156.Location = New System.Drawing.Point(115, 231)
         Me.Label156.Name = "Label156"
         Me.Label156.Size = New System.Drawing.Size(66, 18)
         Me.Label156.TabIndex = 212
-        Me.Label156.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio12
+        Me.Label156.Text = "0"
         Me.Label156.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label157
         '
         Me.Label157.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label157.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.Label157.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label157.Location = New System.Drawing.Point(115, 44)
         Me.Label157.Name = "Label157"
         Me.Label157.Size = New System.Drawing.Size(66, 18)
         Me.Label157.TabIndex = 214
-        Me.Label157.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio01
+        Me.Label157.Text = "0"
         Me.Label157.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label158
         '
         Me.Label158.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label158.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.Label158.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label158.Location = New System.Drawing.Point(115, 214)
         Me.Label158.Name = "Label158"
         Me.Label158.Size = New System.Drawing.Size(66, 18)
         Me.Label158.TabIndex = 211
-        Me.Label158.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio11
+        Me.Label158.Text = "0"
         Me.Label158.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label159
         '
         Me.Label159.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label159.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.Label159.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label159.Location = New System.Drawing.Point(115, 197)
         Me.Label159.Name = "Label159"
         Me.Label159.Size = New System.Drawing.Size(66, 18)
         Me.Label159.TabIndex = 210
-        Me.Label159.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio10
+        Me.Label159.Text = "0"
         Me.Label159.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label160
         '
         Me.Label160.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label160.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.Label160.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label160.Location = New System.Drawing.Point(115, 61)
         Me.Label160.Name = "Label160"
         Me.Label160.Size = New System.Drawing.Size(66, 18)
         Me.Label160.TabIndex = 213
-        Me.Label160.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio02
+        Me.Label160.Text = "0"
         Me.Label160.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label161
         '
         Me.Label161.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label161.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.Label161.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label161.Location = New System.Drawing.Point(115, 180)
         Me.Label161.Name = "Label161"
         Me.Label161.Size = New System.Drawing.Size(66, 18)
         Me.Label161.TabIndex = 209
-        Me.Label161.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio09
+        Me.Label161.Text = "0"
         Me.Label161.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label162
         '
         Me.Label162.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label162.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.Label162.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label162.Location = New System.Drawing.Point(115, 163)
         Me.Label162.Name = "Label162"
         Me.Label162.Size = New System.Drawing.Size(66, 18)
         Me.Label162.TabIndex = 208
-        Me.Label162.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio08
+        Me.Label162.Text = "0"
         Me.Label162.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label163
         '
         Me.Label163.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label163.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.Label163.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label163.Location = New System.Drawing.Point(115, 78)
         Me.Label163.Name = "Label163"
         Me.Label163.Size = New System.Drawing.Size(66, 18)
         Me.Label163.TabIndex = 203
-        Me.Label163.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio03
+        Me.Label163.Text = "0"
         Me.Label163.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label164
         '
         Me.Label164.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label164.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.Label164.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label164.Location = New System.Drawing.Point(115, 146)
         Me.Label164.Name = "Label164"
         Me.Label164.Size = New System.Drawing.Size(66, 18)
         Me.Label164.TabIndex = 207
-        Me.Label164.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio07
+        Me.Label164.Text = "0"
         Me.Label164.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label165
         '
         Me.Label165.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label165.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.Label165.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label165.Location = New System.Drawing.Point(115, 95)
         Me.Label165.Name = "Label165"
         Me.Label165.Size = New System.Drawing.Size(66, 18)
         Me.Label165.TabIndex = 204
-        Me.Label165.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio04
+        Me.Label165.Text = "0"
         Me.Label165.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label166
         '
         Me.Label166.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label166.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.Label166.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label166.Location = New System.Drawing.Point(115, 129)
         Me.Label166.Name = "Label166"
         Me.Label166.Size = New System.Drawing.Size(66, 18)
         Me.Label166.TabIndex = 206
-        Me.Label166.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio06
+        Me.Label166.Text = "0"
         Me.Label166.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label167
         '
         Me.Label167.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label167.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.Label167.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label167.Location = New System.Drawing.Point(115, 112)
         Me.Label167.Name = "Label167"
         Me.Label167.Size = New System.Drawing.Size(66, 18)
         Me.Label167.TabIndex = 205
-        Me.Label167.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio05
+        Me.Label167.Text = "0"
         Me.Label167.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label169

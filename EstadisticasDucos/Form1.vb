@@ -14,10 +14,10 @@ Public Class Form1
     Dim ángulo As Single = 50
     Dim letras As New Font("Arial", 25)
     Dim sf As New StringFormat With {.Alignment = StringAlignment.Center, .LineAlignment = StringAlignment.Center}
-    Dim EnviosDias(4) As Integer
-    Dim EnviosMes(4) As Integer
-    Dim EnviosAño(4) As Integer
-    Dim Recibido(4) As Boolean
+    Dim EnviosDias(5000) As Integer
+    Dim EnviosMes(5000) As Integer
+    Dim EnviosAño(5000) As Integer
+    Dim Recibido(5000) As Boolean
     Dim Transacion(31) As Decimal
     Dim EstimadoViejo As Decimal = 0
     Dim EstimadoNuevo As Decimal = 0
@@ -274,7 +274,7 @@ Public Class Form1
             Dim Raw3 As String = Read3.ReadToEnd()
             Dim dict3 As Object = New JavaScriptSerializer().Deserialize(Of Dictionary(Of String, Object))(Raw3)
             Dim HasesUsuario As Integer = 0
-            Dim uriString2 As String = "https://server.duinocoin.com/users/Lanthi"
+            Dim uriString2 As String = "https://server.duinocoin.com/users/Lanthi?limit=5000"
             Dim uri2 As New Uri(uriString2)
             Dim Request2 As HttpWebRequest = HttpWebRequest.Create(uri2)
             Request2.Method = "GET"
@@ -349,7 +349,9 @@ Public Class Form1
             For I As Integer = 0 To 31
                 Transacion(I) = 0
             Next
-            For I As Integer = 4 To 0 Step -1
+            Dim ContaTransa As Integer = CInt(dict2.item("result").item("transactions").Count) - 2
+            For I As Integer = ContaTransa To 0 Step -1
+                'For I As Integer = 0 To ContaTransa
                 EnviosDias(I) = Mid(dict2.item("result").item("transactions").item(I).item("datetime"), 1, 2)
                 EnviosMes(I) = Mid(dict2.item("result").item("transactions").item(I).item("datetime"), 4, 2)
                 EnviosAño(I) = Mid(dict2.item("result").item("transactions").item(I).item("datetime"), 7, 4)
@@ -761,7 +763,7 @@ Public Class Form1
             Chart5.Series(0).Points.AddXY("Day 31", CDec(lblMesPrecio31.Text))
 
         Catch ex As Exception
-            'MsgBox("Error!!" & vbCrLf & ex.Message)
+            MsgBox("Error!!" & vbCrLf & ex.Message)
         End Try
     End Sub
     Function CalcularHases(Hases As Integer) As String

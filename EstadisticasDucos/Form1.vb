@@ -19,6 +19,7 @@ Public Class Form1
     Dim EnviosAño(5000) As Integer
     Dim Recibido(5000) As Boolean
     Dim Transacion(31) As Decimal
+    Dim TransacionPorDia(31) As Integer
     Dim EstimadoViejo As Decimal = 0
     Dim EstimadoNuevo As Decimal = 0
     Dim ValorEstimado As Decimal
@@ -31,6 +32,7 @@ Public Class Form1
             lblHora.Text = DateAndTime.TimeValue(Now)
             For I As Integer = 0 To 30
                 Transacion(I) = 0
+                TransacionPorDia(I) = 0
             Next
             Actualizar()
             Añadir()
@@ -327,8 +329,12 @@ Public Class Form1
                     End If
                 End If
                 ContadorEstimacion += 1
-                If ContadorEstimacion >= 50 Then Chart6.Series(0).Points.RemoveAt(0)
+                If ContadorEstimacion >= 75 Then Chart6.Series(0).Points.RemoveAt(0)
             End If
+
+            'Label171.Text = 
+            Chart6.ChartAreas(0).RecalculateAxesScale()
+
             lblValorEuro.Text = Euro & "€"
             lblGanado.Text = Format(CDec(txtbalance.Text) * CDec(txtDucoprice.Text) * Euro, "###0.0000")
             lblGanadoDolar.Text = Format(CDec(txtbalance.Text) * CDec(txtDucoprice.Text), "###0.0000")
@@ -348,8 +354,9 @@ Public Class Form1
             End If
             For I As Integer = 0 To 31
                 Transacion(I) = 0
+                TransacionPorDia(I) = 0
             Next
-            Dim ContaTransa As Integer = CInt(dict2.item("result").item("transactions").Count) - 2
+            Dim ContaTransa As Integer = CInt(dict2.item("result").item("transactions").Count) - 1
             For I As Integer = ContaTransa To 0 Step -1
                 'For I As Integer = 0 To ContaTransa
                 EnviosDias(I) = Mid(dict2.item("result").item("transactions").item(I).item("datetime"), 1, 2)
@@ -358,10 +365,10 @@ Public Class Form1
 
                 If dict2.item("result").item("transactions").item(I).item("sender") = "Lanthi" Then
                     TreeView1.Nodes.Add("Enviado: " & dict2.item("result").item("transactions").item(I).item("amount") & " Ducos enviado a " & dict2.item("result").item("transactions").item(I).item("recipient"))
-                    If EnviosMes(I) = Mesis Then Transacion(EnviosDias(I)) -= CDec(dict2.item("result").item("transactions").item(I).item("amount"))
+                    If EnviosMes(I) = Mesis Then Transacion(EnviosDias(I)) -= CDec(dict2.item("result").item("transactions").item(I).item("amount")) : TransacionPorDia(EnviosDias(I)) += 1
                 Else
                     TreeView1.Nodes.Add("Recibido: " & dict2.item("result").item("transactions").item(I).item("amount") & " Ducos recibido de " & dict2.item("result").item("transactions").item(I).item("sender"))
-                    If EnviosMes(I) = Mesis Then Transacion(EnviosDias(I)) += CDec(dict2.item("result").item("transactions").item(I).item("amount"))
+                    If EnviosMes(I) = Mesis Then Transacion(EnviosDias(I)) += CDec(dict2.item("result").item("transactions").item(I).item("amount")) : TransacionPorDia(EnviosDias(I)) += 1
                 End If
                 TreeView1.Nodes.Add("Fecha/hora: " & dict2.item("result").item("transactions").item(I).item("datetime"))
                 TreeView1.Nodes.Add("Hash: " & dict2.item("result").item("transactions").item(I).item("hash"))
@@ -371,38 +378,70 @@ Public Class Form1
                 ' TreeView1.Nodes.Add(dict2.item("result").item("transactions").item(I).item("sender"))
                 If I <> 0 Then TreeView1.Nodes.Add("")
             Next
+            TabPage5.Text = "Transactions (" & ContaTransa + 1 & ")"
             TreeView1.ExpandAll()
-            lblTransacionMes01.Text = Transacion(1)
-            lblTransacionMes02.Text = Transacion(2)
-            lblTransacionMes03.Text = Transacion(3)
-            lblTransacionMes04.Text = Transacion(4)
-            lblTransacionMes05.Text = Transacion(5)
-            lblTransacionMes06.Text = Transacion(6)
-            lblTransacionMes07.Text = Transacion(7)
-            lblTransacionMes08.Text = Transacion(8)
-            lblTransacionMes09.Text = Transacion(9)
-            lblTransacionMes10.Text = Transacion(10)
-            lblTransacionMes11.Text = Transacion(11)
-            lblTransacionMes12.Text = Transacion(12)
-            lblTransacionMes13.Text = Transacion(13)
-            lblTransacionMes14.Text = Transacion(14)
-            lblTransacionMes15.Text = Transacion(15)
-            lblTransacionMes16.Text = Transacion(16)
-            lblTransacionMes17.Text = Transacion(17)
-            lblTransacionMes18.Text = Transacion(18)
-            lblTransacionMes19.Text = Transacion(19)
-            lblTransacionMes20.Text = Transacion(20)
-            lblTransacionMes21.Text = Transacion(21)
-            lblTransacionMes22.Text = Transacion(22)
-            lblTransacionMes23.Text = Transacion(23)
-            lblTransacionMes24.Text = Transacion(24)
-            lblTransacionMes25.Text = Transacion(25)
-            lblTransacionMes26.Text = Transacion(26)
-            lblTransacionMes27.Text = Transacion(27)
-            lblTransacionMes28.Text = Transacion(28)
-            lblTransacionMes29.Text = Transacion(29)
-            lblTransacionMes30.Text = Transacion(30)
-            lblTransacionMes31.Text = Transacion(31)
+            lblTransacionMes01.Text = Format(Transacion(1), "######0.#####") ' & "_(" & TransacionPorDia(1) & ")"
+            lblTransacionMes02.Text = Format(Transacion(2), "######0.#####") '& "_(" & TransacionPorDia(2) & ")"
+            lblTransacionMes03.Text = Format(Transacion(3), "######0.#####") '& "_(" & TransacionPorDia(3) & ")"
+            lblTransacionMes04.Text = Format(Transacion(4), "######0.#####") '& "_(" & TransacionPorDia(4) & ")"
+            lblTransacionMes05.Text = Format(Transacion(5), "######0.#####") '& "_(" & TransacionPorDia(5) & ")"
+            lblTransacionMes06.Text = Format(Transacion(6), "######0.#####") '& "_(" & TransacionPorDia(6) & ")"
+            lblTransacionMes07.Text = Format(Transacion(7), "######0.#####") ' & "(" & TransacionPorDia(7) & ")"
+            lblTransacionMes08.Text = Format(Transacion(8), "######0.#####") ' & "_(" & TransacionPorDia(8) & ")"
+            lblTransacionMes09.Text = Format(Transacion(9), "######0.#####") '& "_(" & TransacionPorDia(9) & ")"
+            lblTransacionMes10.Text = Format(Transacion(10), "######0.#####") '& "_(" & TransacionPorDia(10) & ")"
+            lblTransacionMes11.Text = Format(Transacion(11), "######0.#####") '& "_(" & TransacionPorDia(11) & ")"
+            lblTransacionMes12.Text = Format(Transacion(12), "######0.#####") '& "_(" & TransacionPorDia(12) & ")"
+            lblTransacionMes13.Text = Format(Transacion(13), "######0.#####") '& "_(" & TransacionPorDia(13) & ")"
+            lblTransacionMes14.Text = Format(Transacion(14), "######0.#####") ' & "_(" & TransacionPorDia(14) & ")"
+            lblTransacionMes15.Text = Format(Transacion(15), "######0.#####") ' & "_(" & TransacionPorDia(15) & ")"
+            lblTransacionMes16.Text = Format(Transacion(16), "######0.#####") ' & "_(" & TransacionPorDia(16) & ")"
+            lblTransacionMes17.Text = Format(Transacion(17), "######0.#####") ' & "_(" & TransacionPorDia(17) & ")"
+            lblTransacionMes18.Text = Format(Transacion(18), "######0.#####") '& "_(" & TransacionPorDia(18) & ")"
+            lblTransacionMes19.Text = Format(Transacion(19), "######0.#####") '& "_(" & TransacionPorDia(19) & ")"
+            lblTransacionMes20.Text = Format(Transacion(20), "######0.#####") '& "_(" & TransacionPorDia(20) & ")"
+            lblTransacionMes21.Text = Format(Transacion(21), "######0.#####") '& "_(" & TransacionPorDia(21) & ")"
+            lblTransacionMes22.Text = Format(Transacion(22), "######0.#####") '& "_(" & TransacionPorDia(22) & ")"
+            lblTransacionMes23.Text = Format(Transacion(23), "######0.#####") '& "_(" & TransacionPorDia(23) & ")"
+            lblTransacionMes24.Text = Format(Transacion(24), "######0.#####") '& "_(" & TransacionPorDia(24) & ")"
+            lblTransacionMes25.Text = Format(Transacion(25), "######0.#####") '& "_(" & TransacionPorDia(25) & ")"
+            lblTransacionMes26.Text = Format(Transacion(26), "######0.#####") '& "_(" & TransacionPorDia(26) & ")"
+            lblTransacionMes27.Text = Format(Transacion(27), "######0.#####") '& "_(" & TransacionPorDia(27) & ")"
+            lblTransacionMes28.Text = Format(Transacion(28), "######0.#####") '& "_(" & TransacionPorDia(28) & ")"
+            lblTransacionMes29.Text = Format(Transacion(29), "######0.#####") '& "_(" & TransacionPorDia(29) & ")"
+            lblTransacionMes30.Text = Format(Transacion(30), "######0.#####") '& "_(" & TransacionPorDia(30) & ")"
+            lblTransacionMes31.Text = Format(Transacion(31), "######0.#####") '& "_(" & TransacionPorDia(31) & ")"
+            If lblTransacionMes01.Text <> 0 Then lblTransacionMes01.Text = lblTransacionMes01.Text & "(" & TransacionPorDia(1) & ")"
+            If lblTransacionMes02.Text <> 0 Then lblTransacionMes02.Text = lblTransacionMes02.Text & "(" & TransacionPorDia(2) & ")"
+            If lblTransacionMes03.Text <> 0 Then lblTransacionMes03.Text = lblTransacionMes03.Text & "(" & TransacionPorDia(3) & ")"
+            If lblTransacionMes04.Text <> 0 Then lblTransacionMes04.Text = lblTransacionMes04.Text & "(" & TransacionPorDia(4) & ")"
+            If lblTransacionMes05.Text <> 0 Then lblTransacionMes05.Text = lblTransacionMes05.Text & "(" & TransacionPorDia(5) & ")"
+            If lblTransacionMes06.Text <> 0 Then lblTransacionMes06.Text = lblTransacionMes06.Text & "(" & TransacionPorDia(6) & ")"
+            If lblTransacionMes07.Text <> 0 Then lblTransacionMes07.Text = lblTransacionMes07.Text & "(" & TransacionPorDia(7) & ")"
+            If lblTransacionMes08.Text <> 0 Then lblTransacionMes08.Text = lblTransacionMes08.Text & "(" & TransacionPorDia(8) & ")"
+            If lblTransacionMes09.Text <> 0 Then lblTransacionMes09.Text = lblTransacionMes09.Text & "(" & TransacionPorDia(9) & ")"
+            If lblTransacionMes10.Text <> 0 Then lblTransacionMes10.Text = lblTransacionMes10.Text & "(" & TransacionPorDia(10) & ")"
+            If lblTransacionMes11.Text <> 0 Then lblTransacionMes11.Text = lblTransacionMes11.Text & "(" & TransacionPorDia(11) & ")"
+            If lblTransacionMes12.Text <> 0 Then lblTransacionMes12.Text = lblTransacionMes12.Text & "(" & TransacionPorDia(12) & ")"
+            If lblTransacionMes13.Text <> 0 Then lblTransacionMes13.Text = lblTransacionMes13.Text & "(" & TransacionPorDia(13) & ")"
+            If lblTransacionMes14.Text <> 0 Then lblTransacionMes14.Text = lblTransacionMes14.Text & "(" & TransacionPorDia(14) & ")"
+            If lblTransacionMes15.Text <> 0 Then lblTransacionMes15.Text = lblTransacionMes15.Text & "(" & TransacionPorDia(15) & ")"
+            If lblTransacionMes16.Text <> 0 Then lblTransacionMes16.Text = lblTransacionMes16.Text & "(" & TransacionPorDia(16) & ")"
+            If lblTransacionMes17.Text <> 0 Then lblTransacionMes17.Text = lblTransacionMes17.Text & "(" & TransacionPorDia(17) & ")"
+            If lblTransacionMes18.Text <> 0 Then lblTransacionMes18.Text = lblTransacionMes18.Text & "(" & TransacionPorDia(18) & ")"
+            If lblTransacionMes19.Text <> 0 Then lblTransacionMes19.Text = lblTransacionMes19.Text & "(" & TransacionPorDia(19) & ")"
+            If lblTransacionMes20.Text <> 0 Then lblTransacionMes20.Text = lblTransacionMes20.Text & "(" & TransacionPorDia(20) & ")"
+            If lblTransacionMes21.Text <> 0 Then lblTransacionMes21.Text = lblTransacionMes21.Text & "(" & TransacionPorDia(21) & ")"
+            If lblTransacionMes22.Text <> 0 Then lblTransacionMes22.Text = lblTransacionMes22.Text & "(" & TransacionPorDia(22) & ")"
+            If lblTransacionMes23.Text <> 0 Then lblTransacionMes23.Text = lblTransacionMes23.Text & "(" & TransacionPorDia(23) & ")"
+            If lblTransacionMes24.Text <> 0 Then lblTransacionMes24.Text = lblTransacionMes24.Text & "(" & TransacionPorDia(24) & ")"
+            If lblTransacionMes25.Text <> 0 Then lblTransacionMes25.Text = lblTransacionMes25.Text & "(" & TransacionPorDia(25) & ")"
+            If lblTransacionMes26.Text <> 0 Then lblTransacionMes26.Text = lblTransacionMes26.Text & "(" & TransacionPorDia(26) & ")"
+            If lblTransacionMes27.Text <> 0 Then lblTransacionMes27.Text = lblTransacionMes27.Text & "(" & TransacionPorDia(27) & ")"
+            If lblTransacionMes28.Text <> 0 Then lblTransacionMes28.Text = lblTransacionMes28.Text & "(" & TransacionPorDia(28) & ")"
+            If lblTransacionMes29.Text <> 0 Then lblTransacionMes29.Text = lblTransacionMes29.Text & "(" & TransacionPorDia(29) & ")"
+            If lblTransacionMes30.Text <> 0 Then lblTransacionMes30.Text = lblTransacionMes30.Text & "(" & TransacionPorDia(30) & ")"
+            If lblTransacionMes31.Text <> 0 Then lblTransacionMes31.Text = lblTransacionMes31.Text & "(" & TransacionPorDia(31) & ")"
 
             TreeView2.Sorted = False
             Dim Contador As Integer = dict2.item("result").item("miners").Count
@@ -644,7 +683,7 @@ Public Class Form1
             Chart1.Series(0).Points.AddXY(TimeValue("21:00"), CDec(lblPrecio21.Text))
             Chart1.Series(0).Points.AddXY(TimeValue("22:00"), CDec(lblPrecio22.Text))
             Chart1.Series(0).Points.AddXY(TimeValue("23:00"), CDec(lblPrecio23.Text))
-
+            Chart1.ChartAreas(0).RecalculateAxesScale()
             Chart2.Series(0).Points.Clear()
             Chart2.Series(0).Points.AddXY(TimeValue("00:00"), CDec(lblBalanceHora00.Text))
             Chart2.Series(0).Points.AddXY(TimeValue("01:00"), CDec(lblBalanceHora01.Text))
@@ -790,7 +829,7 @@ Public Class Form1
             Select Case Hour(Now)
                 Case 0
                     lblBalanceHora00.Text = txtbalance.Text
-                    lblPrecio00.Text = txtDucoprice.Text
+                    lblPrecio00.Text = CDec(txtDucoprice.Text)
                     lblHoraDiferencia00.Text = CDec(lblBalanceHora00.Text) - CDec(lblBalanceHora23.Text)
                     lblBalanceHora01.Text = "0"
                     lblBalanceHora02.Text = "0"
@@ -934,62 +973,62 @@ Public Class Form1
                             End If
                             If lblMesBalance01.Text = "0" Then lblMesBalance01.Text = txtbalance.Text : lblMesPrecio01.Text = txtDucoprice.Text
 
-                        Case 2 : If lblMesBalance02.Text = "0" Then lblMesBalance02.Text = txtbalance.Text : lblMesPrecio02.Text = txtDucoprice.Text
-                        Case 3 : If lblMesBalance03.Text = "0" Then lblMesBalance03.Text = txtbalance.Text : lblMesPrecio03.Text = txtDucoprice.Text
-                        Case 4 : If lblMesBalance04.Text = "0" Then lblMesBalance04.Text = txtbalance.Text : lblMesPrecio04.Text = txtDucoprice.Text
-                        Case 5 : If lblMesBalance05.Text = "0" Then lblMesBalance05.Text = txtbalance.Text : lblMesPrecio05.Text = txtDucoprice.Text
-                        Case 6 : If lblMesBalance06.Text = "0" Then lblMesBalance06.Text = txtbalance.Text : lblMesPrecio06.Text = txtDucoprice.Text
-                        Case 7 : If lblMesBalance07.Text = "0" Then lblMesBalance07.Text = txtbalance.Text : lblMesPrecio07.Text = txtDucoprice.Text
-                        Case 8 : If lblMesBalance08.Text = "0" Then lblMesBalance08.Text = txtbalance.Text : lblMesPrecio08.Text = txtDucoprice.Text
-                        Case 9 : If lblMesBalance09.Text = "0" Then lblMesBalance09.Text = txtbalance.Text : lblMesPrecio09.Text = txtDucoprice.Text
-                        Case 10 : If lblMesBalance10.Text = "0" Then lblMesBalance10.Text = txtbalance.Text : lblMesPrecio10.Text = txtDucoprice.Text
-                        Case 11 : If lblMesBalance11.Text = "0" Then lblMesBalance11.Text = txtbalance.Text : lblMesPrecio11.Text = txtDucoprice.Text
-                        Case 12 : If lblMesBalance12.Text = "0" Then lblMesBalance12.Text = txtbalance.Text : lblMesPrecio12.Text = txtDucoprice.Text
-                        Case 13 : If lblMesBalance13.Text = "0" Then lblMesBalance13.Text = txtbalance.Text : lblMesPrecio13.Text = txtDucoprice.Text
-                        Case 14 : If lblMesBalance14.Text = "0" Then lblMesBalance14.Text = txtbalance.Text : lblMesPrecio14.Text = txtDucoprice.Text
-                        Case 15 : If lblMesBalance15.Text = "0" Then lblMesBalance15.Text = txtbalance.Text : lblMesPrecio15.Text = txtDucoprice.Text
-                        Case 16 : If lblMesBalance16.Text = "0" Then lblMesBalance16.Text = txtbalance.Text : lblMesPrecio16.Text = txtDucoprice.Text
-                        Case 17 : If lblMesBalance17.Text = "0" Then lblMesBalance17.Text = txtbalance.Text : lblMesPrecio17.Text = txtDucoprice.Text
-                        Case 18 : If lblMesBalance18.Text = "0" Then lblMesBalance18.Text = txtbalance.Text : lblMesPrecio18.Text = txtDucoprice.Text
-                        Case 19 : If lblMesBalance19.Text = "0" Then lblMesBalance19.Text = txtbalance.Text : lblMesPrecio19.Text = txtDucoprice.Text
-                        Case 20 : If lblMesBalance20.Text = "0" Then lblMesBalance20.Text = txtbalance.Text : lblMesPrecio20.Text = txtDucoprice.Text
-                        Case 21 : If lblMesBalance21.Text = "0" Then lblMesBalance21.Text = txtbalance.Text : lblMesPrecio21.Text = txtDucoprice.Text
-                        Case 22 : If lblMesBalance22.Text = "0" Then lblMesBalance22.Text = txtbalance.Text : lblMesPrecio22.Text = txtDucoprice.Text
-                        Case 23 : If lblMesBalance23.Text = "0" Then lblMesBalance23.Text = txtbalance.Text : lblMesPrecio23.Text = txtDucoprice.Text
-                        Case 24 : If lblMesBalance24.Text = "0" Then lblMesBalance24.Text = txtbalance.Text : lblMesPrecio24.Text = txtDucoprice.Text
-                        Case 25 : If lblMesBalance25.Text = "0" Then lblMesBalance25.Text = txtbalance.Text : lblMesPrecio25.Text = txtDucoprice.Text
-                        Case 26 : If lblMesBalance26.Text = "0" Then lblMesBalance26.Text = txtbalance.Text : lblMesPrecio26.Text = txtDucoprice.Text
-                        Case 27 : If lblMesBalance27.Text = "0" Then lblMesBalance27.Text = txtbalance.Text : lblMesPrecio27.Text = txtDucoprice.Text
-                        Case 28 : If lblMesBalance28.Text = "0" Then lblMesBalance28.Text = txtbalance.Text : lblMesPrecio28.Text = txtDucoprice.Text
-                        Case 29 : If lblMesBalance29.Text = "0" Then lblMesBalance29.Text = txtbalance.Text : lblMesPrecio29.Text = txtDucoprice.Text
-                        Case 30 : If lblMesBalance30.Text = "0" Then lblMesBalance30.Text = txtbalance.Text : lblMesPrecio30.Text = txtDucoprice.Text
-                        Case 31 : If lblMesBalance31.Text = "0" Then lblMesBalance31.Text = txtbalance.Text : lblMesPrecio31.Text = txtDucoprice.Text
+                        Case 2 : If lblMesBalance02.Text = "0" Then lblMesBalance02.Text = txtbalance.Text : lblMesPrecio02.Text = CDec(txtDucoprice.Text)
+                        Case 3 : If lblMesBalance03.Text = "0" Then lblMesBalance03.Text = txtbalance.Text : lblMesPrecio03.Text = CDec(txtDucoprice.Text)
+                        Case 4 : If lblMesBalance04.Text = "0" Then lblMesBalance04.Text = txtbalance.Text : lblMesPrecio04.Text = CDec(txtDucoprice.Text)
+                        Case 5 : If lblMesBalance05.Text = "0" Then lblMesBalance05.Text = txtbalance.Text : lblMesPrecio05.Text = CDec(txtDucoprice.Text)
+                        Case 6 : If lblMesBalance06.Text = "0" Then lblMesBalance06.Text = txtbalance.Text : lblMesPrecio06.Text = CDec(txtDucoprice.Text)
+                        Case 7 : If lblMesBalance07.Text = "0" Then lblMesBalance07.Text = txtbalance.Text : lblMesPrecio07.Text = CDec(txtDucoprice.Text)
+                        Case 8 : If lblMesBalance08.Text = "0" Then lblMesBalance08.Text = txtbalance.Text : lblMesPrecio08.Text = CDec(txtDucoprice.Text)
+                        Case 9 : If lblMesBalance09.Text = "0" Then lblMesBalance09.Text = txtbalance.Text : lblMesPrecio09.Text = CDec(txtDucoprice.Text)
+                        Case 10 : If lblMesBalance10.Text = "0" Then lblMesBalance10.Text = txtbalance.Text : lblMesPrecio10.Text = CDec(txtDucoprice.Text)
+                        Case 11 : If lblMesBalance11.Text = "0" Then lblMesBalance11.Text = txtbalance.Text : lblMesPrecio11.Text = CDec(txtDucoprice.Text)
+                        Case 12 : If lblMesBalance12.Text = "0" Then lblMesBalance12.Text = txtbalance.Text : lblMesPrecio12.Text = CDec(txtDucoprice.Text)
+                        Case 13 : If lblMesBalance13.Text = "0" Then lblMesBalance13.Text = txtbalance.Text : lblMesPrecio13.Text = CDec(txtDucoprice.Text)
+                        Case 14 : If lblMesBalance14.Text = "0" Then lblMesBalance14.Text = txtbalance.Text : lblMesPrecio14.Text = CDec(txtDucoprice.Text)
+                        Case 15 : If lblMesBalance15.Text = "0" Then lblMesBalance15.Text = txtbalance.Text : lblMesPrecio15.Text = CDec(txtDucoprice.Text)
+                        Case 16 : If lblMesBalance16.Text = "0" Then lblMesBalance16.Text = txtbalance.Text : lblMesPrecio16.Text = CDec(txtDucoprice.Text)
+                        Case 17 : If lblMesBalance17.Text = "0" Then lblMesBalance17.Text = txtbalance.Text : lblMesPrecio17.Text = CDec(txtDucoprice.Text)
+                        Case 18 : If lblMesBalance18.Text = "0" Then lblMesBalance18.Text = txtbalance.Text : lblMesPrecio18.Text = CDec(txtDucoprice.Text)
+                        Case 19 : If lblMesBalance19.Text = "0" Then lblMesBalance19.Text = txtbalance.Text : lblMesPrecio19.Text = CDec(txtDucoprice.Text)
+                        Case 20 : If lblMesBalance20.Text = "0" Then lblMesBalance20.Text = txtbalance.Text : lblMesPrecio20.Text = CDec(txtDucoprice.Text)
+                        Case 21 : If lblMesBalance21.Text = "0" Then lblMesBalance21.Text = txtbalance.Text : lblMesPrecio21.Text = CDec(txtDucoprice.Text)
+                        Case 22 : If lblMesBalance22.Text = "0" Then lblMesBalance22.Text = txtbalance.Text : lblMesPrecio22.Text = CDec(txtDucoprice.Text)
+                        Case 23 : If lblMesBalance23.Text = "0" Then lblMesBalance23.Text = txtbalance.Text : lblMesPrecio23.Text = CDec(txtDucoprice.Text)
+                        Case 24 : If lblMesBalance24.Text = "0" Then lblMesBalance24.Text = txtbalance.Text : lblMesPrecio24.Text = CDec(txtDucoprice.Text)
+                        Case 25 : If lblMesBalance25.Text = "0" Then lblMesBalance25.Text = txtbalance.Text : lblMesPrecio25.Text = CDec(txtDucoprice.Text)
+                        Case 26 : If lblMesBalance26.Text = "0" Then lblMesBalance26.Text = txtbalance.Text : lblMesPrecio26.Text = CDec(txtDucoprice.Text)
+                        Case 27 : If lblMesBalance27.Text = "0" Then lblMesBalance27.Text = txtbalance.Text : lblMesPrecio27.Text = CDec(txtDucoprice.Text)
+                        Case 28 : If lblMesBalance28.Text = "0" Then lblMesBalance28.Text = txtbalance.Text : lblMesPrecio28.Text = CDec(txtDucoprice.Text)
+                        Case 29 : If lblMesBalance29.Text = "0" Then lblMesBalance29.Text = txtbalance.Text : lblMesPrecio29.Text = CDec(txtDucoprice.Text)
+                        Case 30 : If lblMesBalance30.Text = "0" Then lblMesBalance30.Text = txtbalance.Text : lblMesPrecio30.Text = CDec(txtDucoprice.Text)
+                        Case 31 : If lblMesBalance31.Text = "0" Then lblMesBalance31.Text = txtbalance.Text : lblMesPrecio31.Text = CDec(txtDucoprice.Text)
 
                     End Select
 
-                Case 1 : lblBalanceHora01.Text = txtbalance.Text : lblPrecio01.Text = txtDucoprice.Text
-                Case 2 : lblBalanceHora02.Text = txtbalance.Text : lblPrecio02.Text = txtDucoprice.Text
-                Case 3 : lblBalanceHora03.Text = txtbalance.Text : lblPrecio03.Text = txtDucoprice.Text
-                Case 4 : lblBalanceHora04.Text = txtbalance.Text : lblPrecio04.Text = txtDucoprice.Text
-                Case 5 : lblBalanceHora05.Text = txtbalance.Text : lblPrecio05.Text = txtDucoprice.Text
-                Case 6 : lblBalanceHora06.Text = txtbalance.Text : lblPrecio06.Text = txtDucoprice.Text
-                Case 7 : lblBalanceHora07.Text = txtbalance.Text : lblPrecio07.Text = txtDucoprice.Text
-                Case 8 : lblBalanceHora08.Text = txtbalance.Text : lblPrecio08.Text = txtDucoprice.Text
-                Case 9 : lblBalanceHora09.Text = txtbalance.Text : lblPrecio09.Text = txtDucoprice.Text
-                Case 10 : lblBalanceHora10.Text = txtbalance.Text : lblPrecio10.Text = txtDucoprice.Text
-                Case 11 : lblBalanceHora11.Text = txtbalance.Text : lblPrecio11.Text = txtDucoprice.Text
-                Case 12 : lblBalanceHora12.Text = txtbalance.Text : lblPrecio12.Text = txtDucoprice.Text
-                Case 13 : lblBalanceHora13.Text = txtbalance.Text : lblPrecio13.Text = txtDucoprice.Text
-                Case 14 : lblBalanceHora14.Text = txtbalance.Text : lblPrecio14.Text = txtDucoprice.Text
-                Case 15 : lblBalanceHora15.Text = txtbalance.Text : lblPrecio15.Text = txtDucoprice.Text
-                Case 16 : lblBalanceHora16.Text = txtbalance.Text : lblPrecio16.Text = txtDucoprice.Text
-                Case 17 : lblBalanceHora17.Text = txtbalance.Text : lblPrecio17.Text = txtDucoprice.Text
-                Case 18 : lblBalanceHora18.Text = txtbalance.Text : lblPrecio18.Text = txtDucoprice.Text
-                Case 19 : lblBalanceHora19.Text = txtbalance.Text : lblPrecio19.Text = txtDucoprice.Text
-                Case 20 : lblBalanceHora20.Text = txtbalance.Text : lblPrecio20.Text = txtDucoprice.Text
-                Case 21 : lblBalanceHora21.Text = txtbalance.Text : lblPrecio21.Text = txtDucoprice.Text
-                Case 22 : lblBalanceHora22.Text = txtbalance.Text : lblPrecio22.Text = txtDucoprice.Text
-                Case 23 : lblBalanceHora23.Text = txtbalance.Text : lblPrecio23.Text = txtDucoprice.Text
+                Case 1 : lblBalanceHora01.Text = txtbalance.Text : lblPrecio01.Text = CDec(txtDucoprice.Text)
+                Case 2 : lblBalanceHora02.Text = txtbalance.Text : lblPrecio02.Text = CDec(txtDucoprice.Text)
+                Case 3 : lblBalanceHora03.Text = txtbalance.Text : lblPrecio03.Text = CDec(txtDucoprice.Text)
+                Case 4 : lblBalanceHora04.Text = txtbalance.Text : lblPrecio04.Text = CDec(txtDucoprice.Text)
+                Case 5 : lblBalanceHora05.Text = txtbalance.Text : lblPrecio05.Text = CDec(txtDucoprice.Text)
+                Case 6 : lblBalanceHora06.Text = txtbalance.Text : lblPrecio06.Text = CDec(txtDucoprice.Text)
+                Case 7 : lblBalanceHora07.Text = txtbalance.Text : lblPrecio07.Text = CDec(txtDucoprice.Text)
+                Case 8 : lblBalanceHora08.Text = txtbalance.Text : lblPrecio08.Text = CDec(txtDucoprice.Text)
+                Case 9 : lblBalanceHora09.Text = txtbalance.Text : lblPrecio09.Text = CDec(txtDucoprice.Text)
+                Case 10 : lblBalanceHora10.Text = txtbalance.Text : lblPrecio10.Text = CDec(txtDucoprice.Text)
+                Case 11 : lblBalanceHora11.Text = txtbalance.Text : lblPrecio11.Text = CDec(txtDucoprice.Text)
+                Case 12 : lblBalanceHora12.Text = txtbalance.Text : lblPrecio12.Text = CDec(txtDucoprice.Text)
+                Case 13 : lblBalanceHora13.Text = txtbalance.Text : lblPrecio13.Text = CDec(txtDucoprice.Text)
+                Case 14 : lblBalanceHora14.Text = txtbalance.Text : lblPrecio14.Text = CDec(txtDucoprice.Text)
+                Case 15 : lblBalanceHora15.Text = txtbalance.Text : lblPrecio15.Text = CDec(txtDucoprice.Text)
+                Case 16 : lblBalanceHora16.Text = txtbalance.Text : lblPrecio16.Text = CDec(txtDucoprice.Text)
+                Case 17 : lblBalanceHora17.Text = txtbalance.Text : lblPrecio17.Text = CDec(txtDucoprice.Text)
+                Case 18 : lblBalanceHora18.Text = txtbalance.Text : lblPrecio18.Text = CDec(txtDucoprice.Text)
+                Case 19 : lblBalanceHora19.Text = txtbalance.Text : lblPrecio19.Text = CDec(txtDucoprice.Text)
+                Case 20 : lblBalanceHora20.Text = txtbalance.Text : lblPrecio20.Text = CDec(txtDucoprice.Text)
+                Case 21 : lblBalanceHora21.Text = txtbalance.Text : lblPrecio21.Text = CDec(txtDucoprice.Text)
+                Case 22 : lblBalanceHora22.Text = txtbalance.Text : lblPrecio22.Text = CDec(txtDucoprice.Text)
+                Case 23 : lblBalanceHora23.Text = txtbalance.Text : lblPrecio23.Text = CDec(txtDucoprice.Text)
             End Select
             If lblBalanceHora01.Text <> 0 And lblBalanceHora00.Text <> 0 Then lblHoraDiferencia00.Text = CDec(lblBalanceHora01.Text) - CDec(lblBalanceHora00.Text)
             If lblBalanceHora02.Text <> 0 And lblBalanceHora01.Text <> 0 Then lblHoraDiferencia01.Text = CDec(lblBalanceHora02.Text) - CDec(lblBalanceHora01.Text)

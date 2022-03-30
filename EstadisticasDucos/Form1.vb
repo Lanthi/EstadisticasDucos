@@ -293,6 +293,13 @@ Public Class Form1
             Dim Raw As String = Read.ReadToEnd()
             Dim dict As Object = New JavaScriptSerializer().Deserialize(Of Dictionary(Of String, Object))(Raw)
             Euro = CDec(dict3.item("usd").item("rate"))
+            Dim Deposito As Integer = dict2.item("result").item("balance").item("stake_amount")
+            Dim FechafinDeposito As Integer = dict2.item("result").item("balance").item("stake_date")
+            lblDeposito.Text = Deposito
+
+            lblFechaFinDeposito.Text = FechafinDeposito
+
+
             txtDucoprice.Text = CDec(dict.item("Duco price"))
             txtbalance.Text = dict2.item("result").item("balance").item("balance")
             EstimadoNuevo = txtbalance.Text
@@ -345,104 +352,107 @@ Public Class Form1
                 lstBalanceTiempoReal.Items.RemoveAt(0)
                 lstDUCOTiempoReal.Items.RemoveAt(0)
             End If
-            TreeView1.Nodes.Clear()
-            Dim Mesis As String = DateAndTime.Month(Now)
-            If DateAndTime.Month(Now) <= 9 Then
-                Mesis = "0" & DateAndTime.Month(Now)
-            Else
-                Mesis = DateAndTime.Month(Now)
-            End If
-            For I As Integer = 0 To 31
-                Transacion(I) = 0
-                TransacionPorDia(I) = 0
-            Next
             Dim ContaTransa As Integer = CInt(dict2.item("result").item("transactions").Count) - 1
-            For I As Integer = ContaTransa To 0 Step -1
-                'For I As Integer = 0 To ContaTransa
-                EnviosDias(I) = Mid(dict2.item("result").item("transactions").item(I).item("datetime"), 1, 2)
-                EnviosMes(I) = Mid(dict2.item("result").item("transactions").item(I).item("datetime"), 4, 2)
-                EnviosAño(I) = Mid(dict2.item("result").item("transactions").item(I).item("datetime"), 7, 4)
-
-                If dict2.item("result").item("transactions").item(I).item("sender") = "Lanthi" Then
-                    TreeView1.Nodes.Add("Enviado: " & dict2.item("result").item("transactions").item(I).item("amount") & " Ducos enviado a " & dict2.item("result").item("transactions").item(I).item("recipient"))
-                    If EnviosMes(I) = Mesis Then Transacion(EnviosDias(I)) -= CDec(dict2.item("result").item("transactions").item(I).item("amount")) : TransacionPorDia(EnviosDias(I)) += 1
+            If ContaTransa > 5 Then
+                TreeView1.Nodes.Clear()
+                Dim Mesis As String = DateAndTime.Month(Now)
+                If DateAndTime.Month(Now) <= 9 Then
+                    Mesis = "0" & DateAndTime.Month(Now)
                 Else
-                    TreeView1.Nodes.Add("Recibido: " & dict2.item("result").item("transactions").item(I).item("amount") & " Ducos recibido de " & dict2.item("result").item("transactions").item(I).item("sender"))
-                    If EnviosMes(I) = Mesis Then Transacion(EnviosDias(I)) += CDec(dict2.item("result").item("transactions").item(I).item("amount")) : TransacionPorDia(EnviosDias(I)) += 1
+                    Mesis = DateAndTime.Month(Now)
                 End If
-                TreeView1.Nodes.Add("Fecha/hora: " & dict2.item("result").item("transactions").item(I).item("datetime"))
-                TreeView1.Nodes.Add("Hash: " & dict2.item("result").item("transactions").item(I).item("hash"))
-                TreeView1.Nodes.Add("Memo: " & dict2.item("result").item("transactions").item(I).item("memo"))
-                ' TreeView1.Nodes.Add(EnviosDias(I) & "/" & EnviosMes(I) & "/" & EnviosAño(I))
-                ' TreeView1.Nodes.Add(Transacion(EnviosDias(I)))
-                ' TreeView1.Nodes.Add(dict2.item("result").item("transactions").item(I).item("sender"))
-                If I <> 0 Then TreeView1.Nodes.Add("")
-            Next
-            TabPage5.Text = "Transactions (" & ContaTransa + 1 & ")"
-            TreeView1.ExpandAll()
-            lblTransacionMes01.Text = Format(Transacion(1), "######0.#####") ' & "_(" & TransacionPorDia(1) & ")"
-            lblTransacionMes02.Text = Format(Transacion(2), "######0.#####") '& "_(" & TransacionPorDia(2) & ")"
-            lblTransacionMes03.Text = Format(Transacion(3), "######0.#####") '& "_(" & TransacionPorDia(3) & ")"
-            lblTransacionMes04.Text = Format(Transacion(4), "######0.#####") '& "_(" & TransacionPorDia(4) & ")"
-            lblTransacionMes05.Text = Format(Transacion(5), "######0.#####") '& "_(" & TransacionPorDia(5) & ")"
-            lblTransacionMes06.Text = Format(Transacion(6), "######0.#####") '& "_(" & TransacionPorDia(6) & ")"
-            lblTransacionMes07.Text = Format(Transacion(7), "######0.#####") ' & "(" & TransacionPorDia(7) & ")"
-            lblTransacionMes08.Text = Format(Transacion(8), "######0.#####") ' & "_(" & TransacionPorDia(8) & ")"
-            lblTransacionMes09.Text = Format(Transacion(9), "######0.#####") '& "_(" & TransacionPorDia(9) & ")"
-            lblTransacionMes10.Text = Format(Transacion(10), "######0.#####") '& "_(" & TransacionPorDia(10) & ")"
-            lblTransacionMes11.Text = Format(Transacion(11), "######0.#####") '& "_(" & TransacionPorDia(11) & ")"
-            lblTransacionMes12.Text = Format(Transacion(12), "######0.#####") '& "_(" & TransacionPorDia(12) & ")"
-            lblTransacionMes13.Text = Format(Transacion(13), "######0.#####") '& "_(" & TransacionPorDia(13) & ")"
-            lblTransacionMes14.Text = Format(Transacion(14), "######0.#####") ' & "_(" & TransacionPorDia(14) & ")"
-            lblTransacionMes15.Text = Format(Transacion(15), "######0.#####") ' & "_(" & TransacionPorDia(15) & ")"
-            lblTransacionMes16.Text = Format(Transacion(16), "######0.#####") ' & "_(" & TransacionPorDia(16) & ")"
-            lblTransacionMes17.Text = Format(Transacion(17), "######0.#####") ' & "_(" & TransacionPorDia(17) & ")"
-            lblTransacionMes18.Text = Format(Transacion(18), "######0.#####") '& "_(" & TransacionPorDia(18) & ")"
-            lblTransacionMes19.Text = Format(Transacion(19), "######0.#####") '& "_(" & TransacionPorDia(19) & ")"
-            lblTransacionMes20.Text = Format(Transacion(20), "######0.#####") '& "_(" & TransacionPorDia(20) & ")"
-            lblTransacionMes21.Text = Format(Transacion(21), "######0.#####") '& "_(" & TransacionPorDia(21) & ")"
-            lblTransacionMes22.Text = Format(Transacion(22), "######0.#####") '& "_(" & TransacionPorDia(22) & ")"
-            lblTransacionMes23.Text = Format(Transacion(23), "######0.#####") '& "_(" & TransacionPorDia(23) & ")"
-            lblTransacionMes24.Text = Format(Transacion(24), "######0.#####") '& "_(" & TransacionPorDia(24) & ")"
-            lblTransacionMes25.Text = Format(Transacion(25), "######0.#####") '& "_(" & TransacionPorDia(25) & ")"
-            lblTransacionMes26.Text = Format(Transacion(26), "######0.#####") '& "_(" & TransacionPorDia(26) & ")"
-            lblTransacionMes27.Text = Format(Transacion(27), "######0.#####") '& "_(" & TransacionPorDia(27) & ")"
-            lblTransacionMes28.Text = Format(Transacion(28), "######0.#####") '& "_(" & TransacionPorDia(28) & ")"
-            lblTransacionMes29.Text = Format(Transacion(29), "######0.#####") '& "_(" & TransacionPorDia(29) & ")"
-            lblTransacionMes30.Text = Format(Transacion(30), "######0.#####") '& "_(" & TransacionPorDia(30) & ")"
-            lblTransacionMes31.Text = Format(Transacion(31), "######0.#####") '& "_(" & TransacionPorDia(31) & ")"
-            If lblTransacionMes01.Text <> 0 Then lblTransacionMes01.Text = lblTransacionMes01.Text & "(" & TransacionPorDia(1) & ")"
-            If lblTransacionMes02.Text <> 0 Then lblTransacionMes02.Text = lblTransacionMes02.Text & "(" & TransacionPorDia(2) & ")"
-            If lblTransacionMes03.Text <> 0 Then lblTransacionMes03.Text = lblTransacionMes03.Text & "(" & TransacionPorDia(3) & ")"
-            If lblTransacionMes04.Text <> 0 Then lblTransacionMes04.Text = lblTransacionMes04.Text & "(" & TransacionPorDia(4) & ")"
-            If lblTransacionMes05.Text <> 0 Then lblTransacionMes05.Text = lblTransacionMes05.Text & "(" & TransacionPorDia(5) & ")"
-            If lblTransacionMes06.Text <> 0 Then lblTransacionMes06.Text = lblTransacionMes06.Text & "(" & TransacionPorDia(6) & ")"
-            If lblTransacionMes07.Text <> 0 Then lblTransacionMes07.Text = lblTransacionMes07.Text & "(" & TransacionPorDia(7) & ")"
-            If lblTransacionMes08.Text <> 0 Then lblTransacionMes08.Text = lblTransacionMes08.Text & "(" & TransacionPorDia(8) & ")"
-            If lblTransacionMes09.Text <> 0 Then lblTransacionMes09.Text = lblTransacionMes09.Text & "(" & TransacionPorDia(9) & ")"
-            If lblTransacionMes10.Text <> 0 Then lblTransacionMes10.Text = lblTransacionMes10.Text & "(" & TransacionPorDia(10) & ")"
-            If lblTransacionMes11.Text <> 0 Then lblTransacionMes11.Text = lblTransacionMes11.Text & "(" & TransacionPorDia(11) & ")"
-            If lblTransacionMes12.Text <> 0 Then lblTransacionMes12.Text = lblTransacionMes12.Text & "(" & TransacionPorDia(12) & ")"
-            If lblTransacionMes13.Text <> 0 Then lblTransacionMes13.Text = lblTransacionMes13.Text & "(" & TransacionPorDia(13) & ")"
-            If lblTransacionMes14.Text <> 0 Then lblTransacionMes14.Text = lblTransacionMes14.Text & "(" & TransacionPorDia(14) & ")"
-            If lblTransacionMes15.Text <> 0 Then lblTransacionMes15.Text = lblTransacionMes15.Text & "(" & TransacionPorDia(15) & ")"
-            If lblTransacionMes16.Text <> 0 Then lblTransacionMes16.Text = lblTransacionMes16.Text & "(" & TransacionPorDia(16) & ")"
-            If lblTransacionMes17.Text <> 0 Then lblTransacionMes17.Text = lblTransacionMes17.Text & "(" & TransacionPorDia(17) & ")"
-            If lblTransacionMes18.Text <> 0 Then lblTransacionMes18.Text = lblTransacionMes18.Text & "(" & TransacionPorDia(18) & ")"
-            If lblTransacionMes19.Text <> 0 Then lblTransacionMes19.Text = lblTransacionMes19.Text & "(" & TransacionPorDia(19) & ")"
-            If lblTransacionMes20.Text <> 0 Then lblTransacionMes20.Text = lblTransacionMes20.Text & "(" & TransacionPorDia(20) & ")"
-            If lblTransacionMes21.Text <> 0 Then lblTransacionMes21.Text = lblTransacionMes21.Text & "(" & TransacionPorDia(21) & ")"
-            If lblTransacionMes22.Text <> 0 Then lblTransacionMes22.Text = lblTransacionMes22.Text & "(" & TransacionPorDia(22) & ")"
-            If lblTransacionMes23.Text <> 0 Then lblTransacionMes23.Text = lblTransacionMes23.Text & "(" & TransacionPorDia(23) & ")"
-            If lblTransacionMes24.Text <> 0 Then lblTransacionMes24.Text = lblTransacionMes24.Text & "(" & TransacionPorDia(24) & ")"
-            If lblTransacionMes25.Text <> 0 Then lblTransacionMes25.Text = lblTransacionMes25.Text & "(" & TransacionPorDia(25) & ")"
-            If lblTransacionMes26.Text <> 0 Then lblTransacionMes26.Text = lblTransacionMes26.Text & "(" & TransacionPorDia(26) & ")"
-            If lblTransacionMes27.Text <> 0 Then lblTransacionMes27.Text = lblTransacionMes27.Text & "(" & TransacionPorDia(27) & ")"
-            If lblTransacionMes28.Text <> 0 Then lblTransacionMes28.Text = lblTransacionMes28.Text & "(" & TransacionPorDia(28) & ")"
-            If lblTransacionMes29.Text <> 0 Then lblTransacionMes29.Text = lblTransacionMes29.Text & "(" & TransacionPorDia(29) & ")"
-            If lblTransacionMes30.Text <> 0 Then lblTransacionMes30.Text = lblTransacionMes30.Text & "(" & TransacionPorDia(30) & ")"
-            If lblTransacionMes31.Text <> 0 Then lblTransacionMes31.Text = lblTransacionMes31.Text & "(" & TransacionPorDia(31) & ")"
+                For I As Integer = 0 To 31
+                    Transacion(I) = 0
+                    TransacionPorDia(I) = 0
+                Next
 
+
+                For I As Integer = ContaTransa To 0 Step -1
+                    'For I As Integer = 0 To ContaTransa
+                    EnviosDias(I) = Mid(dict2.item("result").item("transactions").item(I).item("datetime"), 1, 2)
+                    EnviosMes(I) = Mid(dict2.item("result").item("transactions").item(I).item("datetime"), 4, 2)
+                    EnviosAño(I) = Mid(dict2.item("result").item("transactions").item(I).item("datetime"), 7, 4)
+
+                    If dict2.item("result").item("transactions").item(I).item("sender") = "Lanthi" Then
+                        TreeView1.Nodes.Add("Enviado: " & dict2.item("result").item("transactions").item(I).item("amount") & " Ducos enviado a " & dict2.item("result").item("transactions").item(I).item("recipient"))
+                        If EnviosMes(I) = Mesis Then Transacion(EnviosDias(I)) -= CDec(dict2.item("result").item("transactions").item(I).item("amount")) : TransacionPorDia(EnviosDias(I)) += 1
+                    Else
+                        TreeView1.Nodes.Add("Recibido: " & dict2.item("result").item("transactions").item(I).item("amount") & " Ducos recibido de " & dict2.item("result").item("transactions").item(I).item("sender"))
+                        If EnviosMes(I) = Mesis Then Transacion(EnviosDias(I)) += CDec(dict2.item("result").item("transactions").item(I).item("amount")) : TransacionPorDia(EnviosDias(I)) += 1
+                    End If
+                    TreeView1.Nodes.Add("Fecha/hora: " & dict2.item("result").item("transactions").item(I).item("datetime"))
+                    TreeView1.Nodes.Add("Hash: " & dict2.item("result").item("transactions").item(I).item("hash"))
+                    TreeView1.Nodes.Add("Memo: " & dict2.item("result").item("transactions").item(I).item("memo"))
+                    ' TreeView1.Nodes.Add(EnviosDias(I) & "/" & EnviosMes(I) & "/" & EnviosAño(I))
+                    ' TreeView1.Nodes.Add(Transacion(EnviosDias(I)))
+                    ' TreeView1.Nodes.Add(dict2.item("result").item("transactions").item(I).item("sender"))
+                    If I <> 0 Then TreeView1.Nodes.Add("")
+                Next
+                TabPage5.Text = "Transactions (" & ContaTransa + 1 & ")"
+                TreeView1.ExpandAll()
+                lblTransacionMes01.Text = Format(Transacion(1), "######0.#####") ' & "_(" & TransacionPorDia(1) & ")"
+                lblTransacionMes02.Text = Format(Transacion(2), "######0.#####") '& "_(" & TransacionPorDia(2) & ")"
+                lblTransacionMes03.Text = Format(Transacion(3), "######0.#####") '& "_(" & TransacionPorDia(3) & ")"
+                lblTransacionMes04.Text = Format(Transacion(4), "######0.#####") '& "_(" & TransacionPorDia(4) & ")"
+                lblTransacionMes05.Text = Format(Transacion(5), "######0.#####") '& "_(" & TransacionPorDia(5) & ")"
+                lblTransacionMes06.Text = Format(Transacion(6), "######0.#####") '& "_(" & TransacionPorDia(6) & ")"
+                lblTransacionMes07.Text = Format(Transacion(7), "######0.#####") ' & "(" & TransacionPorDia(7) & ")"
+                lblTransacionMes08.Text = Format(Transacion(8), "######0.#####") ' & "_(" & TransacionPorDia(8) & ")"
+                lblTransacionMes09.Text = Format(Transacion(9), "######0.#####") '& "_(" & TransacionPorDia(9) & ")"
+                lblTransacionMes10.Text = Format(Transacion(10), "######0.#####") '& "_(" & TransacionPorDia(10) & ")"
+                lblTransacionMes11.Text = Format(Transacion(11), "######0.#####") '& "_(" & TransacionPorDia(11) & ")"
+                lblTransacionMes12.Text = Format(Transacion(12), "######0.#####") '& "_(" & TransacionPorDia(12) & ")"
+                lblTransacionMes13.Text = Format(Transacion(13), "######0.#####") '& "_(" & TransacionPorDia(13) & ")"
+                lblTransacionMes14.Text = Format(Transacion(14), "######0.#####") ' & "_(" & TransacionPorDia(14) & ")"
+                lblTransacionMes15.Text = Format(Transacion(15), "######0.#####") ' & "_(" & TransacionPorDia(15) & ")"
+                lblTransacionMes16.Text = Format(Transacion(16), "######0.#####") ' & "_(" & TransacionPorDia(16) & ")"
+                lblTransacionMes17.Text = Format(Transacion(17), "######0.#####") ' & "_(" & TransacionPorDia(17) & ")"
+                lblTransacionMes18.Text = Format(Transacion(18), "######0.#####") '& "_(" & TransacionPorDia(18) & ")"
+                lblTransacionMes19.Text = Format(Transacion(19), "######0.#####") '& "_(" & TransacionPorDia(19) & ")"
+                lblTransacionMes20.Text = Format(Transacion(20), "######0.#####") '& "_(" & TransacionPorDia(20) & ")"
+                lblTransacionMes21.Text = Format(Transacion(21), "######0.#####") '& "_(" & TransacionPorDia(21) & ")"
+                lblTransacionMes22.Text = Format(Transacion(22), "######0.#####") '& "_(" & TransacionPorDia(22) & ")"
+                lblTransacionMes23.Text = Format(Transacion(23), "######0.#####") '& "_(" & TransacionPorDia(23) & ")"
+                lblTransacionMes24.Text = Format(Transacion(24), "######0.#####") '& "_(" & TransacionPorDia(24) & ")"
+                lblTransacionMes25.Text = Format(Transacion(25), "######0.#####") '& "_(" & TransacionPorDia(25) & ")"
+                lblTransacionMes26.Text = Format(Transacion(26), "######0.#####") '& "_(" & TransacionPorDia(26) & ")"
+                lblTransacionMes27.Text = Format(Transacion(27), "######0.#####") '& "_(" & TransacionPorDia(27) & ")"
+                lblTransacionMes28.Text = Format(Transacion(28), "######0.#####") '& "_(" & TransacionPorDia(28) & ")"
+                lblTransacionMes29.Text = Format(Transacion(29), "######0.#####") '& "_(" & TransacionPorDia(29) & ")"
+                lblTransacionMes30.Text = Format(Transacion(30), "######0.#####") '& "_(" & TransacionPorDia(30) & ")"
+                lblTransacionMes31.Text = Format(Transacion(31), "######0.#####") '& "_(" & TransacionPorDia(31) & ")"
+                If lblTransacionMes01.Text <> 0 Then lblTransacionMes01.Text = lblTransacionMes01.Text & "(" & TransacionPorDia(1) & ")"
+                If lblTransacionMes02.Text <> 0 Then lblTransacionMes02.Text = lblTransacionMes02.Text & "(" & TransacionPorDia(2) & ")"
+                If lblTransacionMes03.Text <> 0 Then lblTransacionMes03.Text = lblTransacionMes03.Text & "(" & TransacionPorDia(3) & ")"
+                If lblTransacionMes04.Text <> 0 Then lblTransacionMes04.Text = lblTransacionMes04.Text & "(" & TransacionPorDia(4) & ")"
+                If lblTransacionMes05.Text <> 0 Then lblTransacionMes05.Text = lblTransacionMes05.Text & "(" & TransacionPorDia(5) & ")"
+                If lblTransacionMes06.Text <> 0 Then lblTransacionMes06.Text = lblTransacionMes06.Text & "(" & TransacionPorDia(6) & ")"
+                If lblTransacionMes07.Text <> 0 Then lblTransacionMes07.Text = lblTransacionMes07.Text & "(" & TransacionPorDia(7) & ")"
+                If lblTransacionMes08.Text <> 0 Then lblTransacionMes08.Text = lblTransacionMes08.Text & "(" & TransacionPorDia(8) & ")"
+                If lblTransacionMes09.Text <> 0 Then lblTransacionMes09.Text = lblTransacionMes09.Text & "(" & TransacionPorDia(9) & ")"
+                If lblTransacionMes10.Text <> 0 Then lblTransacionMes10.Text = lblTransacionMes10.Text & "(" & TransacionPorDia(10) & ")"
+                If lblTransacionMes11.Text <> 0 Then lblTransacionMes11.Text = lblTransacionMes11.Text & "(" & TransacionPorDia(11) & ")"
+                If lblTransacionMes12.Text <> 0 Then lblTransacionMes12.Text = lblTransacionMes12.Text & "(" & TransacionPorDia(12) & ")"
+                If lblTransacionMes13.Text <> 0 Then lblTransacionMes13.Text = lblTransacionMes13.Text & "(" & TransacionPorDia(13) & ")"
+                If lblTransacionMes14.Text <> 0 Then lblTransacionMes14.Text = lblTransacionMes14.Text & "(" & TransacionPorDia(14) & ")"
+                If lblTransacionMes15.Text <> 0 Then lblTransacionMes15.Text = lblTransacionMes15.Text & "(" & TransacionPorDia(15) & ")"
+                If lblTransacionMes16.Text <> 0 Then lblTransacionMes16.Text = lblTransacionMes16.Text & "(" & TransacionPorDia(16) & ")"
+                If lblTransacionMes17.Text <> 0 Then lblTransacionMes17.Text = lblTransacionMes17.Text & "(" & TransacionPorDia(17) & ")"
+                If lblTransacionMes18.Text <> 0 Then lblTransacionMes18.Text = lblTransacionMes18.Text & "(" & TransacionPorDia(18) & ")"
+                If lblTransacionMes19.Text <> 0 Then lblTransacionMes19.Text = lblTransacionMes19.Text & "(" & TransacionPorDia(19) & ")"
+                If lblTransacionMes20.Text <> 0 Then lblTransacionMes20.Text = lblTransacionMes20.Text & "(" & TransacionPorDia(20) & ")"
+                If lblTransacionMes21.Text <> 0 Then lblTransacionMes21.Text = lblTransacionMes21.Text & "(" & TransacionPorDia(21) & ")"
+                If lblTransacionMes22.Text <> 0 Then lblTransacionMes22.Text = lblTransacionMes22.Text & "(" & TransacionPorDia(22) & ")"
+                If lblTransacionMes23.Text <> 0 Then lblTransacionMes23.Text = lblTransacionMes23.Text & "(" & TransacionPorDia(23) & ")"
+                If lblTransacionMes24.Text <> 0 Then lblTransacionMes24.Text = lblTransacionMes24.Text & "(" & TransacionPorDia(24) & ")"
+                If lblTransacionMes25.Text <> 0 Then lblTransacionMes25.Text = lblTransacionMes25.Text & "(" & TransacionPorDia(25) & ")"
+                If lblTransacionMes26.Text <> 0 Then lblTransacionMes26.Text = lblTransacionMes26.Text & "(" & TransacionPorDia(26) & ")"
+                If lblTransacionMes27.Text <> 0 Then lblTransacionMes27.Text = lblTransacionMes27.Text & "(" & TransacionPorDia(27) & ")"
+                If lblTransacionMes28.Text <> 0 Then lblTransacionMes28.Text = lblTransacionMes28.Text & "(" & TransacionPorDia(28) & ")"
+                If lblTransacionMes29.Text <> 0 Then lblTransacionMes29.Text = lblTransacionMes29.Text & "(" & TransacionPorDia(29) & ")"
+                If lblTransacionMes30.Text <> 0 Then lblTransacionMes30.Text = lblTransacionMes30.Text & "(" & TransacionPorDia(30) & ")"
+                If lblTransacionMes31.Text <> 0 Then lblTransacionMes31.Text = lblTransacionMes31.Text & "(" & TransacionPorDia(31) & ")"
+            End If
             TreeView2.Sorted = False
             Dim Contador As Integer = dict2.item("result").item("miners").Count
             ReDim Mineros(Contador, 7)
@@ -598,7 +608,7 @@ Public Class Form1
                 Case 28 : If lblMesBalance28.Text <> 0 Then lblMesDifencia28.Text = CDec(txtbalance.Text) - CDec(lblMesBalance28.Text) - CDec(Transacion(28))
                 Case 29 : If lblMesBalance29.Text <> 0 Then lblMesDifencia29.Text = CDec(txtbalance.Text) - CDec(lblMesBalance29.Text) - CDec(Transacion(29))
                 Case 30 : If lblMesBalance30.Text <> 0 Then lblMesDifencia30.Text = CDec(txtbalance.Text) - CDec(lblMesBalance30.Text) - CDec(Transacion(30))
-                Case 31 : If lblMesBalance31.Text <> 0 Then lblMesDifencia31.Text = CDec(txtbalance.Text) - CDec(lblMesBalance01.Text) - CDec(Transacion(31))
+                Case 31 : If lblMesBalance31.Text <> 0 Then lblMesDifencia31.Text = CDec(txtbalance.Text) - CDec(txtbalance.Text) - CDec(Transacion(31))
             End Select
 
             lblTotalHora.Text = 0
@@ -1271,4 +1281,7 @@ Public Class Form1
         lblTotalMes.Text = 0
     End Sub
 
+    Private Sub lblDeposito_Click(sender As Object, e As EventArgs) Handles lblDeposito.Click
+
+    End Sub
 End Class

@@ -3,30 +3,30 @@ Imports System.IO
 Imports System.Drawing.Graphics
 Imports System.Web.Script.Serialization
 Public Class Form1
-    Dim Remover As Integer = 30
+    ReadOnly Remover As Integer = 30
     Dim ContadorRemove As Integer = 0
     Dim Hora As Integer
     Dim Minutos As Integer = DateAndTime.Minute(Now)
     Dim Segundos As Integer
     Dim ContadorTiempo As Integer = 0
-    Dim cuadro As Rectangle = New Rectangle(50, 500, 150, 150)
-    Dim trazo As Pen = New Pen(Brushes.Gold, 30)
-    Dim ángulo As Single = 50
-    Dim letras As New Font("Arial", 25)
-    Dim sf As New StringFormat With {.Alignment = StringAlignment.Center, .LineAlignment = StringAlignment.Center}
     Dim EnviosDias(5000) As Integer
     Dim EnviosMes(5000) As Integer
     Dim EnviosAño(5000) As Integer
     Dim Recibido(5000) As Boolean
     Dim Transacion(31) As Decimal
     Dim TransacionPorDia(31) As Integer
+    Dim TransacionAño(12) As Decimal
+    Dim TransacionPorAño(12) As Integer
+    Dim PrecioDucoDia(24) As Decimal
+    Dim PrecioDucoMes(31) As Decimal
+    Dim PrecioDucoAño(12) As Decimal
     Dim EstimadoViejo As Decimal = 0
     Dim EstimadoNuevo As Decimal = 0
     Dim ValorEstimado As Decimal
     Dim ValorEstimadoMes As Decimal
     Dim ContadorEstimacion As Integer = 0
     Dim Euro As Decimal = 0
-    Public Mineros(0, 7) As String
+    Dim Mineros(0, 7) As String
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
             lblHora.Text = DateAndTime.TimeValue(Now)
@@ -91,11 +91,6 @@ Public Class Form1
             If lblMesBalance29.Text <> 0 And lblMesBalance28.Text <> 0 Then lblMesDifencia28.Text = CDec(lblMesBalance29.Text) - CDec(lblMesBalance28.Text) - CDec(Transacion(28))
             If lblMesBalance30.Text <> 0 And lblMesBalance29.Text <> 0 Then lblMesDifencia29.Text = CDec(lblMesBalance30.Text) - CDec(lblMesBalance29.Text) - CDec(Transacion(29))
             If lblMesBalance31.Text <> 0 And lblMesBalance30.Text <> 0 Then lblMesDifencia30.Text = CDec(lblMesBalance31.Text) - CDec(lblMesBalance30.Text) - CDec(Transacion(30))
-
-
-
-
-
             lblTotalHora.Text = 0
             lblTotalHora.Text += CDec(lblHoraDiferencia00.Text)
             lblTotalHora.Text += CDec(lblHoraDiferencia01.Text)
@@ -153,7 +148,15 @@ Public Class Form1
             lblTotalMes.Text += CDec(lblMesDifencia29.Text)
             lblTotalMes.Text += CDec(lblMesDifencia30.Text)
             lblTotalMes.Text += CDec(lblMesDifencia31.Text)
-
+            Dim TmpTransacion As Decimal
+            Dim tmpTransacionNumeros As Integer
+            For I As Integer = 1 To 31
+                TmpTransacion += Transacion(I)
+                tmpTransacionNumeros += TransacionPorDia(I)
+            Next
+            TransacionAño(Month(Now)) = TmpTransacion
+            TransacionPorAño(Month(Now)) = tmpTransacionNumeros
+            lblTransacionMes.Text = Format(TransacionAño(Month(Now)), "#0.0#") & "(" & TransacionPorAño(Month(Now)) & ")"
             MostrarMes()
             Chart3.Series(0).Points.Clear()
             Chart3.Series(0).Points.AddXY(TimeValue("00:00"), CDec(lblHoraDiferencia00.Text))
@@ -196,17 +199,15 @@ Public Class Form1
                 lblMesBalance31.Visible = True
                 lblMesPrecio31.Visible = True
                 lblMesDifencia31.Visible = True
-
                 lbl30.Visible = True
                 lblMesBalance30.Visible = True
                 lblMesPrecio30.Visible = True
                 lblMesDifencia30.Visible = True
-
                 lbl29.Visible = True
                 lblMesBalance29.Visible = True
                 lblMesPrecio29.Visible = True
                 lblMesDifencia29.Visible = True
-                lblTotalMes.Location = New Point(221, 567)
+                lblTotalMes.Location = New Point(302, 567)
                 lblMesDaily.Location = New Point(13, 567)
                 gpMes.Size = New Size(411, 607)
             Case 30
@@ -214,17 +215,15 @@ Public Class Form1
                 lblMesBalance31.Visible = False
                 lblMesPrecio31.Visible = False
                 lblMesDifencia31.Visible = False
-
                 lbl30.Visible = True
                 lblMesBalance30.Visible = True
                 lblMesPrecio30.Visible = True
                 lblMesDifencia30.Visible = True
-
                 lbl29.Visible = True
                 lblMesBalance29.Visible = True
                 lblMesPrecio29.Visible = True
                 lblMesDifencia29.Visible = True
-                lblTotalMes.Location = New Point(221, 551)
+                lblTotalMes.Location = New Point(302, 551)
                 lblMesDaily.Location = New Point(13, 551)
                 gpMes.Size = New Size(411, 593)
             Case 29
@@ -232,17 +231,15 @@ Public Class Form1
                 lblMesBalance31.Visible = False
                 lblMesPrecio31.Visible = False
                 lblMesDifencia31.Visible = False
-
                 lbl30.Visible = False
                 lblMesBalance30.Visible = False
                 lblMesPrecio30.Visible = False
                 lblMesDifencia30.Visible = False
-
                 lbl29.Visible = True
                 lblMesBalance29.Visible = True
                 lblMesPrecio29.Visible = True
                 lblMesDifencia29.Visible = True
-                lblTotalMes.Location = New Point(221, 534)
+                lblTotalMes.Location = New Point(302, 534)
                 lblMesDaily.Location = New Point(13, 534)
                 gpMes.Size = New Size(411, 577)
             Case 28
@@ -250,17 +247,15 @@ Public Class Form1
                 lblMesBalance31.Visible = False
                 lblMesPrecio31.Visible = False
                 lblMesDifencia31.Visible = False
-
                 lbl30.Visible = False
                 lblMesBalance30.Visible = False
                 lblMesPrecio30.Visible = False
                 lblMesDifencia30.Visible = False
-
                 lbl29.Visible = False
                 lblMesBalance29.Visible = False
                 lblMesPrecio29.Visible = False
                 lblMesDifencia29.Visible = False
-                lblTotalMes.Location = New Point(221, 517)
+                lblTotalMes.Location = New Point(302, 517)
                 lblMesDaily.Location = New Point(13, 517)
                 gpMes.Size = New Size(411, 558)
         End Select
@@ -296,10 +291,7 @@ Public Class Form1
             Dim Deposito As Integer = dict2.item("result").item("balance").item("stake_amount")
             Dim FechafinDeposito As Integer = dict2.item("result").item("balance").item("stake_date")
             lblDeposito.Text = Deposito
-
             lblFechaFinDeposito.Text = FechafinDeposito
-
-
             txtDucoprice.Text = CDec(dict.item("Duco price"))
             txtbalance.Text = dict2.item("result").item("balance").item("balance")
             EstimadoNuevo = txtbalance.Text
@@ -338,10 +330,7 @@ Public Class Form1
                 ContadorEstimacion += 1
                 If ContadorEstimacion >= 75 Then Chart6.Series(0).Points.RemoveAt(0)
             End If
-
-            'Label171.Text = 
             Chart6.ChartAreas(0).RecalculateAxesScale()
-
             lblValorEuro.Text = Euro & "€"
             lblGanado.Text = Format(CDec(txtbalance.Text) * CDec(txtDucoprice.Text) * Euro, "###0.0000")
             lblGanadoDolar.Text = Format(CDec(txtbalance.Text) * CDec(txtDucoprice.Text), "###0.0000")
@@ -365,14 +354,11 @@ Public Class Form1
                     Transacion(I) = 0
                     TransacionPorDia(I) = 0
                 Next
-
-
                 For I As Integer = ContaTransa To 0 Step -1
                     'For I As Integer = 0 To ContaTransa
                     EnviosDias(I) = Mid(dict2.item("result").item("transactions").item(I).item("datetime"), 1, 2)
                     EnviosMes(I) = Mid(dict2.item("result").item("transactions").item(I).item("datetime"), 4, 2)
                     EnviosAño(I) = Mid(dict2.item("result").item("transactions").item(I).item("datetime"), 7, 4)
-
                     If dict2.item("result").item("transactions").item(I).item("sender") = "Lanthi" Then
                         TreeView1.Nodes.Add("Enviado: " & dict2.item("result").item("transactions").item(I).item("amount") & " Ducos enviado a " & dict2.item("result").item("transactions").item(I).item("recipient"))
                         If EnviosMes(I) = Mesis Then Transacion(EnviosDias(I)) -= CDec(dict2.item("result").item("transactions").item(I).item("amount")) : TransacionPorDia(EnviosDias(I)) += 1
@@ -383,9 +369,6 @@ Public Class Form1
                     TreeView1.Nodes.Add("Fecha/hora: " & dict2.item("result").item("transactions").item(I).item("datetime"))
                     TreeView1.Nodes.Add("Hash: " & dict2.item("result").item("transactions").item(I).item("hash"))
                     TreeView1.Nodes.Add("Memo: " & dict2.item("result").item("transactions").item(I).item("memo"))
-                    ' TreeView1.Nodes.Add(EnviosDias(I) & "/" & EnviosMes(I) & "/" & EnviosAño(I))
-                    ' TreeView1.Nodes.Add(Transacion(EnviosDias(I)))
-                    ' TreeView1.Nodes.Add(dict2.item("result").item("transactions").item(I).item("sender"))
                     If I <> 0 Then TreeView1.Nodes.Add("")
                 Next
                 TabPage5.Text = "Transactions (" & ContaTransa + 1 & ")"
@@ -458,8 +441,6 @@ Public Class Form1
             ReDim Mineros(Contador, 7)
             TreeView2.Nodes.Clear()
             TreeView2.Nodes.Add("Mineros" & " (" & Contador & ")")
-
-
             For T As Integer = 0 To Contador - 1
                 Mineros(T, 0) = dict2.item("result").item("miners").item(T).item("identifier") & " (" & CalcularHases(dict2.item("result").item("miners").item(T).item("hashrate")) & ")"
                 Mineros(T, 1) = "Accepted: " & dict2.item("result").item("miners").item(T).item("accepted")
@@ -470,12 +451,10 @@ Public Class Form1
                 Mineros(T, 5) = "Pool: " & dict2.item("result").item("miners").item(T).item("pool")
                 Mineros(T, 6) = "Rejected: " & dict2.item("result").item("miners").item(T).item("rejected")
                 Mineros(T, 7) = "Soft.: " & dict2.item("result").item("miners").item(T).item("software")
-                'TreeView1.Nodes(0).Nodes(I).Nodes.Add("Soft.: " & dict2.item("result").item("miners").item(I).item("software"))
                 TreeView2.Nodes(0).Nodes.Add(Mineros(T, 0))
                 For A As Integer = 0 To 7
                     TreeView2.Nodes(0).Nodes(T).Nodes.Add(Mineros(T, A))
                 Next A
-
                 Select Case dict2.item("result").item("miners").item(T).item("software")
                     Case "Official AVR Miner 3.0"
                         TreeView2.Nodes(0).Nodes(T).ImageIndex = 0
@@ -494,34 +473,24 @@ Public Class Form1
                         TreeView2.Nodes(0).Nodes(T).SelectedImageIndex = 2
                 End Select
                 TreeView2.Refresh()
-
             Next
-
             GroupBox8.Text = "Miners (" & Contador & ") " & CalcularHases(HasesUsuario)
             TabPage4.Text = "Miners (" & Contador & ")"
             lblHases.Text = CalcularHases1(HasesUsuario)
             lblMineros.Text = Contador
-            'TreeView1.ExpandAll()
-            'TreeView1.SelectedNode = TreeView1.Nodes(0)
             TreeView2.Nodes(0).ImageIndex = 6
             TreeView2.Nodes(0).SelectedImageIndex = 6
             TreeView2.Nodes(0).Expand()
-            '  TreeView1.Nodes(0).Nodes(1).SelectedImageIndex = 3
-            ' TreeView1.Sort()
             TreeView2.Sorted = True
-
             txtDucoNodeSprice.Text = CDec(dict.item("Duco Node-S price"))
             txtDucoPancakeSwapprice.Text = CDec(dict.item("Duco PancakeSwap price"))
             txtDucoSushiSwapprice.Text = CDec(dict.item("Duco SushiSwap price"))
-
             txtDucoJustSwapprice.Text = CDec(dict.item("Duco SunSwap price"))
             txtDucoprice1.Text = CDec(dict.item("Duco price"))
-
             txtDucopriceBCH.Text = CDec(dict.item("Duco price BCH"))
             txtDucopriceNANO.Text = CDec(dict.item("Duco price NANO"))
             txtDucopriceTRX.Text = CDec(dict.item("Duco price TRX"))
             txtDucopriceXMG.Text = CDec(dict.item("Duco price XMG"))
-
             txtActiveconnections.Text = dict.item("Active connections")
             txtDUCOS1hashrate.Text = dict.item("DUCO-S1 hashrate")
             txtNetenergyusage.Text = dict.item("Net energy usage")
@@ -550,7 +519,6 @@ Public Class Form1
             For K As Integer = 0 To 9
                 lstboxTop10.Items.Add(dict.item("Top 10 richest miners").item(K))
             Next
-
             Select Case Hour(Now)
                 Case 0 : If lblBalanceHora00.Text <> 0 Then lblHoraDiferencia00.Text = CDec(txtbalance.Text) - CDec(lblBalanceHora00.Text)
                 Case 1 : If lblBalanceHora01.Text <> 0 Then lblHoraDiferencia01.Text = CDec(txtbalance.Text) - CDec(lblBalanceHora01.Text)
@@ -610,7 +578,6 @@ Public Class Form1
                 Case 30 : If lblMesBalance30.Text <> 0 Then lblMesDifencia30.Text = CDec(txtbalance.Text) - CDec(lblMesBalance30.Text) - CDec(Transacion(30))
                 Case 31 : If lblMesBalance31.Text <> 0 Then lblMesDifencia31.Text = CDec(txtbalance.Text) - CDec(txtbalance.Text) - CDec(Transacion(31))
             End Select
-
             lblTotalHora.Text = 0
             lblTotalHora.Text += CDec(lblHoraDiferencia00.Text)
             lblTotalHora.Text += CDec(lblHoraDiferencia01.Text)
@@ -719,7 +686,6 @@ Public Class Form1
             Chart2.Series(0).Points.AddXY(TimeValue("21:00"), CDec(lblBalanceHora21.Text))
             Chart2.Series(0).Points.AddXY(TimeValue("22:00"), CDec(lblBalanceHora22.Text))
             Chart2.Series(0).Points.AddXY(TimeValue("23:00"), CDec(lblBalanceHora23.Text))
-
             Chart3.Series(0).Points.Clear()
             Chart3.Series(0).Points.AddXY(TimeValue("00:00"), CDec(lblHoraDiferencia00.Text))
             Chart3.Series(0).Points.AddXY(TimeValue("01:00"), CDec(lblHoraDiferencia01.Text))
@@ -745,8 +711,6 @@ Public Class Form1
             Chart3.Series(0).Points.AddXY(TimeValue("21:00"), CDec(lblHoraDiferencia21.Text))
             Chart3.Series(0).Points.AddXY(TimeValue("22:00"), CDec(lblHoraDiferencia22.Text))
             Chart3.Series(0).Points.AddXY(TimeValue("23:00"), CDec(lblHoraDiferencia23.Text))
-
-            Chart4.Series(0).Points.Clear()
             Chart5.Series(0).Points.Clear()
             Chart4.Series(0).Points.AddXY("Day 01", CDec(lblMesBalance01.Text))
             Chart5.Series(0).Points.AddXY("Day 01", CDec(lblMesPrecio01.Text))
@@ -810,9 +774,9 @@ Public Class Form1
             Chart5.Series(0).Points.AddXY("Day 30", CDec(lblMesPrecio30.Text))
             Chart4.Series(0).Points.AddXY("Day 31", CDec(lblMesBalance31.Text))
             Chart5.Series(0).Points.AddXY("Day 31", CDec(lblMesPrecio31.Text))
-
+            My.Settings.Save()
         Catch ex As Exception
-            MsgBox("Error!!" & vbCrLf & ex.Message)
+            'MsgBox("Error!!" & vbCrLf & ex.Message)
         End Try
     End Sub
     Function CalcularHases(Hases As Integer) As String
@@ -835,11 +799,11 @@ Public Class Form1
     End Function
     Private Sub Añadir()
         Try
-
             Select Case Hour(Now)
                 Case 0
                     lblBalanceHora00.Text = txtbalance.Text
                     lblPrecio00.Text = CDec(txtDucoprice.Text)
+                    PrecioDucoDia(0) = CDec(txtDucoprice.Text)
                     lblHoraDiferencia00.Text = CDec(lblBalanceHora00.Text) - CDec(lblBalanceHora23.Text)
                     lblBalanceHora01.Text = "0"
                     lblBalanceHora02.Text = "0"
@@ -864,7 +828,6 @@ Public Class Form1
                     lblBalanceHora21.Text = "0"
                     lblBalanceHora22.Text = "0"
                     lblBalanceHora23.Text = "0"
-
                     lblPrecio01.Text = "0"
                     lblPrecio02.Text = "0"
                     lblPrecio03.Text = "0"
@@ -888,7 +851,6 @@ Public Class Form1
                     lblPrecio21.Text = "0"
                     lblPrecio22.Text = "0"
                     lblPrecio23.Text = "0"
-
                     lblHoraDiferencia01.Text = 0
                     lblHoraDiferencia02.Text = 0
                     lblHoraDiferencia03.Text = 0
@@ -913,7 +875,6 @@ Public Class Form1
                     lblHoraDiferencia22.Text = 0
                     lblHoraDiferencia23.Text = 0
                     lblTotalHora.Text = lblHoraDiferencia00.Text
-
                     Select Case DateAndTime.Day(Now)
                         Case 1
                             If Hour(Now) = 0 And Minute(Now) = 0 Then
@@ -982,7 +943,6 @@ Public Class Form1
                                 lblMesPrecio31.Text = "0"
                             End If
                             If lblMesBalance01.Text = "0" Then lblMesBalance01.Text = txtbalance.Text : lblMesPrecio01.Text = txtDucoprice.Text
-
                         Case 2 : If lblMesBalance02.Text = "0" Then lblMesBalance02.Text = txtbalance.Text : lblMesPrecio02.Text = CDec(txtDucoprice.Text)
                         Case 3 : If lblMesBalance03.Text = "0" Then lblMesBalance03.Text = txtbalance.Text : lblMesPrecio03.Text = CDec(txtDucoprice.Text)
                         Case 4 : If lblMesBalance04.Text = "0" Then lblMesBalance04.Text = txtbalance.Text : lblMesPrecio04.Text = CDec(txtDucoprice.Text)
@@ -1015,30 +975,29 @@ Public Class Form1
                         Case 31 : If lblMesBalance31.Text = "0" Then lblMesBalance31.Text = txtbalance.Text : lblMesPrecio31.Text = CDec(txtDucoprice.Text)
 
                     End Select
-
-                Case 1 : lblBalanceHora01.Text = txtbalance.Text : lblPrecio01.Text = CDec(txtDucoprice.Text)
-                Case 2 : lblBalanceHora02.Text = txtbalance.Text : lblPrecio02.Text = CDec(txtDucoprice.Text)
-                Case 3 : lblBalanceHora03.Text = txtbalance.Text : lblPrecio03.Text = CDec(txtDucoprice.Text)
-                Case 4 : lblBalanceHora04.Text = txtbalance.Text : lblPrecio04.Text = CDec(txtDucoprice.Text)
-                Case 5 : lblBalanceHora05.Text = txtbalance.Text : lblPrecio05.Text = CDec(txtDucoprice.Text)
-                Case 6 : lblBalanceHora06.Text = txtbalance.Text : lblPrecio06.Text = CDec(txtDucoprice.Text)
-                Case 7 : lblBalanceHora07.Text = txtbalance.Text : lblPrecio07.Text = CDec(txtDucoprice.Text)
-                Case 8 : lblBalanceHora08.Text = txtbalance.Text : lblPrecio08.Text = CDec(txtDucoprice.Text)
-                Case 9 : lblBalanceHora09.Text = txtbalance.Text : lblPrecio09.Text = CDec(txtDucoprice.Text)
-                Case 10 : lblBalanceHora10.Text = txtbalance.Text : lblPrecio10.Text = CDec(txtDucoprice.Text)
-                Case 11 : lblBalanceHora11.Text = txtbalance.Text : lblPrecio11.Text = CDec(txtDucoprice.Text)
-                Case 12 : lblBalanceHora12.Text = txtbalance.Text : lblPrecio12.Text = CDec(txtDucoprice.Text)
-                Case 13 : lblBalanceHora13.Text = txtbalance.Text : lblPrecio13.Text = CDec(txtDucoprice.Text)
-                Case 14 : lblBalanceHora14.Text = txtbalance.Text : lblPrecio14.Text = CDec(txtDucoprice.Text)
-                Case 15 : lblBalanceHora15.Text = txtbalance.Text : lblPrecio15.Text = CDec(txtDucoprice.Text)
-                Case 16 : lblBalanceHora16.Text = txtbalance.Text : lblPrecio16.Text = CDec(txtDucoprice.Text)
-                Case 17 : lblBalanceHora17.Text = txtbalance.Text : lblPrecio17.Text = CDec(txtDucoprice.Text)
-                Case 18 : lblBalanceHora18.Text = txtbalance.Text : lblPrecio18.Text = CDec(txtDucoprice.Text)
-                Case 19 : lblBalanceHora19.Text = txtbalance.Text : lblPrecio19.Text = CDec(txtDucoprice.Text)
-                Case 20 : lblBalanceHora20.Text = txtbalance.Text : lblPrecio20.Text = CDec(txtDucoprice.Text)
-                Case 21 : lblBalanceHora21.Text = txtbalance.Text : lblPrecio21.Text = CDec(txtDucoprice.Text)
-                Case 22 : lblBalanceHora22.Text = txtbalance.Text : lblPrecio22.Text = CDec(txtDucoprice.Text)
-                Case 23 : lblBalanceHora23.Text = txtbalance.Text : lblPrecio23.Text = CDec(txtDucoprice.Text)
+                Case 1 : lblBalanceHora01.Text = txtbalance.Text : lblPrecio01.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(1) = CDec(txtDucoprice.Text)
+                Case 2 : lblBalanceHora02.Text = txtbalance.Text : lblPrecio02.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(2) = CDec(txtDucoprice.Text)
+                Case 3 : lblBalanceHora03.Text = txtbalance.Text : lblPrecio03.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(3) = CDec(txtDucoprice.Text)
+                Case 4 : lblBalanceHora04.Text = txtbalance.Text : lblPrecio04.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(4) = CDec(txtDucoprice.Text)
+                Case 5 : lblBalanceHora05.Text = txtbalance.Text : lblPrecio05.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(5) = CDec(txtDucoprice.Text)
+                Case 6 : lblBalanceHora06.Text = txtbalance.Text : lblPrecio06.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(6) = CDec(txtDucoprice.Text)
+                Case 7 : lblBalanceHora07.Text = txtbalance.Text : lblPrecio07.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(7) = CDec(txtDucoprice.Text)
+                Case 8 : lblBalanceHora08.Text = txtbalance.Text : lblPrecio08.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(8) = CDec(txtDucoprice.Text)
+                Case 9 : lblBalanceHora09.Text = txtbalance.Text : lblPrecio09.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(9) = CDec(txtDucoprice.Text)
+                Case 10 : lblBalanceHora10.Text = txtbalance.Text : lblPrecio10.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(10) = CDec(txtDucoprice.Text)
+                Case 11 : lblBalanceHora11.Text = txtbalance.Text : lblPrecio11.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(11) = CDec(txtDucoprice.Text)
+                Case 12 : lblBalanceHora12.Text = txtbalance.Text : lblPrecio12.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(12) = CDec(txtDucoprice.Text)
+                Case 13 : lblBalanceHora13.Text = txtbalance.Text : lblPrecio13.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(13) = CDec(txtDucoprice.Text)
+                Case 14 : lblBalanceHora14.Text = txtbalance.Text : lblPrecio14.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(14) = CDec(txtDucoprice.Text)
+                Case 15 : lblBalanceHora15.Text = txtbalance.Text : lblPrecio15.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(15) = CDec(txtDucoprice.Text)
+                Case 16 : lblBalanceHora16.Text = txtbalance.Text : lblPrecio16.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(16) = CDec(txtDucoprice.Text)
+                Case 17 : lblBalanceHora17.Text = txtbalance.Text : lblPrecio17.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(17) = CDec(txtDucoprice.Text)
+                Case 18 : lblBalanceHora18.Text = txtbalance.Text : lblPrecio18.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(18) = CDec(txtDucoprice.Text)
+                Case 19 : lblBalanceHora19.Text = txtbalance.Text : lblPrecio19.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(19) = CDec(txtDucoprice.Text)
+                Case 20 : lblBalanceHora20.Text = txtbalance.Text : lblPrecio20.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(20) = CDec(txtDucoprice.Text)
+                Case 21 : lblBalanceHora21.Text = txtbalance.Text : lblPrecio21.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(21) = CDec(txtDucoprice.Text)
+                Case 22 : lblBalanceHora22.Text = txtbalance.Text : lblPrecio22.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(22) = CDec(txtDucoprice.Text)
+                Case 23 : lblBalanceHora23.Text = txtbalance.Text : lblPrecio23.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(23) = CDec(txtDucoprice.Text)
             End Select
             If lblBalanceHora01.Text <> 0 And lblBalanceHora00.Text <> 0 Then lblHoraDiferencia00.Text = CDec(lblBalanceHora01.Text) - CDec(lblBalanceHora00.Text)
             If lblBalanceHora02.Text <> 0 And lblBalanceHora01.Text <> 0 Then lblHoraDiferencia01.Text = CDec(lblBalanceHora02.Text) - CDec(lblBalanceHora01.Text)
@@ -1063,7 +1022,6 @@ Public Class Form1
             If lblBalanceHora21.Text <> 0 And lblBalanceHora20.Text <> 0 Then lblHoraDiferencia20.Text = CDec(lblBalanceHora21.Text) - CDec(lblBalanceHora20.Text)
             If lblBalanceHora22.Text <> 0 And lblBalanceHora21.Text <> 0 Then lblHoraDiferencia21.Text = CDec(lblBalanceHora22.Text) - CDec(lblBalanceHora21.Text)
             If lblBalanceHora23.Text <> 0 And lblBalanceHora22.Text <> 0 Then lblHoraDiferencia22.Text = CDec(lblBalanceHora23.Text) - CDec(lblBalanceHora22.Text)
-
             If lblMesBalance01.Text <> 0 And lblMesBalance02.Text <> 0 Then lblMesDifencia01.Text = CDec(lblMesBalance01.Text) - CDec(lblMesBalance01.Text) - CDec(Transacion(31))
             If lblMesBalance02.Text <> 0 And lblMesBalance01.Text <> 0 Then lblMesDifencia01.Text = CDec(lblMesBalance02.Text) - CDec(lblMesBalance01.Text) - CDec(Transacion(1))
             If lblMesBalance03.Text <> 0 And lblMesBalance02.Text <> 0 Then lblMesDifencia02.Text = CDec(lblMesBalance03.Text) - CDec(lblMesBalance02.Text) - CDec(Transacion(2))
@@ -1095,9 +1053,6 @@ Public Class Form1
             If lblMesBalance29.Text <> 0 And lblMesBalance28.Text <> 0 Then lblMesDifencia28.Text = CDec(lblMesBalance29.Text) - CDec(lblMesBalance28.Text) - CDec(Transacion(28))
             If lblMesBalance30.Text <> 0 And lblMesBalance29.Text <> 0 Then lblMesDifencia29.Text = CDec(lblMesBalance30.Text) - CDec(lblMesBalance29.Text) - CDec(Transacion(29))
             If lblMesBalance31.Text <> 0 And lblMesBalance30.Text <> 0 Then lblMesDifencia30.Text = CDec(lblMesBalance31.Text) - CDec(lblMesBalance30.Text) - CDec(Transacion(30))
-
-
-
             lblTotalHora.Text = 0
             lblTotalHora.Text += CDec(lblHoraDiferencia00.Text)
             lblTotalHora.Text += CDec(lblHoraDiferencia01.Text)
@@ -1123,7 +1078,6 @@ Public Class Form1
             lblTotalHora.Text += CDec(lblHoraDiferencia21.Text)
             lblTotalHora.Text += CDec(lblHoraDiferencia22.Text)
             lblTotalHora.Text += CDec(lblHoraDiferencia23.Text)
-
             lblTotalMes.Text = 0
             lblTotalMes.Text += CDec(lblMesDifencia01.Text)
             lblTotalMes.Text += CDec(lblMesDifencia02.Text)
@@ -1156,14 +1110,33 @@ Public Class Form1
             lblTotalMes.Text += CDec(lblMesDifencia29.Text)
             lblTotalMes.Text += CDec(lblMesDifencia30.Text)
             lblTotalMes.Text += CDec(lblMesDifencia31.Text)
-            ' Chart6.Series(0).Points.Clear()
-            ' Chart6.Series(0).Points.AddXY(Format(DateAndTime.TimeValue(Now), "HH:mm:ss"), CDec(Format(ValorEstimado, "###0.00")))
-
+            Dim TmpTransacion As Decimal
+            Dim tmpTransacionNumeros As Integer
+            For I As Integer = 1 To 31
+                TmpTransacion += Transacion(I)
+                tmpTransacionNumeros += TransacionPorDia(I)
+            Next
+            TransacionAño(Month(Now)) = TmpTransacion
+            TransacionPorAño(Month(Now)) = tmpTransacionNumeros
+            lblTransacionMes.Text = Format(TransacionAño(Month(Now)), "#0.0#") & "(" & TransacionPorAño(Month(Now)) & ")"
+            Select Case Month(Now)
+                Case 1 : lblBalanceAño01.Text = txtbalance.Text : lblPrecioAño01.Text = txtDucoprice.Text : lblTransasionesAño01.Text = Format(TransacionAño(1), "#0.0#") & "(" & TransacionPorAño(1) & ")"
+                Case 2 : lblBalanceAño02.Text = txtbalance.Text : lblPrecioAño02.Text = txtDucoprice.Text : lblTransasionesAño02.Text = Format(TransacionAño(2), "#0.0#") & "(" & TransacionPorAño(2) & ")"
+                Case 3 : lblBalanceAño03.Text = txtbalance.Text : lblPrecioAño03.Text = txtDucoprice.Text : lblTransasionesAño03.Text = Format(TransacionAño(3), "#0.0#") & "(" & TransacionPorAño(3) & ")"
+                Case 4 : lblBalanceAño04.Text = txtbalance.Text : lblPrecioAño04.Text = txtDucoprice.Text : lblTransasionesAño04.Text = Format(TransacionAño(4), "#0.0#") & "(" & TransacionPorAño(4) & ")"
+                Case 5 : lblBalanceAño05.Text = txtbalance.Text : lblPrecioAño05.Text = txtDucoprice.Text : lblTransasionesAño05.Text = Format(TransacionAño(5), "#0.0#") & "(" & TransacionPorAño(5) & ")"
+                Case 6 : lblBalanceAño06.Text = txtbalance.Text : lblPrecioAño06.Text = txtDucoprice.Text : lblTransasionesAño06.Text = Format(TransacionAño(6), "#0.0#") & "(" & TransacionPorAño(6) & ")"
+                Case 7 : lblBalanceAño07.Text = txtbalance.Text : lblPrecioAño07.Text = txtDucoprice.Text : lblTransasionesAño07.Text = Format(TransacionAño(7), "#0.0#") & "(" & TransacionPorAño(7) & ")"
+                Case 8 : lblBalanceAño08.Text = txtbalance.Text : lblPrecioAño08.Text = txtDucoprice.Text : lblTransasionesAño08.Text = Format(TransacionAño(8), "#0.0#") & "(" & TransacionPorAño(8) & ")"
+                Case 9 : lblBalanceAño09.Text = txtbalance.Text : lblPrecioAño09.Text = txtDucoprice.Text : lblTransasionesAño09.Text = Format(TransacionAño(9), "#0.0#") & "(" & TransacionPorAño(9) & ")"
+                Case 10 : lblBalanceAño10.Text = txtbalance.Text : lblPrecioAño10.Text = txtDucoprice.Text : lblTransasionesAño10.Text = Format(TransacionAño(10), "#0.0#") & "(" & TransacionPorAño(10) & ")"
+                Case 11 : lblBalanceAño11.Text = txtbalance.Text : lblPrecioAño11.Text = txtDucoprice.Text : lblTransasionesAño11.Text = Format(TransacionAño(11), "#0.0#") & "(" & TransacionPorAño(11) & ")"
+                Case 12 : lblBalanceAño12.Text = txtbalance.Text : lblPrecioAño12.Text = txtDucoprice.Text : lblTransasionesAño12.Text = Format(TransacionAño(12), "#0.0#") & "(" & TransacionPorAño(12) & ")"
+            End Select
             My.Settings.Save()
         Catch ex As Exception
             'MsgBox("Error!!" & vbCrLf & ex.Message)
         End Try
-
     End Sub
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         Try
@@ -1195,13 +1168,6 @@ Public Class Form1
             ' MsgBox("Error!!" & vbCrLf & ex.Message)
         End Try
     End Sub
-
-    Private Sub Form1_Paint(sender As Object, e As PaintEventArgs) Handles Me.Paint
-        ' e.Graphics.DrawString(((ángulo) / 1.8).ToString("N0") & "%", letras, Brushes.Black, cuadro, sf)
-
-        ' e.Graphics.DrawArc(trazo, cuadro, 180, ángulo)
-    End Sub
-
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         lblBalanceHora00.Text = "0"
         lblBalanceHora01.Text = "0"
@@ -1279,9 +1245,5 @@ Public Class Form1
         lblHoraDiferencia23.Text = 0
         lblTotalHora.Text = 0
         lblTotalMes.Text = 0
-    End Sub
-
-    Private Sub lblDeposito_Click(sender As Object, e As EventArgs) Handles lblDeposito.Click
-
     End Sub
 End Class

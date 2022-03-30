@@ -1661,6 +1661,150 @@ Namespace My
                 Me("lblPrecioAño03") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblTransasionesAño12() As String
+            Get
+                Return CType(Me("lblTransasionesAño12"),String)
+            End Get
+            Set
+                Me("lblTransasionesAño12") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblTransasionesAño11() As String
+            Get
+                Return CType(Me("lblTransasionesAño11"),String)
+            End Get
+            Set
+                Me("lblTransasionesAño11") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblTransasionesAño10() As String
+            Get
+                Return CType(Me("lblTransasionesAño10"),String)
+            End Get
+            Set
+                Me("lblTransasionesAño10") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblTransasionesAño09() As String
+            Get
+                Return CType(Me("lblTransasionesAño09"),String)
+            End Get
+            Set
+                Me("lblTransasionesAño09") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblTransasionesAño08() As String
+            Get
+                Return CType(Me("lblTransasionesAño08"),String)
+            End Get
+            Set
+                Me("lblTransasionesAño08") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblTransasionesAño07() As String
+            Get
+                Return CType(Me("lblTransasionesAño07"),String)
+            End Get
+            Set
+                Me("lblTransasionesAño07") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblTransasionesAño06() As String
+            Get
+                Return CType(Me("lblTransasionesAño06"),String)
+            End Get
+            Set
+                Me("lblTransasionesAño06") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblTransasionesAño05() As String
+            Get
+                Return CType(Me("lblTransasionesAño05"),String)
+            End Get
+            Set
+                Me("lblTransasionesAño05") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblTransasionesAño04() As String
+            Get
+                Return CType(Me("lblTransasionesAño04"),String)
+            End Get
+            Set
+                Me("lblTransasionesAño04") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblTransasionesAño03() As String
+            Get
+                Return CType(Me("lblTransasionesAño03"),String)
+            End Get
+            Set
+                Me("lblTransasionesAño03") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblTransasionesAño02() As String
+            Get
+                Return CType(Me("lblTransasionesAño02"),String)
+            End Get
+            Set
+                Me("lblTransasionesAño02") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblTransasionesAño01() As String
+            Get
+                Return CType(Me("lblTransasionesAño01"),String)
+            End Get
+            Set
+                Me("lblTransasionesAño01") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

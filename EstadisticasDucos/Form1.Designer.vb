@@ -23,24 +23,24 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea3 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend3 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series3 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea4 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend4 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series4 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea5 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend5 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series5 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea6 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend6 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series6 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea19 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend19 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series19 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea20 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend20 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series20 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea21 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend21 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series21 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea22 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend22 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series22 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea23 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend23 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series23 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea24 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend24 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series24 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.lstBalanceTiempoReal = New System.Windows.Forms.ListBox()
@@ -136,10 +136,59 @@ Partial Class Form1
         Me.lblTotalHora = New System.Windows.Forms.Label()
         Me.Label28 = New System.Windows.Forms.Label()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.lblBalanceHora10 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora18 = New System.Windows.Forms.Label()
         Me.Label31 = New System.Windows.Forms.Label()
+        Me.lblPrecio00 = New System.Windows.Forms.Label()
+        Me.lblPrecio23 = New System.Windows.Forms.Label()
+        Me.lblPrecio22 = New System.Windows.Forms.Label()
+        Me.lblPrecio21 = New System.Windows.Forms.Label()
+        Me.lblPrecio20 = New System.Windows.Forms.Label()
+        Me.lblPrecio19 = New System.Windows.Forms.Label()
+        Me.lblPrecio18 = New System.Windows.Forms.Label()
+        Me.lblPrecio17 = New System.Windows.Forms.Label()
+        Me.lblPrecio16 = New System.Windows.Forms.Label()
+        Me.lblPrecio15 = New System.Windows.Forms.Label()
+        Me.lblPrecio14 = New System.Windows.Forms.Label()
+        Me.lblPrecio13 = New System.Windows.Forms.Label()
+        Me.lblPrecio12 = New System.Windows.Forms.Label()
+        Me.lblPrecio11 = New System.Windows.Forms.Label()
+        Me.lblPrecio10 = New System.Windows.Forms.Label()
+        Me.lblPrecio09 = New System.Windows.Forms.Label()
+        Me.lblPrecio08 = New System.Windows.Forms.Label()
+        Me.lblPrecio07 = New System.Windows.Forms.Label()
+        Me.lblPrecio06 = New System.Windows.Forms.Label()
+        Me.lblPrecio05 = New System.Windows.Forms.Label()
+        Me.lblPrecio04 = New System.Windows.Forms.Label()
+        Me.lblPrecio03 = New System.Windows.Forms.Label()
+        Me.lblPrecio02 = New System.Windows.Forms.Label()
         Me.Label30 = New System.Windows.Forms.Label()
+        Me.lblHoraDiferencia00 = New System.Windows.Forms.Label()
         Me.Label29 = New System.Windows.Forms.Label()
+        Me.lblPrecio01 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora00 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora01 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora23 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora22 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora02 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora21 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora20 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora03 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora19 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora17 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora04 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora16 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora15 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora05 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora14 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora13 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora06 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora12 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora11 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora07 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora09 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora08 = New System.Windows.Forms.Label()
         Me.lblMesDifencia01 = New System.Windows.Forms.Label()
         Me.lblMesDifencia02 = New System.Windows.Forms.Label()
         Me.lblMesDifencia03 = New System.Windows.Forms.Label()
@@ -208,8 +257,70 @@ Partial Class Form1
         Me.Label132 = New System.Windows.Forms.Label()
         Me.lblTransacionMes01 = New System.Windows.Forms.Label()
         Me.Label35 = New System.Windows.Forms.Label()
+        Me.lblMesBalance01 = New System.Windows.Forms.Label()
+        Me.lblMesBalance02 = New System.Windows.Forms.Label()
+        Me.lblMesBalance03 = New System.Windows.Forms.Label()
+        Me.lblMesBalance04 = New System.Windows.Forms.Label()
+        Me.lblMesBalance05 = New System.Windows.Forms.Label()
+        Me.lblMesBalance06 = New System.Windows.Forms.Label()
+        Me.lblMesBalance07 = New System.Windows.Forms.Label()
+        Me.lblMesBalance08 = New System.Windows.Forms.Label()
+        Me.lblMesBalance09 = New System.Windows.Forms.Label()
+        Me.lblMesBalance10 = New System.Windows.Forms.Label()
+        Me.lblMesBalance11 = New System.Windows.Forms.Label()
+        Me.lblMesBalance12 = New System.Windows.Forms.Label()
+        Me.lblMesBalance13 = New System.Windows.Forms.Label()
+        Me.lblMesBalance14 = New System.Windows.Forms.Label()
+        Me.lblMesBalance15 = New System.Windows.Forms.Label()
+        Me.lblMesBalance16 = New System.Windows.Forms.Label()
+        Me.lblMesBalance17 = New System.Windows.Forms.Label()
+        Me.lblMesBalance18 = New System.Windows.Forms.Label()
+        Me.lblMesBalance19 = New System.Windows.Forms.Label()
+        Me.lblMesBalance20 = New System.Windows.Forms.Label()
+        Me.lblMesBalance21 = New System.Windows.Forms.Label()
+        Me.lblMesBalance22 = New System.Windows.Forms.Label()
+        Me.lblMesBalance23 = New System.Windows.Forms.Label()
+        Me.lblMesBalance24 = New System.Windows.Forms.Label()
         Me.Label34 = New System.Windows.Forms.Label()
+        Me.lblMesBalance25 = New System.Windows.Forms.Label()
+        Me.lblMesBalance26 = New System.Windows.Forms.Label()
+        Me.lblMesBalance27 = New System.Windows.Forms.Label()
+        Me.lblMesBalance28 = New System.Windows.Forms.Label()
+        Me.lblMesBalance29 = New System.Windows.Forms.Label()
+        Me.lblMesBalance30 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio31 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio30 = New System.Windows.Forms.Label()
+        Me.lblMesBalance31 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio29 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio28 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio27 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio26 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio25 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio24 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio23 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio22 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio21 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio20 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio19 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio18 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio17 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio16 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio15 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio14 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio13 = New System.Windows.Forms.Label()
         Me.Label32 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio12 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio01 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio11 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio10 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio02 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio09 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio08 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio03 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio07 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio04 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio06 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio05 = New System.Windows.Forms.Label()
         Me.Chart5 = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.Chart3 = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.Chart4 = New System.Windows.Forms.DataVisualization.Charting.Chart()
@@ -219,20 +330,32 @@ Partial Class Form1
         Me.Label170 = New System.Windows.Forms.Label()
         Me.GroupBox16 = New System.Windows.Forms.GroupBox()
         Me.GroupBox15 = New System.Windows.Forms.GroupBox()
-        Me.Label99 = New System.Windows.Forms.Label()
+        Me.lblGananciasAño01 = New System.Windows.Forms.Label()
         Me.Label101 = New System.Windows.Forms.Label()
-        Me.Label102 = New System.Windows.Forms.Label()
-        Me.Label104 = New System.Windows.Forms.Label()
-        Me.Label107 = New System.Windows.Forms.Label()
-        Me.Label110 = New System.Windows.Forms.Label()
-        Me.Label112 = New System.Windows.Forms.Label()
-        Me.Label114 = New System.Windows.Forms.Label()
-        Me.Label116 = New System.Windows.Forms.Label()
-        Me.Label118 = New System.Windows.Forms.Label()
-        Me.Label120 = New System.Windows.Forms.Label()
-        Me.Label122 = New System.Windows.Forms.Label()
-        Me.Label126 = New System.Windows.Forms.Label()
+        Me.lblGananciasAño02 = New System.Windows.Forms.Label()
+        Me.lblGananciasAño07 = New System.Windows.Forms.Label()
+        Me.lblGananciasAño04 = New System.Windows.Forms.Label()
+        Me.lblGananciasAño08 = New System.Windows.Forms.Label()
+        Me.lblGananciasAño10 = New System.Windows.Forms.Label()
+        Me.lblGananciasAño05 = New System.Windows.Forms.Label()
+        Me.lblGananciasAño09 = New System.Windows.Forms.Label()
+        Me.lblGananciasAño06 = New System.Windows.Forms.Label()
+        Me.lblGananciasAño11 = New System.Windows.Forms.Label()
+        Me.lblGananciasAño12 = New System.Windows.Forms.Label()
+        Me.lblGananciasAño03 = New System.Windows.Forms.Label()
         Me.Label128 = New System.Windows.Forms.Label()
+        Me.lblBalanceAño01 = New System.Windows.Forms.Label()
+        Me.lblBalanceAño02 = New System.Windows.Forms.Label()
+        Me.lblBalanceAño03 = New System.Windows.Forms.Label()
+        Me.lblBalanceAño04 = New System.Windows.Forms.Label()
+        Me.lblBalanceAño05 = New System.Windows.Forms.Label()
+        Me.lblBalanceAño06 = New System.Windows.Forms.Label()
+        Me.lblBalanceAño07 = New System.Windows.Forms.Label()
+        Me.lblBalanceAño08 = New System.Windows.Forms.Label()
+        Me.lblBalanceAño09 = New System.Windows.Forms.Label()
+        Me.lblBalanceAño10 = New System.Windows.Forms.Label()
+        Me.lblBalanceAño11 = New System.Windows.Forms.Label()
+        Me.lblBalanceAño12 = New System.Windows.Forms.Label()
         Me.Label142 = New System.Windows.Forms.Label()
         Me.Label143 = New System.Windows.Forms.Label()
         Me.Label144 = New System.Windows.Forms.Label()
@@ -247,23 +370,33 @@ Partial Class Form1
         Me.Label153 = New System.Windows.Forms.Label()
         Me.Label154 = New System.Windows.Forms.Label()
         Me.Label155 = New System.Windows.Forms.Label()
+        Me.lblPrecioAño12 = New System.Windows.Forms.Label()
+        Me.lblPrecioAño01 = New System.Windows.Forms.Label()
+        Me.lblPrecioAño11 = New System.Windows.Forms.Label()
+        Me.lblPrecioAño10 = New System.Windows.Forms.Label()
+        Me.lblPrecioAño02 = New System.Windows.Forms.Label()
+        Me.lblPrecioAño09 = New System.Windows.Forms.Label()
+        Me.lblPrecioAño08 = New System.Windows.Forms.Label()
         Me.lblPrecioAño03 = New System.Windows.Forms.Label()
+        Me.lblPrecioAño07 = New System.Windows.Forms.Label()
         Me.lblPrecioAño04 = New System.Windows.Forms.Label()
+        Me.lblPrecioAño06 = New System.Windows.Forms.Label()
+        Me.lblPrecioAño05 = New System.Windows.Forms.Label()
         Me.Label169 = New System.Windows.Forms.Label()
-        Me.Label124 = New System.Windows.Forms.Label()
-        Me.Label98 = New System.Windows.Forms.Label()
-        Me.Label105 = New System.Windows.Forms.Label()
-        Me.Label108 = New System.Windows.Forms.Label()
-        Me.Label111 = New System.Windows.Forms.Label()
-        Me.Label113 = New System.Windows.Forms.Label()
-        Me.Label115 = New System.Windows.Forms.Label()
-        Me.Label117 = New System.Windows.Forms.Label()
-        Me.Label119 = New System.Windows.Forms.Label()
-        Me.Label121 = New System.Windows.Forms.Label()
-        Me.Label123 = New System.Windows.Forms.Label()
+        Me.lblTransasionesAño02 = New System.Windows.Forms.Label()
+        Me.lblTransasionesAño03 = New System.Windows.Forms.Label()
+        Me.lblTransasionesAño12 = New System.Windows.Forms.Label()
+        Me.lblTransasionesAño11 = New System.Windows.Forms.Label()
+        Me.lblTransasionesAño06 = New System.Windows.Forms.Label()
+        Me.lblTransasionesAño09 = New System.Windows.Forms.Label()
+        Me.lblTransasionesAño05 = New System.Windows.Forms.Label()
+        Me.lblTransasionesAño10 = New System.Windows.Forms.Label()
+        Me.lblTransasionesAño08 = New System.Windows.Forms.Label()
+        Me.lblTransasionesAño04 = New System.Windows.Forms.Label()
+        Me.lblTransasionesAño07 = New System.Windows.Forms.Label()
         Me.Label125 = New System.Windows.Forms.Label()
-        Me.Label127 = New System.Windows.Forms.Label()
-        Me.Label168 = New System.Windows.Forms.Label()
+        Me.lblTransasionesAño01 = New System.Windows.Forms.Label()
+        Me.lblTotalGananciaAño = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
@@ -371,139 +504,8 @@ Partial Class Form1
         Me.lblFechaFinDeposito = New System.Windows.Forms.Label()
         Me.Label173 = New System.Windows.Forms.Label()
         Me.Label174 = New System.Windows.Forms.Label()
-        Me.lblBalanceAño01 = New System.Windows.Forms.Label()
-        Me.lblBalanceAño02 = New System.Windows.Forms.Label()
-        Me.lblBalanceAño03 = New System.Windows.Forms.Label()
-        Me.lblBalanceAño04 = New System.Windows.Forms.Label()
-        Me.lblBalanceAño05 = New System.Windows.Forms.Label()
-        Me.lblBalanceAño06 = New System.Windows.Forms.Label()
-        Me.lblBalanceAño07 = New System.Windows.Forms.Label()
-        Me.lblBalanceAño08 = New System.Windows.Forms.Label()
-        Me.lblBalanceAño09 = New System.Windows.Forms.Label()
-        Me.lblBalanceAño10 = New System.Windows.Forms.Label()
-        Me.lblBalanceAño11 = New System.Windows.Forms.Label()
-        Me.lblBalanceAño12 = New System.Windows.Forms.Label()
-        Me.lblPrecioAño12 = New System.Windows.Forms.Label()
-        Me.lblPrecioAño01 = New System.Windows.Forms.Label()
-        Me.lblPrecioAño11 = New System.Windows.Forms.Label()
-        Me.lblPrecioAño10 = New System.Windows.Forms.Label()
-        Me.lblPrecioAño02 = New System.Windows.Forms.Label()
-        Me.lblPrecioAño09 = New System.Windows.Forms.Label()
-        Me.lblPrecioAño08 = New System.Windows.Forms.Label()
-        Me.lblPrecioAño07 = New System.Windows.Forms.Label()
-        Me.lblPrecioAño06 = New System.Windows.Forms.Label()
-        Me.lblPrecioAño05 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora10 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora18 = New System.Windows.Forms.Label()
-        Me.lblPrecio00 = New System.Windows.Forms.Label()
-        Me.lblPrecio23 = New System.Windows.Forms.Label()
-        Me.lblPrecio22 = New System.Windows.Forms.Label()
-        Me.lblPrecio21 = New System.Windows.Forms.Label()
-        Me.lblPrecio20 = New System.Windows.Forms.Label()
-        Me.lblPrecio19 = New System.Windows.Forms.Label()
-        Me.lblPrecio18 = New System.Windows.Forms.Label()
-        Me.lblPrecio17 = New System.Windows.Forms.Label()
-        Me.lblPrecio16 = New System.Windows.Forms.Label()
-        Me.lblPrecio15 = New System.Windows.Forms.Label()
-        Me.lblPrecio14 = New System.Windows.Forms.Label()
-        Me.lblPrecio13 = New System.Windows.Forms.Label()
-        Me.lblPrecio12 = New System.Windows.Forms.Label()
-        Me.lblPrecio11 = New System.Windows.Forms.Label()
-        Me.lblPrecio10 = New System.Windows.Forms.Label()
-        Me.lblPrecio09 = New System.Windows.Forms.Label()
-        Me.lblPrecio08 = New System.Windows.Forms.Label()
-        Me.lblPrecio07 = New System.Windows.Forms.Label()
-        Me.lblPrecio06 = New System.Windows.Forms.Label()
-        Me.lblPrecio05 = New System.Windows.Forms.Label()
-        Me.lblPrecio04 = New System.Windows.Forms.Label()
-        Me.lblPrecio03 = New System.Windows.Forms.Label()
-        Me.lblPrecio02 = New System.Windows.Forms.Label()
-        Me.lblHoraDiferencia00 = New System.Windows.Forms.Label()
-        Me.lblPrecio01 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora00 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora01 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora23 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora22 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora02 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora21 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora20 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora03 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora19 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora17 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora04 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora16 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora15 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora05 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora14 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora13 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora06 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora12 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora11 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora07 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora09 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora08 = New System.Windows.Forms.Label()
-        Me.lblMesBalance01 = New System.Windows.Forms.Label()
-        Me.lblMesBalance02 = New System.Windows.Forms.Label()
-        Me.lblMesBalance03 = New System.Windows.Forms.Label()
-        Me.lblMesBalance04 = New System.Windows.Forms.Label()
-        Me.lblMesBalance05 = New System.Windows.Forms.Label()
-        Me.lblMesBalance06 = New System.Windows.Forms.Label()
-        Me.lblMesBalance07 = New System.Windows.Forms.Label()
-        Me.lblMesBalance08 = New System.Windows.Forms.Label()
-        Me.lblMesBalance09 = New System.Windows.Forms.Label()
-        Me.lblMesBalance10 = New System.Windows.Forms.Label()
-        Me.lblMesBalance11 = New System.Windows.Forms.Label()
-        Me.lblMesBalance12 = New System.Windows.Forms.Label()
-        Me.lblMesBalance13 = New System.Windows.Forms.Label()
-        Me.lblMesBalance14 = New System.Windows.Forms.Label()
-        Me.lblMesBalance15 = New System.Windows.Forms.Label()
-        Me.lblMesBalance16 = New System.Windows.Forms.Label()
-        Me.lblMesBalance17 = New System.Windows.Forms.Label()
-        Me.lblMesBalance18 = New System.Windows.Forms.Label()
-        Me.lblMesBalance19 = New System.Windows.Forms.Label()
-        Me.lblMesBalance20 = New System.Windows.Forms.Label()
-        Me.lblMesBalance21 = New System.Windows.Forms.Label()
-        Me.lblMesBalance22 = New System.Windows.Forms.Label()
-        Me.lblMesBalance23 = New System.Windows.Forms.Label()
-        Me.lblMesBalance24 = New System.Windows.Forms.Label()
-        Me.lblMesBalance25 = New System.Windows.Forms.Label()
-        Me.lblMesBalance26 = New System.Windows.Forms.Label()
-        Me.lblMesBalance27 = New System.Windows.Forms.Label()
-        Me.lblMesBalance28 = New System.Windows.Forms.Label()
-        Me.lblMesBalance29 = New System.Windows.Forms.Label()
-        Me.lblMesBalance30 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio31 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio30 = New System.Windows.Forms.Label()
-        Me.lblMesBalance31 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio29 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio28 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio27 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio26 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio25 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio24 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio23 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio22 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio21 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio20 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio19 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio18 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio17 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio16 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio15 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio14 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio13 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio12 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio01 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio11 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio10 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio02 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio09 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio08 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio03 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio07 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio04 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio06 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio05 = New System.Windows.Forms.Label()
+        Me.lblTransacionMes = New System.Windows.Forms.Label()
+        Me.Label98 = New System.Windows.Forms.Label()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Chart2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -516,6 +518,7 @@ Partial Class Form1
         CType(Me.Chart6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
+        Me.GroupBox16.SuspendLayout()
         Me.GroupBox15.SuspendLayout()
         Me.TabPage2.SuspendLayout()
         Me.TabPage3.SuspendLayout()
@@ -1187,43 +1190,43 @@ Partial Class Form1
         '
         'Chart1
         '
-        ChartArea1.Name = "ChartArea1"
-        Me.Chart1.ChartAreas.Add(ChartArea1)
-        Legend1.Name = "Legend1"
-        Me.Chart1.Legends.Add(Legend1)
+        ChartArea19.Name = "ChartArea1"
+        Me.Chart1.ChartAreas.Add(ChartArea19)
+        Legend19.Name = "Legend1"
+        Me.Chart1.Legends.Add(Legend19)
         Me.Chart1.Location = New System.Drawing.Point(-23, 203)
         Me.Chart1.Name = "Chart1"
-        Series1.BorderWidth = 3
-        Series1.ChartArea = "ChartArea1"
-        Series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
-        Series1.Color = System.Drawing.Color.Lime
-        Series1.IsVisibleInLegend = False
-        Series1.Legend = "Legend1"
-        Series1.Name = "Series1"
-        Series1.ToolTip = "#VAL"
-        Series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Me.Chart1.Series.Add(Series1)
+        Series19.BorderWidth = 3
+        Series19.ChartArea = "ChartArea1"
+        Series19.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
+        Series19.Color = System.Drawing.Color.Lime
+        Series19.IsVisibleInLegend = False
+        Series19.Legend = "Legend1"
+        Series19.Name = "Series1"
+        Series19.ToolTip = "#VAL"
+        Series19.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Me.Chart1.Series.Add(Series19)
         Me.Chart1.Size = New System.Drawing.Size(562, 190)
         Me.Chart1.TabIndex = 135
         '
         'Chart2
         '
-        ChartArea2.Name = "ChartArea1"
-        Me.Chart2.ChartAreas.Add(ChartArea2)
-        Legend2.Name = "Legend1"
-        Me.Chart2.Legends.Add(Legend2)
+        ChartArea20.Name = "ChartArea1"
+        Me.Chart2.ChartAreas.Add(ChartArea20)
+        Legend20.Name = "Legend1"
+        Me.Chart2.Legends.Add(Legend20)
         Me.Chart2.Location = New System.Drawing.Point(-10, 0)
         Me.Chart2.Name = "Chart2"
-        Series2.BorderWidth = 3
-        Series2.ChartArea = "ChartArea1"
-        Series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
-        Series2.Color = System.Drawing.Color.Red
-        Series2.IsVisibleInLegend = False
-        Series2.Legend = "Legend1"
-        Series2.Name = "Series1"
-        Series2.ToolTip = "#VAL"
-        Series2.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Me.Chart2.Series.Add(Series2)
+        Series20.BorderWidth = 3
+        Series20.ChartArea = "ChartArea1"
+        Series20.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
+        Series20.Color = System.Drawing.Color.Red
+        Series20.IsVisibleInLegend = False
+        Series20.Legend = "Legend1"
+        Series20.Name = "Series1"
+        Series20.ToolTip = "#VAL"
+        Series20.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Me.Chart2.Series.Add(Series20)
         Me.Chart2.Size = New System.Drawing.Size(549, 204)
         Me.Chart2.TabIndex = 135
         '
@@ -1682,6 +1685,30 @@ Partial Class Form1
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Balance Hour"
         '
+        'lblBalanceHora10
+        '
+        Me.lblBalanceHora10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblBalanceHora10.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBalanceHora10.Location = New System.Drawing.Point(48, 214)
+        Me.lblBalanceHora10.Name = "lblBalanceHora10"
+        Me.lblBalanceHora10.Size = New System.Drawing.Size(104, 18)
+        Me.lblBalanceHora10.TabIndex = 12
+        Me.lblBalanceHora10.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora10
+        Me.lblBalanceHora10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblBalanceHora18
+        '
+        Me.lblBalanceHora18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora18.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora18", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblBalanceHora18.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBalanceHora18.Location = New System.Drawing.Point(48, 350)
+        Me.lblBalanceHora18.Name = "lblBalanceHora18"
+        Me.lblBalanceHora18.Size = New System.Drawing.Size(104, 18)
+        Me.lblBalanceHora18.TabIndex = 12
+        Me.lblBalanceHora18.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora18
+        Me.lblBalanceHora18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'Label31
         '
         Me.Label31.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
@@ -1693,6 +1720,282 @@ Partial Class Form1
         Me.Label31.TabIndex = 37
         Me.Label31.Text = "Price"
         Me.Label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblPrecio00
+        '
+        Me.lblPrecio00.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio00.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio00", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblPrecio00.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrecio00.Location = New System.Drawing.Point(151, 44)
+        Me.lblPrecio00.Name = "lblPrecio00"
+        Me.lblPrecio00.Size = New System.Drawing.Size(72, 18)
+        Me.lblPrecio00.TabIndex = 37
+        Me.lblPrecio00.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio00
+        Me.lblPrecio00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblPrecio23
+        '
+        Me.lblPrecio23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio23.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio23", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblPrecio23.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrecio23.Location = New System.Drawing.Point(151, 435)
+        Me.lblPrecio23.Name = "lblPrecio23"
+        Me.lblPrecio23.Size = New System.Drawing.Size(72, 18)
+        Me.lblPrecio23.TabIndex = 58
+        Me.lblPrecio23.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio23
+        Me.lblPrecio23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblPrecio22
+        '
+        Me.lblPrecio22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio22.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio22", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblPrecio22.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrecio22.Location = New System.Drawing.Point(151, 418)
+        Me.lblPrecio22.Name = "lblPrecio22"
+        Me.lblPrecio22.Size = New System.Drawing.Size(72, 18)
+        Me.lblPrecio22.TabIndex = 57
+        Me.lblPrecio22.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio22
+        Me.lblPrecio22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblPrecio21
+        '
+        Me.lblPrecio21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio21.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio21", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblPrecio21.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrecio21.Location = New System.Drawing.Point(151, 401)
+        Me.lblPrecio21.Name = "lblPrecio21"
+        Me.lblPrecio21.Size = New System.Drawing.Size(72, 18)
+        Me.lblPrecio21.TabIndex = 56
+        Me.lblPrecio21.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio21
+        Me.lblPrecio21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblPrecio20
+        '
+        Me.lblPrecio20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio20.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio20", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblPrecio20.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrecio20.Location = New System.Drawing.Point(151, 384)
+        Me.lblPrecio20.Name = "lblPrecio20"
+        Me.lblPrecio20.Size = New System.Drawing.Size(72, 18)
+        Me.lblPrecio20.TabIndex = 55
+        Me.lblPrecio20.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio20
+        Me.lblPrecio20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblPrecio19
+        '
+        Me.lblPrecio19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio19.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio19", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblPrecio19.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrecio19.Location = New System.Drawing.Point(151, 367)
+        Me.lblPrecio19.Name = "lblPrecio19"
+        Me.lblPrecio19.Size = New System.Drawing.Size(72, 18)
+        Me.lblPrecio19.TabIndex = 54
+        Me.lblPrecio19.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio19
+        Me.lblPrecio19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblPrecio18
+        '
+        Me.lblPrecio18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio18.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio18", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblPrecio18.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrecio18.Location = New System.Drawing.Point(151, 350)
+        Me.lblPrecio18.Name = "lblPrecio18"
+        Me.lblPrecio18.Size = New System.Drawing.Size(72, 18)
+        Me.lblPrecio18.TabIndex = 53
+        Me.lblPrecio18.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio18
+        Me.lblPrecio18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblPrecio17
+        '
+        Me.lblPrecio17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio17.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio17", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblPrecio17.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrecio17.Location = New System.Drawing.Point(151, 333)
+        Me.lblPrecio17.Name = "lblPrecio17"
+        Me.lblPrecio17.Size = New System.Drawing.Size(72, 18)
+        Me.lblPrecio17.TabIndex = 52
+        Me.lblPrecio17.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio17
+        Me.lblPrecio17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblPrecio16
+        '
+        Me.lblPrecio16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio16.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio16", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblPrecio16.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrecio16.Location = New System.Drawing.Point(151, 316)
+        Me.lblPrecio16.Name = "lblPrecio16"
+        Me.lblPrecio16.Size = New System.Drawing.Size(72, 18)
+        Me.lblPrecio16.TabIndex = 51
+        Me.lblPrecio16.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio16
+        Me.lblPrecio16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblPrecio15
+        '
+        Me.lblPrecio15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio15.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio15", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblPrecio15.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrecio15.Location = New System.Drawing.Point(151, 299)
+        Me.lblPrecio15.Name = "lblPrecio15"
+        Me.lblPrecio15.Size = New System.Drawing.Size(72, 18)
+        Me.lblPrecio15.TabIndex = 50
+        Me.lblPrecio15.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio15
+        Me.lblPrecio15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblPrecio14
+        '
+        Me.lblPrecio14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio14.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio14", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblPrecio14.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrecio14.Location = New System.Drawing.Point(151, 282)
+        Me.lblPrecio14.Name = "lblPrecio14"
+        Me.lblPrecio14.Size = New System.Drawing.Size(72, 18)
+        Me.lblPrecio14.TabIndex = 49
+        Me.lblPrecio14.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio14
+        Me.lblPrecio14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblPrecio13
+        '
+        Me.lblPrecio13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio13.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio13", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblPrecio13.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrecio13.Location = New System.Drawing.Point(151, 265)
+        Me.lblPrecio13.Name = "lblPrecio13"
+        Me.lblPrecio13.Size = New System.Drawing.Size(72, 18)
+        Me.lblPrecio13.TabIndex = 48
+        Me.lblPrecio13.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio13
+        Me.lblPrecio13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblPrecio12
+        '
+        Me.lblPrecio12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblPrecio12.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrecio12.Location = New System.Drawing.Point(151, 248)
+        Me.lblPrecio12.Name = "lblPrecio12"
+        Me.lblPrecio12.Size = New System.Drawing.Size(72, 18)
+        Me.lblPrecio12.TabIndex = 47
+        Me.lblPrecio12.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio12
+        Me.lblPrecio12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblPrecio11
+        '
+        Me.lblPrecio11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblPrecio11.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrecio11.Location = New System.Drawing.Point(151, 231)
+        Me.lblPrecio11.Name = "lblPrecio11"
+        Me.lblPrecio11.Size = New System.Drawing.Size(72, 18)
+        Me.lblPrecio11.TabIndex = 46
+        Me.lblPrecio11.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio11
+        Me.lblPrecio11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblPrecio10
+        '
+        Me.lblPrecio10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblPrecio10.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrecio10.Location = New System.Drawing.Point(151, 214)
+        Me.lblPrecio10.Name = "lblPrecio10"
+        Me.lblPrecio10.Size = New System.Drawing.Size(72, 18)
+        Me.lblPrecio10.TabIndex = 45
+        Me.lblPrecio10.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio10
+        Me.lblPrecio10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblPrecio09
+        '
+        Me.lblPrecio09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblPrecio09.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrecio09.Location = New System.Drawing.Point(151, 197)
+        Me.lblPrecio09.Name = "lblPrecio09"
+        Me.lblPrecio09.Size = New System.Drawing.Size(72, 18)
+        Me.lblPrecio09.TabIndex = 44
+        Me.lblPrecio09.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio09
+        Me.lblPrecio09.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblPrecio08
+        '
+        Me.lblPrecio08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblPrecio08.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrecio08.Location = New System.Drawing.Point(151, 180)
+        Me.lblPrecio08.Name = "lblPrecio08"
+        Me.lblPrecio08.Size = New System.Drawing.Size(72, 18)
+        Me.lblPrecio08.TabIndex = 43
+        Me.lblPrecio08.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio08
+        Me.lblPrecio08.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblPrecio07
+        '
+        Me.lblPrecio07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblPrecio07.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrecio07.Location = New System.Drawing.Point(151, 163)
+        Me.lblPrecio07.Name = "lblPrecio07"
+        Me.lblPrecio07.Size = New System.Drawing.Size(72, 18)
+        Me.lblPrecio07.TabIndex = 42
+        Me.lblPrecio07.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio07
+        Me.lblPrecio07.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblPrecio06
+        '
+        Me.lblPrecio06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblPrecio06.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrecio06.Location = New System.Drawing.Point(151, 146)
+        Me.lblPrecio06.Name = "lblPrecio06"
+        Me.lblPrecio06.Size = New System.Drawing.Size(72, 18)
+        Me.lblPrecio06.TabIndex = 41
+        Me.lblPrecio06.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio06
+        Me.lblPrecio06.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblPrecio05
+        '
+        Me.lblPrecio05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblPrecio05.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrecio05.Location = New System.Drawing.Point(151, 129)
+        Me.lblPrecio05.Name = "lblPrecio05"
+        Me.lblPrecio05.Size = New System.Drawing.Size(72, 18)
+        Me.lblPrecio05.TabIndex = 40
+        Me.lblPrecio05.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio05
+        Me.lblPrecio05.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblPrecio04
+        '
+        Me.lblPrecio04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblPrecio04.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrecio04.Location = New System.Drawing.Point(151, 112)
+        Me.lblPrecio04.Name = "lblPrecio04"
+        Me.lblPrecio04.Size = New System.Drawing.Size(72, 18)
+        Me.lblPrecio04.TabIndex = 39
+        Me.lblPrecio04.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio04
+        Me.lblPrecio04.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblPrecio03
+        '
+        Me.lblPrecio03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblPrecio03.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrecio03.Location = New System.Drawing.Point(151, 95)
+        Me.lblPrecio03.Name = "lblPrecio03"
+        Me.lblPrecio03.Size = New System.Drawing.Size(72, 18)
+        Me.lblPrecio03.TabIndex = 38
+        Me.lblPrecio03.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio03
+        Me.lblPrecio03.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblPrecio02
+        '
+        Me.lblPrecio02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblPrecio02.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrecio02.Location = New System.Drawing.Point(151, 78)
+        Me.lblPrecio02.Name = "lblPrecio02"
+        Me.lblPrecio02.Size = New System.Drawing.Size(72, 18)
+        Me.lblPrecio02.TabIndex = 59
+        Me.lblPrecio02.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio02
+        Me.lblPrecio02.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label30
         '
@@ -1706,6 +2009,18 @@ Partial Class Form1
         Me.Label30.Text = "Gain"
         Me.Label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'lblHoraDiferencia00
+        '
+        Me.lblHoraDiferencia00.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblHoraDiferencia00.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "ValorHora00", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblHoraDiferencia00.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHoraDiferencia00.Location = New System.Drawing.Point(222, 44)
+        Me.lblHoraDiferencia00.Name = "lblHoraDiferencia00"
+        Me.lblHoraDiferencia00.Size = New System.Drawing.Size(65, 18)
+        Me.lblHoraDiferencia00.TabIndex = 141
+        Me.lblHoraDiferencia00.Text = Global.EstadisticasDucos.My.MySettings.Default.ValorHora00
+        Me.lblHoraDiferencia00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'Label29
         '
         Me.Label29.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
@@ -1718,6 +2033,270 @@ Partial Class Form1
         Me.Label29.Text = "Ducos"
         Me.Label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'lblPrecio01
+        '
+        Me.lblPrecio01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblPrecio01.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrecio01.Location = New System.Drawing.Point(151, 61)
+        Me.lblPrecio01.Name = "lblPrecio01"
+        Me.lblPrecio01.Size = New System.Drawing.Size(72, 18)
+        Me.lblPrecio01.TabIndex = 60
+        Me.lblPrecio01.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio01
+        Me.lblPrecio01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblBalanceHora00
+        '
+        Me.lblBalanceHora00.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora00.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora00", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblBalanceHora00.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBalanceHora00.Location = New System.Drawing.Point(48, 44)
+        Me.lblBalanceHora00.Name = "lblBalanceHora00"
+        Me.lblBalanceHora00.Size = New System.Drawing.Size(104, 18)
+        Me.lblBalanceHora00.TabIndex = 12
+        Me.lblBalanceHora00.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora00
+        Me.lblBalanceHora00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblBalanceHora01
+        '
+        Me.lblBalanceHora01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblBalanceHora01.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBalanceHora01.Location = New System.Drawing.Point(48, 61)
+        Me.lblBalanceHora01.Name = "lblBalanceHora01"
+        Me.lblBalanceHora01.Size = New System.Drawing.Size(104, 18)
+        Me.lblBalanceHora01.TabIndex = 12
+        Me.lblBalanceHora01.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora01
+        Me.lblBalanceHora01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblBalanceHora23
+        '
+        Me.lblBalanceHora23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora23.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora23", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblBalanceHora23.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBalanceHora23.Location = New System.Drawing.Point(48, 435)
+        Me.lblBalanceHora23.Name = "lblBalanceHora23"
+        Me.lblBalanceHora23.Size = New System.Drawing.Size(104, 18)
+        Me.lblBalanceHora23.TabIndex = 12
+        Me.lblBalanceHora23.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora23
+        Me.lblBalanceHora23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblBalanceHora22
+        '
+        Me.lblBalanceHora22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora22.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora22", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblBalanceHora22.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBalanceHora22.Location = New System.Drawing.Point(48, 418)
+        Me.lblBalanceHora22.Name = "lblBalanceHora22"
+        Me.lblBalanceHora22.Size = New System.Drawing.Size(104, 18)
+        Me.lblBalanceHora22.TabIndex = 12
+        Me.lblBalanceHora22.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora22
+        Me.lblBalanceHora22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblBalanceHora02
+        '
+        Me.lblBalanceHora02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblBalanceHora02.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBalanceHora02.Location = New System.Drawing.Point(48, 78)
+        Me.lblBalanceHora02.Name = "lblBalanceHora02"
+        Me.lblBalanceHora02.Size = New System.Drawing.Size(104, 18)
+        Me.lblBalanceHora02.TabIndex = 12
+        Me.lblBalanceHora02.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora02
+        Me.lblBalanceHora02.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblBalanceHora21
+        '
+        Me.lblBalanceHora21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora21.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora21", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblBalanceHora21.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBalanceHora21.Location = New System.Drawing.Point(48, 401)
+        Me.lblBalanceHora21.Name = "lblBalanceHora21"
+        Me.lblBalanceHora21.Size = New System.Drawing.Size(104, 18)
+        Me.lblBalanceHora21.TabIndex = 12
+        Me.lblBalanceHora21.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora21
+        Me.lblBalanceHora21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblBalanceHora20
+        '
+        Me.lblBalanceHora20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora20.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora20", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblBalanceHora20.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBalanceHora20.Location = New System.Drawing.Point(48, 384)
+        Me.lblBalanceHora20.Name = "lblBalanceHora20"
+        Me.lblBalanceHora20.Size = New System.Drawing.Size(104, 18)
+        Me.lblBalanceHora20.TabIndex = 12
+        Me.lblBalanceHora20.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora20
+        Me.lblBalanceHora20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblBalanceHora03
+        '
+        Me.lblBalanceHora03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblBalanceHora03.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBalanceHora03.Location = New System.Drawing.Point(48, 95)
+        Me.lblBalanceHora03.Name = "lblBalanceHora03"
+        Me.lblBalanceHora03.Size = New System.Drawing.Size(104, 18)
+        Me.lblBalanceHora03.TabIndex = 12
+        Me.lblBalanceHora03.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora03
+        Me.lblBalanceHora03.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblBalanceHora19
+        '
+        Me.lblBalanceHora19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora19.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora19", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblBalanceHora19.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBalanceHora19.Location = New System.Drawing.Point(48, 367)
+        Me.lblBalanceHora19.Name = "lblBalanceHora19"
+        Me.lblBalanceHora19.Size = New System.Drawing.Size(104, 18)
+        Me.lblBalanceHora19.TabIndex = 12
+        Me.lblBalanceHora19.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora19
+        Me.lblBalanceHora19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblBalanceHora17
+        '
+        Me.lblBalanceHora17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora17.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora17", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblBalanceHora17.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBalanceHora17.Location = New System.Drawing.Point(48, 333)
+        Me.lblBalanceHora17.Name = "lblBalanceHora17"
+        Me.lblBalanceHora17.Size = New System.Drawing.Size(104, 18)
+        Me.lblBalanceHora17.TabIndex = 12
+        Me.lblBalanceHora17.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora17
+        Me.lblBalanceHora17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblBalanceHora04
+        '
+        Me.lblBalanceHora04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblBalanceHora04.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBalanceHora04.Location = New System.Drawing.Point(48, 112)
+        Me.lblBalanceHora04.Name = "lblBalanceHora04"
+        Me.lblBalanceHora04.Size = New System.Drawing.Size(104, 18)
+        Me.lblBalanceHora04.TabIndex = 12
+        Me.lblBalanceHora04.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora04
+        Me.lblBalanceHora04.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblBalanceHora16
+        '
+        Me.lblBalanceHora16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora16.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora16", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblBalanceHora16.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBalanceHora16.Location = New System.Drawing.Point(48, 316)
+        Me.lblBalanceHora16.Name = "lblBalanceHora16"
+        Me.lblBalanceHora16.Size = New System.Drawing.Size(104, 18)
+        Me.lblBalanceHora16.TabIndex = 12
+        Me.lblBalanceHora16.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora16
+        Me.lblBalanceHora16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblBalanceHora15
+        '
+        Me.lblBalanceHora15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora15.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora15", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblBalanceHora15.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBalanceHora15.Location = New System.Drawing.Point(48, 299)
+        Me.lblBalanceHora15.Name = "lblBalanceHora15"
+        Me.lblBalanceHora15.Size = New System.Drawing.Size(104, 18)
+        Me.lblBalanceHora15.TabIndex = 12
+        Me.lblBalanceHora15.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora15
+        Me.lblBalanceHora15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblBalanceHora05
+        '
+        Me.lblBalanceHora05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblBalanceHora05.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBalanceHora05.Location = New System.Drawing.Point(48, 129)
+        Me.lblBalanceHora05.Name = "lblBalanceHora05"
+        Me.lblBalanceHora05.Size = New System.Drawing.Size(104, 18)
+        Me.lblBalanceHora05.TabIndex = 12
+        Me.lblBalanceHora05.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora05
+        Me.lblBalanceHora05.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblBalanceHora14
+        '
+        Me.lblBalanceHora14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora14.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora14", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblBalanceHora14.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBalanceHora14.Location = New System.Drawing.Point(48, 282)
+        Me.lblBalanceHora14.Name = "lblBalanceHora14"
+        Me.lblBalanceHora14.Size = New System.Drawing.Size(104, 18)
+        Me.lblBalanceHora14.TabIndex = 12
+        Me.lblBalanceHora14.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora14
+        Me.lblBalanceHora14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblBalanceHora13
+        '
+        Me.lblBalanceHora13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora13.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora13", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblBalanceHora13.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBalanceHora13.Location = New System.Drawing.Point(48, 265)
+        Me.lblBalanceHora13.Name = "lblBalanceHora13"
+        Me.lblBalanceHora13.Size = New System.Drawing.Size(104, 18)
+        Me.lblBalanceHora13.TabIndex = 12
+        Me.lblBalanceHora13.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora13
+        Me.lblBalanceHora13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblBalanceHora06
+        '
+        Me.lblBalanceHora06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblBalanceHora06.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBalanceHora06.Location = New System.Drawing.Point(48, 146)
+        Me.lblBalanceHora06.Name = "lblBalanceHora06"
+        Me.lblBalanceHora06.Size = New System.Drawing.Size(104, 18)
+        Me.lblBalanceHora06.TabIndex = 12
+        Me.lblBalanceHora06.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora06
+        Me.lblBalanceHora06.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblBalanceHora12
+        '
+        Me.lblBalanceHora12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblBalanceHora12.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBalanceHora12.Location = New System.Drawing.Point(48, 248)
+        Me.lblBalanceHora12.Name = "lblBalanceHora12"
+        Me.lblBalanceHora12.Size = New System.Drawing.Size(104, 18)
+        Me.lblBalanceHora12.TabIndex = 12
+        Me.lblBalanceHora12.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora12
+        Me.lblBalanceHora12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblBalanceHora11
+        '
+        Me.lblBalanceHora11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblBalanceHora11.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBalanceHora11.Location = New System.Drawing.Point(48, 231)
+        Me.lblBalanceHora11.Name = "lblBalanceHora11"
+        Me.lblBalanceHora11.Size = New System.Drawing.Size(104, 18)
+        Me.lblBalanceHora11.TabIndex = 12
+        Me.lblBalanceHora11.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora11
+        Me.lblBalanceHora11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblBalanceHora07
+        '
+        Me.lblBalanceHora07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblBalanceHora07.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBalanceHora07.Location = New System.Drawing.Point(48, 163)
+        Me.lblBalanceHora07.Name = "lblBalanceHora07"
+        Me.lblBalanceHora07.Size = New System.Drawing.Size(104, 18)
+        Me.lblBalanceHora07.TabIndex = 12
+        Me.lblBalanceHora07.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora07
+        Me.lblBalanceHora07.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblBalanceHora09
+        '
+        Me.lblBalanceHora09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblBalanceHora09.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBalanceHora09.Location = New System.Drawing.Point(48, 197)
+        Me.lblBalanceHora09.Name = "lblBalanceHora09"
+        Me.lblBalanceHora09.Size = New System.Drawing.Size(104, 18)
+        Me.lblBalanceHora09.TabIndex = 12
+        Me.lblBalanceHora09.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora09
+        Me.lblBalanceHora09.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'Label1
         '
         Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
@@ -1729,6 +2308,18 @@ Partial Class Form1
         Me.Label1.TabIndex = 13
         Me.Label1.Text = "Hora"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblBalanceHora08
+        '
+        Me.lblBalanceHora08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblBalanceHora08.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBalanceHora08.Location = New System.Drawing.Point(48, 180)
+        Me.lblBalanceHora08.Name = "lblBalanceHora08"
+        Me.lblBalanceHora08.Size = New System.Drawing.Size(104, 18)
+        Me.lblBalanceHora08.TabIndex = 12
+        Me.lblBalanceHora08.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora08
+        Me.lblBalanceHora08.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblMesDifencia01
         '
@@ -2076,9 +2667,9 @@ Partial Class Form1
         Me.lblTotalMes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblTotalMes.Font = New System.Drawing.Font("Duco", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTotalMes.ForeColor = System.Drawing.Color.Blue
-        Me.lblTotalMes.Location = New System.Drawing.Point(221, 567)
+        Me.lblTotalMes.Location = New System.Drawing.Point(302, 567)
         Me.lblTotalMes.Name = "lblTotalMes"
-        Me.lblTotalMes.Size = New System.Drawing.Size(181, 28)
+        Me.lblTotalMes.Size = New System.Drawing.Size(100, 28)
         Me.lblTotalMes.TabIndex = 143
         Me.lblTotalMes.Text = "0"
         Me.lblTotalMes.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -2259,6 +2850,7 @@ Partial Class Form1
         Me.gpMes.Controls.Add(Me.lbl29)
         Me.gpMes.Controls.Add(Me.lblTotalMes)
         Me.gpMes.Controls.Add(Me.lblMesDaily)
+        Me.gpMes.Controls.Add(Me.lblTransacionMes)
         Me.gpMes.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gpMes.Location = New System.Drawing.Point(307, 15)
         Me.gpMes.Name = "gpMes"
@@ -2644,6 +3236,294 @@ Partial Class Form1
         Me.Label35.Text = "Ducos"
         Me.Label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'lblMesBalance01
+        '
+        Me.lblMesBalance01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesBalance01.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesBalance01.Location = New System.Drawing.Point(44, 44)
+        Me.lblMesBalance01.Name = "lblMesBalance01"
+        Me.lblMesBalance01.Size = New System.Drawing.Size(113, 18)
+        Me.lblMesBalance01.TabIndex = 61
+        Me.lblMesBalance01.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance01
+        Me.lblMesBalance01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesBalance02
+        '
+        Me.lblMesBalance02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesBalance02.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesBalance02.Location = New System.Drawing.Point(44, 61)
+        Me.lblMesBalance02.Name = "lblMesBalance02"
+        Me.lblMesBalance02.Size = New System.Drawing.Size(113, 18)
+        Me.lblMesBalance02.TabIndex = 79
+        Me.lblMesBalance02.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance02
+        Me.lblMesBalance02.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesBalance03
+        '
+        Me.lblMesBalance03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesBalance03.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesBalance03.Location = New System.Drawing.Point(44, 78)
+        Me.lblMesBalance03.Name = "lblMesBalance03"
+        Me.lblMesBalance03.Size = New System.Drawing.Size(113, 18)
+        Me.lblMesBalance03.TabIndex = 75
+        Me.lblMesBalance03.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance03
+        Me.lblMesBalance03.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesBalance04
+        '
+        Me.lblMesBalance04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesBalance04.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesBalance04.Location = New System.Drawing.Point(44, 95)
+        Me.lblMesBalance04.Name = "lblMesBalance04"
+        Me.lblMesBalance04.Size = New System.Drawing.Size(113, 18)
+        Me.lblMesBalance04.TabIndex = 76
+        Me.lblMesBalance04.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance04
+        Me.lblMesBalance04.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesBalance05
+        '
+        Me.lblMesBalance05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesBalance05.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesBalance05.Location = New System.Drawing.Point(44, 112)
+        Me.lblMesBalance05.Name = "lblMesBalance05"
+        Me.lblMesBalance05.Size = New System.Drawing.Size(113, 18)
+        Me.lblMesBalance05.TabIndex = 77
+        Me.lblMesBalance05.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance05
+        Me.lblMesBalance05.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesBalance06
+        '
+        Me.lblMesBalance06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesBalance06.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesBalance06.Location = New System.Drawing.Point(44, 129)
+        Me.lblMesBalance06.Name = "lblMesBalance06"
+        Me.lblMesBalance06.Size = New System.Drawing.Size(113, 18)
+        Me.lblMesBalance06.TabIndex = 78
+        Me.lblMesBalance06.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance06
+        Me.lblMesBalance06.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesBalance07
+        '
+        Me.lblMesBalance07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesBalance07.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesBalance07.Location = New System.Drawing.Point(44, 146)
+        Me.lblMesBalance07.Name = "lblMesBalance07"
+        Me.lblMesBalance07.Size = New System.Drawing.Size(113, 18)
+        Me.lblMesBalance07.TabIndex = 84
+        Me.lblMesBalance07.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance07
+        Me.lblMesBalance07.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesBalance08
+        '
+        Me.lblMesBalance08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesBalance08.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesBalance08.Location = New System.Drawing.Point(44, 163)
+        Me.lblMesBalance08.Name = "lblMesBalance08"
+        Me.lblMesBalance08.Size = New System.Drawing.Size(113, 18)
+        Me.lblMesBalance08.TabIndex = 80
+        Me.lblMesBalance08.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance08
+        Me.lblMesBalance08.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesBalance09
+        '
+        Me.lblMesBalance09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesBalance09.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesBalance09.Location = New System.Drawing.Point(44, 180)
+        Me.lblMesBalance09.Name = "lblMesBalance09"
+        Me.lblMesBalance09.Size = New System.Drawing.Size(113, 18)
+        Me.lblMesBalance09.TabIndex = 81
+        Me.lblMesBalance09.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance09
+        Me.lblMesBalance09.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesBalance10
+        '
+        Me.lblMesBalance10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesBalance10.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesBalance10.Location = New System.Drawing.Point(44, 197)
+        Me.lblMesBalance10.Name = "lblMesBalance10"
+        Me.lblMesBalance10.Size = New System.Drawing.Size(113, 18)
+        Me.lblMesBalance10.TabIndex = 82
+        Me.lblMesBalance10.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance10
+        Me.lblMesBalance10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesBalance11
+        '
+        Me.lblMesBalance11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesBalance11.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesBalance11.Location = New System.Drawing.Point(44, 214)
+        Me.lblMesBalance11.Name = "lblMesBalance11"
+        Me.lblMesBalance11.Size = New System.Drawing.Size(113, 18)
+        Me.lblMesBalance11.TabIndex = 83
+        Me.lblMesBalance11.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance11
+        Me.lblMesBalance11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesBalance12
+        '
+        Me.lblMesBalance12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesBalance12.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesBalance12.Location = New System.Drawing.Point(44, 231)
+        Me.lblMesBalance12.Name = "lblMesBalance12"
+        Me.lblMesBalance12.Size = New System.Drawing.Size(113, 18)
+        Me.lblMesBalance12.TabIndex = 73
+        Me.lblMesBalance12.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance12
+        Me.lblMesBalance12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesBalance13
+        '
+        Me.lblMesBalance13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance13.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance13", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesBalance13.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesBalance13.Location = New System.Drawing.Point(44, 248)
+        Me.lblMesBalance13.Name = "lblMesBalance13"
+        Me.lblMesBalance13.Size = New System.Drawing.Size(113, 18)
+        Me.lblMesBalance13.TabIndex = 74
+        Me.lblMesBalance13.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance13
+        Me.lblMesBalance13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesBalance14
+        '
+        Me.lblMesBalance14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance14.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance14", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesBalance14.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesBalance14.Location = New System.Drawing.Point(44, 265)
+        Me.lblMesBalance14.Name = "lblMesBalance14"
+        Me.lblMesBalance14.Size = New System.Drawing.Size(113, 18)
+        Me.lblMesBalance14.TabIndex = 71
+        Me.lblMesBalance14.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance14
+        Me.lblMesBalance14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesBalance15
+        '
+        Me.lblMesBalance15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance15.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance15", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesBalance15.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesBalance15.Location = New System.Drawing.Point(44, 282)
+        Me.lblMesBalance15.Name = "lblMesBalance15"
+        Me.lblMesBalance15.Size = New System.Drawing.Size(113, 18)
+        Me.lblMesBalance15.TabIndex = 70
+        Me.lblMesBalance15.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance15
+        Me.lblMesBalance15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesBalance16
+        '
+        Me.lblMesBalance16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance16.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance16", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesBalance16.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesBalance16.Location = New System.Drawing.Point(44, 299)
+        Me.lblMesBalance16.Name = "lblMesBalance16"
+        Me.lblMesBalance16.Size = New System.Drawing.Size(113, 18)
+        Me.lblMesBalance16.TabIndex = 69
+        Me.lblMesBalance16.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance16
+        Me.lblMesBalance16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesBalance17
+        '
+        Me.lblMesBalance17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance17.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance17", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesBalance17.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesBalance17.Location = New System.Drawing.Point(44, 316)
+        Me.lblMesBalance17.Name = "lblMesBalance17"
+        Me.lblMesBalance17.Size = New System.Drawing.Size(113, 18)
+        Me.lblMesBalance17.TabIndex = 68
+        Me.lblMesBalance17.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance17
+        Me.lblMesBalance17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesBalance18
+        '
+        Me.lblMesBalance18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance18.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance18", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesBalance18.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesBalance18.Location = New System.Drawing.Point(44, 333)
+        Me.lblMesBalance18.Name = "lblMesBalance18"
+        Me.lblMesBalance18.Size = New System.Drawing.Size(113, 18)
+        Me.lblMesBalance18.TabIndex = 67
+        Me.lblMesBalance18.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance18
+        Me.lblMesBalance18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesBalance19
+        '
+        Me.lblMesBalance19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance19.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance19", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesBalance19.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesBalance19.Location = New System.Drawing.Point(44, 350)
+        Me.lblMesBalance19.Name = "lblMesBalance19"
+        Me.lblMesBalance19.Size = New System.Drawing.Size(113, 18)
+        Me.lblMesBalance19.TabIndex = 72
+        Me.lblMesBalance19.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance19
+        Me.lblMesBalance19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesBalance20
+        '
+        Me.lblMesBalance20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance20.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance20", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesBalance20.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesBalance20.Location = New System.Drawing.Point(44, 367)
+        Me.lblMesBalance20.Name = "lblMesBalance20"
+        Me.lblMesBalance20.Size = New System.Drawing.Size(113, 18)
+        Me.lblMesBalance20.TabIndex = 66
+        Me.lblMesBalance20.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance20
+        Me.lblMesBalance20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesBalance21
+        '
+        Me.lblMesBalance21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance21.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance21", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesBalance21.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesBalance21.Location = New System.Drawing.Point(44, 384)
+        Me.lblMesBalance21.Name = "lblMesBalance21"
+        Me.lblMesBalance21.Size = New System.Drawing.Size(113, 18)
+        Me.lblMesBalance21.TabIndex = 65
+        Me.lblMesBalance21.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance21
+        Me.lblMesBalance21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesBalance22
+        '
+        Me.lblMesBalance22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance22.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance22", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesBalance22.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesBalance22.Location = New System.Drawing.Point(44, 401)
+        Me.lblMesBalance22.Name = "lblMesBalance22"
+        Me.lblMesBalance22.Size = New System.Drawing.Size(113, 18)
+        Me.lblMesBalance22.TabIndex = 64
+        Me.lblMesBalance22.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance22
+        Me.lblMesBalance22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesBalance23
+        '
+        Me.lblMesBalance23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance23.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance23", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesBalance23.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesBalance23.Location = New System.Drawing.Point(44, 418)
+        Me.lblMesBalance23.Name = "lblMesBalance23"
+        Me.lblMesBalance23.Size = New System.Drawing.Size(113, 18)
+        Me.lblMesBalance23.TabIndex = 63
+        Me.lblMesBalance23.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance23
+        Me.lblMesBalance23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesBalance24
+        '
+        Me.lblMesBalance24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance24.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance24", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesBalance24.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesBalance24.Location = New System.Drawing.Point(44, 435)
+        Me.lblMesBalance24.Name = "lblMesBalance24"
+        Me.lblMesBalance24.Size = New System.Drawing.Size(113, 18)
+        Me.lblMesBalance24.TabIndex = 63
+        Me.lblMesBalance24.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance24
+        Me.lblMesBalance24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'Label34
         '
         Me.Label34.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
@@ -2655,6 +3535,318 @@ Partial Class Form1
         Me.Label34.TabIndex = 108
         Me.Label34.Text = "Day"
         Me.Label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesBalance25
+        '
+        Me.lblMesBalance25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance25.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance25", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesBalance25.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesBalance25.Location = New System.Drawing.Point(44, 452)
+        Me.lblMesBalance25.Name = "lblMesBalance25"
+        Me.lblMesBalance25.Size = New System.Drawing.Size(113, 18)
+        Me.lblMesBalance25.TabIndex = 63
+        Me.lblMesBalance25.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance25
+        Me.lblMesBalance25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesBalance26
+        '
+        Me.lblMesBalance26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance26.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance26", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesBalance26.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesBalance26.Location = New System.Drawing.Point(44, 469)
+        Me.lblMesBalance26.Name = "lblMesBalance26"
+        Me.lblMesBalance26.Size = New System.Drawing.Size(113, 18)
+        Me.lblMesBalance26.TabIndex = 63
+        Me.lblMesBalance26.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance26
+        Me.lblMesBalance26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesBalance27
+        '
+        Me.lblMesBalance27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance27.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance27", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesBalance27.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesBalance27.Location = New System.Drawing.Point(44, 486)
+        Me.lblMesBalance27.Name = "lblMesBalance27"
+        Me.lblMesBalance27.Size = New System.Drawing.Size(113, 18)
+        Me.lblMesBalance27.TabIndex = 63
+        Me.lblMesBalance27.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance27
+        Me.lblMesBalance27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesBalance28
+        '
+        Me.lblMesBalance28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance28.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance28", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesBalance28.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesBalance28.Location = New System.Drawing.Point(44, 503)
+        Me.lblMesBalance28.Name = "lblMesBalance28"
+        Me.lblMesBalance28.Size = New System.Drawing.Size(113, 18)
+        Me.lblMesBalance28.TabIndex = 63
+        Me.lblMesBalance28.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance28
+        Me.lblMesBalance28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesBalance29
+        '
+        Me.lblMesBalance29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance29.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance29", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesBalance29.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesBalance29.Location = New System.Drawing.Point(44, 520)
+        Me.lblMesBalance29.Name = "lblMesBalance29"
+        Me.lblMesBalance29.Size = New System.Drawing.Size(113, 18)
+        Me.lblMesBalance29.TabIndex = 63
+        Me.lblMesBalance29.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance29
+        Me.lblMesBalance29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesBalance30
+        '
+        Me.lblMesBalance30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance30.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance30", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesBalance30.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesBalance30.Location = New System.Drawing.Point(44, 537)
+        Me.lblMesBalance30.Name = "lblMesBalance30"
+        Me.lblMesBalance30.Size = New System.Drawing.Size(113, 18)
+        Me.lblMesBalance30.TabIndex = 63
+        Me.lblMesBalance30.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance30
+        Me.lblMesBalance30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesPrecio31
+        '
+        Me.lblMesPrecio31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio31.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio31", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesPrecio31.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesPrecio31.Location = New System.Drawing.Point(156, 554)
+        Me.lblMesPrecio31.Name = "lblMesPrecio31"
+        Me.lblMesPrecio31.Size = New System.Drawing.Size(66, 18)
+        Me.lblMesPrecio31.TabIndex = 130
+        Me.lblMesPrecio31.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio31
+        Me.lblMesPrecio31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesPrecio30
+        '
+        Me.lblMesPrecio30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio30.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio30", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesPrecio30.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesPrecio30.Location = New System.Drawing.Point(156, 537)
+        Me.lblMesPrecio30.Name = "lblMesPrecio30"
+        Me.lblMesPrecio30.Size = New System.Drawing.Size(66, 18)
+        Me.lblMesPrecio30.TabIndex = 130
+        Me.lblMesPrecio30.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio30
+        Me.lblMesPrecio30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesBalance31
+        '
+        Me.lblMesBalance31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance31.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance31", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesBalance31.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesBalance31.Location = New System.Drawing.Point(44, 554)
+        Me.lblMesBalance31.Name = "lblMesBalance31"
+        Me.lblMesBalance31.Size = New System.Drawing.Size(113, 18)
+        Me.lblMesBalance31.TabIndex = 63
+        Me.lblMesBalance31.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance31
+        Me.lblMesBalance31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesPrecio29
+        '
+        Me.lblMesPrecio29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio29.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio29", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesPrecio29.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesPrecio29.Location = New System.Drawing.Point(156, 520)
+        Me.lblMesPrecio29.Name = "lblMesPrecio29"
+        Me.lblMesPrecio29.Size = New System.Drawing.Size(66, 18)
+        Me.lblMesPrecio29.TabIndex = 130
+        Me.lblMesPrecio29.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio29
+        Me.lblMesPrecio29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesPrecio28
+        '
+        Me.lblMesPrecio28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio28.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio28", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesPrecio28.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesPrecio28.Location = New System.Drawing.Point(156, 503)
+        Me.lblMesPrecio28.Name = "lblMesPrecio28"
+        Me.lblMesPrecio28.Size = New System.Drawing.Size(66, 18)
+        Me.lblMesPrecio28.TabIndex = 130
+        Me.lblMesPrecio28.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio28
+        Me.lblMesPrecio28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesPrecio27
+        '
+        Me.lblMesPrecio27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio27.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio27", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesPrecio27.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesPrecio27.Location = New System.Drawing.Point(156, 486)
+        Me.lblMesPrecio27.Name = "lblMesPrecio27"
+        Me.lblMesPrecio27.Size = New System.Drawing.Size(66, 18)
+        Me.lblMesPrecio27.TabIndex = 130
+        Me.lblMesPrecio27.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio27
+        Me.lblMesPrecio27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesPrecio26
+        '
+        Me.lblMesPrecio26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio26.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio26", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesPrecio26.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesPrecio26.Location = New System.Drawing.Point(156, 469)
+        Me.lblMesPrecio26.Name = "lblMesPrecio26"
+        Me.lblMesPrecio26.Size = New System.Drawing.Size(66, 18)
+        Me.lblMesPrecio26.TabIndex = 130
+        Me.lblMesPrecio26.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio26
+        Me.lblMesPrecio26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesPrecio25
+        '
+        Me.lblMesPrecio25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio25.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio25", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesPrecio25.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesPrecio25.Location = New System.Drawing.Point(156, 452)
+        Me.lblMesPrecio25.Name = "lblMesPrecio25"
+        Me.lblMesPrecio25.Size = New System.Drawing.Size(66, 18)
+        Me.lblMesPrecio25.TabIndex = 130
+        Me.lblMesPrecio25.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio25
+        Me.lblMesPrecio25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesPrecio24
+        '
+        Me.lblMesPrecio24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio24.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio24", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesPrecio24.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesPrecio24.Location = New System.Drawing.Point(156, 435)
+        Me.lblMesPrecio24.Name = "lblMesPrecio24"
+        Me.lblMesPrecio24.Size = New System.Drawing.Size(66, 18)
+        Me.lblMesPrecio24.TabIndex = 130
+        Me.lblMesPrecio24.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio24
+        Me.lblMesPrecio24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesPrecio23
+        '
+        Me.lblMesPrecio23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio23.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio23", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesPrecio23.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesPrecio23.Location = New System.Drawing.Point(156, 418)
+        Me.lblMesPrecio23.Name = "lblMesPrecio23"
+        Me.lblMesPrecio23.Size = New System.Drawing.Size(66, 18)
+        Me.lblMesPrecio23.TabIndex = 130
+        Me.lblMesPrecio23.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio23
+        Me.lblMesPrecio23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesPrecio22
+        '
+        Me.lblMesPrecio22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio22.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio22", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesPrecio22.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesPrecio22.Location = New System.Drawing.Point(156, 401)
+        Me.lblMesPrecio22.Name = "lblMesPrecio22"
+        Me.lblMesPrecio22.Size = New System.Drawing.Size(66, 18)
+        Me.lblMesPrecio22.TabIndex = 129
+        Me.lblMesPrecio22.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio22
+        Me.lblMesPrecio22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesPrecio21
+        '
+        Me.lblMesPrecio21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio21.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio21", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesPrecio21.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesPrecio21.Location = New System.Drawing.Point(156, 384)
+        Me.lblMesPrecio21.Name = "lblMesPrecio21"
+        Me.lblMesPrecio21.Size = New System.Drawing.Size(66, 18)
+        Me.lblMesPrecio21.TabIndex = 128
+        Me.lblMesPrecio21.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio21
+        Me.lblMesPrecio21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesPrecio20
+        '
+        Me.lblMesPrecio20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio20.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio20", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesPrecio20.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesPrecio20.Location = New System.Drawing.Point(156, 367)
+        Me.lblMesPrecio20.Name = "lblMesPrecio20"
+        Me.lblMesPrecio20.Size = New System.Drawing.Size(66, 18)
+        Me.lblMesPrecio20.TabIndex = 127
+        Me.lblMesPrecio20.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio20
+        Me.lblMesPrecio20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesPrecio19
+        '
+        Me.lblMesPrecio19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio19.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio19", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesPrecio19.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesPrecio19.Location = New System.Drawing.Point(156, 350)
+        Me.lblMesPrecio19.Name = "lblMesPrecio19"
+        Me.lblMesPrecio19.Size = New System.Drawing.Size(66, 18)
+        Me.lblMesPrecio19.TabIndex = 126
+        Me.lblMesPrecio19.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio19
+        Me.lblMesPrecio19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesPrecio18
+        '
+        Me.lblMesPrecio18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio18.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio18", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesPrecio18.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesPrecio18.Location = New System.Drawing.Point(156, 333)
+        Me.lblMesPrecio18.Name = "lblMesPrecio18"
+        Me.lblMesPrecio18.Size = New System.Drawing.Size(66, 18)
+        Me.lblMesPrecio18.TabIndex = 125
+        Me.lblMesPrecio18.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio18
+        Me.lblMesPrecio18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesPrecio17
+        '
+        Me.lblMesPrecio17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio17.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio17", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesPrecio17.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesPrecio17.Location = New System.Drawing.Point(156, 316)
+        Me.lblMesPrecio17.Name = "lblMesPrecio17"
+        Me.lblMesPrecio17.Size = New System.Drawing.Size(66, 18)
+        Me.lblMesPrecio17.TabIndex = 124
+        Me.lblMesPrecio17.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio17
+        Me.lblMesPrecio17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesPrecio16
+        '
+        Me.lblMesPrecio16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio16.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio16", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesPrecio16.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesPrecio16.Location = New System.Drawing.Point(156, 299)
+        Me.lblMesPrecio16.Name = "lblMesPrecio16"
+        Me.lblMesPrecio16.Size = New System.Drawing.Size(66, 18)
+        Me.lblMesPrecio16.TabIndex = 123
+        Me.lblMesPrecio16.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio16
+        Me.lblMesPrecio16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesPrecio15
+        '
+        Me.lblMesPrecio15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio15.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio15", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesPrecio15.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesPrecio15.Location = New System.Drawing.Point(156, 282)
+        Me.lblMesPrecio15.Name = "lblMesPrecio15"
+        Me.lblMesPrecio15.Size = New System.Drawing.Size(66, 18)
+        Me.lblMesPrecio15.TabIndex = 122
+        Me.lblMesPrecio15.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio15
+        Me.lblMesPrecio15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesPrecio14
+        '
+        Me.lblMesPrecio14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio14.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio14", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesPrecio14.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesPrecio14.Location = New System.Drawing.Point(156, 265)
+        Me.lblMesPrecio14.Name = "lblMesPrecio14"
+        Me.lblMesPrecio14.Size = New System.Drawing.Size(66, 18)
+        Me.lblMesPrecio14.TabIndex = 121
+        Me.lblMesPrecio14.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio14
+        Me.lblMesPrecio14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesPrecio13
+        '
+        Me.lblMesPrecio13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio13.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio13", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesPrecio13.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesPrecio13.Location = New System.Drawing.Point(156, 248)
+        Me.lblMesPrecio13.Name = "lblMesPrecio13"
+        Me.lblMesPrecio13.Size = New System.Drawing.Size(66, 18)
+        Me.lblMesPrecio13.TabIndex = 120
+        Me.lblMesPrecio13.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio13
+        Me.lblMesPrecio13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label32
         '
@@ -2668,100 +3860,244 @@ Partial Class Form1
         Me.Label32.Text = "Price"
         Me.Label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'lblMesPrecio12
+        '
+        Me.lblMesPrecio12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesPrecio12.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesPrecio12.Location = New System.Drawing.Point(156, 231)
+        Me.lblMesPrecio12.Name = "lblMesPrecio12"
+        Me.lblMesPrecio12.Size = New System.Drawing.Size(66, 18)
+        Me.lblMesPrecio12.TabIndex = 119
+        Me.lblMesPrecio12.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio12
+        Me.lblMesPrecio12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesPrecio01
+        '
+        Me.lblMesPrecio01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesPrecio01.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesPrecio01.Location = New System.Drawing.Point(156, 44)
+        Me.lblMesPrecio01.Name = "lblMesPrecio01"
+        Me.lblMesPrecio01.Size = New System.Drawing.Size(66, 18)
+        Me.lblMesPrecio01.TabIndex = 132
+        Me.lblMesPrecio01.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio01
+        Me.lblMesPrecio01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesPrecio11
+        '
+        Me.lblMesPrecio11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesPrecio11.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesPrecio11.Location = New System.Drawing.Point(156, 214)
+        Me.lblMesPrecio11.Name = "lblMesPrecio11"
+        Me.lblMesPrecio11.Size = New System.Drawing.Size(66, 18)
+        Me.lblMesPrecio11.TabIndex = 118
+        Me.lblMesPrecio11.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio11
+        Me.lblMesPrecio11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesPrecio10
+        '
+        Me.lblMesPrecio10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesPrecio10.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesPrecio10.Location = New System.Drawing.Point(156, 197)
+        Me.lblMesPrecio10.Name = "lblMesPrecio10"
+        Me.lblMesPrecio10.Size = New System.Drawing.Size(66, 18)
+        Me.lblMesPrecio10.TabIndex = 117
+        Me.lblMesPrecio10.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio10
+        Me.lblMesPrecio10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesPrecio02
+        '
+        Me.lblMesPrecio02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesPrecio02.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesPrecio02.Location = New System.Drawing.Point(156, 61)
+        Me.lblMesPrecio02.Name = "lblMesPrecio02"
+        Me.lblMesPrecio02.Size = New System.Drawing.Size(66, 18)
+        Me.lblMesPrecio02.TabIndex = 131
+        Me.lblMesPrecio02.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio02
+        Me.lblMesPrecio02.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesPrecio09
+        '
+        Me.lblMesPrecio09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesPrecio09.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesPrecio09.Location = New System.Drawing.Point(156, 180)
+        Me.lblMesPrecio09.Name = "lblMesPrecio09"
+        Me.lblMesPrecio09.Size = New System.Drawing.Size(66, 18)
+        Me.lblMesPrecio09.TabIndex = 116
+        Me.lblMesPrecio09.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio09
+        Me.lblMesPrecio09.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesPrecio08
+        '
+        Me.lblMesPrecio08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesPrecio08.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesPrecio08.Location = New System.Drawing.Point(156, 163)
+        Me.lblMesPrecio08.Name = "lblMesPrecio08"
+        Me.lblMesPrecio08.Size = New System.Drawing.Size(66, 18)
+        Me.lblMesPrecio08.TabIndex = 115
+        Me.lblMesPrecio08.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio08
+        Me.lblMesPrecio08.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesPrecio03
+        '
+        Me.lblMesPrecio03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesPrecio03.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesPrecio03.Location = New System.Drawing.Point(156, 78)
+        Me.lblMesPrecio03.Name = "lblMesPrecio03"
+        Me.lblMesPrecio03.Size = New System.Drawing.Size(66, 18)
+        Me.lblMesPrecio03.TabIndex = 110
+        Me.lblMesPrecio03.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio03
+        Me.lblMesPrecio03.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesPrecio07
+        '
+        Me.lblMesPrecio07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesPrecio07.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesPrecio07.Location = New System.Drawing.Point(156, 146)
+        Me.lblMesPrecio07.Name = "lblMesPrecio07"
+        Me.lblMesPrecio07.Size = New System.Drawing.Size(66, 18)
+        Me.lblMesPrecio07.TabIndex = 114
+        Me.lblMesPrecio07.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio07
+        Me.lblMesPrecio07.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesPrecio04
+        '
+        Me.lblMesPrecio04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesPrecio04.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesPrecio04.Location = New System.Drawing.Point(156, 95)
+        Me.lblMesPrecio04.Name = "lblMesPrecio04"
+        Me.lblMesPrecio04.Size = New System.Drawing.Size(66, 18)
+        Me.lblMesPrecio04.TabIndex = 111
+        Me.lblMesPrecio04.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio04
+        Me.lblMesPrecio04.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesPrecio06
+        '
+        Me.lblMesPrecio06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesPrecio06.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesPrecio06.Location = New System.Drawing.Point(156, 129)
+        Me.lblMesPrecio06.Name = "lblMesPrecio06"
+        Me.lblMesPrecio06.Size = New System.Drawing.Size(66, 18)
+        Me.lblMesPrecio06.TabIndex = 113
+        Me.lblMesPrecio06.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio06
+        Me.lblMesPrecio06.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblMesPrecio05
+        '
+        Me.lblMesPrecio05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblMesPrecio05.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMesPrecio05.Location = New System.Drawing.Point(156, 112)
+        Me.lblMesPrecio05.Name = "lblMesPrecio05"
+        Me.lblMesPrecio05.Size = New System.Drawing.Size(66, 18)
+        Me.lblMesPrecio05.TabIndex = 112
+        Me.lblMesPrecio05.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio05
+        Me.lblMesPrecio05.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'Chart5
         '
-        ChartArea3.AxisX.MajorGrid.Interval = 0R
-        ChartArea3.AxisX.MajorGrid.IntervalOffset = 0R
-        ChartArea3.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
-        ChartArea3.Name = "ChartArea1"
-        Me.Chart5.ChartAreas.Add(ChartArea3)
-        Legend3.Name = "Legend1"
-        Me.Chart5.Legends.Add(Legend3)
+        ChartArea21.AxisX.MajorGrid.Interval = 0R
+        ChartArea21.AxisX.MajorGrid.IntervalOffset = 0R
+        ChartArea21.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
+        ChartArea21.Name = "ChartArea1"
+        Me.Chart5.ChartAreas.Add(ChartArea21)
+        Legend21.Name = "Legend1"
+        Me.Chart5.Legends.Add(Legend21)
         Me.Chart5.Location = New System.Drawing.Point(499, 203)
         Me.Chart5.Name = "Chart5"
-        Series3.ChartArea = "ChartArea1"
-        Series3.Color = System.Drawing.Color.OrangeRed
-        Series3.IsVisibleInLegend = False
-        Series3.Legend = "Legend1"
-        Series3.Name = "Series1"
-        Series3.ToolTip = "#VAL"
-        Series3.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[String]
-        Series3.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
-        Me.Chart5.Series.Add(Series3)
+        Series21.ChartArea = "ChartArea1"
+        Series21.Color = System.Drawing.Color.OrangeRed
+        Series21.IsVisibleInLegend = False
+        Series21.Legend = "Legend1"
+        Series21.Name = "Series1"
+        Series21.ToolTip = "#VAL"
+        Series21.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[String]
+        Series21.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
+        Me.Chart5.Series.Add(Series21)
         Me.Chart5.Size = New System.Drawing.Size(613, 199)
         Me.Chart5.TabIndex = 149
         '
         'Chart3
         '
-        ChartArea4.Name = "ChartArea1"
-        Me.Chart3.ChartAreas.Add(ChartArea4)
-        Legend4.Name = "Legend1"
-        Me.Chart3.Legends.Add(Legend4)
+        ChartArea22.Name = "ChartArea1"
+        Me.Chart3.ChartAreas.Add(ChartArea22)
+        Legend22.Name = "Legend1"
+        Me.Chart3.Legends.Add(Legend22)
         Me.Chart3.Location = New System.Drawing.Point(-39, 388)
         Me.Chart3.Name = "Chart3"
-        Series4.BorderWidth = 2
-        Series4.ChartArea = "ChartArea1"
-        Series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
-        Series4.Color = System.Drawing.Color.Fuchsia
-        Series4.EmptyPointStyle.IsValueShownAsLabel = True
-        Series4.EmptyPointStyle.IsVisibleInLegend = False
-        Series4.IsVisibleInLegend = False
-        Series4.LabelFormat = "0.00"
-        Series4.Legend = "Legend1"
-        Series4.Name = "Series1"
-        Series4.ToolTip = "#VAL"
-        Series4.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Series4.YValuesPerPoint = 4
-        Me.Chart3.Series.Add(Series4)
+        Series22.BorderWidth = 2
+        Series22.ChartArea = "ChartArea1"
+        Series22.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
+        Series22.Color = System.Drawing.Color.Fuchsia
+        Series22.EmptyPointStyle.IsValueShownAsLabel = True
+        Series22.EmptyPointStyle.IsVisibleInLegend = False
+        Series22.IsVisibleInLegend = False
+        Series22.LabelFormat = "0.00"
+        Series22.Legend = "Legend1"
+        Series22.Name = "Series1"
+        Series22.ToolTip = "#VAL"
+        Series22.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Series22.YValuesPerPoint = 4
+        Me.Chart3.Series.Add(Series22)
         Me.Chart3.Size = New System.Drawing.Size(1205, 153)
         Me.Chart3.TabIndex = 147
         Me.Chart3.Text = "Chart3"
         '
         'Chart4
         '
-        ChartArea5.AxisX.MajorGrid.Interval = 0R
-        ChartArea5.AxisX.MajorGrid.IntervalOffset = 0R
-        ChartArea5.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
-        ChartArea5.Name = "ChartArea1"
-        Me.Chart4.ChartAreas.Add(ChartArea5)
-        Legend5.Name = "Legend1"
-        Me.Chart4.Legends.Add(Legend5)
+        ChartArea23.AxisX.MajorGrid.Interval = 0R
+        ChartArea23.AxisX.MajorGrid.IntervalOffset = 0R
+        ChartArea23.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
+        ChartArea23.Name = "ChartArea1"
+        Me.Chart4.ChartAreas.Add(ChartArea23)
+        Legend23.Name = "Legend1"
+        Me.Chart4.Legends.Add(Legend23)
         Me.Chart4.Location = New System.Drawing.Point(514, 0)
         Me.Chart4.Name = "Chart4"
-        Series5.ChartArea = "ChartArea1"
-        Series5.Color = System.Drawing.Color.Lime
-        Series5.IsVisibleInLegend = False
-        Series5.Legend = "Legend1"
-        Series5.Name = "Series1"
-        Series5.ToolTip = "#VAL"
-        Series5.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[String]
-        Series5.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
-        Me.Chart4.Series.Add(Series5)
+        Series23.ChartArea = "ChartArea1"
+        Series23.Color = System.Drawing.Color.Lime
+        Series23.IsVisibleInLegend = False
+        Series23.Legend = "Legend1"
+        Series23.Name = "Series1"
+        Series23.ToolTip = "#VAL"
+        Series23.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[String]
+        Series23.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
+        Me.Chart4.Series.Add(Series23)
         Me.Chart4.Size = New System.Drawing.Size(598, 213)
         Me.Chart4.TabIndex = 150
         '
         'Chart6
         '
-        ChartArea6.AxisX.MajorGrid.Interval = 0R
-        ChartArea6.AxisX.MajorGrid.IntervalOffset = 0R
-        ChartArea6.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
-        ChartArea6.Name = "ChartArea1"
-        Me.Chart6.ChartAreas.Add(ChartArea6)
-        Legend6.Name = "Legend1"
-        Me.Chart6.Legends.Add(Legend6)
+        ChartArea24.AxisX.MajorGrid.Interval = 0R
+        ChartArea24.AxisX.MajorGrid.IntervalOffset = 0R
+        ChartArea24.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
+        ChartArea24.Name = "ChartArea1"
+        Me.Chart6.ChartAreas.Add(ChartArea24)
+        Legend24.Name = "Legend1"
+        Me.Chart6.Legends.Add(Legend24)
         Me.Chart6.Location = New System.Drawing.Point(-40, 528)
         Me.Chart6.Name = "Chart6"
-        Series6.BorderWidth = 2
-        Series6.ChartArea = "ChartArea1"
-        Series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line
-        Series6.Color = System.Drawing.Color.DarkOrchid
-        Series6.IsVisibleInLegend = False
-        Series6.Legend = "Legend1"
-        Series6.Name = "Series1"
-        Series6.ToolTip = "#VAL"
-        Series6.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Series6.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
-        Me.Chart6.Series.Add(Series6)
+        Series24.BorderWidth = 2
+        Series24.ChartArea = "ChartArea1"
+        Series24.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line
+        Series24.Color = System.Drawing.Color.DarkOrchid
+        Series24.IsVisibleInLegend = False
+        Series24.Legend = "Legend1"
+        Series24.Name = "Series1"
+        Series24.ToolTip = "#VAL"
+        Series24.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Series24.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
+        Me.Chart6.Series.Add(Series24)
         Me.Chart6.Size = New System.Drawing.Size(1196, 150)
         Me.Chart6.TabIndex = 151
         '
@@ -2806,6 +4142,7 @@ Partial Class Form1
         '
         'GroupBox16
         '
+        Me.GroupBox16.Controls.Add(Me.Label98)
         Me.GroupBox16.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox16.Location = New System.Drawing.Point(724, 300)
         Me.GroupBox16.Name = "GroupBox16"
@@ -2816,19 +4153,19 @@ Partial Class Form1
         '
         'GroupBox15
         '
-        Me.GroupBox15.Controls.Add(Me.Label99)
+        Me.GroupBox15.Controls.Add(Me.lblGananciasAño01)
         Me.GroupBox15.Controls.Add(Me.Label101)
-        Me.GroupBox15.Controls.Add(Me.Label102)
-        Me.GroupBox15.Controls.Add(Me.Label104)
-        Me.GroupBox15.Controls.Add(Me.Label107)
-        Me.GroupBox15.Controls.Add(Me.Label110)
-        Me.GroupBox15.Controls.Add(Me.Label112)
-        Me.GroupBox15.Controls.Add(Me.Label114)
-        Me.GroupBox15.Controls.Add(Me.Label116)
-        Me.GroupBox15.Controls.Add(Me.Label118)
-        Me.GroupBox15.Controls.Add(Me.Label120)
-        Me.GroupBox15.Controls.Add(Me.Label122)
-        Me.GroupBox15.Controls.Add(Me.Label126)
+        Me.GroupBox15.Controls.Add(Me.lblGananciasAño02)
+        Me.GroupBox15.Controls.Add(Me.lblGananciasAño07)
+        Me.GroupBox15.Controls.Add(Me.lblGananciasAño04)
+        Me.GroupBox15.Controls.Add(Me.lblGananciasAño08)
+        Me.GroupBox15.Controls.Add(Me.lblGananciasAño10)
+        Me.GroupBox15.Controls.Add(Me.lblGananciasAño05)
+        Me.GroupBox15.Controls.Add(Me.lblGananciasAño09)
+        Me.GroupBox15.Controls.Add(Me.lblGananciasAño06)
+        Me.GroupBox15.Controls.Add(Me.lblGananciasAño11)
+        Me.GroupBox15.Controls.Add(Me.lblGananciasAño12)
+        Me.GroupBox15.Controls.Add(Me.lblGananciasAño03)
         Me.GroupBox15.Controls.Add(Me.Label128)
         Me.GroupBox15.Controls.Add(Me.lblBalanceAño01)
         Me.GroupBox15.Controls.Add(Me.lblBalanceAño02)
@@ -2869,20 +4206,20 @@ Partial Class Form1
         Me.GroupBox15.Controls.Add(Me.lblPrecioAño06)
         Me.GroupBox15.Controls.Add(Me.lblPrecioAño05)
         Me.GroupBox15.Controls.Add(Me.Label169)
-        Me.GroupBox15.Controls.Add(Me.Label124)
-        Me.GroupBox15.Controls.Add(Me.Label98)
-        Me.GroupBox15.Controls.Add(Me.Label105)
-        Me.GroupBox15.Controls.Add(Me.Label108)
-        Me.GroupBox15.Controls.Add(Me.Label111)
-        Me.GroupBox15.Controls.Add(Me.Label113)
-        Me.GroupBox15.Controls.Add(Me.Label115)
-        Me.GroupBox15.Controls.Add(Me.Label117)
-        Me.GroupBox15.Controls.Add(Me.Label119)
-        Me.GroupBox15.Controls.Add(Me.Label121)
-        Me.GroupBox15.Controls.Add(Me.Label123)
+        Me.GroupBox15.Controls.Add(Me.lblTransasionesAño02)
+        Me.GroupBox15.Controls.Add(Me.lblTransasionesAño03)
+        Me.GroupBox15.Controls.Add(Me.lblTransasionesAño12)
+        Me.GroupBox15.Controls.Add(Me.lblTransasionesAño11)
+        Me.GroupBox15.Controls.Add(Me.lblTransasionesAño06)
+        Me.GroupBox15.Controls.Add(Me.lblTransasionesAño09)
+        Me.GroupBox15.Controls.Add(Me.lblTransasionesAño05)
+        Me.GroupBox15.Controls.Add(Me.lblTransasionesAño10)
+        Me.GroupBox15.Controls.Add(Me.lblTransasionesAño08)
+        Me.GroupBox15.Controls.Add(Me.lblTransasionesAño04)
+        Me.GroupBox15.Controls.Add(Me.lblTransasionesAño07)
         Me.GroupBox15.Controls.Add(Me.Label125)
-        Me.GroupBox15.Controls.Add(Me.Label127)
-        Me.GroupBox15.Controls.Add(Me.Label168)
+        Me.GroupBox15.Controls.Add(Me.lblTransasionesAño01)
+        Me.GroupBox15.Controls.Add(Me.lblTotalGananciaAño)
         Me.GroupBox15.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox15.Location = New System.Drawing.Point(724, 15)
         Me.GroupBox15.Name = "GroupBox15"
@@ -2891,16 +4228,16 @@ Partial Class Form1
         Me.GroupBox15.TabStop = False
         Me.GroupBox15.Text = "Balance Year"
         '
-        'Label99
+        'lblGananciasAño01
         '
-        Me.Label99.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label99.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label99.Location = New System.Drawing.Point(266, 44)
-        Me.Label99.Name = "Label99"
-        Me.Label99.Size = New System.Drawing.Size(93, 18)
-        Me.Label99.TabIndex = 217
-        Me.Label99.Text = "0"
-        Me.Label99.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblGananciasAño01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño01.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblGananciasAño01.Location = New System.Drawing.Point(266, 44)
+        Me.lblGananciasAño01.Name = "lblGananciasAño01"
+        Me.lblGananciasAño01.Size = New System.Drawing.Size(93, 18)
+        Me.lblGananciasAño01.TabIndex = 217
+        Me.lblGananciasAño01.Text = "0"
+        Me.lblGananciasAño01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label101
         '
@@ -2914,126 +4251,126 @@ Partial Class Form1
         Me.Label101.Text = "Gain"
         Me.Label101.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label102
+        'lblGananciasAño02
         '
-        Me.Label102.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label102.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label102.Location = New System.Drawing.Point(266, 61)
-        Me.Label102.Name = "Label102"
-        Me.Label102.Size = New System.Drawing.Size(93, 18)
-        Me.Label102.TabIndex = 219
-        Me.Label102.Text = "0"
-        Me.Label102.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblGananciasAño02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño02.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblGananciasAño02.Location = New System.Drawing.Point(266, 61)
+        Me.lblGananciasAño02.Name = "lblGananciasAño02"
+        Me.lblGananciasAño02.Size = New System.Drawing.Size(93, 18)
+        Me.lblGananciasAño02.TabIndex = 219
+        Me.lblGananciasAño02.Text = "0"
+        Me.lblGananciasAño02.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label104
+        'lblGananciasAño07
         '
-        Me.Label104.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label104.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label104.Location = New System.Drawing.Point(266, 146)
-        Me.Label104.Name = "Label104"
-        Me.Label104.Size = New System.Drawing.Size(93, 18)
-        Me.Label104.TabIndex = 220
-        Me.Label104.Text = "0"
-        Me.Label104.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblGananciasAño07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño07.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblGananciasAño07.Location = New System.Drawing.Point(266, 146)
+        Me.lblGananciasAño07.Name = "lblGananciasAño07"
+        Me.lblGananciasAño07.Size = New System.Drawing.Size(93, 18)
+        Me.lblGananciasAño07.TabIndex = 220
+        Me.lblGananciasAño07.Text = "0"
+        Me.lblGananciasAño07.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label107
+        'lblGananciasAño04
         '
-        Me.Label107.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label107.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label107.Location = New System.Drawing.Point(266, 95)
-        Me.Label107.Name = "Label107"
-        Me.Label107.Size = New System.Drawing.Size(93, 18)
-        Me.Label107.TabIndex = 221
-        Me.Label107.Text = "0"
-        Me.Label107.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblGananciasAño04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño04.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblGananciasAño04.Location = New System.Drawing.Point(266, 95)
+        Me.lblGananciasAño04.Name = "lblGananciasAño04"
+        Me.lblGananciasAño04.Size = New System.Drawing.Size(93, 18)
+        Me.lblGananciasAño04.TabIndex = 221
+        Me.lblGananciasAño04.Text = "0"
+        Me.lblGananciasAño04.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label110
+        'lblGananciasAño08
         '
-        Me.Label110.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label110.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label110.Location = New System.Drawing.Point(266, 163)
-        Me.Label110.Name = "Label110"
-        Me.Label110.Size = New System.Drawing.Size(93, 18)
-        Me.Label110.TabIndex = 222
-        Me.Label110.Text = "0"
-        Me.Label110.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblGananciasAño08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño08.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblGananciasAño08.Location = New System.Drawing.Point(266, 163)
+        Me.lblGananciasAño08.Name = "lblGananciasAño08"
+        Me.lblGananciasAño08.Size = New System.Drawing.Size(93, 18)
+        Me.lblGananciasAño08.TabIndex = 222
+        Me.lblGananciasAño08.Text = "0"
+        Me.lblGananciasAño08.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label112
+        'lblGananciasAño10
         '
-        Me.Label112.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label112.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label112.Location = New System.Drawing.Point(266, 197)
-        Me.Label112.Name = "Label112"
-        Me.Label112.Size = New System.Drawing.Size(93, 18)
-        Me.Label112.TabIndex = 225
-        Me.Label112.Text = "0"
-        Me.Label112.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblGananciasAño10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño10.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblGananciasAño10.Location = New System.Drawing.Point(266, 197)
+        Me.lblGananciasAño10.Name = "lblGananciasAño10"
+        Me.lblGananciasAño10.Size = New System.Drawing.Size(93, 18)
+        Me.lblGananciasAño10.TabIndex = 225
+        Me.lblGananciasAño10.Text = "0"
+        Me.lblGananciasAño10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label114
+        'lblGananciasAño05
         '
-        Me.Label114.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label114.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label114.Location = New System.Drawing.Point(266, 112)
-        Me.Label114.Name = "Label114"
-        Me.Label114.Size = New System.Drawing.Size(93, 18)
-        Me.Label114.TabIndex = 228
-        Me.Label114.Text = "0"
-        Me.Label114.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblGananciasAño05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño05.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblGananciasAño05.Location = New System.Drawing.Point(266, 112)
+        Me.lblGananciasAño05.Name = "lblGananciasAño05"
+        Me.lblGananciasAño05.Size = New System.Drawing.Size(93, 18)
+        Me.lblGananciasAño05.TabIndex = 228
+        Me.lblGananciasAño05.Text = "0"
+        Me.lblGananciasAño05.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label116
+        'lblGananciasAño09
         '
-        Me.Label116.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label116.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label116.Location = New System.Drawing.Point(266, 180)
-        Me.Label116.Name = "Label116"
-        Me.Label116.Size = New System.Drawing.Size(93, 18)
-        Me.Label116.TabIndex = 227
-        Me.Label116.Text = "0"
-        Me.Label116.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblGananciasAño09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño09.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblGananciasAño09.Location = New System.Drawing.Point(266, 180)
+        Me.lblGananciasAño09.Name = "lblGananciasAño09"
+        Me.lblGananciasAño09.Size = New System.Drawing.Size(93, 18)
+        Me.lblGananciasAño09.TabIndex = 227
+        Me.lblGananciasAño09.Text = "0"
+        Me.lblGananciasAño09.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label118
+        'lblGananciasAño06
         '
-        Me.Label118.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label118.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label118.Location = New System.Drawing.Point(266, 129)
-        Me.Label118.Name = "Label118"
-        Me.Label118.Size = New System.Drawing.Size(93, 18)
-        Me.Label118.TabIndex = 223
-        Me.Label118.Text = "0"
-        Me.Label118.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblGananciasAño06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño06.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblGananciasAño06.Location = New System.Drawing.Point(266, 129)
+        Me.lblGananciasAño06.Name = "lblGananciasAño06"
+        Me.lblGananciasAño06.Size = New System.Drawing.Size(93, 18)
+        Me.lblGananciasAño06.TabIndex = 223
+        Me.lblGananciasAño06.Text = "0"
+        Me.lblGananciasAño06.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label120
+        'lblGananciasAño11
         '
-        Me.Label120.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label120.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label120.Location = New System.Drawing.Point(266, 214)
-        Me.Label120.Name = "Label120"
-        Me.Label120.Size = New System.Drawing.Size(93, 18)
-        Me.Label120.TabIndex = 226
-        Me.Label120.Text = "0"
-        Me.Label120.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblGananciasAño11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño11.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblGananciasAño11.Location = New System.Drawing.Point(266, 214)
+        Me.lblGananciasAño11.Name = "lblGananciasAño11"
+        Me.lblGananciasAño11.Size = New System.Drawing.Size(93, 18)
+        Me.lblGananciasAño11.TabIndex = 226
+        Me.lblGananciasAño11.Text = "0"
+        Me.lblGananciasAño11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label122
+        'lblGananciasAño12
         '
-        Me.Label122.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label122.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label122.Location = New System.Drawing.Point(266, 231)
-        Me.Label122.Name = "Label122"
-        Me.Label122.Size = New System.Drawing.Size(93, 18)
-        Me.Label122.TabIndex = 224
-        Me.Label122.Text = "0"
-        Me.Label122.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblGananciasAño12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño12.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblGananciasAño12.Location = New System.Drawing.Point(266, 231)
+        Me.lblGananciasAño12.Name = "lblGananciasAño12"
+        Me.lblGananciasAño12.Size = New System.Drawing.Size(93, 18)
+        Me.lblGananciasAño12.TabIndex = 224
+        Me.lblGananciasAño12.Text = "0"
+        Me.lblGananciasAño12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label126
+        'lblGananciasAño03
         '
-        Me.Label126.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label126.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label126.Location = New System.Drawing.Point(266, 78)
-        Me.Label126.Name = "Label126"
-        Me.Label126.Size = New System.Drawing.Size(93, 18)
-        Me.Label126.TabIndex = 216
-        Me.Label126.Text = "0"
-        Me.Label126.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblGananciasAño03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño03.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblGananciasAño03.Location = New System.Drawing.Point(266, 78)
+        Me.lblGananciasAño03.Name = "lblGananciasAño03"
+        Me.lblGananciasAño03.Size = New System.Drawing.Size(93, 18)
+        Me.lblGananciasAño03.TabIndex = 216
+        Me.lblGananciasAño03.Text = "0"
+        Me.lblGananciasAño03.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label128
         '
@@ -3046,6 +4383,150 @@ Partial Class Form1
         Me.Label128.TabIndex = 178
         Me.Label128.Text = "Ducos"
         Me.Label128.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblBalanceAño01
+        '
+        Me.lblBalanceAño01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceAño01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblBalanceAño01.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBalanceAño01.Location = New System.Drawing.Point(37, 44)
+        Me.lblBalanceAño01.Name = "lblBalanceAño01"
+        Me.lblBalanceAño01.Size = New System.Drawing.Size(79, 18)
+        Me.lblBalanceAño01.TabIndex = 177
+        Me.lblBalanceAño01.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño01
+        Me.lblBalanceAño01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblBalanceAño02
+        '
+        Me.lblBalanceAño02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceAño02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblBalanceAño02.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBalanceAño02.Location = New System.Drawing.Point(37, 61)
+        Me.lblBalanceAño02.Name = "lblBalanceAño02"
+        Me.lblBalanceAño02.Size = New System.Drawing.Size(79, 18)
+        Me.lblBalanceAño02.TabIndex = 184
+        Me.lblBalanceAño02.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño02
+        Me.lblBalanceAño02.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblBalanceAño03
+        '
+        Me.lblBalanceAño03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceAño03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblBalanceAño03.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBalanceAño03.Location = New System.Drawing.Point(37, 78)
+        Me.lblBalanceAño03.Name = "lblBalanceAño03"
+        Me.lblBalanceAño03.Size = New System.Drawing.Size(79, 18)
+        Me.lblBalanceAño03.TabIndex = 180
+        Me.lblBalanceAño03.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño03
+        Me.lblBalanceAño03.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblBalanceAño04
+        '
+        Me.lblBalanceAño04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceAño04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblBalanceAño04.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBalanceAño04.Location = New System.Drawing.Point(37, 95)
+        Me.lblBalanceAño04.Name = "lblBalanceAño04"
+        Me.lblBalanceAño04.Size = New System.Drawing.Size(79, 18)
+        Me.lblBalanceAño04.TabIndex = 181
+        Me.lblBalanceAño04.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño04
+        Me.lblBalanceAño04.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblBalanceAño05
+        '
+        Me.lblBalanceAño05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceAño05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblBalanceAño05.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBalanceAño05.Location = New System.Drawing.Point(37, 112)
+        Me.lblBalanceAño05.Name = "lblBalanceAño05"
+        Me.lblBalanceAño05.Size = New System.Drawing.Size(79, 18)
+        Me.lblBalanceAño05.TabIndex = 182
+        Me.lblBalanceAño05.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño05
+        Me.lblBalanceAño05.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblBalanceAño06
+        '
+        Me.lblBalanceAño06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceAño06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblBalanceAño06.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBalanceAño06.Location = New System.Drawing.Point(37, 129)
+        Me.lblBalanceAño06.Name = "lblBalanceAño06"
+        Me.lblBalanceAño06.Size = New System.Drawing.Size(79, 18)
+        Me.lblBalanceAño06.TabIndex = 183
+        Me.lblBalanceAño06.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño06
+        Me.lblBalanceAño06.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblBalanceAño07
+        '
+        Me.lblBalanceAño07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceAño07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblBalanceAño07.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBalanceAño07.Location = New System.Drawing.Point(37, 146)
+        Me.lblBalanceAño07.Name = "lblBalanceAño07"
+        Me.lblBalanceAño07.Size = New System.Drawing.Size(79, 18)
+        Me.lblBalanceAño07.TabIndex = 189
+        Me.lblBalanceAño07.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño07
+        Me.lblBalanceAño07.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblBalanceAño08
+        '
+        Me.lblBalanceAño08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceAño08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblBalanceAño08.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBalanceAño08.Location = New System.Drawing.Point(37, 163)
+        Me.lblBalanceAño08.Name = "lblBalanceAño08"
+        Me.lblBalanceAño08.Size = New System.Drawing.Size(79, 18)
+        Me.lblBalanceAño08.TabIndex = 185
+        Me.lblBalanceAño08.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño08
+        Me.lblBalanceAño08.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblBalanceAño09
+        '
+        Me.lblBalanceAño09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceAño09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblBalanceAño09.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBalanceAño09.Location = New System.Drawing.Point(37, 180)
+        Me.lblBalanceAño09.Name = "lblBalanceAño09"
+        Me.lblBalanceAño09.Size = New System.Drawing.Size(79, 18)
+        Me.lblBalanceAño09.TabIndex = 186
+        Me.lblBalanceAño09.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño09
+        Me.lblBalanceAño09.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblBalanceAño10
+        '
+        Me.lblBalanceAño10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceAño10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblBalanceAño10.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBalanceAño10.Location = New System.Drawing.Point(37, 197)
+        Me.lblBalanceAño10.Name = "lblBalanceAño10"
+        Me.lblBalanceAño10.Size = New System.Drawing.Size(79, 18)
+        Me.lblBalanceAño10.TabIndex = 187
+        Me.lblBalanceAño10.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño10
+        Me.lblBalanceAño10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblBalanceAño11
+        '
+        Me.lblBalanceAño11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceAño11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblBalanceAño11.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBalanceAño11.Location = New System.Drawing.Point(37, 214)
+        Me.lblBalanceAño11.Name = "lblBalanceAño11"
+        Me.lblBalanceAño11.Size = New System.Drawing.Size(79, 18)
+        Me.lblBalanceAño11.TabIndex = 188
+        Me.lblBalanceAño11.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño11
+        Me.lblBalanceAño11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblBalanceAño12
+        '
+        Me.lblBalanceAño12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceAño12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblBalanceAño12.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBalanceAño12.Location = New System.Drawing.Point(37, 231)
+        Me.lblBalanceAño12.Name = "lblBalanceAño12"
+        Me.lblBalanceAño12.Size = New System.Drawing.Size(79, 18)
+        Me.lblBalanceAño12.TabIndex = 179
+        Me.lblBalanceAño12.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño12
+        Me.lblBalanceAño12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label142
         '
@@ -3203,6 +4684,90 @@ Partial Class Form1
         Me.Label155.Text = "Price"
         Me.Label155.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'lblPrecioAño12
+        '
+        Me.lblPrecioAño12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioAño12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblPrecioAño12.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrecioAño12.Location = New System.Drawing.Point(115, 231)
+        Me.lblPrecioAño12.Name = "lblPrecioAño12"
+        Me.lblPrecioAño12.Size = New System.Drawing.Size(66, 18)
+        Me.lblPrecioAño12.TabIndex = 212
+        Me.lblPrecioAño12.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño12
+        Me.lblPrecioAño12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblPrecioAño01
+        '
+        Me.lblPrecioAño01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioAño01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblPrecioAño01.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrecioAño01.Location = New System.Drawing.Point(115, 44)
+        Me.lblPrecioAño01.Name = "lblPrecioAño01"
+        Me.lblPrecioAño01.Size = New System.Drawing.Size(66, 18)
+        Me.lblPrecioAño01.TabIndex = 214
+        Me.lblPrecioAño01.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño01
+        Me.lblPrecioAño01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblPrecioAño11
+        '
+        Me.lblPrecioAño11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioAño11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblPrecioAño11.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrecioAño11.Location = New System.Drawing.Point(115, 214)
+        Me.lblPrecioAño11.Name = "lblPrecioAño11"
+        Me.lblPrecioAño11.Size = New System.Drawing.Size(66, 18)
+        Me.lblPrecioAño11.TabIndex = 211
+        Me.lblPrecioAño11.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño11
+        Me.lblPrecioAño11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblPrecioAño10
+        '
+        Me.lblPrecioAño10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioAño10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblPrecioAño10.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrecioAño10.Location = New System.Drawing.Point(115, 197)
+        Me.lblPrecioAño10.Name = "lblPrecioAño10"
+        Me.lblPrecioAño10.Size = New System.Drawing.Size(66, 18)
+        Me.lblPrecioAño10.TabIndex = 210
+        Me.lblPrecioAño10.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño10
+        Me.lblPrecioAño10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblPrecioAño02
+        '
+        Me.lblPrecioAño02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioAño02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblPrecioAño02.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrecioAño02.Location = New System.Drawing.Point(115, 61)
+        Me.lblPrecioAño02.Name = "lblPrecioAño02"
+        Me.lblPrecioAño02.Size = New System.Drawing.Size(66, 18)
+        Me.lblPrecioAño02.TabIndex = 213
+        Me.lblPrecioAño02.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño02
+        Me.lblPrecioAño02.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblPrecioAño09
+        '
+        Me.lblPrecioAño09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioAño09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblPrecioAño09.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrecioAño09.Location = New System.Drawing.Point(115, 180)
+        Me.lblPrecioAño09.Name = "lblPrecioAño09"
+        Me.lblPrecioAño09.Size = New System.Drawing.Size(66, 18)
+        Me.lblPrecioAño09.TabIndex = 209
+        Me.lblPrecioAño09.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño09
+        Me.lblPrecioAño09.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblPrecioAño08
+        '
+        Me.lblPrecioAño08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioAño08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblPrecioAño08.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrecioAño08.Location = New System.Drawing.Point(115, 163)
+        Me.lblPrecioAño08.Name = "lblPrecioAño08"
+        Me.lblPrecioAño08.Size = New System.Drawing.Size(66, 18)
+        Me.lblPrecioAño08.TabIndex = 208
+        Me.lblPrecioAño08.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño08
+        Me.lblPrecioAño08.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'lblPrecioAño03
         '
         Me.lblPrecioAño03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
@@ -3215,6 +4780,18 @@ Partial Class Form1
         Me.lblPrecioAño03.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño03
         Me.lblPrecioAño03.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'lblPrecioAño07
+        '
+        Me.lblPrecioAño07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioAño07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblPrecioAño07.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrecioAño07.Location = New System.Drawing.Point(115, 146)
+        Me.lblPrecioAño07.Name = "lblPrecioAño07"
+        Me.lblPrecioAño07.Size = New System.Drawing.Size(66, 18)
+        Me.lblPrecioAño07.TabIndex = 207
+        Me.lblPrecioAño07.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño07
+        Me.lblPrecioAño07.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'lblPrecioAño04
         '
         Me.lblPrecioAño04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
@@ -3225,6 +4802,30 @@ Partial Class Form1
         Me.lblPrecioAño04.TabIndex = 204
         Me.lblPrecioAño04.Text = "0"
         Me.lblPrecioAño04.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblPrecioAño06
+        '
+        Me.lblPrecioAño06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioAño06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblPrecioAño06.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrecioAño06.Location = New System.Drawing.Point(115, 129)
+        Me.lblPrecioAño06.Name = "lblPrecioAño06"
+        Me.lblPrecioAño06.Size = New System.Drawing.Size(66, 18)
+        Me.lblPrecioAño06.TabIndex = 206
+        Me.lblPrecioAño06.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño06
+        Me.lblPrecioAño06.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblPrecioAño05
+        '
+        Me.lblPrecioAño05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioAño05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblPrecioAño05.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrecioAño05.Location = New System.Drawing.Point(115, 112)
+        Me.lblPrecioAño05.Name = "lblPrecioAño05"
+        Me.lblPrecioAño05.Size = New System.Drawing.Size(66, 18)
+        Me.lblPrecioAño05.TabIndex = 205
+        Me.lblPrecioAño05.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño05
+        Me.lblPrecioAño05.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label169
         '
@@ -3238,126 +4839,137 @@ Partial Class Form1
         Me.Label169.Text = "Annual Total:"
         Me.Label169.TextAlign = System.Drawing.ContentAlignment.BottomRight
         '
-        'Label124
+        'lblTransasionesAño02
         '
-        Me.Label124.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label124.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label124.Location = New System.Drawing.Point(180, 61)
-        Me.Label124.Name = "Label124"
-        Me.Label124.Size = New System.Drawing.Size(89, 18)
-        Me.Label124.TabIndex = 230
-        Me.Label124.Text = "0"
-        Me.Label124.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblTransasionesAño02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransasionesAño02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblTransasionesAño02.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTransasionesAño02.Location = New System.Drawing.Point(180, 61)
+        Me.lblTransasionesAño02.Name = "lblTransasionesAño02"
+        Me.lblTransasionesAño02.Size = New System.Drawing.Size(89, 18)
+        Me.lblTransasionesAño02.TabIndex = 230
+        Me.lblTransasionesAño02.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño02
+        Me.lblTransasionesAño02.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label98
+        'lblTransasionesAño03
         '
-        Me.Label98.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label98.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label98.Location = New System.Drawing.Point(180, 78)
-        Me.Label98.Name = "Label98"
-        Me.Label98.Size = New System.Drawing.Size(89, 18)
-        Me.Label98.TabIndex = 229
-        Me.Label98.Text = "0"
-        Me.Label98.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblTransasionesAño03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransasionesAño03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblTransasionesAño03.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTransasionesAño03.Location = New System.Drawing.Point(180, 78)
+        Me.lblTransasionesAño03.Name = "lblTransasionesAño03"
+        Me.lblTransasionesAño03.Size = New System.Drawing.Size(89, 18)
+        Me.lblTransasionesAño03.TabIndex = 229
+        Me.lblTransasionesAño03.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño03
+        Me.lblTransasionesAño03.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label105
+        'lblTransasionesAño12
         '
-        Me.Label105.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label105.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label105.Location = New System.Drawing.Point(180, 231)
-        Me.Label105.Name = "Label105"
-        Me.Label105.Size = New System.Drawing.Size(89, 18)
-        Me.Label105.TabIndex = 239
-        Me.Label105.Text = "0"
-        Me.Label105.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblTransasionesAño12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransasionesAño12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblTransasionesAño12.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTransasionesAño12.Location = New System.Drawing.Point(180, 231)
+        Me.lblTransasionesAño12.Name = "lblTransasionesAño12"
+        Me.lblTransasionesAño12.Size = New System.Drawing.Size(89, 18)
+        Me.lblTransasionesAño12.TabIndex = 239
+        Me.lblTransasionesAño12.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño12
+        Me.lblTransasionesAño12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label108
+        'lblTransasionesAño11
         '
-        Me.Label108.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label108.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label108.Location = New System.Drawing.Point(180, 214)
-        Me.Label108.Name = "Label108"
-        Me.Label108.Size = New System.Drawing.Size(89, 18)
-        Me.Label108.TabIndex = 238
-        Me.Label108.Text = "0"
-        Me.Label108.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblTransasionesAño11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransasionesAño11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblTransasionesAño11.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTransasionesAño11.Location = New System.Drawing.Point(180, 214)
+        Me.lblTransasionesAño11.Name = "lblTransasionesAño11"
+        Me.lblTransasionesAño11.Size = New System.Drawing.Size(89, 18)
+        Me.lblTransasionesAño11.TabIndex = 238
+        Me.lblTransasionesAño11.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño11
+        Me.lblTransasionesAño11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label111
+        'lblTransasionesAño06
         '
-        Me.Label111.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label111.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label111.Location = New System.Drawing.Point(180, 129)
-        Me.Label111.Name = "Label111"
-        Me.Label111.Size = New System.Drawing.Size(89, 18)
-        Me.Label111.TabIndex = 237
-        Me.Label111.Text = "0"
-        Me.Label111.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblTransasionesAño06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransasionesAño06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblTransasionesAño06.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTransasionesAño06.Location = New System.Drawing.Point(180, 129)
+        Me.lblTransasionesAño06.Name = "lblTransasionesAño06"
+        Me.lblTransasionesAño06.Size = New System.Drawing.Size(89, 18)
+        Me.lblTransasionesAño06.TabIndex = 237
+        Me.lblTransasionesAño06.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño06
+        Me.lblTransasionesAño06.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label113
+        'lblTransasionesAño09
         '
-        Me.Label113.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label113.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label113.Location = New System.Drawing.Point(180, 180)
-        Me.Label113.Name = "Label113"
-        Me.Label113.Size = New System.Drawing.Size(89, 18)
-        Me.Label113.TabIndex = 236
-        Me.Label113.Text = "0"
-        Me.Label113.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblTransasionesAño09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransasionesAño09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblTransasionesAño09.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTransasionesAño09.Location = New System.Drawing.Point(180, 180)
+        Me.lblTransasionesAño09.Name = "lblTransasionesAño09"
+        Me.lblTransasionesAño09.Size = New System.Drawing.Size(89, 18)
+        Me.lblTransasionesAño09.TabIndex = 236
+        Me.lblTransasionesAño09.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño09
+        Me.lblTransasionesAño09.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label115
+        'lblTransasionesAño05
         '
-        Me.Label115.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label115.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label115.Location = New System.Drawing.Point(180, 112)
-        Me.Label115.Name = "Label115"
-        Me.Label115.Size = New System.Drawing.Size(89, 18)
-        Me.Label115.TabIndex = 235
-        Me.Label115.Text = "0"
-        Me.Label115.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblTransasionesAño05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransasionesAño05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblTransasionesAño05.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTransasionesAño05.Location = New System.Drawing.Point(180, 112)
+        Me.lblTransasionesAño05.Name = "lblTransasionesAño05"
+        Me.lblTransasionesAño05.Size = New System.Drawing.Size(89, 18)
+        Me.lblTransasionesAño05.TabIndex = 235
+        Me.lblTransasionesAño05.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño05
+        Me.lblTransasionesAño05.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label117
+        'lblTransasionesAño10
         '
-        Me.Label117.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label117.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label117.Location = New System.Drawing.Point(180, 197)
-        Me.Label117.Name = "Label117"
-        Me.Label117.Size = New System.Drawing.Size(89, 18)
-        Me.Label117.TabIndex = 234
-        Me.Label117.Text = "0"
-        Me.Label117.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblTransasionesAño10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransasionesAño10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblTransasionesAño10.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTransasionesAño10.Location = New System.Drawing.Point(180, 197)
+        Me.lblTransasionesAño10.Name = "lblTransasionesAño10"
+        Me.lblTransasionesAño10.Size = New System.Drawing.Size(89, 18)
+        Me.lblTransasionesAño10.TabIndex = 234
+        Me.lblTransasionesAño10.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño10
+        Me.lblTransasionesAño10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label119
+        'lblTransasionesAño08
         '
-        Me.Label119.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label119.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label119.Location = New System.Drawing.Point(180, 163)
-        Me.Label119.Name = "Label119"
-        Me.Label119.Size = New System.Drawing.Size(89, 18)
-        Me.Label119.TabIndex = 233
-        Me.Label119.Text = "0"
-        Me.Label119.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblTransasionesAño08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransasionesAño08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblTransasionesAño08.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTransasionesAño08.Location = New System.Drawing.Point(180, 163)
+        Me.lblTransasionesAño08.Name = "lblTransasionesAño08"
+        Me.lblTransasionesAño08.Size = New System.Drawing.Size(89, 18)
+        Me.lblTransasionesAño08.TabIndex = 233
+        Me.lblTransasionesAño08.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño08
+        Me.lblTransasionesAño08.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label121
+        'lblTransasionesAño04
         '
-        Me.Label121.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label121.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label121.Location = New System.Drawing.Point(180, 95)
-        Me.Label121.Name = "Label121"
-        Me.Label121.Size = New System.Drawing.Size(89, 18)
-        Me.Label121.TabIndex = 232
-        Me.Label121.Text = "0"
-        Me.Label121.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblTransasionesAño04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransasionesAño04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblTransasionesAño04.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTransasionesAño04.Location = New System.Drawing.Point(180, 95)
+        Me.lblTransasionesAño04.Name = "lblTransasionesAño04"
+        Me.lblTransasionesAño04.Size = New System.Drawing.Size(89, 18)
+        Me.lblTransasionesAño04.TabIndex = 232
+        Me.lblTransasionesAño04.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño04
+        Me.lblTransasionesAño04.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label123
+        'lblTransasionesAño07
         '
-        Me.Label123.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label123.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label123.Location = New System.Drawing.Point(180, 146)
-        Me.Label123.Name = "Label123"
-        Me.Label123.Size = New System.Drawing.Size(89, 18)
-        Me.Label123.TabIndex = 231
-        Me.Label123.Text = "0"
-        Me.Label123.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblTransasionesAño07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransasionesAño07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblTransasionesAño07.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTransasionesAño07.Location = New System.Drawing.Point(180, 146)
+        Me.lblTransasionesAño07.Name = "lblTransasionesAño07"
+        Me.lblTransasionesAño07.Size = New System.Drawing.Size(89, 18)
+        Me.lblTransasionesAño07.TabIndex = 231
+        Me.lblTransasionesAño07.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño07
+        Me.lblTransasionesAño07.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label125
         '
@@ -3371,28 +4983,29 @@ Partial Class Form1
         Me.Label125.Text = "Transactions"
         Me.Label125.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label127
+        'lblTransasionesAño01
         '
-        Me.Label127.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label127.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label127.Location = New System.Drawing.Point(180, 44)
-        Me.Label127.Name = "Label127"
-        Me.Label127.Size = New System.Drawing.Size(89, 18)
-        Me.Label127.TabIndex = 241
-        Me.Label127.Text = "0"
-        Me.Label127.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblTransasionesAño01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransasionesAño01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblTransasionesAño01.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTransasionesAño01.Location = New System.Drawing.Point(180, 44)
+        Me.lblTransasionesAño01.Name = "lblTransasionesAño01"
+        Me.lblTransasionesAño01.Size = New System.Drawing.Size(89, 18)
+        Me.lblTransasionesAño01.TabIndex = 241
+        Me.lblTransasionesAño01.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño01
+        Me.lblTransasionesAño01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label168
+        'lblTotalGananciaAño
         '
-        Me.Label168.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label168.Font = New System.Drawing.Font("Duco", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label168.ForeColor = System.Drawing.Color.Blue
-        Me.Label168.Location = New System.Drawing.Point(180, 244)
-        Me.Label168.Name = "Label168"
-        Me.Label168.Size = New System.Drawing.Size(179, 28)
-        Me.Label168.TabIndex = 242
-        Me.Label168.Text = "0"
-        Me.Label168.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.lblTotalGananciaAño.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTotalGananciaAño.Font = New System.Drawing.Font("Duco", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTotalGananciaAño.ForeColor = System.Drawing.Color.Blue
+        Me.lblTotalGananciaAño.Location = New System.Drawing.Point(180, 244)
+        Me.lblTotalGananciaAño.Name = "lblTotalGananciaAño"
+        Me.lblTotalGananciaAño.Size = New System.Drawing.Size(179, 28)
+        Me.lblTotalGananciaAño.TabIndex = 242
+        Me.lblTotalGananciaAño.Text = "0"
+        Me.lblTotalGananciaAño.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Button1
         '
@@ -4532,1601 +6145,26 @@ Partial Class Form1
         Me.Label174.Text = "Staking:"
         Me.Label174.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'lblBalanceAño01
-        '
-        Me.lblBalanceAño01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceAño01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblBalanceAño01.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceAño01.Location = New System.Drawing.Point(37, 44)
-        Me.lblBalanceAño01.Name = "lblBalanceAño01"
-        Me.lblBalanceAño01.Size = New System.Drawing.Size(79, 18)
-        Me.lblBalanceAño01.TabIndex = 177
-        Me.lblBalanceAño01.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño01
-        Me.lblBalanceAño01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblBalanceAño02
-        '
-        Me.lblBalanceAño02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceAño02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblBalanceAño02.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceAño02.Location = New System.Drawing.Point(37, 61)
-        Me.lblBalanceAño02.Name = "lblBalanceAño02"
-        Me.lblBalanceAño02.Size = New System.Drawing.Size(79, 18)
-        Me.lblBalanceAño02.TabIndex = 184
-        Me.lblBalanceAño02.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño02
-        Me.lblBalanceAño02.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblBalanceAño03
-        '
-        Me.lblBalanceAño03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceAño03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblBalanceAño03.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceAño03.Location = New System.Drawing.Point(37, 78)
-        Me.lblBalanceAño03.Name = "lblBalanceAño03"
-        Me.lblBalanceAño03.Size = New System.Drawing.Size(79, 18)
-        Me.lblBalanceAño03.TabIndex = 180
-        Me.lblBalanceAño03.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño03
-        Me.lblBalanceAño03.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblBalanceAño04
-        '
-        Me.lblBalanceAño04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceAño04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblBalanceAño04.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceAño04.Location = New System.Drawing.Point(37, 95)
-        Me.lblBalanceAño04.Name = "lblBalanceAño04"
-        Me.lblBalanceAño04.Size = New System.Drawing.Size(79, 18)
-        Me.lblBalanceAño04.TabIndex = 181
-        Me.lblBalanceAño04.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño04
-        Me.lblBalanceAño04.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblBalanceAño05
-        '
-        Me.lblBalanceAño05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceAño05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblBalanceAño05.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceAño05.Location = New System.Drawing.Point(37, 112)
-        Me.lblBalanceAño05.Name = "lblBalanceAño05"
-        Me.lblBalanceAño05.Size = New System.Drawing.Size(79, 18)
-        Me.lblBalanceAño05.TabIndex = 182
-        Me.lblBalanceAño05.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño05
-        Me.lblBalanceAño05.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblBalanceAño06
-        '
-        Me.lblBalanceAño06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceAño06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblBalanceAño06.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceAño06.Location = New System.Drawing.Point(37, 129)
-        Me.lblBalanceAño06.Name = "lblBalanceAño06"
-        Me.lblBalanceAño06.Size = New System.Drawing.Size(79, 18)
-        Me.lblBalanceAño06.TabIndex = 183
-        Me.lblBalanceAño06.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño06
-        Me.lblBalanceAño06.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblBalanceAño07
-        '
-        Me.lblBalanceAño07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceAño07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblBalanceAño07.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceAño07.Location = New System.Drawing.Point(37, 146)
-        Me.lblBalanceAño07.Name = "lblBalanceAño07"
-        Me.lblBalanceAño07.Size = New System.Drawing.Size(79, 18)
-        Me.lblBalanceAño07.TabIndex = 189
-        Me.lblBalanceAño07.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño07
-        Me.lblBalanceAño07.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblBalanceAño08
-        '
-        Me.lblBalanceAño08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceAño08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblBalanceAño08.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceAño08.Location = New System.Drawing.Point(37, 163)
-        Me.lblBalanceAño08.Name = "lblBalanceAño08"
-        Me.lblBalanceAño08.Size = New System.Drawing.Size(79, 18)
-        Me.lblBalanceAño08.TabIndex = 185
-        Me.lblBalanceAño08.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño08
-        Me.lblBalanceAño08.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblBalanceAño09
-        '
-        Me.lblBalanceAño09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceAño09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblBalanceAño09.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceAño09.Location = New System.Drawing.Point(37, 180)
-        Me.lblBalanceAño09.Name = "lblBalanceAño09"
-        Me.lblBalanceAño09.Size = New System.Drawing.Size(79, 18)
-        Me.lblBalanceAño09.TabIndex = 186
-        Me.lblBalanceAño09.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño09
-        Me.lblBalanceAño09.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblBalanceAño10
-        '
-        Me.lblBalanceAño10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceAño10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblBalanceAño10.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceAño10.Location = New System.Drawing.Point(37, 197)
-        Me.lblBalanceAño10.Name = "lblBalanceAño10"
-        Me.lblBalanceAño10.Size = New System.Drawing.Size(79, 18)
-        Me.lblBalanceAño10.TabIndex = 187
-        Me.lblBalanceAño10.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño10
-        Me.lblBalanceAño10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblBalanceAño11
-        '
-        Me.lblBalanceAño11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceAño11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblBalanceAño11.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceAño11.Location = New System.Drawing.Point(37, 214)
-        Me.lblBalanceAño11.Name = "lblBalanceAño11"
-        Me.lblBalanceAño11.Size = New System.Drawing.Size(79, 18)
-        Me.lblBalanceAño11.TabIndex = 188
-        Me.lblBalanceAño11.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño11
-        Me.lblBalanceAño11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblBalanceAño12
-        '
-        Me.lblBalanceAño12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceAño12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblBalanceAño12.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceAño12.Location = New System.Drawing.Point(37, 231)
-        Me.lblBalanceAño12.Name = "lblBalanceAño12"
-        Me.lblBalanceAño12.Size = New System.Drawing.Size(79, 18)
-        Me.lblBalanceAño12.TabIndex = 179
-        Me.lblBalanceAño12.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño12
-        Me.lblBalanceAño12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPrecioAño12
-        '
-        Me.lblPrecioAño12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecioAño12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblPrecioAño12.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecioAño12.Location = New System.Drawing.Point(115, 231)
-        Me.lblPrecioAño12.Name = "lblPrecioAño12"
-        Me.lblPrecioAño12.Size = New System.Drawing.Size(66, 18)
-        Me.lblPrecioAño12.TabIndex = 212
-        Me.lblPrecioAño12.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño12
-        Me.lblPrecioAño12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPrecioAño01
-        '
-        Me.lblPrecioAño01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecioAño01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblPrecioAño01.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecioAño01.Location = New System.Drawing.Point(115, 44)
-        Me.lblPrecioAño01.Name = "lblPrecioAño01"
-        Me.lblPrecioAño01.Size = New System.Drawing.Size(66, 18)
-        Me.lblPrecioAño01.TabIndex = 214
-        Me.lblPrecioAño01.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño01
-        Me.lblPrecioAño01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPrecioAño11
-        '
-        Me.lblPrecioAño11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecioAño11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblPrecioAño11.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecioAño11.Location = New System.Drawing.Point(115, 214)
-        Me.lblPrecioAño11.Name = "lblPrecioAño11"
-        Me.lblPrecioAño11.Size = New System.Drawing.Size(66, 18)
-        Me.lblPrecioAño11.TabIndex = 211
-        Me.lblPrecioAño11.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño11
-        Me.lblPrecioAño11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPrecioAño10
-        '
-        Me.lblPrecioAño10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecioAño10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblPrecioAño10.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecioAño10.Location = New System.Drawing.Point(115, 197)
-        Me.lblPrecioAño10.Name = "lblPrecioAño10"
-        Me.lblPrecioAño10.Size = New System.Drawing.Size(66, 18)
-        Me.lblPrecioAño10.TabIndex = 210
-        Me.lblPrecioAño10.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño10
-        Me.lblPrecioAño10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPrecioAño02
-        '
-        Me.lblPrecioAño02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecioAño02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblPrecioAño02.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecioAño02.Location = New System.Drawing.Point(115, 61)
-        Me.lblPrecioAño02.Name = "lblPrecioAño02"
-        Me.lblPrecioAño02.Size = New System.Drawing.Size(66, 18)
-        Me.lblPrecioAño02.TabIndex = 213
-        Me.lblPrecioAño02.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño02
-        Me.lblPrecioAño02.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPrecioAño09
-        '
-        Me.lblPrecioAño09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecioAño09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblPrecioAño09.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecioAño09.Location = New System.Drawing.Point(115, 180)
-        Me.lblPrecioAño09.Name = "lblPrecioAño09"
-        Me.lblPrecioAño09.Size = New System.Drawing.Size(66, 18)
-        Me.lblPrecioAño09.TabIndex = 209
-        Me.lblPrecioAño09.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño09
-        Me.lblPrecioAño09.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPrecioAño08
-        '
-        Me.lblPrecioAño08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecioAño08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblPrecioAño08.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecioAño08.Location = New System.Drawing.Point(115, 163)
-        Me.lblPrecioAño08.Name = "lblPrecioAño08"
-        Me.lblPrecioAño08.Size = New System.Drawing.Size(66, 18)
-        Me.lblPrecioAño08.TabIndex = 208
-        Me.lblPrecioAño08.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño08
-        Me.lblPrecioAño08.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPrecioAño07
-        '
-        Me.lblPrecioAño07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecioAño07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblPrecioAño07.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecioAño07.Location = New System.Drawing.Point(115, 146)
-        Me.lblPrecioAño07.Name = "lblPrecioAño07"
-        Me.lblPrecioAño07.Size = New System.Drawing.Size(66, 18)
-        Me.lblPrecioAño07.TabIndex = 207
-        Me.lblPrecioAño07.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño07
-        Me.lblPrecioAño07.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPrecioAño06
-        '
-        Me.lblPrecioAño06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecioAño06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblPrecioAño06.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecioAño06.Location = New System.Drawing.Point(115, 129)
-        Me.lblPrecioAño06.Name = "lblPrecioAño06"
-        Me.lblPrecioAño06.Size = New System.Drawing.Size(66, 18)
-        Me.lblPrecioAño06.TabIndex = 206
-        Me.lblPrecioAño06.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño06
-        Me.lblPrecioAño06.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPrecioAño05
-        '
-        Me.lblPrecioAño05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecioAño05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblPrecioAño05.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecioAño05.Location = New System.Drawing.Point(115, 112)
-        Me.lblPrecioAño05.Name = "lblPrecioAño05"
-        Me.lblPrecioAño05.Size = New System.Drawing.Size(66, 18)
-        Me.lblPrecioAño05.TabIndex = 205
-        Me.lblPrecioAño05.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño05
-        Me.lblPrecioAño05.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblBalanceHora10
-        '
-        Me.lblBalanceHora10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblBalanceHora10.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora10.Location = New System.Drawing.Point(48, 214)
-        Me.lblBalanceHora10.Name = "lblBalanceHora10"
-        Me.lblBalanceHora10.Size = New System.Drawing.Size(104, 18)
-        Me.lblBalanceHora10.TabIndex = 12
-        Me.lblBalanceHora10.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora10
-        Me.lblBalanceHora10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblBalanceHora18
-        '
-        Me.lblBalanceHora18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora18.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora18", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblBalanceHora18.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora18.Location = New System.Drawing.Point(48, 350)
-        Me.lblBalanceHora18.Name = "lblBalanceHora18"
-        Me.lblBalanceHora18.Size = New System.Drawing.Size(104, 18)
-        Me.lblBalanceHora18.TabIndex = 12
-        Me.lblBalanceHora18.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora18
-        Me.lblBalanceHora18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPrecio00
-        '
-        Me.lblPrecio00.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio00.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio00", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblPrecio00.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio00.Location = New System.Drawing.Point(151, 44)
-        Me.lblPrecio00.Name = "lblPrecio00"
-        Me.lblPrecio00.Size = New System.Drawing.Size(72, 18)
-        Me.lblPrecio00.TabIndex = 37
-        Me.lblPrecio00.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio00
-        Me.lblPrecio00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPrecio23
-        '
-        Me.lblPrecio23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio23.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio23", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblPrecio23.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio23.Location = New System.Drawing.Point(151, 435)
-        Me.lblPrecio23.Name = "lblPrecio23"
-        Me.lblPrecio23.Size = New System.Drawing.Size(72, 18)
-        Me.lblPrecio23.TabIndex = 58
-        Me.lblPrecio23.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio23
-        Me.lblPrecio23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPrecio22
-        '
-        Me.lblPrecio22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio22.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio22", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblPrecio22.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio22.Location = New System.Drawing.Point(151, 418)
-        Me.lblPrecio22.Name = "lblPrecio22"
-        Me.lblPrecio22.Size = New System.Drawing.Size(72, 18)
-        Me.lblPrecio22.TabIndex = 57
-        Me.lblPrecio22.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio22
-        Me.lblPrecio22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPrecio21
-        '
-        Me.lblPrecio21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio21.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio21", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblPrecio21.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio21.Location = New System.Drawing.Point(151, 401)
-        Me.lblPrecio21.Name = "lblPrecio21"
-        Me.lblPrecio21.Size = New System.Drawing.Size(72, 18)
-        Me.lblPrecio21.TabIndex = 56
-        Me.lblPrecio21.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio21
-        Me.lblPrecio21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPrecio20
-        '
-        Me.lblPrecio20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio20.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio20", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblPrecio20.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio20.Location = New System.Drawing.Point(151, 384)
-        Me.lblPrecio20.Name = "lblPrecio20"
-        Me.lblPrecio20.Size = New System.Drawing.Size(72, 18)
-        Me.lblPrecio20.TabIndex = 55
-        Me.lblPrecio20.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio20
-        Me.lblPrecio20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPrecio19
-        '
-        Me.lblPrecio19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio19.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio19", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblPrecio19.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio19.Location = New System.Drawing.Point(151, 367)
-        Me.lblPrecio19.Name = "lblPrecio19"
-        Me.lblPrecio19.Size = New System.Drawing.Size(72, 18)
-        Me.lblPrecio19.TabIndex = 54
-        Me.lblPrecio19.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio19
-        Me.lblPrecio19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPrecio18
-        '
-        Me.lblPrecio18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio18.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio18", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblPrecio18.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio18.Location = New System.Drawing.Point(151, 350)
-        Me.lblPrecio18.Name = "lblPrecio18"
-        Me.lblPrecio18.Size = New System.Drawing.Size(72, 18)
-        Me.lblPrecio18.TabIndex = 53
-        Me.lblPrecio18.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio18
-        Me.lblPrecio18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPrecio17
-        '
-        Me.lblPrecio17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio17.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio17", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblPrecio17.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio17.Location = New System.Drawing.Point(151, 333)
-        Me.lblPrecio17.Name = "lblPrecio17"
-        Me.lblPrecio17.Size = New System.Drawing.Size(72, 18)
-        Me.lblPrecio17.TabIndex = 52
-        Me.lblPrecio17.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio17
-        Me.lblPrecio17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPrecio16
-        '
-        Me.lblPrecio16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio16.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio16", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblPrecio16.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio16.Location = New System.Drawing.Point(151, 316)
-        Me.lblPrecio16.Name = "lblPrecio16"
-        Me.lblPrecio16.Size = New System.Drawing.Size(72, 18)
-        Me.lblPrecio16.TabIndex = 51
-        Me.lblPrecio16.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio16
-        Me.lblPrecio16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPrecio15
-        '
-        Me.lblPrecio15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio15.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio15", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblPrecio15.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio15.Location = New System.Drawing.Point(151, 299)
-        Me.lblPrecio15.Name = "lblPrecio15"
-        Me.lblPrecio15.Size = New System.Drawing.Size(72, 18)
-        Me.lblPrecio15.TabIndex = 50
-        Me.lblPrecio15.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio15
-        Me.lblPrecio15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPrecio14
-        '
-        Me.lblPrecio14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio14.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio14", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblPrecio14.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio14.Location = New System.Drawing.Point(151, 282)
-        Me.lblPrecio14.Name = "lblPrecio14"
-        Me.lblPrecio14.Size = New System.Drawing.Size(72, 18)
-        Me.lblPrecio14.TabIndex = 49
-        Me.lblPrecio14.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio14
-        Me.lblPrecio14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPrecio13
-        '
-        Me.lblPrecio13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio13.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio13", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblPrecio13.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio13.Location = New System.Drawing.Point(151, 265)
-        Me.lblPrecio13.Name = "lblPrecio13"
-        Me.lblPrecio13.Size = New System.Drawing.Size(72, 18)
-        Me.lblPrecio13.TabIndex = 48
-        Me.lblPrecio13.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio13
-        Me.lblPrecio13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPrecio12
-        '
-        Me.lblPrecio12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblPrecio12.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio12.Location = New System.Drawing.Point(151, 248)
-        Me.lblPrecio12.Name = "lblPrecio12"
-        Me.lblPrecio12.Size = New System.Drawing.Size(72, 18)
-        Me.lblPrecio12.TabIndex = 47
-        Me.lblPrecio12.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio12
-        Me.lblPrecio12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPrecio11
-        '
-        Me.lblPrecio11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblPrecio11.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio11.Location = New System.Drawing.Point(151, 231)
-        Me.lblPrecio11.Name = "lblPrecio11"
-        Me.lblPrecio11.Size = New System.Drawing.Size(72, 18)
-        Me.lblPrecio11.TabIndex = 46
-        Me.lblPrecio11.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio11
-        Me.lblPrecio11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPrecio10
-        '
-        Me.lblPrecio10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblPrecio10.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio10.Location = New System.Drawing.Point(151, 214)
-        Me.lblPrecio10.Name = "lblPrecio10"
-        Me.lblPrecio10.Size = New System.Drawing.Size(72, 18)
-        Me.lblPrecio10.TabIndex = 45
-        Me.lblPrecio10.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio10
-        Me.lblPrecio10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPrecio09
-        '
-        Me.lblPrecio09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblPrecio09.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio09.Location = New System.Drawing.Point(151, 197)
-        Me.lblPrecio09.Name = "lblPrecio09"
-        Me.lblPrecio09.Size = New System.Drawing.Size(72, 18)
-        Me.lblPrecio09.TabIndex = 44
-        Me.lblPrecio09.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio09
-        Me.lblPrecio09.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPrecio08
-        '
-        Me.lblPrecio08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblPrecio08.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio08.Location = New System.Drawing.Point(151, 180)
-        Me.lblPrecio08.Name = "lblPrecio08"
-        Me.lblPrecio08.Size = New System.Drawing.Size(72, 18)
-        Me.lblPrecio08.TabIndex = 43
-        Me.lblPrecio08.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio08
-        Me.lblPrecio08.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPrecio07
-        '
-        Me.lblPrecio07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblPrecio07.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio07.Location = New System.Drawing.Point(151, 163)
-        Me.lblPrecio07.Name = "lblPrecio07"
-        Me.lblPrecio07.Size = New System.Drawing.Size(72, 18)
-        Me.lblPrecio07.TabIndex = 42
-        Me.lblPrecio07.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio07
-        Me.lblPrecio07.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPrecio06
-        '
-        Me.lblPrecio06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblPrecio06.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio06.Location = New System.Drawing.Point(151, 146)
-        Me.lblPrecio06.Name = "lblPrecio06"
-        Me.lblPrecio06.Size = New System.Drawing.Size(72, 18)
-        Me.lblPrecio06.TabIndex = 41
-        Me.lblPrecio06.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio06
-        Me.lblPrecio06.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPrecio05
-        '
-        Me.lblPrecio05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblPrecio05.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio05.Location = New System.Drawing.Point(151, 129)
-        Me.lblPrecio05.Name = "lblPrecio05"
-        Me.lblPrecio05.Size = New System.Drawing.Size(72, 18)
-        Me.lblPrecio05.TabIndex = 40
-        Me.lblPrecio05.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio05
-        Me.lblPrecio05.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPrecio04
-        '
-        Me.lblPrecio04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblPrecio04.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio04.Location = New System.Drawing.Point(151, 112)
-        Me.lblPrecio04.Name = "lblPrecio04"
-        Me.lblPrecio04.Size = New System.Drawing.Size(72, 18)
-        Me.lblPrecio04.TabIndex = 39
-        Me.lblPrecio04.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio04
-        Me.lblPrecio04.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPrecio03
-        '
-        Me.lblPrecio03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblPrecio03.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio03.Location = New System.Drawing.Point(151, 95)
-        Me.lblPrecio03.Name = "lblPrecio03"
-        Me.lblPrecio03.Size = New System.Drawing.Size(72, 18)
-        Me.lblPrecio03.TabIndex = 38
-        Me.lblPrecio03.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio03
-        Me.lblPrecio03.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPrecio02
-        '
-        Me.lblPrecio02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblPrecio02.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio02.Location = New System.Drawing.Point(151, 78)
-        Me.lblPrecio02.Name = "lblPrecio02"
-        Me.lblPrecio02.Size = New System.Drawing.Size(72, 18)
-        Me.lblPrecio02.TabIndex = 59
-        Me.lblPrecio02.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio02
-        Me.lblPrecio02.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblHoraDiferencia00
-        '
-        Me.lblHoraDiferencia00.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblHoraDiferencia00.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "ValorHora00", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblHoraDiferencia00.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHoraDiferencia00.Location = New System.Drawing.Point(222, 44)
-        Me.lblHoraDiferencia00.Name = "lblHoraDiferencia00"
-        Me.lblHoraDiferencia00.Size = New System.Drawing.Size(65, 18)
-        Me.lblHoraDiferencia00.TabIndex = 141
-        Me.lblHoraDiferencia00.Text = Global.EstadisticasDucos.My.MySettings.Default.ValorHora00
-        Me.lblHoraDiferencia00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblPrecio01
-        '
-        Me.lblPrecio01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblPrecio01.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio01.Location = New System.Drawing.Point(151, 61)
-        Me.lblPrecio01.Name = "lblPrecio01"
-        Me.lblPrecio01.Size = New System.Drawing.Size(72, 18)
-        Me.lblPrecio01.TabIndex = 60
-        Me.lblPrecio01.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio01
-        Me.lblPrecio01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblBalanceHora00
-        '
-        Me.lblBalanceHora00.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora00.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora00", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblBalanceHora00.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora00.Location = New System.Drawing.Point(48, 44)
-        Me.lblBalanceHora00.Name = "lblBalanceHora00"
-        Me.lblBalanceHora00.Size = New System.Drawing.Size(104, 18)
-        Me.lblBalanceHora00.TabIndex = 12
-        Me.lblBalanceHora00.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora00
-        Me.lblBalanceHora00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblBalanceHora01
-        '
-        Me.lblBalanceHora01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblBalanceHora01.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora01.Location = New System.Drawing.Point(48, 61)
-        Me.lblBalanceHora01.Name = "lblBalanceHora01"
-        Me.lblBalanceHora01.Size = New System.Drawing.Size(104, 18)
-        Me.lblBalanceHora01.TabIndex = 12
-        Me.lblBalanceHora01.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora01
-        Me.lblBalanceHora01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblBalanceHora23
-        '
-        Me.lblBalanceHora23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora23.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora23", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblBalanceHora23.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora23.Location = New System.Drawing.Point(48, 435)
-        Me.lblBalanceHora23.Name = "lblBalanceHora23"
-        Me.lblBalanceHora23.Size = New System.Drawing.Size(104, 18)
-        Me.lblBalanceHora23.TabIndex = 12
-        Me.lblBalanceHora23.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora23
-        Me.lblBalanceHora23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblBalanceHora22
-        '
-        Me.lblBalanceHora22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora22.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora22", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblBalanceHora22.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora22.Location = New System.Drawing.Point(48, 418)
-        Me.lblBalanceHora22.Name = "lblBalanceHora22"
-        Me.lblBalanceHora22.Size = New System.Drawing.Size(104, 18)
-        Me.lblBalanceHora22.TabIndex = 12
-        Me.lblBalanceHora22.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora22
-        Me.lblBalanceHora22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblBalanceHora02
-        '
-        Me.lblBalanceHora02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblBalanceHora02.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora02.Location = New System.Drawing.Point(48, 78)
-        Me.lblBalanceHora02.Name = "lblBalanceHora02"
-        Me.lblBalanceHora02.Size = New System.Drawing.Size(104, 18)
-        Me.lblBalanceHora02.TabIndex = 12
-        Me.lblBalanceHora02.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora02
-        Me.lblBalanceHora02.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblBalanceHora21
-        '
-        Me.lblBalanceHora21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora21.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora21", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblBalanceHora21.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora21.Location = New System.Drawing.Point(48, 401)
-        Me.lblBalanceHora21.Name = "lblBalanceHora21"
-        Me.lblBalanceHora21.Size = New System.Drawing.Size(104, 18)
-        Me.lblBalanceHora21.TabIndex = 12
-        Me.lblBalanceHora21.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora21
-        Me.lblBalanceHora21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblBalanceHora20
-        '
-        Me.lblBalanceHora20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora20.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora20", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblBalanceHora20.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora20.Location = New System.Drawing.Point(48, 384)
-        Me.lblBalanceHora20.Name = "lblBalanceHora20"
-        Me.lblBalanceHora20.Size = New System.Drawing.Size(104, 18)
-        Me.lblBalanceHora20.TabIndex = 12
-        Me.lblBalanceHora20.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora20
-        Me.lblBalanceHora20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblBalanceHora03
-        '
-        Me.lblBalanceHora03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblBalanceHora03.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora03.Location = New System.Drawing.Point(48, 95)
-        Me.lblBalanceHora03.Name = "lblBalanceHora03"
-        Me.lblBalanceHora03.Size = New System.Drawing.Size(104, 18)
-        Me.lblBalanceHora03.TabIndex = 12
-        Me.lblBalanceHora03.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora03
-        Me.lblBalanceHora03.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblBalanceHora19
-        '
-        Me.lblBalanceHora19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora19.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora19", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblBalanceHora19.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora19.Location = New System.Drawing.Point(48, 367)
-        Me.lblBalanceHora19.Name = "lblBalanceHora19"
-        Me.lblBalanceHora19.Size = New System.Drawing.Size(104, 18)
-        Me.lblBalanceHora19.TabIndex = 12
-        Me.lblBalanceHora19.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora19
-        Me.lblBalanceHora19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblBalanceHora17
-        '
-        Me.lblBalanceHora17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora17.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora17", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblBalanceHora17.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora17.Location = New System.Drawing.Point(48, 333)
-        Me.lblBalanceHora17.Name = "lblBalanceHora17"
-        Me.lblBalanceHora17.Size = New System.Drawing.Size(104, 18)
-        Me.lblBalanceHora17.TabIndex = 12
-        Me.lblBalanceHora17.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora17
-        Me.lblBalanceHora17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblBalanceHora04
-        '
-        Me.lblBalanceHora04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblBalanceHora04.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora04.Location = New System.Drawing.Point(48, 112)
-        Me.lblBalanceHora04.Name = "lblBalanceHora04"
-        Me.lblBalanceHora04.Size = New System.Drawing.Size(104, 18)
-        Me.lblBalanceHora04.TabIndex = 12
-        Me.lblBalanceHora04.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora04
-        Me.lblBalanceHora04.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblBalanceHora16
-        '
-        Me.lblBalanceHora16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora16.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora16", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblBalanceHora16.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora16.Location = New System.Drawing.Point(48, 316)
-        Me.lblBalanceHora16.Name = "lblBalanceHora16"
-        Me.lblBalanceHora16.Size = New System.Drawing.Size(104, 18)
-        Me.lblBalanceHora16.TabIndex = 12
-        Me.lblBalanceHora16.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora16
-        Me.lblBalanceHora16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblBalanceHora15
-        '
-        Me.lblBalanceHora15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora15.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora15", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblBalanceHora15.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora15.Location = New System.Drawing.Point(48, 299)
-        Me.lblBalanceHora15.Name = "lblBalanceHora15"
-        Me.lblBalanceHora15.Size = New System.Drawing.Size(104, 18)
-        Me.lblBalanceHora15.TabIndex = 12
-        Me.lblBalanceHora15.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora15
-        Me.lblBalanceHora15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblBalanceHora05
-        '
-        Me.lblBalanceHora05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblBalanceHora05.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora05.Location = New System.Drawing.Point(48, 129)
-        Me.lblBalanceHora05.Name = "lblBalanceHora05"
-        Me.lblBalanceHora05.Size = New System.Drawing.Size(104, 18)
-        Me.lblBalanceHora05.TabIndex = 12
-        Me.lblBalanceHora05.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora05
-        Me.lblBalanceHora05.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblBalanceHora14
-        '
-        Me.lblBalanceHora14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora14.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora14", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblBalanceHora14.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora14.Location = New System.Drawing.Point(48, 282)
-        Me.lblBalanceHora14.Name = "lblBalanceHora14"
-        Me.lblBalanceHora14.Size = New System.Drawing.Size(104, 18)
-        Me.lblBalanceHora14.TabIndex = 12
-        Me.lblBalanceHora14.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora14
-        Me.lblBalanceHora14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblBalanceHora13
-        '
-        Me.lblBalanceHora13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora13.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora13", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblBalanceHora13.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora13.Location = New System.Drawing.Point(48, 265)
-        Me.lblBalanceHora13.Name = "lblBalanceHora13"
-        Me.lblBalanceHora13.Size = New System.Drawing.Size(104, 18)
-        Me.lblBalanceHora13.TabIndex = 12
-        Me.lblBalanceHora13.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora13
-        Me.lblBalanceHora13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblBalanceHora06
-        '
-        Me.lblBalanceHora06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblBalanceHora06.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora06.Location = New System.Drawing.Point(48, 146)
-        Me.lblBalanceHora06.Name = "lblBalanceHora06"
-        Me.lblBalanceHora06.Size = New System.Drawing.Size(104, 18)
-        Me.lblBalanceHora06.TabIndex = 12
-        Me.lblBalanceHora06.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora06
-        Me.lblBalanceHora06.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblBalanceHora12
-        '
-        Me.lblBalanceHora12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblBalanceHora12.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora12.Location = New System.Drawing.Point(48, 248)
-        Me.lblBalanceHora12.Name = "lblBalanceHora12"
-        Me.lblBalanceHora12.Size = New System.Drawing.Size(104, 18)
-        Me.lblBalanceHora12.TabIndex = 12
-        Me.lblBalanceHora12.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora12
-        Me.lblBalanceHora12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblBalanceHora11
-        '
-        Me.lblBalanceHora11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblBalanceHora11.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora11.Location = New System.Drawing.Point(48, 231)
-        Me.lblBalanceHora11.Name = "lblBalanceHora11"
-        Me.lblBalanceHora11.Size = New System.Drawing.Size(104, 18)
-        Me.lblBalanceHora11.TabIndex = 12
-        Me.lblBalanceHora11.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora11
-        Me.lblBalanceHora11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblBalanceHora07
-        '
-        Me.lblBalanceHora07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblBalanceHora07.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora07.Location = New System.Drawing.Point(48, 163)
-        Me.lblBalanceHora07.Name = "lblBalanceHora07"
-        Me.lblBalanceHora07.Size = New System.Drawing.Size(104, 18)
-        Me.lblBalanceHora07.TabIndex = 12
-        Me.lblBalanceHora07.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora07
-        Me.lblBalanceHora07.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblBalanceHora09
-        '
-        Me.lblBalanceHora09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblBalanceHora09.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora09.Location = New System.Drawing.Point(48, 197)
-        Me.lblBalanceHora09.Name = "lblBalanceHora09"
-        Me.lblBalanceHora09.Size = New System.Drawing.Size(104, 18)
-        Me.lblBalanceHora09.TabIndex = 12
-        Me.lblBalanceHora09.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora09
-        Me.lblBalanceHora09.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblBalanceHora08
-        '
-        Me.lblBalanceHora08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblBalanceHora08.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceHora08.Location = New System.Drawing.Point(48, 180)
-        Me.lblBalanceHora08.Name = "lblBalanceHora08"
-        Me.lblBalanceHora08.Size = New System.Drawing.Size(104, 18)
-        Me.lblBalanceHora08.TabIndex = 12
-        Me.lblBalanceHora08.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora08
-        Me.lblBalanceHora08.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesBalance01
-        '
-        Me.lblMesBalance01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesBalance01.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesBalance01.Location = New System.Drawing.Point(44, 44)
-        Me.lblMesBalance01.Name = "lblMesBalance01"
-        Me.lblMesBalance01.Size = New System.Drawing.Size(113, 18)
-        Me.lblMesBalance01.TabIndex = 61
-        Me.lblMesBalance01.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance01
-        Me.lblMesBalance01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesBalance02
-        '
-        Me.lblMesBalance02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesBalance02.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesBalance02.Location = New System.Drawing.Point(44, 61)
-        Me.lblMesBalance02.Name = "lblMesBalance02"
-        Me.lblMesBalance02.Size = New System.Drawing.Size(113, 18)
-        Me.lblMesBalance02.TabIndex = 79
-        Me.lblMesBalance02.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance02
-        Me.lblMesBalance02.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesBalance03
-        '
-        Me.lblMesBalance03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesBalance03.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesBalance03.Location = New System.Drawing.Point(44, 78)
-        Me.lblMesBalance03.Name = "lblMesBalance03"
-        Me.lblMesBalance03.Size = New System.Drawing.Size(113, 18)
-        Me.lblMesBalance03.TabIndex = 75
-        Me.lblMesBalance03.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance03
-        Me.lblMesBalance03.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesBalance04
-        '
-        Me.lblMesBalance04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesBalance04.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesBalance04.Location = New System.Drawing.Point(44, 95)
-        Me.lblMesBalance04.Name = "lblMesBalance04"
-        Me.lblMesBalance04.Size = New System.Drawing.Size(113, 18)
-        Me.lblMesBalance04.TabIndex = 76
-        Me.lblMesBalance04.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance04
-        Me.lblMesBalance04.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesBalance05
-        '
-        Me.lblMesBalance05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesBalance05.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesBalance05.Location = New System.Drawing.Point(44, 112)
-        Me.lblMesBalance05.Name = "lblMesBalance05"
-        Me.lblMesBalance05.Size = New System.Drawing.Size(113, 18)
-        Me.lblMesBalance05.TabIndex = 77
-        Me.lblMesBalance05.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance05
-        Me.lblMesBalance05.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesBalance06
-        '
-        Me.lblMesBalance06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesBalance06.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesBalance06.Location = New System.Drawing.Point(44, 129)
-        Me.lblMesBalance06.Name = "lblMesBalance06"
-        Me.lblMesBalance06.Size = New System.Drawing.Size(113, 18)
-        Me.lblMesBalance06.TabIndex = 78
-        Me.lblMesBalance06.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance06
-        Me.lblMesBalance06.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesBalance07
-        '
-        Me.lblMesBalance07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesBalance07.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesBalance07.Location = New System.Drawing.Point(44, 146)
-        Me.lblMesBalance07.Name = "lblMesBalance07"
-        Me.lblMesBalance07.Size = New System.Drawing.Size(113, 18)
-        Me.lblMesBalance07.TabIndex = 84
-        Me.lblMesBalance07.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance07
-        Me.lblMesBalance07.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesBalance08
-        '
-        Me.lblMesBalance08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesBalance08.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesBalance08.Location = New System.Drawing.Point(44, 163)
-        Me.lblMesBalance08.Name = "lblMesBalance08"
-        Me.lblMesBalance08.Size = New System.Drawing.Size(113, 18)
-        Me.lblMesBalance08.TabIndex = 80
-        Me.lblMesBalance08.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance08
-        Me.lblMesBalance08.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesBalance09
-        '
-        Me.lblMesBalance09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesBalance09.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesBalance09.Location = New System.Drawing.Point(44, 180)
-        Me.lblMesBalance09.Name = "lblMesBalance09"
-        Me.lblMesBalance09.Size = New System.Drawing.Size(113, 18)
-        Me.lblMesBalance09.TabIndex = 81
-        Me.lblMesBalance09.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance09
-        Me.lblMesBalance09.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesBalance10
-        '
-        Me.lblMesBalance10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesBalance10.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesBalance10.Location = New System.Drawing.Point(44, 197)
-        Me.lblMesBalance10.Name = "lblMesBalance10"
-        Me.lblMesBalance10.Size = New System.Drawing.Size(113, 18)
-        Me.lblMesBalance10.TabIndex = 82
-        Me.lblMesBalance10.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance10
-        Me.lblMesBalance10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesBalance11
-        '
-        Me.lblMesBalance11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesBalance11.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesBalance11.Location = New System.Drawing.Point(44, 214)
-        Me.lblMesBalance11.Name = "lblMesBalance11"
-        Me.lblMesBalance11.Size = New System.Drawing.Size(113, 18)
-        Me.lblMesBalance11.TabIndex = 83
-        Me.lblMesBalance11.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance11
-        Me.lblMesBalance11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesBalance12
-        '
-        Me.lblMesBalance12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesBalance12.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesBalance12.Location = New System.Drawing.Point(44, 231)
-        Me.lblMesBalance12.Name = "lblMesBalance12"
-        Me.lblMesBalance12.Size = New System.Drawing.Size(113, 18)
-        Me.lblMesBalance12.TabIndex = 73
-        Me.lblMesBalance12.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance12
-        Me.lblMesBalance12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesBalance13
-        '
-        Me.lblMesBalance13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance13.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance13", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesBalance13.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesBalance13.Location = New System.Drawing.Point(44, 248)
-        Me.lblMesBalance13.Name = "lblMesBalance13"
-        Me.lblMesBalance13.Size = New System.Drawing.Size(113, 18)
-        Me.lblMesBalance13.TabIndex = 74
-        Me.lblMesBalance13.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance13
-        Me.lblMesBalance13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesBalance14
-        '
-        Me.lblMesBalance14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance14.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance14", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesBalance14.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesBalance14.Location = New System.Drawing.Point(44, 265)
-        Me.lblMesBalance14.Name = "lblMesBalance14"
-        Me.lblMesBalance14.Size = New System.Drawing.Size(113, 18)
-        Me.lblMesBalance14.TabIndex = 71
-        Me.lblMesBalance14.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance14
-        Me.lblMesBalance14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesBalance15
-        '
-        Me.lblMesBalance15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance15.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance15", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesBalance15.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesBalance15.Location = New System.Drawing.Point(44, 282)
-        Me.lblMesBalance15.Name = "lblMesBalance15"
-        Me.lblMesBalance15.Size = New System.Drawing.Size(113, 18)
-        Me.lblMesBalance15.TabIndex = 70
-        Me.lblMesBalance15.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance15
-        Me.lblMesBalance15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesBalance16
-        '
-        Me.lblMesBalance16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance16.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance16", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesBalance16.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesBalance16.Location = New System.Drawing.Point(44, 299)
-        Me.lblMesBalance16.Name = "lblMesBalance16"
-        Me.lblMesBalance16.Size = New System.Drawing.Size(113, 18)
-        Me.lblMesBalance16.TabIndex = 69
-        Me.lblMesBalance16.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance16
-        Me.lblMesBalance16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesBalance17
-        '
-        Me.lblMesBalance17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance17.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance17", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesBalance17.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesBalance17.Location = New System.Drawing.Point(44, 316)
-        Me.lblMesBalance17.Name = "lblMesBalance17"
-        Me.lblMesBalance17.Size = New System.Drawing.Size(113, 18)
-        Me.lblMesBalance17.TabIndex = 68
-        Me.lblMesBalance17.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance17
-        Me.lblMesBalance17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesBalance18
-        '
-        Me.lblMesBalance18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance18.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance18", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesBalance18.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesBalance18.Location = New System.Drawing.Point(44, 333)
-        Me.lblMesBalance18.Name = "lblMesBalance18"
-        Me.lblMesBalance18.Size = New System.Drawing.Size(113, 18)
-        Me.lblMesBalance18.TabIndex = 67
-        Me.lblMesBalance18.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance18
-        Me.lblMesBalance18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesBalance19
-        '
-        Me.lblMesBalance19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance19.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance19", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesBalance19.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesBalance19.Location = New System.Drawing.Point(44, 350)
-        Me.lblMesBalance19.Name = "lblMesBalance19"
-        Me.lblMesBalance19.Size = New System.Drawing.Size(113, 18)
-        Me.lblMesBalance19.TabIndex = 72
-        Me.lblMesBalance19.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance19
-        Me.lblMesBalance19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesBalance20
-        '
-        Me.lblMesBalance20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance20.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance20", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesBalance20.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesBalance20.Location = New System.Drawing.Point(44, 367)
-        Me.lblMesBalance20.Name = "lblMesBalance20"
-        Me.lblMesBalance20.Size = New System.Drawing.Size(113, 18)
-        Me.lblMesBalance20.TabIndex = 66
-        Me.lblMesBalance20.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance20
-        Me.lblMesBalance20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesBalance21
-        '
-        Me.lblMesBalance21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance21.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance21", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesBalance21.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesBalance21.Location = New System.Drawing.Point(44, 384)
-        Me.lblMesBalance21.Name = "lblMesBalance21"
-        Me.lblMesBalance21.Size = New System.Drawing.Size(113, 18)
-        Me.lblMesBalance21.TabIndex = 65
-        Me.lblMesBalance21.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance21
-        Me.lblMesBalance21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesBalance22
-        '
-        Me.lblMesBalance22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance22.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance22", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesBalance22.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesBalance22.Location = New System.Drawing.Point(44, 401)
-        Me.lblMesBalance22.Name = "lblMesBalance22"
-        Me.lblMesBalance22.Size = New System.Drawing.Size(113, 18)
-        Me.lblMesBalance22.TabIndex = 64
-        Me.lblMesBalance22.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance22
-        Me.lblMesBalance22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesBalance23
-        '
-        Me.lblMesBalance23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance23.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance23", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesBalance23.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesBalance23.Location = New System.Drawing.Point(44, 418)
-        Me.lblMesBalance23.Name = "lblMesBalance23"
-        Me.lblMesBalance23.Size = New System.Drawing.Size(113, 18)
-        Me.lblMesBalance23.TabIndex = 63
-        Me.lblMesBalance23.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance23
-        Me.lblMesBalance23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesBalance24
-        '
-        Me.lblMesBalance24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance24.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance24", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesBalance24.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesBalance24.Location = New System.Drawing.Point(44, 435)
-        Me.lblMesBalance24.Name = "lblMesBalance24"
-        Me.lblMesBalance24.Size = New System.Drawing.Size(113, 18)
-        Me.lblMesBalance24.TabIndex = 63
-        Me.lblMesBalance24.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance24
-        Me.lblMesBalance24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesBalance25
-        '
-        Me.lblMesBalance25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance25.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance25", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesBalance25.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesBalance25.Location = New System.Drawing.Point(44, 452)
-        Me.lblMesBalance25.Name = "lblMesBalance25"
-        Me.lblMesBalance25.Size = New System.Drawing.Size(113, 18)
-        Me.lblMesBalance25.TabIndex = 63
-        Me.lblMesBalance25.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance25
-        Me.lblMesBalance25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesBalance26
-        '
-        Me.lblMesBalance26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance26.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance26", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesBalance26.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesBalance26.Location = New System.Drawing.Point(44, 469)
-        Me.lblMesBalance26.Name = "lblMesBalance26"
-        Me.lblMesBalance26.Size = New System.Drawing.Size(113, 18)
-        Me.lblMesBalance26.TabIndex = 63
-        Me.lblMesBalance26.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance26
-        Me.lblMesBalance26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesBalance27
-        '
-        Me.lblMesBalance27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance27.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance27", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesBalance27.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesBalance27.Location = New System.Drawing.Point(44, 486)
-        Me.lblMesBalance27.Name = "lblMesBalance27"
-        Me.lblMesBalance27.Size = New System.Drawing.Size(113, 18)
-        Me.lblMesBalance27.TabIndex = 63
-        Me.lblMesBalance27.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance27
-        Me.lblMesBalance27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesBalance28
-        '
-        Me.lblMesBalance28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance28.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance28", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesBalance28.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesBalance28.Location = New System.Drawing.Point(44, 503)
-        Me.lblMesBalance28.Name = "lblMesBalance28"
-        Me.lblMesBalance28.Size = New System.Drawing.Size(113, 18)
-        Me.lblMesBalance28.TabIndex = 63
-        Me.lblMesBalance28.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance28
-        Me.lblMesBalance28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesBalance29
-        '
-        Me.lblMesBalance29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance29.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance29", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesBalance29.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesBalance29.Location = New System.Drawing.Point(44, 520)
-        Me.lblMesBalance29.Name = "lblMesBalance29"
-        Me.lblMesBalance29.Size = New System.Drawing.Size(113, 18)
-        Me.lblMesBalance29.TabIndex = 63
-        Me.lblMesBalance29.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance29
-        Me.lblMesBalance29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesBalance30
-        '
-        Me.lblMesBalance30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance30.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance30", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesBalance30.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesBalance30.Location = New System.Drawing.Point(44, 537)
-        Me.lblMesBalance30.Name = "lblMesBalance30"
-        Me.lblMesBalance30.Size = New System.Drawing.Size(113, 18)
-        Me.lblMesBalance30.TabIndex = 63
-        Me.lblMesBalance30.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance30
-        Me.lblMesBalance30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesPrecio31
-        '
-        Me.lblMesPrecio31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio31.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio31", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesPrecio31.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesPrecio31.Location = New System.Drawing.Point(156, 554)
-        Me.lblMesPrecio31.Name = "lblMesPrecio31"
-        Me.lblMesPrecio31.Size = New System.Drawing.Size(66, 18)
-        Me.lblMesPrecio31.TabIndex = 130
-        Me.lblMesPrecio31.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio31
-        Me.lblMesPrecio31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesPrecio30
-        '
-        Me.lblMesPrecio30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio30.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio30", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesPrecio30.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesPrecio30.Location = New System.Drawing.Point(156, 537)
-        Me.lblMesPrecio30.Name = "lblMesPrecio30"
-        Me.lblMesPrecio30.Size = New System.Drawing.Size(66, 18)
-        Me.lblMesPrecio30.TabIndex = 130
-        Me.lblMesPrecio30.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio30
-        Me.lblMesPrecio30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesBalance31
-        '
-        Me.lblMesBalance31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance31.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance31", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesBalance31.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesBalance31.Location = New System.Drawing.Point(44, 554)
-        Me.lblMesBalance31.Name = "lblMesBalance31"
-        Me.lblMesBalance31.Size = New System.Drawing.Size(113, 18)
-        Me.lblMesBalance31.TabIndex = 63
-        Me.lblMesBalance31.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance31
-        Me.lblMesBalance31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesPrecio29
-        '
-        Me.lblMesPrecio29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio29.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio29", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesPrecio29.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesPrecio29.Location = New System.Drawing.Point(156, 520)
-        Me.lblMesPrecio29.Name = "lblMesPrecio29"
-        Me.lblMesPrecio29.Size = New System.Drawing.Size(66, 18)
-        Me.lblMesPrecio29.TabIndex = 130
-        Me.lblMesPrecio29.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio29
-        Me.lblMesPrecio29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesPrecio28
-        '
-        Me.lblMesPrecio28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio28.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio28", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesPrecio28.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesPrecio28.Location = New System.Drawing.Point(156, 503)
-        Me.lblMesPrecio28.Name = "lblMesPrecio28"
-        Me.lblMesPrecio28.Size = New System.Drawing.Size(66, 18)
-        Me.lblMesPrecio28.TabIndex = 130
-        Me.lblMesPrecio28.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio28
-        Me.lblMesPrecio28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesPrecio27
-        '
-        Me.lblMesPrecio27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio27.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio27", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesPrecio27.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesPrecio27.Location = New System.Drawing.Point(156, 486)
-        Me.lblMesPrecio27.Name = "lblMesPrecio27"
-        Me.lblMesPrecio27.Size = New System.Drawing.Size(66, 18)
-        Me.lblMesPrecio27.TabIndex = 130
-        Me.lblMesPrecio27.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio27
-        Me.lblMesPrecio27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesPrecio26
-        '
-        Me.lblMesPrecio26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio26.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio26", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesPrecio26.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesPrecio26.Location = New System.Drawing.Point(156, 469)
-        Me.lblMesPrecio26.Name = "lblMesPrecio26"
-        Me.lblMesPrecio26.Size = New System.Drawing.Size(66, 18)
-        Me.lblMesPrecio26.TabIndex = 130
-        Me.lblMesPrecio26.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio26
-        Me.lblMesPrecio26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesPrecio25
-        '
-        Me.lblMesPrecio25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio25.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio25", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesPrecio25.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesPrecio25.Location = New System.Drawing.Point(156, 452)
-        Me.lblMesPrecio25.Name = "lblMesPrecio25"
-        Me.lblMesPrecio25.Size = New System.Drawing.Size(66, 18)
-        Me.lblMesPrecio25.TabIndex = 130
-        Me.lblMesPrecio25.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio25
-        Me.lblMesPrecio25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesPrecio24
-        '
-        Me.lblMesPrecio24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio24.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio24", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesPrecio24.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesPrecio24.Location = New System.Drawing.Point(156, 435)
-        Me.lblMesPrecio24.Name = "lblMesPrecio24"
-        Me.lblMesPrecio24.Size = New System.Drawing.Size(66, 18)
-        Me.lblMesPrecio24.TabIndex = 130
-        Me.lblMesPrecio24.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio24
-        Me.lblMesPrecio24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesPrecio23
-        '
-        Me.lblMesPrecio23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio23.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio23", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesPrecio23.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesPrecio23.Location = New System.Drawing.Point(156, 418)
-        Me.lblMesPrecio23.Name = "lblMesPrecio23"
-        Me.lblMesPrecio23.Size = New System.Drawing.Size(66, 18)
-        Me.lblMesPrecio23.TabIndex = 130
-        Me.lblMesPrecio23.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio23
-        Me.lblMesPrecio23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesPrecio22
-        '
-        Me.lblMesPrecio22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio22.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio22", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesPrecio22.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesPrecio22.Location = New System.Drawing.Point(156, 401)
-        Me.lblMesPrecio22.Name = "lblMesPrecio22"
-        Me.lblMesPrecio22.Size = New System.Drawing.Size(66, 18)
-        Me.lblMesPrecio22.TabIndex = 129
-        Me.lblMesPrecio22.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio22
-        Me.lblMesPrecio22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesPrecio21
-        '
-        Me.lblMesPrecio21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio21.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio21", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesPrecio21.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesPrecio21.Location = New System.Drawing.Point(156, 384)
-        Me.lblMesPrecio21.Name = "lblMesPrecio21"
-        Me.lblMesPrecio21.Size = New System.Drawing.Size(66, 18)
-        Me.lblMesPrecio21.TabIndex = 128
-        Me.lblMesPrecio21.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio21
-        Me.lblMesPrecio21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesPrecio20
-        '
-        Me.lblMesPrecio20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio20.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio20", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesPrecio20.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesPrecio20.Location = New System.Drawing.Point(156, 367)
-        Me.lblMesPrecio20.Name = "lblMesPrecio20"
-        Me.lblMesPrecio20.Size = New System.Drawing.Size(66, 18)
-        Me.lblMesPrecio20.TabIndex = 127
-        Me.lblMesPrecio20.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio20
-        Me.lblMesPrecio20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesPrecio19
-        '
-        Me.lblMesPrecio19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio19.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio19", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesPrecio19.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesPrecio19.Location = New System.Drawing.Point(156, 350)
-        Me.lblMesPrecio19.Name = "lblMesPrecio19"
-        Me.lblMesPrecio19.Size = New System.Drawing.Size(66, 18)
-        Me.lblMesPrecio19.TabIndex = 126
-        Me.lblMesPrecio19.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio19
-        Me.lblMesPrecio19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesPrecio18
-        '
-        Me.lblMesPrecio18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio18.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio18", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesPrecio18.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesPrecio18.Location = New System.Drawing.Point(156, 333)
-        Me.lblMesPrecio18.Name = "lblMesPrecio18"
-        Me.lblMesPrecio18.Size = New System.Drawing.Size(66, 18)
-        Me.lblMesPrecio18.TabIndex = 125
-        Me.lblMesPrecio18.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio18
-        Me.lblMesPrecio18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesPrecio17
-        '
-        Me.lblMesPrecio17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio17.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio17", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesPrecio17.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesPrecio17.Location = New System.Drawing.Point(156, 316)
-        Me.lblMesPrecio17.Name = "lblMesPrecio17"
-        Me.lblMesPrecio17.Size = New System.Drawing.Size(66, 18)
-        Me.lblMesPrecio17.TabIndex = 124
-        Me.lblMesPrecio17.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio17
-        Me.lblMesPrecio17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesPrecio16
-        '
-        Me.lblMesPrecio16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio16.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio16", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesPrecio16.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesPrecio16.Location = New System.Drawing.Point(156, 299)
-        Me.lblMesPrecio16.Name = "lblMesPrecio16"
-        Me.lblMesPrecio16.Size = New System.Drawing.Size(66, 18)
-        Me.lblMesPrecio16.TabIndex = 123
-        Me.lblMesPrecio16.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio16
-        Me.lblMesPrecio16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesPrecio15
-        '
-        Me.lblMesPrecio15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio15.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio15", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesPrecio15.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesPrecio15.Location = New System.Drawing.Point(156, 282)
-        Me.lblMesPrecio15.Name = "lblMesPrecio15"
-        Me.lblMesPrecio15.Size = New System.Drawing.Size(66, 18)
-        Me.lblMesPrecio15.TabIndex = 122
-        Me.lblMesPrecio15.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio15
-        Me.lblMesPrecio15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesPrecio14
-        '
-        Me.lblMesPrecio14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio14.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio14", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesPrecio14.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesPrecio14.Location = New System.Drawing.Point(156, 265)
-        Me.lblMesPrecio14.Name = "lblMesPrecio14"
-        Me.lblMesPrecio14.Size = New System.Drawing.Size(66, 18)
-        Me.lblMesPrecio14.TabIndex = 121
-        Me.lblMesPrecio14.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio14
-        Me.lblMesPrecio14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesPrecio13
-        '
-        Me.lblMesPrecio13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio13.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio13", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesPrecio13.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesPrecio13.Location = New System.Drawing.Point(156, 248)
-        Me.lblMesPrecio13.Name = "lblMesPrecio13"
-        Me.lblMesPrecio13.Size = New System.Drawing.Size(66, 18)
-        Me.lblMesPrecio13.TabIndex = 120
-        Me.lblMesPrecio13.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio13
-        Me.lblMesPrecio13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesPrecio12
-        '
-        Me.lblMesPrecio12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesPrecio12.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesPrecio12.Location = New System.Drawing.Point(156, 231)
-        Me.lblMesPrecio12.Name = "lblMesPrecio12"
-        Me.lblMesPrecio12.Size = New System.Drawing.Size(66, 18)
-        Me.lblMesPrecio12.TabIndex = 119
-        Me.lblMesPrecio12.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio12
-        Me.lblMesPrecio12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesPrecio01
-        '
-        Me.lblMesPrecio01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesPrecio01.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesPrecio01.Location = New System.Drawing.Point(156, 44)
-        Me.lblMesPrecio01.Name = "lblMesPrecio01"
-        Me.lblMesPrecio01.Size = New System.Drawing.Size(66, 18)
-        Me.lblMesPrecio01.TabIndex = 132
-        Me.lblMesPrecio01.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio01
-        Me.lblMesPrecio01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesPrecio11
-        '
-        Me.lblMesPrecio11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesPrecio11.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesPrecio11.Location = New System.Drawing.Point(156, 214)
-        Me.lblMesPrecio11.Name = "lblMesPrecio11"
-        Me.lblMesPrecio11.Size = New System.Drawing.Size(66, 18)
-        Me.lblMesPrecio11.TabIndex = 118
-        Me.lblMesPrecio11.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio11
-        Me.lblMesPrecio11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesPrecio10
-        '
-        Me.lblMesPrecio10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesPrecio10.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesPrecio10.Location = New System.Drawing.Point(156, 197)
-        Me.lblMesPrecio10.Name = "lblMesPrecio10"
-        Me.lblMesPrecio10.Size = New System.Drawing.Size(66, 18)
-        Me.lblMesPrecio10.TabIndex = 117
-        Me.lblMesPrecio10.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio10
-        Me.lblMesPrecio10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesPrecio02
-        '
-        Me.lblMesPrecio02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesPrecio02.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesPrecio02.Location = New System.Drawing.Point(156, 61)
-        Me.lblMesPrecio02.Name = "lblMesPrecio02"
-        Me.lblMesPrecio02.Size = New System.Drawing.Size(66, 18)
-        Me.lblMesPrecio02.TabIndex = 131
-        Me.lblMesPrecio02.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio02
-        Me.lblMesPrecio02.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesPrecio09
-        '
-        Me.lblMesPrecio09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesPrecio09.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesPrecio09.Location = New System.Drawing.Point(156, 180)
-        Me.lblMesPrecio09.Name = "lblMesPrecio09"
-        Me.lblMesPrecio09.Size = New System.Drawing.Size(66, 18)
-        Me.lblMesPrecio09.TabIndex = 116
-        Me.lblMesPrecio09.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio09
-        Me.lblMesPrecio09.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesPrecio08
-        '
-        Me.lblMesPrecio08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesPrecio08.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesPrecio08.Location = New System.Drawing.Point(156, 163)
-        Me.lblMesPrecio08.Name = "lblMesPrecio08"
-        Me.lblMesPrecio08.Size = New System.Drawing.Size(66, 18)
-        Me.lblMesPrecio08.TabIndex = 115
-        Me.lblMesPrecio08.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio08
-        Me.lblMesPrecio08.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesPrecio03
-        '
-        Me.lblMesPrecio03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesPrecio03.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesPrecio03.Location = New System.Drawing.Point(156, 78)
-        Me.lblMesPrecio03.Name = "lblMesPrecio03"
-        Me.lblMesPrecio03.Size = New System.Drawing.Size(66, 18)
-        Me.lblMesPrecio03.TabIndex = 110
-        Me.lblMesPrecio03.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio03
-        Me.lblMesPrecio03.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesPrecio07
-        '
-        Me.lblMesPrecio07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesPrecio07.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesPrecio07.Location = New System.Drawing.Point(156, 146)
-        Me.lblMesPrecio07.Name = "lblMesPrecio07"
-        Me.lblMesPrecio07.Size = New System.Drawing.Size(66, 18)
-        Me.lblMesPrecio07.TabIndex = 114
-        Me.lblMesPrecio07.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio07
-        Me.lblMesPrecio07.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesPrecio04
-        '
-        Me.lblMesPrecio04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesPrecio04.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesPrecio04.Location = New System.Drawing.Point(156, 95)
-        Me.lblMesPrecio04.Name = "lblMesPrecio04"
-        Me.lblMesPrecio04.Size = New System.Drawing.Size(66, 18)
-        Me.lblMesPrecio04.TabIndex = 111
-        Me.lblMesPrecio04.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio04
-        Me.lblMesPrecio04.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesPrecio06
-        '
-        Me.lblMesPrecio06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesPrecio06.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesPrecio06.Location = New System.Drawing.Point(156, 129)
-        Me.lblMesPrecio06.Name = "lblMesPrecio06"
-        Me.lblMesPrecio06.Size = New System.Drawing.Size(66, 18)
-        Me.lblMesPrecio06.TabIndex = 113
-        Me.lblMesPrecio06.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio06
-        Me.lblMesPrecio06.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblMesPrecio05
-        '
-        Me.lblMesPrecio05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblMesPrecio05.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesPrecio05.Location = New System.Drawing.Point(156, 112)
-        Me.lblMesPrecio05.Name = "lblMesPrecio05"
-        Me.lblMesPrecio05.Size = New System.Drawing.Size(66, 18)
-        Me.lblMesPrecio05.TabIndex = 112
-        Me.lblMesPrecio05.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio05
-        Me.lblMesPrecio05.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        'lblTransacionMes
+        '
+        Me.lblTransacionMes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransacionMes.Font = New System.Drawing.Font("Duco", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTransacionMes.ForeColor = System.Drawing.Color.Black
+        Me.lblTransacionMes.Location = New System.Drawing.Point(221, 567)
+        Me.lblTransacionMes.Name = "lblTransacionMes"
+        Me.lblTransacionMes.Size = New System.Drawing.Size(82, 28)
+        Me.lblTransacionMes.TabIndex = 177
+        Me.lblTransacionMes.Text = "0"
+        Me.lblTransacionMes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label98
+        '
+        Me.Label98.AutoSize = True
+        Me.Label98.Location = New System.Drawing.Point(63, 139)
+        Me.Label98.Name = "Label98"
+        Me.Label98.Size = New System.Drawing.Size(73, 20)
+        Me.Label98.TabIndex = 0
+        Me.Label98.Text = "Label98"
         '
         'Form1
         '
@@ -6163,6 +6201,8 @@ Partial Class Form1
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage1.PerformLayout()
+        Me.GroupBox16.ResumeLayout(False)
+        Me.GroupBox16.PerformLayout()
         Me.GroupBox15.ResumeLayout(False)
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage3.ResumeLayout(False)
@@ -6576,32 +6616,32 @@ Partial Class Form1
     Friend WithEvents GroupBox4 As GroupBox
     Friend WithEvents TreeView1 As TreeView
     Friend WithEvents GroupBox15 As GroupBox
-    Friend WithEvents Label98 As Label
-    Friend WithEvents Label99 As Label
+    Friend WithEvents lblTransasionesAño03 As Label
+    Friend WithEvents lblGananciasAño01 As Label
     Friend WithEvents Label101 As Label
-    Friend WithEvents Label102 As Label
-    Friend WithEvents Label104 As Label
-    Friend WithEvents Label105 As Label
-    Friend WithEvents Label107 As Label
-    Friend WithEvents Label108 As Label
-    Friend WithEvents Label110 As Label
-    Friend WithEvents Label111 As Label
-    Friend WithEvents Label112 As Label
-    Friend WithEvents Label113 As Label
-    Friend WithEvents Label114 As Label
-    Friend WithEvents Label115 As Label
-    Friend WithEvents Label116 As Label
-    Friend WithEvents Label117 As Label
-    Friend WithEvents Label118 As Label
-    Friend WithEvents Label119 As Label
-    Friend WithEvents Label120 As Label
-    Friend WithEvents Label121 As Label
-    Friend WithEvents Label122 As Label
-    Friend WithEvents Label123 As Label
-    Friend WithEvents Label124 As Label
+    Friend WithEvents lblGananciasAño02 As Label
+    Friend WithEvents lblGananciasAño07 As Label
+    Friend WithEvents lblTransasionesAño12 As Label
+    Friend WithEvents lblGananciasAño04 As Label
+    Friend WithEvents lblTransasionesAño11 As Label
+    Friend WithEvents lblGananciasAño08 As Label
+    Friend WithEvents lblTransasionesAño06 As Label
+    Friend WithEvents lblGananciasAño10 As Label
+    Friend WithEvents lblTransasionesAño09 As Label
+    Friend WithEvents lblGananciasAño05 As Label
+    Friend WithEvents lblTransasionesAño05 As Label
+    Friend WithEvents lblGananciasAño09 As Label
+    Friend WithEvents lblTransasionesAño10 As Label
+    Friend WithEvents lblGananciasAño06 As Label
+    Friend WithEvents lblTransasionesAño08 As Label
+    Friend WithEvents lblGananciasAño11 As Label
+    Friend WithEvents lblTransasionesAño04 As Label
+    Friend WithEvents lblGananciasAño12 As Label
+    Friend WithEvents lblTransasionesAño07 As Label
+    Friend WithEvents lblTransasionesAño02 As Label
     Friend WithEvents Label125 As Label
-    Friend WithEvents Label126 As Label
-    Friend WithEvents Label127 As Label
+    Friend WithEvents lblGananciasAño03 As Label
+    Friend WithEvents lblTransasionesAño01 As Label
     Friend WithEvents Label128 As Label
     Friend WithEvents lblBalanceAño01 As Label
     Friend WithEvents lblBalanceAño02 As Label
@@ -6644,10 +6684,12 @@ Partial Class Form1
     Friend WithEvents Label170 As Label
     Friend WithEvents GroupBox16 As GroupBox
     Friend WithEvents Label169 As Label
-    Friend WithEvents Label168 As Label
+    Friend WithEvents lblTotalGananciaAño As Label
     Friend WithEvents GroupBox17 As GroupBox
     Friend WithEvents lblDeposito As Label
     Friend WithEvents lblFechaFinDeposito As Label
     Friend WithEvents Label173 As Label
     Friend WithEvents Label174 As Label
+    Friend WithEvents lblTransacionMes As Label
+    Friend WithEvents Label98 As Label
 End Class

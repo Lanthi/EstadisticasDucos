@@ -1385,6 +1385,282 @@ Namespace My
                 Me("ValorHora00") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblBalanceAño12() As String
+            Get
+                Return CType(Me("lblBalanceAño12"),String)
+            End Get
+            Set
+                Me("lblBalanceAño12") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblBalanceAño11() As String
+            Get
+                Return CType(Me("lblBalanceAño11"),String)
+            End Get
+            Set
+                Me("lblBalanceAño11") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblBalanceAño10() As String
+            Get
+                Return CType(Me("lblBalanceAño10"),String)
+            End Get
+            Set
+                Me("lblBalanceAño10") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblBalanceAño09() As String
+            Get
+                Return CType(Me("lblBalanceAño09"),String)
+            End Get
+            Set
+                Me("lblBalanceAño09") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblBalanceAño08() As String
+            Get
+                Return CType(Me("lblBalanceAño08"),String)
+            End Get
+            Set
+                Me("lblBalanceAño08") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblBalanceAño07() As String
+            Get
+                Return CType(Me("lblBalanceAño07"),String)
+            End Get
+            Set
+                Me("lblBalanceAño07") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblBalanceAño06() As String
+            Get
+                Return CType(Me("lblBalanceAño06"),String)
+            End Get
+            Set
+                Me("lblBalanceAño06") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblBalanceAño05() As String
+            Get
+                Return CType(Me("lblBalanceAño05"),String)
+            End Get
+            Set
+                Me("lblBalanceAño05") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblBalanceAño04() As String
+            Get
+                Return CType(Me("lblBalanceAño04"),String)
+            End Get
+            Set
+                Me("lblBalanceAño04") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblBalanceAño03() As String
+            Get
+                Return CType(Me("lblBalanceAño03"),String)
+            End Get
+            Set
+                Me("lblBalanceAño03") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblBalanceAño02() As String
+            Get
+                Return CType(Me("lblBalanceAño02"),String)
+            End Get
+            Set
+                Me("lblBalanceAño02") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblBalanceAño01() As String
+            Get
+                Return CType(Me("lblBalanceAño01"),String)
+            End Get
+            Set
+                Me("lblBalanceAño01") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblPrecioAño01() As String
+            Get
+                Return CType(Me("lblPrecioAño01"),String)
+            End Get
+            Set
+                Me("lblPrecioAño01") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblPrecioAño02() As String
+            Get
+                Return CType(Me("lblPrecioAño02"),String)
+            End Get
+            Set
+                Me("lblPrecioAño02") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblPrecioAño12() As String
+            Get
+                Return CType(Me("lblPrecioAño12"),String)
+            End Get
+            Set
+                Me("lblPrecioAño12") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblPrecioAño11() As String
+            Get
+                Return CType(Me("lblPrecioAño11"),String)
+            End Get
+            Set
+                Me("lblPrecioAño11") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblPrecioAño10() As String
+            Get
+                Return CType(Me("lblPrecioAño10"),String)
+            End Get
+            Set
+                Me("lblPrecioAño10") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblPrecioAño09() As String
+            Get
+                Return CType(Me("lblPrecioAño09"),String)
+            End Get
+            Set
+                Me("lblPrecioAño09") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblPrecioAño08() As String
+            Get
+                Return CType(Me("lblPrecioAño08"),String)
+            End Get
+            Set
+                Me("lblPrecioAño08") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblPrecioAño07() As String
+            Get
+                Return CType(Me("lblPrecioAño07"),String)
+            End Get
+            Set
+                Me("lblPrecioAño07") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblPrecioAño06() As String
+            Get
+                Return CType(Me("lblPrecioAño06"),String)
+            End Get
+            Set
+                Me("lblPrecioAño06") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblPrecioAño05() As String
+            Get
+                Return CType(Me("lblPrecioAño05"),String)
+            End Get
+            Set
+                Me("lblPrecioAño05") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblPrecioAño03() As String
+            Get
+                Return CType(Me("lblPrecioAño03"),String)
+            End Get
+            Set
+                Me("lblPrecioAño03") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

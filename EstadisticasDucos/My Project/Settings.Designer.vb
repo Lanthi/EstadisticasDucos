@@ -1805,6 +1805,18 @@ Namespace My
                 Me("lblTransasionesAño01") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property mesloco() As String
+            Get
+                Return CType(Me("mesloco"),String)
+            End Get
+            Set
+                Me("mesloco") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

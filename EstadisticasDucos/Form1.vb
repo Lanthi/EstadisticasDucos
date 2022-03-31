@@ -1112,6 +1112,7 @@ Public Class Form1
             lblTotalMes.Text += CDec(lblMesDifencia29.Text)
             lblTotalMes.Text += CDec(lblMesDifencia30.Text)
             lblTotalMes.Text += CDec(lblMesDifencia31.Text)
+            TextBox1.Text = lblTotalMes.Text
             Dim TmpTransacion As Decimal
             Dim tmpTransacionNumeros As Integer
             For I As Integer = 1 To 31
@@ -1183,84 +1184,7 @@ Public Class Form1
             ' MsgBox("Error!!" & vbCrLf & ex.Message)
         End Try
     End Sub
-    Private Sub Button1_Click(sender As Object, e As EventArgs)
-        lblBalanceHora00.Text = "0"
-        lblBalanceHora01.Text = "0"
-        lblBalanceHora02.Text = "0"
-        lblBalanceHora03.Text = "0"
-        lblBalanceHora04.Text = "0"
-        lblBalanceHora05.Text = "0"
-        lblBalanceHora06.Text = "0"
-        lblBalanceHora07.Text = "0"
-        lblBalanceHora08.Text = "0"
-        lblBalanceHora09.Text = "0"
-        lblBalanceHora10.Text = "0"
-        lblBalanceHora11.Text = "0"
-        lblBalanceHora12.Text = "0"
-        lblBalanceHora13.Text = "0"
-        lblBalanceHora14.Text = "0"
-        lblBalanceHora15.Text = "0"
-        lblBalanceHora16.Text = "0"
-        lblBalanceHora17.Text = "0"
-        lblBalanceHora18.Text = "0"
-        lblBalanceHora19.Text = "0"
-        lblBalanceHora20.Text = "0"
-        lblBalanceHora21.Text = "0"
-        lblBalanceHora22.Text = "0"
-        lblBalanceHora23.Text = "0"
 
-        lblPrecio00.Text = "0"
-        lblPrecio01.Text = "0"
-        lblPrecio02.Text = "0"
-        lblPrecio03.Text = "0"
-        lblPrecio04.Text = "0"
-        lblPrecio05.Text = "0"
-        lblPrecio06.Text = "0"
-        lblPrecio07.Text = "0"
-        lblPrecio08.Text = "0"
-        lblPrecio09.Text = "0"
-        lblPrecio10.Text = "0"
-        lblPrecio11.Text = "0"
-        lblPrecio12.Text = "0"
-        lblPrecio13.Text = "0"
-        lblPrecio14.Text = "0"
-        lblPrecio15.Text = "0"
-        lblPrecio16.Text = "0"
-        lblPrecio17.Text = "0"
-        lblPrecio18.Text = "0"
-        lblPrecio19.Text = "0"
-        lblPrecio20.Text = "0"
-        lblPrecio21.Text = "0"
-        lblPrecio22.Text = "0"
-        lblPrecio23.Text = "0"
-
-        lblHoraDiferencia00.Text = 0
-        lblHoraDiferencia01.Text = 0
-        lblHoraDiferencia02.Text = 0
-        lblHoraDiferencia03.Text = 0
-        lblHoraDiferencia04.Text = 0
-        lblHoraDiferencia05.Text = 0
-        lblHoraDiferencia06.Text = 0
-        lblHoraDiferencia07.Text = 0
-        lblHoraDiferencia08.Text = 0
-        lblHoraDiferencia09.Text = 0
-        lblHoraDiferencia10.Text = 0
-        lblHoraDiferencia11.Text = 0
-        lblHoraDiferencia12.Text = 0
-        lblHoraDiferencia13.Text = 0
-        lblHoraDiferencia14.Text = 0
-        lblHoraDiferencia15.Text = 0
-        lblHoraDiferencia16.Text = 0
-        lblHoraDiferencia17.Text = 0
-        lblHoraDiferencia18.Text = 0
-        lblHoraDiferencia19.Text = 0
-        lblHoraDiferencia20.Text = 0
-        lblHoraDiferencia21.Text = 0
-        lblHoraDiferencia22.Text = 0
-        lblHoraDiferencia23.Text = 0
-        lblTotalHora.Text = 0
-        lblTotalMes.Text = 0
-    End Sub
 
     Private Sub Label24_Click(sender As Object, e As EventArgs) Handles Label24.Click
 

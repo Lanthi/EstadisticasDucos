@@ -207,9 +207,10 @@ Public Class Form1
                 lblMesBalance29.Visible = True
                 lblMesPrecio29.Visible = True
                 lblMesDifencia29.Visible = True
-                lblTotalMes.Location = New Point(302, 567)
-                lblMesDaily.Location = New Point(13, 567)
-                gpMes.Size = New Size(411, 607)
+                lblTotalMes.Location = New Point(299, 633)
+                lblTransacionMes.Location = New Point(218, 633)
+                lblMesDaily.Location = New Point(8, 633)
+                gpMes.Size = New Size(411, 676)
             Case 30
                 lbl31.Visible = False
                 lblMesBalance31.Visible = False
@@ -1182,7 +1183,7 @@ Public Class Form1
             ' MsgBox("Error!!" & vbCrLf & ex.Message)
         End Try
     End Sub
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
         lblBalanceHora00.Text = "0"
         lblBalanceHora01.Text = "0"
         lblBalanceHora02.Text = "0"
@@ -1259,5 +1260,133 @@ Public Class Form1
         lblHoraDiferencia23.Text = 0
         lblTotalHora.Text = 0
         lblTotalMes.Text = 0
+    End Sub
+
+    Private Sub Label24_Click(sender As Object, e As EventArgs) Handles Label24.Click
+
+    End Sub
+
+    Private Sub Label16_Click(sender As Object, e As EventArgs) Handles Label16.Click
+
+    End Sub
+
+    Private Sub lblBalanceHora02_Click(sender As Object, e As EventArgs) Handles lblBalanceHora02.Click
+
+    End Sub
+
+    Private Sub lblBalanceHora18_Click(sender As Object, e As EventArgs) Handles lblBalanceHora18.Click
+
+    End Sub
+
+    Private Sub lblBalanceHora20_Click(sender As Object, e As EventArgs) Handles lblBalanceHora20.Click
+
+    End Sub
+
+    Private Sub lblBalanceHora22_Click(sender As Object, e As EventArgs) Handles lblBalanceHora22.Click
+
+    End Sub
+
+    Private Sub lblBalanceHora19_Click(sender As Object, e As EventArgs) Handles lblBalanceHora19.Click
+
+    End Sub
+
+    Private Sub lblBalanceHora21_Click(sender As Object, e As EventArgs) Handles lblBalanceHora21.Click
+
+    End Sub
+
+    Private Sub lblBalanceHora17_Click(sender As Object, e As EventArgs) Handles lblBalanceHora17.Click
+
+    End Sub
+
+    Private Sub lblBalanceHora23_Click(sender As Object, e As EventArgs) Handles lblBalanceHora23.Click
+
+    End Sub
+
+    Private Sub lblBalanceHora13_Click(sender As Object, e As EventArgs) Handles lblBalanceHora13.Click
+
+    End Sub
+
+    Private Sub lblBalanceHora16_Click(sender As Object, e As EventArgs) Handles lblBalanceHora16.Click
+
+    End Sub
+
+    Private Sub lblBalanceHora10_Click(sender As Object, e As EventArgs) Handles lblBalanceHora10.Click
+
+    End Sub
+
+    Private Sub Label29_Click(sender As Object, e As EventArgs) Handles Label29.Click
+
+    End Sub
+
+    Private Sub lblBalanceHora00_Click(sender As Object, e As EventArgs) Handles lblBalanceHora00.Click
+
+    End Sub
+
+    Private Sub lblBalanceHora01_Click(sender As Object, e As EventArgs) Handles lblBalanceHora01.Click
+
+    End Sub
+
+    Private Sub lblBalanceHora03_Click(sender As Object, e As EventArgs) Handles lblBalanceHora03.Click
+
+    End Sub
+
+    Private Sub lblBalanceHora04_Click(sender As Object, e As EventArgs) Handles lblBalanceHora04.Click
+
+    End Sub
+
+    Private Sub lblBalanceHora15_Click(sender As Object, e As EventArgs) Handles lblBalanceHora15.Click
+
+    End Sub
+
+    Private Sub lblBalanceHora05_Click(sender As Object, e As EventArgs) Handles lblBalanceHora05.Click
+
+    End Sub
+
+    Private Sub lblBalanceHora14_Click(sender As Object, e As EventArgs) Handles lblBalanceHora14.Click
+
+    End Sub
+
+    Private Sub lblBalanceHora06_Click(sender As Object, e As EventArgs) Handles lblBalanceHora06.Click
+
+    End Sub
+
+    Private Sub lblBalanceHora12_Click(sender As Object, e As EventArgs) Handles lblBalanceHora12.Click
+
+    End Sub
+
+    Private Sub lblBalanceHora11_Click(sender As Object, e As EventArgs) Handles lblBalanceHora11.Click
+
+    End Sub
+
+    Private Sub lblBalanceHora07_Click(sender As Object, e As EventArgs) Handles lblBalanceHora07.Click
+
+    End Sub
+
+    Private Sub lblBalanceHora09_Click(sender As Object, e As EventArgs) Handles lblBalanceHora09.Click
+
+    End Sub
+
+    Private Sub lblBalanceHora08_Click(sender As Object, e As EventArgs) Handles lblBalanceHora08.Click
+
+    End Sub
+
+    Private Sub GroupBox15_Enter(sender As Object, e As EventArgs) Handles GroupBox15.Enter
+
+    End Sub
+
+    Private Sub lblTransasionesAño09_Click(sender As Object, e As EventArgs) Handles lblTransasionesAño09.Click
+
+    End Sub
+
+    Private Sub Label35_Click(sender As Object, e As EventArgs) Handles Label35.Click
+
+    End Sub
+
+    Private Sub gpMes_Enter(sender As Object, e As EventArgs) Handles gpMes.Enter
+
+    End Sub
+
+    Private Sub Label103_Click(sender As Object, e As EventArgs) Handles Label103.Click
+
     End Sub
 End Class

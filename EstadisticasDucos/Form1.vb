@@ -1133,6 +1133,19 @@ Public Class Form1
                 Case 11 : lblBalanceAño11.Text = txtbalance.Text : lblPrecioAño11.Text = txtDucoprice.Text : lblTransasionesAño11.Text = Format(TransacionAño(11), "#0.0#") & "(" & TransacionPorAño(11) & ")"
                 Case 12 : lblBalanceAño12.Text = txtbalance.Text : lblPrecioAño12.Text = txtDucoprice.Text : lblTransasionesAño12.Text = Format(TransacionAño(12), "#0.0#") & "(" & TransacionPorAño(12) & ")"
             End Select
+            lblGananciasAño01.Text = lblBalanceAño01.Text
+            If lblBalanceAño02.Text <> 0 And lblBalanceAño01.Text <> 0 Then lblGananciasAño02.Text = CDec(lblBalanceAño02.Text) - CDec(lblBalanceAño01.Text)
+            If lblBalanceAño03.Text <> 0 And lblBalanceAño02.Text <> 0 Then lblGananciasAño03.Text = CDec(lblBalanceAño03.Text) - CDec(lblBalanceAño02.Text)
+            If lblBalanceAño04.Text <> 0 And lblBalanceAño03.Text <> 0 Then lblGananciasAño04.Text = CDec(lblBalanceAño04.Text) - CDec(lblBalanceAño03.Text)
+            If lblBalanceAño05.Text <> 0 And lblBalanceAño04.Text <> 0 Then lblGananciasAño05.Text = CDec(lblBalanceAño05.Text) - CDec(lblBalanceAño04.Text)
+            If lblBalanceAño06.Text <> 0 And lblBalanceAño05.Text <> 0 Then lblGananciasAño06.Text = CDec(lblBalanceAño06.Text) - CDec(lblBalanceAño05.Text)
+            If lblBalanceAño07.Text <> 0 And lblBalanceAño06.Text <> 0 Then lblGananciasAño07.Text = CDec(lblBalanceAño07.Text) - CDec(lblBalanceAño06.Text)
+            If lblBalanceAño08.Text <> 0 And lblBalanceAño07.Text <> 0 Then lblGananciasAño08.Text = CDec(lblBalanceAño08.Text) - CDec(lblBalanceAño07.Text)
+            If lblBalanceAño09.Text <> 0 And lblBalanceAño08.Text <> 0 Then lblGananciasAño09.Text = CDec(lblBalanceAño09.Text) - CDec(lblBalanceAño08.Text)
+            If lblBalanceAño10.Text <> 0 And lblBalanceAño09.Text <> 0 Then lblGananciasAño10.Text = CDec(lblBalanceAño10.Text) - CDec(lblBalanceAño09.Text)
+            If lblBalanceAño11.Text <> 0 And lblBalanceAño10.Text <> 0 Then lblGananciasAño11.Text = CDec(lblBalanceAño11.Text) - CDec(lblBalanceAño10.Text)
+            If lblBalanceAño12.Text <> 0 And lblBalanceAño11.Text <> 0 Then lblGananciasAño12.Text = CDec(lblBalanceAño12.Text) - CDec(lblBalanceAño11.Text)
+
             My.Settings.Save()
         Catch ex As Exception
             'MsgBox("Error!!" & vbCrLf & ex.Message)

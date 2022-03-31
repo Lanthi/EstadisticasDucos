@@ -291,6 +291,7 @@ Public Class Form1
             Dim Deposito As Integer = dict2.item("result").item("balance").item("stake_amount")
             Dim FechafinDeposito As Integer = dict2.item("result").item("balance").item("stake_date")
             lblDeposito.Text = Deposito
+            lblDucoDeposito.Left = lblDeposito.Left + lblDeposito.Width
             lblFechaFinDeposito.Text = FechafinDeposito
             txtDucoprice.Text = CDec(dict.item("Duco price"))
             txtbalance.Text = dict2.item("result").item("balance").item("balance")
@@ -576,7 +577,7 @@ Public Class Form1
                 Case 28 : If lblMesBalance28.Text <> 0 Then lblMesDifencia28.Text = CDec(txtbalance.Text) - CDec(lblMesBalance28.Text) - CDec(Transacion(28))
                 Case 29 : If lblMesBalance29.Text <> 0 Then lblMesDifencia29.Text = CDec(txtbalance.Text) - CDec(lblMesBalance29.Text) - CDec(Transacion(29))
                 Case 30 : If lblMesBalance30.Text <> 0 Then lblMesDifencia30.Text = CDec(txtbalance.Text) - CDec(lblMesBalance30.Text) - CDec(Transacion(30))
-                Case 31 : If lblMesBalance31.Text <> 0 Then lblMesDifencia31.Text = CDec(txtbalance.Text) - CDec(txtbalance.Text) - CDec(Transacion(31))
+                Case 31 : If lblMesBalance31.Text <> 0 Then lblMesDifencia31.Text = CDec(txtbalance.Text) - CDec(lblMesBalance31.Text) - CDec(Transacion(31))
             End Select
             lblTotalHora.Text = 0
             lblTotalHora.Text += CDec(lblHoraDiferencia00.Text)

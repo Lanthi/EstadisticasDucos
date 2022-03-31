@@ -1122,18 +1122,18 @@ Public Class Form1
             TransacionPorAño(Month(Now)) = tmpTransacionNumeros
             lblTransacionMes.Text = Format(TransacionAño(Month(Now)), "#0.0#") & "(" & TransacionPorAño(Month(Now)) & ")"
             Select Case Month(Now)
-                Case 1 : lblBalanceAño01.Text = txtbalance.Text : lblPrecioAño01.Text = txtDucoprice.Text : lblTransasionesAño01.Text = Format(TransacionAño(1), "#0.0#") & "(" & TransacionPorAño(1) & ")"
-                Case 2 : lblBalanceAño02.Text = txtbalance.Text : lblPrecioAño02.Text = txtDucoprice.Text : lblTransasionesAño02.Text = Format(TransacionAño(2), "#0.0#") & "(" & TransacionPorAño(2) & ")"
-                Case 3 : lblBalanceAño03.Text = txtbalance.Text : lblPrecioAño03.Text = txtDucoprice.Text : lblTransasionesAño03.Text = Format(TransacionAño(3), "#0.0#") & "(" & TransacionPorAño(3) & ")"
-                Case 4 : lblBalanceAño04.Text = txtbalance.Text : lblPrecioAño04.Text = txtDucoprice.Text : lblTransasionesAño04.Text = Format(TransacionAño(4), "#0.0#") & "(" & TransacionPorAño(4) & ")"
-                Case 5 : lblBalanceAño05.Text = txtbalance.Text : lblPrecioAño05.Text = txtDucoprice.Text : lblTransasionesAño05.Text = Format(TransacionAño(5), "#0.0#") & "(" & TransacionPorAño(5) & ")"
-                Case 6 : lblBalanceAño06.Text = txtbalance.Text : lblPrecioAño06.Text = txtDucoprice.Text : lblTransasionesAño06.Text = Format(TransacionAño(6), "#0.0#") & "(" & TransacionPorAño(6) & ")"
-                Case 7 : lblBalanceAño07.Text = txtbalance.Text : lblPrecioAño07.Text = txtDucoprice.Text : lblTransasionesAño07.Text = Format(TransacionAño(7), "#0.0#") & "(" & TransacionPorAño(7) & ")"
-                Case 8 : lblBalanceAño08.Text = txtbalance.Text : lblPrecioAño08.Text = txtDucoprice.Text : lblTransasionesAño08.Text = Format(TransacionAño(8), "#0.0#") & "(" & TransacionPorAño(8) & ")"
-                Case 9 : lblBalanceAño09.Text = txtbalance.Text : lblPrecioAño09.Text = txtDucoprice.Text : lblTransasionesAño09.Text = Format(TransacionAño(9), "#0.0#") & "(" & TransacionPorAño(9) & ")"
-                Case 10 : lblBalanceAño10.Text = txtbalance.Text : lblPrecioAño10.Text = txtDucoprice.Text : lblTransasionesAño10.Text = Format(TransacionAño(10), "#0.0#") & "(" & TransacionPorAño(10) & ")"
-                Case 11 : lblBalanceAño11.Text = txtbalance.Text : lblPrecioAño11.Text = txtDucoprice.Text : lblTransasionesAño11.Text = Format(TransacionAño(11), "#0.0#") & "(" & TransacionPorAño(11) & ")"
-                Case 12 : lblBalanceAño12.Text = txtbalance.Text : lblPrecioAño12.Text = txtDucoprice.Text : lblTransasionesAño12.Text = Format(TransacionAño(12), "#0.0#") & "(" & TransacionPorAño(12) & ")"
+                Case 1 : If lblBalanceAño01.Text = 0 Then lblBalanceAño01.Text = txtbalance.Text : lblPrecioAño01.Text = txtDucoprice.Text : lblTransasionesAño01.Text = Format(TransacionAño(1), "#0.0#") & "(" & TransacionPorAño(1) & ")"
+                Case 2 : If lblBalanceAño02.Text = 0 Then lblBalanceAño02.Text = txtbalance.Text : lblPrecioAño02.Text = txtDucoprice.Text : lblTransasionesAño02.Text = Format(TransacionAño(2), "#0.0#") & "(" & TransacionPorAño(2) & ")"
+                Case 3 : If lblBalanceAño03.Text = 0 Then lblBalanceAño03.Text = txtbalance.Text : lblPrecioAño03.Text = txtDucoprice.Text : lblTransasionesAño03.Text = Format(TransacionAño(3), "#0.0#") & "(" & TransacionPorAño(3) & ")"
+                Case 4 : If lblBalanceAño04.Text = 0 Then lblBalanceAño04.Text = txtbalance.Text : lblPrecioAño04.Text = txtDucoprice.Text : lblTransasionesAño04.Text = Format(TransacionAño(4), "#0.0#") & "(" & TransacionPorAño(4) & ")"
+                Case 5 : If lblBalanceAño05.Text = 0 Then lblBalanceAño05.Text = txtbalance.Text : lblPrecioAño05.Text = txtDucoprice.Text : lblTransasionesAño05.Text = Format(TransacionAño(5), "#0.0#") & "(" & TransacionPorAño(5) & ")"
+                Case 6 : If lblBalanceAño06.Text = 0 Then lblBalanceAño06.Text = txtbalance.Text : lblPrecioAño06.Text = txtDucoprice.Text : lblTransasionesAño06.Text = Format(TransacionAño(6), "#0.0#") & "(" & TransacionPorAño(6) & ")"
+                Case 7 : If lblBalanceAño07.Text = 0 Then lblBalanceAño07.Text = txtbalance.Text : lblPrecioAño07.Text = txtDucoprice.Text : lblTransasionesAño07.Text = Format(TransacionAño(7), "#0.0#") & "(" & TransacionPorAño(7) & ")"
+                Case 8 : If lblBalanceAño08.Text = 0 Then lblBalanceAño08.Text = txtbalance.Text : lblPrecioAño08.Text = txtDucoprice.Text : lblTransasionesAño08.Text = Format(TransacionAño(8), "#0.0#") & "(" & TransacionPorAño(8) & ")"
+                Case 9 : If lblBalanceAño09.Text = 0 Then lblBalanceAño09.Text = txtbalance.Text : lblPrecioAño09.Text = txtDucoprice.Text : lblTransasionesAño09.Text = Format(TransacionAño(9), "#0.0#") & "(" & TransacionPorAño(9) & ")"
+                Case 10 : If lblBalanceAño10.Text = 0 Then lblBalanceAño10.Text = txtbalance.Text : lblPrecioAño10.Text = txtDucoprice.Text : lblTransasionesAño10.Text = Format(TransacionAño(10), "#0.0#") & "(" & TransacionPorAño(10) & ")"
+                Case 11 : If lblBalanceAño11.Text = 0 Then lblBalanceAño11.Text = txtbalance.Text : lblPrecioAño11.Text = txtDucoprice.Text : lblTransasionesAño11.Text = Format(TransacionAño(11), "#0.0#") & "(" & TransacionPorAño(11) & ")"
+                Case 12 : If lblBalanceAño12.Text = 0 Then lblBalanceAño12.Text = txtbalance.Text : lblPrecioAño12.Text = txtDucoprice.Text : lblTransasionesAño12.Text = Format(TransacionAño(12), "#0.0#") & "(" & TransacionPorAño(12) & ")"
             End Select
             lblGananciasAño01.Text = lblBalanceAño01.Text
             If lblBalanceAño02.Text <> 0 And lblBalanceAño01.Text <> 0 Then lblGananciasAño02.Text = CDec(lblBalanceAño02.Text) - CDec(lblBalanceAño01.Text)

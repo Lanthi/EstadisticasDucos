@@ -684,7 +684,7 @@ Public Class Form1
         End Try
     End Sub
     Private Sub MostrarTotales()
-        Dim TotalHOras As Decimal = 0
+        Dim TotalHoras As Decimal = 0
         lblTotalHora.Text = 0
         TotalHOras += CDec(lblHoraDiferencia00.Text)
         TotalHOras += CDec(lblHoraDiferencia01.Text)
@@ -710,7 +710,7 @@ Public Class Form1
         TotalHOras += CDec(lblHoraDiferencia21.Text)
         TotalHOras += CDec(lblHoraDiferencia22.Text)
         TotalHOras += CDec(lblHoraDiferencia23.Text)
-        lblTotalHora.Text = FormatDuco(TotalHOras)
+        lblTotalHora.Text = FormatDuco(TotalHOras, 12)
         lblTotalMes.Text = 0
         lblTotalMes.Text += CDec(lblMesDifencia01.Text)
         lblTotalMes.Text += CDec(lblMesDifencia02.Text)
@@ -745,26 +745,29 @@ Public Class Form1
         lblTotalMes.Text += CDec(lblMesDifencia31.Text)
 
     End Sub
-    Function FormatDuco(ByVal Ducos As Decimal) As String
-        If Ducos < 10 Then
-            FormatDuco = Format(Ducos, "#0.00000000000")
-        ElseIf Ducos < 100 And Ducos >= 10 Then
-            FormatDuco = Format(Ducos, "#00.0000000000")
-        ElseIf Ducos < 1000 And Ducos >= 100 Then
-            FormatDuco = Format(Ducos, "#000.000000000")
-        ElseIf Ducos < 10000 And Ducos >= 1000 Then
-            FormatDuco = Format(Ducos, "#0000.00000000")
-        ElseIf Ducos < 100000 And Ducos >= 10000 Then
-            FormatDuco = Format(Ducos, "#00000.0000000")
-        ElseIf Ducos < 1000000 And Ducos >= 100000 Then
-            FormatDuco = Format(Ducos, "#000000.000000")
-        ElseIf Ducos < 10000000 And Ducos >= 1000000 Then
-            FormatDuco = Format(Ducos, "#0000000.00000")
-        ElseIf Ducos < 100000000 And Ducos >= 10000000 Then
-            FormatDuco = Format(Ducos, "#00000000.0000")
-        ElseIf Ducos < 1000000000 And Ducos >= 100000000 Then
-            FormatDuco = Format(Ducos, "#000000000.000")
-        End If
+    Function FormatDuco(ByVal Ducos As Decimal, ByVal Digitos As Integer) As String
+        Select Case Digitos
+            Case 12
+                If Ducos < 10 Then
+                    FormatDuco = Format(Ducos, "0.00000000000")
+                ElseIf Ducos < 100 And Ducos >= 10 Then
+                    FormatDuco = Format(Ducos, "00.0000000000")
+                ElseIf Ducos < 1000 And Ducos >= 100 Then
+                    FormatDuco = Format(Ducos, "000.000000000")
+                ElseIf Ducos < 10000 And Ducos >= 1000 Then
+                    FormatDuco = Format(Ducos, "0000.00000000")
+                End If
+            Case 16
+                If Ducos < 10 Then
+                    FormatDuco = Format(Ducos, "0.000000000000000")
+                ElseIf Ducos < 100 And Ducos >= 10 Then
+                    FormatDuco = Format(Ducos, "00.00000000000000")
+                ElseIf Ducos < 1000 And Ducos >= 100 Then
+                    FormatDuco = Format(Ducos, "000.0000000000000")
+                ElseIf Ducos < 10000 And Ducos >= 1000 Then
+                    FormatDuco = Format(Ducos, "0000.000000000000")
+                End If
+        End Select
     End Function
     Function CalcularHases(Hases As Integer) As String
         If Hases >= 10000 And Hases < 100000 Then
@@ -980,7 +983,7 @@ Public Class Form1
                 Case 16 : lblBalanceHora16.Text = txtbalance.Text : lblPrecio16.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(16) = CDec(txtDucoprice.Text)
                 Case 17 : lblBalanceHora17.Text = txtbalance.Text : lblPrecio17.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(17) = CDec(txtDucoprice.Text)
                 Case 18 : lblBalanceHora18.Text = txtbalance.Text : lblPrecio18.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(18) = CDec(txtDucoprice.Text)
-                Case 19 : lblBalanceHora19.Text = txtbalance.Text : lblPrecio19.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(19) = CDec(txtDucoprice.Text)
+                Case 19 : lblBalanceHora19.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio19.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(19) = CDec(txtDucoprice.Text)
                 Case 20 : lblBalanceHora20.Text = txtbalance.Text : lblPrecio20.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(20) = CDec(txtDucoprice.Text)
                 Case 21 : lblBalanceHora21.Text = txtbalance.Text : lblPrecio21.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(21) = CDec(txtDucoprice.Text)
                 Case 22 : lblBalanceHora22.Text = txtbalance.Text : lblPrecio22.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(22) = CDec(txtDucoprice.Text)

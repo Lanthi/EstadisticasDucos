@@ -711,7 +711,7 @@ Public Class Form1
         TotalHOras += CDec(lblHoraDiferencia21.Text)
         TotalHOras += CDec(lblHoraDiferencia22.Text)
         TotalHOras += CDec(lblHoraDiferencia23.Text)
-        lblTotalHora.Text = FormatDuco(TotalHOras, 12)
+        lblTotalHora.Text = FormatDuco(TotalHoras, 9) & "¬"
         lblTotalMes.Text = 0
         lblTotalMes.Text += CDec(lblMesDifencia01.Text)
         lblTotalMes.Text += CDec(lblMesDifencia02.Text)
@@ -744,10 +744,20 @@ Public Class Form1
         lblTotalMes.Text += CDec(lblMesDifencia29.Text)
         lblTotalMes.Text += CDec(lblMesDifencia30.Text)
         lblTotalMes.Text += CDec(lblMesDifencia31.Text)
-        lblTotalMes.Text = FormatDuco(lblTotalMes.Text, 10)
+        lblTotalMes.Text = FormatDuco(lblTotalMes.Text, 7) & "¬"
     End Sub
     Function FormatDuco(ByVal Ducos As Decimal, ByVal Digitos As Integer) As String
         Select Case Digitos
+            Case 7
+                If Ducos < 10 Then
+                    FormatDuco = Format(Ducos, "0.000000")
+                ElseIf Ducos < 100 And Ducos >= 10 Then
+                    FormatDuco = Format(Ducos, "00.00000")
+                ElseIf Ducos < 1000 And Ducos >= 100 Then
+                    FormatDuco = Format(Ducos, "000.0000")
+                ElseIf Ducos < 10000 And Ducos >= 1000 Then
+                    FormatDuco = Format(Ducos, "0000.000")
+                End If
             Case 8
                 If Ducos < 10 Then
                     FormatDuco = Format(Ducos, "0.0000000")

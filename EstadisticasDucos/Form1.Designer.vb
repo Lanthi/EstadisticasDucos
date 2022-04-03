@@ -23,24 +23,24 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim ChartArea7 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend7 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series7 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea8 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend8 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series8 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea9 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend9 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series9 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea10 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend10 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series10 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea11 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend11 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series11 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea12 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend12 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series12 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea13 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend13 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series13 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea14 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend14 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series14 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea15 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend15 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series15 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea16 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend16 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series16 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea17 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend17 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series17 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea18 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend18 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series18 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.lstBalanceTiempoReal = New System.Windows.Forms.ListBox()
@@ -329,6 +329,7 @@ Partial Class Form1
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.GroupBox16 = New System.Windows.Forms.GroupBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox15 = New System.Windows.Forms.GroupBox()
         Me.lblGananciasAño01 = New System.Windows.Forms.Label()
         Me.Label101 = New System.Windows.Forms.Label()
@@ -479,6 +480,12 @@ Partial Class Form1
         Me.TabPage5 = New System.Windows.Forms.TabPage()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.TreeView1 = New System.Windows.Forms.TreeView()
+        Me.TabPage6 = New System.Windows.Forms.TabPage()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtLogTransasiones = New System.Windows.Forms.TextBox()
+        Me.txtLogMineros = New System.Windows.Forms.TextBox()
+        Me.txtLogBalanceYprecio = New System.Windows.Forms.TextBox()
+        Me.txtLog = New System.Windows.Forms.TextBox()
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
         Me.Label39 = New System.Windows.Forms.Label()
@@ -530,6 +537,7 @@ Partial Class Form1
         Me.GroupBox12.SuspendLayout()
         Me.TabPage5.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
+        Me.TabPage6.SuspendLayout()
         Me.GroupBox5.SuspendLayout()
         Me.GroupBox6.SuspendLayout()
         Me.GroupBox7.SuspendLayout()
@@ -1171,7 +1179,7 @@ Partial Class Form1
         Me.lblHora.ForeColor = System.Drawing.Color.White
         Me.lblHora.Location = New System.Drawing.Point(11, 647)
         Me.lblHora.Name = "lblHora"
-        Me.lblHora.Size = New System.Drawing.Size(236, 55)
+        Me.lblHora.Size = New System.Drawing.Size(236, 65)
         Me.lblHora.TabIndex = 133
         Me.lblHora.Text = "00:00:00"
         Me.lblHora.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -1189,43 +1197,43 @@ Partial Class Form1
         '
         'Chart1
         '
-        ChartArea7.Name = "ChartArea1"
-        Me.Chart1.ChartAreas.Add(ChartArea7)
-        Legend7.Name = "Legend1"
-        Me.Chart1.Legends.Add(Legend7)
+        ChartArea13.Name = "ChartArea1"
+        Me.Chart1.ChartAreas.Add(ChartArea13)
+        Legend13.Name = "Legend1"
+        Me.Chart1.Legends.Add(Legend13)
         Me.Chart1.Location = New System.Drawing.Point(-23, 203)
         Me.Chart1.Name = "Chart1"
-        Series7.BorderWidth = 3
-        Series7.ChartArea = "ChartArea1"
-        Series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
-        Series7.Color = System.Drawing.Color.Lime
-        Series7.IsVisibleInLegend = False
-        Series7.Legend = "Legend1"
-        Series7.Name = "Series1"
-        Series7.ToolTip = "#VAL"
-        Series7.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Me.Chart1.Series.Add(Series7)
+        Series13.BorderWidth = 3
+        Series13.ChartArea = "ChartArea1"
+        Series13.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
+        Series13.Color = System.Drawing.Color.Lime
+        Series13.IsVisibleInLegend = False
+        Series13.Legend = "Legend1"
+        Series13.Name = "Series1"
+        Series13.ToolTip = "#VAL"
+        Series13.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Me.Chart1.Series.Add(Series13)
         Me.Chart1.Size = New System.Drawing.Size(562, 190)
         Me.Chart1.TabIndex = 135
         '
         'Chart2
         '
-        ChartArea8.Name = "ChartArea1"
-        Me.Chart2.ChartAreas.Add(ChartArea8)
-        Legend8.Name = "Legend1"
-        Me.Chart2.Legends.Add(Legend8)
+        ChartArea14.Name = "ChartArea1"
+        Me.Chart2.ChartAreas.Add(ChartArea14)
+        Legend14.Name = "Legend1"
+        Me.Chart2.Legends.Add(Legend14)
         Me.Chart2.Location = New System.Drawing.Point(-10, 0)
         Me.Chart2.Name = "Chart2"
-        Series8.BorderWidth = 3
-        Series8.ChartArea = "ChartArea1"
-        Series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
-        Series8.Color = System.Drawing.Color.Red
-        Series8.IsVisibleInLegend = False
-        Series8.Legend = "Legend1"
-        Series8.Name = "Series1"
-        Series8.ToolTip = "#VAL"
-        Series8.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Me.Chart2.Series.Add(Series8)
+        Series14.BorderWidth = 3
+        Series14.ChartArea = "ChartArea1"
+        Series14.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
+        Series14.Color = System.Drawing.Color.Red
+        Series14.IsVisibleInLegend = False
+        Series14.Legend = "Legend1"
+        Series14.Name = "Series1"
+        Series14.ToolTip = "#VAL"
+        Series14.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Me.Chart2.Series.Add(Series14)
         Me.Chart2.Size = New System.Drawing.Size(549, 204)
         Me.Chart2.TabIndex = 135
         '
@@ -2664,14 +2672,14 @@ Partial Class Form1
         'lblTotalMes
         '
         Me.lblTotalMes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTotalMes.Font = New System.Drawing.Font("Duco", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTotalMes.Font = New System.Drawing.Font("Duco", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTotalMes.ForeColor = System.Drawing.Color.Blue
         Me.lblTotalMes.Location = New System.Drawing.Point(299, 633)
         Me.lblTotalMes.Name = "lblTotalMes"
         Me.lblTotalMes.Size = New System.Drawing.Size(100, 31)
         Me.lblTotalMes.TabIndex = 143
         Me.lblTotalMes.Text = "0"
-        Me.lblTotalMes.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.lblTotalMes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblMesDaily
         '
@@ -4017,98 +4025,98 @@ Partial Class Form1
         '
         'Chart5
         '
-        ChartArea9.AxisX.MajorGrid.Interval = 0R
-        ChartArea9.AxisX.MajorGrid.IntervalOffset = 0R
-        ChartArea9.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
-        ChartArea9.Name = "ChartArea1"
-        Me.Chart5.ChartAreas.Add(ChartArea9)
-        Legend9.Name = "Legend1"
-        Me.Chart5.Legends.Add(Legend9)
+        ChartArea15.AxisX.MajorGrid.Interval = 0R
+        ChartArea15.AxisX.MajorGrid.IntervalOffset = 0R
+        ChartArea15.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
+        ChartArea15.Name = "ChartArea1"
+        Me.Chart5.ChartAreas.Add(ChartArea15)
+        Legend15.Name = "Legend1"
+        Me.Chart5.Legends.Add(Legend15)
         Me.Chart5.Location = New System.Drawing.Point(499, 203)
         Me.Chart5.Name = "Chart5"
-        Series9.ChartArea = "ChartArea1"
-        Series9.Color = System.Drawing.Color.OrangeRed
-        Series9.IsVisibleInLegend = False
-        Series9.Legend = "Legend1"
-        Series9.Name = "Series1"
-        Series9.ToolTip = "#VAL"
-        Series9.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[String]
-        Series9.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
-        Me.Chart5.Series.Add(Series9)
+        Series15.ChartArea = "ChartArea1"
+        Series15.Color = System.Drawing.Color.OrangeRed
+        Series15.IsVisibleInLegend = False
+        Series15.Legend = "Legend1"
+        Series15.Name = "Series1"
+        Series15.ToolTip = "#VAL"
+        Series15.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[String]
+        Series15.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
+        Me.Chart5.Series.Add(Series15)
         Me.Chart5.Size = New System.Drawing.Size(613, 199)
         Me.Chart5.TabIndex = 149
         '
         'Chart3
         '
-        ChartArea10.Name = "ChartArea1"
-        Me.Chart3.ChartAreas.Add(ChartArea10)
-        Legend10.Name = "Legend1"
-        Me.Chart3.Legends.Add(Legend10)
+        ChartArea16.Name = "ChartArea1"
+        Me.Chart3.ChartAreas.Add(ChartArea16)
+        Legend16.Name = "Legend1"
+        Me.Chart3.Legends.Add(Legend16)
         Me.Chart3.Location = New System.Drawing.Point(-39, 388)
         Me.Chart3.Name = "Chart3"
-        Series10.BorderWidth = 2
-        Series10.ChartArea = "ChartArea1"
-        Series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
-        Series10.Color = System.Drawing.Color.Fuchsia
-        Series10.EmptyPointStyle.IsValueShownAsLabel = True
-        Series10.EmptyPointStyle.IsVisibleInLegend = False
-        Series10.IsVisibleInLegend = False
-        Series10.LabelFormat = "0.00"
-        Series10.Legend = "Legend1"
-        Series10.Name = "Series1"
-        Series10.ToolTip = "#VAL"
-        Series10.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Series10.YValuesPerPoint = 4
-        Me.Chart3.Series.Add(Series10)
+        Series16.BorderWidth = 2
+        Series16.ChartArea = "ChartArea1"
+        Series16.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
+        Series16.Color = System.Drawing.Color.Fuchsia
+        Series16.EmptyPointStyle.IsValueShownAsLabel = True
+        Series16.EmptyPointStyle.IsVisibleInLegend = False
+        Series16.IsVisibleInLegend = False
+        Series16.LabelFormat = "0.00"
+        Series16.Legend = "Legend1"
+        Series16.Name = "Series1"
+        Series16.ToolTip = "#VAL"
+        Series16.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Series16.YValuesPerPoint = 4
+        Me.Chart3.Series.Add(Series16)
         Me.Chart3.Size = New System.Drawing.Size(1205, 153)
         Me.Chart3.TabIndex = 147
         Me.Chart3.Text = "Chart3"
         '
         'Chart4
         '
-        ChartArea11.AxisX.MajorGrid.Interval = 0R
-        ChartArea11.AxisX.MajorGrid.IntervalOffset = 0R
-        ChartArea11.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
-        ChartArea11.Name = "ChartArea1"
-        Me.Chart4.ChartAreas.Add(ChartArea11)
-        Legend11.Name = "Legend1"
-        Me.Chart4.Legends.Add(Legend11)
+        ChartArea17.AxisX.MajorGrid.Interval = 0R
+        ChartArea17.AxisX.MajorGrid.IntervalOffset = 0R
+        ChartArea17.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
+        ChartArea17.Name = "ChartArea1"
+        Me.Chart4.ChartAreas.Add(ChartArea17)
+        Legend17.Name = "Legend1"
+        Me.Chart4.Legends.Add(Legend17)
         Me.Chart4.Location = New System.Drawing.Point(514, 0)
         Me.Chart4.Name = "Chart4"
-        Series11.ChartArea = "ChartArea1"
-        Series11.Color = System.Drawing.Color.Lime
-        Series11.IsVisibleInLegend = False
-        Series11.Legend = "Legend1"
-        Series11.Name = "Series1"
-        Series11.ToolTip = "#VAL"
-        Series11.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[String]
-        Series11.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
-        Me.Chart4.Series.Add(Series11)
+        Series17.ChartArea = "ChartArea1"
+        Series17.Color = System.Drawing.Color.Lime
+        Series17.IsVisibleInLegend = False
+        Series17.Legend = "Legend1"
+        Series17.Name = "Series1"
+        Series17.ToolTip = "#VAL"
+        Series17.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[String]
+        Series17.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
+        Me.Chart4.Series.Add(Series17)
         Me.Chart4.Size = New System.Drawing.Size(598, 213)
         Me.Chart4.TabIndex = 150
         '
         'Chart6
         '
-        ChartArea12.AxisX.MajorGrid.Interval = 0R
-        ChartArea12.AxisX.MajorGrid.IntervalOffset = 0R
-        ChartArea12.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
-        ChartArea12.Name = "ChartArea1"
-        Me.Chart6.ChartAreas.Add(ChartArea12)
-        Legend12.Name = "Legend1"
-        Me.Chart6.Legends.Add(Legend12)
+        ChartArea18.AxisX.MajorGrid.Interval = 0R
+        ChartArea18.AxisX.MajorGrid.IntervalOffset = 0R
+        ChartArea18.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
+        ChartArea18.Name = "ChartArea1"
+        Me.Chart6.ChartAreas.Add(ChartArea18)
+        Legend18.Name = "Legend1"
+        Me.Chart6.Legends.Add(Legend18)
         Me.Chart6.Location = New System.Drawing.Point(-40, 528)
         Me.Chart6.Name = "Chart6"
-        Series12.BorderWidth = 2
-        Series12.ChartArea = "ChartArea1"
-        Series12.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line
-        Series12.Color = System.Drawing.Color.DarkOrchid
-        Series12.IsVisibleInLegend = False
-        Series12.Legend = "Legend1"
-        Series12.Name = "Series1"
-        Series12.ToolTip = "#VAL"
-        Series12.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Series12.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
-        Me.Chart6.Series.Add(Series12)
+        Series18.BorderWidth = 2
+        Series18.ChartArea = "ChartArea1"
+        Series18.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line
+        Series18.Color = System.Drawing.Color.DarkOrchid
+        Series18.IsVisibleInLegend = False
+        Series18.Legend = "Legend1"
+        Series18.Name = "Series1"
+        Series18.ToolTip = "#VAL"
+        Series18.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Series18.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
+        Me.Chart6.Series.Add(Series18)
         Me.Chart6.Size = New System.Drawing.Size(1196, 150)
         Me.Chart6.TabIndex = 151
         '
@@ -4120,6 +4128,7 @@ Partial Class Form1
         Me.TabControl1.Controls.Add(Me.TabPage3)
         Me.TabControl1.Controls.Add(Me.TabPage4)
         Me.TabControl1.Controls.Add(Me.TabPage5)
+        Me.TabControl1.Controls.Add(Me.TabPage6)
         Me.TabControl1.Location = New System.Drawing.Point(254, 0)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
@@ -4143,12 +4152,21 @@ Partial Class Form1
         'GroupBox16
         '
         Me.GroupBox16.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox16.Location = New System.Drawing.Point(724, 402)
+        Me.GroupBox16.Location = New System.Drawing.Point(724, 381)
         Me.GroupBox16.Name = "GroupBox16"
-        Me.GroupBox16.Size = New System.Drawing.Size(365, 268)
+        Me.GroupBox16.Size = New System.Drawing.Size(365, 296)
         Me.GroupBox16.TabIndex = 151
         Me.GroupBox16.TabStop = False
         Me.GroupBox16.Text = "Balance Years"
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(261, 757)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(125, 57)
+        Me.Button1.TabIndex = 0
+        Me.Button1.Text = "Resetear dia"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'GroupBox15
         '
@@ -4223,7 +4241,7 @@ Partial Class Form1
         Me.GroupBox15.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox15.Location = New System.Drawing.Point(724, 1)
         Me.GroupBox15.Name = "GroupBox15"
-        Me.GroupBox15.Size = New System.Drawing.Size(366, 381)
+        Me.GroupBox15.Size = New System.Drawing.Size(366, 377)
         Me.GroupBox15.TabIndex = 150
         Me.GroupBox15.TabStop = False
         Me.GroupBox15.Text = "Balance Year"
@@ -4232,7 +4250,7 @@ Partial Class Form1
         '
         Me.lblGananciasAño01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblGananciasAño01.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblGananciasAño01.Location = New System.Drawing.Point(287, 51)
+        Me.lblGananciasAño01.Location = New System.Drawing.Point(287, 44)
         Me.lblGananciasAño01.Name = "lblGananciasAño01"
         Me.lblGananciasAño01.Size = New System.Drawing.Size(72, 25)
         Me.lblGananciasAño01.TabIndex = 217
@@ -4246,7 +4264,7 @@ Partial Class Form1
         Me.Label101.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label101.Location = New System.Drawing.Point(287, 22)
         Me.Label101.Name = "Label101"
-        Me.Label101.Size = New System.Drawing.Size(72, 30)
+        Me.Label101.Size = New System.Drawing.Size(72, 23)
         Me.Label101.TabIndex = 218
         Me.Label101.Text = "Gain"
         Me.Label101.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -4255,7 +4273,7 @@ Partial Class Form1
         '
         Me.lblGananciasAño02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblGananciasAño02.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblGananciasAño02.Location = New System.Drawing.Point(287, 75)
+        Me.lblGananciasAño02.Location = New System.Drawing.Point(287, 68)
         Me.lblGananciasAño02.Name = "lblGananciasAño02"
         Me.lblGananciasAño02.Size = New System.Drawing.Size(72, 25)
         Me.lblGananciasAño02.TabIndex = 219
@@ -4266,7 +4284,7 @@ Partial Class Form1
         '
         Me.lblGananciasAño07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblGananciasAño07.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblGananciasAño07.Location = New System.Drawing.Point(287, 195)
+        Me.lblGananciasAño07.Location = New System.Drawing.Point(287, 188)
         Me.lblGananciasAño07.Name = "lblGananciasAño07"
         Me.lblGananciasAño07.Size = New System.Drawing.Size(72, 25)
         Me.lblGananciasAño07.TabIndex = 220
@@ -4277,7 +4295,7 @@ Partial Class Form1
         '
         Me.lblGananciasAño04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblGananciasAño04.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblGananciasAño04.Location = New System.Drawing.Point(287, 123)
+        Me.lblGananciasAño04.Location = New System.Drawing.Point(287, 116)
         Me.lblGananciasAño04.Name = "lblGananciasAño04"
         Me.lblGananciasAño04.Size = New System.Drawing.Size(72, 25)
         Me.lblGananciasAño04.TabIndex = 221
@@ -4288,7 +4306,7 @@ Partial Class Form1
         '
         Me.lblGananciasAño08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblGananciasAño08.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblGananciasAño08.Location = New System.Drawing.Point(287, 219)
+        Me.lblGananciasAño08.Location = New System.Drawing.Point(287, 212)
         Me.lblGananciasAño08.Name = "lblGananciasAño08"
         Me.lblGananciasAño08.Size = New System.Drawing.Size(72, 25)
         Me.lblGananciasAño08.TabIndex = 222
@@ -4299,7 +4317,7 @@ Partial Class Form1
         '
         Me.lblGananciasAño10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblGananciasAño10.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblGananciasAño10.Location = New System.Drawing.Point(287, 267)
+        Me.lblGananciasAño10.Location = New System.Drawing.Point(287, 260)
         Me.lblGananciasAño10.Name = "lblGananciasAño10"
         Me.lblGananciasAño10.Size = New System.Drawing.Size(72, 25)
         Me.lblGananciasAño10.TabIndex = 225
@@ -4310,7 +4328,7 @@ Partial Class Form1
         '
         Me.lblGananciasAño05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblGananciasAño05.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblGananciasAño05.Location = New System.Drawing.Point(287, 147)
+        Me.lblGananciasAño05.Location = New System.Drawing.Point(287, 140)
         Me.lblGananciasAño05.Name = "lblGananciasAño05"
         Me.lblGananciasAño05.Size = New System.Drawing.Size(72, 25)
         Me.lblGananciasAño05.TabIndex = 228
@@ -4321,7 +4339,7 @@ Partial Class Form1
         '
         Me.lblGananciasAño09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblGananciasAño09.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblGananciasAño09.Location = New System.Drawing.Point(287, 243)
+        Me.lblGananciasAño09.Location = New System.Drawing.Point(287, 236)
         Me.lblGananciasAño09.Name = "lblGananciasAño09"
         Me.lblGananciasAño09.Size = New System.Drawing.Size(72, 25)
         Me.lblGananciasAño09.TabIndex = 227
@@ -4332,7 +4350,7 @@ Partial Class Form1
         '
         Me.lblGananciasAño06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblGananciasAño06.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblGananciasAño06.Location = New System.Drawing.Point(287, 171)
+        Me.lblGananciasAño06.Location = New System.Drawing.Point(287, 164)
         Me.lblGananciasAño06.Name = "lblGananciasAño06"
         Me.lblGananciasAño06.Size = New System.Drawing.Size(72, 25)
         Me.lblGananciasAño06.TabIndex = 223
@@ -4343,7 +4361,7 @@ Partial Class Form1
         '
         Me.lblGananciasAño11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblGananciasAño11.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblGananciasAño11.Location = New System.Drawing.Point(287, 291)
+        Me.lblGananciasAño11.Location = New System.Drawing.Point(287, 284)
         Me.lblGananciasAño11.Name = "lblGananciasAño11"
         Me.lblGananciasAño11.Size = New System.Drawing.Size(72, 25)
         Me.lblGananciasAño11.TabIndex = 226
@@ -4354,7 +4372,7 @@ Partial Class Form1
         '
         Me.lblGananciasAño12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblGananciasAño12.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblGananciasAño12.Location = New System.Drawing.Point(287, 315)
+        Me.lblGananciasAño12.Location = New System.Drawing.Point(287, 308)
         Me.lblGananciasAño12.Name = "lblGananciasAño12"
         Me.lblGananciasAño12.Size = New System.Drawing.Size(72, 25)
         Me.lblGananciasAño12.TabIndex = 224
@@ -4365,7 +4383,7 @@ Partial Class Form1
         '
         Me.lblGananciasAño03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblGananciasAño03.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblGananciasAño03.Location = New System.Drawing.Point(287, 99)
+        Me.lblGananciasAño03.Location = New System.Drawing.Point(287, 92)
         Me.lblGananciasAño03.Name = "lblGananciasAño03"
         Me.lblGananciasAño03.Size = New System.Drawing.Size(72, 25)
         Me.lblGananciasAño03.TabIndex = 216
@@ -4379,7 +4397,7 @@ Partial Class Form1
         Me.Label128.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label128.Location = New System.Drawing.Point(58, 22)
         Me.Label128.Name = "Label128"
-        Me.Label128.Size = New System.Drawing.Size(77, 30)
+        Me.Label128.Size = New System.Drawing.Size(77, 23)
         Me.Label128.TabIndex = 178
         Me.Label128.Text = "Ducos"
         Me.Label128.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -4389,7 +4407,7 @@ Partial Class Form1
         Me.lblBalanceAño01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblBalanceAño01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblBalanceAño01.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceAño01.Location = New System.Drawing.Point(58, 51)
+        Me.lblBalanceAño01.Location = New System.Drawing.Point(58, 44)
         Me.lblBalanceAño01.Name = "lblBalanceAño01"
         Me.lblBalanceAño01.Size = New System.Drawing.Size(77, 25)
         Me.lblBalanceAño01.TabIndex = 177
@@ -4401,7 +4419,7 @@ Partial Class Form1
         Me.lblBalanceAño02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblBalanceAño02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblBalanceAño02.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceAño02.Location = New System.Drawing.Point(58, 75)
+        Me.lblBalanceAño02.Location = New System.Drawing.Point(58, 68)
         Me.lblBalanceAño02.Name = "lblBalanceAño02"
         Me.lblBalanceAño02.Size = New System.Drawing.Size(77, 25)
         Me.lblBalanceAño02.TabIndex = 184
@@ -4413,7 +4431,7 @@ Partial Class Form1
         Me.lblBalanceAño03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblBalanceAño03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblBalanceAño03.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceAño03.Location = New System.Drawing.Point(58, 99)
+        Me.lblBalanceAño03.Location = New System.Drawing.Point(58, 92)
         Me.lblBalanceAño03.Name = "lblBalanceAño03"
         Me.lblBalanceAño03.Size = New System.Drawing.Size(77, 25)
         Me.lblBalanceAño03.TabIndex = 180
@@ -4425,7 +4443,7 @@ Partial Class Form1
         Me.lblBalanceAño04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblBalanceAño04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblBalanceAño04.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceAño04.Location = New System.Drawing.Point(58, 123)
+        Me.lblBalanceAño04.Location = New System.Drawing.Point(58, 116)
         Me.lblBalanceAño04.Name = "lblBalanceAño04"
         Me.lblBalanceAño04.Size = New System.Drawing.Size(77, 25)
         Me.lblBalanceAño04.TabIndex = 181
@@ -4437,7 +4455,7 @@ Partial Class Form1
         Me.lblBalanceAño05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblBalanceAño05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblBalanceAño05.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceAño05.Location = New System.Drawing.Point(58, 147)
+        Me.lblBalanceAño05.Location = New System.Drawing.Point(58, 140)
         Me.lblBalanceAño05.Name = "lblBalanceAño05"
         Me.lblBalanceAño05.Size = New System.Drawing.Size(77, 25)
         Me.lblBalanceAño05.TabIndex = 182
@@ -4449,7 +4467,7 @@ Partial Class Form1
         Me.lblBalanceAño06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblBalanceAño06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblBalanceAño06.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceAño06.Location = New System.Drawing.Point(58, 171)
+        Me.lblBalanceAño06.Location = New System.Drawing.Point(58, 164)
         Me.lblBalanceAño06.Name = "lblBalanceAño06"
         Me.lblBalanceAño06.Size = New System.Drawing.Size(77, 25)
         Me.lblBalanceAño06.TabIndex = 183
@@ -4461,7 +4479,7 @@ Partial Class Form1
         Me.lblBalanceAño07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblBalanceAño07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblBalanceAño07.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceAño07.Location = New System.Drawing.Point(58, 195)
+        Me.lblBalanceAño07.Location = New System.Drawing.Point(58, 188)
         Me.lblBalanceAño07.Name = "lblBalanceAño07"
         Me.lblBalanceAño07.Size = New System.Drawing.Size(77, 25)
         Me.lblBalanceAño07.TabIndex = 189
@@ -4473,7 +4491,7 @@ Partial Class Form1
         Me.lblBalanceAño08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblBalanceAño08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblBalanceAño08.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceAño08.Location = New System.Drawing.Point(58, 219)
+        Me.lblBalanceAño08.Location = New System.Drawing.Point(58, 212)
         Me.lblBalanceAño08.Name = "lblBalanceAño08"
         Me.lblBalanceAño08.Size = New System.Drawing.Size(77, 25)
         Me.lblBalanceAño08.TabIndex = 185
@@ -4485,7 +4503,7 @@ Partial Class Form1
         Me.lblBalanceAño09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblBalanceAño09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblBalanceAño09.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceAño09.Location = New System.Drawing.Point(58, 243)
+        Me.lblBalanceAño09.Location = New System.Drawing.Point(58, 236)
         Me.lblBalanceAño09.Name = "lblBalanceAño09"
         Me.lblBalanceAño09.Size = New System.Drawing.Size(77, 25)
         Me.lblBalanceAño09.TabIndex = 186
@@ -4497,7 +4515,7 @@ Partial Class Form1
         Me.lblBalanceAño10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblBalanceAño10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblBalanceAño10.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceAño10.Location = New System.Drawing.Point(58, 267)
+        Me.lblBalanceAño10.Location = New System.Drawing.Point(58, 260)
         Me.lblBalanceAño10.Name = "lblBalanceAño10"
         Me.lblBalanceAño10.Size = New System.Drawing.Size(77, 25)
         Me.lblBalanceAño10.TabIndex = 187
@@ -4509,7 +4527,7 @@ Partial Class Form1
         Me.lblBalanceAño11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblBalanceAño11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblBalanceAño11.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceAño11.Location = New System.Drawing.Point(58, 291)
+        Me.lblBalanceAño11.Location = New System.Drawing.Point(58, 284)
         Me.lblBalanceAño11.Name = "lblBalanceAño11"
         Me.lblBalanceAño11.Size = New System.Drawing.Size(77, 25)
         Me.lblBalanceAño11.TabIndex = 188
@@ -4521,7 +4539,7 @@ Partial Class Form1
         Me.lblBalanceAño12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblBalanceAño12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblBalanceAño12.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBalanceAño12.Location = New System.Drawing.Point(58, 315)
+        Me.lblBalanceAño12.Location = New System.Drawing.Point(58, 308)
         Me.lblBalanceAño12.Name = "lblBalanceAño12"
         Me.lblBalanceAño12.Size = New System.Drawing.Size(77, 25)
         Me.lblBalanceAño12.TabIndex = 179
@@ -4535,7 +4553,7 @@ Partial Class Form1
         Me.Label142.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label142.Location = New System.Drawing.Point(6, 22)
         Me.Label142.Name = "Label142"
-        Me.Label142.Size = New System.Drawing.Size(53, 30)
+        Me.Label142.Size = New System.Drawing.Size(53, 23)
         Me.Label142.TabIndex = 201
         Me.Label142.Text = "Month"
         Me.Label142.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -4544,7 +4562,7 @@ Partial Class Form1
         '
         Me.Label143.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label143.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label143.Location = New System.Drawing.Point(6, 51)
+        Me.Label143.Location = New System.Drawing.Point(6, 44)
         Me.Label143.Name = "Label143"
         Me.Label143.Size = New System.Drawing.Size(53, 25)
         Me.Label143.TabIndex = 202
@@ -4555,7 +4573,7 @@ Partial Class Form1
         '
         Me.Label144.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label144.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label144.Location = New System.Drawing.Point(6, 75)
+        Me.Label144.Location = New System.Drawing.Point(6, 68)
         Me.Label144.Name = "Label144"
         Me.Label144.Size = New System.Drawing.Size(53, 25)
         Me.Label144.TabIndex = 200
@@ -4566,7 +4584,7 @@ Partial Class Form1
         '
         Me.Label145.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label145.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label145.Location = New System.Drawing.Point(6, 99)
+        Me.Label145.Location = New System.Drawing.Point(6, 92)
         Me.Label145.Name = "Label145"
         Me.Label145.Size = New System.Drawing.Size(53, 25)
         Me.Label145.TabIndex = 190
@@ -4577,7 +4595,7 @@ Partial Class Form1
         '
         Me.Label146.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label146.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label146.Location = New System.Drawing.Point(6, 123)
+        Me.Label146.Location = New System.Drawing.Point(6, 116)
         Me.Label146.Name = "Label146"
         Me.Label146.Size = New System.Drawing.Size(53, 25)
         Me.Label146.TabIndex = 191
@@ -4588,7 +4606,7 @@ Partial Class Form1
         '
         Me.Label147.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label147.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label147.Location = New System.Drawing.Point(6, 147)
+        Me.Label147.Location = New System.Drawing.Point(6, 140)
         Me.Label147.Name = "Label147"
         Me.Label147.Size = New System.Drawing.Size(53, 25)
         Me.Label147.TabIndex = 192
@@ -4599,7 +4617,7 @@ Partial Class Form1
         '
         Me.Label148.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label148.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label148.Location = New System.Drawing.Point(6, 171)
+        Me.Label148.Location = New System.Drawing.Point(6, 164)
         Me.Label148.Name = "Label148"
         Me.Label148.Size = New System.Drawing.Size(53, 25)
         Me.Label148.TabIndex = 193
@@ -4610,7 +4628,7 @@ Partial Class Form1
         '
         Me.Label149.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label149.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label149.Location = New System.Drawing.Point(6, 195)
+        Me.Label149.Location = New System.Drawing.Point(6, 188)
         Me.Label149.Name = "Label149"
         Me.Label149.Size = New System.Drawing.Size(53, 25)
         Me.Label149.TabIndex = 194
@@ -4621,7 +4639,7 @@ Partial Class Form1
         '
         Me.Label150.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label150.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label150.Location = New System.Drawing.Point(6, 219)
+        Me.Label150.Location = New System.Drawing.Point(6, 212)
         Me.Label150.Name = "Label150"
         Me.Label150.Size = New System.Drawing.Size(53, 25)
         Me.Label150.TabIndex = 195
@@ -4632,7 +4650,7 @@ Partial Class Form1
         '
         Me.Label151.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label151.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label151.Location = New System.Drawing.Point(6, 243)
+        Me.Label151.Location = New System.Drawing.Point(6, 236)
         Me.Label151.Name = "Label151"
         Me.Label151.Size = New System.Drawing.Size(53, 25)
         Me.Label151.TabIndex = 196
@@ -4643,7 +4661,7 @@ Partial Class Form1
         '
         Me.Label152.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label152.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label152.Location = New System.Drawing.Point(6, 267)
+        Me.Label152.Location = New System.Drawing.Point(6, 260)
         Me.Label152.Name = "Label152"
         Me.Label152.Size = New System.Drawing.Size(53, 25)
         Me.Label152.TabIndex = 197
@@ -4654,7 +4672,7 @@ Partial Class Form1
         '
         Me.Label153.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label153.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label153.Location = New System.Drawing.Point(6, 291)
+        Me.Label153.Location = New System.Drawing.Point(6, 284)
         Me.Label153.Name = "Label153"
         Me.Label153.Size = New System.Drawing.Size(53, 25)
         Me.Label153.TabIndex = 198
@@ -4665,7 +4683,7 @@ Partial Class Form1
         '
         Me.Label154.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label154.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label154.Location = New System.Drawing.Point(6, 315)
+        Me.Label154.Location = New System.Drawing.Point(6, 308)
         Me.Label154.Name = "Label154"
         Me.Label154.Size = New System.Drawing.Size(53, 25)
         Me.Label154.TabIndex = 199
@@ -4679,7 +4697,7 @@ Partial Class Form1
         Me.Label155.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label155.Location = New System.Drawing.Point(134, 22)
         Me.Label155.Name = "Label155"
-        Me.Label155.Size = New System.Drawing.Size(66, 30)
+        Me.Label155.Size = New System.Drawing.Size(66, 23)
         Me.Label155.TabIndex = 215
         Me.Label155.Text = "Price"
         Me.Label155.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -4689,7 +4707,7 @@ Partial Class Form1
         Me.lblPrecioAño12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblPrecioAño12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblPrecioAño12.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecioAño12.Location = New System.Drawing.Point(134, 315)
+        Me.lblPrecioAño12.Location = New System.Drawing.Point(134, 308)
         Me.lblPrecioAño12.Name = "lblPrecioAño12"
         Me.lblPrecioAño12.Size = New System.Drawing.Size(66, 25)
         Me.lblPrecioAño12.TabIndex = 212
@@ -4701,7 +4719,7 @@ Partial Class Form1
         Me.lblPrecioAño01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblPrecioAño01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblPrecioAño01.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecioAño01.Location = New System.Drawing.Point(134, 51)
+        Me.lblPrecioAño01.Location = New System.Drawing.Point(134, 44)
         Me.lblPrecioAño01.Name = "lblPrecioAño01"
         Me.lblPrecioAño01.Size = New System.Drawing.Size(66, 25)
         Me.lblPrecioAño01.TabIndex = 214
@@ -4713,7 +4731,7 @@ Partial Class Form1
         Me.lblPrecioAño11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblPrecioAño11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblPrecioAño11.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecioAño11.Location = New System.Drawing.Point(134, 291)
+        Me.lblPrecioAño11.Location = New System.Drawing.Point(134, 284)
         Me.lblPrecioAño11.Name = "lblPrecioAño11"
         Me.lblPrecioAño11.Size = New System.Drawing.Size(66, 25)
         Me.lblPrecioAño11.TabIndex = 211
@@ -4725,7 +4743,7 @@ Partial Class Form1
         Me.lblPrecioAño10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblPrecioAño10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblPrecioAño10.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecioAño10.Location = New System.Drawing.Point(134, 267)
+        Me.lblPrecioAño10.Location = New System.Drawing.Point(134, 260)
         Me.lblPrecioAño10.Name = "lblPrecioAño10"
         Me.lblPrecioAño10.Size = New System.Drawing.Size(66, 25)
         Me.lblPrecioAño10.TabIndex = 210
@@ -4737,7 +4755,7 @@ Partial Class Form1
         Me.lblPrecioAño02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblPrecioAño02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblPrecioAño02.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecioAño02.Location = New System.Drawing.Point(134, 75)
+        Me.lblPrecioAño02.Location = New System.Drawing.Point(134, 68)
         Me.lblPrecioAño02.Name = "lblPrecioAño02"
         Me.lblPrecioAño02.Size = New System.Drawing.Size(66, 25)
         Me.lblPrecioAño02.TabIndex = 213
@@ -4749,7 +4767,7 @@ Partial Class Form1
         Me.lblPrecioAño09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblPrecioAño09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblPrecioAño09.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecioAño09.Location = New System.Drawing.Point(134, 243)
+        Me.lblPrecioAño09.Location = New System.Drawing.Point(134, 236)
         Me.lblPrecioAño09.Name = "lblPrecioAño09"
         Me.lblPrecioAño09.Size = New System.Drawing.Size(66, 25)
         Me.lblPrecioAño09.TabIndex = 209
@@ -4761,7 +4779,7 @@ Partial Class Form1
         Me.lblPrecioAño08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblPrecioAño08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblPrecioAño08.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecioAño08.Location = New System.Drawing.Point(134, 219)
+        Me.lblPrecioAño08.Location = New System.Drawing.Point(134, 212)
         Me.lblPrecioAño08.Name = "lblPrecioAño08"
         Me.lblPrecioAño08.Size = New System.Drawing.Size(66, 25)
         Me.lblPrecioAño08.TabIndex = 208
@@ -4773,7 +4791,7 @@ Partial Class Form1
         Me.lblPrecioAño03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblPrecioAño03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblPrecioAño03.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecioAño03.Location = New System.Drawing.Point(134, 99)
+        Me.lblPrecioAño03.Location = New System.Drawing.Point(134, 92)
         Me.lblPrecioAño03.Name = "lblPrecioAño03"
         Me.lblPrecioAño03.Size = New System.Drawing.Size(66, 25)
         Me.lblPrecioAño03.TabIndex = 203
@@ -4785,7 +4803,7 @@ Partial Class Form1
         Me.lblPrecioAño07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblPrecioAño07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblPrecioAño07.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecioAño07.Location = New System.Drawing.Point(134, 195)
+        Me.lblPrecioAño07.Location = New System.Drawing.Point(134, 188)
         Me.lblPrecioAño07.Name = "lblPrecioAño07"
         Me.lblPrecioAño07.Size = New System.Drawing.Size(66, 25)
         Me.lblPrecioAño07.TabIndex = 207
@@ -4796,7 +4814,7 @@ Partial Class Form1
         '
         Me.lblPrecioAño04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblPrecioAño04.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecioAño04.Location = New System.Drawing.Point(134, 123)
+        Me.lblPrecioAño04.Location = New System.Drawing.Point(134, 116)
         Me.lblPrecioAño04.Name = "lblPrecioAño04"
         Me.lblPrecioAño04.Size = New System.Drawing.Size(66, 25)
         Me.lblPrecioAño04.TabIndex = 204
@@ -4808,7 +4826,7 @@ Partial Class Form1
         Me.lblPrecioAño06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblPrecioAño06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblPrecioAño06.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecioAño06.Location = New System.Drawing.Point(134, 171)
+        Me.lblPrecioAño06.Location = New System.Drawing.Point(134, 164)
         Me.lblPrecioAño06.Name = "lblPrecioAño06"
         Me.lblPrecioAño06.Size = New System.Drawing.Size(66, 25)
         Me.lblPrecioAño06.TabIndex = 206
@@ -4820,7 +4838,7 @@ Partial Class Form1
         Me.lblPrecioAño05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblPrecioAño05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblPrecioAño05.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecioAño05.Location = New System.Drawing.Point(134, 147)
+        Me.lblPrecioAño05.Location = New System.Drawing.Point(134, 140)
         Me.lblPrecioAño05.Name = "lblPrecioAño05"
         Me.lblPrecioAño05.Size = New System.Drawing.Size(66, 25)
         Me.lblPrecioAño05.TabIndex = 205
@@ -4832,7 +4850,7 @@ Partial Class Form1
         Me.Label169.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label169.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label169.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Label169.Location = New System.Drawing.Point(6, 339)
+        Me.Label169.Location = New System.Drawing.Point(6, 332)
         Me.Label169.Name = "Label169"
         Me.Label169.Size = New System.Drawing.Size(194, 31)
         Me.Label169.TabIndex = 243
@@ -4844,7 +4862,7 @@ Partial Class Form1
         Me.lblTransasionesAño02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblTransasionesAño02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblTransasionesAño02.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTransasionesAño02.Location = New System.Drawing.Point(199, 75)
+        Me.lblTransasionesAño02.Location = New System.Drawing.Point(199, 68)
         Me.lblTransasionesAño02.Name = "lblTransasionesAño02"
         Me.lblTransasionesAño02.Size = New System.Drawing.Size(89, 25)
         Me.lblTransasionesAño02.TabIndex = 230
@@ -4856,7 +4874,7 @@ Partial Class Form1
         Me.lblTransasionesAño03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblTransasionesAño03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblTransasionesAño03.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTransasionesAño03.Location = New System.Drawing.Point(199, 99)
+        Me.lblTransasionesAño03.Location = New System.Drawing.Point(199, 92)
         Me.lblTransasionesAño03.Name = "lblTransasionesAño03"
         Me.lblTransasionesAño03.Size = New System.Drawing.Size(89, 25)
         Me.lblTransasionesAño03.TabIndex = 229
@@ -4868,7 +4886,7 @@ Partial Class Form1
         Me.lblTransasionesAño12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblTransasionesAño12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblTransasionesAño12.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTransasionesAño12.Location = New System.Drawing.Point(199, 315)
+        Me.lblTransasionesAño12.Location = New System.Drawing.Point(199, 308)
         Me.lblTransasionesAño12.Name = "lblTransasionesAño12"
         Me.lblTransasionesAño12.Size = New System.Drawing.Size(89, 25)
         Me.lblTransasionesAño12.TabIndex = 239
@@ -4880,7 +4898,7 @@ Partial Class Form1
         Me.lblTransasionesAño11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblTransasionesAño11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblTransasionesAño11.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTransasionesAño11.Location = New System.Drawing.Point(199, 291)
+        Me.lblTransasionesAño11.Location = New System.Drawing.Point(199, 284)
         Me.lblTransasionesAño11.Name = "lblTransasionesAño11"
         Me.lblTransasionesAño11.Size = New System.Drawing.Size(89, 25)
         Me.lblTransasionesAño11.TabIndex = 238
@@ -4892,7 +4910,7 @@ Partial Class Form1
         Me.lblTransasionesAño06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblTransasionesAño06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblTransasionesAño06.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTransasionesAño06.Location = New System.Drawing.Point(199, 171)
+        Me.lblTransasionesAño06.Location = New System.Drawing.Point(199, 164)
         Me.lblTransasionesAño06.Name = "lblTransasionesAño06"
         Me.lblTransasionesAño06.Size = New System.Drawing.Size(89, 25)
         Me.lblTransasionesAño06.TabIndex = 237
@@ -4904,7 +4922,7 @@ Partial Class Form1
         Me.lblTransasionesAño09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblTransasionesAño09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblTransasionesAño09.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTransasionesAño09.Location = New System.Drawing.Point(199, 243)
+        Me.lblTransasionesAño09.Location = New System.Drawing.Point(199, 236)
         Me.lblTransasionesAño09.Name = "lblTransasionesAño09"
         Me.lblTransasionesAño09.Size = New System.Drawing.Size(89, 25)
         Me.lblTransasionesAño09.TabIndex = 236
@@ -4916,7 +4934,7 @@ Partial Class Form1
         Me.lblTransasionesAño05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblTransasionesAño05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblTransasionesAño05.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTransasionesAño05.Location = New System.Drawing.Point(199, 147)
+        Me.lblTransasionesAño05.Location = New System.Drawing.Point(199, 140)
         Me.lblTransasionesAño05.Name = "lblTransasionesAño05"
         Me.lblTransasionesAño05.Size = New System.Drawing.Size(89, 25)
         Me.lblTransasionesAño05.TabIndex = 235
@@ -4928,7 +4946,7 @@ Partial Class Form1
         Me.lblTransasionesAño10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblTransasionesAño10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblTransasionesAño10.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTransasionesAño10.Location = New System.Drawing.Point(199, 267)
+        Me.lblTransasionesAño10.Location = New System.Drawing.Point(199, 260)
         Me.lblTransasionesAño10.Name = "lblTransasionesAño10"
         Me.lblTransasionesAño10.Size = New System.Drawing.Size(89, 25)
         Me.lblTransasionesAño10.TabIndex = 234
@@ -4940,7 +4958,7 @@ Partial Class Form1
         Me.lblTransasionesAño08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblTransasionesAño08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblTransasionesAño08.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTransasionesAño08.Location = New System.Drawing.Point(199, 219)
+        Me.lblTransasionesAño08.Location = New System.Drawing.Point(199, 212)
         Me.lblTransasionesAño08.Name = "lblTransasionesAño08"
         Me.lblTransasionesAño08.Size = New System.Drawing.Size(89, 25)
         Me.lblTransasionesAño08.TabIndex = 233
@@ -4952,7 +4970,7 @@ Partial Class Form1
         Me.lblTransasionesAño04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblTransasionesAño04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblTransasionesAño04.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTransasionesAño04.Location = New System.Drawing.Point(199, 123)
+        Me.lblTransasionesAño04.Location = New System.Drawing.Point(199, 116)
         Me.lblTransasionesAño04.Name = "lblTransasionesAño04"
         Me.lblTransasionesAño04.Size = New System.Drawing.Size(89, 25)
         Me.lblTransasionesAño04.TabIndex = 232
@@ -4964,7 +4982,7 @@ Partial Class Form1
         Me.lblTransasionesAño07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblTransasionesAño07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblTransasionesAño07.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTransasionesAño07.Location = New System.Drawing.Point(199, 195)
+        Me.lblTransasionesAño07.Location = New System.Drawing.Point(199, 188)
         Me.lblTransasionesAño07.Name = "lblTransasionesAño07"
         Me.lblTransasionesAño07.Size = New System.Drawing.Size(89, 25)
         Me.lblTransasionesAño07.TabIndex = 231
@@ -4978,7 +4996,7 @@ Partial Class Form1
         Me.Label125.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label125.Location = New System.Drawing.Point(199, 22)
         Me.Label125.Name = "Label125"
-        Me.Label125.Size = New System.Drawing.Size(89, 30)
+        Me.Label125.Size = New System.Drawing.Size(89, 23)
         Me.Label125.TabIndex = 240
         Me.Label125.Text = "Transactions"
         Me.Label125.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -4988,7 +5006,7 @@ Partial Class Form1
         Me.lblTransasionesAño01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblTransasionesAño01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblTransasionesAño01.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTransasionesAño01.Location = New System.Drawing.Point(199, 51)
+        Me.lblTransasionesAño01.Location = New System.Drawing.Point(199, 44)
         Me.lblTransasionesAño01.Name = "lblTransasionesAño01"
         Me.lblTransasionesAño01.Size = New System.Drawing.Size(89, 25)
         Me.lblTransasionesAño01.TabIndex = 241
@@ -5000,7 +5018,7 @@ Partial Class Form1
         Me.lblTotalGananciaAño.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblTotalGananciaAño.Font = New System.Drawing.Font("Duco", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTotalGananciaAño.ForeColor = System.Drawing.Color.Blue
-        Me.lblTotalGananciaAño.Location = New System.Drawing.Point(287, 339)
+        Me.lblTotalGananciaAño.Location = New System.Drawing.Point(287, 332)
         Me.lblTotalGananciaAño.Name = "lblTotalGananciaAño"
         Me.lblTotalGananciaAño.Size = New System.Drawing.Size(72, 31)
         Me.lblTotalGananciaAño.TabIndex = 242
@@ -5012,7 +5030,7 @@ Partial Class Form1
         Me.lblTransacionesTotalAño.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblTransacionesTotalAño.Font = New System.Drawing.Font("Duco", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTransacionesTotalAño.ForeColor = System.Drawing.Color.Black
-        Me.lblTransacionesTotalAño.Location = New System.Drawing.Point(199, 339)
+        Me.lblTransacionesTotalAño.Location = New System.Drawing.Point(199, 332)
         Me.lblTransacionesTotalAño.Name = "lblTransacionesTotalAño"
         Me.lblTransacionesTotalAño.Size = New System.Drawing.Size(89, 31)
         Me.lblTransacionesTotalAño.TabIndex = 242
@@ -5867,6 +5885,63 @@ Partial Class Form1
         Me.TreeView1.Size = New System.Drawing.Size(368, 627)
         Me.TreeView1.TabIndex = 147
         '
+        'TabPage6
+        '
+        Me.TabPage6.Controls.Add(Me.TextBox1)
+        Me.TabPage6.Controls.Add(Me.txtLogTransasiones)
+        Me.TabPage6.Controls.Add(Me.txtLogMineros)
+        Me.TabPage6.Controls.Add(Me.txtLogBalanceYprecio)
+        Me.TabPage6.Controls.Add(Me.txtLog)
+        Me.TabPage6.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage6.Name = "TabPage6"
+        Me.TabPage6.Size = New System.Drawing.Size(1096, 683)
+        Me.TabPage6.TabIndex = 5
+        Me.TabPage6.Text = "  Log"
+        Me.TabPage6.UseVisualStyleBackColor = True
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(674, 515)
+        Me.TextBox1.Multiline = True
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(419, 168)
+        Me.TextBox1.TabIndex = 4
+        '
+        'txtLogTransasiones
+        '
+        Me.txtLogTransasiones.Location = New System.Drawing.Point(674, 343)
+        Me.txtLogTransasiones.Multiline = True
+        Me.txtLogTransasiones.Name = "txtLogTransasiones"
+        Me.txtLogTransasiones.Size = New System.Drawing.Size(419, 168)
+        Me.txtLogTransasiones.TabIndex = 3
+        '
+        'txtLogMineros
+        '
+        Me.txtLogMineros.Location = New System.Drawing.Point(674, 172)
+        Me.txtLogMineros.Multiline = True
+        Me.txtLogMineros.Name = "txtLogMineros"
+        Me.txtLogMineros.Size = New System.Drawing.Size(419, 168)
+        Me.txtLogMineros.TabIndex = 2
+        '
+        'txtLogBalanceYprecio
+        '
+        Me.txtLogBalanceYprecio.Location = New System.Drawing.Point(674, 0)
+        Me.txtLogBalanceYprecio.Multiline = True
+        Me.txtLogBalanceYprecio.Name = "txtLogBalanceYprecio"
+        Me.txtLogBalanceYprecio.Size = New System.Drawing.Size(419, 168)
+        Me.txtLogBalanceYprecio.TabIndex = 1
+        '
+        'txtLog
+        '
+        Me.txtLog.BackColor = System.Drawing.Color.White
+        Me.txtLog.Location = New System.Drawing.Point(0, 0)
+        Me.txtLog.Multiline = True
+        Me.txtLog.Name = "txtLog"
+        Me.txtLog.ReadOnly = True
+        Me.txtLog.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.txtLog.Size = New System.Drawing.Size(671, 683)
+        Me.txtLog.TabIndex = 0
+        '
         'Timer2
         '
         Me.Timer2.Enabled = True
@@ -6060,7 +6135,6 @@ Partial Class Form1
         '
         'lblMineros
         '
-        Me.lblMineros.AutoSize = True
         Me.lblMineros.Font = New System.Drawing.Font("Digital Display", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblMineros.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.lblMineros.Location = New System.Drawing.Point(134, 31)
@@ -6083,7 +6157,6 @@ Partial Class Form1
         '
         'lblHases
         '
-        Me.lblHases.AutoSize = True
         Me.lblHases.Font = New System.Drawing.Font("Digital Display", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblHases.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.lblHases.Location = New System.Drawing.Point(48, 64)
@@ -6181,6 +6254,7 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1370, 735)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.GroupBox17)
         Me.Controls.Add(Me.GroupBox14)
         Me.Controls.Add(Me.GroupBox7)
@@ -6225,6 +6299,8 @@ Partial Class Form1
         Me.GroupBox12.ResumeLayout(False)
         Me.TabPage5.ResumeLayout(False)
         Me.GroupBox4.ResumeLayout(False)
+        Me.TabPage6.ResumeLayout(False)
+        Me.TabPage6.PerformLayout()
         Me.GroupBox5.ResumeLayout(False)
         Me.GroupBox6.ResumeLayout(False)
         Me.GroupBox7.ResumeLayout(False)
@@ -6700,4 +6776,11 @@ Partial Class Form1
     Friend WithEvents lblTransacionesTotalAño As Label
     Friend WithEvents lblDucoDeposito As Label
     Friend WithEvents Label98 As Label
+    Friend WithEvents TabPage6 As TabPage
+    Friend WithEvents txtLogTransasiones As TextBox
+    Friend WithEvents txtLogMineros As TextBox
+    Friend WithEvents txtLogBalanceYprecio As TextBox
+    Friend WithEvents txtLog As TextBox
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Button1 As Button
 End Class

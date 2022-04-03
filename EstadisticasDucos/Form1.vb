@@ -81,29 +81,30 @@ Public Class Form1
         End Try
     End Sub
     Private Sub BalanceHora()
-        If lblBalanceHora01.Text <> 0 And lblBalanceHora00.Text <> 0 Then lblHoraDiferencia00.Text = CDec(lblBalanceHora01.Text) - CDec(lblBalanceHora00.Text)
-        If lblBalanceHora02.Text <> 0 And lblBalanceHora01.Text <> 0 Then lblHoraDiferencia01.Text = CDec(lblBalanceHora02.Text) - CDec(lblBalanceHora01.Text)
-        If lblBalanceHora03.Text <> 0 And lblBalanceHora02.Text <> 0 Then lblHoraDiferencia02.Text = CDec(lblBalanceHora03.Text) - CDec(lblBalanceHora02.Text)
-        If lblBalanceHora04.Text <> 0 And lblBalanceHora03.Text <> 0 Then lblHoraDiferencia03.Text = CDec(lblBalanceHora04.Text) - CDec(lblBalanceHora03.Text)
-        If lblBalanceHora05.Text <> 0 And lblBalanceHora04.Text <> 0 Then lblHoraDiferencia04.Text = CDec(lblBalanceHora05.Text) - CDec(lblBalanceHora04.Text)
-        If lblBalanceHora06.Text <> 0 And lblBalanceHora05.Text <> 0 Then lblHoraDiferencia05.Text = CDec(lblBalanceHora06.Text) - CDec(lblBalanceHora05.Text)
-        If lblBalanceHora07.Text <> 0 And lblBalanceHora06.Text <> 0 Then lblHoraDiferencia06.Text = CDec(lblBalanceHora07.Text) - CDec(lblBalanceHora06.Text)
-        If lblBalanceHora08.Text <> 0 And lblBalanceHora07.Text <> 0 Then lblHoraDiferencia07.Text = CDec(lblBalanceHora08.Text) - CDec(lblBalanceHora07.Text)
-        If lblBalanceHora09.Text <> 0 And lblBalanceHora08.Text <> 0 Then lblHoraDiferencia08.Text = CDec(lblBalanceHora09.Text) - CDec(lblBalanceHora08.Text)
-        If lblBalanceHora10.Text <> 0 And lblBalanceHora09.Text <> 0 Then lblHoraDiferencia09.Text = CDec(lblBalanceHora10.Text) - CDec(lblBalanceHora09.Text)
-        If lblBalanceHora11.Text <> 0 And lblBalanceHora10.Text <> 0 Then lblHoraDiferencia10.Text = CDec(lblBalanceHora11.Text) - CDec(lblBalanceHora10.Text)
-        If lblBalanceHora12.Text <> 0 And lblBalanceHora11.Text <> 0 Then lblHoraDiferencia11.Text = CDec(lblBalanceHora12.Text) - CDec(lblBalanceHora11.Text)
-        If lblBalanceHora13.Text <> 0 And lblBalanceHora12.Text <> 0 Then lblHoraDiferencia12.Text = CDec(lblBalanceHora13.Text) - CDec(lblBalanceHora12.Text)
-        If lblBalanceHora14.Text <> 0 And lblBalanceHora13.Text <> 0 Then lblHoraDiferencia13.Text = CDec(lblBalanceHora14.Text) - CDec(lblBalanceHora13.Text)
-        If lblBalanceHora15.Text <> 0 And lblBalanceHora14.Text <> 0 Then lblHoraDiferencia14.Text = CDec(lblBalanceHora15.Text) - CDec(lblBalanceHora14.Text)
-        If lblBalanceHora16.Text <> 0 And lblBalanceHora15.Text <> 0 Then lblHoraDiferencia15.Text = CDec(lblBalanceHora16.Text) - CDec(lblBalanceHora15.Text)
-        If lblBalanceHora17.Text <> 0 And lblBalanceHora16.Text <> 0 Then lblHoraDiferencia16.Text = CDec(lblBalanceHora17.Text) - CDec(lblBalanceHora16.Text)
-        If lblBalanceHora18.Text <> 0 And lblBalanceHora17.Text <> 0 Then lblHoraDiferencia17.Text = CDec(lblBalanceHora18.Text) - CDec(lblBalanceHora17.Text)
-        If lblBalanceHora19.Text <> 0 And lblBalanceHora18.Text <> 0 Then lblHoraDiferencia18.Text = CDec(lblBalanceHora19.Text) - CDec(lblBalanceHora18.Text)
-        If lblBalanceHora20.Text <> 0 And lblBalanceHora19.Text <> 0 Then lblHoraDiferencia19.Text = CDec(lblBalanceHora20.Text) - CDec(lblBalanceHora19.Text)
-        If lblBalanceHora21.Text <> 0 And lblBalanceHora20.Text <> 0 Then lblHoraDiferencia20.Text = CDec(lblBalanceHora21.Text) - CDec(lblBalanceHora20.Text)
-        If lblBalanceHora22.Text <> 0 And lblBalanceHora21.Text <> 0 Then lblHoraDiferencia21.Text = CDec(lblBalanceHora22.Text) - CDec(lblBalanceHora21.Text)
-        If lblBalanceHora23.Text <> 0 And lblBalanceHora22.Text <> 0 Then lblHoraDiferencia22.Text = CDec(lblBalanceHora23.Text) - CDec(lblBalanceHora22.Text)
+        If lblBalanceHora01.Text <> 0 And lblBalanceHora00.Text <> 0 Then lblHoraDiferencia00.Text = FormatDuco(CDec(lblBalanceHora01.Text) - CDec(lblBalanceHora00.Text), 8)
+        If lblBalanceHora02.Text <> 0 And lblBalanceHora01.Text <> 0 Then lblHoraDiferencia01.Text = FormatDuco(CDec(lblBalanceHora02.Text) - CDec(lblBalanceHora01.Text), 8)
+        If lblBalanceHora03.Text <> 0 And lblBalanceHora02.Text <> 0 Then lblHoraDiferencia02.Text = FormatDuco(CDec(lblBalanceHora03.Text) - CDec(lblBalanceHora02.Text), 8)
+        If lblBalanceHora04.Text <> 0 And lblBalanceHora03.Text <> 0 Then lblHoraDiferencia03.Text = FormatDuco(CDec(lblBalanceHora04.Text) - CDec(lblBalanceHora03.Text), 8)
+        If lblBalanceHora05.Text <> 0 And lblBalanceHora04.Text <> 0 Then lblHoraDiferencia04.Text = FormatDuco(CDec(lblBalanceHora05.Text) - CDec(lblBalanceHora04.Text), 8)
+        If lblBalanceHora06.Text <> 0 And lblBalanceHora05.Text <> 0 Then lblHoraDiferencia05.Text = FormatDuco(CDec(lblBalanceHora06.Text) - CDec(lblBalanceHora05.Text), 8)
+        If lblBalanceHora07.Text <> 0 And lblBalanceHora06.Text <> 0 Then lblHoraDiferencia06.Text = FormatDuco(CDec(lblBalanceHora07.Text) - CDec(lblBalanceHora06.Text), 8)
+        If lblBalanceHora08.Text <> 0 And lblBalanceHora07.Text <> 0 Then lblHoraDiferencia07.Text = FormatDuco(CDec(lblBalanceHora08.Text) - CDec(lblBalanceHora07.Text), 8)
+        If lblBalanceHora09.Text <> 0 And lblBalanceHora08.Text <> 0 Then lblHoraDiferencia08.Text = FormatDuco(CDec(lblBalanceHora09.Text) - CDec(lblBalanceHora08.Text), 8)
+        If lblBalanceHora10.Text <> 0 And lblBalanceHora09.Text <> 0 Then lblHoraDiferencia09.Text = FormatDuco(CDec(lblBalanceHora10.Text) - CDec(lblBalanceHora09.Text), 8)
+        If lblBalanceHora11.Text <> 0 And lblBalanceHora10.Text <> 0 Then lblHoraDiferencia10.Text = FormatDuco(CDec(lblBalanceHora11.Text) - CDec(lblBalanceHora10.Text), 8)
+        If lblBalanceHora12.Text <> 0 And lblBalanceHora11.Text <> 0 Then lblHoraDiferencia11.Text = FormatDuco(CDec(lblBalanceHora12.Text) - CDec(lblBalanceHora11.Text), 8)
+        If lblBalanceHora13.Text <> 0 And lblBalanceHora12.Text <> 0 Then lblHoraDiferencia12.Text = FormatDuco(CDec(lblBalanceHora13.Text) - CDec(lblBalanceHora12.Text), 8)
+        If lblBalanceHora14.Text <> 0 And lblBalanceHora13.Text <> 0 Then lblHoraDiferencia13.Text = FormatDuco(CDec(lblBalanceHora14.Text) - CDec(lblBalanceHora13.Text), 8)
+        If lblBalanceHora15.Text <> 0 And lblBalanceHora14.Text <> 0 Then lblHoraDiferencia14.Text = FormatDuco(CDec(lblBalanceHora15.Text) - CDec(lblBalanceHora14.Text), 8)
+        If lblBalanceHora16.Text <> 0 And lblBalanceHora15.Text <> 0 Then lblHoraDiferencia15.Text = FormatDuco(CDec(lblBalanceHora16.Text) - CDec(lblBalanceHora15.Text), 8)
+        If lblBalanceHora17.Text <> 0 And lblBalanceHora16.Text <> 0 Then lblHoraDiferencia16.Text = FormatDuco(CDec(lblBalanceHora17.Text) - CDec(lblBalanceHora16.Text), 8)
+        If lblBalanceHora18.Text <> 0 And lblBalanceHora17.Text <> 0 Then lblHoraDiferencia17.Text = FormatDuco(CDec(lblBalanceHora18.Text) - CDec(lblBalanceHora17.Text), 8)
+        If lblBalanceHora19.Text <> 0 And lblBalanceHora18.Text <> 0 Then lblHoraDiferencia18.Text = FormatDuco(CDec(lblBalanceHora19.Text) - CDec(lblBalanceHora18.Text), 8)
+        If lblBalanceHora20.Text <> 0 And lblBalanceHora19.Text <> 0 Then lblHoraDiferencia19.Text = FormatDuco(CDec(lblBalanceHora20.Text) - CDec(lblBalanceHora19.Text), 8)
+        If lblBalanceHora21.Text <> 0 And lblBalanceHora20.Text <> 0 Then lblHoraDiferencia20.Text = FormatDuco(CDec(lblBalanceHora21.Text) - CDec(lblBalanceHora20.Text), 8)
+        If lblBalanceHora22.Text <> 0 And lblBalanceHora21.Text <> 0 Then lblHoraDiferencia21.Text = FormatDuco(CDec(lblBalanceHora22.Text) - CDec(lblBalanceHora21.Text), 8)
+        If lblBalanceHora23.Text <> 0 And lblBalanceHora22.Text <> 0 Then lblHoraDiferencia22.Text = FormatDuco(CDec(lblBalanceHora23.Text) - CDec(lblBalanceHora22.Text), 8)
+        If lblBalanceHora23.Text <> 0 And lblBalanceHora00.Text <> 0 Then lblHoraDiferencia23.Text = FormatDuco(CDec(lblBalanceHora23.Text) - CDec(lblBalanceHora00.Text), 8)
     End Sub
     Private Sub BalanceMes()
         If lblMesBalance01.Text <> 0 And lblMesBalance02.Text <> 0 Then lblMesDifencia01.Text = CDec(lblMesBalance01.Text) - CDec(lblMesBalance01.Text) - CDec(Transacion(31))
@@ -141,7 +142,7 @@ Public Class Form1
     Private Sub MostrarMes()
         Dim Dato As Date = DateAndTime.Now
         Dim UltimoDía As Date = DateSerial(Dato.Year, Dato.Month + 1, 0)
-        Dim UltimoDiaMes As Integer = Mid(UltimoDía, 1, 2)
+        Dim UltimoDiaMes As Integer = 31 'Mid(UltimoDía, 1, 2)
 
         Select Case UltimoDiaMes
             Case 31
@@ -479,30 +480,30 @@ Public Class Form1
                 lstboxTop10.Items.Add(dict.item("Top 10 richest miners").item(K))
             Next
             Select Case Hour(Now)
-                Case 0 : If lblBalanceHora00.Text <> 0 Then lblHoraDiferencia00.Text = CDec(txtbalance.Text) - CDec(lblBalanceHora00.Text)
-                Case 1 : If lblBalanceHora01.Text <> 0 Then lblHoraDiferencia01.Text = CDec(txtbalance.Text) - CDec(lblBalanceHora01.Text)
-                Case 2 : If lblBalanceHora02.Text <> 0 Then lblHoraDiferencia02.Text = CDec(txtbalance.Text) - CDec(lblBalanceHora02.Text)
-                Case 3 : If lblBalanceHora03.Text <> 0 Then lblHoraDiferencia03.Text = CDec(txtbalance.Text) - CDec(lblBalanceHora03.Text)
-                Case 4 : If lblBalanceHora04.Text <> 0 Then lblHoraDiferencia04.Text = CDec(txtbalance.Text) - CDec(lblBalanceHora04.Text)
-                Case 5 : If lblBalanceHora05.Text <> 0 Then lblHoraDiferencia05.Text = CDec(txtbalance.Text) - CDec(lblBalanceHora05.Text)
-                Case 6 : If lblBalanceHora06.Text <> 0 Then lblHoraDiferencia06.Text = CDec(txtbalance.Text) - CDec(lblBalanceHora06.Text)
-                Case 7 : If lblBalanceHora07.Text <> 0 Then lblHoraDiferencia07.Text = CDec(txtbalance.Text) - CDec(lblBalanceHora07.Text)
-                Case 8 : If lblBalanceHora08.Text <> 0 Then lblHoraDiferencia08.Text = CDec(txtbalance.Text) - CDec(lblBalanceHora08.Text)
-                Case 9 : If lblBalanceHora09.Text <> 0 Then lblHoraDiferencia09.Text = CDec(txtbalance.Text) - CDec(lblBalanceHora09.Text)
-                Case 10 : If lblBalanceHora10.Text <> 0 Then lblHoraDiferencia10.Text = CDec(txtbalance.Text) - CDec(lblBalanceHora10.Text)
-                Case 11 : If lblBalanceHora11.Text <> 0 Then lblHoraDiferencia11.Text = CDec(txtbalance.Text) - CDec(lblBalanceHora11.Text)
-                Case 12 : If lblBalanceHora12.Text <> 0 Then lblHoraDiferencia12.Text = CDec(txtbalance.Text) - CDec(lblBalanceHora12.Text)
-                Case 13 : If lblBalanceHora13.Text <> 0 Then lblHoraDiferencia13.Text = CDec(txtbalance.Text) - CDec(lblBalanceHora13.Text)
-                Case 14 : If lblBalanceHora14.Text <> 0 Then lblHoraDiferencia14.Text = CDec(txtbalance.Text) - CDec(lblBalanceHora14.Text)
-                Case 15 : If lblBalanceHora15.Text <> 0 Then lblHoraDiferencia15.Text = CDec(txtbalance.Text) - CDec(lblBalanceHora15.Text)
-                Case 16 : If lblBalanceHora16.Text <> 0 Then lblHoraDiferencia16.Text = CDec(txtbalance.Text) - CDec(lblBalanceHora16.Text)
-                Case 17 : If lblBalanceHora17.Text <> 0 Then lblHoraDiferencia17.Text = CDec(txtbalance.Text) - CDec(lblBalanceHora17.Text)
-                Case 18 : If lblBalanceHora18.Text <> 0 Then lblHoraDiferencia18.Text = CDec(txtbalance.Text) - CDec(lblBalanceHora18.Text)
-                Case 19 : If lblBalanceHora19.Text <> 0 Then lblHoraDiferencia19.Text = CDec(txtbalance.Text) - CDec(lblBalanceHora19.Text)
-                Case 20 : If lblBalanceHora20.Text <> 0 Then lblHoraDiferencia20.Text = CDec(txtbalance.Text) - CDec(lblBalanceHora20.Text)
-                Case 21 : If lblBalanceHora21.Text <> 0 Then lblHoraDiferencia21.Text = CDec(txtbalance.Text) - CDec(lblBalanceHora21.Text)
-                Case 22 : If lblBalanceHora22.Text <> 0 Then lblHoraDiferencia22.Text = CDec(txtbalance.Text) - CDec(lblBalanceHora22.Text)
-                Case 23 : If lblBalanceHora23.Text <> 0 Then lblHoraDiferencia23.Text = CDec(txtbalance.Text) - CDec(lblBalanceHora23.Text)
+                Case 0 : If lblBalanceHora00.Text <> 0 Then lblHoraDiferencia00.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora00.Text), 8)
+                Case 1 : If lblBalanceHora01.Text <> 0 Then lblHoraDiferencia01.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora01.Text), 8)
+                Case 2 : If lblBalanceHora02.Text <> 0 Then lblHoraDiferencia02.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora02.Text), 8)
+                Case 3 : If lblBalanceHora03.Text <> 0 Then lblHoraDiferencia03.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora03.Text), 8)
+                Case 4 : If lblBalanceHora04.Text <> 0 Then lblHoraDiferencia04.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora04.Text), 8)
+                Case 5 : If lblBalanceHora05.Text <> 0 Then lblHoraDiferencia05.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora05.Text), 8)
+                Case 6 : If lblBalanceHora06.Text <> 0 Then lblHoraDiferencia06.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora06.Text), 8)
+                Case 7 : If lblBalanceHora07.Text <> 0 Then lblHoraDiferencia07.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora07.Text), 8)
+                Case 8 : If lblBalanceHora08.Text <> 0 Then lblHoraDiferencia08.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora08.Text), 8)
+                Case 9 : If lblBalanceHora09.Text <> 0 Then lblHoraDiferencia09.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora09.Text), 8)
+                Case 10 : If lblBalanceHora10.Text <> 0 Then lblHoraDiferencia10.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora10.Text), 8)
+                Case 11 : If lblBalanceHora11.Text <> 0 Then lblHoraDiferencia11.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora11.Text), 8)
+                Case 12 : If lblBalanceHora12.Text <> 0 Then lblHoraDiferencia12.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora12.Text), 8)
+                Case 13 : If lblBalanceHora13.Text <> 0 Then lblHoraDiferencia13.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora13.Text), 8)
+                Case 14 : If lblBalanceHora14.Text <> 0 Then lblHoraDiferencia14.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora14.Text), 8)
+                Case 15 : If lblBalanceHora15.Text <> 0 Then lblHoraDiferencia15.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora15.Text), 8)
+                Case 16 : If lblBalanceHora16.Text <> 0 Then lblHoraDiferencia16.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora16.Text), 8)
+                Case 17 : If lblBalanceHora17.Text <> 0 Then lblHoraDiferencia17.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora17.Text), 8)
+                Case 18 : If lblBalanceHora18.Text <> 0 Then lblHoraDiferencia18.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora18.Text), 8)
+                Case 19 : If lblBalanceHora19.Text <> 0 Then lblHoraDiferencia19.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora19.Text), 8)
+                Case 20 : If lblBalanceHora20.Text <> 0 Then lblHoraDiferencia20.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora20.Text), 8)
+                Case 21 : If lblBalanceHora21.Text <> 0 Then lblHoraDiferencia21.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora21.Text), 8)
+                Case 22 : If lblBalanceHora22.Text <> 0 Then lblHoraDiferencia22.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora22.Text), 8)
+                Case 23 : If lblBalanceHora23.Text <> 0 Then lblHoraDiferencia23.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora23.Text), 8)
             End Select
             Select Case DateAndTime.Day(Now)
                 Case 1 : If lblMesBalance01.Text <> 0 Then lblMesDifencia01.Text = CDec(txtbalance.Text) - CDec(lblMesBalance01.Text) - CDec(Transacion(1))
@@ -747,6 +748,16 @@ Public Class Form1
     End Sub
     Function FormatDuco(ByVal Ducos As Decimal, ByVal Digitos As Integer) As String
         Select Case Digitos
+            Case 8
+                If Ducos < 10 Then
+                    FormatDuco = Format(Ducos, "0.0000000")
+                ElseIf Ducos < 100 And Ducos >= 10 Then
+                    FormatDuco = Format(Ducos, "00.000000")
+                ElseIf Ducos < 1000 And Ducos >= 100 Then
+                    FormatDuco = Format(Ducos, "000.00000")
+                ElseIf Ducos < 10000 And Ducos >= 1000 Then
+                    FormatDuco = Format(Ducos, "0000.0000")
+                End If
             Case 12
                 If Ducos < 10 Then
                     FormatDuco = Format(Ducos, "0.00000000000")
@@ -757,6 +768,26 @@ Public Class Form1
                 ElseIf Ducos < 10000 And Ducos >= 1000 Then
                     FormatDuco = Format(Ducos, "0000.00000000")
                 End If
+            Case 14
+                If Ducos < 10 Then
+                    FormatDuco = Format(Ducos, "0.0000000000000")
+                ElseIf Ducos < 100 And Ducos >= 10 Then
+                    FormatDuco = Format(Ducos, "00.000000000000")
+                ElseIf Ducos < 1000 And Ducos >= 100 Then
+                    FormatDuco = Format(Ducos, "000.00000000000")
+                ElseIf Ducos < 10000 And Ducos >= 1000 Then
+                    FormatDuco = Format(Ducos, "0000.0000000000")
+                End If
+            Case 15
+                If Ducos < 10 Then
+                    FormatDuco = Format(Ducos, "0.00000000000000")
+                ElseIf Ducos < 100 And Ducos >= 10 Then
+                    FormatDuco = Format(Ducos, "00.0000000000000")
+                ElseIf Ducos < 1000 And Ducos >= 100 Then
+                    FormatDuco = Format(Ducos, "000.000000000000")
+                ElseIf Ducos < 10000 And Ducos >= 1000 Then
+                    FormatDuco = Format(Ducos, "0000.00000000000")
+                End If
             Case 16
                 If Ducos < 10 Then
                     FormatDuco = Format(Ducos, "0.000000000000000")
@@ -766,6 +797,16 @@ Public Class Form1
                     FormatDuco = Format(Ducos, "000.0000000000000")
                 ElseIf Ducos < 10000 And Ducos >= 1000 Then
                     FormatDuco = Format(Ducos, "0000.000000000000")
+                End If
+            Case 17
+                If Ducos < 10 Then
+                    FormatDuco = Format(Ducos, "0.0000000000000000")
+                ElseIf Ducos < 100 And Ducos >= 10 Then
+                    FormatDuco = Format(Ducos, "00.000000000000000")
+                ElseIf Ducos < 1000 And Ducos >= 100 Then
+                    FormatDuco = Format(Ducos, "000.00000000000000")
+                ElseIf Ducos < 10000 And Ducos >= 1000 Then
+                    FormatDuco = Format(Ducos, "0000.0000000000000")
                 End If
         End Select
     End Function
@@ -787,83 +828,91 @@ Public Class Form1
             CalcularHases1 = Hases : lblHaseEstiquta.Text = "H/s"
         End If
     End Function
+    Private Sub ResetDia()
+        lblBalanceHora00.Text = "0"
+        lblBalanceHora01.Text = "0"
+        lblBalanceHora02.Text = "0"
+        lblBalanceHora03.Text = "0"
+        lblBalanceHora04.Text = "0"
+        lblBalanceHora05.Text = "0"
+        lblBalanceHora06.Text = "0"
+        lblBalanceHora07.Text = "0"
+        lblBalanceHora08.Text = "0"
+        lblBalanceHora09.Text = "0"
+        lblBalanceHora10.Text = "0"
+        lblBalanceHora11.Text = "0"
+        lblBalanceHora12.Text = "0"
+        lblBalanceHora13.Text = "0"
+        lblBalanceHora14.Text = "0"
+        lblBalanceHora15.Text = "0"
+        lblBalanceHora16.Text = "0"
+        lblBalanceHora17.Text = "0"
+        lblBalanceHora18.Text = "0"
+        lblBalanceHora19.Text = "0"
+        lblBalanceHora20.Text = "0"
+        lblBalanceHora21.Text = "0"
+        lblBalanceHora22.Text = "0"
+        lblBalanceHora23.Text = "0"
+        lblPrecio00.Text = "0"
+        lblPrecio01.Text = "0"
+        lblPrecio02.Text = "0"
+        lblPrecio03.Text = "0"
+        lblPrecio04.Text = "0"
+        lblPrecio05.Text = "0"
+        lblPrecio06.Text = "0"
+        lblPrecio07.Text = "0"
+        lblPrecio08.Text = "0"
+        lblPrecio09.Text = "0"
+        lblPrecio10.Text = "0"
+        lblPrecio11.Text = "0"
+        lblPrecio12.Text = "0"
+        lblPrecio13.Text = "0"
+        lblPrecio14.Text = "0"
+        lblPrecio15.Text = "0"
+        lblPrecio16.Text = "0"
+        lblPrecio17.Text = "0"
+        lblPrecio18.Text = "0"
+        lblPrecio19.Text = "0"
+        lblPrecio20.Text = "0"
+        lblPrecio21.Text = "0"
+        lblPrecio22.Text = "0"
+        lblPrecio23.Text = "0"
+        lblHoraDiferencia00.Text = 0
+        lblHoraDiferencia01.Text = 0
+        lblHoraDiferencia02.Text = 0
+        lblHoraDiferencia03.Text = 0
+        lblHoraDiferencia04.Text = 0
+        lblHoraDiferencia05.Text = 0
+        lblHoraDiferencia06.Text = 0
+        lblHoraDiferencia07.Text = 0
+        lblHoraDiferencia08.Text = 0
+        lblHoraDiferencia09.Text = 0
+        lblHoraDiferencia10.Text = 0
+        lblHoraDiferencia11.Text = 0
+        lblHoraDiferencia12.Text = 0
+        lblHoraDiferencia13.Text = 0
+        lblHoraDiferencia14.Text = 0
+        lblHoraDiferencia15.Text = 0
+        lblHoraDiferencia16.Text = 0
+        lblHoraDiferencia17.Text = 0
+        lblHoraDiferencia18.Text = 0
+        lblHoraDiferencia19.Text = 0
+        lblHoraDiferencia20.Text = 0
+        lblHoraDiferencia21.Text = 0
+        lblHoraDiferencia22.Text = 0
+        lblHoraDiferencia23.Text = 0
+        lblTotalHora.Text = 0
+    End Sub
     Private Sub Añadir()
         Try
             Select Case Hour(Now)
                 Case 0
-                    lblBalanceHora00.Text = txtbalance.Text
+                    ResetDia()
+                    lblBalanceHora00.Text = FormatDuco(txtbalance.Text, 16)
                     lblPrecio00.Text = CDec(txtDucoprice.Text)
                     PrecioDucoDia(0) = CDec(txtDucoprice.Text)
-                    lblHoraDiferencia00.Text = CDec(lblBalanceHora00.Text) - CDec(lblBalanceHora23.Text)
-                    lblBalanceHora01.Text = "0"
-                    lblBalanceHora02.Text = "0"
-                    lblBalanceHora03.Text = "0"
-                    lblBalanceHora04.Text = "0"
-                    lblBalanceHora05.Text = "0"
-                    lblBalanceHora06.Text = "0"
-                    lblBalanceHora07.Text = "0"
-                    lblBalanceHora08.Text = "0"
-                    lblBalanceHora09.Text = "0"
-                    lblBalanceHora10.Text = "0"
-                    lblBalanceHora11.Text = "0"
-                    lblBalanceHora12.Text = "0"
-                    lblBalanceHora13.Text = "0"
-                    lblBalanceHora14.Text = "0"
-                    lblBalanceHora15.Text = "0"
-                    lblBalanceHora16.Text = "0"
-                    lblBalanceHora17.Text = "0"
-                    lblBalanceHora18.Text = "0"
-                    lblBalanceHora19.Text = "0"
-                    lblBalanceHora20.Text = "0"
-                    lblBalanceHora21.Text = "0"
-                    lblBalanceHora22.Text = "0"
-                    lblBalanceHora23.Text = "0"
-                    lblPrecio01.Text = "0"
-                    lblPrecio02.Text = "0"
-                    lblPrecio03.Text = "0"
-                    lblPrecio04.Text = "0"
-                    lblPrecio05.Text = "0"
-                    lblPrecio06.Text = "0"
-                    lblPrecio07.Text = "0"
-                    lblPrecio08.Text = "0"
-                    lblPrecio09.Text = "0"
-                    lblPrecio10.Text = "0"
-                    lblPrecio11.Text = "0"
-                    lblPrecio12.Text = "0"
-                    lblPrecio13.Text = "0"
-                    lblPrecio14.Text = "0"
-                    lblPrecio15.Text = "0"
-                    lblPrecio16.Text = "0"
-                    lblPrecio17.Text = "0"
-                    lblPrecio18.Text = "0"
-                    lblPrecio19.Text = "0"
-                    lblPrecio20.Text = "0"
-                    lblPrecio21.Text = "0"
-                    lblPrecio22.Text = "0"
-                    lblPrecio23.Text = "0"
-                    lblHoraDiferencia01.Text = 0
-                    lblHoraDiferencia02.Text = 0
-                    lblHoraDiferencia03.Text = 0
-                    lblHoraDiferencia04.Text = 0
-                    lblHoraDiferencia05.Text = 0
-                    lblHoraDiferencia06.Text = 0
-                    lblHoraDiferencia07.Text = 0
-                    lblHoraDiferencia08.Text = 0
-                    lblHoraDiferencia09.Text = 0
-                    lblHoraDiferencia10.Text = 0
-                    lblHoraDiferencia11.Text = 0
-                    lblHoraDiferencia12.Text = 0
-                    lblHoraDiferencia13.Text = 0
-                    lblHoraDiferencia14.Text = 0
-                    lblHoraDiferencia15.Text = 0
-                    lblHoraDiferencia16.Text = 0
-                    lblHoraDiferencia17.Text = 0
-                    lblHoraDiferencia18.Text = 0
-                    lblHoraDiferencia19.Text = 0
-                    lblHoraDiferencia20.Text = 0
-                    lblHoraDiferencia21.Text = 0
-                    lblHoraDiferencia22.Text = 0
-                    lblHoraDiferencia23.Text = 0
+                    lblHoraDiferencia00.Text = FormatDuco(CDec(lblBalanceHora00.Text) - CDec(lblBalanceHora23.Text), 8)
+
                     lblTotalHora.Text = lblHoraDiferencia00.Text
                     Select Case DateAndTime.Day(Now)
                         Case 1
@@ -965,29 +1014,29 @@ Public Class Form1
                         Case 31 : If lblMesBalance31.Text = "0" Then lblMesBalance31.Text = txtbalance.Text : lblMesPrecio31.Text = CDec(txtDucoprice.Text)
 
                     End Select
-                Case 1 : lblBalanceHora01.Text = txtbalance.Text : lblPrecio01.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(1) = CDec(txtDucoprice.Text)
-                Case 2 : lblBalanceHora02.Text = txtbalance.Text : lblPrecio02.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(2) = CDec(txtDucoprice.Text)
-                Case 3 : lblBalanceHora03.Text = txtbalance.Text : lblPrecio03.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(3) = CDec(txtDucoprice.Text)
-                Case 4 : lblBalanceHora04.Text = txtbalance.Text : lblPrecio04.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(4) = CDec(txtDucoprice.Text)
-                Case 5 : lblBalanceHora05.Text = txtbalance.Text : lblPrecio05.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(5) = CDec(txtDucoprice.Text)
-                Case 6 : lblBalanceHora06.Text = txtbalance.Text : lblPrecio06.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(6) = CDec(txtDucoprice.Text)
-                Case 7 : lblBalanceHora07.Text = txtbalance.Text : lblPrecio07.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(7) = CDec(txtDucoprice.Text)
-                Case 8 : lblBalanceHora08.Text = txtbalance.Text : lblPrecio08.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(8) = CDec(txtDucoprice.Text)
-                Case 9 : lblBalanceHora09.Text = txtbalance.Text : lblPrecio09.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(9) = CDec(txtDucoprice.Text)
-                Case 10 : lblBalanceHora10.Text = txtbalance.Text : lblPrecio10.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(10) = CDec(txtDucoprice.Text)
-                Case 11 : lblBalanceHora11.Text = txtbalance.Text : lblPrecio11.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(11) = CDec(txtDucoprice.Text)
-                Case 12 : lblBalanceHora12.Text = txtbalance.Text : lblPrecio12.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(12) = CDec(txtDucoprice.Text)
-                Case 13 : lblBalanceHora13.Text = txtbalance.Text : lblPrecio13.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(13) = CDec(txtDucoprice.Text)
-                Case 14 : lblBalanceHora14.Text = txtbalance.Text : lblPrecio14.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(14) = CDec(txtDucoprice.Text)
-                Case 15 : lblBalanceHora15.Text = txtbalance.Text : lblPrecio15.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(15) = CDec(txtDucoprice.Text)
-                Case 16 : lblBalanceHora16.Text = txtbalance.Text : lblPrecio16.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(16) = CDec(txtDucoprice.Text)
-                Case 17 : lblBalanceHora17.Text = txtbalance.Text : lblPrecio17.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(17) = CDec(txtDucoprice.Text)
-                Case 18 : lblBalanceHora18.Text = txtbalance.Text : lblPrecio18.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(18) = CDec(txtDucoprice.Text)
+                Case 1 : lblBalanceHora01.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio01.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(1) = CDec(txtDucoprice.Text)
+                Case 2 : lblBalanceHora02.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio02.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(2) = CDec(txtDucoprice.Text)
+                Case 3 : lblBalanceHora03.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio03.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(3) = CDec(txtDucoprice.Text)
+                Case 4 : lblBalanceHora04.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio04.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(4) = CDec(txtDucoprice.Text)
+                Case 5 : lblBalanceHora05.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio05.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(5) = CDec(txtDucoprice.Text)
+                Case 6 : lblBalanceHora06.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio06.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(6) = CDec(txtDucoprice.Text)
+                Case 7 : lblBalanceHora07.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio07.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(7) = CDec(txtDucoprice.Text)
+                Case 8 : lblBalanceHora08.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio08.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(8) = CDec(txtDucoprice.Text)
+                Case 9 : lblBalanceHora09.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio09.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(9) = CDec(txtDucoprice.Text)
+                Case 10 : lblBalanceHora10.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio10.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(10) = CDec(txtDucoprice.Text)
+                Case 11 : lblBalanceHora11.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio11.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(11) = CDec(txtDucoprice.Text)
+                Case 12 : lblBalanceHora12.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio12.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(12) = CDec(txtDucoprice.Text)
+                Case 13 : lblBalanceHora13.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio13.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(13) = CDec(txtDucoprice.Text)
+                Case 14 : lblBalanceHora14.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio14.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(14) = CDec(txtDucoprice.Text)
+                Case 15 : lblBalanceHora15.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio15.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(15) = CDec(txtDucoprice.Text)
+                Case 16 : lblBalanceHora16.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio16.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(16) = CDec(txtDucoprice.Text)
+                Case 17 : lblBalanceHora17.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio17.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(17) = CDec(txtDucoprice.Text)
+                Case 18 : lblBalanceHora18.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio18.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(18) = CDec(txtDucoprice.Text)
                 Case 19 : lblBalanceHora19.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio19.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(19) = CDec(txtDucoprice.Text)
-                Case 20 : lblBalanceHora20.Text = txtbalance.Text : lblPrecio20.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(20) = CDec(txtDucoprice.Text)
-                Case 21 : lblBalanceHora21.Text = txtbalance.Text : lblPrecio21.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(21) = CDec(txtDucoprice.Text)
-                Case 22 : lblBalanceHora22.Text = txtbalance.Text : lblPrecio22.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(22) = CDec(txtDucoprice.Text)
-                Case 23 : lblBalanceHora23.Text = txtbalance.Text : lblPrecio23.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(23) = CDec(txtDucoprice.Text)
+                Case 20 : lblBalanceHora20.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio20.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(20) = CDec(txtDucoprice.Text)
+                Case 21 : lblBalanceHora21.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio21.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(21) = CDec(txtDucoprice.Text)
+                Case 22 : lblBalanceHora22.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio22.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(22) = CDec(txtDucoprice.Text)
+                Case 23 : lblBalanceHora23.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio23.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(23) = CDec(txtDucoprice.Text)
             End Select
             BalanceHora()
             BalanceMes()
@@ -1062,5 +1111,9 @@ Public Class Form1
         Catch ex As Exception
             ' MsgBox("Error!!" & vbCrLf & ex.Message)
         End Try
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        ResetDia()
     End Sub
 End Class

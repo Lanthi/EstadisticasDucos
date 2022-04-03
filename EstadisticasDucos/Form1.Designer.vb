@@ -2672,7 +2672,7 @@ Partial Class Form1
         'lblTotalMes
         '
         Me.lblTotalMes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTotalMes.Font = New System.Drawing.Font("Duco", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTotalMes.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTotalMes.ForeColor = System.Drawing.Color.Blue
         Me.lblTotalMes.Location = New System.Drawing.Point(299, 633)
         Me.lblTotalMes.Name = "lblTotalMes"
@@ -2685,7 +2685,6 @@ Partial Class Form1
         '
         Me.lblMesDaily.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblMesDaily.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMesDaily.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.lblMesDaily.Location = New System.Drawing.Point(8, 633)
         Me.lblMesDaily.Name = "lblMesDaily"
         Me.lblMesDaily.Size = New System.Drawing.Size(211, 31)
@@ -4014,7 +4013,7 @@ Partial Class Form1
         'lblTransacionMes
         '
         Me.lblTransacionMes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransacionMes.Font = New System.Drawing.Font("Duco", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.lblTransacionMes.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTransacionMes.ForeColor = System.Drawing.Color.Black
         Me.lblTransacionMes.Location = New System.Drawing.Point(218, 633)
         Me.lblTransacionMes.Name = "lblTransacionMes"

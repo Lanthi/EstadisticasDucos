@@ -743,7 +743,8 @@ Public Class Form1
         lblTotalMes.Text += CDec(lblMesDifencia28.Text)
         lblTotalMes.Text += CDec(lblMesDifencia29.Text)
         lblTotalMes.Text += CDec(lblMesDifencia30.Text)
-        lblTotalMes.Text += FormatDuco(CDec(lblMesDifencia31.Text), 8)
+        lblTotalMes.Text += CDec(lblMesDifencia31.Text)
+        lblTotalMes.Text = FormatDuco(lblTotalMes.Text, 9)
     End Sub
     Function FormatDuco(ByVal Ducos As Decimal, ByVal Digitos As Integer) As String
         Select Case Digitos
@@ -757,7 +758,7 @@ Public Class Form1
                 ElseIf Ducos < 10000 And Ducos >= 1000 Then
                     FormatDuco = Format(Ducos, "0000.0000")
                 End If
-            Case 10
+            Case 9
                 If Ducos < 10 Then
                     FormatDuco = Format(Ducos, "0.00000000")
                 ElseIf Ducos < 100 And Ducos >= 10 Then

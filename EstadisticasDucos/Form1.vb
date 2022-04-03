@@ -744,7 +744,7 @@ Public Class Form1
         lblTotalMes.Text += CDec(lblMesDifencia29.Text)
         lblTotalMes.Text += CDec(lblMesDifencia30.Text)
         lblTotalMes.Text += CDec(lblMesDifencia31.Text)
-        lblTotalMes.Text = FormatDuco(lblTotalMes.Text, 9)
+        lblTotalMes.Text = FormatDuco(lblTotalMes.Text, 10)
     End Sub
     Function FormatDuco(ByVal Ducos As Decimal, ByVal Digitos As Integer) As String
         Select Case Digitos

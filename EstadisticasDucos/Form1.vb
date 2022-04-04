@@ -27,8 +27,12 @@ Public Class Form1
     Dim ContadorEstimacion As Integer = 0
     Dim Euro As Decimal = 0
     Dim Mineros(0, 7) As String
+    Dim LogAñadido As Boolean = False
+    Dim RutaApp As String = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) & "\Estadisticas Duco"
+    Dim FechaLog As Date
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
+            lblReinicioApp.Text += 1
             LogReinicio()
             lblHora.Text = DateAndTime.TimeValue(Now)
             For I As Integer = 0 To 30
@@ -1018,6 +1022,7 @@ Public Class Form1
             Select Case Hour(Now)
                 Case 0
                     ResetDia()
+                    lblReinicioApp.Text = -1
                     lblBalanceHora00.Text = FormatDuco(txtbalance.Text, 16)
                     lblPrecio00.Text = CDec(txtDucoprice.Text)
                     PrecioDucoDia(0) = CDec(txtDucoprice.Text)
@@ -1215,7 +1220,13 @@ Public Class Form1
                 Case 30 : Actualizar()
                     'Case 45 : Actualizar()
             End Select
+            Select Case Minutos
+                Case 10, 20, 30, 40, 50, 0, "00" : If LogAñadido = False Then Log()
+                Case Else
+                    LogAñadido = False
+            End Select
             If Minutos = 0 Then Añadir()
+            If Hora = 23 And Minutos = 59 And Segundos = 59 Then GuardarLog()
         Catch ex As Exception
             ' MsgBox("Error!!" & vbCrLf & ex.Message)
         End Try
@@ -1223,25 +1234,54 @@ Public Class Form1
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         ResetDia()
     End Sub
+    Private Sub GuardarLog()
+        Dim Intru As Object
+        Dim Archivo As Object
+        Dim RutaArchivo As String = RutaApp & "\Logs\Log " & DateAndTime.Day(FechaLog) & "-" & DateAndTime.Month(FechaLog) & "-" & DateAndTime.Year(FechaLog) & ".log"
+        My.Computer.FileSystem.CreateDirectory(RutaApp & "\Logs")
+        Intru = CreateObject("Scripting.FileSystemObject")
+        If File.Exists(RutaArchivo) Then
+            Archivo = Intru.CreateTextFile(RutaApp & "\Logs\Log " & DateAndTime.Day(FechaLog) & "-" & DateAndTime.Month(FechaLog) & "-" & DateAndTime.Year(FechaLog) & "(" & lblReinicioApp.Text & ").log", True)
+            MsgBox("existe")
+        Else
+            Archivo = Intru.CreateTextFile(RutaApp & "\Logs\Log " & DateAndTime.Day(FechaLog) & "-" & DateAndTime.Month(FechaLog) & "-" & DateAndTime.Year(FechaLog) & ".log", True)
+        End If
+
+        Archivo.WriteLine(txtLog.Text)
+        Archivo.Close()
+        Process.Start("explorer.exe", RutaApp)
+        LogReinicio()
+    End Sub
     Private Sub Log()
         'log
-        If txtMinerosNArduino.Text > 0 Then txtLogMineros.Text += vbCrLf & DateAndTime.DateValue(Now) & " " & DateAndTime.TimeValue(Now) & " = ARDUINOS Nº: " & txtMinerosNArduino.Text & " - Hases: " & txtMinerosHArduino.Text
-        If txtMinerosNCPU.Text > 0 Then txtLogMineros.Text += vbCrLf & DateAndTime.DateValue(Now) & " " & DateAndTime.TimeValue(Now) & " = CPU Nº: " & txtMinerosNCPU.Text & " - Hases: " & txtMinerosHCPU.Text
-        If txtMinerosNEsp8266.Text > 0 Then txtLogMineros.Text += vbCrLf & DateAndTime.DateValue(Now) & " " & DateAndTime.TimeValue(Now) & " = ESP8266 Nº: " & txtMinerosNEsp8266.Text & " - Hases: " & txtMinerosHEsp8266.Text
-        If txtMinerosNEsp32.Text > 0 Then txtLogMineros.Text += vbCrLf & DateAndTime.DateValue(Now) & " " & DateAndTime.TimeValue(Now) & " = ESP32 Nº: " & txtMinerosNEsp32.Text & " - Hases: " & txtMinerosHEsp32.Text
-        If txtMinerosNotros.Text > 0 Then txtLogMineros.Text += vbCrLf & DateAndTime.DateValue(Now) & " " & DateAndTime.TimeValue(Now) & " = OTHER Nº: " & txtMinerosNotros.Text & " - Hases: " & txtMinerosHotros.Text
-        If txtMinerosNPhone.Text > 0 Then txtLogMineros.Text += vbCrLf & DateAndTime.DateValue(Now) & " " & DateAndTime.TimeValue(Now) & " = PHONE Nº: " & txtMinerosNPhone.Text & " - Hases: " & txtMinerosHPhone.Text
-        If txtMinerosNRPI.Text > 0 Then txtLogMineros.Text += vbCrLf & DateAndTime.DateValue(Now) & " " & DateAndTime.TimeValue(Now) & " = RPI Nº: " & txtMinerosNRPI.Text & " - Hases: " & txtMinerosHRPI.Text
-        If txtMinerosNWeb.Text > 0 Then txtLogMineros.Text += vbCrLf & DateAndTime.DateValue(Now) & " " & DateAndTime.TimeValue(Now) & " = WEB Nº: " & txtMinerosNWeb.Text & " - Hases: " & txtMinerosHWeb.Text
-        txtLogMineros.Text += vbCrLf & vbCrLf & DateAndTime.DateValue(Now) & " " & DateAndTime.TimeValue(Now) & " = TOTAL Nº: " & lblMineros.Text & " - Hases: " & lblHases.Text & lblHaseEstiquta.Text
-
-        txtLogBalanceYprecio.Text += vbCrLf & DateAndTime.DateValue(Now) & " " & DateAndTime.TimeValue(Now) & " = Ducos: " & txtbalance.Text & " * Price: " & txtDucoprice.Text & " = " & lblGanado.Text & "€"
-        txtLogMineros.Text += vbCrLf & "--"
+        LogAñadido = True
+        txtLogMineros.Text += vbCrLf & DateAndTime.DateValue(Now) & " " & Format(DateAndTime.TimeValue(Now), "HH:mm") & vbCrLf
+        If txtMinerosNArduino.Text > 0 Then txtLogMineros.Text += vbCrLf & "ARDUINOS Nº: " & txtMinerosNArduino.Text & " - Hases: " & txtMinerosHArduino.Text
+        If txtMinerosNCPU.Text > 0 Then txtLogMineros.Text += vbCrLf & "CPU Nº: " & txtMinerosNCPU.Text & " - Hases: " & txtMinerosHCPU.Text
+        If txtMinerosNEsp8266.Text > 0 Then txtLogMineros.Text += vbCrLf & "ESP8266 Nº: " & txtMinerosNEsp8266.Text & " - Hases: " & txtMinerosHEsp8266.Text
+        If txtMinerosNEsp32.Text > 0 Then txtLogMineros.Text += vbCrLf & "ESP32 Nº: " & txtMinerosNEsp32.Text & " - Hases: " & txtMinerosHEsp32.Text
+        If txtMinerosNotros.Text > 0 Then txtLogMineros.Text += vbCrLf & "OTHER Nº: " & txtMinerosNotros.Text & " - Hases: " & txtMinerosHotros.Text
+        If txtMinerosNPhone.Text > 0 Then txtLogMineros.Text += vbCrLf & "PHONE Nº: " & txtMinerosNPhone.Text & " - Hases: " & txtMinerosHPhone.Text
+        If txtMinerosNRPI.Text > 0 Then txtLogMineros.Text += vbCrLf & "RPI Nº: " & txtMinerosNRPI.Text & " - Hases: " & txtMinerosHRPI.Text
+        If txtMinerosNWeb.Text > 0 Then txtLogMineros.Text += vbCrLf & "WEB Nº: " & txtMinerosNWeb.Text & " - Hases: " & txtMinerosHWeb.Text
+        txtLogMineros.Text += vbCrLf & vbCrLf & "TOTAL Nº: " & lblMineros.Text & " - Hases: " & lblHases.Text & lblHaseEstiquta.Text
+        txtLogBalanceYprecio.Text += vbCrLf & DateAndTime.DateValue(Now) & " " & Format(DateAndTime.TimeValue(Now), "HH:mm") & " = Ducos: " & txtbalance.Text & " * Price: " & txtDucoprice.Text & " = " & lblGanado.Text & "€"
+        txtLogMineros.Text += vbCrLf & "---------------------------------"
         txtLog.Text = vbCrLf & txtLogBalanceYprecio.Text & vbCrLf & vbCrLf & txtLogMineros.Text & vbCrLf & vbCrLf & txtLogTransasiones.Text
-
+        FechaLog = DateAndTime.DateValue(Now)
     End Sub
     Private Sub LogReinicio()
-        txtLogBalanceYprecio.Text = "Balance and Price:" & vbCrLf & "===============" & vbCrLf
-        txtLogMineros.Text = "Miners and Hanses:" & vbCrLf & "================" & vbCrLf
+        txtLogBalanceYprecio.Text = "Balance and Price:" & vbCrLf & "==================" & vbCrLf
+        txtLogMineros.Text = "Miners and Hanses:" & vbCrLf & "==================" & vbCrLf
+    End Sub
+
+    Private Sub Form1_Leave(sender As Object, e As EventArgs) Handles Me.Leave
+
+    End Sub
+
+    Private Sub Form1_Closed(sender As Object, e As EventArgs) Handles Me.Closed
+        GuardarLog()
+        My.Settings.Save()
+
     End Sub
 End Class

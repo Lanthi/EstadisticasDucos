@@ -1817,6 +1817,18 @@ Namespace My
                 Me("mesloco") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("-1")>  _
+        Public Property Reinicios() As String
+            Get
+                Return CType(Me("Reinicios"),String)
+            End Get
+            Set
+                Me("Reinicios") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

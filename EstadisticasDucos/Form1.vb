@@ -29,6 +29,7 @@ Public Class Form1
     Dim Mineros(0, 7) As String
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
+            LogReinicio()
             lblHora.Text = DateAndTime.TimeValue(Now)
             For I As Integer = 0 To 30
                 Transacion(I) = 0
@@ -253,7 +254,7 @@ Public Class Form1
             lblDucoDeposito.Left = lblDeposito.Left + lblDeposito.Width
             lblFechaFinDeposito.Text = FechafinDeposito
             txtDucoprice.Text = CDec(dict.item("Duco price"))
-            txtbalance.Text = FormatDuco(dict2.item("result").item("balance").item("balance"), 19)
+            txtbalance.Text = FormatDuco(dict2.item("result").item("balance").item("balance"), 17)
             EstimadoNuevo = txtbalance.Text
             If EstimadoViejo = 0 Then
                 EstimadoViejo = EstimadoNuevo
@@ -400,6 +401,22 @@ Public Class Form1
             Dim Contador As Integer = dict2.item("result").item("miners").Count
             ReDim Mineros(Contador, 7)
             TreeView2.Nodes.Clear()
+            txtMinerosHArduino.Text = 0
+            txtMinerosHCPU.Text = 0
+            txtMinerosHEsp8266.Text = 0
+            txtMinerosHEsp32.Text = 0
+            txtMinerosHotros.Text = 0
+            txtMinerosHPhone.Text = 0
+            txtMinerosHRPI.Text = 0
+            txtMinerosHWeb.Text = 0
+            txtMinerosNArduino.Text = 0
+            txtMinerosNCPU.Text = 0
+            txtMinerosNEsp8266.Text = 0
+            txtMinerosNEsp32.Text = 0
+            txtMinerosNotros.Text = 0
+            txtMinerosNPhone.Text = 0
+            txtMinerosNRPI.Text = 0
+            txtMinerosNWeb.Text = 0
             TreeView2.Nodes.Add("Mineros" & " (" & Contador & ")")
             For T As Integer = 0 To Contador - 1
                 Mineros(T, 0) = dict2.item("result").item("miners").item(T).item("identifier") & " (" & CalcularHases(dict2.item("result").item("miners").item(T).item("hashrate")) & ")"
@@ -416,21 +433,34 @@ Public Class Form1
                     TreeView2.Nodes(0).Nodes(T).Nodes.Add(Mineros(T, A))
                 Next A
                 Select Case dict2.item("result").item("miners").item(T).item("software")
-                    Case "Official AVR Miner 3.0"
+                    Case "Official AVR Miner 3.1"
+                        txtMinerosNArduino.Text += 1
+                        txtMinerosHArduino.Text += dict2.item("result").item("miners").item(T).item("hashrate")
                         TreeView2.Nodes(0).Nodes(T).ImageIndex = 0
                         TreeView2.Nodes(0).Nodes(T).SelectedImageIndex = 0
-                    Case "Official PC Miner 3.0"
+                    Case "Official PC Miner 3.1"
+                        txtMinerosHCPU.Text += dict2.item("result").item("miners").item(T).item("hashrate")
+                        txtMinerosNCPU.Text += 1
                         TreeView2.Nodes(0).Nodes(T).ImageIndex = 1
                         TreeView2.Nodes(0).Nodes(T).SelectedImageIndex = 1
-                    Case "Official ESP32 Miner 3.0"
+                    Case "Official ESP32 Miner 3.1"
+                        txtMinerosNEsp32.Text += 1
+                        txtMinerosHEsp32.Text += dict2.item("result").item("miners").item(T).item("hashrate")
                         TreeView2.Nodes(0).Nodes(T).ImageIndex = 7
                         TreeView2.Nodes(0).Nodes(T).SelectedImageIndex = 7
-                    Case "Official ESP8266 Miner 3.0"
+                    Case "Official ESP8266 Miner 3.1"
+                        txtMinerosNEsp8266.Text += 1
+                        txtMinerosHEsp8266.Text += dict2.item("result").item("miners").item(T).item("hashrate")
                         TreeView2.Nodes(0).Nodes(T).ImageIndex = 8
                         TreeView2.Nodes(0).Nodes(T).SelectedImageIndex = 8
                     Case "Official Web Miner 2.8"
+                        txtMinerosNWeb.Text += 1
+                        txtMinerosHWeb.Text += dict2.item("result").item("miners").item(T).item("hashrate")
                         TreeView2.Nodes(0).Nodes(T).ImageIndex = 2
                         TreeView2.Nodes(0).Nodes(T).SelectedImageIndex = 2
+                    Case Else
+                        txtMinerosNotros.Text += 1
+                        txtMinerosHotros.Text += dict2.item("result").item("miners").item(T).item("hashrate")
                 End Select
                 TreeView2.Refresh()
             Next
@@ -438,6 +468,16 @@ Public Class Form1
             TabPage4.Text = "Miners (" & Contador & ")"
             lblHases.Text = CalcularHases1(HasesUsuario)
             lblMineros.Text = Contador
+            txtMinerosHArduino.Text = CalcularHases(txtMinerosHArduino.Text)
+            txtMinerosHCPU.Text = CalcularHases(txtMinerosHCPU.Text)
+            txtMinerosNEsp32.Text = txtMinerosNEsp32.Text / 2
+            txtMinerosHEsp32.Text = CalcularHases(txtMinerosHEsp32.Text)
+            txtMinerosHEsp8266.Text = CalcularHases(txtMinerosHEsp8266.Text)
+            txtMinerosHWeb.Text = CalcularHases(txtMinerosHWeb.Text)
+            txtMinerosHotros.Text = CalcularHases(txtMinerosHotros.Text)
+            txtMinerosHPhone.Text = CalcularHases(txtMinerosHPhone.Text)
+            txtMinerosHRPI.Text = CalcularHases(txtMinerosHRPI.Text)
+
             TreeView2.Nodes(0).ImageIndex = 6
             TreeView2.Nodes(0).SelectedImageIndex = 6
             TreeView2.Nodes(0).Expand()
@@ -982,7 +1022,6 @@ Public Class Form1
                     lblPrecio00.Text = CDec(txtDucoprice.Text)
                     PrecioDucoDia(0) = CDec(txtDucoprice.Text)
                     lblHoraDiferencia00.Text = FormatDuco(CDec(lblBalanceHora00.Text) - CDec(lblBalanceHora23.Text), 8)
-
                     lblTotalHora.Text = lblHoraDiferencia00.Text
                     Select Case DateAndTime.Day(Now)
                         Case 1
@@ -1146,7 +1185,6 @@ Public Class Form1
             If lblBalanceAño10.Text <> 0 And lblBalanceAño09.Text <> 0 Then lblGananciasAño10.Text = CDec(lblBalanceAño10.Text) - CDec(lblBalanceAño09.Text)
             If lblBalanceAño11.Text <> 0 And lblBalanceAño10.Text <> 0 Then lblGananciasAño11.Text = CDec(lblBalanceAño11.Text) - CDec(lblBalanceAño10.Text)
             If lblBalanceAño12.Text <> 0 And lblBalanceAño11.Text <> 0 Then lblGananciasAño12.Text = CDec(lblBalanceAño12.Text) - CDec(lblBalanceAño11.Text)
-
             My.Settings.Save()
         Catch ex As Exception
             'MsgBox("Error!!" & vbCrLf & ex.Message)
@@ -1172,7 +1210,7 @@ Public Class Form1
 
             End If
             Select Case Segundos
-                Case 0 : Actualizar()
+                Case 0 : Actualizar() : Log()
                 'Case 15 : Actualizar()
                 Case 30 : Actualizar()
                     'Case 45 : Actualizar()
@@ -1182,8 +1220,28 @@ Public Class Form1
             ' MsgBox("Error!!" & vbCrLf & ex.Message)
         End Try
     End Sub
-
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         ResetDia()
+    End Sub
+    Private Sub Log()
+        'log
+        If txtMinerosNArduino.Text > 0 Then txtLogMineros.Text += vbCrLf & DateAndTime.DateValue(Now) & " " & DateAndTime.TimeValue(Now) & " = ARDUINOS Nº: " & txtMinerosNArduino.Text & " - Hases: " & txtMinerosHArduino.Text
+        If txtMinerosNCPU.Text > 0 Then txtLogMineros.Text += vbCrLf & DateAndTime.DateValue(Now) & " " & DateAndTime.TimeValue(Now) & " = CPU Nº: " & txtMinerosNCPU.Text & " - Hases: " & txtMinerosHCPU.Text
+        If txtMinerosNEsp8266.Text > 0 Then txtLogMineros.Text += vbCrLf & DateAndTime.DateValue(Now) & " " & DateAndTime.TimeValue(Now) & " = ESP8266 Nº: " & txtMinerosNEsp8266.Text & " - Hases: " & txtMinerosHEsp8266.Text
+        If txtMinerosNEsp32.Text > 0 Then txtLogMineros.Text += vbCrLf & DateAndTime.DateValue(Now) & " " & DateAndTime.TimeValue(Now) & " = ESP32 Nº: " & txtMinerosNEsp32.Text & " - Hases: " & txtMinerosHEsp32.Text
+        If txtMinerosNotros.Text > 0 Then txtLogMineros.Text += vbCrLf & DateAndTime.DateValue(Now) & " " & DateAndTime.TimeValue(Now) & " = OTHER Nº: " & txtMinerosNotros.Text & " - Hases: " & txtMinerosHotros.Text
+        If txtMinerosNPhone.Text > 0 Then txtLogMineros.Text += vbCrLf & DateAndTime.DateValue(Now) & " " & DateAndTime.TimeValue(Now) & " = PHONE Nº: " & txtMinerosNPhone.Text & " - Hases: " & txtMinerosHPhone.Text
+        If txtMinerosNRPI.Text > 0 Then txtLogMineros.Text += vbCrLf & DateAndTime.DateValue(Now) & " " & DateAndTime.TimeValue(Now) & " = RPI Nº: " & txtMinerosNRPI.Text & " - Hases: " & txtMinerosHRPI.Text
+        If txtMinerosNWeb.Text > 0 Then txtLogMineros.Text += vbCrLf & DateAndTime.DateValue(Now) & " " & DateAndTime.TimeValue(Now) & " = WEB Nº: " & txtMinerosNWeb.Text & " - Hases: " & txtMinerosHWeb.Text
+        txtLogMineros.Text += vbCrLf & vbCrLf & DateAndTime.DateValue(Now) & " " & DateAndTime.TimeValue(Now) & " = TOTAL Nº: " & lblMineros.Text & " - Hases: " & lblHases.Text & lblHaseEstiquta.Text
+
+        txtLogBalanceYprecio.Text += vbCrLf & DateAndTime.DateValue(Now) & " " & DateAndTime.TimeValue(Now) & " = Ducos: " & txtbalance.Text & " * Price: " & txtDucoprice.Text & " = " & lblGanado.Text & "€"
+        txtLogMineros.Text += vbCrLf & "--"
+        txtLog.Text = vbCrLf & txtLogBalanceYprecio.Text & vbCrLf & vbCrLf & txtLogMineros.Text & vbCrLf & vbCrLf & txtLogTransasiones.Text
+
+    End Sub
+    Private Sub LogReinicio()
+        txtLogBalanceYprecio.Text = "Balance and Price:" & vbCrLf & "===============" & vbCrLf
+        txtLogMineros.Text = "Miners and Hanses:" & vbCrLf & "================" & vbCrLf
     End Sub
 End Class

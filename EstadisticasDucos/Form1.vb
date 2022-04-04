@@ -55,6 +55,7 @@ Public Class Form1
             TransacionPorAño(Month(Now)) = tmpTransacionNumeros
             lblTransacionMes.Text = Format(TransacionAño(Month(Now)), "#0.0#") & "(" & TransacionPorAño(Month(Now)) & ")"
             MostrarMes()
+            Log()
             Chart3.Series(0).Points.Clear()
             Chart3.Series(0).Points.AddXY(TimeValue("00:00"), CDec(lblHoraDiferencia00.Text))
             Chart3.Series(0).Points.AddXY(TimeValue("01:00"), CDec(lblHoraDiferencia01.Text))
@@ -1128,29 +1129,29 @@ Public Class Form1
                         Case 31 : If lblMesBalance31.Text = "0" Then lblMesBalance31.Text = txtbalance.Text : lblMesPrecio31.Text = CDec(txtDucoprice.Text)
 
                     End Select
-                Case 1 : lblBalanceHora01.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio01.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(1) = CDec(txtDucoprice.Text)
-                Case 2 : lblBalanceHora02.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio02.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(2) = CDec(txtDucoprice.Text)
-                Case 3 : lblBalanceHora03.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio03.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(3) = CDec(txtDucoprice.Text)
-                Case 4 : lblBalanceHora04.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio04.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(4) = CDec(txtDucoprice.Text)
-                Case 5 : lblBalanceHora05.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio05.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(5) = CDec(txtDucoprice.Text)
-                Case 6 : lblBalanceHora06.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio06.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(6) = CDec(txtDucoprice.Text)
-                Case 7 : lblBalanceHora07.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio07.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(7) = CDec(txtDucoprice.Text)
-                Case 8 : lblBalanceHora08.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio08.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(8) = CDec(txtDucoprice.Text)
-                Case 9 : lblBalanceHora09.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio09.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(9) = CDec(txtDucoprice.Text)
-                Case 10 : lblBalanceHora10.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio10.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(10) = CDec(txtDucoprice.Text)
-                Case 11 : lblBalanceHora11.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio11.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(11) = CDec(txtDucoprice.Text)
-                Case 12 : lblBalanceHora12.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio12.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(12) = CDec(txtDucoprice.Text)
-                Case 13 : lblBalanceHora13.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio13.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(13) = CDec(txtDucoprice.Text)
-                Case 14 : lblBalanceHora14.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio14.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(14) = CDec(txtDucoprice.Text)
-                Case 15 : lblBalanceHora15.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio15.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(15) = CDec(txtDucoprice.Text)
-                Case 16 : lblBalanceHora16.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio16.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(16) = CDec(txtDucoprice.Text)
-                Case 17 : lblBalanceHora17.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio17.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(17) = CDec(txtDucoprice.Text)
-                Case 18 : lblBalanceHora18.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio18.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(18) = CDec(txtDucoprice.Text)
-                Case 19 : lblBalanceHora19.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio19.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(19) = CDec(txtDucoprice.Text)
-                Case 20 : lblBalanceHora20.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio20.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(20) = CDec(txtDucoprice.Text)
-                Case 21 : lblBalanceHora21.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio21.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(21) = CDec(txtDucoprice.Text)
-                Case 22 : lblBalanceHora22.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio22.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(22) = CDec(txtDucoprice.Text)
-                Case 23 : lblBalanceHora23.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio23.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(23) = CDec(txtDucoprice.Text)
+                Case 1 : If lblBalanceHora01.Text = 0 Then lblBalanceHora01.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio01.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(1) = CDec(txtDucoprice.Text)
+                Case 2 : If lblBalanceHora02.Text = 0 Then lblBalanceHora02.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio02.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(2) = CDec(txtDucoprice.Text)
+                Case 3 : If lblBalanceHora03.Text = 0 Then lblBalanceHora03.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio03.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(3) = CDec(txtDucoprice.Text)
+                Case 4 : If lblBalanceHora04.Text = 0 Then lblBalanceHora04.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio04.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(4) = CDec(txtDucoprice.Text)
+                Case 5 : If lblBalanceHora05.Text = 0 Then lblBalanceHora05.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio05.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(5) = CDec(txtDucoprice.Text)
+                Case 6 : If lblBalanceHora06.Text = 0 Then lblBalanceHora06.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio06.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(6) = CDec(txtDucoprice.Text)
+                Case 7 : If lblBalanceHora07.Text = 0 Then lblBalanceHora07.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio07.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(7) = CDec(txtDucoprice.Text)
+                Case 8 : If lblBalanceHora08.Text = 0 Then lblBalanceHora08.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio08.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(8) = CDec(txtDucoprice.Text)
+                Case 9 : If lblBalanceHora09.Text = 0 Then lblBalanceHora09.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio09.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(9) = CDec(txtDucoprice.Text)
+                Case 10 : If lblBalanceHora10.Text = 0 Then lblBalanceHora10.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio10.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(10) = CDec(txtDucoprice.Text)
+                Case 11 : If lblBalanceHora11.Text = 0 Then lblBalanceHora11.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio11.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(11) = CDec(txtDucoprice.Text)
+                Case 12 : If lblBalanceHora12.Text = 0 Then lblBalanceHora12.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio12.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(12) = CDec(txtDucoprice.Text)
+                Case 13 : If lblBalanceHora13.Text = 0 Then lblBalanceHora13.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio13.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(13) = CDec(txtDucoprice.Text)
+                Case 14 : If lblBalanceHora14.Text = 0 Then lblBalanceHora14.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio14.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(14) = CDec(txtDucoprice.Text)
+                Case 15 : If lblBalanceHora15.Text = 0 Then lblBalanceHora15.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio15.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(15) = CDec(txtDucoprice.Text)
+                Case 16 : If lblBalanceHora16.Text = 0 Then lblBalanceHora16.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio16.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(16) = CDec(txtDucoprice.Text)
+                Case 17 : If lblBalanceHora17.Text = 0 Then lblBalanceHora17.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio17.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(17) = CDec(txtDucoprice.Text)
+                Case 18 : If lblBalanceHora18.Text = 0 Then lblBalanceHora18.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio18.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(18) = CDec(txtDucoprice.Text)
+                Case 19 : If lblBalanceHora19.Text = 0 Then lblBalanceHora19.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio19.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(19) = CDec(txtDucoprice.Text)
+                Case 20 : If lblBalanceHora20.Text = 0 Then lblBalanceHora20.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio20.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(20) = CDec(txtDucoprice.Text)
+                Case 21 : If lblBalanceHora21.Text = 0 Then lblBalanceHora21.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio21.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(21) = CDec(txtDucoprice.Text)
+                Case 22 : If lblBalanceHora22.Text = 0 Then lblBalanceHora22.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio22.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(22) = CDec(txtDucoprice.Text)
+                Case 23 : If lblBalanceHora23.Text = 0 Then lblBalanceHora23.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio23.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(23) = CDec(txtDucoprice.Text)
             End Select
             BalanceHora()
             BalanceMes()
@@ -1215,7 +1216,7 @@ Public Class Form1
 
             End If
             Select Case Segundos
-                Case 0 : Actualizar() : Log()
+                Case 0 : Actualizar()
                 'Case 15 : Actualizar()
                 Case 30 : Actualizar()
                     'Case 45 : Actualizar()
@@ -1242,14 +1243,12 @@ Public Class Form1
         Intru = CreateObject("Scripting.FileSystemObject")
         If File.Exists(RutaArchivo) Then
             Archivo = Intru.CreateTextFile(RutaApp & "\Logs\Log " & DateAndTime.Day(FechaLog) & "-" & DateAndTime.Month(FechaLog) & "-" & DateAndTime.Year(FechaLog) & "(" & lblReinicioApp.Text & ").log", True)
-            MsgBox("existe")
         Else
             Archivo = Intru.CreateTextFile(RutaApp & "\Logs\Log " & DateAndTime.Day(FechaLog) & "-" & DateAndTime.Month(FechaLog) & "-" & DateAndTime.Year(FechaLog) & ".log", True)
         End If
-
         Archivo.WriteLine(txtLog.Text)
         Archivo.Close()
-        Process.Start("explorer.exe", RutaApp)
+        ' Process.Start("explorer.exe", RutaApp)
         LogReinicio()
     End Sub
     Private Sub Log()

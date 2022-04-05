@@ -1388,7 +1388,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("281.75")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property lblBalanceAño12() As String
             Get
                 Return CType(Me("lblBalanceAño12"),String)

@@ -793,6 +793,46 @@ Public Class Form1
     End Sub
     Function FormatDuco(ByVal Ducos As Decimal, ByVal Digitos As Integer) As String
         Select Case Digitos
+            Case 3
+                If Ducos < 10 Then
+                    FormatDuco = Format(Ducos, "0.00")
+                ElseIf Ducos < 100 And Ducos >= 10 Then
+                    FormatDuco = Format(Ducos, "00.0")
+                ElseIf Ducos < 1000 And Ducos >= 100 Then
+                    FormatDuco = Format(Ducos, "000")
+                ElseIf Ducos < 10000 And Ducos >= 1000 Then
+                    FormatDuco = Format(Ducos, "000")
+                End If
+            Case 4
+                If Ducos < 10 Then
+                    FormatDuco = Format(Ducos, "0.000")
+                ElseIf Ducos < 100 And Ducos >= 10 Then
+                    FormatDuco = Format(Ducos, "00.00")
+                ElseIf Ducos < 1000 And Ducos >= 100 Then
+                    FormatDuco = Format(Ducos, "000.0")
+                ElseIf Ducos < 10000 And Ducos >= 1000 Then
+                    FormatDuco = Format(Ducos, "0000")
+                End If
+            Case 5
+                If Ducos < 10 Then
+                    FormatDuco = Format(Ducos, "0.0000")
+                ElseIf Ducos < 100 And Ducos >= 10 Then
+                    FormatDuco = Format(Ducos, "00.000")
+                ElseIf Ducos < 1000 And Ducos >= 100 Then
+                    FormatDuco = Format(Ducos, "000.00")
+                ElseIf Ducos < 10000 And Ducos >= 1000 Then
+                    FormatDuco = Format(Ducos, "0000.0")
+                End If
+            Case 6
+                If Ducos < 10 Then
+                    FormatDuco = Format(Ducos, "0.00000")
+                ElseIf Ducos < 100 And Ducos >= 10 Then
+                    FormatDuco = Format(Ducos, "00.0000")
+                ElseIf Ducos < 1000 And Ducos >= 100 Then
+                    FormatDuco = Format(Ducos, "000.000")
+                ElseIf Ducos < 10000 And Ducos >= 1000 Then
+                    FormatDuco = Format(Ducos, "0000.00")
+                End If
             Case 7
                 If Ducos < 10 Then
                     FormatDuco = Format(Ducos, "0.000000")
@@ -1166,31 +1206,44 @@ Public Class Form1
             TransacionPorAño(Month(Now)) = tmpTransacionNumeros
             lblTransacionMes.Text = Format(TransacionAño(Month(Now)), "#0.0#") & "(" & TransacionPorAño(Month(Now)) & ")"
             Select Case Month(Now)
-                Case 1 : If lblBalanceAño01.Text = 0 Then lblBalanceAño01.Text = txtbalance.Text : lblPrecioAño01.Text = txtDucoprice.Text : lblTransasionesAño01.Text = Format(TransacionAño(1), "#0.0#") & "(" & TransacionPorAño(1) & ")"
-                Case 2 : If lblBalanceAño02.Text = 0 Then lblBalanceAño02.Text = txtbalance.Text : lblPrecioAño02.Text = txtDucoprice.Text : lblTransasionesAño02.Text = Format(TransacionAño(2), "#0.0#") & "(" & TransacionPorAño(2) & ")"
-                Case 3 : If lblBalanceAño03.Text = 0 Then lblBalanceAño03.Text = txtbalance.Text : lblPrecioAño03.Text = txtDucoprice.Text : lblTransasionesAño03.Text = Format(TransacionAño(3), "#0.0#") & "(" & TransacionPorAño(3) & ")"
-                Case 4 : If lblBalanceAño04.Text = 0 Then lblBalanceAño04.Text = txtbalance.Text : lblPrecioAño04.Text = txtDucoprice.Text : lblTransasionesAño04.Text = Format(TransacionAño(4), "#0.0#") & "(" & TransacionPorAño(4) & ")"
-                Case 5 : If lblBalanceAño05.Text = 0 Then lblBalanceAño05.Text = txtbalance.Text : lblPrecioAño05.Text = txtDucoprice.Text : lblTransasionesAño05.Text = Format(TransacionAño(5), "#0.0#") & "(" & TransacionPorAño(5) & ")"
-                Case 6 : If lblBalanceAño06.Text = 0 Then lblBalanceAño06.Text = txtbalance.Text : lblPrecioAño06.Text = txtDucoprice.Text : lblTransasionesAño06.Text = Format(TransacionAño(6), "#0.0#") & "(" & TransacionPorAño(6) & ")"
-                Case 7 : If lblBalanceAño07.Text = 0 Then lblBalanceAño07.Text = txtbalance.Text : lblPrecioAño07.Text = txtDucoprice.Text : lblTransasionesAño07.Text = Format(TransacionAño(7), "#0.0#") & "(" & TransacionPorAño(7) & ")"
-                Case 8 : If lblBalanceAño08.Text = 0 Then lblBalanceAño08.Text = txtbalance.Text : lblPrecioAño08.Text = txtDucoprice.Text : lblTransasionesAño08.Text = Format(TransacionAño(8), "#0.0#") & "(" & TransacionPorAño(8) & ")"
-                Case 9 : If lblBalanceAño09.Text = 0 Then lblBalanceAño09.Text = txtbalance.Text : lblPrecioAño09.Text = txtDucoprice.Text : lblTransasionesAño09.Text = Format(TransacionAño(9), "#0.0#") & "(" & TransacionPorAño(9) & ")"
-                Case 10 : If lblBalanceAño10.Text = 0 Then lblBalanceAño10.Text = txtbalance.Text : lblPrecioAño10.Text = txtDucoprice.Text : lblTransasionesAño10.Text = Format(TransacionAño(10), "#0.0#") & "(" & TransacionPorAño(10) & ")"
-                Case 11 : If lblBalanceAño11.Text = 0 Then lblBalanceAño11.Text = txtbalance.Text : lblPrecioAño11.Text = txtDucoprice.Text : lblTransasionesAño11.Text = Format(TransacionAño(11), "#0.0#") & "(" & TransacionPorAño(11) & ")"
-                Case 12 : If lblBalanceAño12.Text = 0 Then lblBalanceAño12.Text = txtbalance.Text : lblPrecioAño12.Text = txtDucoprice.Text : lblTransasionesAño12.Text = Format(TransacionAño(12), "#0.0#") & "(" & TransacionPorAño(12) & ")"
+                Case 1 : lblBalanceAño01.Text = FormatDuco(txtbalance.Text, 10) : lblPrecioAño01.Text = txtDucoprice.Text : lblTransasionesAño01.Text = Format(TransacionAño(1), "#0.0#") & "(" & TransacionPorAño(1) & ")"
+                Case 2 : lblBalanceAño02.Text = FormatDuco(txtbalance.Text, 10) : lblPrecioAño02.Text = txtDucoprice.Text : lblTransasionesAño02.Text = Format(TransacionAño(2), "#0.0#") & "(" & TransacionPorAño(2) & ")"
+                Case 3 : lblBalanceAño03.Text = FormatDuco(txtbalance.Text, 10) : lblPrecioAño03.Text = txtDucoprice.Text : lblTransasionesAño03.Text = Format(TransacionAño(3), "#0.0#") & "(" & TransacionPorAño(3) & ")"
+                Case 4 : lblBalanceAño04.Text = FormatDuco(txtbalance.Text, 10) : lblPrecioAño04.Text = txtDucoprice.Text : lblTransasionesAño04.Text = Format(TransacionAño(4), "#0.0#") & "(" & TransacionPorAño(4) & ")"
+                Case 5 : lblBalanceAño05.Text = FormatDuco(txtbalance.Text, 10) : lblPrecioAño05.Text = txtDucoprice.Text : lblTransasionesAño05.Text = Format(TransacionAño(5), "#0.0#") & "(" & TransacionPorAño(5) & ")"
+                Case 6 : lblBalanceAño06.Text = FormatDuco(txtbalance.Text, 10) : lblPrecioAño06.Text = txtDucoprice.Text : lblTransasionesAño06.Text = Format(TransacionAño(6), "#0.0#") & "(" & TransacionPorAño(6) & ")"
+                Case 7 : lblBalanceAño07.Text = FormatDuco(txtbalance.Text, 10) : lblPrecioAño07.Text = txtDucoprice.Text : lblTransasionesAño07.Text = Format(TransacionAño(7), "#0.0#") & "(" & TransacionPorAño(7) & ")"
+                Case 8 : lblBalanceAño08.Text = FormatDuco(txtbalance.Text, 10) : lblPrecioAño08.Text = txtDucoprice.Text : lblTransasionesAño08.Text = Format(TransacionAño(8), "#0.0#") & "(" & TransacionPorAño(8) & ")"
+                Case 9 : lblBalanceAño09.Text = FormatDuco(txtbalance.Text, 10) : lblPrecioAño09.Text = txtDucoprice.Text : lblTransasionesAño09.Text = Format(TransacionAño(9), "#0.0#") & "(" & TransacionPorAño(9) & ")"
+                Case 10 : lblBalanceAño10.Text = FormatDuco(txtbalance.Text, 10) : lblPrecioAño10.Text = txtDucoprice.Text : lblTransasionesAño10.Text = Format(TransacionAño(10), "#0.0#") & "(" & TransacionPorAño(10) & ")"
+                Case 11 : lblBalanceAño11.Text = FormatDuco(txtbalance.Text, 10) : lblPrecioAño11.Text = txtDucoprice.Text : lblTransasionesAño11.Text = Format(TransacionAño(11), "#0.0#") & "(" & TransacionPorAño(11) & ")"
+                Case 12 : lblBalanceAño12.Text = FormatDuco(txtbalance.Text, 10) : lblPrecioAño12.Text = txtDucoprice.Text : lblTransasionesAño12.Text = Format(TransacionAño(12), "#0.0#") & "(" & TransacionPorAño(12) & ")"
             End Select
-            lblGananciasAño01.Text = lblBalanceAño01.Text
-            If lblBalanceAño02.Text <> 0 And lblBalanceAño01.Text <> 0 Then lblGananciasAño02.Text = CDec(lblBalanceAño02.Text) - CDec(lblBalanceAño01.Text)
-            If lblBalanceAño03.Text <> 0 And lblBalanceAño02.Text <> 0 Then lblGananciasAño03.Text = CDec(lblBalanceAño03.Text) - CDec(lblBalanceAño02.Text)
-            If lblBalanceAño04.Text <> 0 And lblBalanceAño03.Text <> 0 Then lblGananciasAño04.Text = CDec(lblBalanceAño04.Text) - CDec(lblBalanceAño03.Text)
-            If lblBalanceAño05.Text <> 0 And lblBalanceAño04.Text <> 0 Then lblGananciasAño05.Text = CDec(lblBalanceAño05.Text) - CDec(lblBalanceAño04.Text)
-            If lblBalanceAño06.Text <> 0 And lblBalanceAño05.Text <> 0 Then lblGananciasAño06.Text = CDec(lblBalanceAño06.Text) - CDec(lblBalanceAño05.Text)
-            If lblBalanceAño07.Text <> 0 And lblBalanceAño06.Text <> 0 Then lblGananciasAño07.Text = CDec(lblBalanceAño07.Text) - CDec(lblBalanceAño06.Text)
-            If lblBalanceAño08.Text <> 0 And lblBalanceAño07.Text <> 0 Then lblGananciasAño08.Text = CDec(lblBalanceAño08.Text) - CDec(lblBalanceAño07.Text)
-            If lblBalanceAño09.Text <> 0 And lblBalanceAño08.Text <> 0 Then lblGananciasAño09.Text = CDec(lblBalanceAño09.Text) - CDec(lblBalanceAño08.Text)
-            If lblBalanceAño10.Text <> 0 And lblBalanceAño09.Text <> 0 Then lblGananciasAño10.Text = CDec(lblBalanceAño10.Text) - CDec(lblBalanceAño09.Text)
-            If lblBalanceAño11.Text <> 0 And lblBalanceAño10.Text <> 0 Then lblGananciasAño11.Text = CDec(lblBalanceAño11.Text) - CDec(lblBalanceAño10.Text)
-            If lblBalanceAño12.Text <> 0 And lblBalanceAño11.Text <> 0 Then lblGananciasAño12.Text = CDec(lblBalanceAño12.Text) - CDec(lblBalanceAño11.Text)
+            If lblBalanceAño01.Text <> 0 Then lblGananciasAño01.Text = FormatDuco(CDec(lblBalanceAño01.Text) - CDec(TransacionAño(1)), 10)
+            If lblBalanceAño02.Text <> 0 And lblBalanceAño01.Text <> 0 Then lblGananciasAño02.Text = FormatDuco(CDec(lblBalanceAño02.Text) - CDec(lblBalanceAño01.Text) - CDec(TransacionAño(2)), 10)
+            If lblBalanceAño03.Text <> 0 And lblBalanceAño02.Text <> 0 Then lblGananciasAño03.Text = FormatDuco(CDec(lblBalanceAño03.Text) - CDec(lblBalanceAño02.Text) - CDec(TransacionAño(3)), 10)
+            If lblBalanceAño04.Text <> 0 And lblBalanceAño03.Text <> 0 Then lblGananciasAño04.Text = FormatDuco(CDec(lblBalanceAño04.Text) - CDec(lblBalanceAño03.Text) - CDec(TransacionAño(4)), 10)
+            If lblBalanceAño05.Text <> 0 And lblBalanceAño04.Text <> 0 Then lblGananciasAño05.Text = FormatDuco(CDec(lblBalanceAño05.Text) - CDec(lblBalanceAño04.Text) - CDec(TransacionAño(5)), 10)
+            If lblBalanceAño06.Text <> 0 And lblBalanceAño05.Text <> 0 Then lblGananciasAño06.Text = FormatDuco(CDec(lblBalanceAño06.Text) - CDec(lblBalanceAño05.Text) - CDec(TransacionAño(6)), 10)
+            If lblBalanceAño07.Text <> 0 And lblBalanceAño06.Text <> 0 Then lblGananciasAño07.Text = FormatDuco(CDec(lblBalanceAño07.Text) - CDec(lblBalanceAño06.Text) - CDec(TransacionAño(7)), 10)
+            If lblBalanceAño08.Text <> 0 And lblBalanceAño07.Text <> 0 Then lblGananciasAño08.Text = FormatDuco(CDec(lblBalanceAño08.Text) - CDec(lblBalanceAño07.Text) - CDec(TransacionAño(8)), 10)
+            If lblBalanceAño09.Text <> 0 And lblBalanceAño08.Text <> 0 Then lblGananciasAño09.Text = FormatDuco(CDec(lblBalanceAño09.Text) - CDec(lblBalanceAño08.Text) - CDec(TransacionAño(9)), 10)
+            If lblBalanceAño10.Text <> 0 And lblBalanceAño09.Text <> 0 Then lblGananciasAño10.Text = FormatDuco(CDec(lblBalanceAño10.Text) - CDec(lblBalanceAño09.Text) - CDec(TransacionAño(10)), 10)
+            If lblBalanceAño11.Text <> 0 And lblBalanceAño10.Text <> 0 Then lblGananciasAño11.Text = FormatDuco(CDec(lblBalanceAño11.Text) - CDec(lblBalanceAño10.Text) - CDec(TransacionAño(11)), 10)
+            If lblBalanceAño12.Text <> 0 And lblBalanceAño11.Text <> 0 Then lblGananciasAño12.Text = FormatDuco(CDec(lblBalanceAño12.Text) - CDec(lblBalanceAño11.Text) - CDec(TransacionAño(12)), 10)
+            lblTotalGananciaAño.Text += lblGananciasAño01.Text
+            lblTotalGananciaAño.Text += lblGananciasAño02.Text
+            lblTotalGananciaAño.Text += lblGananciasAño03.Text
+            lblTotalGananciaAño.Text += lblGananciasAño04.Text
+            lblTotalGananciaAño.Text += lblGananciasAño05.Text
+            lblTotalGananciaAño.Text += lblGananciasAño06.Text
+            lblTotalGananciaAño.Text += lblGananciasAño07.Text
+            lblTotalGananciaAño.Text += lblGananciasAño08.Text
+            lblTotalGananciaAño.Text += lblGananciasAño09.Text
+            lblTotalGananciaAño.Text += lblGananciasAño10.Text
+            lblTotalGananciaAño.Text += lblGananciasAño11.Text
+            lblTotalGananciaAño.Text += lblGananciasAño12.Text
+            lblTotalGananciaAño.Text = FormatDuco(lblTotalGananciaAño.Text, 6) & "¬"
             My.Settings.Save()
         Catch ex As Exception
             'MsgBox("Error!!" & vbCrLf & ex.Message)

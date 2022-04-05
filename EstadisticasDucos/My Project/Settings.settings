@@ -336,7 +336,7 @@
       <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="lblBalanceAño12" Type="System.String" Scope="User">
-      <Value Profile="(Default)">281.75</Value>
+      <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="lblBalanceAño11" Type="System.String" Scope="User">
       <Value Profile="(Default)">0</Value>

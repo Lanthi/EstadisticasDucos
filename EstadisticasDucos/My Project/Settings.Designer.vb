@@ -1829,6 +1829,306 @@ Namespace My
                 Me("Reinicios") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblPrecioAño04() As String
+            Get
+                Return CType(Me("lblPrecioAño04"),String)
+            End Get
+            Set
+                Me("lblPrecioAño04") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblGanadoMes04() As String
+            Get
+                Return CType(Me("lblGanadoMes04"),String)
+            End Get
+            Set
+                Me("lblGanadoMes04") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblGanadoMes01() As String
+            Get
+                Return CType(Me("lblGanadoMes01"),String)
+            End Get
+            Set
+                Me("lblGanadoMes01") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblGanadoMes02() As String
+            Get
+                Return CType(Me("lblGanadoMes02"),String)
+            End Get
+            Set
+                Me("lblGanadoMes02") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblGanadoMes03() As String
+            Get
+                Return CType(Me("lblGanadoMes03"),String)
+            End Get
+            Set
+                Me("lblGanadoMes03") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblGanadoMes05() As String
+            Get
+                Return CType(Me("lblGanadoMes05"),String)
+            End Get
+            Set
+                Me("lblGanadoMes05") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblGanadoMes06() As String
+            Get
+                Return CType(Me("lblGanadoMes06"),String)
+            End Get
+            Set
+                Me("lblGanadoMes06") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblGanadoMes07() As String
+            Get
+                Return CType(Me("lblGanadoMes07"),String)
+            End Get
+            Set
+                Me("lblGanadoMes07") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblGanadoMes08() As String
+            Get
+                Return CType(Me("lblGanadoMes08"),String)
+            End Get
+            Set
+                Me("lblGanadoMes08") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblGanadoMes09() As String
+            Get
+                Return CType(Me("lblGanadoMes09"),String)
+            End Get
+            Set
+                Me("lblGanadoMes09") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblGanadoMes10() As String
+            Get
+                Return CType(Me("lblGanadoMes10"),String)
+            End Get
+            Set
+                Me("lblGanadoMes10") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblGanadoMes11() As String
+            Get
+                Return CType(Me("lblGanadoMes11"),String)
+            End Get
+            Set
+                Me("lblGanadoMes11") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblGanadoMes12() As String
+            Get
+                Return CType(Me("lblGanadoMes12"),String)
+            End Get
+            Set
+                Me("lblGanadoMes12") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblBalanceAño2023() As String
+            Get
+                Return CType(Me("lblBalanceAño2023"),String)
+            End Get
+            Set
+                Me("lblBalanceAño2023") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblBalanceAño2022() As String
+            Get
+                Return CType(Me("lblBalanceAño2022"),String)
+            End Get
+            Set
+                Me("lblBalanceAño2022") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblBalanceAño2021() As String
+            Get
+                Return CType(Me("lblBalanceAño2021"),String)
+            End Get
+            Set
+                Me("lblBalanceAño2021") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblPrecioAño2023() As String
+            Get
+                Return CType(Me("lblPrecioAño2023"),String)
+            End Get
+            Set
+                Me("lblPrecioAño2023") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblPrecioAño2022() As String
+            Get
+                Return CType(Me("lblPrecioAño2022"),String)
+            End Get
+            Set
+                Me("lblPrecioAño2022") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblPrecioAño2021() As String
+            Get
+                Return CType(Me("lblPrecioAño2021"),String)
+            End Get
+            Set
+                Me("lblPrecioAño2021") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblTransasionesAño2021() As String
+            Get
+                Return CType(Me("lblTransasionesAño2021"),String)
+            End Get
+            Set
+                Me("lblTransasionesAño2021") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblTransasionesAño2022() As String
+            Get
+                Return CType(Me("lblTransasionesAño2022"),String)
+            End Get
+            Set
+                Me("lblTransasionesAño2022") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblTransasionesAño2023() As String
+            Get
+                Return CType(Me("lblTransasionesAño2023"),String)
+            End Get
+            Set
+                Me("lblTransasionesAño2023") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblGanadoAño2023() As String
+            Get
+                Return CType(Me("lblGanadoAño2023"),String)
+            End Get
+            Set
+                Me("lblGanadoAño2023") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblGanadoAño2022() As String
+            Get
+                Return CType(Me("lblGanadoAño2022"),String)
+            End Get
+            Set
+                Me("lblGanadoAño2022") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property lblGanadoAño2021() As String
+            Get
+                Return CType(Me("lblGanadoAño2021"),String)
+            End Get
+            Set
+                Me("lblGanadoAño2021") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

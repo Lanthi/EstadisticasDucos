@@ -30,6 +30,8 @@ Public Class Form1
     Dim LogAñadido As Boolean = False
     Dim RutaApp As String = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) & "\Estadisticas Duco"
     Dim FechaLog As Date
+    Dim ContaTransa As Integer
+    Dim Dict2Public As Object
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
             lblReinicioApp.Text += 1
@@ -113,37 +115,37 @@ Public Class Form1
         If lblBalanceHora23.Text <> 0 And lblBalanceHora00.Text <> 0 Then lblHoraDiferencia23.Text = FormatDuco(CDec(lblBalanceHora23.Text) - CDec(lblBalanceHora00.Text), 8)
     End Sub
     Private Sub BalanceMes()
-        If lblMesBalance01.Text <> 0 And lblMesBalance02.Text <> 0 Then lblMesDifencia01.Text = CDec(lblMesBalance01.Text) - CDec(lblMesBalance01.Text) - CDec(Transacion(31))
-        If lblMesBalance02.Text <> 0 And lblMesBalance01.Text <> 0 Then lblMesDifencia01.Text = CDec(lblMesBalance02.Text) - CDec(lblMesBalance01.Text) - CDec(Transacion(1))
-        If lblMesBalance03.Text <> 0 And lblMesBalance02.Text <> 0 Then lblMesDifencia02.Text = CDec(lblMesBalance03.Text) - CDec(lblMesBalance02.Text) - CDec(Transacion(2))
-        If lblMesBalance04.Text <> 0 And lblMesBalance03.Text <> 0 Then lblMesDifencia03.Text = CDec(lblMesBalance04.Text) - CDec(lblMesBalance03.Text) - CDec(Transacion(3))
-        If lblMesBalance05.Text <> 0 And lblMesBalance04.Text <> 0 Then lblMesDifencia04.Text = CDec(lblMesBalance05.Text) - CDec(lblMesBalance04.Text) - CDec(Transacion(4))
-        If lblMesBalance06.Text <> 0 And lblMesBalance05.Text <> 0 Then lblMesDifencia05.Text = CDec(lblMesBalance06.Text) - CDec(lblMesBalance05.Text) - CDec(Transacion(5))
-        If lblMesBalance07.Text <> 0 And lblMesBalance06.Text <> 0 Then lblMesDifencia06.Text = CDec(lblMesBalance07.Text) - CDec(lblMesBalance06.Text) - CDec(Transacion(6))
-        If lblMesBalance08.Text <> 0 And lblMesBalance07.Text <> 0 Then lblMesDifencia07.Text = CDec(lblMesBalance08.Text) - CDec(lblMesBalance07.Text) - CDec(Transacion(7))
-        If lblMesBalance09.Text <> 0 And lblMesBalance08.Text <> 0 Then lblMesDifencia08.Text = CDec(lblMesBalance09.Text) - CDec(lblMesBalance08.Text) - CDec(Transacion(8))
-        If lblMesBalance10.Text <> 0 And lblMesBalance09.Text <> 0 Then lblMesDifencia09.Text = CDec(lblMesBalance10.Text) - CDec(lblMesBalance09.Text) - CDec(Transacion(9))
-        If lblMesBalance11.Text <> 0 And lblMesBalance10.Text <> 0 Then lblMesDifencia10.Text = CDec(lblMesBalance11.Text) - CDec(lblMesBalance10.Text) - CDec(Transacion(10))
-        If lblMesBalance12.Text <> 0 And lblMesBalance11.Text <> 0 Then lblMesDifencia11.Text = CDec(lblMesBalance12.Text) - CDec(lblMesBalance11.Text) - CDec(Transacion(11))
-        If lblMesBalance13.Text <> 0 And lblMesBalance12.Text <> 0 Then lblMesDifencia12.Text = CDec(lblMesBalance13.Text) - CDec(lblMesBalance12.Text) - CDec(Transacion(12))
-        If lblMesBalance14.Text <> 0 And lblMesBalance13.Text <> 0 Then lblMesDifencia13.Text = CDec(lblMesBalance14.Text) - CDec(lblMesBalance13.Text) - CDec(Transacion(13))
-        If lblMesBalance15.Text <> 0 And lblMesBalance14.Text <> 0 Then lblMesDifencia14.Text = CDec(lblMesBalance15.Text) - CDec(lblMesBalance14.Text) - CDec(Transacion(14))
-        If lblMesBalance16.Text <> 0 And lblMesBalance15.Text <> 0 Then lblMesDifencia15.Text = CDec(lblMesBalance16.Text) - CDec(lblMesBalance15.Text) - CDec(Transacion(15))
-        If lblMesBalance17.Text <> 0 And lblMesBalance16.Text <> 0 Then lblMesDifencia16.Text = CDec(lblMesBalance17.Text) - CDec(lblMesBalance16.Text) - CDec(Transacion(16))
-        If lblMesBalance18.Text <> 0 And lblMesBalance17.Text <> 0 Then lblMesDifencia17.Text = CDec(lblMesBalance18.Text) - CDec(lblMesBalance17.Text) - CDec(Transacion(17))
-        If lblMesBalance19.Text <> 0 And lblMesBalance18.Text <> 0 Then lblMesDifencia18.Text = CDec(lblMesBalance19.Text) - CDec(lblMesBalance18.Text) - CDec(Transacion(18))
-        If lblMesBalance20.Text <> 0 And lblMesBalance19.Text <> 0 Then lblMesDifencia19.Text = CDec(lblMesBalance20.Text) - CDec(lblMesBalance19.Text) - CDec(Transacion(19))
-        If lblMesBalance21.Text <> 0 And lblMesBalance20.Text <> 0 Then lblMesDifencia20.Text = CDec(lblMesBalance21.Text) - CDec(lblMesBalance20.Text) - CDec(Transacion(20))
-        If lblMesBalance22.Text <> 0 And lblMesBalance21.Text <> 0 Then lblMesDifencia21.Text = CDec(lblMesBalance22.Text) - CDec(lblMesBalance21.Text) - CDec(Transacion(21))
-        If lblMesBalance23.Text <> 0 And lblMesBalance22.Text <> 0 Then lblMesDifencia22.Text = CDec(lblMesBalance23.Text) - CDec(lblMesBalance22.Text) - CDec(Transacion(22))
-        If lblMesBalance24.Text <> 0 And lblMesBalance23.Text <> 0 Then lblMesDifencia23.Text = CDec(lblMesBalance24.Text) - CDec(lblMesBalance23.Text) - CDec(Transacion(23))
-        If lblMesBalance25.Text <> 0 And lblMesBalance24.Text <> 0 Then lblMesDifencia24.Text = CDec(lblMesBalance25.Text) - CDec(lblMesBalance24.Text) - CDec(Transacion(24))
-        If lblMesBalance26.Text <> 0 And lblMesBalance25.Text <> 0 Then lblMesDifencia25.Text = CDec(lblMesBalance26.Text) - CDec(lblMesBalance25.Text) - CDec(Transacion(25))
-        If lblMesBalance27.Text <> 0 And lblMesBalance26.Text <> 0 Then lblMesDifencia26.Text = CDec(lblMesBalance27.Text) - CDec(lblMesBalance26.Text) - CDec(Transacion(26))
-        If lblMesBalance28.Text <> 0 And lblMesBalance27.Text <> 0 Then lblMesDifencia27.Text = CDec(lblMesBalance28.Text) - CDec(lblMesBalance27.Text) - CDec(Transacion(27))
-        If lblMesBalance29.Text <> 0 And lblMesBalance28.Text <> 0 Then lblMesDifencia28.Text = CDec(lblMesBalance29.Text) - CDec(lblMesBalance28.Text) - CDec(Transacion(28))
-        If lblMesBalance30.Text <> 0 And lblMesBalance29.Text <> 0 Then lblMesDifencia29.Text = CDec(lblMesBalance30.Text) - CDec(lblMesBalance29.Text) - CDec(Transacion(29))
-        If lblMesBalance31.Text <> 0 And lblMesBalance30.Text <> 0 Then lblMesDifencia30.Text = CDec(lblMesBalance31.Text) - CDec(lblMesBalance30.Text) - CDec(Transacion(30))
+        If lblMesBalance01.Text <> 0 And lblMesBalance02.Text <> 0 Then lblMesDifencia01.Text = FormatDuco(CDec(lblMesBalance01.Text) - CDec(lblMesBalance01.Text) - CDec(Transacion(31)), 12)
+        If lblMesBalance02.Text <> 0 And lblMesBalance01.Text <> 0 Then lblMesDifencia01.Text = FormatDuco(CDec(lblMesBalance02.Text) - CDec(lblMesBalance01.Text) - CDec(Transacion(1)), 12)
+        If lblMesBalance03.Text <> 0 And lblMesBalance02.Text <> 0 Then lblMesDifencia02.Text = FormatDuco(CDec(lblMesBalance03.Text) - CDec(lblMesBalance02.Text) - CDec(Transacion(2)), 12)
+        If lblMesBalance04.Text <> 0 And lblMesBalance03.Text <> 0 Then lblMesDifencia03.Text = FormatDuco(CDec(lblMesBalance04.Text) - CDec(lblMesBalance03.Text) - CDec(Transacion(3)), 12)
+        If lblMesBalance05.Text <> 0 And lblMesBalance04.Text <> 0 Then lblMesDifencia04.Text = FormatDuco(CDec(lblMesBalance05.Text) - CDec(lblMesBalance04.Text) - CDec(Transacion(4)), 12)
+        If lblMesBalance06.Text <> 0 And lblMesBalance05.Text <> 0 Then lblMesDifencia05.Text = FormatDuco(CDec(lblMesBalance06.Text) - CDec(lblMesBalance05.Text) - CDec(Transacion(5)), 12)
+        If lblMesBalance07.Text <> 0 And lblMesBalance06.Text <> 0 Then lblMesDifencia06.Text = FormatDuco(CDec(lblMesBalance07.Text) - CDec(lblMesBalance06.Text) - CDec(Transacion(6)), 12)
+        If lblMesBalance08.Text <> 0 And lblMesBalance07.Text <> 0 Then lblMesDifencia07.Text = FormatDuco(CDec(lblMesBalance08.Text) - CDec(lblMesBalance07.Text) - CDec(Transacion(7)), 12)
+        If lblMesBalance09.Text <> 0 And lblMesBalance08.Text <> 0 Then lblMesDifencia08.Text = FormatDuco(CDec(lblMesBalance09.Text) - CDec(lblMesBalance08.Text) - CDec(Transacion(8)), 12)
+        If lblMesBalance10.Text <> 0 And lblMesBalance09.Text <> 0 Then lblMesDifencia09.Text = FormatDuco(CDec(lblMesBalance10.Text) - CDec(lblMesBalance09.Text) - CDec(Transacion(9)), 12)
+        If lblMesBalance11.Text <> 0 And lblMesBalance10.Text <> 0 Then lblMesDifencia10.Text = FormatDuco(CDec(lblMesBalance11.Text) - CDec(lblMesBalance10.Text) - CDec(Transacion(10)), 12)
+        If lblMesBalance12.Text <> 0 And lblMesBalance11.Text <> 0 Then lblMesDifencia11.Text = FormatDuco(CDec(lblMesBalance12.Text) - CDec(lblMesBalance11.Text) - CDec(Transacion(11)), 12)
+        If lblMesBalance13.Text <> 0 And lblMesBalance12.Text <> 0 Then lblMesDifencia12.Text = FormatDuco(CDec(lblMesBalance13.Text) - CDec(lblMesBalance12.Text) - CDec(Transacion(12)), 12)
+        If lblMesBalance14.Text <> 0 And lblMesBalance13.Text <> 0 Then lblMesDifencia13.Text = FormatDuco(CDec(lblMesBalance14.Text) - CDec(lblMesBalance13.Text) - CDec(Transacion(13)), 12)
+        If lblMesBalance15.Text <> 0 And lblMesBalance14.Text <> 0 Then lblMesDifencia14.Text = FormatDuco(CDec(lblMesBalance15.Text) - CDec(lblMesBalance14.Text) - CDec(Transacion(14)), 12)
+        If lblMesBalance16.Text <> 0 And lblMesBalance15.Text <> 0 Then lblMesDifencia15.Text = FormatDuco(CDec(lblMesBalance16.Text) - CDec(lblMesBalance15.Text) - CDec(Transacion(15)), 12)
+        If lblMesBalance17.Text <> 0 And lblMesBalance16.Text <> 0 Then lblMesDifencia16.Text = FormatDuco(CDec(lblMesBalance17.Text) - CDec(lblMesBalance16.Text) - CDec(Transacion(16)), 12)
+        If lblMesBalance18.Text <> 0 And lblMesBalance17.Text <> 0 Then lblMesDifencia17.Text = FormatDuco(CDec(lblMesBalance18.Text) - CDec(lblMesBalance17.Text) - CDec(Transacion(17)), 12)
+        If lblMesBalance19.Text <> 0 And lblMesBalance18.Text <> 0 Then lblMesDifencia18.Text = FormatDuco(CDec(lblMesBalance19.Text) - CDec(lblMesBalance18.Text) - CDec(Transacion(18)), 12)
+        If lblMesBalance20.Text <> 0 And lblMesBalance19.Text <> 0 Then lblMesDifencia19.Text = FormatDuco(CDec(lblMesBalance20.Text) - CDec(lblMesBalance19.Text) - CDec(Transacion(19)), 12)
+        If lblMesBalance21.Text <> 0 And lblMesBalance20.Text <> 0 Then lblMesDifencia20.Text = FormatDuco(CDec(lblMesBalance21.Text) - CDec(lblMesBalance20.Text) - CDec(Transacion(20)), 12)
+        If lblMesBalance22.Text <> 0 And lblMesBalance21.Text <> 0 Then lblMesDifencia21.Text = FormatDuco(CDec(lblMesBalance22.Text) - CDec(lblMesBalance21.Text) - CDec(Transacion(21)), 12)
+        If lblMesBalance23.Text <> 0 And lblMesBalance22.Text <> 0 Then lblMesDifencia22.Text = FormatDuco(CDec(lblMesBalance23.Text) - CDec(lblMesBalance22.Text) - CDec(Transacion(22)), 12)
+        If lblMesBalance24.Text <> 0 And lblMesBalance23.Text <> 0 Then lblMesDifencia23.Text = FormatDuco(CDec(lblMesBalance24.Text) - CDec(lblMesBalance23.Text) - CDec(Transacion(23)), 12)
+        If lblMesBalance25.Text <> 0 And lblMesBalance24.Text <> 0 Then lblMesDifencia24.Text = FormatDuco(CDec(lblMesBalance25.Text) - CDec(lblMesBalance24.Text) - CDec(Transacion(24)), 12)
+        If lblMesBalance26.Text <> 0 And lblMesBalance25.Text <> 0 Then lblMesDifencia25.Text = FormatDuco(CDec(lblMesBalance26.Text) - CDec(lblMesBalance25.Text) - CDec(Transacion(25)), 12)
+        If lblMesBalance27.Text <> 0 And lblMesBalance26.Text <> 0 Then lblMesDifencia26.Text = FormatDuco(CDec(lblMesBalance27.Text) - CDec(lblMesBalance26.Text) - CDec(Transacion(26)), 12)
+        If lblMesBalance28.Text <> 0 And lblMesBalance27.Text <> 0 Then lblMesDifencia27.Text = FormatDuco(CDec(lblMesBalance28.Text) - CDec(lblMesBalance27.Text) - CDec(Transacion(27)), 12)
+        If lblMesBalance29.Text <> 0 And lblMesBalance28.Text <> 0 Then lblMesDifencia28.Text = FormatDuco(CDec(lblMesBalance29.Text) - CDec(lblMesBalance28.Text) - CDec(Transacion(28)), 12)
+        If lblMesBalance30.Text <> 0 And lblMesBalance29.Text <> 0 Then lblMesDifencia29.Text = FormatDuco(CDec(lblMesBalance30.Text) - CDec(lblMesBalance29.Text) - CDec(Transacion(29)), 12)
+        If lblMesBalance31.Text <> 0 And lblMesBalance30.Text <> 0 Then lblMesDifencia30.Text = FormatDuco(CDec(lblMesBalance31.Text) - CDec(lblMesBalance30.Text) - CDec(Transacion(30)), 12)
     End Sub
     Private Sub MostrarMes()
         Dim Dato As Date = DateAndTime.Now
@@ -244,6 +246,7 @@ Public Class Form1
             Dim Read2 = New StreamReader(Response2.GetResponseStream())
             Dim Raw2 As String = Read2.ReadToEnd()
             Dim dict2 As Object = New JavaScriptSerializer().Deserialize(Of Dictionary(Of String, Object))(Raw2)
+            Dict2Public = dict2
             Dim uriString As String = "https://server.duinocoin.com/api.json"
             Dim uri As New Uri(uriString)
             Dim Request As HttpWebRequest = HttpWebRequest.Create(uri)
@@ -256,8 +259,10 @@ Public Class Form1
             Dim Deposito As Integer = dict2.item("result").item("balance").item("stake_amount")
             Dim FechafinDeposito As Integer = dict2.item("result").item("balance").item("stake_date")
             lblDeposito.Text = Deposito
-            lblDucoDeposito.Left = lblDeposito.Left + lblDeposito.Width
+            lblDucoDeposito.Left = lblDeposito.Left + lblDeposito.Width - 5
             lblFechaFinDeposito.Text = FechafinDeposito
+            Label121.Text = DateDiff("s", Now, FechafinDeposito)
+
             txtDucoprice.Text = CDec(dict.item("Duco price"))
             txtbalance.Text = FormatDuco(dict2.item("result").item("balance").item("balance"), 17)
             EstimadoNuevo = txtbalance.Text
@@ -307,7 +312,7 @@ Public Class Form1
                 lstBalanceTiempoReal.Items.RemoveAt(0)
                 lstDUCOTiempoReal.Items.RemoveAt(0)
             End If
-            Dim ContaTransa As Integer = CInt(dict2.item("result").item("transactions").Count) - 1
+            ContaTransa = CInt(dict2.item("result").item("transactions").Count) - 1
             If ContaTransa > 5 Then
                 TreeView1.Nodes.Clear()
                 Dim Mesis As String = DateAndTime.Month(Now)
@@ -551,37 +556,37 @@ Public Class Form1
                 Case 23 : If lblBalanceHora23.Text <> 0 Then lblHoraDiferencia23.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora23.Text), 8)
             End Select
             Select Case DateAndTime.Day(Now)
-                Case 1 : If lblMesBalance01.Text <> 0 Then lblMesDifencia01.Text = CDec(txtbalance.Text) - CDec(lblMesBalance01.Text) - CDec(Transacion(1))
-                Case 2 : If lblMesBalance02.Text <> 0 Then lblMesDifencia02.Text = CDec(txtbalance.Text) - CDec(lblMesBalance02.Text) - CDec(Transacion(2))
-                Case 3 : If lblMesBalance03.Text <> 0 Then lblMesDifencia03.Text = CDec(txtbalance.Text) - CDec(lblMesBalance03.Text) - CDec(Transacion(3))
-                Case 4 : If lblMesBalance04.Text <> 0 Then lblMesDifencia04.Text = CDec(txtbalance.Text) - CDec(lblMesBalance04.Text) - CDec(Transacion(4))
-                Case 5 : If lblMesBalance05.Text <> 0 Then lblMesDifencia05.Text = CDec(txtbalance.Text) - CDec(lblMesBalance05.Text) - CDec(Transacion(5))
-                Case 6 : If lblMesBalance06.Text <> 0 Then lblMesDifencia06.Text = CDec(txtbalance.Text) - CDec(lblMesBalance06.Text) - CDec(Transacion(6))
-                Case 7 : If lblMesBalance07.Text <> 0 Then lblMesDifencia07.Text = CDec(txtbalance.Text) - CDec(lblMesBalance07.Text) - CDec(Transacion(7))
-                Case 8 : If lblMesBalance08.Text <> 0 Then lblMesDifencia08.Text = CDec(txtbalance.Text) - CDec(lblMesBalance08.Text) - CDec(Transacion(8))
-                Case 9 : If lblMesBalance09.Text <> 0 Then lblMesDifencia09.Text = CDec(txtbalance.Text) - CDec(lblMesBalance09.Text) - CDec(Transacion(9))
-                Case 10 : If lblMesBalance10.Text <> 0 Then lblMesDifencia10.Text = CDec(txtbalance.Text) - CDec(lblMesBalance10.Text) - CDec(Transacion(10))
-                Case 11 : If lblMesBalance11.Text <> 0 Then lblMesDifencia11.Text = CDec(txtbalance.Text) - CDec(lblMesBalance11.Text) - CDec(Transacion(11))
-                Case 12 : If lblMesBalance12.Text <> 0 Then lblMesDifencia12.Text = CDec(txtbalance.Text) - CDec(lblMesBalance12.Text) - CDec(Transacion(12))
-                Case 13 : If lblMesBalance13.Text <> 0 Then lblMesDifencia13.Text = CDec(txtbalance.Text) - CDec(lblMesBalance13.Text) - CDec(Transacion(13))
-                Case 14 : If lblMesBalance14.Text <> 0 Then lblMesDifencia14.Text = CDec(txtbalance.Text) - CDec(lblMesBalance14.Text) - CDec(Transacion(14))
-                Case 15 : If lblMesBalance15.Text <> 0 Then lblMesDifencia15.Text = CDec(txtbalance.Text) - CDec(lblMesBalance15.Text) - CDec(Transacion(15))
-                Case 16 : If lblMesBalance16.Text <> 0 Then lblMesDifencia16.Text = CDec(txtbalance.Text) - CDec(lblMesBalance16.Text) - CDec(Transacion(16))
-                Case 17 : If lblMesBalance17.Text <> 0 Then lblMesDifencia17.Text = CDec(txtbalance.Text) - CDec(lblMesBalance17.Text) - CDec(Transacion(17))
-                Case 18 : If lblMesBalance18.Text <> 0 Then lblMesDifencia18.Text = CDec(txtbalance.Text) - CDec(lblMesBalance18.Text) - CDec(Transacion(18))
-                Case 19 : If lblMesBalance19.Text <> 0 Then lblMesDifencia19.Text = CDec(txtbalance.Text) - CDec(lblMesBalance19.Text) - CDec(Transacion(19))
-                Case 20 : If lblMesBalance20.Text <> 0 Then lblMesDifencia20.Text = CDec(txtbalance.Text) - CDec(lblMesBalance20.Text) - CDec(Transacion(20))
-                Case 21 : If lblMesBalance21.Text <> 0 Then lblMesDifencia21.Text = CDec(txtbalance.Text) - CDec(lblMesBalance21.Text) - CDec(Transacion(21))
-                Case 22 : If lblMesBalance22.Text <> 0 Then lblMesDifencia22.Text = CDec(txtbalance.Text) - CDec(lblMesBalance22.Text) - CDec(Transacion(22))
-                Case 23 : If lblMesBalance23.Text <> 0 Then lblMesDifencia23.Text = CDec(txtbalance.Text) - CDec(lblMesBalance23.Text) - CDec(Transacion(23))
-                Case 24 : If lblMesBalance24.Text <> 0 Then lblMesDifencia24.Text = CDec(txtbalance.Text) - CDec(lblMesBalance24.Text) - CDec(Transacion(24))
-                Case 25 : If lblMesBalance25.Text <> 0 Then lblMesDifencia25.Text = CDec(txtbalance.Text) - CDec(lblMesBalance25.Text) - CDec(Transacion(25))
-                Case 26 : If lblMesBalance26.Text <> 0 Then lblMesDifencia26.Text = CDec(txtbalance.Text) - CDec(lblMesBalance26.Text) - CDec(Transacion(26))
-                Case 27 : If lblMesBalance27.Text <> 0 Then lblMesDifencia27.Text = CDec(txtbalance.Text) - CDec(lblMesBalance27.Text) - CDec(Transacion(27))
-                Case 28 : If lblMesBalance28.Text <> 0 Then lblMesDifencia28.Text = CDec(txtbalance.Text) - CDec(lblMesBalance28.Text) - CDec(Transacion(28))
-                Case 29 : If lblMesBalance29.Text <> 0 Then lblMesDifencia29.Text = CDec(txtbalance.Text) - CDec(lblMesBalance29.Text) - CDec(Transacion(29))
-                Case 30 : If lblMesBalance30.Text <> 0 Then lblMesDifencia30.Text = CDec(txtbalance.Text) - CDec(lblMesBalance30.Text) - CDec(Transacion(30))
-                Case 31 : If lblMesBalance31.Text <> 0 Then lblMesDifencia31.Text = CDec(txtbalance.Text) - CDec(lblMesBalance31.Text) - CDec(Transacion(31))
+                Case 1 : If lblMesBalance01.Text <> 0 Then lblMesDifencia01.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance01.Text) - CDec(Transacion(1)), 12)
+                Case 2 : If lblMesBalance02.Text <> 0 Then lblMesDifencia02.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance02.Text) - CDec(Transacion(2)), 12)
+                Case 3 : If lblMesBalance03.Text <> 0 Then lblMesDifencia03.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance03.Text) - CDec(Transacion(3)), 12)
+                Case 4 : If lblMesBalance04.Text <> 0 Then lblMesDifencia04.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance04.Text) - CDec(Transacion(4)), 12)
+                Case 5 : If lblMesBalance05.Text <> 0 Then lblMesDifencia05.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance05.Text) - CDec(Transacion(5)), 12)
+                Case 6 : If lblMesBalance06.Text <> 0 Then lblMesDifencia06.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance06.Text) - CDec(Transacion(6)), 12)
+                Case 7 : If lblMesBalance07.Text <> 0 Then lblMesDifencia07.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance07.Text) - CDec(Transacion(7)), 12)
+                Case 8 : If lblMesBalance08.Text <> 0 Then lblMesDifencia08.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance08.Text) - CDec(Transacion(8)), 12)
+                Case 9 : If lblMesBalance09.Text <> 0 Then lblMesDifencia09.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance09.Text) - CDec(Transacion(9)), 12)
+                Case 10 : If lblMesBalance10.Text <> 0 Then lblMesDifencia10.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance10.Text) - CDec(Transacion(10)), 12)
+                Case 11 : If lblMesBalance11.Text <> 0 Then lblMesDifencia11.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance11.Text) - CDec(Transacion(11)), 12)
+                Case 12 : If lblMesBalance12.Text <> 0 Then lblMesDifencia12.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance12.Text) - CDec(Transacion(12)), 12)
+                Case 13 : If lblMesBalance13.Text <> 0 Then lblMesDifencia13.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance13.Text) - CDec(Transacion(13)), 12)
+                Case 14 : If lblMesBalance14.Text <> 0 Then lblMesDifencia14.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance14.Text) - CDec(Transacion(14)), 12)
+                Case 15 : If lblMesBalance15.Text <> 0 Then lblMesDifencia15.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance15.Text) - CDec(Transacion(15)), 12)
+                Case 16 : If lblMesBalance16.Text <> 0 Then lblMesDifencia16.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance16.Text) - CDec(Transacion(16)), 12)
+                Case 17 : If lblMesBalance17.Text <> 0 Then lblMesDifencia17.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance17.Text) - CDec(Transacion(17)), 12)
+                Case 18 : If lblMesBalance18.Text <> 0 Then lblMesDifencia18.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance18.Text) - CDec(Transacion(18)), 12)
+                Case 19 : If lblMesBalance19.Text <> 0 Then lblMesDifencia19.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance19.Text) - CDec(Transacion(19)), 12)
+                Case 20 : If lblMesBalance20.Text <> 0 Then lblMesDifencia20.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance20.Text) - CDec(Transacion(20)), 12)
+                Case 21 : If lblMesBalance21.Text <> 0 Then lblMesDifencia21.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance21.Text) - CDec(Transacion(21)), 12)
+                Case 22 : If lblMesBalance22.Text <> 0 Then lblMesDifencia22.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance22.Text) - CDec(Transacion(22)), 12)
+                Case 23 : If lblMesBalance23.Text <> 0 Then lblMesDifencia23.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance23.Text) - CDec(Transacion(23)), 12)
+                Case 24 : If lblMesBalance24.Text <> 0 Then lblMesDifencia24.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance24.Text) - CDec(Transacion(24)), 12)
+                Case 25 : If lblMesBalance25.Text <> 0 Then lblMesDifencia25.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance25.Text) - CDec(Transacion(25)), 12)
+                Case 26 : If lblMesBalance26.Text <> 0 Then lblMesDifencia26.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance26.Text) - CDec(Transacion(26)), 12)
+                Case 27 : If lblMesBalance27.Text <> 0 Then lblMesDifencia27.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance27.Text) - CDec(Transacion(27)), 12)
+                Case 28 : If lblMesBalance28.Text <> 0 Then lblMesDifencia28.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance28.Text) - CDec(Transacion(28)), 12)
+                Case 29 : If lblMesBalance29.Text <> 0 Then lblMesDifencia29.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance29.Text) - CDec(Transacion(29)), 12)
+                Case 30 : If lblMesBalance30.Text <> 0 Then lblMesDifencia30.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance30.Text) - CDec(Transacion(30)), 12)
+                Case 31 : If lblMesBalance31.Text <> 0 Then lblMesDifencia31.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance31.Text) - CDec(Transacion(31)), 12)
             End Select
             MostrarTotales()
             Chart1.Series(0).Points.Clear()
@@ -726,7 +731,7 @@ Public Class Form1
             Chart5.Series(0).Points.AddXY("Day 31", CDec(lblMesPrecio31.Text))
             My.Settings.Save()
         Catch ex As Exception
-            'MsgBox("Error!!" & vbCrLf & ex.Message)
+            MsgBox("Error!!" & vbCrLf & ex.Message)
         End Try
     End Sub
     Private Sub MostrarTotales()
@@ -1136,37 +1141,37 @@ Public Class Form1
                                 lblMesPrecio30.Text = "0"
                                 lblMesPrecio31.Text = "0"
                             End If
-                            If lblMesBalance01.Text = "0" Then lblMesBalance01.Text = txtbalance.Text : lblMesPrecio01.Text = txtDucoprice.Text
-                        Case 2 : If lblMesBalance02.Text = "0" Then lblMesBalance02.Text = txtbalance.Text : lblMesPrecio02.Text = CDec(txtDucoprice.Text)
-                        Case 3 : If lblMesBalance03.Text = "0" Then lblMesBalance03.Text = txtbalance.Text : lblMesPrecio03.Text = CDec(txtDucoprice.Text)
-                        Case 4 : If lblMesBalance04.Text = "0" Then lblMesBalance04.Text = txtbalance.Text : lblMesPrecio04.Text = CDec(txtDucoprice.Text)
-                        Case 5 : If lblMesBalance05.Text = "0" Then lblMesBalance05.Text = txtbalance.Text : lblMesPrecio05.Text = CDec(txtDucoprice.Text)
-                        Case 6 : If lblMesBalance06.Text = "0" Then lblMesBalance06.Text = txtbalance.Text : lblMesPrecio06.Text = CDec(txtDucoprice.Text)
-                        Case 7 : If lblMesBalance07.Text = "0" Then lblMesBalance07.Text = txtbalance.Text : lblMesPrecio07.Text = CDec(txtDucoprice.Text)
-                        Case 8 : If lblMesBalance08.Text = "0" Then lblMesBalance08.Text = txtbalance.Text : lblMesPrecio08.Text = CDec(txtDucoprice.Text)
-                        Case 9 : If lblMesBalance09.Text = "0" Then lblMesBalance09.Text = txtbalance.Text : lblMesPrecio09.Text = CDec(txtDucoprice.Text)
-                        Case 10 : If lblMesBalance10.Text = "0" Then lblMesBalance10.Text = txtbalance.Text : lblMesPrecio10.Text = CDec(txtDucoprice.Text)
-                        Case 11 : If lblMesBalance11.Text = "0" Then lblMesBalance11.Text = txtbalance.Text : lblMesPrecio11.Text = CDec(txtDucoprice.Text)
-                        Case 12 : If lblMesBalance12.Text = "0" Then lblMesBalance12.Text = txtbalance.Text : lblMesPrecio12.Text = CDec(txtDucoprice.Text)
-                        Case 13 : If lblMesBalance13.Text = "0" Then lblMesBalance13.Text = txtbalance.Text : lblMesPrecio13.Text = CDec(txtDucoprice.Text)
-                        Case 14 : If lblMesBalance14.Text = "0" Then lblMesBalance14.Text = txtbalance.Text : lblMesPrecio14.Text = CDec(txtDucoprice.Text)
-                        Case 15 : If lblMesBalance15.Text = "0" Then lblMesBalance15.Text = txtbalance.Text : lblMesPrecio15.Text = CDec(txtDucoprice.Text)
-                        Case 16 : If lblMesBalance16.Text = "0" Then lblMesBalance16.Text = txtbalance.Text : lblMesPrecio16.Text = CDec(txtDucoprice.Text)
-                        Case 17 : If lblMesBalance17.Text = "0" Then lblMesBalance17.Text = txtbalance.Text : lblMesPrecio17.Text = CDec(txtDucoprice.Text)
-                        Case 18 : If lblMesBalance18.Text = "0" Then lblMesBalance18.Text = txtbalance.Text : lblMesPrecio18.Text = CDec(txtDucoprice.Text)
-                        Case 19 : If lblMesBalance19.Text = "0" Then lblMesBalance19.Text = txtbalance.Text : lblMesPrecio19.Text = CDec(txtDucoprice.Text)
-                        Case 20 : If lblMesBalance20.Text = "0" Then lblMesBalance20.Text = txtbalance.Text : lblMesPrecio20.Text = CDec(txtDucoprice.Text)
-                        Case 21 : If lblMesBalance21.Text = "0" Then lblMesBalance21.Text = txtbalance.Text : lblMesPrecio21.Text = CDec(txtDucoprice.Text)
-                        Case 22 : If lblMesBalance22.Text = "0" Then lblMesBalance22.Text = txtbalance.Text : lblMesPrecio22.Text = CDec(txtDucoprice.Text)
-                        Case 23 : If lblMesBalance23.Text = "0" Then lblMesBalance23.Text = txtbalance.Text : lblMesPrecio23.Text = CDec(txtDucoprice.Text)
-                        Case 24 : If lblMesBalance24.Text = "0" Then lblMesBalance24.Text = txtbalance.Text : lblMesPrecio24.Text = CDec(txtDucoprice.Text)
-                        Case 25 : If lblMesBalance25.Text = "0" Then lblMesBalance25.Text = txtbalance.Text : lblMesPrecio25.Text = CDec(txtDucoprice.Text)
-                        Case 26 : If lblMesBalance26.Text = "0" Then lblMesBalance26.Text = txtbalance.Text : lblMesPrecio26.Text = CDec(txtDucoprice.Text)
-                        Case 27 : If lblMesBalance27.Text = "0" Then lblMesBalance27.Text = txtbalance.Text : lblMesPrecio27.Text = CDec(txtDucoprice.Text)
-                        Case 28 : If lblMesBalance28.Text = "0" Then lblMesBalance28.Text = txtbalance.Text : lblMesPrecio28.Text = CDec(txtDucoprice.Text)
-                        Case 29 : If lblMesBalance29.Text = "0" Then lblMesBalance29.Text = txtbalance.Text : lblMesPrecio29.Text = CDec(txtDucoprice.Text)
-                        Case 30 : If lblMesBalance30.Text = "0" Then lblMesBalance30.Text = txtbalance.Text : lblMesPrecio30.Text = CDec(txtDucoprice.Text)
-                        Case 31 : If lblMesBalance31.Text = "0" Then lblMesBalance31.Text = txtbalance.Text : lblMesPrecio31.Text = CDec(txtDucoprice.Text)
+                            If lblMesBalance01.Text = "0" Then FormatDuco(lblMesBalance01.Text = txtbalance.Text, 12) : lblMesPrecio01.Text = txtDucoprice.Text
+                        Case 2 : If lblMesBalance02.Text = "0" Then lblMesBalance02.Text = FormatDuco(txtbalance.Text, 12) : lblMesPrecio02.Text = CDec(txtDucoprice.Text)
+                        Case 3 : If lblMesBalance03.Text = "0" Then lblMesBalance03.Text = FormatDuco(txtbalance.Text, 12) : lblMesPrecio03.Text = CDec(txtDucoprice.Text)
+                        Case 4 : If lblMesBalance04.Text = "0" Then lblMesBalance04.Text = FormatDuco(txtbalance.Text, 12) : lblMesPrecio04.Text = CDec(txtDucoprice.Text)
+                        Case 5 : If lblMesBalance05.Text = "0" Then lblMesBalance05.Text = FormatDuco(txtbalance.Text, 12) : lblMesPrecio05.Text = CDec(txtDucoprice.Text)
+                        Case 6 : If lblMesBalance06.Text = "0" Then lblMesBalance06.Text = FormatDuco(txtbalance.Text, 12) : lblMesPrecio06.Text = CDec(txtDucoprice.Text)
+                        Case 7 : If lblMesBalance07.Text = "0" Then lblMesBalance07.Text = FormatDuco(txtbalance.Text, 12) : lblMesPrecio07.Text = CDec(txtDucoprice.Text)
+                        Case 8 : If lblMesBalance08.Text = "0" Then lblMesBalance08.Text = FormatDuco(txtbalance.Text, 12) : lblMesPrecio08.Text = CDec(txtDucoprice.Text)
+                        Case 9 : If lblMesBalance09.Text = "0" Then lblMesBalance09.Text = FormatDuco(txtbalance.Text, 12) : lblMesPrecio09.Text = CDec(txtDucoprice.Text)
+                        Case 10 : If lblMesBalance10.Text = "0" Then lblMesBalance10.Text = FormatDuco(txtbalance.Text, 12) : lblMesPrecio10.Text = CDec(txtDucoprice.Text)
+                        Case 11 : If lblMesBalance11.Text = "0" Then lblMesBalance11.Text = FormatDuco(txtbalance.Text, 12) : lblMesPrecio11.Text = CDec(txtDucoprice.Text)
+                        Case 12 : If lblMesBalance12.Text = "0" Then lblMesBalance12.Text = FormatDuco(txtbalance.Text, 12) : lblMesPrecio12.Text = CDec(txtDucoprice.Text)
+                        Case 13 : If lblMesBalance13.Text = "0" Then lblMesBalance13.Text = FormatDuco(txtbalance.Text, 12) : lblMesPrecio13.Text = CDec(txtDucoprice.Text)
+                        Case 14 : If lblMesBalance14.Text = "0" Then lblMesBalance14.Text = FormatDuco(txtbalance.Text, 12) : lblMesPrecio14.Text = CDec(txtDucoprice.Text)
+                        Case 15 : If lblMesBalance15.Text = "0" Then lblMesBalance15.Text = FormatDuco(txtbalance.Text, 12) : lblMesPrecio15.Text = CDec(txtDucoprice.Text)
+                        Case 16 : If lblMesBalance16.Text = "0" Then lblMesBalance16.Text = FormatDuco(txtbalance.Text, 12) : lblMesPrecio16.Text = CDec(txtDucoprice.Text)
+                        Case 17 : If lblMesBalance17.Text = "0" Then lblMesBalance17.Text = FormatDuco(txtbalance.Text, 12) : lblMesPrecio17.Text = CDec(txtDucoprice.Text)
+                        Case 18 : If lblMesBalance18.Text = "0" Then lblMesBalance18.Text = FormatDuco(txtbalance.Text, 12) : lblMesPrecio18.Text = CDec(txtDucoprice.Text)
+                        Case 19 : If lblMesBalance19.Text = "0" Then lblMesBalance19.Text = FormatDuco(txtbalance.Text, 12) : lblMesPrecio19.Text = CDec(txtDucoprice.Text)
+                        Case 20 : If lblMesBalance20.Text = "0" Then lblMesBalance20.Text = FormatDuco(txtbalance.Text, 12) : lblMesPrecio20.Text = CDec(txtDucoprice.Text)
+                        Case 21 : If lblMesBalance21.Text = "0" Then lblMesBalance21.Text = FormatDuco(txtbalance.Text, 12) : lblMesPrecio21.Text = CDec(txtDucoprice.Text)
+                        Case 22 : If lblMesBalance22.Text = "0" Then lblMesBalance22.Text = FormatDuco(txtbalance.Text, 12) : lblMesPrecio22.Text = CDec(txtDucoprice.Text)
+                        Case 23 : If lblMesBalance23.Text = "0" Then lblMesBalance23.Text = FormatDuco(txtbalance.Text, 12) : lblMesPrecio23.Text = CDec(txtDucoprice.Text)
+                        Case 24 : If lblMesBalance24.Text = "0" Then lblMesBalance24.Text = FormatDuco(txtbalance.Text, 12) : lblMesPrecio24.Text = CDec(txtDucoprice.Text)
+                        Case 25 : If lblMesBalance25.Text = "0" Then lblMesBalance25.Text = FormatDuco(txtbalance.Text, 12) : lblMesPrecio25.Text = CDec(txtDucoprice.Text)
+                        Case 26 : If lblMesBalance26.Text = "0" Then lblMesBalance26.Text = FormatDuco(txtbalance.Text, 12) : lblMesPrecio26.Text = CDec(txtDucoprice.Text)
+                        Case 27 : If lblMesBalance27.Text = "0" Then lblMesBalance27.Text = FormatDuco(txtbalance.Text, 12) : lblMesPrecio27.Text = CDec(txtDucoprice.Text)
+                        Case 28 : If lblMesBalance28.Text = "0" Then lblMesBalance28.Text = FormatDuco(txtbalance.Text, 12) : lblMesPrecio28.Text = CDec(txtDucoprice.Text)
+                        Case 29 : If lblMesBalance29.Text = "0" Then lblMesBalance29.Text = FormatDuco(txtbalance.Text, 12) : lblMesPrecio29.Text = CDec(txtDucoprice.Text)
+                        Case 30 : If lblMesBalance30.Text = "0" Then lblMesBalance30.Text = FormatDuco(txtbalance.Text, 12) : lblMesPrecio30.Text = CDec(txtDucoprice.Text)
+                        Case 31 : If lblMesBalance31.Text = "0" Then lblMesBalance31.Text = FormatDuco(txtbalance.Text, 12) : lblMesPrecio31.Text = CDec(txtDucoprice.Text)
 
                     End Select
                 Case 1 : If lblBalanceHora01.Text = 0 Then lblBalanceHora01.Text = FormatDuco(txtbalance.Text, 16) : lblPrecio01.Text = CDec(txtDucoprice.Text) : PrecioDucoDia(1) = CDec(txtDucoprice.Text)
@@ -1206,49 +1211,121 @@ Public Class Form1
             TransacionPorAño(Month(Now)) = tmpTransacionNumeros
             lblTransacionMes.Text = Format(TransacionAño(Month(Now)), "#0.0#") & "(" & TransacionPorAño(Month(Now)) & ")"
             Select Case Month(Now)
-                Case 1 : lblBalanceAño01.Text = FormatDuco(txtbalance.Text, 10) : lblPrecioAño01.Text = txtDucoprice.Text : lblTransasionesAño01.Text = Format(TransacionAño(1), "#0.0#") & "(" & TransacionPorAño(1) & ")"
-                Case 2 : lblBalanceAño02.Text = FormatDuco(txtbalance.Text, 10) : lblPrecioAño02.Text = txtDucoprice.Text : lblTransasionesAño02.Text = Format(TransacionAño(2), "#0.0#") & "(" & TransacionPorAño(2) & ")"
-                Case 3 : lblBalanceAño03.Text = FormatDuco(txtbalance.Text, 10) : lblPrecioAño03.Text = txtDucoprice.Text : lblTransasionesAño03.Text = Format(TransacionAño(3), "#0.0#") & "(" & TransacionPorAño(3) & ")"
-                Case 4 : lblBalanceAño04.Text = FormatDuco(txtbalance.Text, 10) : lblPrecioAño04.Text = txtDucoprice.Text : lblTransasionesAño04.Text = Format(TransacionAño(4), "#0.0#") & "(" & TransacionPorAño(4) & ")"
-                Case 5 : lblBalanceAño05.Text = FormatDuco(txtbalance.Text, 10) : lblPrecioAño05.Text = txtDucoprice.Text : lblTransasionesAño05.Text = Format(TransacionAño(5), "#0.0#") & "(" & TransacionPorAño(5) & ")"
-                Case 6 : lblBalanceAño06.Text = FormatDuco(txtbalance.Text, 10) : lblPrecioAño06.Text = txtDucoprice.Text : lblTransasionesAño06.Text = Format(TransacionAño(6), "#0.0#") & "(" & TransacionPorAño(6) & ")"
-                Case 7 : lblBalanceAño07.Text = FormatDuco(txtbalance.Text, 10) : lblPrecioAño07.Text = txtDucoprice.Text : lblTransasionesAño07.Text = Format(TransacionAño(7), "#0.0#") & "(" & TransacionPorAño(7) & ")"
-                Case 8 : lblBalanceAño08.Text = FormatDuco(txtbalance.Text, 10) : lblPrecioAño08.Text = txtDucoprice.Text : lblTransasionesAño08.Text = Format(TransacionAño(8), "#0.0#") & "(" & TransacionPorAño(8) & ")"
-                Case 9 : lblBalanceAño09.Text = FormatDuco(txtbalance.Text, 10) : lblPrecioAño09.Text = txtDucoprice.Text : lblTransasionesAño09.Text = Format(TransacionAño(9), "#0.0#") & "(" & TransacionPorAño(9) & ")"
-                Case 10 : lblBalanceAño10.Text = FormatDuco(txtbalance.Text, 10) : lblPrecioAño10.Text = txtDucoprice.Text : lblTransasionesAño10.Text = Format(TransacionAño(10), "#0.0#") & "(" & TransacionPorAño(10) & ")"
-                Case 11 : lblBalanceAño11.Text = FormatDuco(txtbalance.Text, 10) : lblPrecioAño11.Text = txtDucoprice.Text : lblTransasionesAño11.Text = Format(TransacionAño(11), "#0.0#") & "(" & TransacionPorAño(11) & ")"
-                Case 12 : lblBalanceAño12.Text = FormatDuco(txtbalance.Text, 10) : lblPrecioAño12.Text = txtDucoprice.Text : lblTransasionesAño12.Text = Format(TransacionAño(12), "#0.0#") & "(" & TransacionPorAño(12) & ")"
+                Case 1 : If lblBalanceAño01.Text = 0 Then lblBalanceAño01.Text = FormatDuco(txtbalance.Text, 9) : lblPrecioAño01.Text = txtDucoprice.Text : lblTransasionesAño01.Text = Format(TransacionAño(1), "#0.0#") & "(" & TransacionPorAño(1) & ")"
+                Case 2 : If lblBalanceAño02.Text = 0 Then lblBalanceAño02.Text = FormatDuco(txtbalance.Text, 9) : lblPrecioAño02.Text = txtDucoprice.Text : lblTransasionesAño02.Text = Format(TransacionAño(2), "#0.0#") & "(" & TransacionPorAño(2) & ")"
+                Case 3 : If lblBalanceAño03.Text = 0 Then lblBalanceAño03.Text = FormatDuco(txtbalance.Text, 9) : lblPrecioAño03.Text = txtDucoprice.Text : lblTransasionesAño03.Text = Format(TransacionAño(3), "#0.0#") & "(" & TransacionPorAño(3) & ")"
+                Case 4 : If lblBalanceAño04.Text = 0 Then lblBalanceAño04.Text = FormatDuco(txtbalance.Text, 9) : lblPrecioAño04.Text = txtDucoprice.Text : lblTransasionesAño04.Text = Format(TransacionAño(4), "#0.0#") & "(" & TransacionPorAño(4) & ")"
+                Case 5 : If lblBalanceAño05.Text = 0 Then lblBalanceAño05.Text = FormatDuco(txtbalance.Text, 9) : lblPrecioAño05.Text = txtDucoprice.Text : lblTransasionesAño05.Text = Format(TransacionAño(5), "#0.0#") & "(" & TransacionPorAño(5) & ")"
+                Case 6 : If lblBalanceAño06.Text = 0 Then lblBalanceAño06.Text = FormatDuco(txtbalance.Text, 9) : lblPrecioAño06.Text = txtDucoprice.Text : lblTransasionesAño06.Text = Format(TransacionAño(6), "#0.0#") & "(" & TransacionPorAño(6) & ")"
+                Case 7 : If lblBalanceAño07.Text = 0 Then lblBalanceAño07.Text = FormatDuco(txtbalance.Text, 9) : lblPrecioAño07.Text = txtDucoprice.Text : lblTransasionesAño07.Text = Format(TransacionAño(7), "#0.0#") & "(" & TransacionPorAño(7) & ")"
+                Case 8 : If lblBalanceAño08.Text = 0 Then lblBalanceAño08.Text = FormatDuco(txtbalance.Text, 9) : lblPrecioAño08.Text = txtDucoprice.Text : lblTransasionesAño08.Text = Format(TransacionAño(8), "#0.0#") & "(" & TransacionPorAño(8) & ")"
+                Case 9 : If lblBalanceAño09.Text = 0 Then lblBalanceAño09.Text = FormatDuco(txtbalance.Text, 9) : lblPrecioAño09.Text = txtDucoprice.Text : lblTransasionesAño09.Text = Format(TransacionAño(9), "#0.0#") & "(" & TransacionPorAño(9) & ")"
+                Case 10 : If lblBalanceAño10.Text = 0 Then lblBalanceAño10.Text = FormatDuco(txtbalance.Text, 9) : lblPrecioAño10.Text = txtDucoprice.Text : lblTransasionesAño10.Text = Format(TransacionAño(10), "#0.0#") & "(" & TransacionPorAño(10) & ")"
+                Case 11 : If lblBalanceAño11.Text = 0 Then lblBalanceAño11.Text = FormatDuco(txtbalance.Text, 9) : lblPrecioAño11.Text = txtDucoprice.Text : lblTransasionesAño11.Text = Format(TransacionAño(11), "#0.0#") & "(" & TransacionPorAño(11) & ")"
+                Case 12 : If lblBalanceAño12.Text = 0 Then lblBalanceAño12.Text = FormatDuco(txtbalance.Text, 9) : lblPrecioAño12.Text = txtDucoprice.Text : lblTransasionesAño12.Text = Format(TransacionAño(12), "#0.0#") & "(" & TransacionPorAño(12) & ")"
             End Select
-            If lblBalanceAño01.Text <> 0 Then lblGananciasAño01.Text = FormatDuco(CDec(lblBalanceAño01.Text) - CDec(TransacionAño(1)), 10)
-            If lblBalanceAño02.Text <> 0 And lblBalanceAño01.Text <> 0 Then lblGananciasAño02.Text = FormatDuco(CDec(lblBalanceAño02.Text) - CDec(lblBalanceAño01.Text) - CDec(TransacionAño(2)), 10)
-            If lblBalanceAño03.Text <> 0 And lblBalanceAño02.Text <> 0 Then lblGananciasAño03.Text = FormatDuco(CDec(lblBalanceAño03.Text) - CDec(lblBalanceAño02.Text) - CDec(TransacionAño(3)), 10)
-            If lblBalanceAño04.Text <> 0 And lblBalanceAño03.Text <> 0 Then lblGananciasAño04.Text = FormatDuco(CDec(lblBalanceAño04.Text) - CDec(lblBalanceAño03.Text) - CDec(TransacionAño(4)), 10)
-            If lblBalanceAño05.Text <> 0 And lblBalanceAño04.Text <> 0 Then lblGananciasAño05.Text = FormatDuco(CDec(lblBalanceAño05.Text) - CDec(lblBalanceAño04.Text) - CDec(TransacionAño(5)), 10)
-            If lblBalanceAño06.Text <> 0 And lblBalanceAño05.Text <> 0 Then lblGananciasAño06.Text = FormatDuco(CDec(lblBalanceAño06.Text) - CDec(lblBalanceAño05.Text) - CDec(TransacionAño(6)), 10)
-            If lblBalanceAño07.Text <> 0 And lblBalanceAño06.Text <> 0 Then lblGananciasAño07.Text = FormatDuco(CDec(lblBalanceAño07.Text) - CDec(lblBalanceAño06.Text) - CDec(TransacionAño(7)), 10)
-            If lblBalanceAño08.Text <> 0 And lblBalanceAño07.Text <> 0 Then lblGananciasAño08.Text = FormatDuco(CDec(lblBalanceAño08.Text) - CDec(lblBalanceAño07.Text) - CDec(TransacionAño(8)), 10)
-            If lblBalanceAño09.Text <> 0 And lblBalanceAño08.Text <> 0 Then lblGananciasAño09.Text = FormatDuco(CDec(lblBalanceAño09.Text) - CDec(lblBalanceAño08.Text) - CDec(TransacionAño(9)), 10)
-            If lblBalanceAño10.Text <> 0 And lblBalanceAño09.Text <> 0 Then lblGananciasAño10.Text = FormatDuco(CDec(lblBalanceAño10.Text) - CDec(lblBalanceAño09.Text) - CDec(TransacionAño(10)), 10)
-            If lblBalanceAño11.Text <> 0 And lblBalanceAño10.Text <> 0 Then lblGananciasAño11.Text = FormatDuco(CDec(lblBalanceAño11.Text) - CDec(lblBalanceAño10.Text) - CDec(TransacionAño(11)), 10)
-            If lblBalanceAño12.Text <> 0 And lblBalanceAño11.Text <> 0 Then lblGananciasAño12.Text = FormatDuco(CDec(lblBalanceAño12.Text) - CDec(lblBalanceAño11.Text) - CDec(TransacionAño(12)), 10)
-            lblTotalGananciaAño.Text += lblGananciasAño01.Text
-            lblTotalGananciaAño.Text += lblGananciasAño02.Text
-            lblTotalGananciaAño.Text += lblGananciasAño03.Text
-            lblTotalGananciaAño.Text += lblGananciasAño04.Text
-            lblTotalGananciaAño.Text += lblGananciasAño05.Text
-            lblTotalGananciaAño.Text += lblGananciasAño06.Text
-            lblTotalGananciaAño.Text += lblGananciasAño07.Text
-            lblTotalGananciaAño.Text += lblGananciasAño08.Text
-            lblTotalGananciaAño.Text += lblGananciasAño09.Text
-            lblTotalGananciaAño.Text += lblGananciasAño10.Text
-            lblTotalGananciaAño.Text += lblGananciasAño11.Text
-            lblTotalGananciaAño.Text += lblGananciasAño12.Text
-            lblTotalGananciaAño.Text = FormatDuco(lblTotalGananciaAño.Text, 6) & "¬"
+            lblTransasionesAño01.Text = TransasionesAnuales("01")
+            lblTransasionesAño02.Text = TransasionesAnuales("02")
+            lblTransasionesAño03.Text = TransasionesAnuales("03")
+            lblTransasionesAño04.Text = TransasionesAnuales("04")
+            lblTransasionesAño05.Text = TransasionesAnuales("05")
+            lblTransasionesAño06.Text = TransasionesAnuales("06")
+            lblTransasionesAño07.Text = TransasionesAnuales("07")
+            lblTransasionesAño08.Text = TransasionesAnuales("08")
+            lblTransasionesAño09.Text = TransasionesAnuales("09")
+            lblTransasionesAño10.Text = TransasionesAnuales("10")
+            lblTransasionesAño11.Text = TransasionesAnuales("11")
+            lblTransasionesAño12.Text = TransasionesAnuales("12")
+            Select Case Month(Now)
+                Case 1 : If lblBalanceAño01.Text <> 0 Then lblGananciasAño01.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceAño01.Text) - CDec(lblTransasionesAño01.Text), 10)
+                Case 2 : If lblBalanceAño02.Text <> 0 Then lblGananciasAño02.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceAño02.Text) - CDec(lblTransasionesAño02.Text), 10)
+                Case 3 : If lblBalanceAño03.Text <> 0 Then lblGananciasAño03.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceAño03.Text) - CDec(lblTransasionesAño03.Text), 10)
+                Case 4 : If lblBalanceAño04.Text <> 0 Then lblGananciasAño04.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceAño04.Text) - CDec(lblTransasionesAño04.Text), 10)
+                Case 5 : If lblBalanceAño05.Text <> 0 Then lblGananciasAño05.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceAño05.Text) - CDec(lblTransasionesAño05.Text), 10)
+                Case 6 : If lblBalanceAño06.Text <> 0 Then lblGananciasAño06.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceAño06.Text) - CDec(lblTransasionesAño06.Text), 10)
+                Case 7 : If lblBalanceAño07.Text <> 0 Then lblGananciasAño07.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceAño07.Text) - CDec(lblTransasionesAño07.Text), 10)
+                Case 8 : If lblBalanceAño08.Text <> 0 Then lblGananciasAño08.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceAño08.Text) - CDec(lblTransasionesAño08.Text), 10)
+                Case 9 : If lblBalanceAño09.Text <> 0 Then lblGananciasAño09.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceAño09.Text) - CDec(lblTransasionesAño09.Text), 10)
+                Case 10 : If lblBalanceAño10.Text <> 0 Then lblGananciasAño10.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceAño10.Text) - CDec(lblTransasionesAño10.Text), 10)
+                Case 11 : If lblBalanceAño11.Text <> 0 Then lblGananciasAño11.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceAño11.Text) - CDec(lblTransasionesAño11.Text), 10)
+                Case 12 : If lblBalanceAño12.Text <> 0 Then lblGananciasAño12.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceAño12.Text) - CDec(lblTransasionesAño12.Text), 10)
+            End Select
+            Dim Suma As Decimal
+            Dim Suma2 As Decimal
+            Suma = lblGananciasAño01.Text
+            Suma += lblGananciasAño02.Text
+            Suma += lblGananciasAño03.Text
+            Suma += lblGananciasAño04.Text
+            Suma += lblGananciasAño05.Text
+            Suma += lblGananciasAño06.Text
+            Suma += lblGananciasAño07.Text
+            Suma += lblGananciasAño08.Text
+            Suma += lblGananciasAño09.Text
+            Suma += lblGananciasAño10.Text
+            Suma += lblGananciasAño11.Text
+            Suma += lblGananciasAño12.Text
+            lblTotalGananciaAño.Text = FormatDuco(Suma, 6) & "¬"
+            lblGanadoAño2022.Text = FormatDuco(Suma, 6)
+
+            Suma = CDec(lblTransasionesAño01.Text)
+            Suma += CDec(lblTransasionesAño02.Text)
+            Suma += CDec(lblTransasionesAño03.Text)
+            Suma += CDec(lblTransasionesAño04.Text)
+            Suma += CDec(lblTransasionesAño05.Text)
+            Suma += CDec(lblTransasionesAño06.Text)
+            Suma += CDec(lblTransasionesAño07.Text)
+            Suma += CDec(lblTransasionesAño08.Text)
+            Suma += CDec(lblTransasionesAño09.Text)
+            Suma += CDec(lblTransasionesAño10.Text)
+            Suma += CDec(lblTransasionesAño11.Text)
+            Suma += CDec(lblTransasionesAño12.Text)
+            lblTransacionesTotalAño.Text = Suma
+            lblTransasionesAño2022.Text = lblTransacionesTotalAño.Text
+            Suma = CDec(lblGanadoAño2021.Text)
+            Suma += CDec(lblGanadoAño2022.Text)
+            Suma += CDec(lblGanadoAño2023.Text)
+            lblGanadoAñoTotal.Text = FormatDuco(Suma, 6) & "¬"
+
+            Suma2 = CDec(lblTransasionesAño2021.Text)
+            Suma2 += CDec(lblTransasionesAño2022.Text)
+            Suma2 += CDec(lblTransasionesAño2023.Text)
+            lblTransasionesAñoTotal.Text = Suma2
+            lblTotalTransasiones.Text = CInt(ContaTransa + 1)
+            lblDucosTotales.Text = CDec(Suma - Suma2)
+            lblTotalGanadoAños.Text = Format(CDec(Suma - Suma2) * CDec(txtDucoprice.Text) * Euro, "###0.00")
+            lblEtiquetaDuco.Left = lblDucosTotales.Left + lblDucosTotales.Width - 5
+            lblEtiquetaEuro.Left = lblTotalGanadoAños.Left + lblTotalGanadoAños.Width - 5
             My.Settings.Save()
         Catch ex As Exception
             'MsgBox("Error!!" & vbCrLf & ex.Message)
         End Try
     End Sub
+    Function TransasionesAnuales(ByVal Mesis As String) As Decimal
+        Dim TransAño(ContaTransa) As Decimal
+        For I As Integer = ContaTransa To 0 Step -1
+            EnviosDias(I) = Mid(Dict2Public.item("result").item("transactions").item(I).item("datetime"), 1, 2)
+            EnviosMes(I) = Mid(Dict2Public.item("result").item("transactions").item(I).item("datetime"), 4, 2)
+            EnviosAño(I) = Mid(Dict2Public.item("result").item("transactions").item(I).item("datetime"), 7, 4)
+            If Dict2Public.item("result").item("transactions").item(I).item("sender") = "Lanthi" Then
+                If EnviosMes(I) = Mesis Then
+                    TransAño(I) = -CDec(Dict2Public.item("result").item("transactions").item(I).item("amount"))
+                End If
+            Else
+                If EnviosMes(I) = Mesis Then
+                    TransAño(I) = CDec(Dict2Public.item("result").item("transactions").item(I).item("amount"))
+                End If
+            End If
+        Next
+        Dim TRansacionTotalMes As Decimal
+        For I As Integer = 0 To ContaTransa
+            If TransAño(I) <> 0 Then TRansacionTotalMes += TransAño(I) ': ListBox1.Items.Add(TransAño(I))
+        Next I
+        If TRansacionTotalMes <> 0 Then
+            TransasionesAnuales = Format(TRansacionTotalMes, "#0.00")
+        Else
+            Return Nothing
+        End If
+    End Function
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         Try
             Hora = DateAndTime.Hour(Now)
@@ -1319,21 +1396,35 @@ Public Class Form1
         txtLogMineros.Text += vbCrLf & vbCrLf & "TOTAL Nº: " & lblMineros.Text & " - Hases: " & lblHases.Text & lblHaseEstiquta.Text
         txtLogBalanceYprecio.Text += vbCrLf & DateAndTime.DateValue(Now) & " " & Format(DateAndTime.TimeValue(Now), "HH:mm") & " = Ducos: " & txtbalance.Text & " * Price: " & txtDucoprice.Text & " = " & lblGanado.Text & "€"
         txtLogMineros.Text += vbCrLf & "---------------------------------"
-        txtLog.Text = vbCrLf & txtLogBalanceYprecio.Text & vbCrLf & vbCrLf & txtLogMineros.Text & vbCrLf & vbCrLf & txtLogTransasiones.Text
+        txtLog.Text = txtLogBalanceYprecio.Text & vbCrLf & vbCrLf & txtLogMineros.Text & vbCrLf & vbCrLf & txtLogTransasiones.Text
         FechaLog = DateAndTime.DateValue(Now)
     End Sub
     Private Sub LogReinicio()
         txtLogBalanceYprecio.Text = "Balance and Price:" & vbCrLf & "==================" & vbCrLf
         txtLogMineros.Text = "Miners and Hanses:" & vbCrLf & "==================" & vbCrLf
+        txtLogTransasiones.Text = "Transactions:" & vbCrLf & "==================" & vbCrLf
     End Sub
-
-    Private Sub Form1_Leave(sender As Object, e As EventArgs) Handles Me.Leave
-
-    End Sub
-
     Private Sub Form1_Closed(sender As Object, e As EventArgs) Handles Me.Closed
         GuardarLog()
         My.Settings.Save()
+    End Sub
+    Private Sub Button2_Click(sender As Object, e As EventArgs)
+        lblGananciasAño03.Text = -FormatDuco(CDec(1661.961081) + CDec(lblTransasionesAño03.Text) - CDec(lblBalanceAño04.Text), 9)
+    End Sub
+
+    Private Sub Label131_Click(sender As Object, e As EventArgs) Handles lblBalanceAño2021.Click
+
+    End Sub
+
+    Private Sub Label156_Click(sender As Object, e As EventArgs) Handles lblPrecioAño2023.Click
+
+    End Sub
+
+    Private Sub lblEtiquetaDuco_Click(sender As Object, e As EventArgs) Handles lblEtiquetaDuco.Click
+
+    End Sub
+
+    Private Sub lblDucosTotales_Click(sender As Object, e As EventArgs) Handles lblDucosTotales.Click
 
     End Sub
 End Class

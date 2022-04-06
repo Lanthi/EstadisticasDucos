@@ -329,6 +329,37 @@ Partial Class Form1
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.GroupBox16 = New System.Windows.Forms.GroupBox()
+        Me.lblEtiquetaDuco = New System.Windows.Forms.Label()
+        Me.lblDucosTotales = New System.Windows.Forms.Label()
+        Me.Label124 = New System.Windows.Forms.Label()
+        Me.lblTotalTransasiones = New System.Windows.Forms.Label()
+        Me.Label165 = New System.Windows.Forms.Label()
+        Me.Label161 = New System.Windows.Forms.Label()
+        Me.lblGanadoAñoTotal = New System.Windows.Forms.Label()
+        Me.lblTransasionesAñoTotal = New System.Windows.Forms.Label()
+        Me.lblGanadoAño2021 = New System.Windows.Forms.Label()
+        Me.Label126 = New System.Windows.Forms.Label()
+        Me.lblGanadoAño2022 = New System.Windows.Forms.Label()
+        Me.lblGanadoAño2023 = New System.Windows.Forms.Label()
+        Me.Label130 = New System.Windows.Forms.Label()
+        Me.lblBalanceAño2021 = New System.Windows.Forms.Label()
+        Me.lblBalanceAño2022 = New System.Windows.Forms.Label()
+        Me.lblBalanceAño2023 = New System.Windows.Forms.Label()
+        Me.Label135 = New System.Windows.Forms.Label()
+        Me.lblAño2021 = New System.Windows.Forms.Label()
+        Me.Label137 = New System.Windows.Forms.Label()
+        Me.Label138 = New System.Windows.Forms.Label()
+        Me.Label139 = New System.Windows.Forms.Label()
+        Me.lblPrecioAño2021 = New System.Windows.Forms.Label()
+        Me.lblPrecioAño2022 = New System.Windows.Forms.Label()
+        Me.lblPrecioAño2023 = New System.Windows.Forms.Label()
+        Me.lblTransasionesAño2022 = New System.Windows.Forms.Label()
+        Me.lblTransasionesAño2023 = New System.Windows.Forms.Label()
+        Me.Label159 = New System.Windows.Forms.Label()
+        Me.lblTransasionesAño2021 = New System.Windows.Forms.Label()
+        Me.lblEtiquetaEuro = New System.Windows.Forms.Label()
+        Me.lblTotalGanadoAños = New System.Windows.Forms.Label()
+        Me.Label120 = New System.Windows.Forms.Label()
         Me.GroupBox15 = New System.Windows.Forms.GroupBox()
         Me.lblGananciasAño01 = New System.Windows.Forms.Label()
         Me.Label101 = New System.Windows.Forms.Label()
@@ -520,7 +551,6 @@ Partial Class Form1
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.TreeView1 = New System.Windows.Forms.TreeView()
         Me.TabPage6 = New System.Windows.Forms.TabPage()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.txtLogTransasiones = New System.Windows.Forms.TextBox()
         Me.txtLogMineros = New System.Windows.Forms.TextBox()
         Me.txtLogBalanceYprecio = New System.Windows.Forms.TextBox()
@@ -554,7 +584,7 @@ Partial Class Form1
         Me.Label173 = New System.Windows.Forms.Label()
         Me.Label174 = New System.Windows.Forms.Label()
         Me.lblReinicioApp = New System.Windows.Forms.Label()
-        Me.Label120 = New System.Windows.Forms.Label()
+        Me.Label121 = New System.Windows.Forms.Label()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Chart2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -1238,6 +1268,7 @@ Partial Class Form1
         'lblGanado
         '
         Me.lblGanado.Font = New System.Drawing.Font("Digital Display", 35.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblGanado.ForeColor = System.Drawing.Color.Goldenrod
         Me.lblGanado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.lblGanado.Location = New System.Drawing.Point(1, 60)
         Me.lblGanado.Name = "lblGanado"
@@ -1292,6 +1323,7 @@ Partial Class Form1
         '
         Me.Label26.AutoSize = True
         Me.Label26.Font = New System.Drawing.Font("Duco", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label26.ForeColor = System.Drawing.Color.DarkOrange
         Me.Label26.Location = New System.Drawing.Point(208, 29)
         Me.Label26.Name = "Label26"
         Me.Label26.Size = New System.Drawing.Size(21, 18)
@@ -1301,6 +1333,7 @@ Partial Class Form1
         'txtbalance
         '
         Me.txtbalance.Font = New System.Drawing.Font("Digital Display", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtbalance.ForeColor = System.Drawing.Color.DarkOrange
         Me.txtbalance.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.txtbalance.Location = New System.Drawing.Point(2, 27)
         Me.txtbalance.Name = "txtbalance"
@@ -4201,6 +4234,36 @@ Partial Class Form1
         '
         'GroupBox16
         '
+        Me.GroupBox16.Controls.Add(Me.lblEtiquetaDuco)
+        Me.GroupBox16.Controls.Add(Me.lblDucosTotales)
+        Me.GroupBox16.Controls.Add(Me.Label124)
+        Me.GroupBox16.Controls.Add(Me.lblTotalTransasiones)
+        Me.GroupBox16.Controls.Add(Me.Label165)
+        Me.GroupBox16.Controls.Add(Me.Label161)
+        Me.GroupBox16.Controls.Add(Me.lblGanadoAñoTotal)
+        Me.GroupBox16.Controls.Add(Me.lblTransasionesAñoTotal)
+        Me.GroupBox16.Controls.Add(Me.lblGanadoAño2021)
+        Me.GroupBox16.Controls.Add(Me.Label126)
+        Me.GroupBox16.Controls.Add(Me.lblGanadoAño2022)
+        Me.GroupBox16.Controls.Add(Me.lblGanadoAño2023)
+        Me.GroupBox16.Controls.Add(Me.Label130)
+        Me.GroupBox16.Controls.Add(Me.lblBalanceAño2021)
+        Me.GroupBox16.Controls.Add(Me.lblBalanceAño2022)
+        Me.GroupBox16.Controls.Add(Me.lblBalanceAño2023)
+        Me.GroupBox16.Controls.Add(Me.Label135)
+        Me.GroupBox16.Controls.Add(Me.lblAño2021)
+        Me.GroupBox16.Controls.Add(Me.Label137)
+        Me.GroupBox16.Controls.Add(Me.Label138)
+        Me.GroupBox16.Controls.Add(Me.Label139)
+        Me.GroupBox16.Controls.Add(Me.lblPrecioAño2021)
+        Me.GroupBox16.Controls.Add(Me.lblPrecioAño2022)
+        Me.GroupBox16.Controls.Add(Me.lblPrecioAño2023)
+        Me.GroupBox16.Controls.Add(Me.lblTransasionesAño2022)
+        Me.GroupBox16.Controls.Add(Me.lblTransasionesAño2023)
+        Me.GroupBox16.Controls.Add(Me.Label159)
+        Me.GroupBox16.Controls.Add(Me.lblTransasionesAño2021)
+        Me.GroupBox16.Controls.Add(Me.lblEtiquetaEuro)
+        Me.GroupBox16.Controls.Add(Me.lblTotalGanadoAños)
         Me.GroupBox16.Controls.Add(Me.Label120)
         Me.GroupBox16.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox16.Location = New System.Drawing.Point(724, 381)
@@ -4209,6 +4272,376 @@ Partial Class Form1
         Me.GroupBox16.TabIndex = 151
         Me.GroupBox16.TabStop = False
         Me.GroupBox16.Text = "Balance Years"
+        '
+        'lblEtiquetaDuco
+        '
+        Me.lblEtiquetaDuco.AutoSize = True
+        Me.lblEtiquetaDuco.Font = New System.Drawing.Font("Duco", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEtiquetaDuco.ForeColor = System.Drawing.Color.DarkOrange
+        Me.lblEtiquetaDuco.Location = New System.Drawing.Point(320, 205)
+        Me.lblEtiquetaDuco.Name = "lblEtiquetaDuco"
+        Me.lblEtiquetaDuco.Size = New System.Drawing.Size(30, 25)
+        Me.lblEtiquetaDuco.TabIndex = 269
+        Me.lblEtiquetaDuco.Text = "¬"
+        '
+        'lblDucosTotales
+        '
+        Me.lblDucosTotales.AutoSize = True
+        Me.lblDucosTotales.Font = New System.Drawing.Font("Digital Display", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDucosTotales.ForeColor = System.Drawing.Color.DarkOrange
+        Me.lblDucosTotales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.lblDucosTotales.Location = New System.Drawing.Point(201, 208)
+        Me.lblDucosTotales.Name = "lblDucosTotales"
+        Me.lblDucosTotales.Size = New System.Drawing.Size(125, 18)
+        Me.lblDucosTotales.TabIndex = 268
+        Me.lblDucosTotales.Text = "000000,00"
+        Me.lblDucosTotales.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label124
+        '
+        Me.Label124.AutoSize = True
+        Me.Label124.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label124.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label124.Location = New System.Drawing.Point(30, 198)
+        Me.Label124.Name = "Label124"
+        Me.Label124.Size = New System.Drawing.Size(179, 33)
+        Me.Label124.TabIndex = 267
+        Me.Label124.Text = "Ducos Total:"
+        Me.Label124.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblTotalTransasiones
+        '
+        Me.lblTotalTransasiones.AutoSize = True
+        Me.lblTotalTransasiones.Font = New System.Drawing.Font("Digital Display", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTotalTransasiones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.lblTotalTransasiones.Location = New System.Drawing.Point(282, 166)
+        Me.lblTotalTransasiones.Name = "lblTotalTransasiones"
+        Me.lblTotalTransasiones.Size = New System.Drawing.Size(61, 19)
+        Me.lblTotalTransasiones.TabIndex = 266
+        Me.lblTotalTransasiones.Text = "0000"
+        Me.lblTotalTransasiones.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label165
+        '
+        Me.Label165.AutoSize = True
+        Me.Label165.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label165.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label165.Location = New System.Drawing.Point(28, 157)
+        Me.Label165.Name = "Label165"
+        Me.Label165.Size = New System.Drawing.Size(264, 33)
+        Me.Label165.TabIndex = 265
+        Me.Label165.Text = "Transactions Total:"
+        Me.Label165.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label161
+        '
+        Me.Label161.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label161.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label161.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label161.Location = New System.Drawing.Point(6, 119)
+        Me.Label161.Name = "Label161"
+        Me.Label161.Size = New System.Drawing.Size(194, 31)
+        Me.Label161.TabIndex = 264
+        Me.Label161.Text = "Annual Total:"
+        Me.Label161.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblGanadoAñoTotal
+        '
+        Me.lblGanadoAñoTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGanadoAñoTotal.Font = New System.Drawing.Font("Duco", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblGanadoAñoTotal.ForeColor = System.Drawing.Color.Blue
+        Me.lblGanadoAñoTotal.Location = New System.Drawing.Point(279, 119)
+        Me.lblGanadoAñoTotal.Name = "lblGanadoAñoTotal"
+        Me.lblGanadoAñoTotal.Size = New System.Drawing.Size(80, 31)
+        Me.lblGanadoAñoTotal.TabIndex = 262
+        Me.lblGanadoAñoTotal.Text = "0"
+        Me.lblGanadoAñoTotal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblTransasionesAñoTotal
+        '
+        Me.lblTransasionesAñoTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransasionesAñoTotal.Font = New System.Drawing.Font("Duco", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTransasionesAñoTotal.ForeColor = System.Drawing.Color.Black
+        Me.lblTransasionesAñoTotal.Location = New System.Drawing.Point(199, 119)
+        Me.lblTransasionesAñoTotal.Name = "lblTransasionesAñoTotal"
+        Me.lblTransasionesAñoTotal.Size = New System.Drawing.Size(82, 31)
+        Me.lblTransasionesAñoTotal.TabIndex = 263
+        Me.lblTransasionesAñoTotal.Text = "0"
+        Me.lblTransasionesAñoTotal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblGanadoAño2021
+        '
+        Me.lblGanadoAño2021.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGanadoAño2021.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoAño2021", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblGanadoAño2021.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblGanadoAño2021.Location = New System.Drawing.Point(279, 47)
+        Me.lblGanadoAño2021.Name = "lblGanadoAño2021"
+        Me.lblGanadoAño2021.Size = New System.Drawing.Size(80, 25)
+        Me.lblGanadoAño2021.TabIndex = 255
+        Me.lblGanadoAño2021.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoAño2021
+        Me.lblGanadoAño2021.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label126
+        '
+        Me.Label126.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.Label126.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label126.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label126.Location = New System.Drawing.Point(279, 25)
+        Me.Label126.Name = "Label126"
+        Me.Label126.Size = New System.Drawing.Size(80, 23)
+        Me.Label126.TabIndex = 256
+        Me.Label126.Text = "Gain"
+        Me.Label126.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblGanadoAño2022
+        '
+        Me.lblGanadoAño2022.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGanadoAño2022.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoAño2022", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblGanadoAño2022.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblGanadoAño2022.Location = New System.Drawing.Point(279, 71)
+        Me.lblGanadoAño2022.Name = "lblGanadoAño2022"
+        Me.lblGanadoAño2022.Size = New System.Drawing.Size(80, 25)
+        Me.lblGanadoAño2022.TabIndex = 257
+        Me.lblGanadoAño2022.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoAño2022
+        Me.lblGanadoAño2022.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblGanadoAño2023
+        '
+        Me.lblGanadoAño2023.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGanadoAño2023.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoAño2023", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblGanadoAño2023.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblGanadoAño2023.Location = New System.Drawing.Point(279, 95)
+        Me.lblGanadoAño2023.Name = "lblGanadoAño2023"
+        Me.lblGanadoAño2023.Size = New System.Drawing.Size(80, 25)
+        Me.lblGanadoAño2023.TabIndex = 254
+        Me.lblGanadoAño2023.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoAño2023
+        Me.lblGanadoAño2023.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label130
+        '
+        Me.Label130.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.Label130.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label130.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label130.Location = New System.Drawing.Point(58, 25)
+        Me.Label130.Name = "Label130"
+        Me.Label130.Size = New System.Drawing.Size(77, 23)
+        Me.Label130.TabIndex = 243
+        Me.Label130.Text = "Ducos"
+        Me.Label130.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblBalanceAño2021
+        '
+        Me.lblBalanceAño2021.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceAño2021.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño2021", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblBalanceAño2021.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBalanceAño2021.Location = New System.Drawing.Point(58, 47)
+        Me.lblBalanceAño2021.Name = "lblBalanceAño2021"
+        Me.lblBalanceAño2021.Size = New System.Drawing.Size(77, 25)
+        Me.lblBalanceAño2021.TabIndex = 242
+        Me.lblBalanceAño2021.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño2021
+        Me.lblBalanceAño2021.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblBalanceAño2022
+        '
+        Me.lblBalanceAño2022.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceAño2022.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño2022", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblBalanceAño2022.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBalanceAño2022.Location = New System.Drawing.Point(58, 71)
+        Me.lblBalanceAño2022.Name = "lblBalanceAño2022"
+        Me.lblBalanceAño2022.Size = New System.Drawing.Size(77, 25)
+        Me.lblBalanceAño2022.TabIndex = 245
+        Me.lblBalanceAño2022.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño2022
+        Me.lblBalanceAño2022.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblBalanceAño2023
+        '
+        Me.lblBalanceAño2023.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceAño2023.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño2023", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblBalanceAño2023.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBalanceAño2023.Location = New System.Drawing.Point(58, 95)
+        Me.lblBalanceAño2023.Name = "lblBalanceAño2023"
+        Me.lblBalanceAño2023.Size = New System.Drawing.Size(77, 25)
+        Me.lblBalanceAño2023.TabIndex = 244
+        Me.lblBalanceAño2023.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño2023
+        Me.lblBalanceAño2023.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label135
+        '
+        Me.Label135.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.Label135.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label135.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label135.Location = New System.Drawing.Point(6, 25)
+        Me.Label135.Name = "Label135"
+        Me.Label135.Size = New System.Drawing.Size(53, 23)
+        Me.Label135.TabIndex = 248
+        Me.Label135.Text = "Month"
+        Me.Label135.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblAño2021
+        '
+        Me.lblAño2021.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblAño2021.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAño2021.Location = New System.Drawing.Point(6, 47)
+        Me.lblAño2021.Name = "lblAño2021"
+        Me.lblAño2021.Size = New System.Drawing.Size(53, 25)
+        Me.lblAño2021.TabIndex = 249
+        Me.lblAño2021.Text = "2021"
+        Me.lblAño2021.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label137
+        '
+        Me.Label137.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label137.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label137.Location = New System.Drawing.Point(6, 71)
+        Me.Label137.Name = "Label137"
+        Me.Label137.Size = New System.Drawing.Size(53, 25)
+        Me.Label137.TabIndex = 247
+        Me.Label137.Text = "2022"
+        Me.Label137.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label138
+        '
+        Me.Label138.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label138.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label138.Location = New System.Drawing.Point(6, 95)
+        Me.Label138.Name = "Label138"
+        Me.Label138.Size = New System.Drawing.Size(53, 25)
+        Me.Label138.TabIndex = 246
+        Me.Label138.Text = "2023"
+        Me.Label138.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label139
+        '
+        Me.Label139.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.Label139.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label139.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label139.Location = New System.Drawing.Point(134, 25)
+        Me.Label139.Name = "Label139"
+        Me.Label139.Size = New System.Drawing.Size(66, 23)
+        Me.Label139.TabIndex = 253
+        Me.Label139.Text = "Price"
+        Me.Label139.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblPrecioAño2021
+        '
+        Me.lblPrecioAño2021.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioAño2021.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño2021", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblPrecioAño2021.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrecioAño2021.Location = New System.Drawing.Point(134, 47)
+        Me.lblPrecioAño2021.Name = "lblPrecioAño2021"
+        Me.lblPrecioAño2021.Size = New System.Drawing.Size(66, 25)
+        Me.lblPrecioAño2021.TabIndex = 252
+        Me.lblPrecioAño2021.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño2021
+        Me.lblPrecioAño2021.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblPrecioAño2022
+        '
+        Me.lblPrecioAño2022.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioAño2022.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño2022", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblPrecioAño2022.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrecioAño2022.Location = New System.Drawing.Point(134, 71)
+        Me.lblPrecioAño2022.Name = "lblPrecioAño2022"
+        Me.lblPrecioAño2022.Size = New System.Drawing.Size(66, 25)
+        Me.lblPrecioAño2022.TabIndex = 251
+        Me.lblPrecioAño2022.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño2022
+        Me.lblPrecioAño2022.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblPrecioAño2023
+        '
+        Me.lblPrecioAño2023.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioAño2023.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño2023", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblPrecioAño2023.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrecioAño2023.Location = New System.Drawing.Point(134, 95)
+        Me.lblPrecioAño2023.Name = "lblPrecioAño2023"
+        Me.lblPrecioAño2023.Size = New System.Drawing.Size(66, 25)
+        Me.lblPrecioAño2023.TabIndex = 250
+        Me.lblPrecioAño2023.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño2023
+        Me.lblPrecioAño2023.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblTransasionesAño2022
+        '
+        Me.lblTransasionesAño2022.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransasionesAño2022.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño2022", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblTransasionesAño2022.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTransasionesAño2022.Location = New System.Drawing.Point(199, 71)
+        Me.lblTransasionesAño2022.Name = "lblTransasionesAño2022"
+        Me.lblTransasionesAño2022.Size = New System.Drawing.Size(82, 25)
+        Me.lblTransasionesAño2022.TabIndex = 259
+        Me.lblTransasionesAño2022.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño2022
+        Me.lblTransasionesAño2022.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblTransasionesAño2023
+        '
+        Me.lblTransasionesAño2023.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransasionesAño2023.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño2023", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblTransasionesAño2023.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTransasionesAño2023.Location = New System.Drawing.Point(199, 95)
+        Me.lblTransasionesAño2023.Name = "lblTransasionesAño2023"
+        Me.lblTransasionesAño2023.Size = New System.Drawing.Size(82, 25)
+        Me.lblTransasionesAño2023.TabIndex = 258
+        Me.lblTransasionesAño2023.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño2023
+        Me.lblTransasionesAño2023.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label159
+        '
+        Me.Label159.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.Label159.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label159.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label159.Location = New System.Drawing.Point(199, 25)
+        Me.Label159.Name = "Label159"
+        Me.Label159.Size = New System.Drawing.Size(82, 23)
+        Me.Label159.TabIndex = 260
+        Me.Label159.Text = "Transactions"
+        Me.Label159.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblTransasionesAño2021
+        '
+        Me.lblTransasionesAño2021.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransasionesAño2021.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño2021", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblTransasionesAño2021.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTransasionesAño2021.Location = New System.Drawing.Point(199, 47)
+        Me.lblTransasionesAño2021.Name = "lblTransasionesAño2021"
+        Me.lblTransasionesAño2021.Size = New System.Drawing.Size(82, 25)
+        Me.lblTransasionesAño2021.TabIndex = 261
+        Me.lblTransasionesAño2021.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño2021
+        Me.lblTransasionesAño2021.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblEtiquetaEuro
+        '
+        Me.lblEtiquetaEuro.Font = New System.Drawing.Font("Digital Display", 35.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEtiquetaEuro.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.lblEtiquetaEuro.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.lblEtiquetaEuro.Location = New System.Drawing.Point(318, 239)
+        Me.lblEtiquetaEuro.Name = "lblEtiquetaEuro"
+        Me.lblEtiquetaEuro.Size = New System.Drawing.Size(28, 41)
+        Me.lblEtiquetaEuro.TabIndex = 137
+        Me.lblEtiquetaEuro.Text = "€"
+        Me.lblEtiquetaEuro.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblTotalGanadoAños
+        '
+        Me.lblTotalGanadoAños.AutoSize = True
+        Me.lblTotalGanadoAños.Font = New System.Drawing.Font("Digital Display", 35.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTotalGanadoAños.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.lblTotalGanadoAños.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.lblTotalGanadoAños.Location = New System.Drawing.Point(206, 245)
+        Me.lblTotalGanadoAños.Name = "lblTotalGanadoAños"
+        Me.lblTotalGanadoAños.Size = New System.Drawing.Size(124, 31)
+        Me.lblTotalGanadoAños.TabIndex = 136
+        Me.lblTotalGanadoAños.Text = "00,00"
+        Me.lblTotalGanadoAños.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label120
+        '
+        Me.Label120.AutoSize = True
+        Me.Label120.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label120.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label120.Location = New System.Drawing.Point(30, 240)
+        Me.Label120.Name = "Label120"
+        Me.Label120.Size = New System.Drawing.Size(186, 39)
+        Me.Label120.TabIndex = 135
+        Me.Label120.Text = "Gain Total:"
+        Me.Label120.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'GroupBox15
         '
@@ -4291,12 +4724,13 @@ Partial Class Form1
         'lblGananciasAño01
         '
         Me.lblGananciasAño01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblGananciasAño01.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblGananciasAño01.Location = New System.Drawing.Point(279, 44)
         Me.lblGananciasAño01.Name = "lblGananciasAño01"
         Me.lblGananciasAño01.Size = New System.Drawing.Size(80, 25)
         Me.lblGananciasAño01.TabIndex = 217
-        Me.lblGananciasAño01.Text = "0"
+        Me.lblGananciasAño01.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes01
         Me.lblGananciasAño01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label101
@@ -4314,122 +4748,133 @@ Partial Class Form1
         'lblGananciasAño02
         '
         Me.lblGananciasAño02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblGananciasAño02.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblGananciasAño02.Location = New System.Drawing.Point(279, 68)
         Me.lblGananciasAño02.Name = "lblGananciasAño02"
         Me.lblGananciasAño02.Size = New System.Drawing.Size(80, 25)
         Me.lblGananciasAño02.TabIndex = 219
-        Me.lblGananciasAño02.Text = "0"
+        Me.lblGananciasAño02.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes02
         Me.lblGananciasAño02.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblGananciasAño07
         '
         Me.lblGananciasAño07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblGananciasAño07.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblGananciasAño07.Location = New System.Drawing.Point(279, 188)
         Me.lblGananciasAño07.Name = "lblGananciasAño07"
         Me.lblGananciasAño07.Size = New System.Drawing.Size(80, 25)
         Me.lblGananciasAño07.TabIndex = 220
-        Me.lblGananciasAño07.Text = "0"
+        Me.lblGananciasAño07.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes07
         Me.lblGananciasAño07.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblGananciasAño04
         '
         Me.lblGananciasAño04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblGananciasAño04.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblGananciasAño04.Location = New System.Drawing.Point(279, 116)
         Me.lblGananciasAño04.Name = "lblGananciasAño04"
         Me.lblGananciasAño04.Size = New System.Drawing.Size(80, 25)
         Me.lblGananciasAño04.TabIndex = 221
-        Me.lblGananciasAño04.Text = "0"
+        Me.lblGananciasAño04.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes04
         Me.lblGananciasAño04.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblGananciasAño08
         '
         Me.lblGananciasAño08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblGananciasAño08.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblGananciasAño08.Location = New System.Drawing.Point(279, 212)
         Me.lblGananciasAño08.Name = "lblGananciasAño08"
         Me.lblGananciasAño08.Size = New System.Drawing.Size(80, 25)
         Me.lblGananciasAño08.TabIndex = 222
-        Me.lblGananciasAño08.Text = "0"
+        Me.lblGananciasAño08.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes08
         Me.lblGananciasAño08.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblGananciasAño10
         '
         Me.lblGananciasAño10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblGananciasAño10.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblGananciasAño10.Location = New System.Drawing.Point(279, 260)
         Me.lblGananciasAño10.Name = "lblGananciasAño10"
         Me.lblGananciasAño10.Size = New System.Drawing.Size(80, 25)
         Me.lblGananciasAño10.TabIndex = 225
-        Me.lblGananciasAño10.Text = "0"
+        Me.lblGananciasAño10.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes10
         Me.lblGananciasAño10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblGananciasAño05
         '
         Me.lblGananciasAño05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblGananciasAño05.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblGananciasAño05.Location = New System.Drawing.Point(279, 140)
         Me.lblGananciasAño05.Name = "lblGananciasAño05"
         Me.lblGananciasAño05.Size = New System.Drawing.Size(80, 25)
         Me.lblGananciasAño05.TabIndex = 228
-        Me.lblGananciasAño05.Text = "0"
+        Me.lblGananciasAño05.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes05
         Me.lblGananciasAño05.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblGananciasAño09
         '
         Me.lblGananciasAño09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblGananciasAño09.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblGananciasAño09.Location = New System.Drawing.Point(279, 236)
         Me.lblGananciasAño09.Name = "lblGananciasAño09"
         Me.lblGananciasAño09.Size = New System.Drawing.Size(80, 25)
         Me.lblGananciasAño09.TabIndex = 227
-        Me.lblGananciasAño09.Text = "0"
+        Me.lblGananciasAño09.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes09
         Me.lblGananciasAño09.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblGananciasAño06
         '
         Me.lblGananciasAño06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblGananciasAño06.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblGananciasAño06.Location = New System.Drawing.Point(279, 164)
         Me.lblGananciasAño06.Name = "lblGananciasAño06"
         Me.lblGananciasAño06.Size = New System.Drawing.Size(80, 25)
         Me.lblGananciasAño06.TabIndex = 223
-        Me.lblGananciasAño06.Text = "0"
+        Me.lblGananciasAño06.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes06
         Me.lblGananciasAño06.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblGananciasAño11
         '
         Me.lblGananciasAño11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblGananciasAño11.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblGananciasAño11.Location = New System.Drawing.Point(279, 284)
         Me.lblGananciasAño11.Name = "lblGananciasAño11"
         Me.lblGananciasAño11.Size = New System.Drawing.Size(80, 25)
         Me.lblGananciasAño11.TabIndex = 226
-        Me.lblGananciasAño11.Text = "0"
+        Me.lblGananciasAño11.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes11
         Me.lblGananciasAño11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblGananciasAño12
         '
         Me.lblGananciasAño12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblGananciasAño12.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblGananciasAño12.Location = New System.Drawing.Point(279, 308)
         Me.lblGananciasAño12.Name = "lblGananciasAño12"
         Me.lblGananciasAño12.Size = New System.Drawing.Size(80, 25)
         Me.lblGananciasAño12.TabIndex = 224
-        Me.lblGananciasAño12.Text = "0"
+        Me.lblGananciasAño12.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes12
         Me.lblGananciasAño12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblGananciasAño03
         '
         Me.lblGananciasAño03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblGananciasAño03.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblGananciasAño03.Location = New System.Drawing.Point(279, 92)
         Me.lblGananciasAño03.Name = "lblGananciasAño03"
         Me.lblGananciasAño03.Size = New System.Drawing.Size(80, 25)
         Me.lblGananciasAño03.TabIndex = 216
-        Me.lblGananciasAño03.Text = "0"
+        Me.lblGananciasAño03.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes03
         Me.lblGananciasAño03.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label128
@@ -4855,12 +5300,13 @@ Partial Class Form1
         'lblPrecioAño04
         '
         Me.lblPrecioAño04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioAño04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblPrecioAño04.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPrecioAño04.Location = New System.Drawing.Point(134, 116)
         Me.lblPrecioAño04.Name = "lblPrecioAño04"
         Me.lblPrecioAño04.Size = New System.Drawing.Size(66, 25)
         Me.lblPrecioAño04.TabIndex = 204
-        Me.lblPrecioAño04.Text = "0"
+        Me.lblPrecioAño04.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño04
         Me.lblPrecioAño04.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblPrecioAño06
@@ -6325,7 +6771,7 @@ Partial Class Form1
         Me.GroupBox4.Size = New System.Drawing.Size(394, 670)
         Me.GroupBox4.TabIndex = 149
         Me.GroupBox4.TabStop = False
-        Me.GroupBox4.Text = "Last 5 Transactions"
+        Me.GroupBox4.Text = "All Transactions"
         '
         'TreeView1
         '
@@ -6339,7 +6785,6 @@ Partial Class Form1
         '
         'TabPage6
         '
-        Me.TabPage6.Controls.Add(Me.TextBox1)
         Me.TabPage6.Controls.Add(Me.txtLogTransasiones)
         Me.TabPage6.Controls.Add(Me.txtLogMineros)
         Me.TabPage6.Controls.Add(Me.txtLogBalanceYprecio)
@@ -6351,31 +6796,22 @@ Partial Class Form1
         Me.TabPage6.Text = "  Log"
         Me.TabPage6.UseVisualStyleBackColor = True
         '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(674, 515)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.TextBox1.Size = New System.Drawing.Size(419, 162)
-        Me.TextBox1.TabIndex = 4
-        '
         'txtLogTransasiones
         '
-        Me.txtLogTransasiones.Location = New System.Drawing.Point(674, 343)
+        Me.txtLogTransasiones.Location = New System.Drawing.Point(674, 454)
         Me.txtLogTransasiones.Multiline = True
         Me.txtLogTransasiones.Name = "txtLogTransasiones"
         Me.txtLogTransasiones.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.txtLogTransasiones.Size = New System.Drawing.Size(419, 168)
+        Me.txtLogTransasiones.Size = New System.Drawing.Size(419, 223)
         Me.txtLogTransasiones.TabIndex = 3
         '
         'txtLogMineros
         '
-        Me.txtLogMineros.Location = New System.Drawing.Point(674, 172)
+        Me.txtLogMineros.Location = New System.Drawing.Point(674, 227)
         Me.txtLogMineros.Multiline = True
         Me.txtLogMineros.Name = "txtLogMineros"
         Me.txtLogMineros.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.txtLogMineros.Size = New System.Drawing.Size(419, 168)
+        Me.txtLogMineros.Size = New System.Drawing.Size(419, 223)
         Me.txtLogMineros.TabIndex = 2
         '
         'txtLogBalanceYprecio
@@ -6384,7 +6820,7 @@ Partial Class Form1
         Me.txtLogBalanceYprecio.Multiline = True
         Me.txtLogBalanceYprecio.Name = "txtLogBalanceYprecio"
         Me.txtLogBalanceYprecio.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.txtLogBalanceYprecio.Size = New System.Drawing.Size(419, 168)
+        Me.txtLogBalanceYprecio.Size = New System.Drawing.Size(419, 223)
         Me.txtLogBalanceYprecio.TabIndex = 1
         '
         'txtLog
@@ -6428,6 +6864,7 @@ Partial Class Form1
         'Label39
         '
         Me.Label39.Font = New System.Drawing.Font("Digital Display", 35.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label39.ForeColor = System.Drawing.Color.Goldenrod
         Me.Label39.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Label39.Location = New System.Drawing.Point(207, 59)
         Me.Label39.Name = "Label39"
@@ -6662,7 +7099,7 @@ Partial Class Form1
         '
         Me.lblDucoDeposito.AutoSize = True
         Me.lblDucoDeposito.Font = New System.Drawing.Font("Duco", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDucoDeposito.Location = New System.Drawing.Point(190, 29)
+        Me.lblDucoDeposito.Location = New System.Drawing.Point(165, 29)
         Me.lblDucoDeposito.Name = "lblDucoDeposito"
         Me.lblDucoDeposito.Size = New System.Drawing.Size(23, 20)
         Me.lblDucoDeposito.TabIndex = 139
@@ -6673,7 +7110,7 @@ Partial Class Form1
         Me.lblDeposito.AutoSize = True
         Me.lblDeposito.Font = New System.Drawing.Font("Digital Display", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDeposito.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.lblDeposito.Location = New System.Drawing.Point(117, 30)
+        Me.lblDeposito.Location = New System.Drawing.Point(92, 30)
         Me.lblDeposito.Name = "lblDeposito"
         Me.lblDeposito.Size = New System.Drawing.Size(80, 16)
         Me.lblDeposito.TabIndex = 135
@@ -6706,7 +7143,7 @@ Partial Class Form1
         '
         Me.Label174.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label174.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Label174.Location = New System.Drawing.Point(28, 21)
+        Me.Label174.Location = New System.Drawing.Point(3, 21)
         Me.Label174.Name = "Label174"
         Me.Label174.Size = New System.Drawing.Size(96, 31)
         Me.Label174.TabIndex = 138
@@ -6723,14 +7160,14 @@ Partial Class Form1
         Me.lblReinicioApp.TabIndex = 154
         Me.lblReinicioApp.Text = Global.EstadisticasDucos.My.MySettings.Default.Reinicios
         '
-        'Label120
+        'Label121
         '
-        Me.Label120.AutoSize = True
-        Me.Label120.Location = New System.Drawing.Point(131, 57)
-        Me.Label120.Name = "Label120"
-        Me.Label120.Size = New System.Drawing.Size(83, 20)
-        Me.Label120.TabIndex = 0
-        Me.Label120.Text = "Label120"
+        Me.Label121.AutoSize = True
+        Me.Label121.Location = New System.Drawing.Point(958, 715)
+        Me.Label121.Name = "Label121"
+        Me.Label121.Size = New System.Drawing.Size(51, 13)
+        Me.Label121.TabIndex = 155
+        Me.Label121.Text = "Label121"
         '
         'Form1
         '
@@ -6738,6 +7175,7 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1671, 735)
+        Me.Controls.Add(Me.Label121)
         Me.Controls.Add(Me.lblReinicioApp)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.GroupBox17)
@@ -6751,6 +7189,7 @@ Partial Class Form1
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.lstDUCOTiempoReal)
         Me.Controls.Add(Me.lstBalanceTiempoReal)
+        Me.ForeColor = System.Drawing.Color.Black
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
         Me.Text = "Estadisticas Ducos"
@@ -7285,7 +7724,6 @@ Partial Class Form1
     Friend WithEvents txtLogMineros As TextBox
     Friend WithEvents txtLogBalanceYprecio As TextBox
     Friend WithEvents txtLog As TextBox
-    Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents GroupBox25 As GroupBox
     Friend WithEvents Label118 As Label
@@ -7328,5 +7766,36 @@ Partial Class Form1
     Friend WithEvents txtMinerosHArduino As TextBox
     Friend WithEvents txtMinerosNArduino As TextBox
     Friend WithEvents lblReinicioApp As Label
+    Friend WithEvents Label161 As Label
+    Friend WithEvents lblGanadoAñoTotal As Label
+    Friend WithEvents lblTransasionesAñoTotal As Label
+    Friend WithEvents lblGanadoAño2021 As Label
+    Friend WithEvents Label126 As Label
+    Friend WithEvents lblGanadoAño2022 As Label
+    Friend WithEvents lblGanadoAño2023 As Label
+    Friend WithEvents Label130 As Label
+    Friend WithEvents lblBalanceAño2021 As Label
+    Friend WithEvents lblBalanceAño2022 As Label
+    Friend WithEvents lblBalanceAño2023 As Label
+    Friend WithEvents Label135 As Label
+    Friend WithEvents lblAño2021 As Label
+    Friend WithEvents Label137 As Label
+    Friend WithEvents Label138 As Label
+    Friend WithEvents Label139 As Label
+    Friend WithEvents lblPrecioAño2021 As Label
+    Friend WithEvents lblPrecioAño2022 As Label
+    Friend WithEvents lblPrecioAño2023 As Label
+    Friend WithEvents lblTransasionesAño2022 As Label
+    Friend WithEvents lblTransasionesAño2023 As Label
+    Friend WithEvents Label159 As Label
+    Friend WithEvents lblTransasionesAño2021 As Label
+    Friend WithEvents lblEtiquetaEuro As Label
+    Friend WithEvents lblTotalGanadoAños As Label
     Friend WithEvents Label120 As Label
+    Friend WithEvents Label165 As Label
+    Friend WithEvents lblTotalTransasiones As Label
+    Friend WithEvents lblEtiquetaDuco As Label
+    Friend WithEvents lblDucosTotales As Label
+    Friend WithEvents Label124 As Label
+    Friend WithEvents Label121 As Label
 End Class

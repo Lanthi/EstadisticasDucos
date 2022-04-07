@@ -1313,10 +1313,10 @@ Public Class Form1
             Suma2 += CDec(lblTransasionesAño2023.Text)
             lblTransasionesAñoTotal.Text = Suma2
             lblTotalTransasiones.Text = CInt(ContaTransa + 1)
-            lblDucosTotales.Text = CDec(Suma - Suma2)
-            lblTotalGanadoAños.Text = Format(CDec(Suma - Suma2) * CDec(txtDucoprice.Text) * Euro, "###0.00")
+            lblDucosTotales.Text = Format(CDec(txtbalance.Text - Suma2), "###0.00")
+            lblTotalGanadoAños.Text = Format(CDec(txtbalance.Text - Suma2) * CDec(txtDucoprice.Text) * Euro, "###0.00")
             lblEtiquetaDuco.Left = lblDucosTotales.Left + lblDucosTotales.Width - 5
-            lblEtiquetaEuro.Left = lblTotalGanadoAños.Left + lblTotalGanadoAños.Width - 5
+            lblEtiquetaEuro.Left = lblTotalGanadoAños.Left + lblTotalGanadoAños.Width '- 5
             My.Settings.Save()
         Catch ex As Exception
             'MsgBox("Error!!" & vbCrLf & ex.Message)

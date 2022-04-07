@@ -227,6 +227,14 @@ Public Class Form1
                 'gpMes.Size = New Size(411, 558)
         End Select
     End Sub
+    Public Function UnixTimeToDate(ByVal Timestamp As Long) As String
+        Dim intDays As Integer, intHours As Integer, intMins As Integer, intSecs As Integer
+        intDays = Timestamp / 86400
+        intHours = (Timestamp / 86400) / 3600 - 3
+        intMins = (Timestamp Mod 3600) / 60
+        intSecs = Timestamp Mod 60
+        UnixTimeToDate = DateSerial(1970, 1, intDays + 1) & " " & TimeSerial(intHours, intMins, intSecs)
+    End Function
     Private Sub Actualizar()
         Try
             Dim uriString3 As String = "http://www.floatrates.com/daily/eur.json"
@@ -260,9 +268,9 @@ Public Class Form1
             Dim FechafinDeposito As Integer = dict2.item("result").item("balance").item("stake_date")
             lblDeposito.Text = Deposito
             lblDucoDeposito.Left = lblDeposito.Left + lblDeposito.Width - 5
-            lblFechaFinDeposito.Text = FechafinDeposito
-            Label121.Text = DateDiff("s", Now, FechafinDeposito)
-
+            lblFechaFinDeposito.Text = UnixTimeToDate(FechafinDeposito)
+            lblRecompensa.Text = Format(Deposito * (1.5 / 100), "#0.00")
+            lblEtiquetaDucoRecompensa.Left = lblRecompensa.Left + lblRecompensa.Width - 5
             txtDucoprice.Text = CDec(dict.item("Duco price"))
             txtbalance.Text = FormatDuco(dict2.item("result").item("balance").item("balance"), 17)
             EstimadoNuevo = txtbalance.Text

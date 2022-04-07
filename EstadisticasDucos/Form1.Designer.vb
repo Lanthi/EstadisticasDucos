@@ -578,53 +578,55 @@ Partial Class Form1
         Me.lblHases = New System.Windows.Forms.Label()
         Me.Label97 = New System.Windows.Forms.Label()
         Me.GroupBox17 = New System.Windows.Forms.GroupBox()
+        Me.lblEtiquetaDucoRecompensa = New System.Windows.Forms.Label()
+        Me.lblRecompensa = New System.Windows.Forms.Label()
+        Me.Label127 = New System.Windows.Forms.Label()
         Me.lblDucoDeposito = New System.Windows.Forms.Label()
         Me.lblDeposito = New System.Windows.Forms.Label()
         Me.lblFechaFinDeposito = New System.Windows.Forms.Label()
         Me.Label173 = New System.Windows.Forms.Label()
         Me.Label174 = New System.Windows.Forms.Label()
         Me.lblReinicioApp = New System.Windows.Forms.Label()
-        Me.Label121 = New System.Windows.Forms.Label()
-        CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Chart2, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox1.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
-        Me.GroupBox3.SuspendLayout()
-        Me.gpMes.SuspendLayout()
-        CType(Me.Chart5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Chart3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Chart4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Chart6, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TabControl1.SuspendLayout()
-        Me.TabPage1.SuspendLayout()
-        Me.GroupBox16.SuspendLayout()
-        Me.GroupBox15.SuspendLayout()
-        Me.TabPage2.SuspendLayout()
-        Me.TabPage3.SuspendLayout()
-        Me.GroupBox13.SuspendLayout()
-        Me.GroupBox8.SuspendLayout()
-        Me.GroupBox9.SuspendLayout()
-        Me.GroupBox10.SuspendLayout()
-        Me.GroupBox11.SuspendLayout()
-        Me.TabPage4.SuspendLayout()
-        Me.GroupBox25.SuspendLayout()
-        Me.GroupBox24.SuspendLayout()
-        Me.GroupBox23.SuspendLayout()
-        Me.GroupBox22.SuspendLayout()
-        Me.GroupBox21.SuspendLayout()
-        Me.GroupBox20.SuspendLayout()
-        Me.GroupBox19.SuspendLayout()
-        Me.GroupBox18.SuspendLayout()
-        Me.GroupBox12.SuspendLayout()
-        Me.TabPage5.SuspendLayout()
-        Me.GroupBox4.SuspendLayout()
-        Me.TabPage6.SuspendLayout()
-        Me.GroupBox5.SuspendLayout()
-        Me.GroupBox6.SuspendLayout()
-        Me.GroupBox7.SuspendLayout()
-        Me.GroupBox14.SuspendLayout()
-        Me.GroupBox17.SuspendLayout()
-        Me.SuspendLayout()
+        CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Chart2, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.GroupBox1.SuspendLayout
+        Me.GroupBox2.SuspendLayout
+        Me.GroupBox3.SuspendLayout
+        Me.gpMes.SuspendLayout
+        CType(Me.Chart5, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Chart3, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Chart4, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Chart6, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.TabControl1.SuspendLayout
+        Me.TabPage1.SuspendLayout
+        Me.GroupBox16.SuspendLayout
+        Me.GroupBox15.SuspendLayout
+        Me.TabPage2.SuspendLayout
+        Me.TabPage3.SuspendLayout
+        Me.GroupBox13.SuspendLayout
+        Me.GroupBox8.SuspendLayout
+        Me.GroupBox9.SuspendLayout
+        Me.GroupBox10.SuspendLayout
+        Me.GroupBox11.SuspendLayout
+        Me.TabPage4.SuspendLayout
+        Me.GroupBox25.SuspendLayout
+        Me.GroupBox24.SuspendLayout
+        Me.GroupBox23.SuspendLayout
+        Me.GroupBox22.SuspendLayout
+        Me.GroupBox21.SuspendLayout
+        Me.GroupBox20.SuspendLayout
+        Me.GroupBox19.SuspendLayout
+        Me.GroupBox18.SuspendLayout
+        Me.GroupBox12.SuspendLayout
+        Me.TabPage5.SuspendLayout
+        Me.GroupBox4.SuspendLayout
+        Me.TabPage6.SuspendLayout
+        Me.GroupBox5.SuspendLayout
+        Me.GroupBox6.SuspendLayout
+        Me.GroupBox7.SuspendLayout
+        Me.GroupBox14.SuspendLayout
+        Me.GroupBox17.SuspendLayout
+        Me.SuspendLayout
         '
         'Timer1
         '
@@ -6901,7 +6903,7 @@ Partial Class Form1
         Me.GroupBox6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox6.Location = New System.Drawing.Point(11, 259)
         Me.GroupBox6.Name = "GroupBox6"
-        Me.GroupBox6.Size = New System.Drawing.Size(236, 75)
+        Me.GroupBox6.Size = New System.Drawing.Size(236, 52)
         Me.GroupBox6.TabIndex = 149
         Me.GroupBox6.TabStop = False
         Me.GroupBox6.Text = "USD Equals"
@@ -6910,9 +6912,9 @@ Partial Class Form1
         '
         Me.lblValorEuro.Font = New System.Drawing.Font("Digital Display", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblValorEuro.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.lblValorEuro.Location = New System.Drawing.Point(3, 25)
+        Me.lblValorEuro.Location = New System.Drawing.Point(3, 18)
         Me.lblValorEuro.Name = "lblValorEuro"
-        Me.lblValorEuro.Size = New System.Drawing.Size(230, 41)
+        Me.lblValorEuro.Size = New System.Drawing.Size(230, 25)
         Me.lblValorEuro.TabIndex = 134
         Me.lblValorEuro.Text = "0,000000000000€"
         Me.lblValorEuro.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -6926,7 +6928,7 @@ Partial Class Form1
         Me.GroupBox7.Controls.Add(Me.Label37)
         Me.GroupBox7.Controls.Add(Me.lblEstimado)
         Me.GroupBox7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox7.Location = New System.Drawing.Point(11, 340)
+        Me.GroupBox7.Location = New System.Drawing.Point(10, 314)
         Me.GroupBox7.Name = "GroupBox7"
         Me.GroupBox7.Size = New System.Drawing.Size(236, 99)
         Me.GroupBox7.TabIndex = 149
@@ -7004,7 +7006,7 @@ Partial Class Form1
         Me.GroupBox14.Controls.Add(Me.lblHases)
         Me.GroupBox14.Controls.Add(Me.Label97)
         Me.GroupBox14.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox14.Location = New System.Drawing.Point(11, 447)
+        Me.GroupBox14.Location = New System.Drawing.Point(11, 419)
         Me.GroupBox14.Name = "GroupBox14"
         Me.GroupBox14.Size = New System.Drawing.Size(236, 99)
         Me.GroupBox14.TabIndex = 153
@@ -7082,24 +7084,60 @@ Partial Class Form1
         '
         'GroupBox17
         '
+        Me.GroupBox17.Controls.Add(Me.lblEtiquetaDucoRecompensa)
+        Me.GroupBox17.Controls.Add(Me.lblRecompensa)
+        Me.GroupBox17.Controls.Add(Me.Label127)
         Me.GroupBox17.Controls.Add(Me.lblDucoDeposito)
         Me.GroupBox17.Controls.Add(Me.lblDeposito)
         Me.GroupBox17.Controls.Add(Me.lblFechaFinDeposito)
         Me.GroupBox17.Controls.Add(Me.Label173)
         Me.GroupBox17.Controls.Add(Me.Label174)
         Me.GroupBox17.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox17.Location = New System.Drawing.Point(11, 552)
+        Me.GroupBox17.Location = New System.Drawing.Point(11, 524)
         Me.GroupBox17.Name = "GroupBox17"
-        Me.GroupBox17.Size = New System.Drawing.Size(237, 80)
+        Me.GroupBox17.Size = New System.Drawing.Size(237, 108)
         Me.GroupBox17.TabIndex = 153
         Me.GroupBox17.TabStop = False
         Me.GroupBox17.Text = "Staking"
+        '
+        'lblEtiquetaDucoRecompensa
+        '
+        Me.lblEtiquetaDucoRecompensa.AutoSize = True
+        Me.lblEtiquetaDucoRecompensa.Font = New System.Drawing.Font("Duco", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEtiquetaDucoRecompensa.Location = New System.Drawing.Point(189, 79)
+        Me.lblEtiquetaDucoRecompensa.Name = "lblEtiquetaDucoRecompensa"
+        Me.lblEtiquetaDucoRecompensa.Size = New System.Drawing.Size(23, 20)
+        Me.lblEtiquetaDucoRecompensa.TabIndex = 142
+        Me.lblEtiquetaDucoRecompensa.Text = "¬"
+        '
+        'lblRecompensa
+        '
+        Me.lblRecompensa.AutoSize = True
+        Me.lblRecompensa.Font = New System.Drawing.Font("Digital Display", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblRecompensa.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.lblRecompensa.Location = New System.Drawing.Point(122, 81)
+        Me.lblRecompensa.Name = "lblRecompensa"
+        Me.lblRecompensa.Size = New System.Drawing.Size(68, 16)
+        Me.lblRecompensa.TabIndex = 140
+        Me.lblRecompensa.Text = "00000"
+        Me.lblRecompensa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label127
+        '
+        Me.Label127.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label127.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label127.Location = New System.Drawing.Point(1, 76)
+        Me.Label127.Name = "Label127"
+        Me.Label127.Size = New System.Drawing.Size(131, 25)
+        Me.Label127.TabIndex = 141
+        Me.Label127.Text = "Est. reward :"
+        Me.Label127.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'lblDucoDeposito
         '
         Me.lblDucoDeposito.AutoSize = True
         Me.lblDucoDeposito.Font = New System.Drawing.Font("Duco", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDucoDeposito.Location = New System.Drawing.Point(165, 29)
+        Me.lblDucoDeposito.Location = New System.Drawing.Point(154, 29)
         Me.lblDucoDeposito.Name = "lblDucoDeposito"
         Me.lblDucoDeposito.Size = New System.Drawing.Size(23, 20)
         Me.lblDucoDeposito.TabIndex = 139
@@ -7110,7 +7148,7 @@ Partial Class Form1
         Me.lblDeposito.AutoSize = True
         Me.lblDeposito.Font = New System.Drawing.Font("Digital Display", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDeposito.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.lblDeposito.Location = New System.Drawing.Point(92, 30)
+        Me.lblDeposito.Location = New System.Drawing.Point(79, 30)
         Me.lblDeposito.Name = "lblDeposito"
         Me.lblDeposito.Size = New System.Drawing.Size(80, 16)
         Me.lblDeposito.TabIndex = 135
@@ -7119,11 +7157,11 @@ Partial Class Form1
         '
         'lblFechaFinDeposito
         '
-        Me.lblFechaFinDeposito.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblFechaFinDeposito.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblFechaFinDeposito.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.lblFechaFinDeposito.Location = New System.Drawing.Point(92, 53)
+        Me.lblFechaFinDeposito.Location = New System.Drawing.Point(91, 53)
         Me.lblFechaFinDeposito.Name = "lblFechaFinDeposito"
-        Me.lblFechaFinDeposito.Size = New System.Drawing.Size(138, 25)
+        Me.lblFechaFinDeposito.Size = New System.Drawing.Size(140, 25)
         Me.lblFechaFinDeposito.TabIndex = 136
         Me.lblFechaFinDeposito.Text = "01/01/1978 02:00"
         Me.lblFechaFinDeposito.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -7134,21 +7172,21 @@ Partial Class Form1
         Me.Label173.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Label173.Location = New System.Drawing.Point(1, 52)
         Me.Label173.Name = "Label173"
-        Me.Label173.Size = New System.Drawing.Size(98, 25)
+        Me.Label173.Size = New System.Drawing.Size(95, 25)
         Me.Label173.TabIndex = 137
         Me.Label173.Text = "Ends on:"
-        Me.Label173.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label173.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Label174
         '
         Me.Label174.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label174.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Label174.Location = New System.Drawing.Point(3, 21)
+        Me.Label174.Location = New System.Drawing.Point(1, 21)
         Me.Label174.Name = "Label174"
-        Me.Label174.Size = New System.Drawing.Size(96, 31)
+        Me.Label174.Size = New System.Drawing.Size(87, 31)
         Me.Label174.TabIndex = 138
         Me.Label174.Text = "Staking:"
-        Me.Label174.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label174.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'lblReinicioApp
         '
@@ -7160,22 +7198,12 @@ Partial Class Form1
         Me.lblReinicioApp.TabIndex = 154
         Me.lblReinicioApp.Text = Global.EstadisticasDucos.My.MySettings.Default.Reinicios
         '
-        'Label121
-        '
-        Me.Label121.AutoSize = True
-        Me.Label121.Location = New System.Drawing.Point(958, 715)
-        Me.Label121.Name = "Label121"
-        Me.Label121.Size = New System.Drawing.Size(51, 13)
-        Me.Label121.TabIndex = 155
-        Me.Label121.Text = "Label121"
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1671, 735)
-        Me.Controls.Add(Me.Label121)
+        Me.ClientSize = New System.Drawing.Size(1370, 735)
         Me.Controls.Add(Me.lblReinicioApp)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.GroupBox17)
@@ -7194,65 +7222,65 @@ Partial Class Form1
         Me.Name = "Form1"
         Me.Text = "Estadisticas Ducos"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        CType(Me.Chart1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Chart2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Chart1, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Chart2, System.ComponentModel.ISupportInitialize).EndInit
         Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
+        Me.GroupBox1.PerformLayout
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox3.ResumeLayout(False)
         Me.gpMes.ResumeLayout(False)
-        CType(Me.Chart5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Chart3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Chart4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Chart6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Chart5, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Chart3, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Chart4, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Chart6, System.ComponentModel.ISupportInitialize).EndInit
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.GroupBox16.ResumeLayout(False)
-        Me.GroupBox16.PerformLayout()
+        Me.GroupBox16.PerformLayout
         Me.GroupBox15.ResumeLayout(False)
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage3.ResumeLayout(False)
         Me.GroupBox13.ResumeLayout(False)
         Me.GroupBox8.ResumeLayout(False)
-        Me.GroupBox8.PerformLayout()
+        Me.GroupBox8.PerformLayout
         Me.GroupBox9.ResumeLayout(False)
-        Me.GroupBox9.PerformLayout()
+        Me.GroupBox9.PerformLayout
         Me.GroupBox10.ResumeLayout(False)
-        Me.GroupBox10.PerformLayout()
+        Me.GroupBox10.PerformLayout
         Me.GroupBox11.ResumeLayout(False)
-        Me.GroupBox11.PerformLayout()
+        Me.GroupBox11.PerformLayout
         Me.TabPage4.ResumeLayout(False)
         Me.GroupBox25.ResumeLayout(False)
-        Me.GroupBox25.PerformLayout()
+        Me.GroupBox25.PerformLayout
         Me.GroupBox24.ResumeLayout(False)
-        Me.GroupBox24.PerformLayout()
+        Me.GroupBox24.PerformLayout
         Me.GroupBox23.ResumeLayout(False)
-        Me.GroupBox23.PerformLayout()
+        Me.GroupBox23.PerformLayout
         Me.GroupBox22.ResumeLayout(False)
-        Me.GroupBox22.PerformLayout()
+        Me.GroupBox22.PerformLayout
         Me.GroupBox21.ResumeLayout(False)
-        Me.GroupBox21.PerformLayout()
+        Me.GroupBox21.PerformLayout
         Me.GroupBox20.ResumeLayout(False)
-        Me.GroupBox20.PerformLayout()
+        Me.GroupBox20.PerformLayout
         Me.GroupBox19.ResumeLayout(False)
-        Me.GroupBox19.PerformLayout()
+        Me.GroupBox19.PerformLayout
         Me.GroupBox18.ResumeLayout(False)
-        Me.GroupBox18.PerformLayout()
+        Me.GroupBox18.PerformLayout
         Me.GroupBox12.ResumeLayout(False)
         Me.TabPage5.ResumeLayout(False)
         Me.GroupBox4.ResumeLayout(False)
         Me.TabPage6.ResumeLayout(False)
-        Me.TabPage6.PerformLayout()
+        Me.TabPage6.PerformLayout
         Me.GroupBox5.ResumeLayout(False)
         Me.GroupBox6.ResumeLayout(False)
         Me.GroupBox7.ResumeLayout(False)
-        Me.GroupBox7.PerformLayout()
+        Me.GroupBox7.PerformLayout
         Me.GroupBox14.ResumeLayout(False)
-        Me.GroupBox14.PerformLayout()
+        Me.GroupBox14.PerformLayout
         Me.GroupBox17.ResumeLayout(False)
-        Me.GroupBox17.PerformLayout()
+        Me.GroupBox17.PerformLayout
         Me.ResumeLayout(False)
-        Me.PerformLayout()
+        Me.PerformLayout
 
     End Sub
     Friend WithEvents Timer1 As Timer
@@ -7797,5 +7825,7 @@ Partial Class Form1
     Friend WithEvents lblEtiquetaDuco As Label
     Friend WithEvents lblDucosTotales As Label
     Friend WithEvents Label124 As Label
-    Friend WithEvents Label121 As Label
+    Friend WithEvents lblEtiquetaDucoRecompensa As Label
+    Friend WithEvents lblRecompensa As Label
+    Friend WithEvents Label127 As Label
 End Class

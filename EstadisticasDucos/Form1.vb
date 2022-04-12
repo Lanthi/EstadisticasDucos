@@ -907,10 +907,9 @@ Public Class Form1
                     FormatDuco = Format(Ducos, "0000.0000")
                 End If
             Case 9
-                If Ducos < 10 Then
-                    FormatDuco = Format(Ducos, "0.00000000")
-                ElseIf Ducos < 100 And Ducos >= 10 Then
+                If Ducos < 100 Then
                     FormatDuco = Format(Ducos, "00.0000000")
+
                 ElseIf Ducos < 1000 And Ducos >= 100 Then
                     FormatDuco = Format(Ducos, "000.000000")
                 ElseIf Ducos < 10000 And Ducos >= 1000 Then
@@ -947,20 +946,18 @@ Public Class Form1
                     FormatDuco = Format(Ducos, "0000.00000000")
                 End If
             Case 13
-                If Ducos < 10 Then
-                    FormatDuco = Format(Ducos, "0.000000000000")
-                ElseIf Ducos < 100 And Ducos >= 10 Then
+                If Ducos < 100 Then
                     FormatDuco = Format(Ducos, "00.00000000000")
+
                 ElseIf Ducos < 1000 And Ducos >= 100 Then
                     FormatDuco = Format(Ducos, "000.0000000000")
                 ElseIf Ducos < 10000 And Ducos >= 1000 Then
                     FormatDuco = Format(Ducos, "0000.000000000")
                 End If
             Case 14
-                If Ducos < 10 Then
-                    FormatDuco = Format(Ducos, "0.0000000000000")
-                ElseIf Ducos < 100 And Ducos >= 10 Then
+                If Ducos < 100 Then
                     FormatDuco = Format(Ducos, "00.000000000000")
+
                 ElseIf Ducos < 1000 And Ducos >= 100 Then
                     FormatDuco = Format(Ducos, "000.00000000000")
                 ElseIf Ducos < 10000 And Ducos >= 1000 Then
@@ -1117,10 +1114,10 @@ Public Class Form1
                 Case 0
                     ResetDia()
                     lblReinicioApp.Text = -1
-                    lblBalanceHora00.Text = FormatDuco(txtbalance.Text, 16)
+                    If lblBalanceHora00.Text = "0 " Then lblBalanceHora00.Text = FormatDuco(CDec(txtbalance.Text), 16)
                     lblPrecio00.Text = CDec(txtDucoprice.Text)
                     PrecioDucoDia(0) = CDec(txtDucoprice.Text)
-                    lblHoraDiferencia00.Text = FormatDuco(CDec(lblBalanceHora00.Text) - CDec(lblBalanceHora23.Text), 8)
+                    lblHoraDiferencia00.Text = FormatDuco(CDec(lblBalanceHora00.Text) - CDec(txtbalance.Text), 8)
                     lblTotalHora.Text = lblHoraDiferencia00.Text
                     Select Case DateAndTime.Day(Now)
                         Case 1

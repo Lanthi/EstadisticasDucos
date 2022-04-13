@@ -128,7 +128,7 @@ Public Class Form1
         If lblBalanceHora21.Text <> 0 And lblBalanceHora20.Text <> 0 Then lblHoraDiferencia20.Text = FormatDuco(CDec(lblBalanceHora21.Text) - CDec(lblBalanceHora20.Text), 8)
         If lblBalanceHora22.Text <> 0 And lblBalanceHora21.Text <> 0 Then lblHoraDiferencia21.Text = FormatDuco(CDec(lblBalanceHora22.Text) - CDec(lblBalanceHora21.Text), 8)
         If lblBalanceHora23.Text <> 0 And lblBalanceHora22.Text <> 0 Then lblHoraDiferencia22.Text = FormatDuco(CDec(lblBalanceHora23.Text) - CDec(lblBalanceHora22.Text), 8)
-        If lblBalanceHora23.Text <> 0 And lblBalanceHora00.Text <> 0 Then lblHoraDiferencia23.Text = FormatDuco(CDec(lblBalanceHora23.Text) - CDec(lblBalanceHora00.Text), 8)
+        If lblBalanceHora00.Text <> 0 And lblBalanceHora23.Text <> 0 Then lblHoraDiferencia23.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora23.Text), 8)
     End Sub
     Private Sub BalanceMes()
         If lblMesBalance01.Text <> 0 And lblMesBalance02.Text <> 0 Then lblMesDifencia01.Text = FormatDuco(CDec(lblMesBalance01.Text) - CDec(lblMesBalance01.Text) - CDec(Transacion(31)), 13)
@@ -1114,9 +1114,7 @@ Public Class Form1
                 Case 0
                     ResetDia()
                     lblReinicioApp.Text = -1
-                    If lblBalanceHora00.Text = "0 " Then lblBalanceHora00.Text = FormatDuco(CDec(txtbalance.Text), 16)
-                    lblPrecio00.Text = CDec(txtDucoprice.Text)
-                    PrecioDucoDia(0) = CDec(txtDucoprice.Text)
+                    If lblBalanceHora00.Text = "0 " Then lblBalanceHora00.Text = FormatDuco(CDec(txtbalance.Text), 14) : lblPrecio00.Text = CDec(txtDucoprice.Text)
                     lblHoraDiferencia00.Text = FormatDuco(CDec(lblBalanceHora00.Text) - CDec(txtbalance.Text), 8)
                     lblTotalHora.Text = lblHoraDiferencia00.Text
                     Select Case DateAndTime.Day(Now)
@@ -1186,7 +1184,7 @@ Public Class Form1
                                 lblMesPrecio30.Text = "0"
                                 lblMesPrecio31.Text = "0"
                             End If
-                            If lblMesBalance01.Text = "0" Then FormatDuco(lblMesBalance01.Text = txtbalance.Text, 14) : lblMesPrecio01.Text = txtDucoprice.Text
+                            If lblMesBalance01.Text = "0" Then lblMesBalance01.Text = FormatDuco(txtbalance.Text, 14) : lblMesPrecio01.Text = txtDucoprice.Text
                         Case 2 : If lblMesBalance02.Text = "0" Then lblMesBalance02.Text = FormatDuco(txtbalance.Text, 14) : lblMesPrecio02.Text = CDec(txtDucoprice.Text)
                         Case 3 : If lblMesBalance03.Text = "0" Then lblMesBalance03.Text = FormatDuco(txtbalance.Text, 14) : lblMesPrecio03.Text = CDec(txtDucoprice.Text)
                         Case 4 : If lblMesBalance04.Text = "0" Then lblMesBalance04.Text = FormatDuco(txtbalance.Text, 14) : lblMesPrecio04.Text = CDec(txtDucoprice.Text)

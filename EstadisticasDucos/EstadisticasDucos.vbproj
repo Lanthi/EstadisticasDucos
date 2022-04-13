@@ -28,7 +28,7 @@
     <UpdateUrl>http://localhost/Estadisticas/</UpdateUrl>
     <TargetCulture>es</TargetCulture>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>209</ApplicationRevision>
+    <ApplicationRevision>214</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -183,6 +183,8 @@
     <Content Include="duco.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\fan.bmp" />
+    <None Include="Resources\DucoFan.gif" />
   </ItemGroup>
   <ItemGroup>
     <PublishFile Include="duco.ico">

@@ -108,6 +108,8 @@ Public Class Form1
             Chart3.Series(0).Points.AddXY(TimeValue("22:00"), CDec(lblHoraDiferencia22.Text))
             Chart3.Series(0).Points.AddXY(TimeValue("23:00"), CDec(lblHoraDiferencia23.Text))
             Chart6.Series(0).Points.AddXY(Format(DateAndTime.TimeValue(Now), "HH:mm:ss"), CDec(Format(ValorEstimado, "###0.00")))
+            Chart7.Series(0).Points.AddY(Temperatura)
+            Chart7.Series(1).Points.AddY(Humedad)
 
         Catch ex As Exception
             ' MsgBox("Error!!" & vbCrLf & ex.Message)
@@ -334,23 +336,29 @@ Public Class Form1
                         Case "31" : Segundoss = "30"
                         Case "32" : Segundoss = "30"
                     End Select
-                    If Segundos <= 9 Then
-                        If Minutos <= 9 Then
-                            Chart6.Series(0).Points.AddXY(Hora & ":0" & Minutos & ":0" & Segundoss, CDec(Format(ValorEstimado, "###0.00")))
-                        Else
-                            Chart6.Series(0).Points.AddXY(Hora & ":" & Minutos & ":0" & Segundoss, CDec(Format(ValorEstimado, "###0.00")))
-                        End If
+                If Segundos <= 9 Then
+                    If Minutos <= 9 Then
+                        Chart6.Series(0).Points.AddXY(Hora & ":0" & Minutos & ":0" & Segundoss, CDec(Format(ValorEstimado, "###0.00")))
                     Else
-                        If Minutos <= 9 Then
-                            Chart6.Series(0).Points.AddXY(Hora & ":0" & Minutos & ":" & Segundoss, CDec(Format(ValorEstimado, "###0.00")))
-                        Else
-                            Chart6.Series(0).Points.AddXY(Hora & ":" & Minutos & ":" & Segundoss, CDec(Format(ValorEstimado, "###0.00")))
-                        End If
+                        Chart6.Series(0).Points.AddXY(Hora & ":" & Minutos & ":0" & Segundoss, CDec(Format(ValorEstimado, "###0.00")))
                     End If
-                    ContadorEstimacion += 1
-                    If ContadorEstimacion >= 75 Then Chart6.Series(0).Points.RemoveAt(0)
+                Else
+                    If Minutos <= 9 Then
+                        Chart6.Series(0).Points.AddXY(Hora & ":0" & Minutos & ":" & Segundoss, CDec(Format(ValorEstimado, "###0.00")))
+                    Else
+                        Chart6.Series(0).Points.AddXY(Hora & ":" & Minutos & ":" & Segundoss, CDec(Format(ValorEstimado, "###0.00")))
+                    End If
                 End If
-                Chart6.ChartAreas(0).RecalculateAxesScale()
+                Chart7.Series(0).Points.AddY(Temperatura)
+                Chart7.Series(1).Points.AddY(Humedad)
+                ContadorEstimacion += 1
+                If ContadorEstimacion >= 100 Then
+                    Chart6.Series(0).Points.RemoveAt(0)
+                    Chart7.Series(0).Points.RemoveAt(0)
+                    Chart7.Series(1).Points.RemoveAt(0)
+                End If
+            End If
+            Chart6.ChartAreas(0).RecalculateAxesScale()
                 lblValorEuro.Text = Euro & "€"
                 lblGanado.Text = Format(CDec(txtbalance.Text) * CDec(txtDucoprice.Text) * Euro, "###0.0000")
                 lblGanadoDolar.Text = Format(CDec(txtbalance.Text) * CDec(txtDucoprice.Text), "###0.0000")
@@ -535,8 +543,9 @@ Public Class Form1
                             If temp <> "" Then
                                 lblTemperatura.Text = Mid(temp, 1, 2) & "°"
                                 Temperatura = Mid(temp, 1, 2)
-                                lblHumedad.Text = Mid(temp, 4) & "%"
-                            End If
+                            lblHumedad.Text = Mid(temp, 4) & "%"
+                            Humedad = Mid(temp, 4)
+                        End If
                         Case "Official Web Miner 2.8"
                             txtMinerosNWeb.Text += 1
                             txtMinerosHWeb.Text += dict2.item("result").item("miners").item(T).item("hashrate")
@@ -739,70 +748,70 @@ Public Class Form1
                 Chart3.Series(0).Points.AddXY(TimeValue("21:00"), CDec(lblHoraDiferencia21.Text))
                 Chart3.Series(0).Points.AddXY(TimeValue("22:00"), CDec(lblHoraDiferencia22.Text))
                 Chart3.Series(0).Points.AddXY(TimeValue("23:00"), CDec(lblHoraDiferencia23.Text))
-                Chart5.Series(0).Points.Clear()
-                Chart4.Series(0).Points.Clear()
-                Chart4.Series(0).Points.AddXY("Day 01", CDec(lblMesBalance01.Text))
-                Chart5.Series(0).Points.AddXY("Day 01", CDec(lblMesPrecio01.Text))
-                Chart4.Series(0).Points.AddXY("Day 02", CDec(lblMesBalance02.Text))
-                Chart5.Series(0).Points.AddXY("Day 02", CDec(lblMesPrecio02.Text))
-                Chart4.Series(0).Points.AddXY("Day 03", CDec(lblMesBalance03.Text))
-                Chart5.Series(0).Points.AddXY("Day 03", CDec(lblMesPrecio03.Text))
-                Chart4.Series(0).Points.AddXY("Day 04", CDec(lblMesBalance04.Text))
-                Chart5.Series(0).Points.AddXY("Day 04", CDec(lblMesPrecio04.Text))
-                Chart4.Series(0).Points.AddXY("Day 05", CDec(lblMesBalance05.Text))
-                Chart5.Series(0).Points.AddXY("Day 05", CDec(lblMesPrecio05.Text))
-                Chart4.Series(0).Points.AddXY("Day 06", CDec(lblMesBalance06.Text))
-                Chart5.Series(0).Points.AddXY("Day 06", CDec(lblMesPrecio06.Text))
-                Chart4.Series(0).Points.AddXY("Day 07", CDec(lblMesBalance07.Text))
-                Chart5.Series(0).Points.AddXY("Day 07", CDec(lblMesPrecio07.Text))
-                Chart4.Series(0).Points.AddXY("Day 08", CDec(lblMesBalance08.Text))
-                Chart5.Series(0).Points.AddXY("Day 08", CDec(lblMesPrecio08.Text))
-                Chart4.Series(0).Points.AddXY("Day 09", CDec(lblMesBalance09.Text))
-                Chart5.Series(0).Points.AddXY("Day 09", CDec(lblMesPrecio09.Text))
-                Chart4.Series(0).Points.AddXY("Day 10", CDec(lblMesBalance10.Text))
-                Chart5.Series(0).Points.AddXY("Day 10", CDec(lblMesPrecio10.Text))
-                Chart4.Series(0).Points.AddXY("Day 11", CDec(lblMesBalance11.Text))
-                Chart5.Series(0).Points.AddXY("Day 11", CDec(lblMesPrecio11.Text))
-                Chart4.Series(0).Points.AddXY("Day 12", CDec(lblMesBalance12.Text))
-                Chart5.Series(0).Points.AddXY("Day 12", CDec(lblMesPrecio12.Text))
-                Chart4.Series(0).Points.AddXY("Day 13", CDec(lblMesBalance13.Text))
-                Chart5.Series(0).Points.AddXY("Day 13", CDec(lblMesPrecio13.Text))
-                Chart4.Series(0).Points.AddXY("Day 14", CDec(lblMesBalance14.Text))
-                Chart5.Series(0).Points.AddXY("Day 14", CDec(lblMesPrecio14.Text))
-                Chart4.Series(0).Points.AddXY("Day 15", CDec(lblMesBalance15.Text))
-                Chart5.Series(0).Points.AddXY("Day 15", CDec(lblMesPrecio15.Text))
-                Chart4.Series(0).Points.AddXY("Day 16", CDec(lblMesBalance16.Text))
-                Chart5.Series(0).Points.AddXY("Day 16", CDec(lblMesPrecio16.Text))
-                Chart4.Series(0).Points.AddXY("Day 17", CDec(lblMesBalance17.Text))
-                Chart5.Series(0).Points.AddXY("Day 17", CDec(lblMesPrecio17.Text))
-                Chart4.Series(0).Points.AddXY("Day 18", CDec(lblMesBalance18.Text))
-                Chart5.Series(0).Points.AddXY("Day 18", CDec(lblMesPrecio18.Text))
-                Chart4.Series(0).Points.AddXY("Day 19", CDec(lblMesBalance19.Text))
-                Chart5.Series(0).Points.AddXY("Day 19", CDec(lblMesPrecio19.Text))
-                Chart4.Series(0).Points.AddXY("Day 20", CDec(lblMesBalance20.Text))
-                Chart5.Series(0).Points.AddXY("Day 20", CDec(lblMesPrecio20.Text))
-                Chart4.Series(0).Points.AddXY("Day 21", CDec(lblMesBalance21.Text))
-                Chart5.Series(0).Points.AddXY("Day 21", CDec(lblMesPrecio21.Text))
-                Chart4.Series(0).Points.AddXY("Day 22", CDec(lblMesBalance22.Text))
-                Chart5.Series(0).Points.AddXY("Day 22", CDec(lblMesPrecio22.Text))
-                Chart4.Series(0).Points.AddXY("Day 23", CDec(lblMesBalance23.Text))
-                Chart5.Series(0).Points.AddXY("Day 23", CDec(lblMesPrecio23.Text))
-                Chart4.Series(0).Points.AddXY("Day 24", CDec(lblMesBalance24.Text))
-                Chart5.Series(0).Points.AddXY("Day 24", CDec(lblMesPrecio24.Text))
-                Chart4.Series(0).Points.AddXY("Day 25", CDec(lblMesBalance25.Text))
-                Chart5.Series(0).Points.AddXY("Day 25", CDec(lblMesPrecio25.Text))
-                Chart4.Series(0).Points.AddXY("Day 26", CDec(lblMesBalance26.Text))
-                Chart5.Series(0).Points.AddXY("Day 26", CDec(lblMesPrecio26.Text))
-                Chart4.Series(0).Points.AddXY("Day 27", CDec(lblMesBalance27.Text))
-                Chart5.Series(0).Points.AddXY("Day 27", CDec(lblMesPrecio27.Text))
-                Chart4.Series(0).Points.AddXY("Day 28", CDec(lblMesBalance28.Text))
-                Chart5.Series(0).Points.AddXY("Day 28", CDec(lblMesPrecio28.Text))
-                Chart4.Series(0).Points.AddXY("Day 29", CDec(lblMesBalance29.Text))
-                Chart5.Series(0).Points.AddXY("Day 29", CDec(lblMesPrecio29.Text))
-                Chart4.Series(0).Points.AddXY("Day 30", CDec(lblMesBalance30.Text))
-                Chart5.Series(0).Points.AddXY("Day 30", CDec(lblMesPrecio30.Text))
-                Chart4.Series(0).Points.AddXY("Day 31", CDec(lblMesBalance31.Text))
-                Chart5.Series(0).Points.AddXY("Day 31", CDec(lblMesPrecio31.Text))
+            Chart5.Series(0).Points.Clear()
+            Chart4.Series(0).Points.Clear()
+            Chart4.Series(0).Points.AddXY("Day 01", CDec(lblMesBalance01.Text))
+            Chart5.Series(0).Points.AddXY("Day 01", CDec(lblMesPrecio01.Text))
+            Chart4.Series(0).Points.AddXY("Day 02", CDec(lblMesBalance02.Text))
+            Chart5.Series(0).Points.AddXY("Day 02", CDec(lblMesPrecio02.Text))
+            Chart4.Series(0).Points.AddXY("Day 03", CDec(lblMesBalance03.Text))
+            Chart5.Series(0).Points.AddXY("Day 03", CDec(lblMesPrecio03.Text))
+            Chart4.Series(0).Points.AddXY("Day 04", CDec(lblMesBalance04.Text))
+            Chart5.Series(0).Points.AddXY("Day 04", CDec(lblMesPrecio04.Text))
+            Chart4.Series(0).Points.AddXY("Day 05", CDec(lblMesBalance05.Text))
+            Chart5.Series(0).Points.AddXY("Day 05", CDec(lblMesPrecio05.Text))
+            Chart4.Series(0).Points.AddXY("Day 06", CDec(lblMesBalance06.Text))
+            Chart5.Series(0).Points.AddXY("Day 06", CDec(lblMesPrecio06.Text))
+            Chart4.Series(0).Points.AddXY("Day 07", CDec(lblMesBalance07.Text))
+            Chart5.Series(0).Points.AddXY("Day 07", CDec(lblMesPrecio07.Text))
+            Chart4.Series(0).Points.AddXY("Day 08", CDec(lblMesBalance08.Text))
+            Chart5.Series(0).Points.AddXY("Day 08", CDec(lblMesPrecio08.Text))
+            Chart4.Series(0).Points.AddXY("Day 09", CDec(lblMesBalance09.Text))
+            Chart5.Series(0).Points.AddXY("Day 09", CDec(lblMesPrecio09.Text))
+            Chart4.Series(0).Points.AddXY("Day 10", CDec(lblMesBalance10.Text))
+            Chart5.Series(0).Points.AddXY("Day 10", CDec(lblMesPrecio10.Text))
+            Chart4.Series(0).Points.AddXY("Day 11", CDec(lblMesBalance11.Text))
+            Chart5.Series(0).Points.AddXY("Day 11", CDec(lblMesPrecio11.Text))
+            Chart4.Series(0).Points.AddXY("Day 12", CDec(lblMesBalance12.Text))
+            Chart5.Series(0).Points.AddXY("Day 12", CDec(lblMesPrecio12.Text))
+            Chart4.Series(0).Points.AddXY("Day 13", CDec(lblMesBalance13.Text))
+            Chart5.Series(0).Points.AddXY("Day 13", CDec(lblMesPrecio13.Text))
+            Chart4.Series(0).Points.AddXY("Day 14", CDec(lblMesBalance14.Text))
+            Chart5.Series(0).Points.AddXY("Day 14", CDec(lblMesPrecio14.Text))
+            Chart4.Series(0).Points.AddXY("Day 15", CDec(lblMesBalance15.Text))
+            Chart5.Series(0).Points.AddXY("Day 15", CDec(lblMesPrecio15.Text))
+            Chart4.Series(0).Points.AddXY("Day 16", CDec(lblMesBalance16.Text))
+            Chart5.Series(0).Points.AddXY("Day 16", CDec(lblMesPrecio16.Text))
+            Chart4.Series(0).Points.AddXY("Day 17", CDec(lblMesBalance17.Text))
+            Chart5.Series(0).Points.AddXY("Day 17", CDec(lblMesPrecio17.Text))
+            Chart4.Series(0).Points.AddXY("Day 18", CDec(lblMesBalance18.Text))
+            Chart5.Series(0).Points.AddXY("Day 18", CDec(lblMesPrecio18.Text))
+            Chart4.Series(0).Points.AddXY("Day 19", CDec(lblMesBalance19.Text))
+            Chart5.Series(0).Points.AddXY("Day 19", CDec(lblMesPrecio19.Text))
+            Chart4.Series(0).Points.AddXY("Day 20", CDec(lblMesBalance20.Text))
+            Chart5.Series(0).Points.AddXY("Day 20", CDec(lblMesPrecio20.Text))
+            Chart4.Series(0).Points.AddXY("Day 21", CDec(lblMesBalance21.Text))
+            Chart5.Series(0).Points.AddXY("Day 21", CDec(lblMesPrecio21.Text))
+            Chart4.Series(0).Points.AddXY("Day 22", CDec(lblMesBalance22.Text))
+            Chart5.Series(0).Points.AddXY("Day 22", CDec(lblMesPrecio22.Text))
+            Chart4.Series(0).Points.AddXY("Day 23", CDec(lblMesBalance23.Text))
+            Chart5.Series(0).Points.AddXY("Day 23", CDec(lblMesPrecio23.Text))
+            Chart4.Series(0).Points.AddXY("Day 24", CDec(lblMesBalance24.Text))
+            Chart5.Series(0).Points.AddXY("Day 24", CDec(lblMesPrecio24.Text))
+            Chart4.Series(0).Points.AddXY("Day 25", CDec(lblMesBalance25.Text))
+            Chart5.Series(0).Points.AddXY("Day 25", CDec(lblMesPrecio25.Text))
+            Chart4.Series(0).Points.AddXY("Day 26", CDec(lblMesBalance26.Text))
+            Chart5.Series(0).Points.AddXY("Day 26", CDec(lblMesPrecio26.Text))
+            Chart4.Series(0).Points.AddXY("Day 27", CDec(lblMesBalance27.Text))
+            Chart5.Series(0).Points.AddXY("Day 27", CDec(lblMesPrecio27.Text))
+            Chart4.Series(0).Points.AddXY("Day 28", CDec(lblMesBalance28.Text))
+            Chart5.Series(0).Points.AddXY("Day 28", CDec(lblMesPrecio28.Text))
+            Chart4.Series(0).Points.AddXY("Day 29", CDec(lblMesBalance29.Text))
+            Chart5.Series(0).Points.AddXY("Day 29", CDec(lblMesPrecio29.Text))
+            Chart4.Series(0).Points.AddXY("Day 30", CDec(lblMesBalance30.Text))
+            Chart5.Series(0).Points.AddXY("Day 30", CDec(lblMesPrecio30.Text))
+            Chart4.Series(0).Points.AddXY("Day 31", CDec(lblMesBalance31.Text))
+            Chart5.Series(0).Points.AddXY("Day 31", CDec(lblMesPrecio31.Text))
             My.Settings.Save()
         Catch ex As Exception
             '  MsgBox("Error!!" & vbCrLf & ex.Message)

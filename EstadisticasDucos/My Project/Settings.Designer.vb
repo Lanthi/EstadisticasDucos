@@ -2129,6 +2129,54 @@ Namespace My
                 Me("lblGanadoAño2021") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property User() As String
+            Get
+                Return CType(Me("User"),String)
+            End Get
+            Set
+                Me("User") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("25")>  _
+        Public Property GradosFan() As Decimal
+            Get
+                Return CType(Me("GradosFan"),Decimal)
+            End Get
+            Set
+                Me("GradosFan") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("22")>  _
+        Public Property FanVerde() As Decimal
+            Get
+                Return CType(Me("FanVerde"),Decimal)
+            End Get
+            Set
+                Me("FanVerde") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("23")>  _
+        Public Property FanAmarillo() As Decimal
+            Get
+                Return CType(Me("FanAmarillo"),Decimal)
+            End Get
+            Set
+                Me("FanAmarillo") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

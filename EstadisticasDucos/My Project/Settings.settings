@@ -521,5 +521,17 @@
     <Setting Name="lblGanadoAño2021" Type="System.String" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
+    <Setting Name="User" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="GradosFan" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">25</Value>
+    </Setting>
+    <Setting Name="FanVerde" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">22</Value>
+    </Setting>
+    <Setting Name="FanAmarillo" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">23</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

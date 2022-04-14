@@ -32,5 +32,10 @@ EstadisticasDucos
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:EstadisticasDucos.My.Resources.Resources.png_transparent_computer_icons_blog_change_angle_text_logo">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 </members>
 </doc>

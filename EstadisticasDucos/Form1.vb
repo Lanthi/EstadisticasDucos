@@ -279,7 +279,7 @@ Public Class Form1
     End Function
     Private Sub Actualizar()
         Try
-            If ComprobarUsuario() = False Then txtUser.Text = InputBox("Enter the Duino-Coin username", "Ducos Statistics - User", txtUser.Text)
+            ' If ComprobarUsuario() = False Then txtUser.Text = InputBox("Enter the Duino-Coin username", "Ducos Statistics - User", txtUser.Text)
             Dim uriString3 As String = "http://www.floatrates.com/daily/eur.json"
             Dim uri3 As New Uri(uriString3)
                 Dim Request3 As HttpWebRequest = HttpWebRequest.Create(uri3)
@@ -1517,5 +1517,11 @@ Public Class Form1
 
     Private Sub GroupBox29_Enter(sender As Object, e As EventArgs) Handles GroupBox29.Enter
 
+    End Sub
+
+    Private Sub Button1_Click_1(sender As Object, e As EventArgs)
+        lblMesBalance15.Text = 574.27681404615259
+        lblMesPrecio15.Text = lblPrecio00.Text
+        ResetDia()
     End Sub
 End Class

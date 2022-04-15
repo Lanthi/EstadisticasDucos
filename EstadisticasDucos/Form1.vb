@@ -59,13 +59,7 @@ Public Class Form1
                 TransacionPorDia(I) = 0
             Next
             Timer1.Enabled = True
-            If ComprobarUsuario() = True Then
-
-                'TabControl1.SelectedTab = TabPage1
-            Else
-                'TabControl1.SelectedTab = TabPage7
-                txtUser.Text = InputBox("Enter the Duino-Coin username", "Ducos Statistics - User", txtUser.Text)
-            End If
+            If txtUser.Text = "" Then txtUser.Text = InputBox("Enter the Duino-Coin username", "Ducos Statistics - User", txtUser.Text)
             Actualizar()
             Añadir()
             BalanceHora()
@@ -110,26 +104,10 @@ Public Class Form1
             Chart6.Series(0).Points.AddXY(Format(DateAndTime.TimeValue(Now), "HH:mm:ss"), CDec(Format(ValorEstimado, "###0.00")))
             Chart7.Series(0).Points.AddY(Temperatura)
             Chart7.Series(1).Points.AddY(Humedad)
-
         Catch ex As Exception
             ' MsgBox("Error!!" & vbCrLf & ex.Message)
         End Try
     End Sub
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-    Function ComprobarUsuario() As Boolean
-        Dim uriString2 As String = "https://server.duinocoin.com/users/" & txtUser.Text & "?limit=5000"
-        Dim uri2 As New Uri(uriString2)
-        Dim Request2 As HttpWebRequest = HttpWebRequest.Create(uri2)
-        Request2.Method = "GET"
-        Dim Response2 As HttpWebResponse = Request2.GetResponse()
-        Dim Read2 = New StreamReader(Response2.GetResponseStream())
-        Dim Raw2 As String = Read2.ReadToEnd()
-        Dim dict2 As Object = New JavaScriptSerializer().Deserialize(Of Dictionary(Of String, Object))(Raw2)
-        Dict2Public = dict2
-        ComprobarUsuario = dict2.item("success")
-    End Function
     Private Sub BalanceHora()
         If lblBalanceHora01.Text <> 0 And lblBalanceHora00.Text <> 0 Then lblHoraDiferencia00.Text = FormatDuco(CDec(lblBalanceHora01.Text) - CDec(lblBalanceHora00.Text), 8)
         If lblBalanceHora02.Text <> 0 And lblBalanceHora01.Text <> 0 Then lblHoraDiferencia01.Text = FormatDuco(CDec(lblBalanceHora02.Text) - CDec(lblBalanceHora01.Text), 8)
@@ -193,7 +171,6 @@ Public Class Form1
         Dim Dato As Date = DateAndTime.Now
         Dim UltimoDía As Date = DateSerial(Dato.Year, Dato.Month + 1, 0)
         Dim UltimoDiaMes As Integer = 31 'Mid(UltimoDía, 1, 2)
-
         Select Case UltimoDiaMes
             Case 31
                 lbl31.Visible = True
@@ -279,7 +256,6 @@ Public Class Form1
     End Function
     Private Sub Actualizar()
         Try
-            ' If ComprobarUsuario() = False Then txtUser.Text = InputBox("Enter the Duino-Coin username", "Ducos Statistics - User", txtUser.Text)
             Dim uriString3 As String = "http://www.floatrates.com/daily/eur.json"
             Dim uri3 As New Uri(uriString3)
                 Dim Request3 As HttpWebRequest = HttpWebRequest.Create(uri3)
@@ -502,60 +478,58 @@ Public Class Form1
                     Else
                         TreeView2.Nodes(0).Nodes.Add(Mineros(T, 0))
                     End If
-
-                    If Tmp <> "" Then
-                        For A As Integer = 0 To 8
-                            TreeView2.Nodes(0).Nodes(T).Nodes.Add(Mineros(T, A))
-                        Next A
-                    Else
-                        For A As Integer = 0 To 7
+                If Tmp <> "" Then
+                    For A As Integer = 0 To 8
+                        TreeView2.Nodes(0).Nodes(T).Nodes.Add(Mineros(T, A))
+                    Next A
+                Else
+                    For A As Integer = 0 To 7
                             TreeView2.Nodes(0).Nodes(T).Nodes.Add(Mineros(T, A))
                         Next A
                     End If
-
-                    Select Case dict2.item("result").item("miners").item(T).item("software")
-                        Case "Official AVR Miner 3.1"
-                            txtMinerosNArduino.Text += 1
-                            txtMinerosHArduino.Text += dict2.item("result").item("miners").item(T).item("hashrate")
-                            TreeView2.Nodes(0).Nodes(T).ImageIndex = 0
-                            TreeView2.Nodes(0).Nodes(T).SelectedImageIndex = 0
-                        Case "Official PC Miner 3.1"
-                            txtMinerosHCPU.Text += dict2.item("result").item("miners").item(T).item("hashrate")
-                            txtMinerosNCPU.Text += 1
-                            TreeView2.Nodes(0).Nodes(T).ImageIndex = 1
-                            TreeView2.Nodes(0).Nodes(T).SelectedImageIndex = 1
-                        Case "Official ESP32 Miner 3.1"
-                            txtMinerosNEsp32.Text += 1
-                            txtMinerosHEsp32.Text += dict2.item("result").item("miners").item(T).item("hashrate")
-                            TreeView2.Nodes(0).Nodes(T).ImageIndex = 7
-                            TreeView2.Nodes(0).Nodes(T).SelectedImageIndex = 7
-                        Case "Official ESP8266 Miner 3.1"
-                            txtMinerosNEsp8266.Text += 1
-                            txtMinerosHEsp8266.Text += dict2.item("result").item("miners").item(T).item("hashrate")
-                            TreeView2.Nodes(0).Nodes(T).ImageIndex = 8
-                            TreeView2.Nodes(0).Nodes(T).SelectedImageIndex = 8
-                        Case "Official ESP8266 Miner 3.18"
-                            Dim temp As String = dict2.item("result").item("miners").item(T).item("it")
-                            txtMinerosNEsp8266.Text += 1
-                            txtMinerosHEsp8266.Text += dict2.item("result").item("miners").item(T).item("hashrate")
-                            TreeView2.Nodes(0).Nodes(T).ImageIndex = 8
-                            TreeView2.Nodes(0).Nodes(T).SelectedImageIndex = 8
-                            If temp <> "" Then
-                                lblTemperatura.Text = Mid(temp, 1, 2) & "°"
-                                Temperatura = Mid(temp, 1, 2)
+                Select Case dict2.item("result").item("miners").item(T).item("software")
+                    Case "Official AVR Miner 3.1"
+                        txtMinerosNArduino.Text += 1
+                        txtMinerosHArduino.Text += dict2.item("result").item("miners").item(T).item("hashrate")
+                        TreeView2.Nodes(0).Nodes(T).ImageIndex = 0
+                        TreeView2.Nodes(0).Nodes(T).SelectedImageIndex = 0
+                    Case "Official PC Miner 3.1"
+                        txtMinerosHCPU.Text += dict2.item("result").item("miners").item(T).item("hashrate")
+                        txtMinerosNCPU.Text += 1
+                        TreeView2.Nodes(0).Nodes(T).ImageIndex = 1
+                        TreeView2.Nodes(0).Nodes(T).SelectedImageIndex = 1
+                    Case "Official ESP32 Miner 3.1"
+                        txtMinerosNEsp32.Text += 1
+                        txtMinerosHEsp32.Text += dict2.item("result").item("miners").item(T).item("hashrate")
+                        TreeView2.Nodes(0).Nodes(T).ImageIndex = 7
+                        TreeView2.Nodes(0).Nodes(T).SelectedImageIndex = 7
+                    Case "Official ESP8266 Miner 3.1"
+                        txtMinerosNEsp8266.Text += 1
+                        txtMinerosHEsp8266.Text += dict2.item("result").item("miners").item(T).item("hashrate")
+                        TreeView2.Nodes(0).Nodes(T).ImageIndex = 8
+                        TreeView2.Nodes(0).Nodes(T).SelectedImageIndex = 8
+                    Case "Official ESP8266 Miner 3.18"
+                        Dim temp As String = dict2.item("result").item("miners").item(T).item("it")
+                        txtMinerosNEsp8266.Text += 1
+                        txtMinerosHEsp8266.Text += dict2.item("result").item("miners").item(T).item("hashrate")
+                        TreeView2.Nodes(0).Nodes(T).ImageIndex = 8
+                        TreeView2.Nodes(0).Nodes(T).SelectedImageIndex = 8
+                        If temp <> "" Then
+                            lblTemperatura.Text = Mid(temp, 1, 2) & "°"
+                            Temperatura = Mid(temp, 1, 2)
                             lblHumedad.Text = Mid(temp, 4) & "%"
                             Humedad = Mid(temp, 4)
                         End If
-                        Case "Official Web Miner 2.8"
-                            txtMinerosNWeb.Text += 1
-                            txtMinerosHWeb.Text += dict2.item("result").item("miners").item(T).item("hashrate")
-                            TreeView2.Nodes(0).Nodes(T).ImageIndex = 2
-                            TreeView2.Nodes(0).Nodes(T).SelectedImageIndex = 2
-                        Case Else
-                            txtMinerosNotros.Text += 1
-                            txtMinerosHotros.Text += dict2.item("result").item("miners").item(T).item("hashrate")
-                    End Select
-                    TreeView2.Refresh()
+                    Case "Official Web Miner 2.8"
+                        txtMinerosNWeb.Text += 1
+                        txtMinerosHWeb.Text += dict2.item("result").item("miners").item(T).item("hashrate")
+                        TreeView2.Nodes(0).Nodes(T).ImageIndex = 2
+                        TreeView2.Nodes(0).Nodes(T).SelectedImageIndex = 2
+                    Case Else
+                        txtMinerosNotros.Text += 1
+                        txtMinerosHotros.Text += dict2.item("result").item("miners").item(T).item("hashrate")
+                End Select
+                TreeView2.Refresh()
                 Next
                 GroupBox8.Text = "Miners (" & Contador & ") " & CalcularHases(HasesUsuario)
                 TabPage4.Text = "Miners (" & Contador & ")"
@@ -570,9 +544,8 @@ Public Class Form1
                 txtMinerosHotros.Text = CalcularHases(txtMinerosHotros.Text)
                 txtMinerosHPhone.Text = CalcularHases(txtMinerosHPhone.Text)
                 txtMinerosHRPI.Text = CalcularHases(txtMinerosHRPI.Text)
-
-                TreeView2.Nodes(0).ImageIndex = 6
-                TreeView2.Nodes(0).SelectedImageIndex = 6
+            TreeView2.Nodes(0).ImageIndex = 6
+            TreeView2.Nodes(0).SelectedImageIndex = 6
                 TreeView2.Nodes(0).Expand()
                 TreeView2.Sorted = True
                 txtDucoNodeSprice.Text = CDec(dict.item("Duco Node-S price"))
@@ -638,116 +611,116 @@ Public Class Form1
                     Case 22 : If lblBalanceHora22.Text <> 0 Then lblHoraDiferencia22.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora22.Text), 8)
                     Case 23 : If lblBalanceHora23.Text <> 0 Then lblHoraDiferencia23.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora23.Text), 8)
                 End Select
-                Select Case DateAndTime.Day(Now)
-                    Case 1 : If lblMesBalance01.Text <> 0 Then lblMesDifencia01.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance01.Text) - CDec(Transacion(1)), 13)
-                    Case 2 : If lblMesBalance02.Text <> 0 Then lblMesDifencia02.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance02.Text) - CDec(Transacion(2)), 13)
-                    Case 3 : If lblMesBalance03.Text <> 0 Then lblMesDifencia03.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance03.Text) - CDec(Transacion(3)), 13)
-                    Case 4 : If lblMesBalance04.Text <> 0 Then lblMesDifencia04.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance04.Text) - CDec(Transacion(4)), 13)
-                    Case 5 : If lblMesBalance05.Text <> 0 Then lblMesDifencia05.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance05.Text) - CDec(Transacion(5)), 13)
-                    Case 6 : If lblMesBalance06.Text <> 0 Then lblMesDifencia06.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance06.Text) - CDec(Transacion(6)), 13)
-                    Case 7 : If lblMesBalance07.Text <> 0 Then lblMesDifencia07.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance07.Text) - CDec(Transacion(7)), 13)
-                    Case 8 : If lblMesBalance08.Text <> 0 Then lblMesDifencia08.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance08.Text) - CDec(Transacion(8)), 13)
-                    Case 9 : If lblMesBalance09.Text <> 0 Then lblMesDifencia09.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance09.Text) - CDec(Transacion(9)), 13)
-                    Case 10 : If lblMesBalance10.Text <> 0 Then lblMesDifencia10.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance10.Text) - CDec(Transacion(10)), 13)
-                    Case 11 : If lblMesBalance11.Text <> 0 Then lblMesDifencia11.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance11.Text) - CDec(Transacion(11)), 13)
-                    Case 12 : If lblMesBalance12.Text <> 0 Then lblMesDifencia12.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance12.Text) - CDec(Transacion(12)), 13)
-                    Case 13 : If lblMesBalance13.Text <> 0 Then lblMesDifencia13.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance13.Text) - CDec(Transacion(13)), 13)
-                    Case 14 : If lblMesBalance14.Text <> 0 Then lblMesDifencia14.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance14.Text) - CDec(Transacion(14)), 13)
-                    Case 15 : If lblMesBalance15.Text <> 0 Then lblMesDifencia15.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance15.Text) - CDec(Transacion(15)), 14)
-                    Case 16 : If lblMesBalance16.Text <> 0 Then lblMesDifencia16.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance16.Text) - CDec(Transacion(16)), 13)
-                    Case 17 : If lblMesBalance17.Text <> 0 Then lblMesDifencia17.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance17.Text) - CDec(Transacion(17)), 13)
-                    Case 18 : If lblMesBalance18.Text <> 0 Then lblMesDifencia18.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance18.Text) - CDec(Transacion(18)), 13)
-                    Case 19 : If lblMesBalance19.Text <> 0 Then lblMesDifencia19.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance19.Text) - CDec(Transacion(19)), 13)
-                    Case 20 : If lblMesBalance20.Text <> 0 Then lblMesDifencia20.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance20.Text) - CDec(Transacion(20)), 13)
-                    Case 21 : If lblMesBalance21.Text <> 0 Then lblMesDifencia21.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance21.Text) - CDec(Transacion(21)), 13)
-                    Case 22 : If lblMesBalance22.Text <> 0 Then lblMesDifencia22.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance22.Text) - CDec(Transacion(22)), 13)
-                    Case 23 : If lblMesBalance23.Text <> 0 Then lblMesDifencia23.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance23.Text) - CDec(Transacion(23)), 13)
-                    Case 24 : If lblMesBalance24.Text <> 0 Then lblMesDifencia24.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance24.Text) - CDec(Transacion(24)), 13)
-                    Case 25 : If lblMesBalance25.Text <> 0 Then lblMesDifencia25.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance25.Text) - CDec(Transacion(25)), 13)
-                    Case 26 : If lblMesBalance26.Text <> 0 Then lblMesDifencia26.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance26.Text) - CDec(Transacion(26)), 13)
-                    Case 27 : If lblMesBalance27.Text <> 0 Then lblMesDifencia27.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance27.Text) - CDec(Transacion(27)), 13)
-                    Case 28 : If lblMesBalance28.Text <> 0 Then lblMesDifencia28.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance28.Text) - CDec(Transacion(28)), 13)
-                    Case 29 : If lblMesBalance29.Text <> 0 Then lblMesDifencia29.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance29.Text) - CDec(Transacion(29)), 13)
-                    Case 30 : If lblMesBalance30.Text <> 0 Then lblMesDifencia30.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance30.Text) - CDec(Transacion(30)), 13)
-                    Case 31 : If lblMesBalance31.Text <> 0 Then lblMesDifencia31.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance31.Text) - CDec(Transacion(31)), 13)
-                End Select
-                MostrarTotales()
-                Chart1.Series(0).Points.Clear()
-                Chart1.Series(0).Points.AddXY(TimeValue("00:00"), CDec(lblPrecio00.Text))
-                Chart1.Series(0).Points.AddXY(TimeValue("01:00"), CDec(lblPrecio01.Text))
-                Chart1.Series(0).Points.AddXY(TimeValue("02:00"), CDec(lblPrecio02.Text))
-                Chart1.Series(0).Points.AddXY(TimeValue("03:00"), CDec(lblPrecio03.Text))
-                Chart1.Series(0).Points.AddXY(TimeValue("04:00"), CDec(lblPrecio04.Text))
-                Chart1.Series(0).Points.AddXY(TimeValue("05:00"), CDec(lblPrecio05.Text))
-                Chart1.Series(0).Points.AddXY(TimeValue("06:00"), CDec(lblPrecio06.Text))
-                Chart1.Series(0).Points.AddXY(TimeValue("07:00"), CDec(lblPrecio07.Text))
-                Chart1.Series(0).Points.AddXY(TimeValue("08:00"), CDec(lblPrecio08.Text))
-                Chart1.Series(0).Points.AddXY(TimeValue("09:00"), CDec(lblPrecio09.Text))
-                Chart1.Series(0).Points.AddXY(TimeValue("10:00"), CDec(lblPrecio10.Text))
-                Chart1.Series(0).Points.AddXY(TimeValue("11:00"), CDec(lblPrecio11.Text))
-                Chart1.Series(0).Points.AddXY(TimeValue("12:00"), CDec(lblPrecio12.Text))
-                Chart1.Series(0).Points.AddXY(TimeValue("13:00"), CDec(lblPrecio13.Text))
-                Chart1.Series(0).Points.AddXY(TimeValue("14:00"), CDec(lblPrecio14.Text))
-                Chart1.Series(0).Points.AddXY(TimeValue("15:00"), CDec(lblPrecio15.Text))
-                Chart1.Series(0).Points.AddXY(TimeValue("16:00"), CDec(lblPrecio16.Text))
-                Chart1.Series(0).Points.AddXY(TimeValue("17:00"), CDec(lblPrecio17.Text))
-                Chart1.Series(0).Points.AddXY(TimeValue("18:00"), CDec(lblPrecio18.Text))
-                Chart1.Series(0).Points.AddXY(TimeValue("19:00"), CDec(lblPrecio19.Text))
-                Chart1.Series(0).Points.AddXY(TimeValue("20:00"), CDec(lblPrecio20.Text))
-                Chart1.Series(0).Points.AddXY(TimeValue("21:00"), CDec(lblPrecio21.Text))
-                Chart1.Series(0).Points.AddXY(TimeValue("22:00"), CDec(lblPrecio22.Text))
-                Chart1.Series(0).Points.AddXY(TimeValue("23:00"), CDec(lblPrecio23.Text))
-                Chart1.ChartAreas(0).RecalculateAxesScale()
-                Chart2.Series(0).Points.Clear()
-                Chart2.Series(0).Points.AddXY(TimeValue("00:00"), CDec(lblBalanceHora00.Text))
-                Chart2.Series(0).Points.AddXY(TimeValue("01:00"), CDec(lblBalanceHora01.Text))
-                Chart2.Series(0).Points.AddXY(TimeValue("02:00"), CDec(lblBalanceHora02.Text))
-                Chart2.Series(0).Points.AddXY(TimeValue("03:00"), CDec(lblBalanceHora03.Text))
-                Chart2.Series(0).Points.AddXY(TimeValue("04:00"), CDec(lblBalanceHora04.Text))
-                Chart2.Series(0).Points.AddXY(TimeValue("05:00"), CDec(lblBalanceHora05.Text))
-                Chart2.Series(0).Points.AddXY(TimeValue("06:00"), CDec(lblBalanceHora06.Text))
-                Chart2.Series(0).Points.AddXY(TimeValue("07:00"), CDec(lblBalanceHora07.Text))
-                Chart2.Series(0).Points.AddXY(TimeValue("08:00"), CDec(lblBalanceHora08.Text))
-                Chart2.Series(0).Points.AddXY(TimeValue("09:00"), CDec(lblBalanceHora09.Text))
-                Chart2.Series(0).Points.AddXY(TimeValue("10:00"), CDec(lblBalanceHora10.Text))
-                Chart2.Series(0).Points.AddXY(TimeValue("11:00"), CDec(lblBalanceHora11.Text))
-                Chart2.Series(0).Points.AddXY(TimeValue("12:00"), CDec(lblBalanceHora12.Text))
-                Chart2.Series(0).Points.AddXY(TimeValue("13:00"), CDec(lblBalanceHora13.Text))
-                Chart2.Series(0).Points.AddXY(TimeValue("14:00"), CDec(lblBalanceHora14.Text))
-                Chart2.Series(0).Points.AddXY(TimeValue("15:00"), CDec(lblBalanceHora15.Text))
-                Chart2.Series(0).Points.AddXY(TimeValue("16:00"), CDec(lblBalanceHora16.Text))
-                Chart2.Series(0).Points.AddXY(TimeValue("17:00"), CDec(lblBalanceHora17.Text))
-                Chart2.Series(0).Points.AddXY(TimeValue("18:00"), CDec(lblBalanceHora18.Text))
-                Chart2.Series(0).Points.AddXY(TimeValue("19:00"), CDec(lblBalanceHora19.Text))
-                Chart2.Series(0).Points.AddXY(TimeValue("20:00"), CDec(lblBalanceHora20.Text))
-                Chart2.Series(0).Points.AddXY(TimeValue("21:00"), CDec(lblBalanceHora21.Text))
-                Chart2.Series(0).Points.AddXY(TimeValue("22:00"), CDec(lblBalanceHora22.Text))
-                Chart2.Series(0).Points.AddXY(TimeValue("23:00"), CDec(lblBalanceHora23.Text))
-                Chart3.Series(0).Points.Clear()
-                Chart3.Series(0).Points.AddXY(TimeValue("00:00"), CDec(lblHoraDiferencia00.Text))
-                Chart3.Series(0).Points.AddXY(TimeValue("01:00"), CDec(lblHoraDiferencia01.Text))
-                Chart3.Series(0).Points.AddXY(TimeValue("02:00"), CDec(lblHoraDiferencia02.Text))
-                Chart3.Series(0).Points.AddXY(TimeValue("03:00"), CDec(lblHoraDiferencia03.Text))
-                Chart3.Series(0).Points.AddXY(TimeValue("04:00"), CDec(lblHoraDiferencia04.Text))
-                Chart3.Series(0).Points.AddXY(TimeValue("05:00"), CDec(lblHoraDiferencia05.Text))
-                Chart3.Series(0).Points.AddXY(TimeValue("06:00"), CDec(lblHoraDiferencia06.Text))
-                Chart3.Series(0).Points.AddXY(TimeValue("07:00"), CDec(lblHoraDiferencia07.Text))
-                Chart3.Series(0).Points.AddXY(TimeValue("08:00"), CDec(lblHoraDiferencia08.Text))
-                Chart3.Series(0).Points.AddXY(TimeValue("09:00"), CDec(lblHoraDiferencia09.Text))
-                Chart3.Series(0).Points.AddXY(TimeValue("10:00"), CDec(lblHoraDiferencia10.Text))
-                Chart3.Series(0).Points.AddXY(TimeValue("11:00"), CDec(lblHoraDiferencia11.Text))
-                Chart3.Series(0).Points.AddXY(TimeValue("12:00"), CDec(lblHoraDiferencia12.Text))
-                Chart3.Series(0).Points.AddXY(TimeValue("13:00"), CDec(lblHoraDiferencia13.Text))
-                Chart3.Series(0).Points.AddXY(TimeValue("14:00"), CDec(lblHoraDiferencia14.Text))
-                Chart3.Series(0).Points.AddXY(TimeValue("15:00"), CDec(lblHoraDiferencia15.Text))
-                Chart3.Series(0).Points.AddXY(TimeValue("16:00"), CDec(lblHoraDiferencia16.Text))
-                Chart3.Series(0).Points.AddXY(TimeValue("17:00"), CDec(lblHoraDiferencia17.Text))
-                Chart3.Series(0).Points.AddXY(TimeValue("18:00"), CDec(lblHoraDiferencia18.Text))
-                Chart3.Series(0).Points.AddXY(TimeValue("19:00"), CDec(lblHoraDiferencia19.Text))
-                Chart3.Series(0).Points.AddXY(TimeValue("20:00"), CDec(lblHoraDiferencia20.Text))
-                Chart3.Series(0).Points.AddXY(TimeValue("21:00"), CDec(lblHoraDiferencia21.Text))
-                Chart3.Series(0).Points.AddXY(TimeValue("22:00"), CDec(lblHoraDiferencia22.Text))
-                Chart3.Series(0).Points.AddXY(TimeValue("23:00"), CDec(lblHoraDiferencia23.Text))
+            Select Case DateAndTime.Day(Now)
+                Case 1 : If lblMesBalance01.Text <> 0 Then lblMesDifencia01.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance01.Text) - CDec(Transacion(1)), 13)
+                Case 2 : If lblMesBalance02.Text <> 0 Then lblMesDifencia02.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance02.Text) - CDec(Transacion(2)), 13)
+                Case 3 : If lblMesBalance03.Text <> 0 Then lblMesDifencia03.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance03.Text) - CDec(Transacion(3)), 13)
+                Case 4 : If lblMesBalance04.Text <> 0 Then lblMesDifencia04.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance04.Text) - CDec(Transacion(4)), 13)
+                Case 5 : If lblMesBalance05.Text <> 0 Then lblMesDifencia05.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance05.Text) - CDec(Transacion(5)), 13)
+                Case 6 : If lblMesBalance06.Text <> 0 Then lblMesDifencia06.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance06.Text) - CDec(Transacion(6)), 13)
+                Case 7 : If lblMesBalance07.Text <> 0 Then lblMesDifencia07.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance07.Text) - CDec(Transacion(7)), 13)
+                Case 8 : If lblMesBalance08.Text <> 0 Then lblMesDifencia08.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance08.Text) - CDec(Transacion(8)), 13)
+                Case 9 : If lblMesBalance09.Text <> 0 Then lblMesDifencia09.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance09.Text) - CDec(Transacion(9)), 13)
+                Case 10 : If lblMesBalance10.Text <> 0 Then lblMesDifencia10.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance10.Text) - CDec(Transacion(10)), 13)
+                Case 11 : If lblMesBalance11.Text <> 0 Then lblMesDifencia11.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance11.Text) - CDec(Transacion(11)), 13)
+                Case 12 : If lblMesBalance12.Text <> 0 Then lblMesDifencia12.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance12.Text) - CDec(Transacion(12)), 13)
+                Case 13 : If lblMesBalance13.Text <> 0 Then lblMesDifencia13.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance13.Text) - CDec(Transacion(13)), 13)
+                Case 14 : If lblMesBalance14.Text <> 0 Then lblMesDifencia14.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance14.Text) - CDec(Transacion(14)), 13)
+                Case 15 : If lblMesBalance15.Text <> 0 Then lblMesDifencia15.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance15.Text) - CDec(Transacion(15)), 14)
+                Case 16 : If lblMesBalance16.Text <> 0 Then lblMesDifencia16.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance16.Text) - CDec(Transacion(16)), 13)
+                Case 17 : If lblMesBalance17.Text <> 0 Then lblMesDifencia17.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance17.Text) - CDec(Transacion(17)), 13)
+                Case 18 : If lblMesBalance18.Text <> 0 Then lblMesDifencia18.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance18.Text) - CDec(Transacion(18)), 13)
+                Case 19 : If lblMesBalance19.Text <> 0 Then lblMesDifencia19.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance19.Text) - CDec(Transacion(19)), 13)
+                Case 20 : If lblMesBalance20.Text <> 0 Then lblMesDifencia20.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance20.Text) - CDec(Transacion(20)), 13)
+                Case 21 : If lblMesBalance21.Text <> 0 Then lblMesDifencia21.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance21.Text) - CDec(Transacion(21)), 13)
+                Case 22 : If lblMesBalance22.Text <> 0 Then lblMesDifencia22.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance22.Text) - CDec(Transacion(22)), 13)
+                Case 23 : If lblMesBalance23.Text <> 0 Then lblMesDifencia23.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance23.Text) - CDec(Transacion(23)), 13)
+                Case 24 : If lblMesBalance24.Text <> 0 Then lblMesDifencia24.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance24.Text) - CDec(Transacion(24)), 13)
+                Case 25 : If lblMesBalance25.Text <> 0 Then lblMesDifencia25.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance25.Text) - CDec(Transacion(25)), 13)
+                Case 26 : If lblMesBalance26.Text <> 0 Then lblMesDifencia26.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance26.Text) - CDec(Transacion(26)), 13)
+                Case 27 : If lblMesBalance27.Text <> 0 Then lblMesDifencia27.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance27.Text) - CDec(Transacion(27)), 13)
+                Case 28 : If lblMesBalance28.Text <> 0 Then lblMesDifencia28.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance28.Text) - CDec(Transacion(28)), 13)
+                Case 29 : If lblMesBalance29.Text <> 0 Then lblMesDifencia29.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance29.Text) - CDec(Transacion(29)), 13)
+                Case 30 : If lblMesBalance30.Text <> 0 Then lblMesDifencia30.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance30.Text) - CDec(Transacion(30)), 13)
+                Case 31 : If lblMesBalance31.Text <> 0 Then lblMesDifencia31.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance31.Text) - CDec(Transacion(31)), 13)
+            End Select
+            MostrarTotales()
+            Chart1.Series(0).Points.Clear()
+            Chart1.Series(0).Points.AddXY(TimeValue("00:00"), CDec(lblPrecio00.Text))
+            Chart1.Series(0).Points.AddXY(TimeValue("01:00"), CDec(lblPrecio01.Text))
+            Chart1.Series(0).Points.AddXY(TimeValue("02:00"), CDec(lblPrecio02.Text))
+            Chart1.Series(0).Points.AddXY(TimeValue("03:00"), CDec(lblPrecio03.Text))
+            Chart1.Series(0).Points.AddXY(TimeValue("04:00"), CDec(lblPrecio04.Text))
+            Chart1.Series(0).Points.AddXY(TimeValue("05:00"), CDec(lblPrecio05.Text))
+            Chart1.Series(0).Points.AddXY(TimeValue("06:00"), CDec(lblPrecio06.Text))
+            Chart1.Series(0).Points.AddXY(TimeValue("07:00"), CDec(lblPrecio07.Text))
+            Chart1.Series(0).Points.AddXY(TimeValue("08:00"), CDec(lblPrecio08.Text))
+            Chart1.Series(0).Points.AddXY(TimeValue("09:00"), CDec(lblPrecio09.Text))
+            Chart1.Series(0).Points.AddXY(TimeValue("10:00"), CDec(lblPrecio10.Text))
+            Chart1.Series(0).Points.AddXY(TimeValue("11:00"), CDec(lblPrecio11.Text))
+            Chart1.Series(0).Points.AddXY(TimeValue("12:00"), CDec(lblPrecio12.Text))
+            Chart1.Series(0).Points.AddXY(TimeValue("13:00"), CDec(lblPrecio13.Text))
+            Chart1.Series(0).Points.AddXY(TimeValue("14:00"), CDec(lblPrecio14.Text))
+            Chart1.Series(0).Points.AddXY(TimeValue("15:00"), CDec(lblPrecio15.Text))
+            Chart1.Series(0).Points.AddXY(TimeValue("16:00"), CDec(lblPrecio16.Text))
+            Chart1.Series(0).Points.AddXY(TimeValue("17:00"), CDec(lblPrecio17.Text))
+            Chart1.Series(0).Points.AddXY(TimeValue("18:00"), CDec(lblPrecio18.Text))
+            Chart1.Series(0).Points.AddXY(TimeValue("19:00"), CDec(lblPrecio19.Text))
+            Chart1.Series(0).Points.AddXY(TimeValue("20:00"), CDec(lblPrecio20.Text))
+            Chart1.Series(0).Points.AddXY(TimeValue("21:00"), CDec(lblPrecio21.Text))
+            Chart1.Series(0).Points.AddXY(TimeValue("22:00"), CDec(lblPrecio22.Text))
+            Chart1.Series(0).Points.AddXY(TimeValue("23:00"), CDec(lblPrecio23.Text))
+            Chart1.ChartAreas(0).RecalculateAxesScale()
+            Chart2.Series(0).Points.Clear()
+            Chart2.Series(0).Points.AddXY(TimeValue("00:00"), CDec(lblBalanceHora00.Text))
+            Chart2.Series(0).Points.AddXY(TimeValue("01:00"), CDec(lblBalanceHora01.Text))
+            Chart2.Series(0).Points.AddXY(TimeValue("02:00"), CDec(lblBalanceHora02.Text))
+            Chart2.Series(0).Points.AddXY(TimeValue("03:00"), CDec(lblBalanceHora03.Text))
+            Chart2.Series(0).Points.AddXY(TimeValue("04:00"), CDec(lblBalanceHora04.Text))
+            Chart2.Series(0).Points.AddXY(TimeValue("05:00"), CDec(lblBalanceHora05.Text))
+            Chart2.Series(0).Points.AddXY(TimeValue("06:00"), CDec(lblBalanceHora06.Text))
+            Chart2.Series(0).Points.AddXY(TimeValue("07:00"), CDec(lblBalanceHora07.Text))
+            Chart2.Series(0).Points.AddXY(TimeValue("08:00"), CDec(lblBalanceHora08.Text))
+            Chart2.Series(0).Points.AddXY(TimeValue("09:00"), CDec(lblBalanceHora09.Text))
+            Chart2.Series(0).Points.AddXY(TimeValue("10:00"), CDec(lblBalanceHora10.Text))
+            Chart2.Series(0).Points.AddXY(TimeValue("11:00"), CDec(lblBalanceHora11.Text))
+            Chart2.Series(0).Points.AddXY(TimeValue("12:00"), CDec(lblBalanceHora12.Text))
+            Chart2.Series(0).Points.AddXY(TimeValue("13:00"), CDec(lblBalanceHora13.Text))
+            Chart2.Series(0).Points.AddXY(TimeValue("14:00"), CDec(lblBalanceHora14.Text))
+            Chart2.Series(0).Points.AddXY(TimeValue("15:00"), CDec(lblBalanceHora15.Text))
+            Chart2.Series(0).Points.AddXY(TimeValue("16:00"), CDec(lblBalanceHora16.Text))
+            Chart2.Series(0).Points.AddXY(TimeValue("17:00"), CDec(lblBalanceHora17.Text))
+            Chart2.Series(0).Points.AddXY(TimeValue("18:00"), CDec(lblBalanceHora18.Text))
+            Chart2.Series(0).Points.AddXY(TimeValue("19:00"), CDec(lblBalanceHora19.Text))
+            Chart2.Series(0).Points.AddXY(TimeValue("20:00"), CDec(lblBalanceHora20.Text))
+            Chart2.Series(0).Points.AddXY(TimeValue("21:00"), CDec(lblBalanceHora21.Text))
+            Chart2.Series(0).Points.AddXY(TimeValue("22:00"), CDec(lblBalanceHora22.Text))
+            Chart2.Series(0).Points.AddXY(TimeValue("23:00"), CDec(lblBalanceHora23.Text))
+            Chart3.Series(0).Points.Clear()
+            Chart3.Series(0).Points.AddXY(TimeValue("00:00"), CDec(lblHoraDiferencia00.Text))
+            Chart3.Series(0).Points.AddXY(TimeValue("01:00"), CDec(lblHoraDiferencia01.Text))
+            Chart3.Series(0).Points.AddXY(TimeValue("02:00"), CDec(lblHoraDiferencia02.Text))
+            Chart3.Series(0).Points.AddXY(TimeValue("03:00"), CDec(lblHoraDiferencia03.Text))
+            Chart3.Series(0).Points.AddXY(TimeValue("04:00"), CDec(lblHoraDiferencia04.Text))
+            Chart3.Series(0).Points.AddXY(TimeValue("05:00"), CDec(lblHoraDiferencia05.Text))
+            Chart3.Series(0).Points.AddXY(TimeValue("06:00"), CDec(lblHoraDiferencia06.Text))
+            Chart3.Series(0).Points.AddXY(TimeValue("07:00"), CDec(lblHoraDiferencia07.Text))
+            Chart3.Series(0).Points.AddXY(TimeValue("08:00"), CDec(lblHoraDiferencia08.Text))
+            Chart3.Series(0).Points.AddXY(TimeValue("09:00"), CDec(lblHoraDiferencia09.Text))
+            Chart3.Series(0).Points.AddXY(TimeValue("10:00"), CDec(lblHoraDiferencia10.Text))
+            Chart3.Series(0).Points.AddXY(TimeValue("11:00"), CDec(lblHoraDiferencia11.Text))
+            Chart3.Series(0).Points.AddXY(TimeValue("12:00"), CDec(lblHoraDiferencia12.Text))
+            Chart3.Series(0).Points.AddXY(TimeValue("13:00"), CDec(lblHoraDiferencia13.Text))
+            Chart3.Series(0).Points.AddXY(TimeValue("14:00"), CDec(lblHoraDiferencia14.Text))
+            Chart3.Series(0).Points.AddXY(TimeValue("15:00"), CDec(lblHoraDiferencia15.Text))
+            Chart3.Series(0).Points.AddXY(TimeValue("16:00"), CDec(lblHoraDiferencia16.Text))
+            Chart3.Series(0).Points.AddXY(TimeValue("17:00"), CDec(lblHoraDiferencia17.Text))
+            Chart3.Series(0).Points.AddXY(TimeValue("18:00"), CDec(lblHoraDiferencia18.Text))
+            Chart3.Series(0).Points.AddXY(TimeValue("19:00"), CDec(lblHoraDiferencia19.Text))
+            Chart3.Series(0).Points.AddXY(TimeValue("20:00"), CDec(lblHoraDiferencia20.Text))
+            Chart3.Series(0).Points.AddXY(TimeValue("21:00"), CDec(lblHoraDiferencia21.Text))
+            Chart3.Series(0).Points.AddXY(TimeValue("22:00"), CDec(lblHoraDiferencia22.Text))
+            Chart3.Series(0).Points.AddXY(TimeValue("23:00"), CDec(lblHoraDiferencia23.Text))
             Chart5.Series(0).Points.Clear()
             Chart4.Series(0).Points.Clear()
             Chart4.Series(0).Points.AddXY("Day 01", CDec(lblMesBalance01.Text))
@@ -1450,7 +1423,7 @@ Public Class Form1
             If Temperatura >= CInt(txtGradosFan.Value) Then
                 lblTemperatura.ForeColor = Color.Red
             ElseIf Temperatura < CInt(txtGradosFan.Value) And Temperatura >= CInt(txtFanAmarillo.Value) Then
-                lblTemperatura.ForeColor = Color.Khaki
+                lblTemperatura.ForeColor = Color.DarkKhaki
             ElseIf Temperatura < CInt(txtFanAmarillo.Value) And Temperatura >= CInt(txtFanVerde.Value) Then
                 lblTemperatura.ForeColor = Color.Green
             Else

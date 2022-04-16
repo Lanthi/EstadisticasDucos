@@ -533,5 +533,11 @@
     <Setting Name="FanAmarillo" Type="System.Decimal" Scope="User">
       <Value Profile="(Default)">23</Value>
     </Setting>
+    <Setting Name="MediaPrecioDia" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="PrecioMedioMes" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

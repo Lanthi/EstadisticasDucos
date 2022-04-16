@@ -140,6 +140,7 @@ Partial Class Form1
         Me.lblTotalHora = New System.Windows.Forms.Label()
         Me.Label28 = New System.Windows.Forms.Label()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.lblPrecioDia = New System.Windows.Forms.Label()
         Me.lblPrecio23 = New System.Windows.Forms.Label()
         Me.Label31 = New System.Windows.Forms.Label()
         Me.lblPrecio00 = New System.Windows.Forms.Label()
@@ -292,6 +293,7 @@ Partial Class Form1
         Me.lblMesBalance28 = New System.Windows.Forms.Label()
         Me.lblMesBalance29 = New System.Windows.Forms.Label()
         Me.lblMesBalance30 = New System.Windows.Forms.Label()
+        Me.lblPrecioMes = New System.Windows.Forms.Label()
         Me.lblMesPrecio31 = New System.Windows.Forms.Label()
         Me.lblMesPrecio30 = New System.Windows.Forms.Label()
         Me.lblMesBalance31 = New System.Windows.Forms.Label()
@@ -570,8 +572,6 @@ Partial Class Form1
         Me.txtGradosFan = New System.Windows.Forms.NumericUpDown()
         Me.Label123 = New System.Windows.Forms.Label()
         Me.GroupBox28 = New System.Windows.Forms.GroupBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.txtUser = New System.Windows.Forms.Label()
         Me.Label122 = New System.Windows.Forms.Label()
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
@@ -599,70 +599,74 @@ Partial Class Form1
         Me.lblEtiquetaDucoRecompensa = New System.Windows.Forms.Label()
         Me.lblRecompensa = New System.Windows.Forms.Label()
         Me.Label127 = New System.Windows.Forms.Label()
-        Me.lblDucoDeposito = New System.Windows.Forms.Label()
         Me.lblDeposito = New System.Windows.Forms.Label()
         Me.lblTiempoRestante = New System.Windows.Forms.Label()
         Me.lblFechaFinDeposito = New System.Windows.Forms.Label()
         Me.Label173 = New System.Windows.Forms.Label()
         Me.Label174 = New System.Windows.Forms.Label()
+        Me.lblDucoDeposito = New System.Windows.Forms.Label()
         Me.GroupBox27 = New System.Windows.Forms.GroupBox()
         Me.lblHumedad = New System.Windows.Forms.Label()
         Me.lblTemperatura = New System.Windows.Forms.Label()
         Me.picFan = New System.Windows.Forms.PictureBox()
         Me.picFanAni = New System.Windows.Forms.PictureBox()
         Me.lblReinicioApp = New System.Windows.Forms.Label()
-        CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Chart2, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox1.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
-        Me.GroupBox3.SuspendLayout()
-        Me.gpMes.SuspendLayout()
-        CType(Me.Chart5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Chart3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Chart4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Chart6, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TabControl1.SuspendLayout()
-        Me.TabPage1.SuspendLayout()
-        Me.GroupBox16.SuspendLayout()
-        Me.GroupBox26.SuspendLayout()
-        Me.GroupBox15.SuspendLayout()
-        Me.TabPage2.SuspendLayout()
-        CType(Me.Chart7, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TabPage3.SuspendLayout()
-        Me.GroupBox13.SuspendLayout()
-        Me.GroupBox8.SuspendLayout()
-        Me.GroupBox9.SuspendLayout()
-        Me.GroupBox10.SuspendLayout()
-        Me.GroupBox11.SuspendLayout()
-        Me.TabPage4.SuspendLayout()
-        Me.GroupBox25.SuspendLayout()
-        Me.GroupBox24.SuspendLayout()
-        Me.GroupBox23.SuspendLayout()
-        Me.GroupBox22.SuspendLayout()
-        Me.GroupBox21.SuspendLayout()
-        Me.GroupBox20.SuspendLayout()
-        Me.GroupBox19.SuspendLayout()
-        Me.GroupBox18.SuspendLayout()
-        Me.GroupBox12.SuspendLayout()
-        Me.TabPage5.SuspendLayout()
-        Me.GroupBox4.SuspendLayout()
-        Me.TabPage6.SuspendLayout()
-        Me.TabPage7.SuspendLayout()
-        Me.GroupBox29.SuspendLayout()
-        CType(Me.txtFanAmarillo, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txtFanVerde, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txtGradosFan, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox28.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox5.SuspendLayout()
-        Me.GroupBox6.SuspendLayout()
-        Me.GroupBox7.SuspendLayout()
-        Me.GroupBox14.SuspendLayout()
-        Me.GroupBox17.SuspendLayout()
-        Me.GroupBox27.SuspendLayout()
-        CType(Me.picFan, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picFanAni, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SuspendLayout()
+        Me.Label133 = New System.Windows.Forms.Label()
+        Me.txtUser = New System.Windows.Forms.TextBox()
+        Me.lblUser = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Chart2, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.GroupBox1.SuspendLayout
+        Me.GroupBox2.SuspendLayout
+        Me.GroupBox3.SuspendLayout
+        Me.gpMes.SuspendLayout
+        CType(Me.Chart5, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Chart3, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Chart4, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Chart6, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.TabControl1.SuspendLayout
+        Me.TabPage1.SuspendLayout
+        Me.GroupBox16.SuspendLayout
+        Me.GroupBox26.SuspendLayout
+        Me.GroupBox15.SuspendLayout
+        Me.TabPage2.SuspendLayout
+        CType(Me.Chart7, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.TabPage3.SuspendLayout
+        Me.GroupBox13.SuspendLayout
+        Me.GroupBox8.SuspendLayout
+        Me.GroupBox9.SuspendLayout
+        Me.GroupBox10.SuspendLayout
+        Me.GroupBox11.SuspendLayout
+        Me.TabPage4.SuspendLayout
+        Me.GroupBox25.SuspendLayout
+        Me.GroupBox24.SuspendLayout
+        Me.GroupBox23.SuspendLayout
+        Me.GroupBox22.SuspendLayout
+        Me.GroupBox21.SuspendLayout
+        Me.GroupBox20.SuspendLayout
+        Me.GroupBox19.SuspendLayout
+        Me.GroupBox18.SuspendLayout
+        Me.GroupBox12.SuspendLayout
+        Me.TabPage5.SuspendLayout
+        Me.GroupBox4.SuspendLayout
+        Me.TabPage6.SuspendLayout
+        Me.TabPage7.SuspendLayout
+        Me.GroupBox29.SuspendLayout
+        CType(Me.txtFanAmarillo, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.txtFanVerde, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.txtGradosFan, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.GroupBox28.SuspendLayout
+        Me.GroupBox5.SuspendLayout
+        Me.GroupBox6.SuspendLayout
+        Me.GroupBox7.SuspendLayout
+        Me.GroupBox14.SuspendLayout
+        Me.GroupBox17.SuspendLayout
+        Me.GroupBox27.SuspendLayout
+        CType(Me.picFan, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.picFanAni, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.SuspendLayout
         '
         'Timer1
         '
@@ -951,7 +955,7 @@ Partial Class Form1
         'Label52
         '
         Me.Label52.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label52.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label52.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label52.Location = New System.Drawing.Point(8, 462)
         Me.Label52.Name = "Label52"
         Me.Label52.Size = New System.Drawing.Size(34, 20)
@@ -962,7 +966,7 @@ Partial Class Form1
         'Label53
         '
         Me.Label53.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label53.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label53.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label53.Location = New System.Drawing.Point(8, 443)
         Me.Label53.Name = "Label53"
         Me.Label53.Size = New System.Drawing.Size(34, 20)
@@ -973,7 +977,7 @@ Partial Class Form1
         'Label54
         '
         Me.Label54.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label54.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label54.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label54.Location = New System.Drawing.Point(8, 424)
         Me.Label54.Name = "Label54"
         Me.Label54.Size = New System.Drawing.Size(34, 20)
@@ -984,7 +988,7 @@ Partial Class Form1
         'Label55
         '
         Me.Label55.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label55.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label55.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label55.Location = New System.Drawing.Point(8, 405)
         Me.Label55.Name = "Label55"
         Me.Label55.Size = New System.Drawing.Size(34, 20)
@@ -995,7 +999,7 @@ Partial Class Form1
         'Label56
         '
         Me.Label56.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label56.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label56.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label56.Location = New System.Drawing.Point(8, 386)
         Me.Label56.Name = "Label56"
         Me.Label56.Size = New System.Drawing.Size(34, 20)
@@ -1006,7 +1010,7 @@ Partial Class Form1
         'Label57
         '
         Me.Label57.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label57.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label57.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label57.Location = New System.Drawing.Point(8, 367)
         Me.Label57.Name = "Label57"
         Me.Label57.Size = New System.Drawing.Size(34, 20)
@@ -1017,7 +1021,7 @@ Partial Class Form1
         'Label58
         '
         Me.Label58.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label58.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label58.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label58.Location = New System.Drawing.Point(8, 348)
         Me.Label58.Name = "Label58"
         Me.Label58.Size = New System.Drawing.Size(34, 20)
@@ -1028,7 +1032,7 @@ Partial Class Form1
         'Label59
         '
         Me.Label59.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label59.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label59.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label59.Location = New System.Drawing.Point(8, 329)
         Me.Label59.Name = "Label59"
         Me.Label59.Size = New System.Drawing.Size(34, 20)
@@ -1039,7 +1043,7 @@ Partial Class Form1
         'Label60
         '
         Me.Label60.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label60.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label60.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label60.Location = New System.Drawing.Point(8, 310)
         Me.Label60.Name = "Label60"
         Me.Label60.Size = New System.Drawing.Size(34, 20)
@@ -1050,7 +1054,7 @@ Partial Class Form1
         'Label61
         '
         Me.Label61.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label61.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label61.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label61.Location = New System.Drawing.Point(8, 291)
         Me.Label61.Name = "Label61"
         Me.Label61.Size = New System.Drawing.Size(34, 20)
@@ -1061,7 +1065,7 @@ Partial Class Form1
         'Label62
         '
         Me.Label62.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label62.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label62.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label62.Location = New System.Drawing.Point(8, 272)
         Me.Label62.Name = "Label62"
         Me.Label62.Size = New System.Drawing.Size(34, 20)
@@ -1072,7 +1076,7 @@ Partial Class Form1
         'Label63
         '
         Me.Label63.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label63.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label63.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label63.Location = New System.Drawing.Point(8, 253)
         Me.Label63.Name = "Label63"
         Me.Label63.Size = New System.Drawing.Size(34, 20)
@@ -1083,7 +1087,7 @@ Partial Class Form1
         'Label64
         '
         Me.Label64.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label64.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label64.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label64.Location = New System.Drawing.Point(8, 234)
         Me.Label64.Name = "Label64"
         Me.Label64.Size = New System.Drawing.Size(34, 20)
@@ -1094,7 +1098,7 @@ Partial Class Form1
         'Label65
         '
         Me.Label65.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label65.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label65.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label65.Location = New System.Drawing.Point(8, 215)
         Me.Label65.Name = "Label65"
         Me.Label65.Size = New System.Drawing.Size(34, 20)
@@ -1105,7 +1109,7 @@ Partial Class Form1
         'Label66
         '
         Me.Label66.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label66.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label66.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label66.Location = New System.Drawing.Point(8, 196)
         Me.Label66.Name = "Label66"
         Me.Label66.Size = New System.Drawing.Size(34, 20)
@@ -1116,7 +1120,7 @@ Partial Class Form1
         'Label67
         '
         Me.Label67.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label67.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label67.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label67.Location = New System.Drawing.Point(8, 177)
         Me.Label67.Name = "Label67"
         Me.Label67.Size = New System.Drawing.Size(34, 20)
@@ -1127,7 +1131,7 @@ Partial Class Form1
         'Label68
         '
         Me.Label68.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label68.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label68.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label68.Location = New System.Drawing.Point(8, 158)
         Me.Label68.Name = "Label68"
         Me.Label68.Size = New System.Drawing.Size(34, 20)
@@ -1138,7 +1142,7 @@ Partial Class Form1
         'Label69
         '
         Me.Label69.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label69.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label69.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label69.Location = New System.Drawing.Point(8, 139)
         Me.Label69.Name = "Label69"
         Me.Label69.Size = New System.Drawing.Size(34, 20)
@@ -1149,7 +1153,7 @@ Partial Class Form1
         'Label70
         '
         Me.Label70.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label70.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label70.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label70.Location = New System.Drawing.Point(8, 120)
         Me.Label70.Name = "Label70"
         Me.Label70.Size = New System.Drawing.Size(34, 20)
@@ -1160,7 +1164,7 @@ Partial Class Form1
         'Label71
         '
         Me.Label71.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label71.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label71.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label71.Location = New System.Drawing.Point(8, 101)
         Me.Label71.Name = "Label71"
         Me.Label71.Size = New System.Drawing.Size(34, 20)
@@ -1171,7 +1175,7 @@ Partial Class Form1
         'Label72
         '
         Me.Label72.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label72.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label72.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label72.Location = New System.Drawing.Point(8, 82)
         Me.Label72.Name = "Label72"
         Me.Label72.Size = New System.Drawing.Size(34, 20)
@@ -1182,7 +1186,7 @@ Partial Class Form1
         'Label73
         '
         Me.Label73.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label73.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label73.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label73.Location = New System.Drawing.Point(8, 63)
         Me.Label73.Name = "Label73"
         Me.Label73.Size = New System.Drawing.Size(34, 20)
@@ -1193,7 +1197,7 @@ Partial Class Form1
         'Label74
         '
         Me.Label74.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label74.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label74.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label74.Location = New System.Drawing.Point(8, 44)
         Me.Label74.Name = "Label74"
         Me.Label74.Size = New System.Drawing.Size(34, 20)
@@ -1204,7 +1208,7 @@ Partial Class Form1
         'Label100
         '
         Me.Label100.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label100.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label100.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label100.Location = New System.Drawing.Point(8, 481)
         Me.Label100.Name = "Label100"
         Me.Label100.Size = New System.Drawing.Size(34, 20)
@@ -1215,7 +1219,7 @@ Partial Class Form1
         'Label103
         '
         Me.Label103.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label103.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label103.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label103.Location = New System.Drawing.Point(8, 500)
         Me.Label103.Name = "Label103"
         Me.Label103.Size = New System.Drawing.Size(34, 20)
@@ -1226,7 +1230,7 @@ Partial Class Form1
         'Label106
         '
         Me.Label106.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label106.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label106.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label106.Location = New System.Drawing.Point(8, 519)
         Me.Label106.Name = "Label106"
         Me.Label106.Size = New System.Drawing.Size(34, 20)
@@ -1237,7 +1241,7 @@ Partial Class Form1
         'Label109
         '
         Me.Label109.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label109.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label109.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label109.Location = New System.Drawing.Point(8, 538)
         Me.Label109.Name = "Label109"
         Me.Label109.Size = New System.Drawing.Size(34, 20)
@@ -1248,7 +1252,7 @@ Partial Class Form1
         'lbl28
         '
         Me.lbl28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lbl28.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl28.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl28.Location = New System.Drawing.Point(8, 557)
         Me.lbl28.Name = "lbl28"
         Me.lbl28.Size = New System.Drawing.Size(34, 20)
@@ -1259,7 +1263,7 @@ Partial Class Form1
         'lbl29
         '
         Me.lbl29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lbl29.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl29.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl29.Location = New System.Drawing.Point(8, 576)
         Me.lbl29.Name = "lbl29"
         Me.lbl29.Size = New System.Drawing.Size(34, 20)
@@ -1270,7 +1274,7 @@ Partial Class Form1
         'lbl30
         '
         Me.lbl30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lbl30.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl30.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl30.Location = New System.Drawing.Point(8, 595)
         Me.lbl30.Name = "lbl30"
         Me.lbl30.Size = New System.Drawing.Size(34, 20)
@@ -1281,7 +1285,7 @@ Partial Class Form1
         'lbl31
         '
         Me.lbl31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lbl31.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl31.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl31.Location = New System.Drawing.Point(8, 614)
         Me.lbl31.Name = "lbl31"
         Me.lbl31.Size = New System.Drawing.Size(34, 20)
@@ -1681,14 +1685,14 @@ Partial Class Form1
         'lblTotalHora
         '
         Me.lblTotalHora.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTotalHora.Font = New System.Drawing.Font("Duco", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTotalHora.ForeColor = System.Drawing.Color.Blue
-        Me.lblTotalHora.Location = New System.Drawing.Point(159, 620)
+        Me.lblTotalHora.Font = New System.Drawing.Font("Duco", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTotalHora.ForeColor = System.Drawing.Color.DarkOrange
+        Me.lblTotalHora.Location = New System.Drawing.Point(223, 620)
         Me.lblTotalHora.Name = "lblTotalHora"
-        Me.lblTotalHora.Size = New System.Drawing.Size(129, 44)
+        Me.lblTotalHora.Size = New System.Drawing.Size(65, 44)
         Me.lblTotalHora.TabIndex = 141
-        Me.lblTotalHora.Text = "00.0000000¬"
-        Me.lblTotalHora.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.lblTotalHora.Text = "00.00¬"
+        Me.lblTotalHora.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label28
         '
@@ -1704,6 +1708,7 @@ Partial Class Form1
         '
         'GroupBox3
         '
+        Me.GroupBox3.Controls.Add(Me.lblPrecioDia)
         Me.GroupBox3.Controls.Add(Me.lblPrecio23)
         Me.GroupBox3.Controls.Add(Me.lblHoraDiferencia23)
         Me.GroupBox3.Controls.Add(Me.lblHoraDiferencia19)
@@ -1813,6 +1818,18 @@ Partial Class Form1
         Me.GroupBox3.TabIndex = 143
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Balance Hour"
+        '
+        'lblPrecioDia
+        '
+        Me.lblPrecioDia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioDia.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MediaPrecioDia", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblPrecioDia.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrecioDia.Location = New System.Drawing.Point(159, 620)
+        Me.lblPrecioDia.Name = "lblPrecioDia"
+        Me.lblPrecioDia.Size = New System.Drawing.Size(65, 44)
+        Me.lblPrecioDia.TabIndex = 58
+        Me.lblPrecioDia.Text = Global.EstadisticasDucos.My.MySettings.Default.MediaPrecioDia
+        Me.lblPrecioDia.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblPrecio23
         '
@@ -2795,7 +2812,7 @@ Partial Class Form1
         '
         Me.lblTotalMes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblTotalMes.Font = New System.Drawing.Font("Duco", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTotalMes.ForeColor = System.Drawing.Color.Blue
+        Me.lblTotalMes.ForeColor = System.Drawing.Color.DarkOrange
         Me.lblTotalMes.Location = New System.Drawing.Point(299, 633)
         Me.lblTotalMes.Name = "lblTotalMes"
         Me.lblTotalMes.Size = New System.Drawing.Size(100, 31)
@@ -2809,7 +2826,7 @@ Partial Class Form1
         Me.lblMesDaily.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblMesDaily.Location = New System.Drawing.Point(8, 633)
         Me.lblMesDaily.Name = "lblMesDaily"
-        Me.lblMesDaily.Size = New System.Drawing.Size(211, 31)
+        Me.lblMesDaily.Size = New System.Drawing.Size(146, 31)
         Me.lblMesDaily.TabIndex = 144
         Me.lblMesDaily.Text = "Monthly Total:"
         Me.lblMesDaily.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -2918,6 +2935,7 @@ Partial Class Form1
         Me.gpMes.Controls.Add(Me.lblMesBalance29)
         Me.gpMes.Controls.Add(Me.Label69)
         Me.gpMes.Controls.Add(Me.lblMesBalance30)
+        Me.gpMes.Controls.Add(Me.lblPrecioMes)
         Me.gpMes.Controls.Add(Me.lblMesPrecio31)
         Me.gpMes.Controls.Add(Me.Label68)
         Me.gpMes.Controls.Add(Me.lblMesPrecio30)
@@ -3736,6 +3754,18 @@ Partial Class Form1
         Me.lblMesBalance30.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance30
         Me.lblMesBalance30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'lblPrecioMes
+        '
+        Me.lblPrecioMes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioMes.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "PrecioMedioMes", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblPrecioMes.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrecioMes.Location = New System.Drawing.Point(153, 633)
+        Me.lblPrecioMes.Name = "lblPrecioMes"
+        Me.lblPrecioMes.Size = New System.Drawing.Size(66, 31)
+        Me.lblPrecioMes.TabIndex = 130
+        Me.lblPrecioMes.Text = Global.EstadisticasDucos.My.MySettings.Default.PrecioMedioMes
+        Me.lblPrecioMes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'lblMesPrecio31
         '
         Me.lblMesPrecio31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
@@ -3762,6 +3792,7 @@ Partial Class Form1
         '
         'lblMesBalance31
         '
+        Me.lblMesBalance31.BackColor = System.Drawing.Color.White
         Me.lblMesBalance31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblMesBalance31.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance31", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.lblMesBalance31.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -4560,13 +4591,13 @@ Partial Class Form1
         Me.Label135.Name = "Label135"
         Me.Label135.Size = New System.Drawing.Size(53, 23)
         Me.Label135.TabIndex = 248
-        Me.Label135.Text = "Month"
+        Me.Label135.Text = "Years"
         Me.Label135.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblAño2021
         '
         Me.lblAño2021.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblAño2021.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAño2021.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblAño2021.Location = New System.Drawing.Point(6, 47)
         Me.lblAño2021.Name = "lblAño2021"
         Me.lblAño2021.Size = New System.Drawing.Size(53, 25)
@@ -4577,7 +4608,7 @@ Partial Class Form1
         'Label137
         '
         Me.Label137.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label137.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label137.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label137.Location = New System.Drawing.Point(6, 71)
         Me.Label137.Name = "Label137"
         Me.Label137.Size = New System.Drawing.Size(53, 25)
@@ -4588,7 +4619,7 @@ Partial Class Form1
         'Label138
         '
         Me.Label138.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label138.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label138.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label138.Location = New System.Drawing.Point(6, 95)
         Me.Label138.Name = "Label138"
         Me.Label138.Size = New System.Drawing.Size(53, 25)
@@ -5097,7 +5128,7 @@ Partial Class Form1
         'Label143
         '
         Me.Label143.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label143.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label143.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label143.Location = New System.Drawing.Point(6, 44)
         Me.Label143.Name = "Label143"
         Me.Label143.Size = New System.Drawing.Size(53, 25)
@@ -5108,7 +5139,7 @@ Partial Class Form1
         'Label144
         '
         Me.Label144.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label144.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label144.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label144.Location = New System.Drawing.Point(6, 68)
         Me.Label144.Name = "Label144"
         Me.Label144.Size = New System.Drawing.Size(53, 25)
@@ -5119,7 +5150,7 @@ Partial Class Form1
         'Label145
         '
         Me.Label145.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label145.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label145.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label145.Location = New System.Drawing.Point(6, 92)
         Me.Label145.Name = "Label145"
         Me.Label145.Size = New System.Drawing.Size(53, 25)
@@ -5130,7 +5161,7 @@ Partial Class Form1
         'Label146
         '
         Me.Label146.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label146.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label146.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label146.Location = New System.Drawing.Point(6, 116)
         Me.Label146.Name = "Label146"
         Me.Label146.Size = New System.Drawing.Size(53, 25)
@@ -5141,7 +5172,7 @@ Partial Class Form1
         'Label147
         '
         Me.Label147.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label147.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label147.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label147.Location = New System.Drawing.Point(6, 140)
         Me.Label147.Name = "Label147"
         Me.Label147.Size = New System.Drawing.Size(53, 25)
@@ -5152,7 +5183,7 @@ Partial Class Form1
         'Label148
         '
         Me.Label148.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label148.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label148.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label148.Location = New System.Drawing.Point(6, 164)
         Me.Label148.Name = "Label148"
         Me.Label148.Size = New System.Drawing.Size(53, 25)
@@ -5163,7 +5194,7 @@ Partial Class Form1
         'Label149
         '
         Me.Label149.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label149.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label149.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label149.Location = New System.Drawing.Point(6, 188)
         Me.Label149.Name = "Label149"
         Me.Label149.Size = New System.Drawing.Size(53, 25)
@@ -5174,7 +5205,7 @@ Partial Class Form1
         'Label150
         '
         Me.Label150.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label150.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label150.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label150.Location = New System.Drawing.Point(6, 212)
         Me.Label150.Name = "Label150"
         Me.Label150.Size = New System.Drawing.Size(53, 25)
@@ -5185,7 +5216,7 @@ Partial Class Form1
         'Label151
         '
         Me.Label151.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label151.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label151.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label151.Location = New System.Drawing.Point(6, 236)
         Me.Label151.Name = "Label151"
         Me.Label151.Size = New System.Drawing.Size(53, 25)
@@ -5196,7 +5227,7 @@ Partial Class Form1
         'Label152
         '
         Me.Label152.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label152.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label152.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label152.Location = New System.Drawing.Point(6, 260)
         Me.Label152.Name = "Label152"
         Me.Label152.Size = New System.Drawing.Size(53, 25)
@@ -5207,7 +5238,7 @@ Partial Class Form1
         'Label153
         '
         Me.Label153.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label153.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label153.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label153.Location = New System.Drawing.Point(6, 284)
         Me.Label153.Name = "Label153"
         Me.Label153.Size = New System.Drawing.Size(53, 25)
@@ -5218,7 +5249,7 @@ Partial Class Form1
         'Label154
         '
         Me.Label154.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label154.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label154.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label154.Location = New System.Drawing.Point(6, 308)
         Me.Label154.Name = "Label154"
         Me.Label154.Size = New System.Drawing.Size(53, 25)
@@ -7008,7 +7039,7 @@ Partial Class Form1
         'GroupBox28
         '
         Me.GroupBox28.Controls.Add(Me.PictureBox1)
-        Me.GroupBox28.Controls.Add(Me.txtUser)
+        Me.GroupBox28.Controls.Add(Me.lblUser)
         Me.GroupBox28.Controls.Add(Me.Label122)
         Me.GroupBox28.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox28.Location = New System.Drawing.Point(12, 12)
@@ -7017,29 +7048,6 @@ Partial Class Form1
         Me.GroupBox28.TabIndex = 156
         Me.GroupBox28.TabStop = False
         Me.GroupBox28.Text = "User"
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox1.Image = Global.EstadisticasDucos.My.Resources.Resources.png_transparent_computer_icons_blog_change_angle_text_logo
-        Me.PictureBox1.Location = New System.Drawing.Point(262, 30)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(32, 23)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 158
-        Me.PictureBox1.TabStop = False
-        '
-        'txtUser
-        '
-        Me.txtUser.BackColor = System.Drawing.Color.White
-        Me.txtUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtUser.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "User", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.txtUser.Location = New System.Drawing.Point(158, 30)
-        Me.txtUser.Name = "txtUser"
-        Me.txtUser.Size = New System.Drawing.Size(98, 23)
-        Me.txtUser.TabIndex = 1
-        Me.txtUser.Text = Global.EstadisticasDucos.My.MySettings.Default.User
         '
         'Label122
         '
@@ -7154,6 +7162,7 @@ Partial Class Form1
         '
         Me.Label41.AutoSize = True
         Me.Label41.Font = New System.Drawing.Font("Duco", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label41.ForeColor = System.Drawing.Color.DarkOrange
         Me.Label41.Location = New System.Drawing.Point(110, 66)
         Me.Label41.Name = "Label41"
         Me.Label41.Size = New System.Drawing.Size(23, 20)
@@ -7163,6 +7172,7 @@ Partial Class Form1
         'lblEstimadoMes
         '
         Me.lblEstimadoMes.Font = New System.Drawing.Font("Digital Display", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEstimadoMes.ForeColor = System.Drawing.Color.DarkOrange
         Me.lblEstimadoMes.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.lblEstimadoMes.Location = New System.Drawing.Point(2, 54)
         Me.lblEstimadoMes.Name = "lblEstimadoMes"
@@ -7185,6 +7195,7 @@ Partial Class Form1
         '
         Me.Label37.AutoSize = True
         Me.Label37.Font = New System.Drawing.Font("Duco", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label37.ForeColor = System.Drawing.Color.DarkOrange
         Me.Label37.Location = New System.Drawing.Point(110, 33)
         Me.Label37.Name = "Label37"
         Me.Label37.Size = New System.Drawing.Size(23, 20)
@@ -7194,6 +7205,7 @@ Partial Class Form1
         'lblEstimado
         '
         Me.lblEstimado.Font = New System.Drawing.Font("Digital Display", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEstimado.ForeColor = System.Drawing.Color.DarkOrange
         Me.lblEstimado.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.lblEstimado.Location = New System.Drawing.Point(2, 22)
         Me.lblEstimado.Name = "lblEstimado"
@@ -7281,6 +7293,7 @@ Partial Class Form1
         'lblHases
         '
         Me.lblHases.Font = New System.Drawing.Font("Digital Display", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHases.ForeColor = System.Drawing.Color.RoyalBlue
         Me.lblHases.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.lblHases.Location = New System.Drawing.Point(110, 64)
         Me.lblHases.Name = "lblHases"
@@ -7293,6 +7306,7 @@ Partial Class Form1
         '
         Me.lblHaseEstiquta.AutoSize = True
         Me.lblHaseEstiquta.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHaseEstiquta.ForeColor = System.Drawing.Color.RoyalBlue
         Me.lblHaseEstiquta.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.lblHaseEstiquta.Location = New System.Drawing.Point(196, 69)
         Me.lblHaseEstiquta.Name = "lblHaseEstiquta"
@@ -7325,7 +7339,7 @@ Partial Class Form1
         Me.lblEtiquetaDucoRecompensa.AutoSize = True
         Me.lblEtiquetaDucoRecompensa.Font = New System.Drawing.Font("Duco", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblEtiquetaDucoRecompensa.ForeColor = System.Drawing.Color.DarkOrange
-        Me.lblEtiquetaDucoRecompensa.Location = New System.Drawing.Point(194, 79)
+        Me.lblEtiquetaDucoRecompensa.Location = New System.Drawing.Point(188, 79)
         Me.lblEtiquetaDucoRecompensa.Name = "lblEtiquetaDucoRecompensa"
         Me.lblEtiquetaDucoRecompensa.Size = New System.Drawing.Size(23, 20)
         Me.lblEtiquetaDucoRecompensa.TabIndex = 142
@@ -7354,17 +7368,6 @@ Partial Class Form1
         Me.Label127.TabIndex = 141
         Me.Label127.Text = "Est. reward:"
         Me.Label127.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'lblDucoDeposito
-        '
-        Me.lblDucoDeposito.AutoSize = True
-        Me.lblDucoDeposito.Font = New System.Drawing.Font("Duco", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDucoDeposito.ForeColor = System.Drawing.Color.DarkOrange
-        Me.lblDucoDeposito.Location = New System.Drawing.Point(157, 28)
-        Me.lblDucoDeposito.Name = "lblDucoDeposito"
-        Me.lblDucoDeposito.Size = New System.Drawing.Size(23, 20)
-        Me.lblDucoDeposito.TabIndex = 139
-        Me.lblDucoDeposito.Text = "¬"
         '
         'lblDeposito
         '
@@ -7424,6 +7427,17 @@ Partial Class Form1
         Me.Label174.Text = "Staking:"
         Me.Label174.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'lblDucoDeposito
+        '
+        Me.lblDucoDeposito.AutoSize = True
+        Me.lblDucoDeposito.Font = New System.Drawing.Font("Duco", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDucoDeposito.ForeColor = System.Drawing.Color.DarkOrange
+        Me.lblDucoDeposito.Location = New System.Drawing.Point(157, 28)
+        Me.lblDucoDeposito.Name = "lblDucoDeposito"
+        Me.lblDucoDeposito.Size = New System.Drawing.Size(23, 20)
+        Me.lblDucoDeposito.TabIndex = 139
+        Me.lblDucoDeposito.Text = "¬"
+        '
         'GroupBox27
         '
         Me.GroupBox27.Controls.Add(Me.lblHumedad)
@@ -7441,6 +7455,7 @@ Partial Class Form1
         'lblHumedad
         '
         Me.lblHumedad.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHumedad.ForeColor = System.Drawing.Color.Blue
         Me.lblHumedad.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.lblHumedad.Location = New System.Drawing.Point(75, 18)
         Me.lblHumedad.Name = "lblHumedad"
@@ -7492,12 +7507,56 @@ Partial Class Form1
         Me.lblReinicioApp.TabIndex = 154
         Me.lblReinicioApp.Text = Global.EstadisticasDucos.My.MySettings.Default.Reinicios
         '
+        'Label133
+        '
+        Me.Label133.AutoSize = True
+        Me.Label133.Location = New System.Drawing.Point(473, 738)
+        Me.Label133.Name = "Label133"
+        Me.Label133.Size = New System.Drawing.Size(51, 13)
+        Me.Label133.TabIndex = 156
+        Me.Label133.Text = "Label133"
+        '
+        'txtUser
+        '
+        Me.txtUser.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "User", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.txtUser.Location = New System.Drawing.Point(200, 730)
+        Me.txtUser.Name = "txtUser"
+        Me.txtUser.ReadOnly = True
+        Me.txtUser.Size = New System.Drawing.Size(125, 20)
+        Me.txtUser.TabIndex = 10000
+        Me.txtUser.TabStop = False
+        Me.txtUser.Text = Global.EstadisticasDucos.My.MySettings.Default.User
+        '
+        'lblUser
+        '
+        Me.lblUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblUser.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "User", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblUser.Location = New System.Drawing.Point(147, 26)
+        Me.lblUser.Name = "lblUser"
+        Me.lblUser.Size = New System.Drawing.Size(98, 31)
+        Me.lblUser.TabIndex = 1
+        Me.lblUser.Text = Global.EstadisticasDucos.My.MySettings.Default.User
+        Me.lblUser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBox1.Image = Global.EstadisticasDucos.My.Resources.Resources.png_transparent_computer_icons_blog_change_angle_text_logo
+        Me.PictureBox1.Location = New System.Drawing.Point(251, 26)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(43, 31)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 2
+        Me.PictureBox1.TabStop = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1367, 742)
+        Me.ClientSize = New System.Drawing.Size(1367, 763)
+        Me.Controls.Add(Me.txtUser)
+        Me.Controls.Add(Me.Label133)
         Me.Controls.Add(Me.GroupBox27)
         Me.Controls.Add(Me.lblReinicioApp)
         Me.Controls.Add(Me.GroupBox17)
@@ -7516,79 +7575,79 @@ Partial Class Form1
         Me.Name = "Form1"
         Me.Text = "Ducos Statistics v0.5"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        CType(Me.Chart1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Chart2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Chart1, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Chart2, System.ComponentModel.ISupportInitialize).EndInit
         Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
+        Me.GroupBox1.PerformLayout
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox3.ResumeLayout(False)
         Me.gpMes.ResumeLayout(False)
-        CType(Me.Chart5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Chart3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Chart4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Chart6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Chart5, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Chart3, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Chart4, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Chart6, System.ComponentModel.ISupportInitialize).EndInit
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.GroupBox16.ResumeLayout(False)
         Me.GroupBox26.ResumeLayout(False)
-        Me.GroupBox26.PerformLayout()
+        Me.GroupBox26.PerformLayout
         Me.GroupBox15.ResumeLayout(False)
         Me.TabPage2.ResumeLayout(False)
-        CType(Me.Chart7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Chart7, System.ComponentModel.ISupportInitialize).EndInit
         Me.TabPage3.ResumeLayout(False)
         Me.GroupBox13.ResumeLayout(False)
         Me.GroupBox8.ResumeLayout(False)
-        Me.GroupBox8.PerformLayout()
+        Me.GroupBox8.PerformLayout
         Me.GroupBox9.ResumeLayout(False)
-        Me.GroupBox9.PerformLayout()
+        Me.GroupBox9.PerformLayout
         Me.GroupBox10.ResumeLayout(False)
-        Me.GroupBox10.PerformLayout()
+        Me.GroupBox10.PerformLayout
         Me.GroupBox11.ResumeLayout(False)
-        Me.GroupBox11.PerformLayout()
+        Me.GroupBox11.PerformLayout
         Me.TabPage4.ResumeLayout(False)
         Me.GroupBox25.ResumeLayout(False)
-        Me.GroupBox25.PerformLayout()
+        Me.GroupBox25.PerformLayout
         Me.GroupBox24.ResumeLayout(False)
-        Me.GroupBox24.PerformLayout()
+        Me.GroupBox24.PerformLayout
         Me.GroupBox23.ResumeLayout(False)
-        Me.GroupBox23.PerformLayout()
+        Me.GroupBox23.PerformLayout
         Me.GroupBox22.ResumeLayout(False)
-        Me.GroupBox22.PerformLayout()
+        Me.GroupBox22.PerformLayout
         Me.GroupBox21.ResumeLayout(False)
-        Me.GroupBox21.PerformLayout()
+        Me.GroupBox21.PerformLayout
         Me.GroupBox20.ResumeLayout(False)
-        Me.GroupBox20.PerformLayout()
+        Me.GroupBox20.PerformLayout
         Me.GroupBox19.ResumeLayout(False)
-        Me.GroupBox19.PerformLayout()
+        Me.GroupBox19.PerformLayout
         Me.GroupBox18.ResumeLayout(False)
-        Me.GroupBox18.PerformLayout()
+        Me.GroupBox18.PerformLayout
         Me.GroupBox12.ResumeLayout(False)
         Me.TabPage5.ResumeLayout(False)
         Me.GroupBox4.ResumeLayout(False)
         Me.TabPage6.ResumeLayout(False)
-        Me.TabPage6.PerformLayout()
+        Me.TabPage6.PerformLayout
         Me.TabPage7.ResumeLayout(False)
         Me.GroupBox29.ResumeLayout(False)
-        Me.GroupBox29.PerformLayout()
-        CType(Me.txtFanAmarillo, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txtFanVerde, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txtGradosFan, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox29.PerformLayout
+        CType(Me.txtFanAmarillo, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.txtFanVerde, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.txtGradosFan, System.ComponentModel.ISupportInitialize).EndInit
         Me.GroupBox28.ResumeLayout(False)
-        Me.GroupBox28.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox28.PerformLayout
         Me.GroupBox5.ResumeLayout(False)
         Me.GroupBox6.ResumeLayout(False)
         Me.GroupBox7.ResumeLayout(False)
-        Me.GroupBox7.PerformLayout()
+        Me.GroupBox7.PerformLayout
         Me.GroupBox14.ResumeLayout(False)
-        Me.GroupBox14.PerformLayout()
+        Me.GroupBox14.PerformLayout
         Me.GroupBox17.ResumeLayout(False)
-        Me.GroupBox17.PerformLayout()
+        Me.GroupBox17.PerformLayout
         Me.GroupBox27.ResumeLayout(False)
-        CType(Me.picFan, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picFanAni, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picFan, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.picFanAni, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit
         Me.ResumeLayout(False)
-        Me.PerformLayout()
+        Me.PerformLayout
 
     End Sub
     Friend WithEvents Timer1 As Timer
@@ -8148,12 +8207,16 @@ Partial Class Form1
     Friend WithEvents GroupBox29 As GroupBox
     Friend WithEvents txtGradosFan As NumericUpDown
     Friend WithEvents Label123 As Label
-    Friend WithEvents txtUser As Label
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents txtFanAmarillo As NumericUpDown
     Friend WithEvents Label131 As Label
     Friend WithEvents txtFanVerde As NumericUpDown
     Friend WithEvents Label129 As Label
     Friend WithEvents Chart7 As DataVisualization.Charting.Chart
     Friend WithEvents lblTiempoRestante As Label
+    Friend WithEvents lblPrecioDia As Label
+    Friend WithEvents lblPrecioMes As Label
+    Friend WithEvents Label133 As Label
+    Friend WithEvents txtUser As TextBox
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents lblUser As Label
 End Class

@@ -254,64 +254,75 @@ Public Class Form1
         intSecs = Timestamp Mod 60
         UnixTimeToDate = DateSerial(1970, 1, intDays + 1) & " " & TimeSerial(intHours, intMins, intSecs)
     End Function
+    Function sTiempo(dInicio As Date, dFin As Date) As String
+        sTiempo = Str((DateDiff("s", dInicio, dFin) \ 86400) Mod 365) & " days, "
+        Dim THora As String
+
+        THora = Str((DateDiff("s", dInicio, dFin) \ 3600) Mod 24) & ":"
+        THora &= Str((DateDiff("s", dInicio, dFin) \ 60) Mod 60) '& ":"
+        '  THora = THora & Str(DateDiff("s", dInicio, dFin) Mod 60)
+        sTiempo &= Format(CDate(THora), "hh:mm") & "h."
+    End Function
+
     Private Sub Actualizar()
         Try
             Dim uriString3 As String = "http://www.floatrates.com/daily/eur.json"
             Dim uri3 As New Uri(uriString3)
-                Dim Request3 As HttpWebRequest = HttpWebRequest.Create(uri3)
-                Request3.Method = "GET"
-                Dim Response3 As HttpWebResponse = Request3.GetResponse()
-                Dim Read3 = New StreamReader(Response3.GetResponseStream())
-                Dim Raw3 As String = Read3.ReadToEnd()
-                Dim dict3 As Object = New JavaScriptSerializer().Deserialize(Of Dictionary(Of String, Object))(Raw3)
-                Dim HasesUsuario As Integer = 0
-                Dim uriString2 As String = "https://server.duinocoin.com/users/" & txtUser.Text & "?limit=5000"
-                Dim uri2 As New Uri(uriString2)
-                Dim Request2 As HttpWebRequest = HttpWebRequest.Create(uri2)
-                Request2.Method = "GET"
-                Dim Response2 As HttpWebResponse = Request2.GetResponse()
-                Dim Read2 = New StreamReader(Response2.GetResponseStream())
-                Dim Raw2 As String = Read2.ReadToEnd()
-                Dim dict2 As Object = New JavaScriptSerializer().Deserialize(Of Dictionary(Of String, Object))(Raw2)
-                Dict2Public = dict2
-                Dim uriString As String = "https://server.duinocoin.com/api.json"
-                Dim uri As New Uri(uriString)
-                Dim Request As HttpWebRequest = HttpWebRequest.Create(uri)
-                Request.Method = "GET"
-                Dim Response As HttpWebResponse = Request.GetResponse()
-                Dim Read = New StreamReader(Response.GetResponseStream())
-                Dim Raw As String = Read.ReadToEnd()
-                Dim dict As Object = New JavaScriptSerializer().Deserialize(Of Dictionary(Of String, Object))(Raw)
-                Euro = CDec(dict3.item("usd").item("rate"))
-                Dim Deposito As Integer = dict2.item("result").item("balance").item("stake_amount")
-                Dim FechafinDeposito As Integer = dict2.item("result").item("balance").item("stake_date")
-                lblDeposito.Text = Deposito
-                lblDucoDeposito.Left = lblDeposito.Left + lblDeposito.Width - 5
-                lblFechaFinDeposito.Text = UnixTimeToDate(FechafinDeposito)
-                lblRecompensa.Text = Format(Deposito * (1.5 / 100), "#0.00")
-                lblEtiquetaDucoRecompensa.Left = lblRecompensa.Left + lblRecompensa.Width - 5
-                txtDucoprice.Text = CDec(dict.item("Duco price"))
-                txtbalance.Text = FormatDuco(dict2.item("result").item("balance").item("balance"), 17)
-                EstimadoNuevo = txtbalance.Text
-                If EstimadoViejo = 0 Then
-                    EstimadoViejo = EstimadoNuevo
-                Else
-                    ValorEstimado = (EstimadoNuevo - EstimadoViejo) * (86400 / 30)
-                    ValorEstimadoMes = (EstimadoNuevo - EstimadoViejo) * 86400
-                    EstimadoViejo = EstimadoNuevo
-                End If
-                lblEstimado.Text = Format(ValorEstimado, "###0.00")
-                lblEstimadoDetalle.Text = "daily (≈" & Format(ValorEstimado * CDec(txtDucoprice.Text), "0.000") & ")"
-                lblEstimadoMes.Text = Format(ValorEstimadoMes, "###0.00")
-                lblEstimadoMesDetalle.Text = "monthly (≈" & Format(ValorEstimadoMes * CDec(txtDucoprice.Text), "0.000") & ")"
-                Dim Segundoss As String = Segundos
-                If ValorEstimado > 0 Then
-                    Select Case Segundos
-                        Case "01" : Segundoss = "00"
-                        Case "02" : Segundoss = "00"
-                        Case "31" : Segundoss = "30"
-                        Case "32" : Segundoss = "30"
-                    End Select
+            Dim Request3 As HttpWebRequest = HttpWebRequest.Create(uri3)
+            Request3.Method = "GET"
+            Dim Response3 As HttpWebResponse = Request3.GetResponse()
+            Dim Read3 = New StreamReader(Response3.GetResponseStream())
+            Dim Raw3 As String = Read3.ReadToEnd()
+            Dim dict3 As Object = New JavaScriptSerializer().Deserialize(Of Dictionary(Of String, Object))(Raw3)
+            Dim HasesUsuario As Integer = 0
+            Dim uriString2 As String = "https://server.duinocoin.com/users/" & txtUser.Text & "?limit=5000"
+            Dim uri2 As New Uri(uriString2)
+            Dim Request2 As HttpWebRequest = HttpWebRequest.Create(uri2)
+            Request2.Method = "GET"
+            Dim Response2 As HttpWebResponse = Request2.GetResponse()
+            Dim Read2 = New StreamReader(Response2.GetResponseStream())
+            Dim Raw2 As String = Read2.ReadToEnd()
+            Dim dict2 As Object = New JavaScriptSerializer().Deserialize(Of Dictionary(Of String, Object))(Raw2)
+            Dict2Public = dict2
+            Dim uriString As String = "https://server.duinocoin.com/api.json"
+            Dim uri As New Uri(uriString)
+            Dim Request As HttpWebRequest = HttpWebRequest.Create(uri)
+            Request.Method = "GET"
+            Dim Response As HttpWebResponse = Request.GetResponse()
+            Dim Read = New StreamReader(Response.GetResponseStream())
+            Dim Raw As String = Read.ReadToEnd()
+            Dim dict As Object = New JavaScriptSerializer().Deserialize(Of Dictionary(Of String, Object))(Raw)
+            Euro = CDec(dict3.item("usd").item("rate"))
+            Dim Deposito As Integer = dict2.item("result").item("balance").item("stake_amount")
+            Dim FechafinDeposito As Integer = dict2.item("result").item("balance").item("stake_date")
+            lblDeposito.Text = Deposito
+            lblDucoDeposito.Left = lblDeposito.Left + lblDeposito.Width - 5
+            lblFechaFinDeposito.Text = UnixTimeToDate(FechafinDeposito)
+            lblTiempoRestante.Text = "Time Left:" & sTiempo(Now, lblFechaFinDeposito.Text)
+            lblRecompensa.Text = Format(Deposito * (1.5 / 100), "#0.00")
+            lblEtiquetaDucoRecompensa.Left = lblRecompensa.Left + lblRecompensa.Width - 5
+            txtDucoprice.Text = CDec(dict.item("Duco price"))
+            txtbalance.Text = FormatDuco(dict2.item("result").item("balance").item("balance"), 17)
+            EstimadoNuevo = txtbalance.Text
+            If EstimadoViejo = 0 Then
+                EstimadoViejo = EstimadoNuevo
+            Else
+                ValorEstimado = (EstimadoNuevo - EstimadoViejo) * (86400 / 30)
+                ValorEstimadoMes = (EstimadoNuevo - EstimadoViejo) * 86400
+                EstimadoViejo = EstimadoNuevo
+            End If
+            lblEstimado.Text = Format(ValorEstimado, "###0.00")
+            lblEstimadoDetalle.Text = "daily (≈" & Format(ValorEstimado * CDec(txtDucoprice.Text), "0.000") & ")"
+            lblEstimadoMes.Text = Format(ValorEstimadoMes, "###0.00")
+            lblEstimadoMesDetalle.Text = "monthly (≈" & Format(ValorEstimadoMes * CDec(txtDucoprice.Text), "0.000") & ")"
+            Dim Segundoss As String = Segundos
+            If ValorEstimado > 0 Then
+                Select Case Segundos
+                    Case "01" : Segundoss = "00"
+                    Case "02" : Segundoss = "00"
+                    Case "31" : Segundoss = "30"
+                    Case "32" : Segundoss = "30"
+                End Select
                 If Segundos <= 9 Then
                     If Minutos <= 9 Then
                         Chart6.Series(0).Points.AddXY(Hora & ":0" & Minutos & ":0" & Segundoss, CDec(Format(ValorEstimado, "###0.00")))
@@ -335,17 +346,17 @@ Public Class Form1
                 End If
             End If
             Chart6.ChartAreas(0).RecalculateAxesScale()
-                lblValorEuro.Text = Euro & "€"
-                lblGanado.Text = Format(CDec(txtbalance.Text) * CDec(txtDucoprice.Text) * Euro, "###0.0000")
-                lblGanadoDolar.Text = Format(CDec(txtbalance.Text) * CDec(txtDucoprice.Text), "###0.0000")
-                lstBalanceTiempoReal.Items.Add(txtbalance.Text)
-                lstDUCOTiempoReal.Items.Add(txtDucoprice.Text)
-                ContadorRemove += 1
-                If ContadorRemove > Remover Then
-                    lstBalanceTiempoReal.Items.RemoveAt(0)
-                    lstDUCOTiempoReal.Items.RemoveAt(0)
-                End If
-                ContaTransa = CInt(dict2.item("result").item("transactions").Count) - 1
+            lblValorEuro.Text = Euro & "€"
+            lblGanado.Text = Format(CDec(txtbalance.Text) * CDec(txtDucoprice.Text) * Euro, "###0.0000")
+            lblGanadoDolar.Text = Format(CDec(txtbalance.Text) * CDec(txtDucoprice.Text), "###0.0000")
+            lstBalanceTiempoReal.Items.Add(txtbalance.Text)
+            lstDUCOTiempoReal.Items.Add(txtDucoprice.Text)
+            ContadorRemove += 1
+            If ContadorRemove > Remover Then
+                lstBalanceTiempoReal.Items.RemoveAt(0)
+                lstDUCOTiempoReal.Items.RemoveAt(0)
+            End If
+            ContaTransa = CInt(dict2.item("result").item("transactions").Count) - 1
             If ContaTransa > 1 Then
                 TreeView1.Nodes.Clear()
                 Dim Mesis As String = DateAndTime.Month(Now)
@@ -441,52 +452,52 @@ Public Class Form1
                 If lblTransacionMes31.Text <> 0 Then lblTransacionMes31.Text = lblTransacionMes31.Text & "(" & TransacionPorDia(31) & ")"
             End If
             TreeView2.Sorted = False
-                Dim Contador As Integer = dict2.item("result").item("miners").Count
-                ReDim Mineros(Contador, 8)
-                TreeView2.Nodes.Clear()
-                txtMinerosHArduino.Text = 0
-                txtMinerosHCPU.Text = 0
-                txtMinerosHEsp8266.Text = 0
-                txtMinerosHEsp32.Text = 0
-                txtMinerosHotros.Text = 0
-                txtMinerosHPhone.Text = 0
-                txtMinerosHRPI.Text = 0
-                txtMinerosHWeb.Text = 0
-                txtMinerosNArduino.Text = 0
-                txtMinerosNCPU.Text = 0
-                txtMinerosNEsp8266.Text = 0
-                txtMinerosNEsp32.Text = 0
-                txtMinerosNotros.Text = 0
-                txtMinerosNPhone.Text = 0
-                txtMinerosNRPI.Text = 0
-                txtMinerosNWeb.Text = 0
-                TreeView2.Nodes.Add("Mineros" & " (" & Contador & ")")
-                For T As Integer = 0 To Contador - 1
-                    Mineros(T, 0) = dict2.item("result").item("miners").item(T).item("identifier") & " (" & CalcularHases(dict2.item("result").item("miners").item(T).item("hashrate")) & ")"
-                    Mineros(T, 1) = "Accepted: " & dict2.item("result").item("miners").item(T).item("accepted")
-                    Mineros(T, 2) = "Algorithm: " & dict2.item("result").item("miners").item(T).item("algorithm")
-                    Mineros(T, 3) = "Diff: " & dict2.item("result").item("miners").item(T).item("diff")
-                    Mineros(T, 4) = "Hashrate: " & CalcularHases(dict2.item("result").item("miners").item(T).item("hashrate"))
-                    HasesUsuario += dict2.item("result").item("miners").item(T).item("hashrate")
-                    Mineros(T, 5) = "Pool: " & dict2.item("result").item("miners").item(T).item("pool")
-                    Mineros(T, 6) = "Rejected: " & dict2.item("result").item("miners").item(T).item("rejected")
-                    Mineros(T, 7) = "Soft.: " & dict2.item("result").item("miners").item(T).item("software")
-                    Dim Tmp As String = dict2.item("result").item("miners").item(T).item("it")
-                    If Tmp <> "" Then
-                        Mineros(T, 8) = "Temperature - Humidity : " & Mid(Tmp, 1, 2) & "° - " & Mid(Tmp, 4) & "%"
-                        TreeView2.Nodes(0).Nodes.Add(Mineros(T, 0) & " [IOT]")
-                    Else
-                        TreeView2.Nodes(0).Nodes.Add(Mineros(T, 0))
-                    End If
+            Dim Contador As Integer = dict2.item("result").item("miners").Count
+            ReDim Mineros(Contador, 8)
+            TreeView2.Nodes.Clear()
+            txtMinerosHArduino.Text = 0
+            txtMinerosHCPU.Text = 0
+            txtMinerosHEsp8266.Text = 0
+            txtMinerosHEsp32.Text = 0
+            txtMinerosHotros.Text = 0
+            txtMinerosHPhone.Text = 0
+            txtMinerosHRPI.Text = 0
+            txtMinerosHWeb.Text = 0
+            txtMinerosNArduino.Text = 0
+            txtMinerosNCPU.Text = 0
+            txtMinerosNEsp8266.Text = 0
+            txtMinerosNEsp32.Text = 0
+            txtMinerosNotros.Text = 0
+            txtMinerosNPhone.Text = 0
+            txtMinerosNRPI.Text = 0
+            txtMinerosNWeb.Text = 0
+            TreeView2.Nodes.Add("Mineros" & " (" & Contador & ")")
+            For T As Integer = 0 To Contador - 1
+                Mineros(T, 0) = dict2.item("result").item("miners").item(T).item("identifier") & " (" & CalcularHases(dict2.item("result").item("miners").item(T).item("hashrate")) & ")"
+                Mineros(T, 1) = "Accepted: " & dict2.item("result").item("miners").item(T).item("accepted")
+                Mineros(T, 2) = "Algorithm: " & dict2.item("result").item("miners").item(T).item("algorithm")
+                Mineros(T, 3) = "Diff: " & dict2.item("result").item("miners").item(T).item("diff")
+                Mineros(T, 4) = "Hashrate: " & CalcularHases(dict2.item("result").item("miners").item(T).item("hashrate"))
+                HasesUsuario += dict2.item("result").item("miners").item(T).item("hashrate")
+                Mineros(T, 5) = "Pool: " & dict2.item("result").item("miners").item(T).item("pool")
+                Mineros(T, 6) = "Rejected: " & dict2.item("result").item("miners").item(T).item("rejected")
+                Mineros(T, 7) = "Soft.: " & dict2.item("result").item("miners").item(T).item("software")
+                Dim Tmp As String = dict2.item("result").item("miners").item(T).item("it")
+                If Tmp <> "" Then
+                    Mineros(T, 8) = "Temperature - Humidity : " & Mid(Tmp, 1, 2) & "° - " & Mid(Tmp, 4) & "%"
+                    TreeView2.Nodes(0).Nodes.Add(Mineros(T, 0) & " [IOT]")
+                Else
+                    TreeView2.Nodes(0).Nodes.Add(Mineros(T, 0))
+                End If
                 If Tmp <> "" Then
                     For A As Integer = 0 To 8
                         TreeView2.Nodes(0).Nodes(T).Nodes.Add(Mineros(T, A))
                     Next A
                 Else
                     For A As Integer = 0 To 7
-                            TreeView2.Nodes(0).Nodes(T).Nodes.Add(Mineros(T, A))
-                        Next A
-                    End If
+                        TreeView2.Nodes(0).Nodes(T).Nodes.Add(Mineros(T, A))
+                    Next A
+                End If
                 Select Case dict2.item("result").item("miners").item(T).item("software")
                     Case "Official AVR Miner 3.1"
                         txtMinerosNArduino.Text += 1
@@ -514,7 +525,6 @@ Public Class Form1
                         txtMinerosHEsp8266.Text += dict2.item("result").item("miners").item(T).item("hashrate")
                         TreeView2.Nodes(0).Nodes(T).ImageIndex = 8
                         TreeView2.Nodes(0).Nodes(T).SelectedImageIndex = 8
-                        Label133.Text = temp
                         If temp <> "" Then
                             lblTemperatura.Text = Mid(temp, 1, 2) & "°"
                             Temperatura = Mid(temp, 1, 2)
@@ -531,87 +541,87 @@ Public Class Form1
                         txtMinerosHotros.Text += dict2.item("result").item("miners").item(T).item("hashrate")
                 End Select
                 TreeView2.Refresh()
-                Next
-                GroupBox8.Text = "Miners (" & Contador & ") " & CalcularHases(HasesUsuario)
-                TabPage4.Text = "Miners (" & Contador & ")"
-                lblHases.Text = CalcularHases1(HasesUsuario)
-                lblMineros.Text = Contador
-                txtMinerosHArduino.Text = CalcularHases(txtMinerosHArduino.Text)
-                txtMinerosHCPU.Text = CalcularHases(txtMinerosHCPU.Text)
-                txtMinerosNEsp32.Text = txtMinerosNEsp32.Text / 2
-                txtMinerosHEsp32.Text = CalcularHases(txtMinerosHEsp32.Text)
-                txtMinerosHEsp8266.Text = CalcularHases(txtMinerosHEsp8266.Text)
-                txtMinerosHWeb.Text = CalcularHases(txtMinerosHWeb.Text)
-                txtMinerosHotros.Text = CalcularHases(txtMinerosHotros.Text)
-                txtMinerosHPhone.Text = CalcularHases(txtMinerosHPhone.Text)
-                txtMinerosHRPI.Text = CalcularHases(txtMinerosHRPI.Text)
+            Next
+            GroupBox8.Text = "Miners (" & Contador & ") " & CalcularHases(HasesUsuario)
+            TabPage4.Text = "Miners (" & Contador & ")"
+            lblHases.Text = CalcularHases1(HasesUsuario)
+            lblMineros.Text = Contador
+            txtMinerosHArduino.Text = CalcularHases(txtMinerosHArduino.Text)
+            txtMinerosHCPU.Text = CalcularHases(txtMinerosHCPU.Text)
+            txtMinerosNEsp32.Text = txtMinerosNEsp32.Text / 2
+            txtMinerosHEsp32.Text = CalcularHases(txtMinerosHEsp32.Text)
+            txtMinerosHEsp8266.Text = CalcularHases(txtMinerosHEsp8266.Text)
+            txtMinerosHWeb.Text = CalcularHases(txtMinerosHWeb.Text)
+            txtMinerosHotros.Text = CalcularHases(txtMinerosHotros.Text)
+            txtMinerosHPhone.Text = CalcularHases(txtMinerosHPhone.Text)
+            txtMinerosHRPI.Text = CalcularHases(txtMinerosHRPI.Text)
             TreeView2.Nodes(0).ImageIndex = 6
             TreeView2.Nodes(0).SelectedImageIndex = 6
-                TreeView2.Nodes(0).Expand()
-                TreeView2.Sorted = True
-                txtDucoNodeSprice.Text = CDec(dict.item("Duco Node-S price"))
-                txtDucoPancakeSwapprice.Text = CDec(dict.item("Duco PancakeSwap price"))
-                txtDucoSushiSwapprice.Text = CDec(dict.item("Duco SushiSwap price"))
-                txtDucoJustSwapprice.Text = CDec(dict.item("Duco SunSwap price"))
-                txtDucoprice1.Text = CDec(dict.item("Duco price"))
-                txtDucopriceBCH.Text = CDec(dict.item("Duco price BCH"))
-                txtDucopriceNANO.Text = CDec(dict.item("Duco price NANO"))
-                txtDucopriceTRX.Text = CDec(dict.item("Duco price TRX"))
-                txtDucopriceXMG.Text = CDec(dict.item("Duco price XMG"))
-                txtActiveconnections.Text = dict.item("Active connections")
-                txtDUCOS1hashrate.Text = dict.item("DUCO-S1 hashrate")
-                txtNetenergyusage.Text = dict.item("Net energy usage")
-                txtOpenthreads.Text = dict.item("Open threads")
-                txtPoolhashrate.Text = dict.item("Pool hashrate")
-                txtRegisteredusers.Text = dict.item("Registered users")
-                txtServerCPUusage.Text = dict.item("Server CPU usage") & " %"
-                txtServerRAMusage.Text = dict.item("Server RAM usage") & " %"
-                txtServerversion.Text = dict.item("Server version") & " v"
-                txtAll.Text = dict.item("Miner distribution").item("All")
-                txtArduinos.Text = dict.item("Miner distribution").item("Arduino")
-                txtCPU.Text = dict.item("Miner distribution").item("CPU")
-                txtESP32.Text = dict.item("Miner distribution").item("ESP32")
-                txtESP8266.Text = dict.item("Miner distribution").item("ESP8266")
-                txtOther.Text = dict.item("Miner distribution").item("Other")
-                txtPhone.Text = dict.item("Miner distribution").item("Phone")
-                txtRPi.Text = dict.item("Miner distribution").item("RPi")
-                txtWeb.Text = dict.item("Miner distribution").item("Web")
-                txtLastblockhash.Text = dict.item("Last block hash")
-                txtBanned.Text = dict.item("Kolka").item("Banned")
-                txtJailed.Text = dict.item("Kolka").item("Jailed")
-                txtLastsync.Text = dict.item("Last sync")
-                txtLastupdate.Text = dict.item("Last update")
-                txtMinedblocks.Text = dict.item("Mined blocks")
-                lstboxTop10.Items.Clear()
-                For K As Integer = 0 To 9
-                    lstboxTop10.Items.Add(dict.item("Top 10 richest miners").item(K))
-                Next
-                Select Case Hour(Now)
-                    Case 0 : If lblBalanceHora00.Text <> 0 Then lblHoraDiferencia00.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora00.Text), 8)
-                    Case 1 : If lblBalanceHora01.Text <> 0 Then lblHoraDiferencia01.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora01.Text), 8)
-                    Case 2 : If lblBalanceHora02.Text <> 0 Then lblHoraDiferencia02.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora02.Text), 8)
-                    Case 3 : If lblBalanceHora03.Text <> 0 Then lblHoraDiferencia03.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora03.Text), 8)
-                    Case 4 : If lblBalanceHora04.Text <> 0 Then lblHoraDiferencia04.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora04.Text), 8)
-                    Case 5 : If lblBalanceHora05.Text <> 0 Then lblHoraDiferencia05.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora05.Text), 8)
-                    Case 6 : If lblBalanceHora06.Text <> 0 Then lblHoraDiferencia06.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora06.Text), 8)
-                    Case 7 : If lblBalanceHora07.Text <> 0 Then lblHoraDiferencia07.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora07.Text), 8)
-                    Case 8 : If lblBalanceHora08.Text <> 0 Then lblHoraDiferencia08.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora08.Text), 8)
-                    Case 9 : If lblBalanceHora09.Text <> 0 Then lblHoraDiferencia09.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora09.Text), 8)
-                    Case 10 : If lblBalanceHora10.Text <> 0 Then lblHoraDiferencia10.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora10.Text), 8)
-                    Case 11 : If lblBalanceHora11.Text <> 0 Then lblHoraDiferencia11.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora11.Text), 8)
-                    Case 12 : If lblBalanceHora12.Text <> 0 Then lblHoraDiferencia12.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora12.Text), 8)
-                    Case 13 : If lblBalanceHora13.Text <> 0 Then lblHoraDiferencia13.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora13.Text), 8)
-                    Case 14 : If lblBalanceHora14.Text <> 0 Then lblHoraDiferencia14.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora14.Text), 8)
-                    Case 15 : If lblBalanceHora15.Text <> 0 Then lblHoraDiferencia15.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora15.Text), 8)
-                    Case 16 : If lblBalanceHora16.Text <> 0 Then lblHoraDiferencia16.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora16.Text), 8)
-                    Case 17 : If lblBalanceHora17.Text <> 0 Then lblHoraDiferencia17.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora17.Text), 8)
-                    Case 18 : If lblBalanceHora18.Text <> 0 Then lblHoraDiferencia18.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora18.Text), 8)
-                    Case 19 : If lblBalanceHora19.Text <> 0 Then lblHoraDiferencia19.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora19.Text), 8)
-                    Case 20 : If lblBalanceHora20.Text <> 0 Then lblHoraDiferencia20.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora20.Text), 8)
-                    Case 21 : If lblBalanceHora21.Text <> 0 Then lblHoraDiferencia21.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora21.Text), 8)
-                    Case 22 : If lblBalanceHora22.Text <> 0 Then lblHoraDiferencia22.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora22.Text), 8)
-                    Case 23 : If lblBalanceHora23.Text <> 0 Then lblHoraDiferencia23.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora23.Text), 8)
-                End Select
+            TreeView2.Nodes(0).Expand()
+            TreeView2.Sorted = True
+            txtDucoNodeSprice.Text = CDec(dict.item("Duco Node-S price"))
+            txtDucoPancakeSwapprice.Text = CDec(dict.item("Duco PancakeSwap price"))
+            txtDucoSushiSwapprice.Text = CDec(dict.item("Duco SushiSwap price"))
+            txtDucoJustSwapprice.Text = CDec(dict.item("Duco SunSwap price"))
+            txtDucoprice1.Text = CDec(dict.item("Duco price"))
+            txtDucopriceBCH.Text = CDec(dict.item("Duco price BCH"))
+            txtDucopriceNANO.Text = CDec(dict.item("Duco price NANO"))
+            txtDucopriceTRX.Text = CDec(dict.item("Duco price TRX"))
+            txtDucopriceXMG.Text = CDec(dict.item("Duco price XMG"))
+            txtActiveconnections.Text = dict.item("Active connections")
+            txtDUCOS1hashrate.Text = dict.item("DUCO-S1 hashrate")
+            txtNetenergyusage.Text = dict.item("Net energy usage")
+            txtOpenthreads.Text = dict.item("Open threads")
+            txtPoolhashrate.Text = dict.item("Pool hashrate")
+            txtRegisteredusers.Text = dict.item("Registered users")
+            txtServerCPUusage.Text = dict.item("Server CPU usage") & " %"
+            txtServerRAMusage.Text = dict.item("Server RAM usage") & " %"
+            txtServerversion.Text = dict.item("Server version") & " v"
+            txtAll.Text = dict.item("Miner distribution").item("All")
+            txtArduinos.Text = dict.item("Miner distribution").item("Arduino")
+            txtCPU.Text = dict.item("Miner distribution").item("CPU")
+            txtESP32.Text = dict.item("Miner distribution").item("ESP32")
+            txtESP8266.Text = dict.item("Miner distribution").item("ESP8266")
+            txtOther.Text = dict.item("Miner distribution").item("Other")
+            txtPhone.Text = dict.item("Miner distribution").item("Phone")
+            txtRPi.Text = dict.item("Miner distribution").item("RPi")
+            txtWeb.Text = dict.item("Miner distribution").item("Web")
+            txtLastblockhash.Text = dict.item("Last block hash")
+            txtBanned.Text = dict.item("Kolka").item("Banned")
+            txtJailed.Text = dict.item("Kolka").item("Jailed")
+            txtLastsync.Text = dict.item("Last sync")
+            txtLastupdate.Text = dict.item("Last update")
+            txtMinedblocks.Text = dict.item("Mined blocks")
+            lstboxTop10.Items.Clear()
+            For K As Integer = 0 To 9
+                lstboxTop10.Items.Add(dict.item("Top 10 richest miners").item(K))
+            Next
+            Select Case Hour(Now)
+                Case 0 : If lblBalanceHora00.Text <> 0 Then lblHoraDiferencia00.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora00.Text), 8)
+                Case 1 : If lblBalanceHora01.Text <> 0 Then lblHoraDiferencia01.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora01.Text), 8)
+                Case 2 : If lblBalanceHora02.Text <> 0 Then lblHoraDiferencia02.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora02.Text), 8)
+                Case 3 : If lblBalanceHora03.Text <> 0 Then lblHoraDiferencia03.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora03.Text), 8)
+                Case 4 : If lblBalanceHora04.Text <> 0 Then lblHoraDiferencia04.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora04.Text), 8)
+                Case 5 : If lblBalanceHora05.Text <> 0 Then lblHoraDiferencia05.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora05.Text), 8)
+                Case 6 : If lblBalanceHora06.Text <> 0 Then lblHoraDiferencia06.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora06.Text), 8)
+                Case 7 : If lblBalanceHora07.Text <> 0 Then lblHoraDiferencia07.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora07.Text), 8)
+                Case 8 : If lblBalanceHora08.Text <> 0 Then lblHoraDiferencia08.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora08.Text), 8)
+                Case 9 : If lblBalanceHora09.Text <> 0 Then lblHoraDiferencia09.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora09.Text), 8)
+                Case 10 : If lblBalanceHora10.Text <> 0 Then lblHoraDiferencia10.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora10.Text), 8)
+                Case 11 : If lblBalanceHora11.Text <> 0 Then lblHoraDiferencia11.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora11.Text), 8)
+                Case 12 : If lblBalanceHora12.Text <> 0 Then lblHoraDiferencia12.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora12.Text), 8)
+                Case 13 : If lblBalanceHora13.Text <> 0 Then lblHoraDiferencia13.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora13.Text), 8)
+                Case 14 : If lblBalanceHora14.Text <> 0 Then lblHoraDiferencia14.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora14.Text), 8)
+                Case 15 : If lblBalanceHora15.Text <> 0 Then lblHoraDiferencia15.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora15.Text), 8)
+                Case 16 : If lblBalanceHora16.Text <> 0 Then lblHoraDiferencia16.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora16.Text), 8)
+                Case 17 : If lblBalanceHora17.Text <> 0 Then lblHoraDiferencia17.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora17.Text), 8)
+                Case 18 : If lblBalanceHora18.Text <> 0 Then lblHoraDiferencia18.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora18.Text), 8)
+                Case 19 : If lblBalanceHora19.Text <> 0 Then lblHoraDiferencia19.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora19.Text), 8)
+                Case 20 : If lblBalanceHora20.Text <> 0 Then lblHoraDiferencia20.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora20.Text), 8)
+                Case 21 : If lblBalanceHora21.Text <> 0 Then lblHoraDiferencia21.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora21.Text), 8)
+                Case 22 : If lblBalanceHora22.Text <> 0 Then lblHoraDiferencia22.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora22.Text), 8)
+                Case 23 : If lblBalanceHora23.Text <> 0 Then lblHoraDiferencia23.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora23.Text), 8)
+            End Select
             Select Case DateAndTime.Day(Now)
                 Case 1 : If lblMesBalance01.Text <> 0 Then lblMesDifencia01.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance01.Text) - CDec(Transacion(1)), 13)
                 Case 2 : If lblMesBalance02.Text <> 0 Then lblMesDifencia02.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance02.Text) - CDec(Transacion(2)), 13)
@@ -788,7 +798,7 @@ Public Class Form1
             Chart5.Series(0).Points.AddXY("Day 31", CDec(lblMesPrecio31.Text))
             My.Settings.Save()
         Catch ex As Exception
-            '  MsgBox("Error!!" & vbCrLf & ex.Message)
+            MsgBox("Error!!" & vbCrLf & ex.Message)
         End Try
     End Sub
     Private Sub MostrarTotales()
@@ -1403,12 +1413,10 @@ Public Class Form1
             End If
             Select Case Segundos
                 Case 0 : Actualizar()
-                'Case 15 : Actualizar()
                 Case 30 : Actualizar()
-                    'Case 45 : Actualizar()
             End Select
             Select Case Minutos
-                Case 10, 20, 30, 40, 50, 0, "00" : If LogAñadido = False Then Log()
+                Case 0, "00" : If LogAñadido = False Then Log()
                 Case Else
                     LogAñadido = False
             End Select
@@ -1484,15 +1492,9 @@ Public Class Form1
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         txtUser.Text = InputBox("Enter the Duino-Coin username", "Ducos Statistics - User", txtUser.Text)
     End Sub
-
     Private Sub txtUser_Click(sender As Object, e As EventArgs) Handles txtUser.Click
         txtUser.Text = InputBox("Enter the Duino-Coin username", "Ducos Statistics - User", txtUser.Text)
     End Sub
-
-    Private Sub GroupBox29_Enter(sender As Object, e As EventArgs) Handles GroupBox29.Enter
-
-    End Sub
-
     Private Sub Button1_Click_1(sender As Object, e As EventArgs)
         lblMesBalance15.Text = 574.27681404615259
         lblMesPrecio15.Text = lblPrecio00.Text

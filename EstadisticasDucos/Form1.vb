@@ -514,6 +514,7 @@ Public Class Form1
                         txtMinerosHEsp8266.Text += dict2.item("result").item("miners").item(T).item("hashrate")
                         TreeView2.Nodes(0).Nodes(T).ImageIndex = 8
                         TreeView2.Nodes(0).Nodes(T).SelectedImageIndex = 8
+                        Label133.Text = temp
                         If temp <> "" Then
                             lblTemperatura.Text = Mid(temp, 1, 2) & "°"
                             Temperatura = Mid(temp, 1, 2)
@@ -1496,5 +1497,9 @@ Public Class Form1
         lblMesBalance15.Text = 574.27681404615259
         lblMesPrecio15.Text = lblPrecio00.Text
         ResetDia()
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

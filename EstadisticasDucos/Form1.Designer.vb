@@ -23,28 +23,28 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea3 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend3 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series3 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea4 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend4 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series4 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea5 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend5 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series5 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea6 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend6 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series6 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea7 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend7 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series7 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim Series8 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea36 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend36 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series41 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea37 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend37 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series42 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea38 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend38 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series43 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea39 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend39 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series44 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea40 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend40 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series45 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea41 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend41 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series46 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea42 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend42 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series47 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Series48 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.lstBalanceTiempoReal = New System.Windows.Forms.ListBox()
@@ -572,6 +572,8 @@ Partial Class Form1
         Me.txtGradosFan = New System.Windows.Forms.NumericUpDown()
         Me.Label123 = New System.Windows.Forms.Label()
         Me.GroupBox28 = New System.Windows.Forms.GroupBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.lblUser = New System.Windows.Forms.Label()
         Me.Label122 = New System.Windows.Forms.Label()
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
@@ -611,10 +613,7 @@ Partial Class Form1
         Me.picFan = New System.Windows.Forms.PictureBox()
         Me.picFanAni = New System.Windows.Forms.PictureBox()
         Me.lblReinicioApp = New System.Windows.Forms.Label()
-        Me.Label133 = New System.Windows.Forms.Label()
         Me.txtUser = New System.Windows.Forms.TextBox()
-        Me.lblUser = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Chart2, System.ComponentModel.ISupportInitialize).BeginInit
         Me.GroupBox1.SuspendLayout
@@ -657,6 +656,7 @@ Partial Class Form1
         CType(Me.txtFanVerde, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.txtGradosFan, System.ComponentModel.ISupportInitialize).BeginInit
         Me.GroupBox28.SuspendLayout
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit
         Me.GroupBox5.SuspendLayout
         Me.GroupBox6.SuspendLayout
         Me.GroupBox7.SuspendLayout
@@ -665,7 +665,6 @@ Partial Class Form1
         Me.GroupBox27.SuspendLayout
         CType(Me.picFan, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.picFanAni, System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit
         Me.SuspendLayout
         '
         'Timer1
@@ -1300,9 +1299,9 @@ Partial Class Form1
         Me.lblHora.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblHora.Font = New System.Drawing.Font("Digital Display", 42.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblHora.ForeColor = System.Drawing.Color.White
-        Me.lblHora.Location = New System.Drawing.Point(11, 654)
+        Me.lblHora.Location = New System.Drawing.Point(10, 654)
         Me.lblHora.Name = "lblHora"
-        Me.lblHora.Size = New System.Drawing.Size(236, 48)
+        Me.lblHora.Size = New System.Drawing.Size(237, 48)
         Me.lblHora.TabIndex = 133
         Me.lblHora.Text = "00:00:00"
         Me.lblHora.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -1321,43 +1320,43 @@ Partial Class Form1
         '
         'Chart1
         '
-        ChartArea1.Name = "ChartArea1"
-        Me.Chart1.ChartAreas.Add(ChartArea1)
-        Legend1.Name = "Legend1"
-        Me.Chart1.Legends.Add(Legend1)
+        ChartArea36.Name = "ChartArea1"
+        Me.Chart1.ChartAreas.Add(ChartArea36)
+        Legend36.Name = "Legend1"
+        Me.Chart1.Legends.Add(Legend36)
         Me.Chart1.Location = New System.Drawing.Point(-23, 203)
         Me.Chart1.Name = "Chart1"
-        Series1.BorderWidth = 3
-        Series1.ChartArea = "ChartArea1"
-        Series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
-        Series1.Color = System.Drawing.Color.Lime
-        Series1.IsVisibleInLegend = False
-        Series1.Legend = "Legend1"
-        Series1.Name = "Series1"
-        Series1.ToolTip = "#VAL"
-        Series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Me.Chart1.Series.Add(Series1)
+        Series41.BorderWidth = 3
+        Series41.ChartArea = "ChartArea1"
+        Series41.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
+        Series41.Color = System.Drawing.Color.Lime
+        Series41.IsVisibleInLegend = False
+        Series41.Legend = "Legend1"
+        Series41.Name = "Series1"
+        Series41.ToolTip = "#VAL"
+        Series41.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Me.Chart1.Series.Add(Series41)
         Me.Chart1.Size = New System.Drawing.Size(562, 190)
         Me.Chart1.TabIndex = 135
         '
         'Chart2
         '
-        ChartArea2.Name = "ChartArea1"
-        Me.Chart2.ChartAreas.Add(ChartArea2)
-        Legend2.Name = "Legend1"
-        Me.Chart2.Legends.Add(Legend2)
+        ChartArea37.Name = "ChartArea1"
+        Me.Chart2.ChartAreas.Add(ChartArea37)
+        Legend37.Name = "Legend1"
+        Me.Chart2.Legends.Add(Legend37)
         Me.Chart2.Location = New System.Drawing.Point(-10, 0)
         Me.Chart2.Name = "Chart2"
-        Series2.BorderWidth = 3
-        Series2.ChartArea = "ChartArea1"
-        Series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
-        Series2.Color = System.Drawing.Color.DarkOrange
-        Series2.IsVisibleInLegend = False
-        Series2.Legend = "Legend1"
-        Series2.Name = "Series1"
-        Series2.ToolTip = "#VAL"
-        Series2.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Me.Chart2.Series.Add(Series2)
+        Series42.BorderWidth = 3
+        Series42.ChartArea = "ChartArea1"
+        Series42.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
+        Series42.Color = System.Drawing.Color.DarkOrange
+        Series42.IsVisibleInLegend = False
+        Series42.Legend = "Legend1"
+        Series42.Name = "Series1"
+        Series42.ToolTip = "#VAL"
+        Series42.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Me.Chart2.Series.Add(Series42)
         Me.Chart2.Size = New System.Drawing.Size(549, 204)
         Me.Chart2.TabIndex = 135
         '
@@ -1389,9 +1388,9 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.txtbalance)
         Me.GroupBox1.Controls.Add(Me.Label26)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(12, -1)
+        Me.GroupBox1.Location = New System.Drawing.Point(10, -1)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(236, 62)
+        Me.GroupBox1.Size = New System.Drawing.Size(237, 62)
         Me.GroupBox1.TabIndex = 139
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Balance"
@@ -1401,9 +1400,9 @@ Partial Class Form1
         Me.GroupBox2.Controls.Add(Me.Label27)
         Me.GroupBox2.Controls.Add(Me.txtDucoprice)
         Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox2.Location = New System.Drawing.Point(12, 62)
+        Me.GroupBox2.Location = New System.Drawing.Point(10, 62)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(236, 56)
+        Me.GroupBox2.Size = New System.Drawing.Size(237, 56)
         Me.GroupBox2.TabIndex = 140
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Duco price:"
@@ -1689,7 +1688,7 @@ Partial Class Form1
         Me.lblTotalHora.ForeColor = System.Drawing.Color.DarkOrange
         Me.lblTotalHora.Location = New System.Drawing.Point(223, 620)
         Me.lblTotalHora.Name = "lblTotalHora"
-        Me.lblTotalHora.Size = New System.Drawing.Size(65, 44)
+        Me.lblTotalHora.Size = New System.Drawing.Size(65, 31)
         Me.lblTotalHora.TabIndex = 141
         Me.lblTotalHora.Text = "00.00¬"
         Me.lblTotalHora.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -1701,7 +1700,7 @@ Partial Class Form1
         Me.Label28.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Label28.Location = New System.Drawing.Point(7, 620)
         Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(153, 44)
+        Me.Label28.Size = New System.Drawing.Size(153, 31)
         Me.Label28.TabIndex = 142
         Me.Label28.Text = "Daily Total:"
         Me.Label28.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -1826,7 +1825,7 @@ Partial Class Form1
         Me.lblPrecioDia.Font = New System.Drawing.Font("Duco", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPrecioDia.Location = New System.Drawing.Point(159, 620)
         Me.lblPrecioDia.Name = "lblPrecioDia"
-        Me.lblPrecioDia.Size = New System.Drawing.Size(65, 44)
+        Me.lblPrecioDia.Size = New System.Drawing.Size(65, 31)
         Me.lblPrecioDia.TabIndex = 58
         Me.lblPrecioDia.Text = Global.EstadisticasDucos.My.MySettings.Default.MediaPrecioDia
         Me.lblPrecioDia.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -4177,98 +4176,98 @@ Partial Class Form1
         '
         'Chart5
         '
-        ChartArea3.AxisX.MajorGrid.Interval = 0R
-        ChartArea3.AxisX.MajorGrid.IntervalOffset = 0R
-        ChartArea3.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
-        ChartArea3.Name = "ChartArea1"
-        Me.Chart5.ChartAreas.Add(ChartArea3)
-        Legend3.Name = "Legend1"
-        Me.Chart5.Legends.Add(Legend3)
+        ChartArea38.AxisX.MajorGrid.Interval = 0R
+        ChartArea38.AxisX.MajorGrid.IntervalOffset = 0R
+        ChartArea38.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
+        ChartArea38.Name = "ChartArea1"
+        Me.Chart5.ChartAreas.Add(ChartArea38)
+        Legend38.Name = "Legend1"
+        Me.Chart5.Legends.Add(Legend38)
         Me.Chart5.Location = New System.Drawing.Point(499, 203)
         Me.Chart5.Name = "Chart5"
-        Series3.ChartArea = "ChartArea1"
-        Series3.Color = System.Drawing.Color.OrangeRed
-        Series3.IsVisibleInLegend = False
-        Series3.Legend = "Legend1"
-        Series3.Name = "Series1"
-        Series3.ToolTip = "#VAL"
-        Series3.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[String]
-        Series3.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
-        Me.Chart5.Series.Add(Series3)
+        Series43.ChartArea = "ChartArea1"
+        Series43.Color = System.Drawing.Color.OrangeRed
+        Series43.IsVisibleInLegend = False
+        Series43.Legend = "Legend1"
+        Series43.Name = "Series1"
+        Series43.ToolTip = "#VAL"
+        Series43.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[String]
+        Series43.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
+        Me.Chart5.Series.Add(Series43)
         Me.Chart5.Size = New System.Drawing.Size(613, 199)
         Me.Chart5.TabIndex = 149
         '
         'Chart3
         '
-        ChartArea4.Name = "ChartArea1"
-        Me.Chart3.ChartAreas.Add(ChartArea4)
-        Legend4.Name = "Legend1"
-        Me.Chart3.Legends.Add(Legend4)
+        ChartArea39.Name = "ChartArea1"
+        Me.Chart3.ChartAreas.Add(ChartArea39)
+        Legend39.Name = "Legend1"
+        Me.Chart3.Legends.Add(Legend39)
         Me.Chart3.Location = New System.Drawing.Point(-19, 388)
         Me.Chart3.Name = "Chart3"
-        Series4.BorderWidth = 2
-        Series4.ChartArea = "ChartArea1"
-        Series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
-        Series4.Color = System.Drawing.Color.Fuchsia
-        Series4.EmptyPointStyle.IsValueShownAsLabel = True
-        Series4.EmptyPointStyle.IsVisibleInLegend = False
-        Series4.IsVisibleInLegend = False
-        Series4.LabelFormat = "0.00"
-        Series4.Legend = "Legend1"
-        Series4.Name = "Series1"
-        Series4.ToolTip = "#VAL"
-        Series4.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Series4.YValuesPerPoint = 4
-        Me.Chart3.Series.Add(Series4)
+        Series44.BorderWidth = 2
+        Series44.ChartArea = "ChartArea1"
+        Series44.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
+        Series44.Color = System.Drawing.Color.Fuchsia
+        Series44.EmptyPointStyle.IsValueShownAsLabel = True
+        Series44.EmptyPointStyle.IsVisibleInLegend = False
+        Series44.IsVisibleInLegend = False
+        Series44.LabelFormat = "0.00"
+        Series44.Legend = "Legend1"
+        Series44.Name = "Series1"
+        Series44.ToolTip = "#VAL"
+        Series44.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Series44.YValuesPerPoint = 4
+        Me.Chart3.Series.Add(Series44)
         Me.Chart3.Size = New System.Drawing.Size(558, 153)
         Me.Chart3.TabIndex = 147
         Me.Chart3.Text = "Chart3"
         '
         'Chart4
         '
-        ChartArea5.AxisX.MajorGrid.Interval = 0R
-        ChartArea5.AxisX.MajorGrid.IntervalOffset = 0R
-        ChartArea5.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
-        ChartArea5.Name = "ChartArea1"
-        Me.Chart4.ChartAreas.Add(ChartArea5)
-        Legend5.Name = "Legend1"
-        Me.Chart4.Legends.Add(Legend5)
+        ChartArea40.AxisX.MajorGrid.Interval = 0R
+        ChartArea40.AxisX.MajorGrid.IntervalOffset = 0R
+        ChartArea40.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
+        ChartArea40.Name = "ChartArea1"
+        Me.Chart4.ChartAreas.Add(ChartArea40)
+        Legend40.Name = "Legend1"
+        Me.Chart4.Legends.Add(Legend40)
         Me.Chart4.Location = New System.Drawing.Point(514, 0)
         Me.Chart4.Name = "Chart4"
-        Series5.ChartArea = "ChartArea1"
-        Series5.Color = System.Drawing.Color.Lime
-        Series5.IsVisibleInLegend = False
-        Series5.Legend = "Legend1"
-        Series5.Name = "Series1"
-        Series5.ToolTip = "#VAL"
-        Series5.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[String]
-        Series5.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
-        Me.Chart4.Series.Add(Series5)
+        Series45.ChartArea = "ChartArea1"
+        Series45.Color = System.Drawing.Color.Lime
+        Series45.IsVisibleInLegend = False
+        Series45.Legend = "Legend1"
+        Series45.Name = "Series1"
+        Series45.ToolTip = "#VAL"
+        Series45.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[String]
+        Series45.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
+        Me.Chart4.Series.Add(Series45)
         Me.Chart4.Size = New System.Drawing.Size(598, 213)
         Me.Chart4.TabIndex = 150
         '
         'Chart6
         '
-        ChartArea6.AxisX.MajorGrid.Interval = 0R
-        ChartArea6.AxisX.MajorGrid.IntervalOffset = 0R
-        ChartArea6.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
-        ChartArea6.Name = "ChartArea1"
-        Me.Chart6.ChartAreas.Add(ChartArea6)
-        Legend6.Name = "Legend1"
-        Me.Chart6.Legends.Add(Legend6)
+        ChartArea41.AxisX.MajorGrid.Interval = 0R
+        ChartArea41.AxisX.MajorGrid.IntervalOffset = 0R
+        ChartArea41.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
+        ChartArea41.Name = "ChartArea1"
+        Me.Chart6.ChartAreas.Add(ChartArea41)
+        Legend41.Name = "Legend1"
+        Me.Chart6.Legends.Add(Legend41)
         Me.Chart6.Location = New System.Drawing.Point(-40, 528)
         Me.Chart6.Name = "Chart6"
-        Series6.BorderWidth = 3
-        Series6.ChartArea = "ChartArea1"
-        Series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line
-        Series6.Color = System.Drawing.Color.DarkOrchid
-        Series6.IsVisibleInLegend = False
-        Series6.Legend = "Legend1"
-        Series6.Name = "Series1"
-        Series6.ToolTip = "#VAL"
-        Series6.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Series6.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
-        Me.Chart6.Series.Add(Series6)
+        Series46.BorderWidth = 3
+        Series46.ChartArea = "ChartArea1"
+        Series46.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line
+        Series46.Color = System.Drawing.Color.DarkOrchid
+        Series46.IsVisibleInLegend = False
+        Series46.Legend = "Legend1"
+        Series46.Name = "Series1"
+        Series46.ToolTip = "#VAL"
+        Series46.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Series46.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
+        Me.Chart6.Series.Add(Series46)
         Me.Chart6.Size = New System.Drawing.Size(1196, 150)
         Me.Chart6.TabIndex = 151
         '
@@ -5624,35 +5623,35 @@ Partial Class Form1
         '
         'Chart7
         '
-        ChartArea7.AxisX.MajorGrid.Interval = 0R
-        ChartArea7.AxisX.MajorGrid.IntervalOffset = 0R
-        ChartArea7.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
-        ChartArea7.Name = "ChartArea1"
-        Me.Chart7.ChartAreas.Add(ChartArea7)
-        Legend7.Name = "Legend1"
-        Me.Chart7.Legends.Add(Legend7)
+        ChartArea42.AxisX.MajorGrid.Interval = 0R
+        ChartArea42.AxisX.MajorGrid.IntervalOffset = 0R
+        ChartArea42.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
+        ChartArea42.Name = "ChartArea1"
+        Me.Chart7.ChartAreas.Add(ChartArea42)
+        Legend42.Name = "Legend1"
+        Me.Chart7.Legends.Add(Legend42)
         Me.Chart7.Location = New System.Drawing.Point(499, 389)
         Me.Chart7.Name = "Chart7"
-        Series7.BorderWidth = 3
-        Series7.ChartArea = "ChartArea1"
-        Series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line
-        Series7.Color = System.Drawing.Color.OrangeRed
-        Series7.IsVisibleInLegend = False
-        Series7.Legend = "Legend1"
-        Series7.Name = "Series1"
-        Series7.ToolTip = "#VAL °"
-        Series7.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[String]
-        Series7.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
-        Series8.BorderWidth = 3
-        Series8.ChartArea = "ChartArea1"
-        Series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line
-        Series8.Color = System.Drawing.Color.DodgerBlue
-        Series8.IsVisibleInLegend = False
-        Series8.Legend = "Legend1"
-        Series8.Name = "Series2"
-        Series8.ToolTip = "#VAL %"
-        Me.Chart7.Series.Add(Series7)
-        Me.Chart7.Series.Add(Series8)
+        Series47.BorderWidth = 3
+        Series47.ChartArea = "ChartArea1"
+        Series47.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line
+        Series47.Color = System.Drawing.Color.OrangeRed
+        Series47.IsVisibleInLegend = False
+        Series47.Legend = "Legend1"
+        Series47.Name = "Series1"
+        Series47.ToolTip = "#VAL °"
+        Series47.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[String]
+        Series47.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
+        Series48.BorderWidth = 3
+        Series48.ChartArea = "ChartArea1"
+        Series48.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line
+        Series48.Color = System.Drawing.Color.DodgerBlue
+        Series48.IsVisibleInLegend = False
+        Series48.Legend = "Legend1"
+        Series48.Name = "Series2"
+        Series48.ToolTip = "#VAL %"
+        Me.Chart7.Series.Add(Series47)
+        Me.Chart7.Series.Add(Series48)
         Me.Chart7.Size = New System.Drawing.Size(613, 142)
         Me.Chart7.TabIndex = 149
         '
@@ -7049,6 +7048,28 @@ Partial Class Form1
         Me.GroupBox28.TabStop = False
         Me.GroupBox28.Text = "User"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBox1.Image = Global.EstadisticasDucos.My.Resources.Resources.png_transparent_computer_icons_blog_change_angle_text_logo
+        Me.PictureBox1.Location = New System.Drawing.Point(251, 26)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(43, 31)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 2
+        Me.PictureBox1.TabStop = False
+        '
+        'lblUser
+        '
+        Me.lblUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblUser.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "User", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblUser.Location = New System.Drawing.Point(147, 26)
+        Me.lblUser.Name = "lblUser"
+        Me.lblUser.Size = New System.Drawing.Size(98, 31)
+        Me.lblUser.TabIndex = 1
+        Me.lblUser.Text = Global.EstadisticasDucos.My.MySettings.Default.User
+        Me.lblUser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
         'Label122
         '
         Me.Label122.AutoSize = True
@@ -7069,9 +7090,9 @@ Partial Class Form1
         Me.GroupBox5.Controls.Add(Me.lblGanado)
         Me.GroupBox5.Controls.Add(Me.Label38)
         Me.GroupBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox5.Location = New System.Drawing.Point(12, 119)
+        Me.GroupBox5.Location = New System.Drawing.Point(10, 173)
         Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Size = New System.Drawing.Size(236, 85)
+        Me.GroupBox5.Size = New System.Drawing.Size(237, 85)
         Me.GroupBox5.TabIndex = 149
         Me.GroupBox5.TabStop = False
         Me.GroupBox5.Text = "Gain"
@@ -7114,9 +7135,9 @@ Partial Class Form1
         '
         Me.GroupBox6.Controls.Add(Me.lblValorEuro)
         Me.GroupBox6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox6.Location = New System.Drawing.Point(11, 206)
+        Me.GroupBox6.Location = New System.Drawing.Point(10, 119)
         Me.GroupBox6.Name = "GroupBox6"
-        Me.GroupBox6.Size = New System.Drawing.Size(236, 52)
+        Me.GroupBox6.Size = New System.Drawing.Size(237, 52)
         Me.GroupBox6.TabIndex = 149
         Me.GroupBox6.TabStop = False
         Me.GroupBox6.Text = "USD Equals"
@@ -7143,7 +7164,7 @@ Partial Class Form1
         Me.GroupBox7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox7.Location = New System.Drawing.Point(10, 259)
         Me.GroupBox7.Name = "GroupBox7"
-        Me.GroupBox7.Size = New System.Drawing.Size(236, 99)
+        Me.GroupBox7.Size = New System.Drawing.Size(238, 99)
         Me.GroupBox7.TabIndex = 149
         Me.GroupBox7.TabStop = False
         Me.GroupBox7.Text = "Earning about"
@@ -7224,9 +7245,9 @@ Partial Class Form1
         Me.GroupBox14.Controls.Add(Me.lblHases)
         Me.GroupBox14.Controls.Add(Me.lblHaseEstiquta)
         Me.GroupBox14.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox14.Location = New System.Drawing.Point(11, 359)
+        Me.GroupBox14.Location = New System.Drawing.Point(10, 359)
         Me.GroupBox14.Name = "GroupBox14"
-        Me.GroupBox14.Size = New System.Drawing.Size(236, 99)
+        Me.GroupBox14.Size = New System.Drawing.Size(237, 99)
         Me.GroupBox14.TabIndex = 153
         Me.GroupBox14.TabStop = False
         Me.GroupBox14.Text = "Miners"
@@ -7327,7 +7348,7 @@ Partial Class Form1
         Me.GroupBox17.Controls.Add(Me.Label174)
         Me.GroupBox17.Controls.Add(Me.lblDucoDeposito)
         Me.GroupBox17.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox17.Location = New System.Drawing.Point(11, 460)
+        Me.GroupBox17.Location = New System.Drawing.Point(10, 460)
         Me.GroupBox17.Name = "GroupBox17"
         Me.GroupBox17.Size = New System.Drawing.Size(237, 130)
         Me.GroupBox17.TabIndex = 153
@@ -7447,7 +7468,7 @@ Partial Class Form1
         Me.GroupBox27.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox27.Location = New System.Drawing.Point(10, 589)
         Me.GroupBox27.Name = "GroupBox27"
-        Me.GroupBox27.Size = New System.Drawing.Size(236, 58)
+        Me.GroupBox27.Size = New System.Drawing.Size(237, 58)
         Me.GroupBox27.TabIndex = 155
         Me.GroupBox27.TabStop = False
         Me.GroupBox27.Text = "Temp.  -  Humidity  -  Fan"
@@ -7507,19 +7528,10 @@ Partial Class Form1
         Me.lblReinicioApp.TabIndex = 154
         Me.lblReinicioApp.Text = Global.EstadisticasDucos.My.MySettings.Default.Reinicios
         '
-        'Label133
-        '
-        Me.Label133.AutoSize = True
-        Me.Label133.Location = New System.Drawing.Point(473, 738)
-        Me.Label133.Name = "Label133"
-        Me.Label133.Size = New System.Drawing.Size(51, 13)
-        Me.Label133.TabIndex = 156
-        Me.Label133.Text = "Label133"
-        '
         'txtUser
         '
         Me.txtUser.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "User", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.txtUser.Location = New System.Drawing.Point(200, 730)
+        Me.txtUser.Location = New System.Drawing.Point(1427, 712)
         Me.txtUser.Name = "txtUser"
         Me.txtUser.ReadOnly = True
         Me.txtUser.Size = New System.Drawing.Size(125, 20)
@@ -7527,42 +7539,19 @@ Partial Class Form1
         Me.txtUser.TabStop = False
         Me.txtUser.Text = Global.EstadisticasDucos.My.MySettings.Default.User
         '
-        'lblUser
-        '
-        Me.lblUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblUser.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "User", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblUser.Location = New System.Drawing.Point(147, 26)
-        Me.lblUser.Name = "lblUser"
-        Me.lblUser.Size = New System.Drawing.Size(98, 31)
-        Me.lblUser.TabIndex = 1
-        Me.lblUser.Text = Global.EstadisticasDucos.My.MySettings.Default.User
-        Me.lblUser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox1.Image = Global.EstadisticasDucos.My.Resources.Resources.png_transparent_computer_icons_blog_change_angle_text_logo
-        Me.PictureBox1.Location = New System.Drawing.Point(251, 26)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(43, 31)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 2
-        Me.PictureBox1.TabStop = False
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1367, 763)
+        Me.ClientSize = New System.Drawing.Size(1369, 723)
         Me.Controls.Add(Me.txtUser)
-        Me.Controls.Add(Me.Label133)
         Me.Controls.Add(Me.GroupBox27)
+        Me.Controls.Add(Me.GroupBox6)
         Me.Controls.Add(Me.lblReinicioApp)
         Me.Controls.Add(Me.GroupBox17)
         Me.Controls.Add(Me.GroupBox14)
         Me.Controls.Add(Me.GroupBox7)
-        Me.Controls.Add(Me.GroupBox6)
         Me.Controls.Add(Me.GroupBox5)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.lblHora)
@@ -7634,6 +7623,7 @@ Partial Class Form1
         CType(Me.txtGradosFan, System.ComponentModel.ISupportInitialize).EndInit
         Me.GroupBox28.ResumeLayout(False)
         Me.GroupBox28.PerformLayout
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit
         Me.GroupBox5.ResumeLayout(False)
         Me.GroupBox6.ResumeLayout(False)
         Me.GroupBox7.ResumeLayout(False)
@@ -7645,7 +7635,6 @@ Partial Class Form1
         Me.GroupBox27.ResumeLayout(False)
         CType(Me.picFan, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.picFanAni, System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit
         Me.ResumeLayout(False)
         Me.PerformLayout
 
@@ -8215,7 +8204,6 @@ Partial Class Form1
     Friend WithEvents lblTiempoRestante As Label
     Friend WithEvents lblPrecioDia As Label
     Friend WithEvents lblPrecioMes As Label
-    Friend WithEvents Label133 As Label
     Friend WithEvents txtUser As TextBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents lblUser As Label

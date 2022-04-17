@@ -53,6 +53,7 @@ Public Class Form1
     Dim Dict2Public As Object
     Dim Temperatura As Integer = 0
     Dim Humedad As Integer = 0
+    Dim Cargado As Boolean = True
     Private Sub BalanceHora()
         If lblBalanceHora01.Text <> 0 And lblBalanceHora00.Text <> 0 Then lblHoraDiferencia00.Text = FormatDuco(CDec(lblBalanceHora01.Text) - CDec(lblBalanceHora00.Text), 8)
         If lblBalanceHora02.Text <> 0 And lblBalanceHora01.Text <> 0 Then lblHoraDiferencia01.Text = FormatDuco(CDec(lblBalanceHora02.Text) - CDec(lblBalanceHora01.Text), 8)
@@ -211,14 +212,65 @@ Public Class Form1
 
     Private Sub Actualizar()
         Try
-            Dim uriString3 As String = "http://www.floatrates.com/daily/eur.json"
-            Dim uri3 As New Uri(uriString3)
-            Dim Request3 As HttpWebRequest = HttpWebRequest.Create(uri3)
-            Request3.Method = "GET"
-            Dim Response3 As HttpWebResponse = Request3.GetResponse()
-            Dim Read3 = New StreamReader(Response3.GetResponseStream())
-            Dim Raw3 As String = Read3.ReadToEnd()
-            Dim dict3 As Object = New JavaScriptSerializer().Deserialize(Of Dictionary(Of String, Object))(Raw3)
+            If Minute(Now) = 0 Or Cargado = True Then
+                Cargado = False
+                Dim uriString3 As String = "http://www.floatrates.com/daily/eur.json"
+                Dim uri3 As New Uri(uriString3)
+                Dim Request3 As HttpWebRequest = HttpWebRequest.Create(uri3)
+                Request3.Method = "GET"
+                Dim Response3 As HttpWebResponse = Request3.GetResponse()
+                Dim Read3 = New StreamReader(Response3.GetResponseStream())
+                Dim Raw3 As String = Read3.ReadToEnd()
+                Dim dict3 As Object = New JavaScriptSerializer().Deserialize(Of Dictionary(Of String, Object))(Raw3)
+                Euro = CDec(dict3.item("usd").item("rate"))
+                Dim uriString As String = "https://server.duinocoin.com/api.json"
+                Dim uri As New Uri(uriString)
+                Dim Request As HttpWebRequest = HttpWebRequest.Create(uri)
+                Request.Method = "GET"
+                Dim Response As HttpWebResponse = Request.GetResponse()
+                Dim Read = New StreamReader(Response.GetResponseStream())
+                Dim Raw As String = Read.ReadToEnd()
+                Dim dict As Object = New JavaScriptSerializer().Deserialize(Of Dictionary(Of String, Object))(Raw)
+                txtDucoprice.Text = CDec(dict.item("Duco price"))
+                txtDucoNodeSprice.Text = CDec(dict.item("Duco Node-S price"))
+                txtDucoPancakeSwapprice.Text = CDec(dict.item("Duco PancakeSwap price"))
+                txtDucoSushiSwapprice.Text = CDec(dict.item("Duco SushiSwap price"))
+                txtDucoJustSwapprice.Text = CDec(dict.item("Duco SunSwap price"))
+                txtDucoprice1.Text = CDec(dict.item("Duco price"))
+                txtDucopriceBCH.Text = CDec(dict.item("Duco price BCH"))
+                txtDucopriceNANO.Text = CDec(dict.item("Duco price NANO"))
+                txtDucopriceTRX.Text = CDec(dict.item("Duco price TRX"))
+                txtDucopriceXMG.Text = CDec(dict.item("Duco price XMG"))
+                txtActiveconnections.Text = dict.item("Active connections")
+                txtDUCOS1hashrate.Text = dict.item("DUCO-S1 hashrate")
+                txtNetenergyusage.Text = dict.item("Net energy usage")
+                txtOpenthreads.Text = dict.item("Open threads")
+                txtPoolhashrate.Text = dict.item("Pool hashrate")
+                txtRegisteredusers.Text = dict.item("Registered users")
+                txtServerCPUusage.Text = dict.item("Server CPU usage") & " %"
+                txtServerRAMusage.Text = dict.item("Server RAM usage") & " %"
+                txtServerversion.Text = dict.item("Server version") & " v"
+                txtAll.Text = dict.item("Miner distribution").item("All")
+                txtArduinos.Text = dict.item("Miner distribution").item("Arduino")
+                txtCPU.Text = dict.item("Miner distribution").item("CPU")
+                txtESP32.Text = dict.item("Miner distribution").item("ESP32")
+                txtESP8266.Text = dict.item("Miner distribution").item("ESP8266")
+                txtOther.Text = dict.item("Miner distribution").item("Other")
+                txtPhone.Text = dict.item("Miner distribution").item("Phone")
+                txtRPi.Text = dict.item("Miner distribution").item("RPi")
+                txtWeb.Text = dict.item("Miner distribution").item("Web")
+                txtLastblockhash.Text = dict.item("Last block hash")
+                txtBanned.Text = dict.item("Kolka").item("Banned")
+                txtJailed.Text = dict.item("Kolka").item("Jailed")
+                txtLastsync.Text = dict.item("Last sync")
+                txtLastupdate.Text = dict.item("Last update")
+                txtMinedblocks.Text = dict.item("Mined blocks")
+                lstboxTop10.Items.Clear()
+                For K As Integer = 0 To 9
+                    lstboxTop10.Items.Add(dict.item("Top 10 richest miners").item(K))
+                Next
+            End If
+
             Dim HasesUsuario As Integer = 0
             Dim uriString2 As String = "https://server.duinocoin.com/users/" & txtUser.Text & "?limit=5000"
             Dim uri2 As New Uri(uriString2)
@@ -229,15 +281,7 @@ Public Class Form1
             Dim Raw2 As String = Read2.ReadToEnd()
             Dim dict2 As Object = New JavaScriptSerializer().Deserialize(Of Dictionary(Of String, Object))(Raw2)
             Dict2Public = dict2
-            Dim uriString As String = "https://server.duinocoin.com/api.json"
-            Dim uri As New Uri(uriString)
-            Dim Request As HttpWebRequest = HttpWebRequest.Create(uri)
-            Request.Method = "GET"
-            Dim Response As HttpWebResponse = Request.GetResponse()
-            Dim Read = New StreamReader(Response.GetResponseStream())
-            Dim Raw As String = Read.ReadToEnd()
-            Dim dict As Object = New JavaScriptSerializer().Deserialize(Of Dictionary(Of String, Object))(Raw)
-            Euro = CDec(dict3.item("usd").item("rate"))
+
             Dim Deposito As Integer = dict2.item("result").item("balance").item("stake_amount")
             Dim FechafinDeposito As Integer = dict2.item("result").item("balance").item("stake_date")
             lblDeposito.Text = Deposito
@@ -246,7 +290,6 @@ Public Class Form1
             lblTiempoRestante.Text = "Time Left:" & sTiempo(Now, lblFechaFinDeposito.Text)
             lblRecompensa.Text = Format(Deposito * (1.5 / 100), "#0.00")
             lblEtiquetaDucoRecompensa.Left = lblRecompensa.Left + lblRecompensa.Width - 5
-            txtDucoprice.Text = CDec(dict.item("Duco price"))
             txtbalance.Text = FormatDuco(dict2.item("result").item("balance").item("balance"), 17)
             EstimadoNuevo = txtbalance.Text
             If EstimadoViejo = 0 Then
@@ -504,43 +547,7 @@ Public Class Form1
             TreeView2.Nodes(0).SelectedImageIndex = 6
             TreeView2.Nodes(0).Expand()
             TreeView2.Sorted = True
-            txtDucoNodeSprice.Text = CDec(dict.item("Duco Node-S price"))
-            txtDucoPancakeSwapprice.Text = CDec(dict.item("Duco PancakeSwap price"))
-            txtDucoSushiSwapprice.Text = CDec(dict.item("Duco SushiSwap price"))
-            txtDucoJustSwapprice.Text = CDec(dict.item("Duco SunSwap price"))
-            txtDucoprice1.Text = CDec(dict.item("Duco price"))
-            txtDucopriceBCH.Text = CDec(dict.item("Duco price BCH"))
-            txtDucopriceNANO.Text = CDec(dict.item("Duco price NANO"))
-            txtDucopriceTRX.Text = CDec(dict.item("Duco price TRX"))
-            txtDucopriceXMG.Text = CDec(dict.item("Duco price XMG"))
-            txtActiveconnections.Text = dict.item("Active connections")
-            txtDUCOS1hashrate.Text = dict.item("DUCO-S1 hashrate")
-            txtNetenergyusage.Text = dict.item("Net energy usage")
-            txtOpenthreads.Text = dict.item("Open threads")
-            txtPoolhashrate.Text = dict.item("Pool hashrate")
-            txtRegisteredusers.Text = dict.item("Registered users")
-            txtServerCPUusage.Text = dict.item("Server CPU usage") & " %"
-            txtServerRAMusage.Text = dict.item("Server RAM usage") & " %"
-            txtServerversion.Text = dict.item("Server version") & " v"
-            txtAll.Text = dict.item("Miner distribution").item("All")
-            txtArduinos.Text = dict.item("Miner distribution").item("Arduino")
-            txtCPU.Text = dict.item("Miner distribution").item("CPU")
-            txtESP32.Text = dict.item("Miner distribution").item("ESP32")
-            txtESP8266.Text = dict.item("Miner distribution").item("ESP8266")
-            txtOther.Text = dict.item("Miner distribution").item("Other")
-            txtPhone.Text = dict.item("Miner distribution").item("Phone")
-            txtRPi.Text = dict.item("Miner distribution").item("RPi")
-            txtWeb.Text = dict.item("Miner distribution").item("Web")
-            txtLastblockhash.Text = dict.item("Last block hash")
-            txtBanned.Text = dict.item("Kolka").item("Banned")
-            txtJailed.Text = dict.item("Kolka").item("Jailed")
-            txtLastsync.Text = dict.item("Last sync")
-            txtLastupdate.Text = dict.item("Last update")
-            txtMinedblocks.Text = dict.item("Mined blocks")
-            lstboxTop10.Items.Clear()
-            For K As Integer = 0 To 9
-                lstboxTop10.Items.Add(dict.item("Top 10 richest miners").item(K))
-            Next
+
             Select Case Hour(Now)
                 Case 0 : If lblBalanceHora00.Text <> 0 Then lblHoraDiferencia00.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora00.Text), 8)
                 Case 1 : If lblBalanceHora01.Text <> 0 Then lblHoraDiferencia01.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora01.Text), 8)
@@ -743,7 +750,7 @@ Public Class Form1
             Chart5.Series(0).Points.AddXY("Day 31", CDec(lblMesPrecio31.Text))
             My.Settings.Save()
         Catch ex As Exception
-            ' MsgBox("Error!!" & vbCrLf & ex.Message)
+            MsgBox("Error!!" & vbCrLf & ex.Message)
         End Try
     End Sub
     Private Sub MostrarTotales()
@@ -913,7 +920,6 @@ Public Class Form1
         Else
             lblPrecioDia.Text = (PrecioMax + PrecioMin) / 2
         End If
-        Label133.Text = PrecioMax & PrecioMin
         Dim PrecioMesMin As Decimal
         Dim PrecioMesMax As Decimal
         PrecioMesMin = CDec(lblMesPrecio01.Text)
@@ -1229,14 +1235,10 @@ Public Class Form1
                     FormatDuco = Format(Ducos, "0000.00")
                 End If
             Case 7
-                If Ducos < 10 Then
-                    FormatDuco = Format(Ducos, "0.000000")
-                ElseIf Ducos < 100 And Ducos >= 10 Then
-                    FormatDuco = Format(Ducos, "00.00000")
-                ElseIf Ducos < 1000 And Ducos >= 100 Then
-                    FormatDuco = Format(Ducos, "000.0000")
+                If Ducos < 1000 Then
+                    FormatDuco = Format(Ducos, "0000.00")
                 ElseIf Ducos < 10000 And Ducos >= 1000 Then
-                    FormatDuco = Format(Ducos, "0000.000")
+                    FormatDuco = Format(Ducos, "00000.00")
                 End If
             Case 8
                 If Ducos < 10 Then
@@ -1816,10 +1818,6 @@ Public Class Form1
         lblMesPrecio15.Text = lblPrecio00.Text
         ResetDia()
     End Sub
-    Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
-
-    End Sub
-
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles Me.Load
         Try
             lblReinicioApp.Text += 1
@@ -1886,5 +1884,9 @@ Public Class Form1
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         txtUser.Text = InputBox("Enter the Duino-Coin username", "Ducos Statistics - User", txtUser.Text)
         lblUser.Text = txtUser.Text
+    End Sub
+
+    Private Sub lblPrecioDia_Click(sender As Object, e As EventArgs) Handles lblPrecioDia.Click
+
     End Sub
 End Class

@@ -286,10 +286,15 @@ Public Class Form1
             Dim Deposito As Integer = dict2.item("result").item("balance").item("stake_amount")
             Dim FechafinDeposito As Integer = dict2.item("result").item("balance").item("stake_date")
             lblDeposito.Text = Deposito
+            If Deposito > 0 Then
+                lblFechaFinDeposito.Text = UnixTimeToDate(FechafinDeposito)
+                lblTiempoRestante.Text = "Time Left:" & sTiempo(Now, lblFechaFinDeposito.Text)
+                lblRecompensa.Text = Format(Deposito * (1.5 / 100), "#0.00")
+                gbStaking.Enabled = True
+            Else
+                gbStaking.Enabled = False
+            End If
             lblDucoDeposito.Left = lblDeposito.Left + lblDeposito.Width - 5
-            lblFechaFinDeposito.Text = UnixTimeToDate(FechafinDeposito)
-            lblTiempoRestante.Text = "Time Left:" & sTiempo(Now, lblFechaFinDeposito.Text)
-            lblRecompensa.Text = Format(Deposito * (1.5 / 100), "#0.00")
             lblEtiquetaDucoRecompensa.Left = lblRecompensa.Left + lblRecompensa.Width - 5
             txtbalance.Text = FormatDuco(dict2.item("result").item("balance").item("balance"), 17)
             EstimadoNuevo = txtbalance.Text
@@ -751,7 +756,7 @@ Public Class Form1
             Chart5.Series(0).Points.AddXY("Day 31", CDec(lblMesPrecio31.Text))
             My.Settings.Save()
         Catch ex As Exception
-            ' MsgBox("Error!!" & vbCrLf & ex.Message)
+            MsgBox("Error!!" & vbCrLf & ex.Message)
         End Try
     End Sub
     Private Sub MostrarTotales()

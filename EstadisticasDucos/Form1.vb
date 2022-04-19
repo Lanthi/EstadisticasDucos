@@ -24,8 +24,11 @@ Public Class Form1
     'https://duinocoin.com
     'https://github.com/revoxhere/duino-coin
     'https://github.com/Lanthi/EstadisticasDucos
+    '
+    '
     'Do not change
     ReadOnly Remover As Integer = 30
+    ReadOnly RemoverGraficos As Integer = 200
     Dim ContadorRemove As Integer = 0
     Dim Hora As Integer
     Dim Minutos As Integer = DateAndTime.Minute(Now)
@@ -55,143 +58,156 @@ Public Class Form1
     Dim Humedad As Integer = 0
     Dim Cargado As Boolean = True
     Dim DucosNuevoDia As Decimal
+    Dim ActivarMensajesError As Boolean = True
     Private Sub BalanceHora()
-        If lblBalanceHora01.Text <> 0 And lblBalanceHora00.Text <> 0 Then lblHoraDiferencia00.Text = FormatDuco(CDec(lblBalanceHora01.Text) - CDec(lblBalanceHora00.Text), 8)
-        If lblBalanceHora02.Text <> 0 And lblBalanceHora01.Text <> 0 Then lblHoraDiferencia01.Text = FormatDuco(CDec(lblBalanceHora02.Text) - CDec(lblBalanceHora01.Text), 8)
-        If lblBalanceHora03.Text <> 0 And lblBalanceHora02.Text <> 0 Then lblHoraDiferencia02.Text = FormatDuco(CDec(lblBalanceHora03.Text) - CDec(lblBalanceHora02.Text), 8)
-        If lblBalanceHora04.Text <> 0 And lblBalanceHora03.Text <> 0 Then lblHoraDiferencia03.Text = FormatDuco(CDec(lblBalanceHora04.Text) - CDec(lblBalanceHora03.Text), 8)
-        If lblBalanceHora05.Text <> 0 And lblBalanceHora04.Text <> 0 Then lblHoraDiferencia04.Text = FormatDuco(CDec(lblBalanceHora05.Text) - CDec(lblBalanceHora04.Text), 8)
-        If lblBalanceHora06.Text <> 0 And lblBalanceHora05.Text <> 0 Then lblHoraDiferencia05.Text = FormatDuco(CDec(lblBalanceHora06.Text) - CDec(lblBalanceHora05.Text), 8)
-        If lblBalanceHora07.Text <> 0 And lblBalanceHora06.Text <> 0 Then lblHoraDiferencia06.Text = FormatDuco(CDec(lblBalanceHora07.Text) - CDec(lblBalanceHora06.Text), 8)
-        If lblBalanceHora08.Text <> 0 And lblBalanceHora07.Text <> 0 Then lblHoraDiferencia07.Text = FormatDuco(CDec(lblBalanceHora08.Text) - CDec(lblBalanceHora07.Text), 8)
-        If lblBalanceHora09.Text <> 0 And lblBalanceHora08.Text <> 0 Then lblHoraDiferencia08.Text = FormatDuco(CDec(lblBalanceHora09.Text) - CDec(lblBalanceHora08.Text), 8)
-        If lblBalanceHora10.Text <> 0 And lblBalanceHora09.Text <> 0 Then lblHoraDiferencia09.Text = FormatDuco(CDec(lblBalanceHora10.Text) - CDec(lblBalanceHora09.Text), 8)
-        If lblBalanceHora11.Text <> 0 And lblBalanceHora10.Text <> 0 Then lblHoraDiferencia10.Text = FormatDuco(CDec(lblBalanceHora11.Text) - CDec(lblBalanceHora10.Text), 8)
-        If lblBalanceHora12.Text <> 0 And lblBalanceHora11.Text <> 0 Then lblHoraDiferencia11.Text = FormatDuco(CDec(lblBalanceHora12.Text) - CDec(lblBalanceHora11.Text), 8)
-        If lblBalanceHora13.Text <> 0 And lblBalanceHora12.Text <> 0 Then lblHoraDiferencia12.Text = FormatDuco(CDec(lblBalanceHora13.Text) - CDec(lblBalanceHora12.Text), 8)
-        If lblBalanceHora14.Text <> 0 And lblBalanceHora13.Text <> 0 Then lblHoraDiferencia13.Text = FormatDuco(CDec(lblBalanceHora14.Text) - CDec(lblBalanceHora13.Text), 8)
-        If lblBalanceHora15.Text <> 0 And lblBalanceHora14.Text <> 0 Then lblHoraDiferencia14.Text = FormatDuco(CDec(lblBalanceHora15.Text) - CDec(lblBalanceHora14.Text), 8)
-        If lblBalanceHora16.Text <> 0 And lblBalanceHora15.Text <> 0 Then lblHoraDiferencia15.Text = FormatDuco(CDec(lblBalanceHora16.Text) - CDec(lblBalanceHora15.Text), 8)
-        If lblBalanceHora17.Text <> 0 And lblBalanceHora16.Text <> 0 Then lblHoraDiferencia16.Text = FormatDuco(CDec(lblBalanceHora17.Text) - CDec(lblBalanceHora16.Text), 8)
-        If lblBalanceHora18.Text <> 0 And lblBalanceHora17.Text <> 0 Then lblHoraDiferencia17.Text = FormatDuco(CDec(lblBalanceHora18.Text) - CDec(lblBalanceHora17.Text), 8)
-        If lblBalanceHora19.Text <> 0 And lblBalanceHora18.Text <> 0 Then lblHoraDiferencia18.Text = FormatDuco(CDec(lblBalanceHora19.Text) - CDec(lblBalanceHora18.Text), 8)
-        If lblBalanceHora20.Text <> 0 And lblBalanceHora19.Text <> 0 Then lblHoraDiferencia19.Text = FormatDuco(CDec(lblBalanceHora20.Text) - CDec(lblBalanceHora19.Text), 8)
-        If lblBalanceHora21.Text <> 0 And lblBalanceHora20.Text <> 0 Then lblHoraDiferencia20.Text = FormatDuco(CDec(lblBalanceHora21.Text) - CDec(lblBalanceHora20.Text), 8)
-        If lblBalanceHora22.Text <> 0 And lblBalanceHora21.Text <> 0 Then lblHoraDiferencia21.Text = FormatDuco(CDec(lblBalanceHora22.Text) - CDec(lblBalanceHora21.Text), 8)
-        If lblBalanceHora23.Text <> 0 And lblBalanceHora22.Text <> 0 Then lblHoraDiferencia22.Text = FormatDuco(CDec(lblBalanceHora23.Text) - CDec(lblBalanceHora22.Text), 8)
-        If lblBalanceHora00.Text <> 0 And lblBalanceHora23.Text <> 0 Then lblHoraDiferencia23.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora23.Text), 8)
+        Try
+            If lblBalanceHora01.Text <> 0 And lblBalanceHora00.Text <> 0 Then lblHoraDiferencia00.Text = FormatDuco(CDec(lblBalanceHora01.Text) - CDec(lblBalanceHora00.Text), 8)
+            If lblBalanceHora02.Text <> 0 And lblBalanceHora01.Text <> 0 Then lblHoraDiferencia01.Text = FormatDuco(CDec(lblBalanceHora02.Text) - CDec(lblBalanceHora01.Text), 8)
+            If lblBalanceHora03.Text <> 0 And lblBalanceHora02.Text <> 0 Then lblHoraDiferencia02.Text = FormatDuco(CDec(lblBalanceHora03.Text) - CDec(lblBalanceHora02.Text), 8)
+            If lblBalanceHora04.Text <> 0 And lblBalanceHora03.Text <> 0 Then lblHoraDiferencia03.Text = FormatDuco(CDec(lblBalanceHora04.Text) - CDec(lblBalanceHora03.Text), 8)
+            If lblBalanceHora05.Text <> 0 And lblBalanceHora04.Text <> 0 Then lblHoraDiferencia04.Text = FormatDuco(CDec(lblBalanceHora05.Text) - CDec(lblBalanceHora04.Text), 8)
+            If lblBalanceHora06.Text <> 0 And lblBalanceHora05.Text <> 0 Then lblHoraDiferencia05.Text = FormatDuco(CDec(lblBalanceHora06.Text) - CDec(lblBalanceHora05.Text), 8)
+            If lblBalanceHora07.Text <> 0 And lblBalanceHora06.Text <> 0 Then lblHoraDiferencia06.Text = FormatDuco(CDec(lblBalanceHora07.Text) - CDec(lblBalanceHora06.Text), 8)
+            If lblBalanceHora08.Text <> 0 And lblBalanceHora07.Text <> 0 Then lblHoraDiferencia07.Text = FormatDuco(CDec(lblBalanceHora08.Text) - CDec(lblBalanceHora07.Text), 8)
+            If lblBalanceHora09.Text <> 0 And lblBalanceHora08.Text <> 0 Then lblHoraDiferencia08.Text = FormatDuco(CDec(lblBalanceHora09.Text) - CDec(lblBalanceHora08.Text), 8)
+            If lblBalanceHora10.Text <> 0 And lblBalanceHora09.Text <> 0 Then lblHoraDiferencia09.Text = FormatDuco(CDec(lblBalanceHora10.Text) - CDec(lblBalanceHora09.Text), 8)
+            If lblBalanceHora11.Text <> 0 And lblBalanceHora10.Text <> 0 Then lblHoraDiferencia10.Text = FormatDuco(CDec(lblBalanceHora11.Text) - CDec(lblBalanceHora10.Text), 8)
+            If lblBalanceHora12.Text <> 0 And lblBalanceHora11.Text <> 0 Then lblHoraDiferencia11.Text = FormatDuco(CDec(lblBalanceHora12.Text) - CDec(lblBalanceHora11.Text), 8)
+            If lblBalanceHora13.Text <> 0 And lblBalanceHora12.Text <> 0 Then lblHoraDiferencia12.Text = FormatDuco(CDec(lblBalanceHora13.Text) - CDec(lblBalanceHora12.Text), 8)
+            If lblBalanceHora14.Text <> 0 And lblBalanceHora13.Text <> 0 Then lblHoraDiferencia13.Text = FormatDuco(CDec(lblBalanceHora14.Text) - CDec(lblBalanceHora13.Text), 8)
+            If lblBalanceHora15.Text <> 0 And lblBalanceHora14.Text <> 0 Then lblHoraDiferencia14.Text = FormatDuco(CDec(lblBalanceHora15.Text) - CDec(lblBalanceHora14.Text), 8)
+            If lblBalanceHora16.Text <> 0 And lblBalanceHora15.Text <> 0 Then lblHoraDiferencia15.Text = FormatDuco(CDec(lblBalanceHora16.Text) - CDec(lblBalanceHora15.Text), 8)
+            If lblBalanceHora17.Text <> 0 And lblBalanceHora16.Text <> 0 Then lblHoraDiferencia16.Text = FormatDuco(CDec(lblBalanceHora17.Text) - CDec(lblBalanceHora16.Text), 8)
+            If lblBalanceHora18.Text <> 0 And lblBalanceHora17.Text <> 0 Then lblHoraDiferencia17.Text = FormatDuco(CDec(lblBalanceHora18.Text) - CDec(lblBalanceHora17.Text), 8)
+            If lblBalanceHora19.Text <> 0 And lblBalanceHora18.Text <> 0 Then lblHoraDiferencia18.Text = FormatDuco(CDec(lblBalanceHora19.Text) - CDec(lblBalanceHora18.Text), 8)
+            If lblBalanceHora20.Text <> 0 And lblBalanceHora19.Text <> 0 Then lblHoraDiferencia19.Text = FormatDuco(CDec(lblBalanceHora20.Text) - CDec(lblBalanceHora19.Text), 8)
+            If lblBalanceHora21.Text <> 0 And lblBalanceHora20.Text <> 0 Then lblHoraDiferencia20.Text = FormatDuco(CDec(lblBalanceHora21.Text) - CDec(lblBalanceHora20.Text), 8)
+            If lblBalanceHora22.Text <> 0 And lblBalanceHora21.Text <> 0 Then lblHoraDiferencia21.Text = FormatDuco(CDec(lblBalanceHora22.Text) - CDec(lblBalanceHora21.Text), 8)
+            If lblBalanceHora23.Text <> 0 And lblBalanceHora22.Text <> 0 Then lblHoraDiferencia22.Text = FormatDuco(CDec(lblBalanceHora23.Text) - CDec(lblBalanceHora22.Text), 8)
+            If lblBalanceHora00.Text <> 0 And lblBalanceHora23.Text <> 0 Then lblHoraDiferencia23.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora23.Text), 8)
+        Catch ex As Exception
+            If ActivarMensajesError = True Then MsgBox("Error!!" & vbCrLf & ex.Message)
+        End Try
     End Sub
     Private Sub BalanceMes()
-        If lblMesBalance01.Text <> 0 And lblMesBalance02.Text <> 0 Then lblMesDifencia01.Text = FormatDuco(CDec(lblMesBalance01.Text) - CDec(lblMesBalance01.Text) - CDec(Transacion(31)), 13)
-        If lblMesBalance02.Text <> 0 And lblMesBalance01.Text <> 0 Then lblMesDifencia01.Text = FormatDuco(CDec(lblMesBalance02.Text) - CDec(lblMesBalance01.Text) - CDec(Transacion(1)), 13)
-        If lblMesBalance03.Text <> 0 And lblMesBalance02.Text <> 0 Then lblMesDifencia02.Text = FormatDuco(CDec(lblMesBalance03.Text) - CDec(lblMesBalance02.Text) - CDec(Transacion(2)), 13)
-        If lblMesBalance04.Text <> 0 And lblMesBalance03.Text <> 0 Then lblMesDifencia03.Text = FormatDuco(CDec(lblMesBalance04.Text) - CDec(lblMesBalance03.Text) - CDec(Transacion(3)), 13)
-        If lblMesBalance05.Text <> 0 And lblMesBalance04.Text <> 0 Then lblMesDifencia04.Text = FormatDuco(CDec(lblMesBalance05.Text) - CDec(lblMesBalance04.Text) - CDec(Transacion(4)), 13)
-        If lblMesBalance06.Text <> 0 And lblMesBalance05.Text <> 0 Then lblMesDifencia05.Text = FormatDuco(CDec(lblMesBalance06.Text) - CDec(lblMesBalance05.Text) - CDec(Transacion(5)), 13)
-        If lblMesBalance07.Text <> 0 And lblMesBalance06.Text <> 0 Then lblMesDifencia06.Text = FormatDuco(CDec(lblMesBalance07.Text) - CDec(lblMesBalance06.Text) - CDec(Transacion(6)), 13)
-        If lblMesBalance08.Text <> 0 And lblMesBalance07.Text <> 0 Then lblMesDifencia07.Text = FormatDuco(CDec(lblMesBalance08.Text) - CDec(lblMesBalance07.Text) - CDec(Transacion(7)), 13)
-        If lblMesBalance09.Text <> 0 And lblMesBalance08.Text <> 0 Then lblMesDifencia08.Text = FormatDuco(CDec(lblMesBalance09.Text) - CDec(lblMesBalance08.Text) - CDec(Transacion(8)), 13)
-        If lblMesBalance10.Text <> 0 And lblMesBalance09.Text <> 0 Then lblMesDifencia09.Text = FormatDuco(CDec(lblMesBalance10.Text) - CDec(lblMesBalance09.Text) - CDec(Transacion(9)), 13)
-        If lblMesBalance11.Text <> 0 And lblMesBalance10.Text <> 0 Then lblMesDifencia10.Text = FormatDuco(CDec(lblMesBalance11.Text) - CDec(lblMesBalance10.Text) - CDec(Transacion(10)), 13)
-        If lblMesBalance12.Text <> 0 And lblMesBalance11.Text <> 0 Then lblMesDifencia11.Text = FormatDuco(CDec(lblMesBalance12.Text) - CDec(lblMesBalance11.Text) - CDec(Transacion(11)), 13)
-        If lblMesBalance13.Text <> 0 And lblMesBalance12.Text <> 0 Then lblMesDifencia12.Text = FormatDuco(CDec(lblMesBalance13.Text) - CDec(lblMesBalance12.Text) - CDec(Transacion(12)), 13)
-        If lblMesBalance14.Text <> 0 And lblMesBalance13.Text <> 0 Then lblMesDifencia13.Text = FormatDuco(CDec(lblMesBalance14.Text) - CDec(lblMesBalance13.Text) - CDec(Transacion(13)), 13)
-        If lblMesBalance15.Text <> 0 And lblMesBalance14.Text <> 0 Then lblMesDifencia14.Text = FormatDuco(CDec(lblMesBalance15.Text) - CDec(lblMesBalance14.Text) - CDec(Transacion(14)), 13)
-        If lblMesBalance16.Text <> 0 And lblMesBalance15.Text <> 0 Then lblMesDifencia15.Text = FormatDuco(CDec(lblMesBalance16.Text) - CDec(lblMesBalance15.Text) - CDec(Transacion(15)), 13)
-        If lblMesBalance17.Text <> 0 And lblMesBalance16.Text <> 0 Then lblMesDifencia16.Text = FormatDuco(CDec(lblMesBalance17.Text) - CDec(lblMesBalance16.Text) - CDec(Transacion(16)), 13)
-        If lblMesBalance18.Text <> 0 And lblMesBalance17.Text <> 0 Then lblMesDifencia17.Text = FormatDuco(CDec(lblMesBalance18.Text) - CDec(lblMesBalance17.Text) - CDec(Transacion(17)), 13)
-        If lblMesBalance19.Text <> 0 And lblMesBalance18.Text <> 0 Then lblMesDifencia18.Text = FormatDuco(CDec(lblMesBalance19.Text) - CDec(lblMesBalance18.Text) - CDec(Transacion(18)), 13)
-        If lblMesBalance20.Text <> 0 And lblMesBalance19.Text <> 0 Then lblMesDifencia19.Text = FormatDuco(CDec(lblMesBalance20.Text) - CDec(lblMesBalance19.Text) - CDec(Transacion(19)), 13)
-        If lblMesBalance21.Text <> 0 And lblMesBalance20.Text <> 0 Then lblMesDifencia20.Text = FormatDuco(CDec(lblMesBalance21.Text) - CDec(lblMesBalance20.Text) - CDec(Transacion(20)), 13)
-        If lblMesBalance22.Text <> 0 And lblMesBalance21.Text <> 0 Then lblMesDifencia21.Text = FormatDuco(CDec(lblMesBalance22.Text) - CDec(lblMesBalance21.Text) - CDec(Transacion(21)), 13)
-        If lblMesBalance23.Text <> 0 And lblMesBalance22.Text <> 0 Then lblMesDifencia22.Text = FormatDuco(CDec(lblMesBalance23.Text) - CDec(lblMesBalance22.Text) - CDec(Transacion(22)), 13)
-        If lblMesBalance24.Text <> 0 And lblMesBalance23.Text <> 0 Then lblMesDifencia23.Text = FormatDuco(CDec(lblMesBalance24.Text) - CDec(lblMesBalance23.Text) - CDec(Transacion(23)), 13)
-        If lblMesBalance25.Text <> 0 And lblMesBalance24.Text <> 0 Then lblMesDifencia24.Text = FormatDuco(CDec(lblMesBalance25.Text) - CDec(lblMesBalance24.Text) - CDec(Transacion(24)), 13)
-        If lblMesBalance26.Text <> 0 And lblMesBalance25.Text <> 0 Then lblMesDifencia25.Text = FormatDuco(CDec(lblMesBalance26.Text) - CDec(lblMesBalance25.Text) - CDec(Transacion(25)), 13)
-        If lblMesBalance27.Text <> 0 And lblMesBalance26.Text <> 0 Then lblMesDifencia26.Text = FormatDuco(CDec(lblMesBalance27.Text) - CDec(lblMesBalance26.Text) - CDec(Transacion(26)), 13)
-        If lblMesBalance28.Text <> 0 And lblMesBalance27.Text <> 0 Then lblMesDifencia27.Text = FormatDuco(CDec(lblMesBalance28.Text) - CDec(lblMesBalance27.Text) - CDec(Transacion(27)), 13)
-        If lblMesBalance29.Text <> 0 And lblMesBalance28.Text <> 0 Then lblMesDifencia28.Text = FormatDuco(CDec(lblMesBalance29.Text) - CDec(lblMesBalance28.Text) - CDec(Transacion(28)), 13)
-        If lblMesBalance30.Text <> 0 And lblMesBalance29.Text <> 0 Then lblMesDifencia29.Text = FormatDuco(CDec(lblMesBalance30.Text) - CDec(lblMesBalance29.Text) - CDec(Transacion(29)), 13)
-        If lblMesBalance31.Text <> 0 And lblMesBalance30.Text <> 0 Then lblMesDifencia30.Text = FormatDuco(CDec(lblMesBalance31.Text) - CDec(lblMesBalance30.Text) - CDec(Transacion(30)), 13)
+        Try
+            If lblMesBalance01.Text <> 0 And lblMesBalance02.Text <> 0 Then lblMesDifencia01.Text = FormatDuco(CDec(lblMesBalance01.Text) - CDec(lblMesBalance01.Text) - CDec(Transacion(31)), 13)
+            If lblMesBalance02.Text <> 0 And lblMesBalance01.Text <> 0 Then lblMesDifencia01.Text = FormatDuco(CDec(lblMesBalance02.Text) - CDec(lblMesBalance01.Text) - CDec(Transacion(1)), 13)
+            If lblMesBalance03.Text <> 0 And lblMesBalance02.Text <> 0 Then lblMesDifencia02.Text = FormatDuco(CDec(lblMesBalance03.Text) - CDec(lblMesBalance02.Text) - CDec(Transacion(2)), 13)
+            If lblMesBalance04.Text <> 0 And lblMesBalance03.Text <> 0 Then lblMesDifencia03.Text = FormatDuco(CDec(lblMesBalance04.Text) - CDec(lblMesBalance03.Text) - CDec(Transacion(3)), 13)
+            If lblMesBalance05.Text <> 0 And lblMesBalance04.Text <> 0 Then lblMesDifencia04.Text = FormatDuco(CDec(lblMesBalance05.Text) - CDec(lblMesBalance04.Text) - CDec(Transacion(4)), 13)
+            If lblMesBalance06.Text <> 0 And lblMesBalance05.Text <> 0 Then lblMesDifencia05.Text = FormatDuco(CDec(lblMesBalance06.Text) - CDec(lblMesBalance05.Text) - CDec(Transacion(5)), 13)
+            If lblMesBalance07.Text <> 0 And lblMesBalance06.Text <> 0 Then lblMesDifencia06.Text = FormatDuco(CDec(lblMesBalance07.Text) - CDec(lblMesBalance06.Text) - CDec(Transacion(6)), 13)
+            If lblMesBalance08.Text <> 0 And lblMesBalance07.Text <> 0 Then lblMesDifencia07.Text = FormatDuco(CDec(lblMesBalance08.Text) - CDec(lblMesBalance07.Text) - CDec(Transacion(7)), 13)
+            If lblMesBalance09.Text <> 0 And lblMesBalance08.Text <> 0 Then lblMesDifencia08.Text = FormatDuco(CDec(lblMesBalance09.Text) - CDec(lblMesBalance08.Text) - CDec(Transacion(8)), 13)
+            If lblMesBalance10.Text <> 0 And lblMesBalance09.Text <> 0 Then lblMesDifencia09.Text = FormatDuco(CDec(lblMesBalance10.Text) - CDec(lblMesBalance09.Text) - CDec(Transacion(9)), 13)
+            If lblMesBalance11.Text <> 0 And lblMesBalance10.Text <> 0 Then lblMesDifencia10.Text = FormatDuco(CDec(lblMesBalance11.Text) - CDec(lblMesBalance10.Text) - CDec(Transacion(10)), 13)
+            If lblMesBalance12.Text <> 0 And lblMesBalance11.Text <> 0 Then lblMesDifencia11.Text = FormatDuco(CDec(lblMesBalance12.Text) - CDec(lblMesBalance11.Text) - CDec(Transacion(11)), 13)
+            If lblMesBalance13.Text <> 0 And lblMesBalance12.Text <> 0 Then lblMesDifencia12.Text = FormatDuco(CDec(lblMesBalance13.Text) - CDec(lblMesBalance12.Text) - CDec(Transacion(12)), 13)
+            If lblMesBalance14.Text <> 0 And lblMesBalance13.Text <> 0 Then lblMesDifencia13.Text = FormatDuco(CDec(lblMesBalance14.Text) - CDec(lblMesBalance13.Text) - CDec(Transacion(13)), 13)
+            If lblMesBalance15.Text <> 0 And lblMesBalance14.Text <> 0 Then lblMesDifencia14.Text = FormatDuco(CDec(lblMesBalance15.Text) - CDec(lblMesBalance14.Text) - CDec(Transacion(14)), 13)
+            If lblMesBalance16.Text <> 0 And lblMesBalance15.Text <> 0 Then lblMesDifencia15.Text = FormatDuco(CDec(lblMesBalance16.Text) - CDec(lblMesBalance15.Text) - CDec(Transacion(15)), 13)
+            If lblMesBalance17.Text <> 0 And lblMesBalance16.Text <> 0 Then lblMesDifencia16.Text = FormatDuco(CDec(lblMesBalance17.Text) - CDec(lblMesBalance16.Text) - CDec(Transacion(16)), 13)
+            If lblMesBalance18.Text <> 0 And lblMesBalance17.Text <> 0 Then lblMesDifencia17.Text = FormatDuco(CDec(lblMesBalance18.Text) - CDec(lblMesBalance17.Text) - CDec(Transacion(17)), 13)
+            If lblMesBalance19.Text <> 0 And lblMesBalance18.Text <> 0 Then lblMesDifencia18.Text = FormatDuco(CDec(lblMesBalance19.Text) - CDec(lblMesBalance18.Text) - CDec(Transacion(18)), 13)
+            If lblMesBalance20.Text <> 0 And lblMesBalance19.Text <> 0 Then lblMesDifencia19.Text = FormatDuco(CDec(lblMesBalance20.Text) - CDec(lblMesBalance19.Text) - CDec(Transacion(19)), 13)
+            If lblMesBalance21.Text <> 0 And lblMesBalance20.Text <> 0 Then lblMesDifencia20.Text = FormatDuco(CDec(lblMesBalance21.Text) - CDec(lblMesBalance20.Text) - CDec(Transacion(20)), 13)
+            If lblMesBalance22.Text <> 0 And lblMesBalance21.Text <> 0 Then lblMesDifencia21.Text = FormatDuco(CDec(lblMesBalance22.Text) - CDec(lblMesBalance21.Text) - CDec(Transacion(21)), 13)
+            If lblMesBalance23.Text <> 0 And lblMesBalance22.Text <> 0 Then lblMesDifencia22.Text = FormatDuco(CDec(lblMesBalance23.Text) - CDec(lblMesBalance22.Text) - CDec(Transacion(22)), 13)
+            If lblMesBalance24.Text <> 0 And lblMesBalance23.Text <> 0 Then lblMesDifencia23.Text = FormatDuco(CDec(lblMesBalance24.Text) - CDec(lblMesBalance23.Text) - CDec(Transacion(23)), 13)
+            If lblMesBalance25.Text <> 0 And lblMesBalance24.Text <> 0 Then lblMesDifencia24.Text = FormatDuco(CDec(lblMesBalance25.Text) - CDec(lblMesBalance24.Text) - CDec(Transacion(24)), 13)
+            If lblMesBalance26.Text <> 0 And lblMesBalance25.Text <> 0 Then lblMesDifencia25.Text = FormatDuco(CDec(lblMesBalance26.Text) - CDec(lblMesBalance25.Text) - CDec(Transacion(25)), 13)
+            If lblMesBalance27.Text <> 0 And lblMesBalance26.Text <> 0 Then lblMesDifencia26.Text = FormatDuco(CDec(lblMesBalance27.Text) - CDec(lblMesBalance26.Text) - CDec(Transacion(26)), 13)
+            If lblMesBalance28.Text <> 0 And lblMesBalance27.Text <> 0 Then lblMesDifencia27.Text = FormatDuco(CDec(lblMesBalance28.Text) - CDec(lblMesBalance27.Text) - CDec(Transacion(27)), 13)
+            If lblMesBalance29.Text <> 0 And lblMesBalance28.Text <> 0 Then lblMesDifencia28.Text = FormatDuco(CDec(lblMesBalance29.Text) - CDec(lblMesBalance28.Text) - CDec(Transacion(28)), 13)
+            If lblMesBalance30.Text <> 0 And lblMesBalance29.Text <> 0 Then lblMesDifencia29.Text = FormatDuco(CDec(lblMesBalance30.Text) - CDec(lblMesBalance29.Text) - CDec(Transacion(29)), 13)
+            If lblMesBalance31.Text <> 0 And lblMesBalance30.Text <> 0 Then lblMesDifencia30.Text = FormatDuco(CDec(lblMesBalance31.Text) - CDec(lblMesBalance30.Text) - CDec(Transacion(30)), 13)
+        Catch ex As Exception
+            If ActivarMensajesError = True Then MsgBox("Error!!" & vbCrLf & ex.Message)
+        End Try
     End Sub
     Private Sub MostrarMes()
-        Dim Dato As Date = DateAndTime.Now
-        Dim UltimoDía As Date = DateSerial(Dato.Year, Dato.Month + 1, 0)
-        Dim UltimoDiaMes As Integer = 31 'Mid(UltimoDía, 1, 2)
-        Select Case UltimoDiaMes
-            Case 31
-                lbl31.Visible = True
-                lblMesBalance31.Visible = True
-                lblMesPrecio31.Visible = True
-                lblMesDifencia31.Visible = True
-                lblTransacionMes31.Visible = True
-                lbl30.Visible = True
-                lblMesBalance30.Visible = True
-                lblMesPrecio30.Visible = True
-                lblMesDifencia30.Visible = True
-                lbl29.Visible = True
-                lblMesBalance29.Visible = True
-                lblMesPrecio29.Visible = True
-                lblMesDifencia29.Visible = True
-                lblTotalMes.Location = New Point(299, 633)
-                lblTransacionMes.Location = New Point(218, 633)
-                lblMesDaily.Location = New Point(8, 633)
+        Try
+            Dim Dato As Date = DateAndTime.Now
+            Dim UltimoDía As Date = DateSerial(Dato.Year, Dato.Month + 1, 0)
+            Dim UltimoDiaMes As Integer = 31 'Mid(UltimoDía, 1, 2)
+            Select Case UltimoDiaMes
+                Case 31
+                    lbl31.Visible = True
+                    lblMesBalance31.Visible = True
+                    lblMesPrecio31.Visible = True
+                    lblMesDifencia31.Visible = True
+                    lblTransacionMes31.Visible = True
+                    lbl30.Visible = True
+                    lblMesBalance30.Visible = True
+                    lblMesPrecio30.Visible = True
+                    lblMesDifencia30.Visible = True
+                    lbl29.Visible = True
+                    lblMesBalance29.Visible = True
+                    lblMesPrecio29.Visible = True
+                    lblMesDifencia29.Visible = True
+                    lblTotalMes.Location = New Point(299, 633)
+                    lblTransacionMes.Location = New Point(218, 633)
+                    lblMesDaily.Location = New Point(8, 633)
                 'gpMes.Size = New Size(411, 676)
-            Case 30
-                lbl31.Visible = False
-                lblMesBalance31.Visible = False
-                lblMesPrecio31.Visible = False
-                lblTransacionMes31.Visible = False
-                lblMesDifencia31.Visible = False
-                lbl30.Visible = True
-                lblMesBalance30.Visible = True
-                lblMesPrecio30.Visible = True
-                lblMesDifencia30.Visible = True
-                lbl29.Visible = True
-                lblMesBalance29.Visible = True
-                lblMesPrecio29.Visible = True
-                lblMesDifencia29.Visible = True
-                lblTotalMes.Location = New Point(299, 614)
-                lblTransacionMes.Location = New Point(218, 614)
-                lblMesDaily.Location = New Point(8, 614)
+                Case 30
+                    lbl31.Visible = False
+                    lblMesBalance31.Visible = False
+                    lblMesPrecio31.Visible = False
+                    lblTransacionMes31.Visible = False
+                    lblMesDifencia31.Visible = False
+                    lbl30.Visible = True
+                    lblMesBalance30.Visible = True
+                    lblMesPrecio30.Visible = True
+                    lblMesDifencia30.Visible = True
+                    lbl29.Visible = True
+                    lblMesBalance29.Visible = True
+                    lblMesPrecio29.Visible = True
+                    lblMesDifencia29.Visible = True
+                    lblTotalMes.Location = New Point(299, 614)
+                    lblTransacionMes.Location = New Point(218, 614)
+                    lblMesDaily.Location = New Point(8, 614)
                 'gpMes.Size = New Size(411, 676)
-            Case 29
-                lbl31.Visible = False
-                lblMesBalance31.Visible = False
-                lblMesPrecio31.Visible = False
-                lblTransacionMes31.Visible = False
-                lblMesDifencia31.Visible = False
-                lbl30.Visible = False
-                lblMesBalance30.Visible = False
-                lblMesPrecio30.Visible = False
-                lblMesDifencia30.Visible = False
-                lbl29.Visible = True
-                lblMesBalance29.Visible = True
-                lblMesPrecio29.Visible = True
-                lblMesDifencia29.Visible = True
-                lblTotalMes.Location = New Point(299, 595)
-                lblTransacionMes.Location = New Point(218, 595)
-                lblMesDaily.Location = New Point(8, 595)
+                Case 29
+                    lbl31.Visible = False
+                    lblMesBalance31.Visible = False
+                    lblMesPrecio31.Visible = False
+                    lblTransacionMes31.Visible = False
+                    lblMesDifencia31.Visible = False
+                    lbl30.Visible = False
+                    lblMesBalance30.Visible = False
+                    lblMesPrecio30.Visible = False
+                    lblMesDifencia30.Visible = False
+                    lbl29.Visible = True
+                    lblMesBalance29.Visible = True
+                    lblMesPrecio29.Visible = True
+                    lblMesDifencia29.Visible = True
+                    lblTotalMes.Location = New Point(299, 595)
+                    lblTransacionMes.Location = New Point(218, 595)
+                    lblMesDaily.Location = New Point(8, 595)
                 'gpMes.Size = New Size(411, 577)
-            Case 28
-                lbl31.Visible = False
-                lblMesBalance31.Visible = False
-                lblMesPrecio31.Visible = False
-                lblTransacionMes31.Visible = False
-                lblMesDifencia31.Visible = False
-                lbl30.Visible = False
-                lblMesBalance30.Visible = False
-                lblMesPrecio30.Visible = False
-                lblMesDifencia30.Visible = False
-                lbl29.Visible = False
-                lblMesBalance29.Visible = False
-                lblMesPrecio29.Visible = False
-                lblMesDifencia29.Visible = False
-                lblTotalMes.Location = New Point(299, 576)
-                lblTransacionMes.Location = New Point(218, 576)
-                lblMesDaily.Location = New Point(13, 576)
-                'gpMes.Size = New Size(411, 558)
-        End Select
+                Case 28
+                    lbl31.Visible = False
+                    lblMesBalance31.Visible = False
+                    lblMesPrecio31.Visible = False
+                    lblTransacionMes31.Visible = False
+                    lblMesDifencia31.Visible = False
+                    lbl30.Visible = False
+                    lblMesBalance30.Visible = False
+                    lblMesPrecio30.Visible = False
+                    lblMesDifencia30.Visible = False
+                    lbl29.Visible = False
+                    lblMesBalance29.Visible = False
+                    lblMesPrecio29.Visible = False
+                    lblMesDifencia29.Visible = False
+                    lblTotalMes.Location = New Point(299, 576)
+                    lblTransacionMes.Location = New Point(218, 576)
+                    lblMesDaily.Location = New Point(13, 576)
+                    'gpMes.Size = New Size(411, 558)
+            End Select
+        Catch ex As Exception
+            If ActivarMensajesError = True Then MsgBox("Error!!" & vbCrLf & ex.Message)
+        End Try
     End Sub
     Public Function UnixTimeToDate(ByVal Timestamp As Long) As String
         Dim intDays As Integer, intHours As Integer, intMins As Integer, intSecs As Integer
@@ -271,7 +287,6 @@ Public Class Form1
                     lstboxTop10.Items.Add(dict.item("Top 10 richest miners").item(K))
                 Next
             End If
-
             Dim HasesUsuario As Integer = 0
             Dim uriString2 As String = "https://server.duinocoin.com/users/" & txtUser.Text & "?limit=5000"
             Dim uri2 As New Uri(uriString2)
@@ -282,7 +297,6 @@ Public Class Form1
             Dim Raw2 As String = Read2.ReadToEnd()
             Dim dict2 As Object = New JavaScriptSerializer().Deserialize(Of Dictionary(Of String, Object))(Raw2)
             Dict2Public = dict2
-
             Dim Deposito As Integer = dict2.item("result").item("balance").item("stake_amount")
             Dim FechafinDeposito As Integer = dict2.item("result").item("balance").item("stake_date")
             lblDeposito.Text = Deposito
@@ -333,7 +347,7 @@ Public Class Form1
                 Chart7.Series(0).Points.AddY(Temperatura)
                 Chart7.Series(1).Points.AddY(Humedad)
                 ContadorEstimacion += 1
-                If ContadorEstimacion >= 100 Then
+                If ContadorEstimacion >= RemoverGraficos Then
                     Chart6.Series(0).Points.RemoveAt(0)
                     Chart7.Series(0).Points.RemoveAt(0)
                     Chart7.Series(1).Points.RemoveAt(0)
@@ -553,7 +567,6 @@ Public Class Form1
             TreeView2.Nodes(0).SelectedImageIndex = 6
             TreeView2.Nodes(0).Expand()
             TreeView2.Sorted = True
-
             Select Case Hour(Now)
                 Case 0 : If lblBalanceHora00.Text <> 0 Then lblHoraDiferencia00.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora00.Text), 8)
                 Case 1 : If lblBalanceHora01.Text <> 0 Then lblHoraDiferencia01.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceHora01.Text), 8)
@@ -756,449 +769,453 @@ Public Class Form1
             Chart5.Series(0).Points.AddXY("Day 31", CDec(lblMesPrecio31.Text))
             My.Settings.Save()
         Catch ex As Exception
-            MsgBox("Error!!" & vbCrLf & ex.Message)
+            If ActivarMensajesError = True Then MsgBox("Error!!" & vbCrLf & ex.Message)
         End Try
     End Sub
     Private Sub MostrarTotales()
-        Dim TotalHoras As Decimal = 0
-        Dim PrecioMedioHora As Decimal = 0
-        Dim PrecioMin As Decimal
-        Dim PrecioMax As Decimal
-        lblTotalHora.Text = 0
-        PrecioMin = CDec(lblPrecio00.Text)
-        PrecioMax = CDec(lblPrecio00.Text)
-        If lblPrecio02.Text <> "0" Then
-            If PrecioMin >= CDec(lblPrecio02.Text) Then
-                PrecioMin = CDec(lblPrecio02.Text)
-            ElseIf PrecioMax <= CDec(lblPrecio02.Text) Then
-                PrecioMax = CDec(lblPrecio02.Text)
+        Try
+            Dim TotalHoras As Decimal = 0
+            Dim PrecioMedioHora As Decimal = 0
+            Dim PrecioMin As Decimal
+            Dim PrecioMax As Decimal
+            lblTotalHora.Text = 0
+            PrecioMin = CDec(lblPrecio00.Text)
+            PrecioMax = CDec(lblPrecio00.Text)
+            If lblPrecio02.Text <> "0" Then
+                If PrecioMin >= CDec(lblPrecio02.Text) Then
+                    PrecioMin = CDec(lblPrecio02.Text)
+                ElseIf PrecioMax <= CDec(lblPrecio02.Text) Then
+                    PrecioMax = CDec(lblPrecio02.Text)
+                End If
             End If
-        End If
-        If lblPrecio03.Text <> "0" Then
-            If PrecioMin >= CDec(lblPrecio03.Text) Then
-                PrecioMin = CDec(lblPrecio03.Text)
-            ElseIf PrecioMax <= CDec(lblPrecio03.Text) Then
-                PrecioMax = CDec(lblPrecio03.Text)
+            If lblPrecio03.Text <> "0" Then
+                If PrecioMin >= CDec(lblPrecio03.Text) Then
+                    PrecioMin = CDec(lblPrecio03.Text)
+                ElseIf PrecioMax <= CDec(lblPrecio03.Text) Then
+                    PrecioMax = CDec(lblPrecio03.Text)
+                End If
             End If
-        End If
-        If lblPrecio04.Text <> "0" Then
-            If PrecioMin >= CDec(lblPrecio04.Text) Then
-                PrecioMin = CDec(lblPrecio04.Text)
-            ElseIf PrecioMax <= CDec(lblPrecio04.Text) Then
-                PrecioMax = CDec(lblPrecio04.Text)
+            If lblPrecio04.Text <> "0" Then
+                If PrecioMin >= CDec(lblPrecio04.Text) Then
+                    PrecioMin = CDec(lblPrecio04.Text)
+                ElseIf PrecioMax <= CDec(lblPrecio04.Text) Then
+                    PrecioMax = CDec(lblPrecio04.Text)
+                End If
             End If
-        End If
-        If lblPrecio05.Text <> "0" Then
-            If PrecioMin >= CDec(lblPrecio05.Text) Then
-                PrecioMin = CDec(lblPrecio05.Text)
-            ElseIf PrecioMax <= CDec(lblPrecio05.Text) Then
-                PrecioMax = CDec(lblPrecio05.Text)
+            If lblPrecio05.Text <> "0" Then
+                If PrecioMin >= CDec(lblPrecio05.Text) Then
+                    PrecioMin = CDec(lblPrecio05.Text)
+                ElseIf PrecioMax <= CDec(lblPrecio05.Text) Then
+                    PrecioMax = CDec(lblPrecio05.Text)
+                End If
             End If
-        End If
-        If lblPrecio06.Text <> "0" Then
-            If PrecioMin >= CDec(lblPrecio06.Text) Then
-                PrecioMin = CDec(lblPrecio06.Text)
-            ElseIf PrecioMax <= CDec(lblPrecio06.Text) Then
-                PrecioMax = CDec(lblPrecio06.Text)
+            If lblPrecio06.Text <> "0" Then
+                If PrecioMin >= CDec(lblPrecio06.Text) Then
+                    PrecioMin = CDec(lblPrecio06.Text)
+                ElseIf PrecioMax <= CDec(lblPrecio06.Text) Then
+                    PrecioMax = CDec(lblPrecio06.Text)
+                End If
             End If
-        End If
-        If lblPrecio07.Text <> "0" Then
-            If PrecioMin >= CDec(lblPrecio07.Text) Then
-                PrecioMin = CDec(lblPrecio07.Text)
-            ElseIf PrecioMax <= CDec(lblPrecio07.Text) Then
-                PrecioMax = CDec(lblPrecio07.Text)
+            If lblPrecio07.Text <> "0" Then
+                If PrecioMin >= CDec(lblPrecio07.Text) Then
+                    PrecioMin = CDec(lblPrecio07.Text)
+                ElseIf PrecioMax <= CDec(lblPrecio07.Text) Then
+                    PrecioMax = CDec(lblPrecio07.Text)
+                End If
             End If
-        End If
-        If lblPrecio08.Text <> "0" Then
-            If PrecioMin >= CDec(lblPrecio08.Text) Then
-                PrecioMin = CDec(lblPrecio08.Text)
-            ElseIf PrecioMax <= CDec(lblPrecio08.Text) Then
-                PrecioMax = CDec(lblPrecio08.Text)
+            If lblPrecio08.Text <> "0" Then
+                If PrecioMin >= CDec(lblPrecio08.Text) Then
+                    PrecioMin = CDec(lblPrecio08.Text)
+                ElseIf PrecioMax <= CDec(lblPrecio08.Text) Then
+                    PrecioMax = CDec(lblPrecio08.Text)
+                End If
             End If
-        End If
-        If lblPrecio09.Text <> "0" Then
-            If PrecioMin >= CDec(lblPrecio09.Text) Then
-                PrecioMin = CDec(lblPrecio09.Text)
-            ElseIf PrecioMax <= CDec(lblPrecio09.Text) Then
-                PrecioMax = CDec(lblPrecio09.Text)
+            If lblPrecio09.Text <> "0" Then
+                If PrecioMin >= CDec(lblPrecio09.Text) Then
+                    PrecioMin = CDec(lblPrecio09.Text)
+                ElseIf PrecioMax <= CDec(lblPrecio09.Text) Then
+                    PrecioMax = CDec(lblPrecio09.Text)
+                End If
             End If
-        End If
-        If lblPrecio10.Text <> "0" Then
-            If PrecioMin >= CDec(lblPrecio10.Text) Then
-                PrecioMin = CDec(lblPrecio10.Text)
-            ElseIf PrecioMax <= CDec(lblPrecio10.Text) Then
-                PrecioMax = CDec(lblPrecio10.Text)
+            If lblPrecio10.Text <> "0" Then
+                If PrecioMin >= CDec(lblPrecio10.Text) Then
+                    PrecioMin = CDec(lblPrecio10.Text)
+                ElseIf PrecioMax <= CDec(lblPrecio10.Text) Then
+                    PrecioMax = CDec(lblPrecio10.Text)
+                End If
             End If
-        End If
-        If lblPrecio11.Text <> "0" Then
-            If PrecioMin >= CDec(lblPrecio11.Text) Then
-                PrecioMin = CDec(lblPrecio11.Text)
-            ElseIf PrecioMax <= CDec(lblPrecio11.Text) Then
-                PrecioMax = CDec(lblPrecio11.Text)
+            If lblPrecio11.Text <> "0" Then
+                If PrecioMin >= CDec(lblPrecio11.Text) Then
+                    PrecioMin = CDec(lblPrecio11.Text)
+                ElseIf PrecioMax <= CDec(lblPrecio11.Text) Then
+                    PrecioMax = CDec(lblPrecio11.Text)
+                End If
             End If
-        End If
-        If lblPrecio12.Text <> "0" Then
-            If PrecioMin >= CDec(lblPrecio12.Text) Then
-                PrecioMin = CDec(lblPrecio12.Text)
-            ElseIf PrecioMax <= CDec(lblPrecio12.Text) Then
-                PrecioMax = CDec(lblPrecio12.Text)
+            If lblPrecio12.Text <> "0" Then
+                If PrecioMin >= CDec(lblPrecio12.Text) Then
+                    PrecioMin = CDec(lblPrecio12.Text)
+                ElseIf PrecioMax <= CDec(lblPrecio12.Text) Then
+                    PrecioMax = CDec(lblPrecio12.Text)
+                End If
             End If
-        End If
-        If lblPrecio13.Text <> "0" Then
-            If PrecioMin >= CDec(lblPrecio13.Text) Then
-                PrecioMin = CDec(lblPrecio13.Text)
-            ElseIf PrecioMax <= CDec(lblPrecio13.Text) Then
-                PrecioMax = CDec(lblPrecio13.Text)
+            If lblPrecio13.Text <> "0" Then
+                If PrecioMin >= CDec(lblPrecio13.Text) Then
+                    PrecioMin = CDec(lblPrecio13.Text)
+                ElseIf PrecioMax <= CDec(lblPrecio13.Text) Then
+                    PrecioMax = CDec(lblPrecio13.Text)
+                End If
             End If
-        End If
-        If lblPrecio14.Text <> "0" Then
-            If PrecioMin >= CDec(lblPrecio14.Text) Then
-                PrecioMin = CDec(lblPrecio14.Text)
-            ElseIf PrecioMax <= CDec(lblPrecio14.Text) Then
-                PrecioMax = CDec(lblPrecio14.Text)
+            If lblPrecio14.Text <> "0" Then
+                If PrecioMin >= CDec(lblPrecio14.Text) Then
+                    PrecioMin = CDec(lblPrecio14.Text)
+                ElseIf PrecioMax <= CDec(lblPrecio14.Text) Then
+                    PrecioMax = CDec(lblPrecio14.Text)
+                End If
             End If
-        End If
-        If lblPrecio15.Text <> "0" Then
-            If PrecioMin >= CDec(lblPrecio15.Text) Then
-                PrecioMin = CDec(lblPrecio15.Text)
-            ElseIf PrecioMax <= CDec(lblPrecio15.Text) Then
-                PrecioMax = CDec(lblPrecio15.Text)
+            If lblPrecio15.Text <> "0" Then
+                If PrecioMin >= CDec(lblPrecio15.Text) Then
+                    PrecioMin = CDec(lblPrecio15.Text)
+                ElseIf PrecioMax <= CDec(lblPrecio15.Text) Then
+                    PrecioMax = CDec(lblPrecio15.Text)
+                End If
             End If
-        End If
-        If lblPrecio16.Text <> "0" Then
-            If PrecioMin >= CDec(lblPrecio16.Text) Then
-                PrecioMin = CDec(lblPrecio16.Text)
-            ElseIf PrecioMax <= CDec(lblPrecio16.Text) Then
-                PrecioMax = CDec(lblPrecio16.Text)
+            If lblPrecio16.Text <> "0" Then
+                If PrecioMin >= CDec(lblPrecio16.Text) Then
+                    PrecioMin = CDec(lblPrecio16.Text)
+                ElseIf PrecioMax <= CDec(lblPrecio16.Text) Then
+                    PrecioMax = CDec(lblPrecio16.Text)
+                End If
             End If
-        End If
-        If lblPrecio17.Text <> "0" Then
-            If PrecioMin >= CDec(lblPrecio17.Text) Then
-                PrecioMin = CDec(lblPrecio17.Text)
-            ElseIf PrecioMax <= CDec(lblPrecio17.Text) Then
-                PrecioMax = CDec(lblPrecio17.Text)
+            If lblPrecio17.Text <> "0" Then
+                If PrecioMin >= CDec(lblPrecio17.Text) Then
+                    PrecioMin = CDec(lblPrecio17.Text)
+                ElseIf PrecioMax <= CDec(lblPrecio17.Text) Then
+                    PrecioMax = CDec(lblPrecio17.Text)
+                End If
             End If
-        End If
-        If lblPrecio18.Text <> "0" Then
-            If PrecioMin >= CDec(lblPrecio18.Text) Then
-                PrecioMin = CDec(lblPrecio18.Text)
-            ElseIf PrecioMax <= CDec(lblPrecio18.Text) Then
-                PrecioMax = CDec(lblPrecio18.Text)
+            If lblPrecio18.Text <> "0" Then
+                If PrecioMin >= CDec(lblPrecio18.Text) Then
+                    PrecioMin = CDec(lblPrecio18.Text)
+                ElseIf PrecioMax <= CDec(lblPrecio18.Text) Then
+                    PrecioMax = CDec(lblPrecio18.Text)
+                End If
             End If
-        End If
-        If lblPrecio19.Text <> "0" Then
-            If PrecioMin >= CDec(lblPrecio19.Text) Then
-                PrecioMin = CDec(lblPrecio19.Text)
-            ElseIf PrecioMax <= CDec(lblPrecio19.Text) Then
-                PrecioMax = CDec(lblPrecio19.Text)
+            If lblPrecio19.Text <> "0" Then
+                If PrecioMin >= CDec(lblPrecio19.Text) Then
+                    PrecioMin = CDec(lblPrecio19.Text)
+                ElseIf PrecioMax <= CDec(lblPrecio19.Text) Then
+                    PrecioMax = CDec(lblPrecio19.Text)
+                End If
             End If
-        End If
-        If lblPrecio20.Text <> "0" Then
-            If PrecioMin >= CDec(lblPrecio20.Text) Then
-                PrecioMin = CDec(lblPrecio20.Text)
-            ElseIf PrecioMax <= CDec(lblPrecio20.Text) Then
-                PrecioMax = CDec(lblPrecio20.Text)
+            If lblPrecio20.Text <> "0" Then
+                If PrecioMin >= CDec(lblPrecio20.Text) Then
+                    PrecioMin = CDec(lblPrecio20.Text)
+                ElseIf PrecioMax <= CDec(lblPrecio20.Text) Then
+                    PrecioMax = CDec(lblPrecio20.Text)
+                End If
             End If
-        End If
-        If lblPrecio21.Text <> "0" Then
-            If PrecioMin >= CDec(lblPrecio21.Text) Then
-                PrecioMin = CDec(lblPrecio21.Text)
-            ElseIf PrecioMax <= CDec(lblPrecio21.Text) Then
-                PrecioMax = CDec(lblPrecio21.Text)
+            If lblPrecio21.Text <> "0" Then
+                If PrecioMin >= CDec(lblPrecio21.Text) Then
+                    PrecioMin = CDec(lblPrecio21.Text)
+                ElseIf PrecioMax <= CDec(lblPrecio21.Text) Then
+                    PrecioMax = CDec(lblPrecio21.Text)
+                End If
             End If
-        End If
-        If lblPrecio22.Text <> "0" Then
-            If PrecioMin >= CDec(lblPrecio22.Text) Then
-                PrecioMin = CDec(lblPrecio22.Text)
-            ElseIf PrecioMax <= CDec(lblPrecio22.Text) Then
-                PrecioMax = CDec(lblPrecio22.Text)
+            If lblPrecio22.Text <> "0" Then
+                If PrecioMin >= CDec(lblPrecio22.Text) Then
+                    PrecioMin = CDec(lblPrecio22.Text)
+                ElseIf PrecioMax <= CDec(lblPrecio22.Text) Then
+                    PrecioMax = CDec(lblPrecio22.Text)
+                End If
             End If
-        End If
-        If lblPrecio23.Text <> "0" Then
-            If PrecioMin >= CDec(lblPrecio23.Text) Then
-                PrecioMin = CDec(lblPrecio23.Text)
-            ElseIf PrecioMax <= CDec(lblPrecio23.Text) Then
-                PrecioMax = CDec(lblPrecio23.Text)
+            If lblPrecio23.Text <> "0" Then
+                If PrecioMin >= CDec(lblPrecio23.Text) Then
+                    PrecioMin = CDec(lblPrecio23.Text)
+                ElseIf PrecioMax <= CDec(lblPrecio23.Text) Then
+                    PrecioMax = CDec(lblPrecio23.Text)
+                End If
             End If
-        End If
-        If Hour(Now) = 0 Then
-            lblPrecioDia.Text = lblPrecio00.Text
-        Else
-            lblPrecioDia.Text = (PrecioMax + PrecioMin) / 2
-        End If
-        Dim PrecioMesMin As Decimal
-        Dim PrecioMesMax As Decimal
-        PrecioMesMin = CDec(lblMesPrecio01.Text)
-        PrecioMesMax = CDec(lblMesPrecio01.Text)
-        If lblMesPrecio02.Text <> "0" Then
-            If PrecioMesMin > CDec(lblMesPrecio02.Text) Then
-                PrecioMesMin = CDec(lblMesPrecio02.Text)
-            ElseIf PrecioMesMax < CDec(lblMesPrecio02.Text) Then
-                PrecioMesMax = CDec(lblMesPrecio02.Text)
+            If Hour(Now) = 0 Then
+                lblPrecioDia.Text = lblPrecio00.Text
+            Else
+                lblPrecioDia.Text = (PrecioMax + PrecioMin) / 2
             End If
-        End If
-        If lblMesPrecio03.Text <> "0" Then
-            If PrecioMesMin > CDec(lblMesPrecio03.Text) Then
-                PrecioMesMin = CDec(lblMesPrecio03.Text)
-            ElseIf PrecioMesMax < CDec(lblMesPrecio03.Text) Then
-                PrecioMesMax = CDec(lblMesPrecio03.Text)
+            Dim PrecioMesMin As Decimal
+            Dim PrecioMesMax As Decimal
+            PrecioMesMin = CDec(lblMesPrecio01.Text)
+            PrecioMesMax = CDec(lblMesPrecio01.Text)
+            If lblMesPrecio02.Text <> "0" Then
+                If PrecioMesMin > CDec(lblMesPrecio02.Text) Then
+                    PrecioMesMin = CDec(lblMesPrecio02.Text)
+                ElseIf PrecioMesMax < CDec(lblMesPrecio02.Text) Then
+                    PrecioMesMax = CDec(lblMesPrecio02.Text)
+                End If
             End If
-        End If
-        If lblMesPrecio04.Text <> "0" Then
-            If PrecioMesMin > CDec(lblMesPrecio04.Text) Then
-                PrecioMesMin = CDec(lblMesPrecio04.Text)
-            ElseIf PrecioMesMax < CDec(lblMesPrecio04.Text) Then
-                PrecioMesMax = CDec(lblMesPrecio04.Text)
+            If lblMesPrecio03.Text <> "0" Then
+                If PrecioMesMin > CDec(lblMesPrecio03.Text) Then
+                    PrecioMesMin = CDec(lblMesPrecio03.Text)
+                ElseIf PrecioMesMax < CDec(lblMesPrecio03.Text) Then
+                    PrecioMesMax = CDec(lblMesPrecio03.Text)
+                End If
             End If
-        End If
-        If lblMesPrecio05.Text <> "0" Then
-            If PrecioMesMin > CDec(lblMesPrecio05.Text) Then
-                PrecioMesMin = CDec(lblMesPrecio05.Text)
-            ElseIf PrecioMesMax < CDec(lblMesPrecio05.Text) Then
-                PrecioMesMax = CDec(lblMesPrecio05.Text)
+            If lblMesPrecio04.Text <> "0" Then
+                If PrecioMesMin > CDec(lblMesPrecio04.Text) Then
+                    PrecioMesMin = CDec(lblMesPrecio04.Text)
+                ElseIf PrecioMesMax < CDec(lblMesPrecio04.Text) Then
+                    PrecioMesMax = CDec(lblMesPrecio04.Text)
+                End If
             End If
-        End If
-        If lblMesPrecio06.Text <> "0" Then
-            If PrecioMesMin > CDec(lblMesPrecio06.Text) Then
-                PrecioMesMin = CDec(lblMesPrecio06.Text)
-            ElseIf PrecioMesMax < CDec(lblMesPrecio06.Text) Then
-                PrecioMesMax = CDec(lblMesPrecio06.Text)
+            If lblMesPrecio05.Text <> "0" Then
+                If PrecioMesMin > CDec(lblMesPrecio05.Text) Then
+                    PrecioMesMin = CDec(lblMesPrecio05.Text)
+                ElseIf PrecioMesMax < CDec(lblMesPrecio05.Text) Then
+                    PrecioMesMax = CDec(lblMesPrecio05.Text)
+                End If
             End If
-        End If
-        If lblMesPrecio07.Text <> "0" Then
-            If PrecioMesMin > CDec(lblMesPrecio07.Text) Then
-                PrecioMesMin = CDec(lblMesPrecio07.Text)
-            ElseIf PrecioMesMax < CDec(lblMesPrecio07.Text) Then
-                PrecioMesMax = CDec(lblMesPrecio07.Text)
+            If lblMesPrecio06.Text <> "0" Then
+                If PrecioMesMin > CDec(lblMesPrecio06.Text) Then
+                    PrecioMesMin = CDec(lblMesPrecio06.Text)
+                ElseIf PrecioMesMax < CDec(lblMesPrecio06.Text) Then
+                    PrecioMesMax = CDec(lblMesPrecio06.Text)
+                End If
             End If
-        End If
-        If lblMesPrecio08.Text <> "0" Then
-            If PrecioMesMin > CDec(lblMesPrecio08.Text) Then
-                PrecioMesMin = CDec(lblMesPrecio08.Text)
-            ElseIf PrecioMesMax < CDec(lblMesPrecio08.Text) Then
-                PrecioMesMax = CDec(lblMesPrecio08.Text)
+            If lblMesPrecio07.Text <> "0" Then
+                If PrecioMesMin > CDec(lblMesPrecio07.Text) Then
+                    PrecioMesMin = CDec(lblMesPrecio07.Text)
+                ElseIf PrecioMesMax < CDec(lblMesPrecio07.Text) Then
+                    PrecioMesMax = CDec(lblMesPrecio07.Text)
+                End If
             End If
-        End If
-        If lblMesPrecio09.Text <> "0" Then
-            If PrecioMesMin > CDec(lblMesPrecio09.Text) Then
-                PrecioMesMin = CDec(lblMesPrecio09.Text)
-            ElseIf PrecioMesMax < CDec(lblMesPrecio09.Text) Then
-                PrecioMesMax = CDec(lblMesPrecio09.Text)
+            If lblMesPrecio08.Text <> "0" Then
+                If PrecioMesMin > CDec(lblMesPrecio08.Text) Then
+                    PrecioMesMin = CDec(lblMesPrecio08.Text)
+                ElseIf PrecioMesMax < CDec(lblMesPrecio08.Text) Then
+                    PrecioMesMax = CDec(lblMesPrecio08.Text)
+                End If
             End If
-        End If
-        If lblMesPrecio10.Text <> "0" Then
-            If PrecioMesMin > CDec(lblMesPrecio10.Text) Then
-                PrecioMesMin = CDec(lblMesPrecio10.Text)
-            ElseIf PrecioMesMax < CDec(lblMesPrecio10.Text) Then
-                PrecioMesMax = CDec(lblMesPrecio10.Text)
+            If lblMesPrecio09.Text <> "0" Then
+                If PrecioMesMin > CDec(lblMesPrecio09.Text) Then
+                    PrecioMesMin = CDec(lblMesPrecio09.Text)
+                ElseIf PrecioMesMax < CDec(lblMesPrecio09.Text) Then
+                    PrecioMesMax = CDec(lblMesPrecio09.Text)
+                End If
             End If
-        End If
-        If lblMesPrecio11.Text <> "0" Then
-            If PrecioMesMin > CDec(lblMesPrecio11.Text) Then
-                PrecioMesMin = CDec(lblMesPrecio11.Text)
-            ElseIf PrecioMesMax < CDec(lblMesPrecio11.Text) Then
-                PrecioMesMax = CDec(lblMesPrecio11.Text)
+            If lblMesPrecio10.Text <> "0" Then
+                If PrecioMesMin > CDec(lblMesPrecio10.Text) Then
+                    PrecioMesMin = CDec(lblMesPrecio10.Text)
+                ElseIf PrecioMesMax < CDec(lblMesPrecio10.Text) Then
+                    PrecioMesMax = CDec(lblMesPrecio10.Text)
+                End If
             End If
-        End If
-        If lblMesPrecio12.Text <> "0" Then
-            If PrecioMesMin > CDec(lblMesPrecio12.Text) Then
-                PrecioMesMin = CDec(lblMesPrecio12.Text)
-            ElseIf PrecioMesMax < CDec(lblMesPrecio12.Text) Then
-                PrecioMesMax = CDec(lblMesPrecio12.Text)
+            If lblMesPrecio11.Text <> "0" Then
+                If PrecioMesMin > CDec(lblMesPrecio11.Text) Then
+                    PrecioMesMin = CDec(lblMesPrecio11.Text)
+                ElseIf PrecioMesMax < CDec(lblMesPrecio11.Text) Then
+                    PrecioMesMax = CDec(lblMesPrecio11.Text)
+                End If
             End If
-        End If
-        If lblMesPrecio13.Text <> "0" Then
-            If PrecioMesMin > CDec(lblMesPrecio13.Text) Then
-                PrecioMesMin = CDec(lblMesPrecio13.Text)
-            ElseIf PrecioMesMax < CDec(lblMesPrecio13.Text) Then
-                PrecioMesMax = CDec(lblMesPrecio13.Text)
+            If lblMesPrecio12.Text <> "0" Then
+                If PrecioMesMin > CDec(lblMesPrecio12.Text) Then
+                    PrecioMesMin = CDec(lblMesPrecio12.Text)
+                ElseIf PrecioMesMax < CDec(lblMesPrecio12.Text) Then
+                    PrecioMesMax = CDec(lblMesPrecio12.Text)
+                End If
             End If
-        End If
-        If lblMesPrecio14.Text <> "0" Then
-            If PrecioMesMin > CDec(lblMesPrecio14.Text) Then
-                PrecioMesMin = CDec(lblMesPrecio14.Text)
-            ElseIf PrecioMesMax < CDec(lblMesPrecio14.Text) Then
-                PrecioMesMax = CDec(lblMesPrecio14.Text)
+            If lblMesPrecio13.Text <> "0" Then
+                If PrecioMesMin > CDec(lblMesPrecio13.Text) Then
+                    PrecioMesMin = CDec(lblMesPrecio13.Text)
+                ElseIf PrecioMesMax < CDec(lblMesPrecio13.Text) Then
+                    PrecioMesMax = CDec(lblMesPrecio13.Text)
+                End If
             End If
-        End If
-        If lblMesPrecio15.Text <> "0" Then
-            If PrecioMesMin > CDec(lblMesPrecio15.Text) Then
-                PrecioMesMin = CDec(lblMesPrecio15.Text)
-            ElseIf PrecioMesMax < CDec(lblMesPrecio15.Text) Then
-                PrecioMesMax = CDec(lblMesPrecio15.Text)
+            If lblMesPrecio14.Text <> "0" Then
+                If PrecioMesMin > CDec(lblMesPrecio14.Text) Then
+                    PrecioMesMin = CDec(lblMesPrecio14.Text)
+                ElseIf PrecioMesMax < CDec(lblMesPrecio14.Text) Then
+                    PrecioMesMax = CDec(lblMesPrecio14.Text)
+                End If
             End If
-        End If
-        If lblMesPrecio16.Text <> "0" Then
-            If PrecioMesMin > CDec(lblMesPrecio16.Text) Then
-                PrecioMesMin = CDec(lblMesPrecio16.Text)
-            ElseIf PrecioMesMax < CDec(lblMesPrecio16.Text) Then
-                PrecioMesMax = CDec(lblMesPrecio16.Text)
+            If lblMesPrecio15.Text <> "0" Then
+                If PrecioMesMin > CDec(lblMesPrecio15.Text) Then
+                    PrecioMesMin = CDec(lblMesPrecio15.Text)
+                ElseIf PrecioMesMax < CDec(lblMesPrecio15.Text) Then
+                    PrecioMesMax = CDec(lblMesPrecio15.Text)
+                End If
             End If
-        End If
-        If lblMesPrecio17.Text <> "0" Then
-            If PrecioMesMin > CDec(lblMesPrecio17.Text) Then
-                PrecioMesMin = CDec(lblMesPrecio17.Text)
-            ElseIf PrecioMesMax < CDec(lblMesPrecio17.Text) Then
-                PrecioMesMax = CDec(lblMesPrecio17.Text)
+            If lblMesPrecio16.Text <> "0" Then
+                If PrecioMesMin > CDec(lblMesPrecio16.Text) Then
+                    PrecioMesMin = CDec(lblMesPrecio16.Text)
+                ElseIf PrecioMesMax < CDec(lblMesPrecio16.Text) Then
+                    PrecioMesMax = CDec(lblMesPrecio16.Text)
+                End If
             End If
-        End If
-        If lblMesPrecio18.Text <> "0" Then
-            If PrecioMesMin > CDec(lblMesPrecio18.Text) Then
-                PrecioMesMin = CDec(lblMesPrecio18.Text)
-            ElseIf PrecioMesMax < CDec(lblMesPrecio18.Text) Then
-                PrecioMesMax = CDec(lblMesPrecio18.Text)
+            If lblMesPrecio17.Text <> "0" Then
+                If PrecioMesMin > CDec(lblMesPrecio17.Text) Then
+                    PrecioMesMin = CDec(lblMesPrecio17.Text)
+                ElseIf PrecioMesMax < CDec(lblMesPrecio17.Text) Then
+                    PrecioMesMax = CDec(lblMesPrecio17.Text)
+                End If
             End If
-        End If
-        If lblMesPrecio19.Text <> "0" Then
-            If PrecioMesMin > CDec(lblMesPrecio19.Text) Then
-                PrecioMesMin = CDec(lblMesPrecio19.Text)
-            ElseIf PrecioMesMax < CDec(lblMesPrecio19.Text) Then
-                PrecioMesMax = CDec(lblMesPrecio19.Text)
+            If lblMesPrecio18.Text <> "0" Then
+                If PrecioMesMin > CDec(lblMesPrecio18.Text) Then
+                    PrecioMesMin = CDec(lblMesPrecio18.Text)
+                ElseIf PrecioMesMax < CDec(lblMesPrecio18.Text) Then
+                    PrecioMesMax = CDec(lblMesPrecio18.Text)
+                End If
             End If
-        End If
-        If lblMesPrecio20.Text <> "0" Then
-            If PrecioMesMin > CDec(lblMesPrecio20.Text) Then
-                PrecioMesMin = CDec(lblMesPrecio20.Text)
-            ElseIf PrecioMesMax < CDec(lblMesPrecio20.Text) Then
-                PrecioMesMax = CDec(lblMesPrecio20.Text)
+            If lblMesPrecio19.Text <> "0" Then
+                If PrecioMesMin > CDec(lblMesPrecio19.Text) Then
+                    PrecioMesMin = CDec(lblMesPrecio19.Text)
+                ElseIf PrecioMesMax < CDec(lblMesPrecio19.Text) Then
+                    PrecioMesMax = CDec(lblMesPrecio19.Text)
+                End If
             End If
-        End If
-        If lblMesPrecio21.Text <> "0" Then
-            If PrecioMesMin > CDec(lblMesPrecio21.Text) Then
-                PrecioMesMin = CDec(lblMesPrecio21.Text)
-            ElseIf PrecioMesMax < CDec(lblMesPrecio21.Text) Then
-                PrecioMesMax = CDec(lblMesPrecio21.Text)
+            If lblMesPrecio20.Text <> "0" Then
+                If PrecioMesMin > CDec(lblMesPrecio20.Text) Then
+                    PrecioMesMin = CDec(lblMesPrecio20.Text)
+                ElseIf PrecioMesMax < CDec(lblMesPrecio20.Text) Then
+                    PrecioMesMax = CDec(lblMesPrecio20.Text)
+                End If
             End If
-        End If
-        If lblMesPrecio22.Text <> "0" Then
-            If PrecioMesMin > CDec(lblMesPrecio22.Text) Then
-                PrecioMesMin = CDec(lblMesPrecio22.Text)
-            ElseIf PrecioMesMax < CDec(lblMesPrecio22.Text) Then
-                PrecioMesMax = CDec(lblMesPrecio22.Text)
+            If lblMesPrecio21.Text <> "0" Then
+                If PrecioMesMin > CDec(lblMesPrecio21.Text) Then
+                    PrecioMesMin = CDec(lblMesPrecio21.Text)
+                ElseIf PrecioMesMax < CDec(lblMesPrecio21.Text) Then
+                    PrecioMesMax = CDec(lblMesPrecio21.Text)
+                End If
             End If
-        End If
-        If lblMesPrecio23.Text <> "0" Then
-            If PrecioMesMin > CDec(lblMesPrecio23.Text) Then
-                PrecioMesMin = CDec(lblMesPrecio23.Text)
-            ElseIf PrecioMesMax < CDec(lblMesPrecio23.Text) Then
-                PrecioMesMax = CDec(lblMesPrecio23.Text)
+            If lblMesPrecio22.Text <> "0" Then
+                If PrecioMesMin > CDec(lblMesPrecio22.Text) Then
+                    PrecioMesMin = CDec(lblMesPrecio22.Text)
+                ElseIf PrecioMesMax < CDec(lblMesPrecio22.Text) Then
+                    PrecioMesMax = CDec(lblMesPrecio22.Text)
+                End If
             End If
-        End If
-        If lblMesPrecio24.Text <> "0" Then
-            If PrecioMesMin > CDec(lblMesPrecio24.Text) Then
-                PrecioMesMin = CDec(lblMesPrecio24.Text)
-            ElseIf PrecioMesMax < CDec(lblMesPrecio24.Text) Then
-                PrecioMesMax = CDec(lblMesPrecio24.Text)
+            If lblMesPrecio23.Text <> "0" Then
+                If PrecioMesMin > CDec(lblMesPrecio23.Text) Then
+                    PrecioMesMin = CDec(lblMesPrecio23.Text)
+                ElseIf PrecioMesMax < CDec(lblMesPrecio23.Text) Then
+                    PrecioMesMax = CDec(lblMesPrecio23.Text)
+                End If
             End If
-        End If
-        If lblMesPrecio25.Text <> "0" Then
-            If PrecioMesMin > CDec(lblMesPrecio25.Text) Then
-                PrecioMesMin = CDec(lblMesPrecio25.Text)
-            ElseIf PrecioMesMax < CDec(lblMesPrecio25.Text) Then
-                PrecioMesMax = CDec(lblMesPrecio25.Text)
+            If lblMesPrecio24.Text <> "0" Then
+                If PrecioMesMin > CDec(lblMesPrecio24.Text) Then
+                    PrecioMesMin = CDec(lblMesPrecio24.Text)
+                ElseIf PrecioMesMax < CDec(lblMesPrecio24.Text) Then
+                    PrecioMesMax = CDec(lblMesPrecio24.Text)
+                End If
             End If
-        End If
-        If lblMesPrecio26.Text <> "0" Then
-            If PrecioMesMin > CDec(lblMesPrecio26.Text) Then
-                PrecioMesMin = CDec(lblMesPrecio26.Text)
-            ElseIf PrecioMesMax < CDec(lblMesPrecio26.Text) Then
-                PrecioMesMax = CDec(lblMesPrecio26.Text)
+            If lblMesPrecio25.Text <> "0" Then
+                If PrecioMesMin > CDec(lblMesPrecio25.Text) Then
+                    PrecioMesMin = CDec(lblMesPrecio25.Text)
+                ElseIf PrecioMesMax < CDec(lblMesPrecio25.Text) Then
+                    PrecioMesMax = CDec(lblMesPrecio25.Text)
+                End If
             End If
-        End If
-        If lblMesPrecio27.Text <> "0" Then
-            If PrecioMesMin > CDec(lblMesPrecio27.Text) Then
-                PrecioMesMin = CDec(lblMesPrecio27.Text)
-            ElseIf PrecioMesMax < CDec(lblMesPrecio27.Text) Then
-                PrecioMesMax = CDec(lblMesPrecio27.Text)
+            If lblMesPrecio26.Text <> "0" Then
+                If PrecioMesMin > CDec(lblMesPrecio26.Text) Then
+                    PrecioMesMin = CDec(lblMesPrecio26.Text)
+                ElseIf PrecioMesMax < CDec(lblMesPrecio26.Text) Then
+                    PrecioMesMax = CDec(lblMesPrecio26.Text)
+                End If
             End If
-        End If
-        If lblMesPrecio28.Text <> "0" Then
-            If PrecioMesMin > CDec(lblMesPrecio28.Text) Then
-                PrecioMesMin = CDec(lblMesPrecio28.Text)
-            ElseIf PrecioMesMax < CDec(lblMesPrecio28.Text) Then
-                PrecioMesMax = CDec(lblMesPrecio28.Text)
+            If lblMesPrecio27.Text <> "0" Then
+                If PrecioMesMin > CDec(lblMesPrecio27.Text) Then
+                    PrecioMesMin = CDec(lblMesPrecio27.Text)
+                ElseIf PrecioMesMax < CDec(lblMesPrecio27.Text) Then
+                    PrecioMesMax = CDec(lblMesPrecio27.Text)
+                End If
             End If
-        End If
-        If lblMesPrecio29.Text <> "0" Then
-            If PrecioMesMin > CDec(lblMesPrecio29.Text) Then
-                PrecioMesMin = CDec(lblMesPrecio29.Text)
-            ElseIf PrecioMesMax < CDec(lblMesPrecio29.Text) Then
-                PrecioMesMax = CDec(lblMesPrecio29.Text)
+            If lblMesPrecio28.Text <> "0" Then
+                If PrecioMesMin > CDec(lblMesPrecio28.Text) Then
+                    PrecioMesMin = CDec(lblMesPrecio28.Text)
+                ElseIf PrecioMesMax < CDec(lblMesPrecio28.Text) Then
+                    PrecioMesMax = CDec(lblMesPrecio28.Text)
+                End If
             End If
-        End If
-        If lblMesPrecio30.Text <> "0" Then
-            If PrecioMesMin > CDec(lblMesPrecio30.Text) Then
-                PrecioMesMin = CDec(lblMesPrecio30.Text)
-            ElseIf PrecioMesMax < CDec(lblMesPrecio30.Text) Then
-                PrecioMesMax = CDec(lblMesPrecio30.Text)
+            If lblMesPrecio29.Text <> "0" Then
+                If PrecioMesMin > CDec(lblMesPrecio29.Text) Then
+                    PrecioMesMin = CDec(lblMesPrecio29.Text)
+                ElseIf PrecioMesMax < CDec(lblMesPrecio29.Text) Then
+                    PrecioMesMax = CDec(lblMesPrecio29.Text)
+                End If
             End If
-        End If
-        If lblMesPrecio31.Text <> "0" Then
-            If PrecioMesMin > CDec(lblMesPrecio31.Text) Then
-                PrecioMesMin = CDec(lblMesPrecio31.Text)
-            ElseIf PrecioMesMax < CDec(lblMesPrecio31.Text) Then
-                PrecioMesMax = CDec(lblMesPrecio31.Text)
+            If lblMesPrecio30.Text <> "0" Then
+                If PrecioMesMin > CDec(lblMesPrecio30.Text) Then
+                    PrecioMesMin = CDec(lblMesPrecio30.Text)
+                ElseIf PrecioMesMax < CDec(lblMesPrecio30.Text) Then
+                    PrecioMesMax = CDec(lblMesPrecio30.Text)
+                End If
             End If
-        End If
-        lblPrecioMes.Text = (PrecioMesMax + PrecioMesMin) / 2
-        TotalHoras += CDec(lblHoraDiferencia00.Text)
-        TotalHoras += CDec(lblHoraDiferencia01.Text)
-        TotalHoras += CDec(lblHoraDiferencia02.Text)
-        TotalHoras += CDec(lblHoraDiferencia03.Text)
-        TotalHoras += CDec(lblHoraDiferencia04.Text)
-        TotalHoras += CDec(lblHoraDiferencia05.Text)
-        TotalHoras += CDec(lblHoraDiferencia06.Text)
-        TotalHoras += CDec(lblHoraDiferencia07.Text)
-        TotalHoras += CDec(lblHoraDiferencia08.Text)
-        TotalHoras += CDec(lblHoraDiferencia09.Text)
-        TotalHoras += CDec(lblHoraDiferencia10.Text)
-        TotalHoras += CDec(lblHoraDiferencia11.Text)
-        TotalHoras += CDec(lblHoraDiferencia12.Text)
-        TotalHoras += CDec(lblHoraDiferencia13.Text)
-        TotalHoras += CDec(lblHoraDiferencia14.Text)
-        TotalHoras += CDec(lblHoraDiferencia15.Text)
-        TotalHoras += CDec(lblHoraDiferencia16.Text)
-        TotalHoras += CDec(lblHoraDiferencia17.Text)
-        TotalHoras += CDec(lblHoraDiferencia18.Text)
-        TotalHoras += CDec(lblHoraDiferencia19.Text)
-        TotalHoras += CDec(lblHoraDiferencia20.Text)
-        TotalHoras += CDec(lblHoraDiferencia21.Text)
-        TotalHoras += CDec(lblHoraDiferencia22.Text)
-        TotalHoras += CDec(lblHoraDiferencia23.Text)
-        lblTotalHora.Text = FormatDuco(TotalHoras, 4) & "¬"
-        lblTotalMes.Text = 0
-        lblTotalMes.Text += CDec(lblMesDifencia01.Text)
-        lblTotalMes.Text += CDec(lblMesDifencia02.Text)
-        lblTotalMes.Text += CDec(lblMesDifencia03.Text)
-        lblTotalMes.Text += CDec(lblMesDifencia04.Text)
-        lblTotalMes.Text += CDec(lblMesDifencia05.Text)
-        lblTotalMes.Text += CDec(lblMesDifencia06.Text)
-        lblTotalMes.Text += CDec(lblMesDifencia07.Text)
-        lblTotalMes.Text += CDec(lblMesDifencia08.Text)
-        lblTotalMes.Text += CDec(lblMesDifencia09.Text)
-        lblTotalMes.Text += CDec(lblMesDifencia10.Text)
-        lblTotalMes.Text += CDec(lblMesDifencia11.Text)
-        lblTotalMes.Text += CDec(lblMesDifencia12.Text)
-        lblTotalMes.Text += CDec(lblMesDifencia13.Text)
-        lblTotalMes.Text += CDec(lblMesDifencia14.Text)
-        lblTotalMes.Text += CDec(lblMesDifencia15.Text)
-        lblTotalMes.Text += CDec(lblMesDifencia16.Text)
-        lblTotalMes.Text += CDec(lblMesDifencia17.Text)
-        lblTotalMes.Text += CDec(lblMesDifencia18.Text)
-        lblTotalMes.Text += CDec(lblMesDifencia19.Text)
-        lblTotalMes.Text += CDec(lblMesDifencia20.Text)
-        lblTotalMes.Text += CDec(lblMesDifencia21.Text)
-        lblTotalMes.Text += CDec(lblMesDifencia22.Text)
-        lblTotalMes.Text += CDec(lblMesDifencia23.Text)
-        lblTotalMes.Text += CDec(lblMesDifencia24.Text)
-        lblTotalMes.Text += CDec(lblMesDifencia25.Text)
-        lblTotalMes.Text += CDec(lblMesDifencia26.Text)
-        lblTotalMes.Text += CDec(lblMesDifencia27.Text)
-        lblTotalMes.Text += CDec(lblMesDifencia28.Text)
-        lblTotalMes.Text += CDec(lblMesDifencia29.Text)
-        lblTotalMes.Text += CDec(lblMesDifencia30.Text)
-        lblTotalMes.Text += CDec(lblMesDifencia31.Text)
-        lblTotalMes.Text = FormatDuco(lblTotalMes.Text, 7) & "¬"
+            If lblMesPrecio31.Text <> "0" Then
+                If PrecioMesMin > CDec(lblMesPrecio31.Text) Then
+                    PrecioMesMin = CDec(lblMesPrecio31.Text)
+                ElseIf PrecioMesMax < CDec(lblMesPrecio31.Text) Then
+                    PrecioMesMax = CDec(lblMesPrecio31.Text)
+                End If
+            End If
+            lblPrecioMes.Text = (PrecioMesMax + PrecioMesMin) / 2
+            TotalHoras += CDec(lblHoraDiferencia00.Text)
+            TotalHoras += CDec(lblHoraDiferencia01.Text)
+            TotalHoras += CDec(lblHoraDiferencia02.Text)
+            TotalHoras += CDec(lblHoraDiferencia03.Text)
+            TotalHoras += CDec(lblHoraDiferencia04.Text)
+            TotalHoras += CDec(lblHoraDiferencia05.Text)
+            TotalHoras += CDec(lblHoraDiferencia06.Text)
+            TotalHoras += CDec(lblHoraDiferencia07.Text)
+            TotalHoras += CDec(lblHoraDiferencia08.Text)
+            TotalHoras += CDec(lblHoraDiferencia09.Text)
+            TotalHoras += CDec(lblHoraDiferencia10.Text)
+            TotalHoras += CDec(lblHoraDiferencia11.Text)
+            TotalHoras += CDec(lblHoraDiferencia12.Text)
+            TotalHoras += CDec(lblHoraDiferencia13.Text)
+            TotalHoras += CDec(lblHoraDiferencia14.Text)
+            TotalHoras += CDec(lblHoraDiferencia15.Text)
+            TotalHoras += CDec(lblHoraDiferencia16.Text)
+            TotalHoras += CDec(lblHoraDiferencia17.Text)
+            TotalHoras += CDec(lblHoraDiferencia18.Text)
+            TotalHoras += CDec(lblHoraDiferencia19.Text)
+            TotalHoras += CDec(lblHoraDiferencia20.Text)
+            TotalHoras += CDec(lblHoraDiferencia21.Text)
+            TotalHoras += CDec(lblHoraDiferencia22.Text)
+            TotalHoras += CDec(lblHoraDiferencia23.Text)
+            lblTotalHora.Text = FormatDuco(TotalHoras, 4) & "¬"
+            lblTotalMes.Text = 0
+            lblTotalMes.Text += CDec(lblMesDifencia01.Text)
+            lblTotalMes.Text += CDec(lblMesDifencia02.Text)
+            lblTotalMes.Text += CDec(lblMesDifencia03.Text)
+            lblTotalMes.Text += CDec(lblMesDifencia04.Text)
+            lblTotalMes.Text += CDec(lblMesDifencia05.Text)
+            lblTotalMes.Text += CDec(lblMesDifencia06.Text)
+            lblTotalMes.Text += CDec(lblMesDifencia07.Text)
+            lblTotalMes.Text += CDec(lblMesDifencia08.Text)
+            lblTotalMes.Text += CDec(lblMesDifencia09.Text)
+            lblTotalMes.Text += CDec(lblMesDifencia10.Text)
+            lblTotalMes.Text += CDec(lblMesDifencia11.Text)
+            lblTotalMes.Text += CDec(lblMesDifencia12.Text)
+            lblTotalMes.Text += CDec(lblMesDifencia13.Text)
+            lblTotalMes.Text += CDec(lblMesDifencia14.Text)
+            lblTotalMes.Text += CDec(lblMesDifencia15.Text)
+            lblTotalMes.Text += CDec(lblMesDifencia16.Text)
+            lblTotalMes.Text += CDec(lblMesDifencia17.Text)
+            lblTotalMes.Text += CDec(lblMesDifencia18.Text)
+            lblTotalMes.Text += CDec(lblMesDifencia19.Text)
+            lblTotalMes.Text += CDec(lblMesDifencia20.Text)
+            lblTotalMes.Text += CDec(lblMesDifencia21.Text)
+            lblTotalMes.Text += CDec(lblMesDifencia22.Text)
+            lblTotalMes.Text += CDec(lblMesDifencia23.Text)
+            lblTotalMes.Text += CDec(lblMesDifencia24.Text)
+            lblTotalMes.Text += CDec(lblMesDifencia25.Text)
+            lblTotalMes.Text += CDec(lblMesDifencia26.Text)
+            lblTotalMes.Text += CDec(lblMesDifencia27.Text)
+            lblTotalMes.Text += CDec(lblMesDifencia28.Text)
+            lblTotalMes.Text += CDec(lblMesDifencia29.Text)
+            lblTotalMes.Text += CDec(lblMesDifencia30.Text)
+            lblTotalMes.Text += CDec(lblMesDifencia31.Text)
+            lblTotalMes.Text = FormatDuco(lblTotalMes.Text, 7) & "¬"
+        Catch ex As Exception
+            If ActivarMensajesError = True Then MsgBox("Error!!" & vbCrLf & ex.Message)
+        End Try
     End Sub
     Function FormatDuco(ByVal Ducos As Decimal, ByVal Digitos As Integer) As String
         Select Case Digitos
@@ -1662,7 +1679,6 @@ Public Class Form1
             Suma += lblGananciasAño12.Text
             lblTotalGananciaAño.Text = FormatDuco(Suma, 6) & "¬"
             lblGanadoAño2022.Text = FormatDuco(Suma, 6)
-
             Suma = CDec(lblTransasionesAño01.Text)
             Suma += CDec(lblTransasionesAño02.Text)
             Suma += CDec(lblTransasionesAño03.Text)
@@ -1681,7 +1697,6 @@ Public Class Form1
             Suma += CDec(lblGanadoAño2022.Text)
             Suma += CDec(lblGanadoAño2023.Text)
             lblGanadoAñoTotal.Text = FormatDuco(Suma, 6) & "¬"
-
             Suma2 = CDec(lblTransasionesAño2021.Text)
             Suma2 += CDec(lblTransasionesAño2022.Text)
             Suma2 += CDec(lblTransasionesAño2023.Text)
@@ -1693,34 +1708,38 @@ Public Class Form1
             lblEtiquetaEuro.Left = lblTotalGanadoAños.Left + lblTotalGanadoAños.Width '- 5
             My.Settings.Save()
         Catch ex As Exception
-            'MsgBox("Error!!" & vbCrLf & ex.Message)
+            If ActivarMensajesError = True Then MsgBox("Error!!" & vbCrLf & ex.Message)
         End Try
     End Sub
     Function TransasionesAnuales(ByVal Mesis As String) As Decimal
-        Dim TransAño(ContaTransa) As Decimal
-        For I As Integer = ContaTransa To 0 Step -1
-            EnviosDias(I) = Mid(Dict2Public.item("result").item("transactions").item(I).item("datetime"), 1, 2)
-            EnviosMes(I) = Mid(Dict2Public.item("result").item("transactions").item(I).item("datetime"), 4, 2)
-            EnviosAño(I) = Mid(Dict2Public.item("result").item("transactions").item(I).item("datetime"), 7, 4)
-            If Dict2Public.item("result").item("transactions").item(I).item("sender") = "Lanthi" Then
-                If EnviosMes(I) = Mesis Then
-                    TransAño(I) = -CDec(Dict2Public.item("result").item("transactions").item(I).item("amount"))
+        Try
+            Dim TransAño(ContaTransa) As Decimal
+            For I As Integer = ContaTransa To 0 Step -1
+                EnviosDias(I) = Mid(Dict2Public.item("result").item("transactions").item(I).item("datetime"), 1, 2)
+                EnviosMes(I) = Mid(Dict2Public.item("result").item("transactions").item(I).item("datetime"), 4, 2)
+                EnviosAño(I) = Mid(Dict2Public.item("result").item("transactions").item(I).item("datetime"), 7, 4)
+                If Dict2Public.item("result").item("transactions").item(I).item("sender") = "Lanthi" Then
+                    If EnviosMes(I) = Mesis Then
+                        TransAño(I) = -CDec(Dict2Public.item("result").item("transactions").item(I).item("amount"))
+                    End If
+                Else
+                    If EnviosMes(I) = Mesis Then
+                        TransAño(I) = CDec(Dict2Public.item("result").item("transactions").item(I).item("amount"))
+                    End If
                 End If
+            Next
+            Dim TRansacionTotalMes As Decimal
+            For I As Integer = 0 To ContaTransa
+                If TransAño(I) <> 0 Then TRansacionTotalMes += TransAño(I)
+            Next I
+            If TRansacionTotalMes <> 0 Then
+                TransasionesAnuales = Format(TRansacionTotalMes, "#0.00")
             Else
-                If EnviosMes(I) = Mesis Then
-                    TransAño(I) = CDec(Dict2Public.item("result").item("transactions").item(I).item("amount"))
-                End If
+                Return Nothing
             End If
-        Next
-        Dim TRansacionTotalMes As Decimal
-        For I As Integer = 0 To ContaTransa
-            If TransAño(I) <> 0 Then TRansacionTotalMes += TransAño(I) ': ListBox1.Items.Add(TransAño(I))
-        Next I
-        If TRansacionTotalMes <> 0 Then
-            TransasionesAnuales = Format(TRansacionTotalMes, "#0.00")
-        Else
-            Return Nothing
-        End If
+        Catch ex As Exception
+            If ActivarMensajesError = True Then MsgBox("Error!!" & vbCrLf & ex.Message)
+        End Try
     End Function
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         Try
@@ -1773,47 +1792,55 @@ Public Class Form1
             Else
                 lblTemperatura.ForeColor = Color.Green
             End If
-
         Catch ex As Exception
-            ' MsgBox("Error!!" & vbCrLf & ex.Message)
+            If ActivarMensajesError = True Then MsgBox("Error!!" & vbCrLf & ex.Message)
         End Try
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs)
         ResetDia()
     End Sub
     Private Sub GuardarLog()
-        Dim Intru As Object
-        Dim Archivo As Object
-        Dim RutaArchivo As String = RutaApp & "\Logs\Log " & DateAndTime.Day(FechaLog) & "-" & DateAndTime.Month(FechaLog) & "-" & DateAndTime.Year(FechaLog) & ".log"
-        My.Computer.FileSystem.CreateDirectory(RutaApp & "\Logs")
-        Intru = CreateObject("Scripting.FileSystemObject")
-        If File.Exists(RutaArchivo) Then
-            Archivo = Intru.CreateTextFile(RutaApp & "\Logs\Log " & DateAndTime.Day(FechaLog) & "-" & DateAndTime.Month(FechaLog) & "-" & DateAndTime.Year(FechaLog) & "(" & lblReinicioApp.Text & ").log", True)
-        Else
-            Archivo = Intru.CreateTextFile(RutaApp & "\Logs\Log " & DateAndTime.Day(FechaLog) & "-" & DateAndTime.Month(FechaLog) & "-" & DateAndTime.Year(FechaLog) & ".log", True)
-        End If
-        Archivo.WriteLine(txtLog.Text)
-        Archivo.Close()
-        ' Process.Start("explorer.exe", RutaApp)
-        LogReinicio()
+        Try
+            Dim Intru As Object
+            Dim Archivo As Object
+            Dim RutaArchivo As String = RutaApp & "\Logs\Log " & DateAndTime.Day(FechaLog) & "-" & DateAndTime.Month(FechaLog) & "-" & DateAndTime.Year(FechaLog) & ".log"
+            My.Computer.FileSystem.CreateDirectory(RutaApp & "\Logs")
+            Intru = CreateObject("Scripting.FileSystemObject")
+            If File.Exists(RutaArchivo) Then
+                Archivo = Intru.CreateTextFile(RutaApp & "\Logs\Log " & DateAndTime.Day(FechaLog) & "-" & DateAndTime.Month(FechaLog) & "-" & DateAndTime.Year(FechaLog) & "(" & lblReinicioApp.Text & ").log", True)
+            Else
+                Archivo = Intru.CreateTextFile(RutaApp & "\Logs\Log " & DateAndTime.Day(FechaLog) & "-" & DateAndTime.Month(FechaLog) & "-" & DateAndTime.Year(FechaLog) & ".log", True)
+            End If
+            Archivo.WriteLine(txtLog.Text)
+            Archivo.Close()
+            ' Process.Start("explorer.exe", RutaApp)
+            LogReinicio()
+
+        Catch ex As Exception
+            If ActivarMensajesError = True Then MsgBox("Error!!" & vbCrLf & ex.Message)
+        End Try
     End Sub
     Private Sub Log()
         'log
-        LogAñadido = True
-        txtLogMineros.Text += vbCrLf & DateAndTime.DateValue(Now) & " " & Format(DateAndTime.TimeValue(Now), "HH:mm") & vbCrLf
-        If txtMinerosNArduino.Text > 0 Then txtLogMineros.Text += vbCrLf & "ARDUINOS Nº: " & txtMinerosNArduino.Text & " - Hases: " & txtMinerosHArduino.Text
-        If txtMinerosNCPU.Text > 0 Then txtLogMineros.Text += vbCrLf & "CPU Nº: " & txtMinerosNCPU.Text & " - Hases: " & txtMinerosHCPU.Text
-        If txtMinerosNEsp8266.Text > 0 Then txtLogMineros.Text += vbCrLf & "ESP8266 Nº: " & txtMinerosNEsp8266.Text & " - Hases: " & txtMinerosHEsp8266.Text
-        If txtMinerosNEsp32.Text > 0 Then txtLogMineros.Text += vbCrLf & "ESP32 Nº: " & txtMinerosNEsp32.Text & " - Hases: " & txtMinerosHEsp32.Text
-        If txtMinerosNotros.Text > 0 Then txtLogMineros.Text += vbCrLf & "OTHER Nº: " & txtMinerosNotros.Text & " - Hases: " & txtMinerosHotros.Text
-        If txtMinerosNPhone.Text > 0 Then txtLogMineros.Text += vbCrLf & "PHONE Nº: " & txtMinerosNPhone.Text & " - Hases: " & txtMinerosHPhone.Text
-        If txtMinerosNRPI.Text > 0 Then txtLogMineros.Text += vbCrLf & "RPI Nº: " & txtMinerosNRPI.Text & " - Hases: " & txtMinerosHRPI.Text
-        If txtMinerosNWeb.Text > 0 Then txtLogMineros.Text += vbCrLf & "WEB Nº: " & txtMinerosNWeb.Text & " - Hases: " & txtMinerosHWeb.Text
-        txtLogMineros.Text += vbCrLf & vbCrLf & "TOTAL Nº: " & lblMineros.Text & " - Hases: " & lblHases.Text & lblHaseEstiquta.Text
-        txtLogBalanceYprecio.Text += vbCrLf & DateAndTime.DateValue(Now) & " " & Format(DateAndTime.TimeValue(Now), "HH:mm") & " = Ducos: " & txtbalance.Text & " * Price: " & txtDucoprice.Text & " = " & lblGanado.Text & "€"
-        txtLogMineros.Text += vbCrLf & "---------------------------------"
-        txtLog.Text = txtLogBalanceYprecio.Text & vbCrLf & vbCrLf & txtLogMineros.Text & vbCrLf & vbCrLf & txtLogTransasiones.Text
-        FechaLog = DateAndTime.DateValue(Now)
+        Try
+            LogAñadido = True
+            txtLogMineros.Text += vbCrLf & DateAndTime.DateValue(Now) & " " & Format(DateAndTime.TimeValue(Now), "HH:mm") & vbCrLf
+            If txtMinerosNArduino.Text > 0 Then txtLogMineros.Text += vbCrLf & "ARDUINOS Nº: " & txtMinerosNArduino.Text & " - Hases: " & txtMinerosHArduino.Text
+            If txtMinerosNCPU.Text > 0 Then txtLogMineros.Text += vbCrLf & "CPU Nº: " & txtMinerosNCPU.Text & " - Hases: " & txtMinerosHCPU.Text
+            If txtMinerosNEsp8266.Text > 0 Then txtLogMineros.Text += vbCrLf & "ESP8266 Nº: " & txtMinerosNEsp8266.Text & " - Hases: " & txtMinerosHEsp8266.Text
+            If txtMinerosNEsp32.Text > 0 Then txtLogMineros.Text += vbCrLf & "ESP32 Nº: " & txtMinerosNEsp32.Text & " - Hases: " & txtMinerosHEsp32.Text
+            If txtMinerosNotros.Text > 0 Then txtLogMineros.Text += vbCrLf & "OTHER Nº: " & txtMinerosNotros.Text & " - Hases: " & txtMinerosHotros.Text
+            If txtMinerosNPhone.Text > 0 Then txtLogMineros.Text += vbCrLf & "PHONE Nº: " & txtMinerosNPhone.Text & " - Hases: " & txtMinerosHPhone.Text
+            If txtMinerosNRPI.Text > 0 Then txtLogMineros.Text += vbCrLf & "RPI Nº: " & txtMinerosNRPI.Text & " - Hases: " & txtMinerosHRPI.Text
+            If txtMinerosNWeb.Text > 0 Then txtLogMineros.Text += vbCrLf & "WEB Nº: " & txtMinerosNWeb.Text & " - Hases: " & txtMinerosHWeb.Text
+            txtLogMineros.Text += vbCrLf & vbCrLf & "TOTAL Nº: " & lblMineros.Text & " - Hases: " & lblHases.Text & lblHaseEstiquta.Text
+            txtLogBalanceYprecio.Text += vbCrLf & DateAndTime.DateValue(Now) & " " & Format(DateAndTime.TimeValue(Now), "HH:mm") & " = Ducos: " & txtbalance.Text & " * Price: " & txtDucoprice.Text & " = " & lblGanado.Text & "€"
+            txtLogMineros.Text += vbCrLf & "---------------------------------"
+            txtLog.Text = txtLogBalanceYprecio.Text & vbCrLf & vbCrLf & txtLogMineros.Text & vbCrLf & vbCrLf & txtLogTransasiones.Text
+            FechaLog = DateAndTime.DateValue(Now)
+        Catch ex As Exception
+            If ActivarMensajesError = True Then MsgBox("Error!!" & vbCrLf & ex.Message)
+        End Try
     End Sub
     Private Sub LogReinicio()
         txtLogBalanceYprecio.Text = "Balance and Price:" & vbCrLf & "==================" & vbCrLf
@@ -1888,7 +1915,7 @@ Public Class Form1
             Chart7.Series(0).Points.AddY(Temperatura)
             Chart7.Series(1).Points.AddY(Humedad)
         Catch ex As Exception
-            ' MsgBox("Error!!" & vbCrLf & ex.Message)
+            If ActivarMensajesError = True Then MsgBox("Error!!" & vbCrLf & ex.Message)
         End Try
     End Sub
 
@@ -1897,11 +1924,7 @@ Public Class Form1
         lblUser.Text = txtUser.Text
     End Sub
 
-    Private Sub lblPrecioDia_Click(sender As Object, e As EventArgs) Handles lblPrecioDia.Click
-
-    End Sub
-
-    Private Sub TabPage4_Click(sender As Object, e As EventArgs) Handles TabPage4.Click
-
+    Private Sub chkActivarMensajes_CheckedChanged(sender As Object, e As EventArgs) Handles chkActivarMensajes.CheckedChanged
+        ActivarMensajesError = chkActivarMensajes.Checked
     End Sub
 End Class

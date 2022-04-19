@@ -2201,6 +2201,30 @@ Namespace My
                 Me("PrecioMedioMes") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("True")>  _
+        Public Property MensajesError() As Boolean
+            Get
+                Return CType(Me("MensajesError"),Boolean)
+            End Get
+            Set
+                Me("MensajesError") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("25")>  _
+        Public Property FanRojo() As Decimal
+            Get
+                Return CType(Me("FanRojo"),Decimal)
+            End Get
+            Set
+                Me("FanRojo") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

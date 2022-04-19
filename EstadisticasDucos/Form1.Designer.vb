@@ -571,6 +571,8 @@ Partial Class Form1
         Me.Label129 = New System.Windows.Forms.Label()
         Me.txtGradosFan = New System.Windows.Forms.NumericUpDown()
         Me.Label123 = New System.Windows.Forms.Label()
+        Me.GroupBox17 = New System.Windows.Forms.GroupBox()
+        Me.chkActivarMensajes = New System.Windows.Forms.CheckBox()
         Me.GroupBox28 = New System.Windows.Forms.GroupBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.lblUser = New System.Windows.Forms.Label()
@@ -612,8 +614,8 @@ Partial Class Form1
         Me.lblTemperatura = New System.Windows.Forms.Label()
         Me.picFan = New System.Windows.Forms.PictureBox()
         Me.picFanAni = New System.Windows.Forms.PictureBox()
-        Me.lblReinicioApp = New System.Windows.Forms.Label()
         Me.txtUser = New System.Windows.Forms.TextBox()
+        Me.lblReinicioApp = New System.Windows.Forms.Label()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Chart2, System.ComponentModel.ISupportInitialize).BeginInit
         Me.GroupBox1.SuspendLayout
@@ -655,6 +657,7 @@ Partial Class Form1
         CType(Me.txtFanAmarillo, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.txtFanVerde, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.txtGradosFan, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.GroupBox17.SuspendLayout
         Me.GroupBox28.SuspendLayout
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit
         Me.GroupBox5.SuspendLayout
@@ -6953,6 +6956,7 @@ Partial Class Form1
         '
         Me.TabPage7.BackColor = System.Drawing.Color.White
         Me.TabPage7.Controls.Add(Me.GroupBox29)
+        Me.TabPage7.Controls.Add(Me.GroupBox17)
         Me.TabPage7.Controls.Add(Me.GroupBox28)
         Me.TabPage7.Location = New System.Drawing.Point(4, 22)
         Me.TabPage7.Name = "TabPage7"
@@ -7019,13 +7023,14 @@ Partial Class Form1
         '
         'txtGradosFan
         '
+        Me.txtGradosFan.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.EstadisticasDucos.My.MySettings.Default, "FanRojo", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.txtGradosFan.ForeColor = System.Drawing.Color.Red
         Me.txtGradosFan.Location = New System.Drawing.Point(177, 29)
         Me.txtGradosFan.Name = "txtGradosFan"
         Me.txtGradosFan.Size = New System.Drawing.Size(79, 26)
         Me.txtGradosFan.TabIndex = 1
         Me.txtGradosFan.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.txtGradosFan.Value = New Decimal(New Integer() {25, 0, 0, 0})
+        Me.txtGradosFan.Value = Global.EstadisticasDucos.My.MySettings.Default.FanRojo
         '
         'Label123
         '
@@ -7035,6 +7040,30 @@ Partial Class Form1
         Me.Label123.Size = New System.Drawing.Size(164, 20)
         Me.Label123.TabIndex = 0
         Me.Label123.Text = "Temp. Max Fan On:"
+        '
+        'GroupBox17
+        '
+        Me.GroupBox17.Controls.Add(Me.chkActivarMensajes)
+        Me.GroupBox17.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox17.Location = New System.Drawing.Point(12, 232)
+        Me.GroupBox17.Name = "GroupBox17"
+        Me.GroupBox17.Size = New System.Drawing.Size(300, 448)
+        Me.GroupBox17.TabIndex = 156
+        Me.GroupBox17.TabStop = False
+        Me.GroupBox17.Text = "Other options"
+        '
+        'chkActivarMensajes
+        '
+        Me.chkActivarMensajes.AutoSize = True
+        Me.chkActivarMensajes.Checked = Global.EstadisticasDucos.My.MySettings.Default.MensajesError
+        Me.chkActivarMensajes.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.chkActivarMensajes.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.EstadisticasDucos.My.MySettings.Default, "MensajesError", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.chkActivarMensajes.Location = New System.Drawing.Point(10, 25)
+        Me.chkActivarMensajes.Name = "chkActivarMensajes"
+        Me.chkActivarMensajes.Size = New System.Drawing.Size(253, 24)
+        Me.chkActivarMensajes.TabIndex = 3
+        Me.chkActivarMensajes.Text = "Activate the error messages"
+        Me.chkActivarMensajes.UseVisualStyleBackColor = True
         '
         'GroupBox28
         '
@@ -7423,9 +7452,9 @@ Partial Class Form1
         Me.lblFechaFinDeposito.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.lblFechaFinDeposito.Location = New System.Drawing.Point(93, 58)
         Me.lblFechaFinDeposito.Name = "lblFechaFinDeposito"
-        Me.lblFechaFinDeposito.Size = New System.Drawing.Size(15, 16)
+        Me.lblFechaFinDeposito.Size = New System.Drawing.Size(66, 16)
         Me.lblFechaFinDeposito.TabIndex = 136
-        Me.lblFechaFinDeposito.Text = "0"
+        Me.lblFechaFinDeposito.Text = "No data."
         Me.lblFechaFinDeposito.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Label173
@@ -7520,16 +7549,6 @@ Partial Class Form1
         Me.picFanAni.TabStop = False
         Me.picFanAni.Visible = False
         '
-        'lblReinicioApp
-        '
-        Me.lblReinicioApp.AutoSize = True
-        Me.lblReinicioApp.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Reinicios", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblReinicioApp.Location = New System.Drawing.Point(1393, 713)
-        Me.lblReinicioApp.Name = "lblReinicioApp"
-        Me.lblReinicioApp.Size = New System.Drawing.Size(16, 13)
-        Me.lblReinicioApp.TabIndex = 154
-        Me.lblReinicioApp.Text = Global.EstadisticasDucos.My.MySettings.Default.Reinicios
-        '
         'txtUser
         '
         Me.txtUser.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "User", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
@@ -7540,6 +7559,16 @@ Partial Class Form1
         Me.txtUser.TabIndex = 10000
         Me.txtUser.TabStop = False
         Me.txtUser.Text = Global.EstadisticasDucos.My.MySettings.Default.User
+        '
+        'lblReinicioApp
+        '
+        Me.lblReinicioApp.AutoSize = True
+        Me.lblReinicioApp.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Reinicios", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblReinicioApp.Location = New System.Drawing.Point(1393, 713)
+        Me.lblReinicioApp.Name = "lblReinicioApp"
+        Me.lblReinicioApp.Size = New System.Drawing.Size(16, 13)
+        Me.lblReinicioApp.TabIndex = 154
+        Me.lblReinicioApp.Text = Global.EstadisticasDucos.My.MySettings.Default.Reinicios
         '
         'Form1
         '
@@ -7623,6 +7652,8 @@ Partial Class Form1
         CType(Me.txtFanAmarillo, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.txtFanVerde, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.txtGradosFan, System.ComponentModel.ISupportInitialize).EndInit
+        Me.GroupBox17.ResumeLayout(False)
+        Me.GroupBox17.PerformLayout
         Me.GroupBox28.ResumeLayout(False)
         Me.GroupBox28.PerformLayout
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit
@@ -8209,4 +8240,6 @@ Partial Class Form1
     Friend WithEvents txtUser As TextBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents lblUser As Label
+    Friend WithEvents GroupBox17 As GroupBox
+    Friend WithEvents chkActivarMensajes As CheckBox
 End Class

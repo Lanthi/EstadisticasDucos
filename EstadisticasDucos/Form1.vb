@@ -60,6 +60,7 @@ Public Class Form1
     Dim Cargado As Boolean = True
     Dim DucosNuevoDia As Decimal
     Dim ActivarMensajesError As Boolean = True
+    Dim Verificado As Boolean = False
     Private Sub BalanceHora()
         Try
             If lblBalanceHora01.Text <> 0 And lblBalanceHora00.Text <> 0 Then lblHoraDiferencia00.Text = FormatDuco(CDec(lblBalanceHora01.Text) - CDec(lblBalanceHora00.Text) - TransacionPorHora(0), 8)
@@ -218,6 +219,13 @@ Public Class Form1
             Dim Deposito As Integer = dict2.item("result").item("balance").item("stake_amount")
             Dim FechafinDeposito As Integer = dict2.item("result").item("balance").item("stake_date")
             lblDeposito.Text = Deposito
+            If dict2.item("result").item("balance").item("verified") = "yes" Then
+                Verificado = True
+                lblHora.BackColor = Color.Green
+            Else
+                Verificado = False
+                lblHora.BackColor = Color.Red
+            End If
             If Deposito > 0 Then
                 lblFechaFinDeposito.Text = UnixTimeToDate(FechafinDeposito)
                 lblTiempoRestante.Text = "Time Left:" & sTiempo(Now, lblFechaFinDeposito.Text)

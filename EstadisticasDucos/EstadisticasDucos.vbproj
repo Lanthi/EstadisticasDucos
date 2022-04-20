@@ -28,7 +28,7 @@
     <UpdateUrl>http://Localhost/Estadisticas/</UpdateUrl>
     <TargetCulture>es</TargetCulture>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>298</ApplicationRevision>
+    <ApplicationRevision>299</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>

@@ -573,11 +573,12 @@ Partial Class Form1
         Me.txtGradosFan2 = New System.Windows.Forms.NumericUpDown()
         Me.Label123 = New System.Windows.Forms.Label()
         Me.GroupBox17 = New System.Windows.Forms.GroupBox()
-        Me.chkActivarMensajes = New System.Windows.Forms.CheckBox()
+        Me.chkActivarMensajes2 = New System.Windows.Forms.CheckBox()
         Me.GroupBox28 = New System.Windows.Forms.GroupBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.lblUser = New System.Windows.Forms.Label()
         Me.Label122 = New System.Windows.Forms.Label()
+        Me.chkActivarMensajes = New System.Windows.Forms.CheckBox()
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
         Me.Label39 = New System.Windows.Forms.Label()
@@ -620,7 +621,6 @@ Partial Class Form1
         Me.txtGradosFan = New System.Windows.Forms.NumericUpDown()
         Me.txtFanVerde = New System.Windows.Forms.NumericUpDown()
         Me.txtFanAmarillo = New System.Windows.Forms.NumericUpDown()
-        Me.chkActivarMensajes2 = New System.Windows.Forms.CheckBox()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Chart2, System.ComponentModel.ISupportInitialize).BeginInit
         Me.GroupBox1.SuspendLayout
@@ -4268,24 +4268,24 @@ Partial Class Form1
         ChartArea6.IsSameFontSizeForAllAxes = True
         ChartArea6.Name = "ChartArea1"
         Me.Chart6.ChartAreas.Add(ChartArea6)
-        Legend6.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Left
         Legend6.Enabled = False
         Legend6.Name = "Legend1"
         Me.Chart6.Legends.Add(Legend6)
-        Me.Chart6.Location = New System.Drawing.Point(-456, -9)
+        Me.Chart6.Location = New System.Drawing.Point(-478, 3)
         Me.Chart6.Name = "Chart6"
         Series6.BorderWidth = 3
         Series6.ChartArea = "ChartArea1"
         Series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line
         Series6.Color = System.Drawing.Color.DarkOrchid
         Series6.IsVisibleInLegend = False
+        Series6.IsXValueIndexed = True
         Series6.Legend = "Legend1"
         Series6.Name = "Series1"
         Series6.ToolTip = "#VAL"
         Series6.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
         Series6.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
         Me.Chart6.Series.Add(Series6)
-        Me.Chart6.Size = New System.Drawing.Size(10000, 126)
+        Me.Chart6.Size = New System.Drawing.Size(10000, 141)
         Me.Chart6.TabIndex = 151
         '
         'TabControl1
@@ -7074,18 +7074,18 @@ Partial Class Form1
         Me.GroupBox17.TabStop = False
         Me.GroupBox17.Text = "Other options"
         '
-        'chkActivarMensajes
+        'chkActivarMensajes2
         '
-        Me.chkActivarMensajes.AutoSize = True
-        Me.chkActivarMensajes.Checked = Global.EstadisticasDucos.My.MySettings.Default.MensajesError
-        Me.chkActivarMensajes.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkActivarMensajes.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.EstadisticasDucos.My.MySettings.Default, "MensajesError", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.chkActivarMensajes.Location = New System.Drawing.Point(1620, 743)
-        Me.chkActivarMensajes.Name = "chkActivarMensajes"
-        Me.chkActivarMensajes.Size = New System.Drawing.Size(157, 17)
-        Me.chkActivarMensajes.TabIndex = 3
-        Me.chkActivarMensajes.Text = "Activate the error messages"
-        Me.chkActivarMensajes.UseVisualStyleBackColor = True
+        Me.chkActivarMensajes2.AutoSize = True
+        Me.chkActivarMensajes2.Checked = Global.EstadisticasDucos.My.MySettings.Default.MensajesError
+        Me.chkActivarMensajes2.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.chkActivarMensajes2.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.EstadisticasDucos.My.MySettings.Default, "MensajesError", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.chkActivarMensajes2.Location = New System.Drawing.Point(10, 25)
+        Me.chkActivarMensajes2.Name = "chkActivarMensajes2"
+        Me.chkActivarMensajes2.Size = New System.Drawing.Size(253, 24)
+        Me.chkActivarMensajes2.TabIndex = 3
+        Me.chkActivarMensajes2.Text = "Activate the error messages"
+        Me.chkActivarMensajes2.UseVisualStyleBackColor = True
         '
         'GroupBox28
         '
@@ -7131,6 +7131,19 @@ Partial Class Form1
         Me.Label122.Size = New System.Drawing.Size(146, 20)
         Me.Label122.TabIndex = 0
         Me.Label122.Text = "User Duino-Coin:"
+        '
+        'chkActivarMensajes
+        '
+        Me.chkActivarMensajes.AutoSize = True
+        Me.chkActivarMensajes.Checked = Global.EstadisticasDucos.My.MySettings.Default.MensajesError
+        Me.chkActivarMensajes.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.chkActivarMensajes.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.EstadisticasDucos.My.MySettings.Default, "MensajesError", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.chkActivarMensajes.Location = New System.Drawing.Point(1620, 743)
+        Me.chkActivarMensajes.Name = "chkActivarMensajes"
+        Me.chkActivarMensajes.Size = New System.Drawing.Size(157, 17)
+        Me.chkActivarMensajes.TabIndex = 3
+        Me.chkActivarMensajes.Text = "Activate the error messages"
+        Me.chkActivarMensajes.UseVisualStyleBackColor = True
         '
         'Timer2
         '
@@ -7624,19 +7637,6 @@ Partial Class Form1
         Me.txtFanAmarillo.TabIndex = 1
         Me.txtFanAmarillo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.txtFanAmarillo.Value = Global.EstadisticasDucos.My.MySettings.Default.FanAmarillo
-        '
-        'chkActivarMensajes2
-        '
-        Me.chkActivarMensajes2.AutoSize = True
-        Me.chkActivarMensajes2.Checked = Global.EstadisticasDucos.My.MySettings.Default.MensajesError
-        Me.chkActivarMensajes2.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkActivarMensajes2.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.EstadisticasDucos.My.MySettings.Default, "MensajesError", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.chkActivarMensajes2.Location = New System.Drawing.Point(10, 25)
-        Me.chkActivarMensajes2.Name = "chkActivarMensajes2"
-        Me.chkActivarMensajes2.Size = New System.Drawing.Size(253, 24)
-        Me.chkActivarMensajes2.TabIndex = 3
-        Me.chkActivarMensajes2.Text = "Activate the error messages"
-        Me.chkActivarMensajes2.UseVisualStyleBackColor = True
         '
         'Form1
         '

@@ -528,10 +528,10 @@
       <Value Profile="(Default)">25</Value>
     </Setting>
     <Setting Name="FanVerde" Type="System.Decimal" Scope="User">
-      <Value Profile="(Default)">22</Value>
+      <Value Profile="(Default)">19</Value>
     </Setting>
     <Setting Name="FanAmarillo" Type="System.Decimal" Scope="User">
-      <Value Profile="(Default)">23</Value>
+      <Value Profile="(Default)">24</Value>
     </Setting>
     <Setting Name="MediaPrecioDia" Type="System.String" Scope="User">
       <Value Profile="(Default)">0</Value>
@@ -543,7 +543,7 @@
       <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="FanRojo" Type="System.Decimal" Scope="User">
-      <Value Profile="(Default)">25</Value>
+      <Value Profile="(Default)">35</Value>
     </Setting>
   </Settings>
 </SettingsFile>

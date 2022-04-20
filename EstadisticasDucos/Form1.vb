@@ -28,7 +28,7 @@ Public Class Form1
     '
     'Do not change
     ReadOnly Remover As Integer = 30
-    ReadOnly RemoverGraficos As Integer = 200
+    ReadOnly RemoverGraficos As Integer = 3000
     Dim ContadorRemove As Integer = 0
     Dim Hora As Integer
     Dim Minutos As Integer = DateAndTime.Minute(Now)
@@ -61,6 +61,9 @@ Public Class Form1
     Dim DucosNuevoDia As Decimal
     Dim ActivarMensajesError As Boolean = True
     Dim Verificado As Boolean = False
+    Dim FanRojo As Integer
+    Dim FanAmarillo As Integer
+    Dim FanVerde As Integer
     Private Sub BalanceHora()
         Try
             If lblBalanceHora01.Text <> 0 And lblBalanceHora00.Text <> 0 Then lblHoraDiferencia00.Text = FormatDuco(CDec(lblBalanceHora01.Text) - CDec(lblBalanceHora00.Text) - TransacionPorHora(0), 8)
@@ -1904,4 +1907,7 @@ Public Class Form1
         ActivarMensajesError = chkActivarMensajes.Checked
     End Sub
 
+    Private Sub txtGradosFan_ValueChanged(sender As Object, e As EventArgs) Handles txtGradosFan2.ValueChanged, txtGradosFan.ValueChanged
+
+    End Sub
 End Class

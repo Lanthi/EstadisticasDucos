@@ -2156,7 +2156,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("22")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("19")>  _
         Public Property FanVerde() As Decimal
             Get
                 Return CType(Me("FanVerde"),Decimal)
@@ -2168,7 +2168,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("23")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("24")>  _
         Public Property FanAmarillo() As Decimal
             Get
                 Return CType(Me("FanAmarillo"),Decimal)
@@ -2216,7 +2216,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("25")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("35")>  _
         Public Property FanRojo() As Decimal
             Get
                 Return CType(Me("FanRojo"),Decimal)

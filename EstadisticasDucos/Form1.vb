@@ -1903,7 +1903,7 @@ Public Class Form1
         lblUser.Text = txtUser.Text
     End Sub
 
-    Private Sub chkActivarMensajes_CheckedChanged(sender As Object, e As EventArgs) Handles chkActivarMensajes.CheckedChanged
+    Private Sub chkActivarMensajes_CheckedChanged(sender As Object, e As EventArgs) Handles chkActivarMensajes.CheckedChanged, chkActivarMensajes2.CheckedChanged
         ActivarMensajesError = chkActivarMensajes.Checked
     End Sub
 

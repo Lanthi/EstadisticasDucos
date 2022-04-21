@@ -11,7 +11,7 @@ Imports System.Runtime.InteropServices
 
 <Assembly: AssemblyTitle("EstadisticasDucos")>
 <Assembly: AssemblyDescription("")>
-<Assembly: AssemblyCompany("Lanthi Com")>
+<Assembly: AssemblyCompany("Lanthi.Com")>
 <Assembly: AssemblyProduct("EstadisticasDucos")>
 <Assembly: AssemblyCopyright("Copyright ©  2022")>
 <Assembly: AssemblyTrademark("Lanthi")>
@@ -32,6 +32,6 @@ Imports System.Runtime.InteropServices
 ' utilizando el carácter "*", como se muestra a continuación:
 ' <Assembly: AssemblyVersion("1.0.*")>
 
-<Assembly: AssemblyVersion("1.0.0.0")>
-<Assembly: AssemblyFileVersion("1.0.0.0")>
+<Assembly: AssemblyVersion("0.5.0.25")>
+<Assembly: AssemblyFileVersion("0.5.0.25")>
 <Assembly: NeutralResourcesLanguage("es-ES")>

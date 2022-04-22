@@ -29,6 +29,11 @@ Public Class Form1
     'Do not change
     ReadOnly Remover As Integer = 30
     ReadOnly RemoverGraficos As Integer = 3000
+    ReadOnly ArduinosUltimaVersion As String = "Official AVR Miner 3.18"
+    ReadOnly Esp8266UltimaVersion As String = "Official ESP8266 Miner 3.18"
+    ReadOnly PCUltimaVersion As String = "Official PC Miner 3.18"
+    ReadOnly Esp32UltimaVersion As String = "Official ESP32 Miner 3.1"
+    ReadOnly WebUltimaVersion As String = "Official Web Miner 3.18"
     Dim ContadorRemove As Integer = 0
     Dim Hora As Integer
     Dim Minutos As Integer = DateAndTime.Minute(Now)
@@ -496,17 +501,17 @@ Public Class Form1
                     Next A
                 End If
                 Select Case dict2.item("result").item("miners").item(T).item("software")
-                    Case "Official AVR Miner 3.1"
+                    Case ArduinosUltimaVersion
                         txtMinerosNArduino.Text += 1
                         txtMinerosHArduino.Text += dict2.item("result").item("miners").item(T).item("hashrate")
                         TreeView2.Nodes(0).Nodes(T).ImageIndex = 0
                         TreeView2.Nodes(0).Nodes(T).SelectedImageIndex = 0
-                    Case "Official PC Miner 3.1"
+                    Case PCUltimaVersion
                         txtMinerosHCPU.Text += dict2.item("result").item("miners").item(T).item("hashrate")
                         txtMinerosNCPU.Text += 1
                         TreeView2.Nodes(0).Nodes(T).ImageIndex = 1
                         TreeView2.Nodes(0).Nodes(T).SelectedImageIndex = 1
-                    Case "Official ESP32 Miner 3.1"
+                    Case Esp32UltimaVersion
                         txtMinerosNEsp32.Text += 1
                         txtMinerosHEsp32.Text += dict2.item("result").item("miners").item(T).item("hashrate")
                         TreeView2.Nodes(0).Nodes(T).ImageIndex = 7
@@ -516,7 +521,7 @@ Public Class Form1
                         txtMinerosHEsp8266.Text += dict2.item("result").item("miners").item(T).item("hashrate")
                         TreeView2.Nodes(0).Nodes(T).ImageIndex = 8
                         TreeView2.Nodes(0).Nodes(T).SelectedImageIndex = 8
-                    Case "Official ESP8266 Miner 3.18"
+                    Case Esp8266UltimaVersion
                         Dim temp As String = dict2.item("result").item("miners").item(T).item("it")
                         txtMinerosNEsp8266.Text += 1
                         txtMinerosHEsp8266.Text += dict2.item("result").item("miners").item(T).item("hashrate")
@@ -1376,7 +1381,7 @@ Public Class Form1
     End Function
 #Enable Warning BC42105 ' La función no devuelve un valor en todas las rutas de código
     Function CalcularHases(Hases As Integer) As String
-        If Hases >= 10000 And Hases < 100000 Then
+        If Hases >= 1000 And Hases < 100000 Then
             CalcularHases = Format(Hases / 1000, "0.00") & " Kh/s"
         ElseIf Hases >= 100000 Then
             CalcularHases = Format(Hases / 1000000, "0.00") & " MH/s"

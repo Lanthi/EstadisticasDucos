@@ -1149,6 +1149,123 @@ Public Class Form1
                 End If
             End If
             lblPrecioMes.Text = (PrecioMesMax + PrecioMesMin) / 2
+
+            Dim PrecioAñoMin As Decimal
+            Dim PrecioAñoMax As Decimal
+            PrecioAñoMin = CDec(lblPrecioAño01.Text)
+            PrecioAñoMax = CDec(lblPrecioAño01.Text)
+            If lblPrecioAño01.Text <> "0" Then
+                If PrecioAñoMin > CDec(lblPrecioAño01.Text) Then
+                    PrecioAñoMin = CDec(lblPrecioAño01.Text)
+                ElseIf PrecioañoMax < CDec(lblPrecioAño01.Text) Then
+                    PrecioAñoMax = CDec(lblPrecioAño01.Text)
+                End If
+            End If
+            If lblPrecioAño02.Text <> "0" Then
+                If PrecioAñoMin > CDec(lblPrecioAño02.Text) Then
+                    PrecioAñoMin = CDec(lblPrecioAño02.Text)
+                ElseIf PrecioAñoMax < CDec(lblPrecioAño02.Text) Then
+                    PrecioAñoMax = CDec(lblPrecioAño02.Text)
+                End If
+            End If
+            If lblPrecioAño03.Text <> "0" Then
+                If PrecioAñoMin > CDec(lblPrecioAño03.Text) Then
+                    PrecioAñoMin = CDec(lblPrecioAño03.Text)
+                ElseIf PrecioAñoMax < CDec(lblPrecioAño03.Text) Then
+                    PrecioAñoMax = CDec(lblPrecioAño03.Text)
+                End If
+            End If
+            If lblPrecioAño04.Text <> "0" Then
+                If PrecioAñoMin > CDec(lblPrecioAño04.Text) Then
+                    PrecioAñoMin = CDec(lblPrecioAño04.Text)
+                ElseIf PrecioAñoMax < CDec(lblPrecioAño04.Text) Then
+                    PrecioAñoMax = CDec(lblPrecioAño04.Text)
+                End If
+            End If
+            If lblPrecioAño05.Text <> "0" Then
+                If PrecioAñoMin > CDec(lblPrecioAño05.Text) Then
+                    PrecioAñoMin = CDec(lblPrecioAño05.Text)
+                ElseIf PrecioAñoMax < CDec(lblPrecioAño05.Text) Then
+                    PrecioAñoMax = CDec(lblPrecioAño05.Text)
+                End If
+            End If
+            If lblPrecioAño06.Text <> "0" Then
+                If PrecioAñoMin > CDec(lblPrecioAño06.Text) Then
+                    PrecioAñoMin = CDec(lblPrecioAño06.Text)
+                ElseIf PrecioAñoMax < CDec(lblPrecioAño06.Text) Then
+                    PrecioAñoMax = CDec(lblPrecioAño06.Text)
+                End If
+            End If
+            If lblPrecioAño07.Text <> "0" Then
+                If PrecioAñoMin > CDec(lblPrecioAño07.Text) Then
+                    PrecioAñoMin = CDec(lblPrecioAño07.Text)
+                ElseIf PrecioAñoMax < CDec(lblPrecioAño07.Text) Then
+                    PrecioAñoMax = CDec(lblPrecioAño07.Text)
+                End If
+            End If
+            If lblPrecioAño08.Text <> "0" Then
+                If PrecioAñoMin > CDec(lblPrecioAño08.Text) Then
+                    PrecioAñoMin = CDec(lblPrecioAño08.Text)
+                ElseIf PrecioAñoMax < CDec(lblPrecioAño08.Text) Then
+                    PrecioAñoMax = CDec(lblPrecioAño08.Text)
+                End If
+            End If
+            If lblPrecioAño09.Text <> "0" Then
+                If PrecioAñoMin > CDec(lblPrecioAño09.Text) Then
+                    PrecioAñoMin = CDec(lblPrecioAño09.Text)
+                ElseIf PrecioAñoMax < CDec(lblPrecioAño09.Text) Then
+                    PrecioAñoMax = CDec(lblPrecioAño09.Text)
+                End If
+            End If
+            If lblPrecioAño10.Text <> "0" Then
+                If PrecioAñoMin > CDec(lblPrecioAño10.Text) Then
+                    PrecioAñoMin = CDec(lblPrecioAño10.Text)
+                ElseIf PrecioAñoMax < CDec(lblPrecioAño10.Text) Then
+                    PrecioAñoMax = CDec(lblPrecioAño10.Text)
+                End If
+            End If
+            If lblPrecioAño11.Text <> "0" Then
+                If PrecioAñoMin > CDec(lblPrecioAño11.Text) Then
+                    PrecioAñoMin = CDec(lblPrecioAño11.Text)
+                ElseIf PrecioAñoMax < CDec(lblPrecioAño11.Text) Then
+                    PrecioAñoMax = CDec(lblPrecioAño11.Text)
+                End If
+            End If
+            If lblPrecioAño12.Text <> "0" Then
+                If PrecioAñoMin > CDec(lblPrecioAño12.Text) Then
+                    PrecioAñoMin = CDec(lblPrecioAño12.Text)
+                ElseIf PrecioAñoMax < CDec(lblPrecioAño12.Text) Then
+                    PrecioAñoMax = CDec(lblPrecioAño12.Text)
+                End If
+            End If
+            lblPrecioAnual.Text = (PrecioAñoMax + PrecioAñoMin) / 2
+            lblPrecioAño2022.Text = (PrecioAñoMax + PrecioAñoMin) / 2
+            Dim PrecioAñosMin As Decimal
+            Dim PrecioAñosMax As Decimal
+            PrecioAñosMin = CDec(lblPrecioAño01.Text)
+            PrecioAñosMax = CDec(lblPrecioAño01.Text)
+            If lblPrecioAño2021.Text <> "0" Then
+                If PrecioAñosMin > CDec(lblPrecioAño2021.Text) Then
+                    PrecioAñosMin = CDec(lblPrecioAño2021.Text)
+                ElseIf PrecioAñosMax < CDec(lblPrecioAño2021.Text) Then
+                    PrecioAñosMax = CDec(lblPrecioAño2021.Text)
+                End If
+            End If
+            If lblPrecioAño2022.Text <> "0" Then
+                If PrecioAñosMin > CDec(lblPrecioAño2022.Text) Then
+                    PrecioAñosMin = CDec(lblPrecioAño2022.Text)
+                ElseIf PrecioAñosMax < CDec(lblPrecioAño2022.Text) Then
+                    PrecioAñosMax = CDec(lblPrecioAño2022.Text)
+                End If
+            End If
+            If lblPrecioAño2023.Text <> "0" Then
+                If PrecioAñosMin > CDec(lblPrecioAño2023.Text) Then
+                    PrecioAñosMin = CDec(lblPrecioAño2023.Text)
+                ElseIf PrecioAñosMax < CDec(lblPrecioAño2023.Text) Then
+                    PrecioAñosMax = CDec(lblPrecioAño2023.Text)
+                End If
+            End If
+            lblPrecioMedioTodosAños.Text = (PrecioAñosMax + PrecioAñosMin) / 2
             TotalHoras += CDec(lblHoraDiferencia00.Text)
             TotalHoras += CDec(lblHoraDiferencia01.Text)
             TotalHoras += CDec(lblHoraDiferencia02.Text)
@@ -1696,6 +1813,7 @@ Public Class Form1
             lblTransasionesAñoTotal.Text = Suma2
             lblTotalTransasiones.Text = CInt(ContaTransa + 1)
             lblDucosTotales.Text = Format(CDec(txtbalance.Text - Suma2), "###0.00")
+            lblBalanceAño2022.Text = FormatDuco(CDec(txtbalance.Text - Suma2), 9)
             lblTotalGanadoAños.Text = Format(CDec(txtbalance.Text - Suma2) * CDec(txtDucoprice.Text) * Euro, "###0.00")
             lblEtiquetaDuco.Left = lblDucosTotales.Left + lblDucosTotales.Width - 5
             lblEtiquetaEuro.Left = lblTotalGanadoAños.Left + lblTotalGanadoAños.Width '- 5

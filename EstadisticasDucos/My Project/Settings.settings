@@ -545,5 +545,11 @@
     <Setting Name="FanRojo" Type="System.Decimal" Scope="User">
       <Value Profile="(Default)">35</Value>
     </Setting>
+    <Setting Name="PrecioMedioAnual" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="PrecioMedioTodosAños" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

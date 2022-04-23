@@ -2225,6 +2225,30 @@ Namespace My
                 Me("FanRojo") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property PrecioMedioAnual() As String
+            Get
+                Return CType(Me("PrecioMedioAnual"),String)
+            End Get
+            Set
+                Me("PrecioMedioAnual") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property PrecioMedioTodosAños() As String
+            Get
+                Return CType(Me("PrecioMedioTodosAños"),String)
+            End Get
+            Set
+                Me("PrecioMedioTodosAños") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

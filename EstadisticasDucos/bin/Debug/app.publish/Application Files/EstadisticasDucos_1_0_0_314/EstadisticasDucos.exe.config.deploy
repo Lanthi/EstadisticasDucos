@@ -555,6 +555,12 @@
             <setting name="FanRojo" serializeAs="String">
                 <value>35</value>
             </setting>
+            <setting name="PrecioMedioAnual" serializeAs="String">
+                <value>0</value>
+            </setting>
+            <setting name="PrecioMedioTodosAños" serializeAs="String">
+                <value>0</value>
+            </setting>
         </EstadisticasDucos.My.MySettings>
     </userSettings>
 </configuration>

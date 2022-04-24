@@ -561,6 +561,12 @@
             <setting name="PrecioMedioTodosAños" serializeAs="String">
                 <value>0</value>
             </setting>
+            <setting name="Lenguaje" serializeAs="String">
+                <value>English</value>
+            </setting>
+            <setting name="Moneda" serializeAs="String">
+                <value>Euro</value>
+            </setting>
         </EstadisticasDucos.My.MySettings>
     </userSettings>
 </configuration>

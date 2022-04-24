@@ -2249,6 +2249,30 @@ Namespace My
                 Me("PrecioMedioTodosAños") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("English")>  _
+        Public Property Lenguaje() As String
+            Get
+                Return CType(Me("Lenguaje"),String)
+            End Get
+            Set
+                Me("Lenguaje") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Euro")>  _
+        Public Property Moneda() As String
+            Get
+                Return CType(Me("Moneda"),String)
+            End Get
+            Set
+                Me("Moneda") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

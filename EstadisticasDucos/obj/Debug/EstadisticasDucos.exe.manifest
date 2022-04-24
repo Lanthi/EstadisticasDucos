@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="EstadisticasDucos.exe" version="1.0.0.314" publicKeyToken="0000000000000000" language="es" processorArchitecture="amd64" type="win32" />
+  <asmv1:assemblyIdentity name="EstadisticasDucos.exe" version="1.0.0.326" publicKeyToken="0000000000000000" language="es" processorArchitecture="amd64" type="win32" />
   <description asmv2:iconFile="duco.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EstadisticasDucos.exe" size="1418752">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EstadisticasDucos.exe" size="1455104">
       <assemblyIdentity name="EstadisticasDucos" version="0.5.0.25" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>iG66Fzql63+yR4fAy2FSai308rcq5k72kokSBukwC8I=</dsig:DigestValue>
+        <dsig:DigestValue>QU/HUSzRFR8X+P2pED9rsFbpMNMmyTyJGafubDaJgtg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -63,13 +63,13 @@
       <dsig:DigestValue>eCQHe8Zi7DrblTpHzpp4/3YEkRBNAbh5zvJBZ4xuFnI=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="EstadisticasDucos.exe.config" size="23172">
+  <file name="EstadisticasDucos.exe.config" size="23415">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>FJKncCM14y+XIFz9Kz6rIYJRVSaYXCb7MSB6IrDfwtA=</dsig:DigestValue>
+      <dsig:DigestValue>QIBWN8XtJA/Fyqo8vvpo1idCYHC+zNzW8Y1vznpywsE=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

@@ -551,5 +551,11 @@
     <Setting Name="PrecioMedioTodosAños" Type="System.String" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
+    <Setting Name="Lenguaje" Type="System.String" Scope="User">
+      <Value Profile="(Default)">English</Value>
+    </Setting>
+    <Setting Name="Moneda" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Euro</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

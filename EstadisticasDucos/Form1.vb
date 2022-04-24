@@ -145,7 +145,11 @@ Public Class Form1
         UnixTimeToDate = DateSerial(1970, 1, intDays + 1) & " " & TimeSerial(intHours, intMins, intSecs)
     End Function
     Function sTiempo(dInicio As Date, dFin As Date) As String
-        sTiempo = Str((DateDiff("s", dInicio, dFin) \ 86400) Mod 365) & " days, "
+        If cmbLenguaje.Text = "Spanish" Or cmbLenguaje.Text = "Español" Then
+            sTiempo = Str((DateDiff("s", dInicio, dFin) \ 86400) Mod 365) & " días, "
+        Else
+            sTiempo = Str((DateDiff("s", dInicio, dFin) \ 86400) Mod 365) & " days, "
+        End If
         Dim THora As String
 
         THora = Str((DateDiff("s", dInicio, dFin) \ 3600) Mod 24) & ":"
@@ -236,11 +240,15 @@ Public Class Form1
             End If
             If Deposito > 0 Then
                 lblFechaFinDeposito.Text = UnixTimeToDate(FechafinDeposito)
-                lblTiempoRestante.Text = "Time Left:" & sTiempo(Now, lblFechaFinDeposito.Text)
+                If cmbLenguaje.Text = "Spanish" Or cmbLenguaje.Text = "Español" Then
+                    lblTiempoRestante.Text = "Restante:" & sTiempo(Now, lblFechaFinDeposito.Text)
+                Else
+                    lblTiempoRestante.Text = "Time Left:" & sTiempo(Now, lblFechaFinDeposito.Text)
+                End If
                 lblRecompensa.Text = Format(Deposito * (1.5 / 100), "#0.00")
                 gbStaking.Enabled = True
-            Else
-                gbStaking.Enabled = False
+                Else
+                    gbStaking.Enabled = False
             End If
             lblDucoDeposito.Left = lblDeposito.Left + lblDeposito.Width - 5
             lblEtiquetaDucoRecompensa.Left = lblRecompensa.Left + lblRecompensa.Width - 5
@@ -254,9 +262,15 @@ Public Class Form1
                 EstimadoViejo = EstimadoNuevo
             End If
             lblEstimado.Text = Format(ValorEstimado, "###0.00")
-            lblEstimadoDetalle.Text = "daily (≈" & Format(ValorEstimado * CDec(txtDucoprice.Text), "0.000") & ")"
             lblEstimadoMes.Text = Format(ValorEstimadoMes, "###0.00")
-            lblEstimadoMesDetalle.Text = "monthly (≈" & Format(ValorEstimadoMes * CDec(txtDucoprice.Text), "0.000") & ")"
+            If cmbLenguaje.Text = "Spanish" Or cmbLenguaje.Text = "Español" Then
+                lblEstimadoDetalle.Text = "Diario (≈" & Format(ValorEstimado * CDec(txtDucoprice.Text), "0.000") & "$)"
+                lblEstimadoMesDetalle.Text = "Mensual (≈" & Format(ValorEstimadoMes * CDec(txtDucoprice.Text), "0.000") & "$)"
+            Else
+                lblEstimadoDetalle.Text = "Daily (≈" & Format(ValorEstimado * CDec(txtDucoprice.Text), "0.000") & "$)"
+                lblEstimadoMesDetalle.Text = "Monthly (≈" & Format(ValorEstimadoMes * CDec(txtDucoprice.Text), "0.000") & "$)"
+            End If
+
             Dim Segundoss As String = Segundos
             If ValorEstimado > 0 Then
                 Select Case Segundos
@@ -289,7 +303,7 @@ Public Class Form1
             End If
             Chart6.ChartAreas(0).RecalculateAxesScale()
             lblValorEuro.Text = Euro & "€"
-            lblGanado.Text = Format(CDec(txtbalance.Text) * CDec(txtDucoprice.Text) * Euro, "###0.0000")
+            lblGanado.Text = Format(CDec(txtbalance.Text) * CDec(txtDucoprice.Text) * Euro, "###0.0000") & "€"
             lblGanadoDolar.Text = Format(CDec(txtbalance.Text) * CDec(txtDucoprice.Text), "###0.0000")
             lstBalanceTiempoReal.Items.Add(txtbalance.Text)
             lstDUCOTiempoReal.Items.Add(txtDucoprice.Text)
@@ -388,72 +402,76 @@ Public Class Form1
                     If I <> 0 Then TreeView1.Nodes.Add("")
 
                 Next
-                TabPage5.Text = "Transactions (" & ContaTransa + 1 & ")"
+                If cmbLenguaje.Text = "Spanish" Or cmbLenguaje.Text = "Español" Then
+                    TabPage5.Text = "Transaciones (" & ContaTransa + 1 & ")"
+                Else
+                    TabPage5.Text = "Transactions (" & ContaTransa + 1 & ")"
+                End If
                 TreeView1.ExpandAll()
-                lblTransacionMes01.Text = Format(Transacion(1), "######0.#####")
-                lblTransacionMes02.Text = Format(Transacion(2), "######0.#####")
-                lblTransacionMes03.Text = Format(Transacion(3), "######0.#####")
-                lblTransacionMes04.Text = Format(Transacion(4), "######0.#####")
-                lblTransacionMes05.Text = Format(Transacion(5), "######0.#####")
-                lblTransacionMes06.Text = Format(Transacion(6), "######0.#####")
-                lblTransacionMes07.Text = Format(Transacion(7), "######0.#####")
-                lblTransacionMes08.Text = Format(Transacion(8), "######0.#####")
-                lblTransacionMes09.Text = Format(Transacion(9), "######0.#####")
-                lblTransacionMes10.Text = Format(Transacion(10), "######0.#####")
-                lblTransacionMes11.Text = Format(Transacion(11), "######0.#####")
-                lblTransacionMes12.Text = Format(Transacion(12), "######0.#####")
-                lblTransacionMes13.Text = Format(Transacion(13), "######0.#####")
-                lblTransacionMes14.Text = Format(Transacion(14), "######0.#####")
-                lblTransacionMes15.Text = Format(Transacion(15), "######0.#####")
-                lblTransacionMes16.Text = Format(Transacion(16), "######0.#####")
-                lblTransacionMes17.Text = Format(Transacion(17), "######0.#####")
-                lblTransacionMes18.Text = Format(Transacion(18), "######0.#####")
-                lblTransacionMes19.Text = Format(Transacion(19), "######0.#####")
-                lblTransacionMes20.Text = Format(Transacion(20), "######0.#####")
-                lblTransacionMes21.Text = Format(Transacion(21), "######0.#####")
-                lblTransacionMes22.Text = Format(Transacion(22), "######0.#####")
-                lblTransacionMes23.Text = Format(Transacion(23), "######0.#####")
-                lblTransacionMes24.Text = Format(Transacion(24), "######0.#####")
-                lblTransacionMes25.Text = Format(Transacion(25), "######0.#####")
-                lblTransacionMes26.Text = Format(Transacion(26), "######0.#####")
-                lblTransacionMes27.Text = Format(Transacion(27), "######0.#####")
-                lblTransacionMes28.Text = Format(Transacion(28), "######0.#####")
-                lblTransacionMes29.Text = Format(Transacion(29), "######0.#####")
-                lblTransacionMes30.Text = Format(Transacion(30), "######0.#####")
-                lblTransacionMes31.Text = Format(Transacion(31), "######0.#####")
-                If lblTransacionMes01.Text <> 0 Then lblTransacionMes01.Text = lblTransacionMes01.Text & "(" & TransacionPorDia(1) & ")"
-                If lblTransacionMes02.Text <> 0 Then lblTransacionMes02.Text = lblTransacionMes02.Text & "(" & TransacionPorDia(2) & ")"
-                If lblTransacionMes03.Text <> 0 Then lblTransacionMes03.Text = lblTransacionMes03.Text & "(" & TransacionPorDia(3) & ")"
-                If lblTransacionMes04.Text <> 0 Then lblTransacionMes04.Text = lblTransacionMes04.Text & "(" & TransacionPorDia(4) & ")"
-                If lblTransacionMes05.Text <> 0 Then lblTransacionMes05.Text = lblTransacionMes05.Text & "(" & TransacionPorDia(5) & ")"
-                If lblTransacionMes06.Text <> 0 Then lblTransacionMes06.Text = lblTransacionMes06.Text & "(" & TransacionPorDia(6) & ")"
-                If lblTransacionMes07.Text <> 0 Then lblTransacionMes07.Text = lblTransacionMes07.Text & "(" & TransacionPorDia(7) & ")"
-                If lblTransacionMes08.Text <> 0 Then lblTransacionMes08.Text = lblTransacionMes08.Text & "(" & TransacionPorDia(8) & ")"
-                If lblTransacionMes09.Text <> 0 Then lblTransacionMes09.Text = lblTransacionMes09.Text & "(" & TransacionPorDia(9) & ")"
-                If lblTransacionMes10.Text <> 0 Then lblTransacionMes10.Text = lblTransacionMes10.Text & "(" & TransacionPorDia(10) & ")"
-                If lblTransacionMes11.Text <> 0 Then lblTransacionMes11.Text = lblTransacionMes11.Text & "(" & TransacionPorDia(11) & ")"
-                If lblTransacionMes12.Text <> 0 Then lblTransacionMes12.Text = lblTransacionMes12.Text & "(" & TransacionPorDia(12) & ")"
-                If lblTransacionMes13.Text <> 0 Then lblTransacionMes13.Text = lblTransacionMes13.Text & "(" & TransacionPorDia(13) & ")"
-                If lblTransacionMes14.Text <> 0 Then lblTransacionMes14.Text = lblTransacionMes14.Text & "(" & TransacionPorDia(14) & ")"
-                If lblTransacionMes15.Text <> 0 Then lblTransacionMes15.Text = lblTransacionMes15.Text & "(" & TransacionPorDia(15) & ")"
-                If lblTransacionMes16.Text <> 0 Then lblTransacionMes16.Text = lblTransacionMes16.Text & "(" & TransacionPorDia(16) & ")"
-                If lblTransacionMes17.Text <> 0 Then lblTransacionMes17.Text = lblTransacionMes17.Text & "(" & TransacionPorDia(17) & ")"
-                If lblTransacionMes18.Text <> 0 Then lblTransacionMes18.Text = lblTransacionMes18.Text & "(" & TransacionPorDia(18) & ")"
-                If lblTransacionMes19.Text <> 0 Then lblTransacionMes19.Text = lblTransacionMes19.Text & "(" & TransacionPorDia(19) & ")"
-                If lblTransacionMes20.Text <> 0 Then lblTransacionMes20.Text = lblTransacionMes20.Text & "(" & TransacionPorDia(20) & ")"
-                If lblTransacionMes21.Text <> 0 Then lblTransacionMes21.Text = lblTransacionMes21.Text & "(" & TransacionPorDia(21) & ")"
-                If lblTransacionMes22.Text <> 0 Then lblTransacionMes22.Text = lblTransacionMes22.Text & "(" & TransacionPorDia(22) & ")"
-                If lblTransacionMes23.Text <> 0 Then lblTransacionMes23.Text = lblTransacionMes23.Text & "(" & TransacionPorDia(23) & ")"
-                If lblTransacionMes24.Text <> 0 Then lblTransacionMes24.Text = lblTransacionMes24.Text & "(" & TransacionPorDia(24) & ")"
-                If lblTransacionMes25.Text <> 0 Then lblTransacionMes25.Text = lblTransacionMes25.Text & "(" & TransacionPorDia(25) & ")"
-                If lblTransacionMes26.Text <> 0 Then lblTransacionMes26.Text = lblTransacionMes26.Text & "(" & TransacionPorDia(26) & ")"
-                If lblTransacionMes27.Text <> 0 Then lblTransacionMes27.Text = lblTransacionMes27.Text & "(" & TransacionPorDia(27) & ")"
-                If lblTransacionMes28.Text <> 0 Then lblTransacionMes28.Text = lblTransacionMes28.Text & "(" & TransacionPorDia(28) & ")"
-                If lblTransacionMes29.Text <> 0 Then lblTransacionMes29.Text = lblTransacionMes29.Text & "(" & TransacionPorDia(29) & ")"
-                If lblTransacionMes30.Text <> 0 Then lblTransacionMes30.Text = lblTransacionMes30.Text & "(" & TransacionPorDia(30) & ")"
-                If lblTransacionMes31.Text <> 0 Then lblTransacionMes31.Text = lblTransacionMes31.Text & "(" & TransacionPorDia(31) & ")"
-            End If
-            TreeView2.Sorted = False
+                    lblTransacionMes01.Text = Format(Transacion(1), "######0.#####")
+                    lblTransacionMes02.Text = Format(Transacion(2), "######0.#####")
+                    lblTransacionMes03.Text = Format(Transacion(3), "######0.#####")
+                    lblTransacionMes04.Text = Format(Transacion(4), "######0.#####")
+                    lblTransacionMes05.Text = Format(Transacion(5), "######0.#####")
+                    lblTransacionMes06.Text = Format(Transacion(6), "######0.#####")
+                    lblTransacionMes07.Text = Format(Transacion(7), "######0.#####")
+                    lblTransacionMes08.Text = Format(Transacion(8), "######0.#####")
+                    lblTransacionMes09.Text = Format(Transacion(9), "######0.#####")
+                    lblTransacionMes10.Text = Format(Transacion(10), "######0.#####")
+                    lblTransacionMes11.Text = Format(Transacion(11), "######0.#####")
+                    lblTransacionMes12.Text = Format(Transacion(12), "######0.#####")
+                    lblTransacionMes13.Text = Format(Transacion(13), "######0.#####")
+                    lblTransacionMes14.Text = Format(Transacion(14), "######0.#####")
+                    lblTransacionMes15.Text = Format(Transacion(15), "######0.#####")
+                    lblTransacionMes16.Text = Format(Transacion(16), "######0.#####")
+                    lblTransacionMes17.Text = Format(Transacion(17), "######0.#####")
+                    lblTransacionMes18.Text = Format(Transacion(18), "######0.#####")
+                    lblTransacionMes19.Text = Format(Transacion(19), "######0.#####")
+                    lblTransacionMes20.Text = Format(Transacion(20), "######0.#####")
+                    lblTransacionMes21.Text = Format(Transacion(21), "######0.#####")
+                    lblTransacionMes22.Text = Format(Transacion(22), "######0.#####")
+                    lblTransacionMes23.Text = Format(Transacion(23), "######0.#####")
+                    lblTransacionMes24.Text = Format(Transacion(24), "######0.#####")
+                    lblTransacionMes25.Text = Format(Transacion(25), "######0.#####")
+                    lblTransacionMes26.Text = Format(Transacion(26), "######0.#####")
+                    lblTransacionMes27.Text = Format(Transacion(27), "######0.#####")
+                    lblTransacionMes28.Text = Format(Transacion(28), "######0.#####")
+                    lblTransacionMes29.Text = Format(Transacion(29), "######0.#####")
+                    lblTransacionMes30.Text = Format(Transacion(30), "######0.#####")
+                    lblTransacionMes31.Text = Format(Transacion(31), "######0.#####")
+                    If lblTransacionMes01.Text <> 0 Then lblTransacionMes01.Text = lblTransacionMes01.Text & "(" & TransacionPorDia(1) & ")"
+                    If lblTransacionMes02.Text <> 0 Then lblTransacionMes02.Text = lblTransacionMes02.Text & "(" & TransacionPorDia(2) & ")"
+                    If lblTransacionMes03.Text <> 0 Then lblTransacionMes03.Text = lblTransacionMes03.Text & "(" & TransacionPorDia(3) & ")"
+                    If lblTransacionMes04.Text <> 0 Then lblTransacionMes04.Text = lblTransacionMes04.Text & "(" & TransacionPorDia(4) & ")"
+                    If lblTransacionMes05.Text <> 0 Then lblTransacionMes05.Text = lblTransacionMes05.Text & "(" & TransacionPorDia(5) & ")"
+                    If lblTransacionMes06.Text <> 0 Then lblTransacionMes06.Text = lblTransacionMes06.Text & "(" & TransacionPorDia(6) & ")"
+                    If lblTransacionMes07.Text <> 0 Then lblTransacionMes07.Text = lblTransacionMes07.Text & "(" & TransacionPorDia(7) & ")"
+                    If lblTransacionMes08.Text <> 0 Then lblTransacionMes08.Text = lblTransacionMes08.Text & "(" & TransacionPorDia(8) & ")"
+                    If lblTransacionMes09.Text <> 0 Then lblTransacionMes09.Text = lblTransacionMes09.Text & "(" & TransacionPorDia(9) & ")"
+                    If lblTransacionMes10.Text <> 0 Then lblTransacionMes10.Text = lblTransacionMes10.Text & "(" & TransacionPorDia(10) & ")"
+                    If lblTransacionMes11.Text <> 0 Then lblTransacionMes11.Text = lblTransacionMes11.Text & "(" & TransacionPorDia(11) & ")"
+                    If lblTransacionMes12.Text <> 0 Then lblTransacionMes12.Text = lblTransacionMes12.Text & "(" & TransacionPorDia(12) & ")"
+                    If lblTransacionMes13.Text <> 0 Then lblTransacionMes13.Text = lblTransacionMes13.Text & "(" & TransacionPorDia(13) & ")"
+                    If lblTransacionMes14.Text <> 0 Then lblTransacionMes14.Text = lblTransacionMes14.Text & "(" & TransacionPorDia(14) & ")"
+                    If lblTransacionMes15.Text <> 0 Then lblTransacionMes15.Text = lblTransacionMes15.Text & "(" & TransacionPorDia(15) & ")"
+                    If lblTransacionMes16.Text <> 0 Then lblTransacionMes16.Text = lblTransacionMes16.Text & "(" & TransacionPorDia(16) & ")"
+                    If lblTransacionMes17.Text <> 0 Then lblTransacionMes17.Text = lblTransacionMes17.Text & "(" & TransacionPorDia(17) & ")"
+                    If lblTransacionMes18.Text <> 0 Then lblTransacionMes18.Text = lblTransacionMes18.Text & "(" & TransacionPorDia(18) & ")"
+                    If lblTransacionMes19.Text <> 0 Then lblTransacionMes19.Text = lblTransacionMes19.Text & "(" & TransacionPorDia(19) & ")"
+                    If lblTransacionMes20.Text <> 0 Then lblTransacionMes20.Text = lblTransacionMes20.Text & "(" & TransacionPorDia(20) & ")"
+                    If lblTransacionMes21.Text <> 0 Then lblTransacionMes21.Text = lblTransacionMes21.Text & "(" & TransacionPorDia(21) & ")"
+                    If lblTransacionMes22.Text <> 0 Then lblTransacionMes22.Text = lblTransacionMes22.Text & "(" & TransacionPorDia(22) & ")"
+                    If lblTransacionMes23.Text <> 0 Then lblTransacionMes23.Text = lblTransacionMes23.Text & "(" & TransacionPorDia(23) & ")"
+                    If lblTransacionMes24.Text <> 0 Then lblTransacionMes24.Text = lblTransacionMes24.Text & "(" & TransacionPorDia(24) & ")"
+                    If lblTransacionMes25.Text <> 0 Then lblTransacionMes25.Text = lblTransacionMes25.Text & "(" & TransacionPorDia(25) & ")"
+                    If lblTransacionMes26.Text <> 0 Then lblTransacionMes26.Text = lblTransacionMes26.Text & "(" & TransacionPorDia(26) & ")"
+                    If lblTransacionMes27.Text <> 0 Then lblTransacionMes27.Text = lblTransacionMes27.Text & "(" & TransacionPorDia(27) & ")"
+                    If lblTransacionMes28.Text <> 0 Then lblTransacionMes28.Text = lblTransacionMes28.Text & "(" & TransacionPorDia(28) & ")"
+                    If lblTransacionMes29.Text <> 0 Then lblTransacionMes29.Text = lblTransacionMes29.Text & "(" & TransacionPorDia(29) & ")"
+                    If lblTransacionMes30.Text <> 0 Then lblTransacionMes30.Text = lblTransacionMes30.Text & "(" & TransacionPorDia(30) & ")"
+                    If lblTransacionMes31.Text <> 0 Then lblTransacionMes31.Text = lblTransacionMes31.Text & "(" & TransacionPorDia(31) & ")"
+                End If
+                TreeView2.Sorted = False
             Dim Contador As Integer = dict2.item("result").item("miners").Count
             ReDim Mineros(Contador, 8)
             TreeView2.Nodes.Clear()
@@ -544,9 +562,16 @@ Public Class Form1
                 End Select
                 TreeView2.Refresh()
             Next
-            GroupBox8.Text = "Miners (" & Contador & ") " & CalcularHases(HasesUsuario)
-            TabPage4.Text = "Miners (" & Contador & ")"
+            If cmbLenguaje.Text = "Spanish" Or cmbLenguaje.Text = "Español" Then
+                gbMineross.Text = "Mineros (" & Contador & ") " & CalcularHases(HasesUsuario)
+                TabPage4.Text = "Mineros (" & Contador & ")"
+            Else
+                gbMineross.Text = "Miners (" & Contador & ") " & CalcularHases(HasesUsuario)
+                TabPage4.Text = "Miners (" & Contador & ")"
+            End If
+
             lblHases.Text = CalcularHases1(HasesUsuario)
+            lblHaseEstiquta.Left = lblHases.Left + lblHases.Width - 5
             lblMineros.Text = Contador
             txtMinerosHArduino.Text = CalcularHases(txtMinerosHArduino.Text)
             txtMinerosHCPU.Text = CalcularHases(txtMinerosHCPU.Text)
@@ -1788,7 +1813,7 @@ Public Class Form1
             Suma += lblGananciasAño11.Text
             Suma += lblGananciasAño12.Text
             lblTotalGananciaAño.Text = FormatDuco(Suma, 6) & "¬"
-            lblGanadoAño2022.Text = FormatDuco(Suma, 6)
+            lblGanadoAño2022.Text = FormatDuco(Suma, 10)
             Suma = CDec(lblTransasionesAño01.Text)
             Suma += CDec(lblTransasionesAño02.Text)
             Suma += CDec(lblTransasionesAño03.Text)
@@ -1814,9 +1839,8 @@ Public Class Form1
             lblTotalTransasiones.Text = CInt(ContaTransa + 1)
             lblDucosTotales.Text = Format(CDec(txtbalance.Text - Suma2), "###0.00")
             lblBalanceAño2022.Text = FormatDuco(CDec(txtbalance.Text - Suma2), 9)
-            lblTotalGanadoAños.Text = Format(CDec(txtbalance.Text - Suma2) * CDec(txtDucoprice.Text) * Euro, "###0.00")
+            lblTotalGanadoAños.Text = Format(CDec(txtbalance.Text - Suma2) * CDec(txtDucoprice.Text) * Euro, "###0.00") & "€"
             lblEtiquetaDuco.Left = lblDucosTotales.Left + lblDucosTotales.Width - 5
-            lblEtiquetaEuro.Left = lblTotalGanadoAños.Left + lblTotalGanadoAños.Width '- 5
             My.Settings.Save()
         Catch ex As Exception
             If ActivarMensajesError = True Then MsgBox("Error!!" & vbCrLf & ex.Message)
@@ -1964,6 +1988,7 @@ Public Class Form1
     End Sub
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles Me.Load
         Try
+            Lenguaje()
             lblReinicioApp.Text += 1
             LogReinicio()
             lblHora.Text = DateAndTime.TimeValue(Now)
@@ -2030,5 +2055,197 @@ Public Class Form1
     End Sub
     Private Sub chkActivarMensajes_CheckedChanged(sender As Object, e As EventArgs) Handles chkActivarMensajes.CheckedChanged, chkActivarMensajes2.CheckedChanged
         ActivarMensajesError = chkActivarMensajes.Checked
+    End Sub
+
+    Private Sub cmbLenguaje_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbLenguaje.SelectedIndexChanged
+        Lenguaje()
+    End Sub
+    Private Sub Lenguaje()
+        If cmbLenguaje.Text = "Spanish" Or cmbLenguaje.Text = "Español" Then
+            gbBalance.Text = "Balance:"
+            gbPrecioDuco.Text = "Precio del Duco:"
+            gbPrecioDolar.Text = "Precio del Dolar:"
+            gbGananciasEuro.Text = "Ganancias Euros:"
+            gbGananciasDolar.Text = "Ganancias Dolar:"
+            gbEstimado.Text = "Ganancias Estimadas:"
+            gbMineros.Text = "Mineros:"
+            gbStaking.Text = "Apuesta:"
+            gbTemp.Text = "Temp.  -  Humedad  -  Fan"
+            gbHoras.Text = "Balance Por Hora:"
+            gbMes.Text = "Balance Por Mes"
+            gbAño.Text = "Balance Por Año"
+            gbAños.Text = "Balance Por Años"
+            lblEtiquetaMineros.Text = "Mineros:"
+            lblEtiquetaStaking.Text = "Apuesta:"
+            lblEtiquetaFinDeposito.Text = "Finaliza:"
+            lblEtiquetaEstimadodeVuelto.Text = "Premio:"
+            lblEtiquetaHora.Text = "Hora"
+            lblEtiquetaPrecioHora.Text = "Precio"
+            lblEtiquetaPrecioMes.Text = "Precio"
+            lblEtiquetaPrecioAño.Text = "Precio"
+            lblEtiquetaPreciosAños.Text = "Precio"
+            lblEtiquetaDia.Text = "Día"
+            lblEtiquetaGananciaHora.Text = "Ganancia"
+            lblEtiquetaGananciasMes.Text = "Ganancia"
+            lblEtiquetaGananciasAños.Text = "Ganancia"
+            lblEtiquetaGanaciasAño.Text = "Ganancia"
+            lblEtiquetaDiaTotal.Text = "Total Diario:"
+            lblEtiquetaMesDaily.Text = "Total Mensual:"
+            lblEtiquetaTransacionesMes.Text = "Transaciones"
+            lblEtiquetaTransacionAño.Text = "Transaciones"
+            lblEtiquetaTransacionesAños.Text = "Transaciones"
+            lblEtiquetaAñoTotal.Text = "Total Anual:"
+            lblEtiquetaAñosTotal.Text = "Total Anual:"
+            lblEtiquetaMes.Text = "Mes"
+            lblEtiquetaAños.Text = "Año"
+            gbEstadisticasGlobales.Text = "Estadísticas Globales:"
+            lblEtiquetaTrasacioneTotal.Text = "Transaciones Totales:"
+            lblEtiquetaGananciaTotal.Text = "Ganado Total:"
+            lblEtiquetaActivos.Text = "Conectiones Activas:"
+            lblEtiquetaEnergia.Text = "Energia Usada Red:"
+            lblEtiquetaTheads.Text = "Hilos Abiertos:"
+            lblEtiquetaPooldHashrate.Text = "Hashrate del Grupo:"
+            lblEtiquetaUsuariosRegistrados.Text = "Usuarios Registrados:"
+            lblEtiquetaCPUUsada.Text = "CPU Usada Servidor:"
+            lblEtiquetaRam.Text = "RAM Usada Servidor:"
+            lblEtiquetaVersion.Text = "Versión Servidor:"
+            lblEtiquetaBlock.Text = "Ultimo Bloque Hash:"
+            lblEtiquetaSync.Text = "Última sincronización:"
+            lblEtiquetaUpdate.Text = "Última Actulización:"
+            lblEtiquetaMinedadoBlock.Text = "Bloques Minados:"
+            lblEtiquetaBanned.Text = "Baneado:"
+            lblEtiquetaJailed.Text = "Encarcelado:"
+            gbNumeroMineros.Text = "Distribución de los Mineros:"
+            lblEtiquetaAlls.Text = "Todos:"
+            lblEtiquetaOtro.Text = "Otros:"
+            lblEtiquetaPhobe.Text = "Teléfono:"
+            gbTop10.Text = "Los 10 mineros más ricos:"
+            gbPrecios.Text = "Precios:"
+            gbOtros.Text = "OTROS:"
+            gbPhone.Text = "TELÉFONO:"
+            gbAllTransaciones.Text = "Todas las Transaciones:"
+            gbUser.Text = "Usuario:"
+            lblEtiquetaUsuario.Text = "Usuario Duino-Coin:"
+            gbTemperatura.Text = "Temperatura IOT:"
+            lblEtiquetaTempyellow.Text = "Temp. Alerta Amarilla:"
+            lblEtiquetaTempGreen.Text = "Temp. Alerta Verde:"
+            chkActivarMensajes2.Text = "Activar mensajes de error."
+            lblEtiquetaLenguaje.Text = "Lenguaje:"
+            cmbLenguaje1.Items.Clear()
+            cmbLenguaje.Items.Clear()
+            cmbLenguaje1.Items.Add("Español")
+            cmbLenguaje1.Items.Add("Ingles")
+            cmbLenguaje.Items.Add("Español")
+            cmbLenguaje.Items.Add("Ingles")
+            cmbLenguaje1.Text = "Español"
+            TabPage1.Text = "Tabla Datos"
+            TabPage2.Text = "Graficos"
+            TabPage3.Text = "Servidor"
+            TabPage7.Text = "Opciones"
+            lblHumedad.Left = 78
+            picFan.Left = 187
+            picFanAni.Left = 187
+        Else
+            gbBalance.Text = "Balance:"
+            gbPrecioDuco.Text = "Duco Price:"
+            gbPrecioDolar.Text = "USD Equals:"
+            gbGananciasEuro.Text = "Gains Euro:"
+            gbGananciasDolar.Text = "Gains Dolar:"
+            gbEstimado.Text = "Earning about:"
+            gbMineros.Text = "Miners:"
+            gbStaking.Text = "Staking:"
+            gbTemp.Text = "Temp.  -  Humidity  -  Fan"
+            gbHoras.Text = "Balance per Hour:"
+            gbMes.Text = "Balance per Month:"
+            gbAño.Text = "Balance per Year"
+            gbAños.Text = "Balance per Years"
+            lblEtiquetaMineros.Text = "Miners:"
+            lblEtiquetaStaking.Text = "Staking:"
+            lblEtiquetaFinDeposito.Text = "Ends on:"
+            lblEtiquetaEstimadodeVuelto.Text = "Est. Reward:"
+            lblEtiquetaHora.Text = "Hour"
+            lblEtiquetaPrecioHora.Text = "Price"
+            lblEtiquetaPrecioMes.Text = "Price"
+            lblEtiquetaPrecioAño.Text = "Price"
+            lblEtiquetaPreciosAños.Text = "Price"
+            lblEtiquetaDia.Text = "Day"
+            lblEtiquetaGananciaHora.Text = "Gains"
+            lblEtiquetaGananciasMes.Text = "Gains"
+            lblEtiquetaGananciasAños.Text = "Gains"
+            lblEtiquetaGanaciasAño.Text = "Gains"
+            lblEtiquetaDiaTotal.Text = "Daily Total:"
+            lblEtiquetaMesDaily.Text = "Monthly Total:"
+            lblEtiquetaTransacionesMes.Text = "Transactions"
+            lblEtiquetaAñoTotal.Text = "Annual Total:"
+            lblEtiquetaAñosTotal.Text = "Annual Total:"
+            lblEtiquetaMes.Text = "Month"
+            lblEtiquetaAños.Text = "Year"
+            lblEtiquetaTransacionAño.Text = "Transactions"
+            lblEtiquetaTransacionesAños.Text = "Transactions"
+            gbEstadisticasGlobales.Text = "Global Statistics:"
+            lblEtiquetaTrasacioneTotal.Text = "Transactions Total:"
+            lblEtiquetaGananciaTotal.Text = "Gain Total:"
+            lblEtiquetaActivos.Text = "Active Connections:"
+            lblEtiquetaEnergia.Text = "Net Energy Usage:"
+            lblEtiquetaTheads.Text = "Open Threads:"
+            lblEtiquetaPooldHashrate.Text = "Pool Hashrate:"
+            lblEtiquetaUsuariosRegistrados.Text = "Registered Users:"
+            lblEtiquetaCPUUsada.Text = "Server CPU Usage:"
+            lblEtiquetaRam.Text = "Server RAM Usage:"
+            lblEtiquetaVersion.Text = "Server Version:"
+            lblEtiquetaBlock.Text = "Last Block Hash:"
+            lblEtiquetaSync.Text = "Last Sync:"
+            lblEtiquetaUpdate.Text = "Last Update:"
+            lblEtiquetaMinedadoBlock.Text = "Mined blocks:"
+            lblEtiquetaBanned.Text = "Banned:"
+            lblEtiquetaJailed.Text = "Jailed:"
+            gbNumeroMineros.Text = "Distribution of Miners:"
+            lblEtiquetaAlls.Text = "Alls:"
+            lblEtiquetaPhobe.Text = "Phone:"
+            lblEtiquetaOtro.Text = "Other:"
+            gbPrecios.Text = "Price:"
+            gbTop10.Text = "Top 10 Richest Miners:"
+            gbOtros.Text = "OTHER:"
+            gbPhone.Text = "PHONE:"
+            gbAllTransaciones.Text = "All Transactions:"
+            gbUser.Text = "User:"
+            lblEtiquetaUsuario.Text = "User Duino-Coin:"
+            gbTemperatura.Text = "IOT temperature:"
+            lblEtiquetaTempyellow.Text = "Temp. Yellow Alert:"
+            lblEtiquetaTempGreen.Text = "Temp. Green Alert:"
+            chkActivarMensajes2.Text = "Activate the error messages."
+            lblEtiquetaLenguaje.Text = "Language:"
+            cmbLenguaje1.Items.Clear()
+            cmbLenguaje.Items.Clear()
+            cmbLenguaje1.Items.Add("Spanish")
+            cmbLenguaje1.Items.Add("English")
+            cmbLenguaje.Items.Add("Spanish")
+            cmbLenguaje.Items.Add("English")
+            cmbLenguaje1.Text = "English"
+            TabPage1.Text = "Table Date"
+            TabPage2.Text = "Grafic"
+            TabPage3.Text = "Server"
+            TabPage7.Text = "Opion"
+            lblHumedad.Left = 75
+            picFan.Left = 179
+            picFanAni.Left = 179
+        End If
+        lblDeposito.Left = lblEtiquetaStaking.Left + lblEtiquetaStaking.Width - 3
+        lblDucoDeposito.Left = lblDeposito.Left + lblDeposito.Width - 5
+        lblFechaFinDeposito.Left = lblEtiquetaFinDeposito.Left + lblEtiquetaFinDeposito.Width - 7
+        lblTotalTransasiones.Left = lblEtiquetaTrasacioneTotal.Left + lblEtiquetaTrasacioneTotal.Width - 5
+        lblTotalGanadoAños.Left = lblEtiquetaGananciaTotal.Left + lblEtiquetaGananciaTotal.Width - 5
+        lblRecompensa.Left = lblEtiquetaEstimadodeVuelto.Left + lblEtiquetaEstimadodeVuelto.Width - 3
+        lblEtiquetaDucoRecompensa.Left = lblRecompensa.Left + lblRecompensa.Width - 5
+    End Sub
+
+    Private Sub cmbDivisa_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbDivisa.SelectedIndexChanged
+        If cmbDivisa.Text = "Euro" Then
+            gbGananciasEuro.Visible = True
+            gbGananciasDolar.Visible = False
+        Else
+            gbGananciasEuro.Visible = False
+            gbGananciasDolar.Visible = True
+        End If
     End Sub
 End Class

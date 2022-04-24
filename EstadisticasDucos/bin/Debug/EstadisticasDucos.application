@@ -1,27 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xrml="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <assemblyIdentity name="EstadisticasDucos.application" version="1.0.0.314" publicKeyToken="0000000000000000" language="es" processorArchitecture="amd64" xmlns="urn:schemas-microsoft-com:asm.v1" />
-  <description asmv2:publisher="EstadisticasDucos" asmv2:product="EstadisticasDucos" xmlns="urn:schemas-microsoft-com:asm.v1" />
-  <deployment install="true" mapFileExtensions="true">
+  <assemblyIdentity name="EstadisticasDucos.application" version="1.0.0.326" publicKeyToken="0000000000000000" language="es" processorArchitecture="amd64" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <description asmv2:publisher="Lanthi" asmv2:product="Duco Estadisticas" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <deployment install="true" mapFileExtensions="true" co.v1:createDesktopShortcut="true">
     <subscription>
       <update>
         <beforeApplicationStartup />
       </update>
     </subscription>
-    <deploymentProvider codebase="http://desktop-ho789u8/Estadisticas/EstadisticasDucos.application" />
+    <deploymentProvider codebase="http://192.168.1.116/EstadisticasDucos.application" />
   </deployment>
   <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
     <framework targetVersion="4.8" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
     <dependentAssembly dependencyType="install" codebase="EstadisticasDucos.exe.manifest" size="5198">
-      <assemblyIdentity name="EstadisticasDucos.exe" version="1.0.0.314" publicKeyToken="0000000000000000" language="es" processorArchitecture="amd64" type="win32" />
+      <assemblyIdentity name="EstadisticasDucos.exe" version="1.0.0.326" publicKeyToken="0000000000000000" language="es" processorArchitecture="amd64" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>P8ZMgF/NL3SM6LcQQGJyx5jpNXffpcQs+Yqv5dtbCvQ=</dsig:DigestValue>
+        <dsig:DigestValue>CBTRrH/O0RP95X3fMFAy9tDFmLHMfLFMz62wXDn9hu0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

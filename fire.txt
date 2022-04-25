@@ -1,0 +1,9 @@
+Nombre	Grupo	Perfil	Habilitado	Acción	Invalidar	Programa	Dirección local	Dirección remota	Protocolo	Puerto local	Puerto remoto	Usuarios autorizados	Equipos autorizados	Entidades de seguridad locales autorizadas	Propietario de usuario local	Paquete de la aplicación	
+SQL Browser		Todo	Sí	Permitir	No	Cualquiera	Cualquiera	Cualquiera	TCP	1434	Cualquiera	Cualquiera	Cualquiera	Cualquiera	Cualquiera	Cualquiera	
+SSL		Todo	Sí	Permitir	No	Cualquiera	Cualquiera	Cualquiera	TCP	443	Cualquiera	Cualquiera	Cualquiera	Cualquiera	Cualquiera	Cualquiera	
+SQL Browser		Todo	Sí	Permitir	No	Cualquiera	Cualquiera	Cualquiera	TCP	2382	Cualquiera	Cualquiera	Cualquiera	Cualquiera	Cualquiera	Cualquiera	
+Analysis Services		Todo	Sí	Permitir	No	Cualquiera	Cualquiera	Cualquiera	TCP	2383	Cualquiera	Cualquiera	Cualquiera	Cualquiera	Cualquiera	Cualquiera	
+SQL Debugger/RPC		Todo	Sí	Permitir	No	Cualquiera	Cualquiera	Cualquiera	TCP	135	Cualquiera	Cualquiera	Cualquiera	Cualquiera	Cualquiera	Cualquiera	
+SQL Service Broker		Todo	Sí	Permitir	No	Cualquiera	Cualquiera	Cualquiera	TCP	4022	Cualquiera	Cualquiera	Cualquiera	Cualquiera	Cualquiera	Cualquiera	
+SQL Admin Connection		Todo	Sí	Permitir	No	Cualquiera	Cualquiera	Cualquiera	TCP	1434	Cualquiera	Cualquiera	Cualquiera	Cualquiera	Cualquiera	Cualquiera	
+SQLServer		Todo	Sí	Permitir	No	Cualquiera	Cualquiera	Cualquiera	TCP	1433	Cualquiera	Cualquiera	Cualquiera	Cualquiera	Cualquiera	Cualquiera	

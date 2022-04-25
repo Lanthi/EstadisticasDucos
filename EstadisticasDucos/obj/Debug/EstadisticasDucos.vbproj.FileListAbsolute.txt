@@ -61,3 +61,5 @@ C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\bin\Debug\Estadi
 C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\obj\Debug\EstadisticasDucos.TrustInfo.xml
 C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\obj\Debug\EstadisticasDucos.exe.manifest
 C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\obj\Debug\EstadisticasDucos.application
+C:\Users\Clini\Documents\GitHub\EstadisticasDucos\EstadisticasDucos\obj\Debug\EstadisticasDucos.vbproj.SuggestedBindingRedirects.cache
+C:\Users\Clini\Documents\GitHub\EstadisticasDucos\EstadisticasDucos\obj\Debug\EstadisticasDucos.TrustInfo.xml

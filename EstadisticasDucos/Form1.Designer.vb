@@ -140,10 +140,60 @@ Partial Class Form1
         Me.lblTotalHora = New System.Windows.Forms.Label()
         Me.lblEtiquetaDiaTotal = New System.Windows.Forms.Label()
         Me.gbHoras = New System.Windows.Forms.GroupBox()
+        Me.lblPrecioDia = New System.Windows.Forms.Label()
+        Me.lblPrecio23 = New System.Windows.Forms.Label()
         Me.lblEtiquetaPrecioHora = New System.Windows.Forms.Label()
+        Me.lblPrecio00 = New System.Windows.Forms.Label()
+        Me.lblPrecio22 = New System.Windows.Forms.Label()
+        Me.lblPrecio21 = New System.Windows.Forms.Label()
+        Me.lblPrecio20 = New System.Windows.Forms.Label()
+        Me.lblPrecio19 = New System.Windows.Forms.Label()
+        Me.lblPrecio18 = New System.Windows.Forms.Label()
+        Me.lblPrecio17 = New System.Windows.Forms.Label()
+        Me.lblPrecio16 = New System.Windows.Forms.Label()
+        Me.lblPrecio15 = New System.Windows.Forms.Label()
+        Me.lblPrecio14 = New System.Windows.Forms.Label()
+        Me.lblPrecio13 = New System.Windows.Forms.Label()
+        Me.lblPrecio12 = New System.Windows.Forms.Label()
+        Me.lblPrecio11 = New System.Windows.Forms.Label()
+        Me.lblPrecio10 = New System.Windows.Forms.Label()
+        Me.lblPrecio09 = New System.Windows.Forms.Label()
+        Me.lblPrecio08 = New System.Windows.Forms.Label()
+        Me.lblPrecio07 = New System.Windows.Forms.Label()
+        Me.lblPrecio06 = New System.Windows.Forms.Label()
+        Me.lblPrecio05 = New System.Windows.Forms.Label()
+        Me.lblPrecio04 = New System.Windows.Forms.Label()
+        Me.lblPrecio03 = New System.Windows.Forms.Label()
+        Me.lblPrecio02 = New System.Windows.Forms.Label()
         Me.lblEtiquetaGananciaHora = New System.Windows.Forms.Label()
+        Me.lblHoraDiferencia00 = New System.Windows.Forms.Label()
+        Me.lblPrecio01 = New System.Windows.Forms.Label()
         Me.lblEtiquetaHora = New System.Windows.Forms.Label()
+        Me.lblBalanceHora10 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora18 = New System.Windows.Forms.Label()
         Me.Label29 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora00 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora01 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora23 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora22 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora02 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora21 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora20 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora03 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora19 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora17 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora04 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora16 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora15 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora05 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora14 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora13 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora06 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora12 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora11 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora07 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora09 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora08 = New System.Windows.Forms.Label()
         Me.lblMesDifencia01 = New System.Windows.Forms.Label()
         Me.lblMesDifencia02 = New System.Windows.Forms.Label()
         Me.lblMesDifencia03 = New System.Windows.Forms.Label()
@@ -180,8 +230,71 @@ Partial Class Form1
         Me.gbMes = New System.Windows.Forms.GroupBox()
         Me.lblEtiquetaGananciasMes = New System.Windows.Forms.Label()
         Me.Label35 = New System.Windows.Forms.Label()
+        Me.lblMesBalance01 = New System.Windows.Forms.Label()
+        Me.lblMesBalance02 = New System.Windows.Forms.Label()
+        Me.lblMesBalance03 = New System.Windows.Forms.Label()
+        Me.lblMesBalance04 = New System.Windows.Forms.Label()
+        Me.lblMesBalance05 = New System.Windows.Forms.Label()
+        Me.lblMesBalance06 = New System.Windows.Forms.Label()
+        Me.lblMesBalance07 = New System.Windows.Forms.Label()
+        Me.lblMesBalance08 = New System.Windows.Forms.Label()
+        Me.lblMesBalance09 = New System.Windows.Forms.Label()
+        Me.lblMesBalance10 = New System.Windows.Forms.Label()
+        Me.lblMesBalance11 = New System.Windows.Forms.Label()
+        Me.lblMesBalance12 = New System.Windows.Forms.Label()
+        Me.lblMesBalance13 = New System.Windows.Forms.Label()
+        Me.lblMesBalance14 = New System.Windows.Forms.Label()
+        Me.lblMesBalance15 = New System.Windows.Forms.Label()
+        Me.lblMesBalance16 = New System.Windows.Forms.Label()
+        Me.lblMesBalance17 = New System.Windows.Forms.Label()
+        Me.lblMesBalance18 = New System.Windows.Forms.Label()
+        Me.lblMesBalance19 = New System.Windows.Forms.Label()
+        Me.lblMesBalance20 = New System.Windows.Forms.Label()
+        Me.lblMesBalance21 = New System.Windows.Forms.Label()
+        Me.lblMesBalance22 = New System.Windows.Forms.Label()
+        Me.lblMesBalance23 = New System.Windows.Forms.Label()
+        Me.lblMesBalance24 = New System.Windows.Forms.Label()
         Me.lblEtiquetaDia = New System.Windows.Forms.Label()
+        Me.lblMesBalance25 = New System.Windows.Forms.Label()
+        Me.lblMesBalance26 = New System.Windows.Forms.Label()
+        Me.lblMesBalance27 = New System.Windows.Forms.Label()
+        Me.lblMesBalance28 = New System.Windows.Forms.Label()
+        Me.lblMesBalance29 = New System.Windows.Forms.Label()
+        Me.lblMesBalance30 = New System.Windows.Forms.Label()
+        Me.lblPrecioMes = New System.Windows.Forms.Label()
+        Me.lblMesPrecio31 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio30 = New System.Windows.Forms.Label()
+        Me.lblMesBalance31 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio29 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio28 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio27 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio26 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio25 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio24 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio23 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio22 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio21 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio20 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio19 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio18 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio17 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio16 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio15 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio14 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio13 = New System.Windows.Forms.Label()
         Me.lblEtiquetaPrecioMes = New System.Windows.Forms.Label()
+        Me.lblMesPrecio12 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio01 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio11 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio10 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio02 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio09 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio08 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio03 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio07 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio04 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio06 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio05 = New System.Windows.Forms.Label()
         Me.lblTransacionMes31 = New System.Windows.Forms.Label()
         Me.lblTransacionMes30 = New System.Windows.Forms.Label()
         Me.lblTransacionMes29 = New System.Windows.Forms.Label()
@@ -222,8 +335,16 @@ Partial Class Form1
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.gbAños = New System.Windows.Forms.GroupBox()
+        Me.lblEtiquetaPreciosAños = New System.Windows.Forms.Label()
+        Me.lblPrecioAño2021 = New System.Windows.Forms.Label()
+        Me.lblPrecioAño2022 = New System.Windows.Forms.Label()
+        Me.lblPrecioMedioTodosAños = New System.Windows.Forms.Label()
+        Me.lblPrecioAño2023 = New System.Windows.Forms.Label()
         Me.lblTransasionesAñoTotal = New System.Windows.Forms.Label()
+        Me.lblTransasionesAño2022 = New System.Windows.Forms.Label()
+        Me.lblTransasionesAño2023 = New System.Windows.Forms.Label()
         Me.lblEtiquetaTransacionesAños = New System.Windows.Forms.Label()
+        Me.lblTransasionesAño2021 = New System.Windows.Forms.Label()
         Me.gbEstadisticasGlobales = New System.Windows.Forms.GroupBox()
         Me.lblDucosTotales = New System.Windows.Forms.Label()
         Me.lblEtiquetaDuco = New System.Windows.Forms.Label()
@@ -234,16 +355,45 @@ Partial Class Form1
         Me.lblEtiquetaDucoTotal = New System.Windows.Forms.Label()
         Me.lblEtiquetaAñosTotal = New System.Windows.Forms.Label()
         Me.lblGanadoAñoTotal = New System.Windows.Forms.Label()
+        Me.lblGanadoAño2021 = New System.Windows.Forms.Label()
         Me.lblEtiquetaGananciasAños = New System.Windows.Forms.Label()
+        Me.lblGanadoAño2022 = New System.Windows.Forms.Label()
+        Me.lblGanadoAño2023 = New System.Windows.Forms.Label()
         Me.Label130 = New System.Windows.Forms.Label()
+        Me.lblBalanceAño2021 = New System.Windows.Forms.Label()
+        Me.lblBalanceAño2022 = New System.Windows.Forms.Label()
+        Me.lblBalanceAño2023 = New System.Windows.Forms.Label()
         Me.lblEtiquetaAños = New System.Windows.Forms.Label()
         Me.lblAño2021 = New System.Windows.Forms.Label()
         Me.Label137 = New System.Windows.Forms.Label()
         Me.Label138 = New System.Windows.Forms.Label()
-        Me.lblEtiquetaPreciosAños = New System.Windows.Forms.Label()
         Me.gbAño = New System.Windows.Forms.GroupBox()
+        Me.lblGananciasAño01 = New System.Windows.Forms.Label()
         Me.lblEtiquetaGanaciasAño = New System.Windows.Forms.Label()
+        Me.lblGananciasAño02 = New System.Windows.Forms.Label()
+        Me.lblGananciasAño07 = New System.Windows.Forms.Label()
+        Me.lblGananciasAño04 = New System.Windows.Forms.Label()
+        Me.lblGananciasAño08 = New System.Windows.Forms.Label()
+        Me.lblGananciasAño10 = New System.Windows.Forms.Label()
+        Me.lblGananciasAño05 = New System.Windows.Forms.Label()
+        Me.lblGananciasAño09 = New System.Windows.Forms.Label()
+        Me.lblGananciasAño06 = New System.Windows.Forms.Label()
+        Me.lblGananciasAño11 = New System.Windows.Forms.Label()
+        Me.lblGananciasAño12 = New System.Windows.Forms.Label()
+        Me.lblGananciasAño03 = New System.Windows.Forms.Label()
         Me.Label128 = New System.Windows.Forms.Label()
+        Me.lblBalanceAño01 = New System.Windows.Forms.Label()
+        Me.lblBalanceAño02 = New System.Windows.Forms.Label()
+        Me.lblBalanceAño03 = New System.Windows.Forms.Label()
+        Me.lblBalanceAño04 = New System.Windows.Forms.Label()
+        Me.lblBalanceAño05 = New System.Windows.Forms.Label()
+        Me.lblBalanceAño06 = New System.Windows.Forms.Label()
+        Me.lblBalanceAño07 = New System.Windows.Forms.Label()
+        Me.lblBalanceAño08 = New System.Windows.Forms.Label()
+        Me.lblBalanceAño09 = New System.Windows.Forms.Label()
+        Me.lblBalanceAño10 = New System.Windows.Forms.Label()
+        Me.lblBalanceAño11 = New System.Windows.Forms.Label()
+        Me.lblBalanceAño12 = New System.Windows.Forms.Label()
         Me.lblEtiquetaMes = New System.Windows.Forms.Label()
         Me.Label143 = New System.Windows.Forms.Label()
         Me.Label144 = New System.Windows.Forms.Label()
@@ -258,8 +408,33 @@ Partial Class Form1
         Me.Label153 = New System.Windows.Forms.Label()
         Me.Label154 = New System.Windows.Forms.Label()
         Me.lblEtiquetaPrecioAño = New System.Windows.Forms.Label()
+        Me.lblPrecioAnual = New System.Windows.Forms.Label()
+        Me.lblPrecioAño12 = New System.Windows.Forms.Label()
+        Me.lblPrecioAño01 = New System.Windows.Forms.Label()
+        Me.lblPrecioAño11 = New System.Windows.Forms.Label()
+        Me.lblPrecioAño10 = New System.Windows.Forms.Label()
+        Me.lblPrecioAño02 = New System.Windows.Forms.Label()
+        Me.lblPrecioAño09 = New System.Windows.Forms.Label()
+        Me.lblPrecioAño08 = New System.Windows.Forms.Label()
+        Me.lblPrecioAño03 = New System.Windows.Forms.Label()
+        Me.lblPrecioAño07 = New System.Windows.Forms.Label()
+        Me.lblPrecioAño04 = New System.Windows.Forms.Label()
+        Me.lblPrecioAño06 = New System.Windows.Forms.Label()
+        Me.lblPrecioAño05 = New System.Windows.Forms.Label()
         Me.lblEtiquetaAñoTotal = New System.Windows.Forms.Label()
+        Me.lblTransasionesAño02 = New System.Windows.Forms.Label()
+        Me.lblTransasionesAño03 = New System.Windows.Forms.Label()
+        Me.lblTransasionesAño12 = New System.Windows.Forms.Label()
+        Me.lblTransasionesAño11 = New System.Windows.Forms.Label()
+        Me.lblTransasionesAño06 = New System.Windows.Forms.Label()
+        Me.lblTransasionesAño09 = New System.Windows.Forms.Label()
+        Me.lblTransasionesAño05 = New System.Windows.Forms.Label()
+        Me.lblTransasionesAño10 = New System.Windows.Forms.Label()
+        Me.lblTransasionesAño08 = New System.Windows.Forms.Label()
+        Me.lblTransasionesAño04 = New System.Windows.Forms.Label()
+        Me.lblTransasionesAño07 = New System.Windows.Forms.Label()
         Me.lblEtiquetaTransacionAño = New System.Windows.Forms.Label()
+        Me.lblTransasionesAño01 = New System.Windows.Forms.Label()
         Me.lblTotalGananciaAño = New System.Windows.Forms.Label()
         Me.lblTransacionesTotalAño = New System.Windows.Forms.Label()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
@@ -289,9 +464,9 @@ Partial Class Form1
         Me.Label49 = New System.Windows.Forms.Label()
         Me.gbKolka = New System.Windows.Forms.GroupBox()
         Me.txtJailed = New System.Windows.Forms.TextBox()
-        Me.lblEtiquetaJailed = New System.Windows.Forms.Label()
         Me.txtBanned = New System.Windows.Forms.TextBox()
         Me.lblEtiquetaBanned = New System.Windows.Forms.Label()
+        Me.lblEtiquetaJailed = New System.Windows.Forms.Label()
         Me.gbServer = New System.Windows.Forms.GroupBox()
         Me.txtMinedblocks = New System.Windows.Forms.TextBox()
         Me.txtActiveconnections = New System.Windows.Forms.TextBox()
@@ -374,6 +549,11 @@ Partial Class Form1
         Me.Label105 = New System.Windows.Forms.Label()
         Me.txtMinerosHCPU = New System.Windows.Forms.TextBox()
         Me.txtMinerosNCPU = New System.Windows.Forms.TextBox()
+        Me.gbAllMineros = New System.Windows.Forms.GroupBox()
+        Me.Label28 = New System.Windows.Forms.Label()
+        Me.Label30 = New System.Windows.Forms.Label()
+        Me.txtTotalHases = New System.Windows.Forms.TextBox()
+        Me.txtTotalMineros = New System.Windows.Forms.TextBox()
         Me.gbArduinos = New System.Windows.Forms.GroupBox()
         Me.Label102 = New System.Windows.Forms.Label()
         Me.Label99 = New System.Windows.Forms.Label()
@@ -392,13 +572,21 @@ Partial Class Form1
         Me.txtLog = New System.Windows.Forms.TextBox()
         Me.TabPage7 = New System.Windows.Forms.TabPage()
         Me.gbTemperatura = New System.Windows.Forms.GroupBox()
+        Me.txtFanAmarillo2 = New System.Windows.Forms.NumericUpDown()
         Me.lblEtiquetaTempGreen = New System.Windows.Forms.Label()
+        Me.txtFanVerde2 = New System.Windows.Forms.NumericUpDown()
         Me.lblEtiquetaTempyellow = New System.Windows.Forms.Label()
+        Me.txtGradosFan2 = New System.Windows.Forms.NumericUpDown()
         Me.lblEtiquetaTempMax = New System.Windows.Forms.Label()
         Me.gbOpciones = New System.Windows.Forms.GroupBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.lblEtiquetaLenguaje = New System.Windows.Forms.Label()
+        Me.cmbDivisa1 = New System.Windows.Forms.ComboBox()
+        Me.cmbLenguaje1 = New System.Windows.Forms.ComboBox()
+        Me.chkActivarMensajes2 = New System.Windows.Forms.CheckBox()
         Me.gbUser = New System.Windows.Forms.GroupBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.lblUser = New System.Windows.Forms.Label()
         Me.lblEtiquetaUsuario = New System.Windows.Forms.Label()
         Me.gbGananciasEuro = New System.Windows.Forms.GroupBox()
         Me.lblGanadoDolar = New System.Windows.Forms.Label()
@@ -413,12 +601,12 @@ Partial Class Form1
         Me.Label37 = New System.Windows.Forms.Label()
         Me.lblEstimado = New System.Windows.Forms.Label()
         Me.gbMineros = New System.Windows.Forms.GroupBox()
-        Me.Label121 = New System.Windows.Forms.Label()
         Me.Label36 = New System.Windows.Forms.Label()
         Me.Label98 = New System.Windows.Forms.Label()
         Me.lblMineros = New System.Windows.Forms.Label()
-        Me.lblEtiquetaMineros = New System.Windows.Forms.Label()
         Me.lblHases = New System.Windows.Forms.Label()
+        Me.Label121 = New System.Windows.Forms.Label()
+        Me.lblEtiquetaMineros = New System.Windows.Forms.Label()
         Me.lblHaseEstiquta = New System.Windows.Forms.Label()
         Me.gbStaking = New System.Windows.Forms.GroupBox()
         Me.lblEtiquetaDucoRecompensa = New System.Windows.Forms.Label()
@@ -436,198 +624,15 @@ Partial Class Form1
         Me.picFan = New System.Windows.Forms.PictureBox()
         Me.picFanAni = New System.Windows.Forms.PictureBox()
         Me.PanelOculto = New System.Windows.Forms.Panel()
-        Me.gbGananciasDolar = New System.Windows.Forms.GroupBox()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.chkActivarMensajes = New System.Windows.Forms.CheckBox()
+        Me.cmbDivisa = New System.Windows.Forms.ComboBox()
         Me.cmbLenguaje = New System.Windows.Forms.ComboBox()
-        Me.lblPrecioDia = New System.Windows.Forms.Label()
-        Me.lblPrecio23 = New System.Windows.Forms.Label()
-        Me.lblPrecio00 = New System.Windows.Forms.Label()
-        Me.lblPrecio22 = New System.Windows.Forms.Label()
-        Me.lblPrecio21 = New System.Windows.Forms.Label()
-        Me.lblPrecio20 = New System.Windows.Forms.Label()
-        Me.lblPrecio19 = New System.Windows.Forms.Label()
-        Me.lblPrecio18 = New System.Windows.Forms.Label()
-        Me.lblPrecio17 = New System.Windows.Forms.Label()
-        Me.lblPrecio16 = New System.Windows.Forms.Label()
-        Me.lblPrecio15 = New System.Windows.Forms.Label()
-        Me.lblPrecio14 = New System.Windows.Forms.Label()
-        Me.lblPrecio13 = New System.Windows.Forms.Label()
-        Me.lblPrecio12 = New System.Windows.Forms.Label()
-        Me.lblPrecio11 = New System.Windows.Forms.Label()
-        Me.lblPrecio10 = New System.Windows.Forms.Label()
-        Me.lblPrecio09 = New System.Windows.Forms.Label()
-        Me.lblPrecio08 = New System.Windows.Forms.Label()
-        Me.lblPrecio07 = New System.Windows.Forms.Label()
-        Me.lblPrecio06 = New System.Windows.Forms.Label()
-        Me.lblPrecio05 = New System.Windows.Forms.Label()
-        Me.lblPrecio04 = New System.Windows.Forms.Label()
-        Me.lblPrecio03 = New System.Windows.Forms.Label()
-        Me.lblPrecio02 = New System.Windows.Forms.Label()
-        Me.lblHoraDiferencia00 = New System.Windows.Forms.Label()
-        Me.lblPrecio01 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora10 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora18 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora00 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora01 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora23 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora22 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora02 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora21 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora20 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora03 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora19 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora17 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora04 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora16 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora15 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora05 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora14 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora13 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora06 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora12 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora11 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora07 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora09 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora08 = New System.Windows.Forms.Label()
-        Me.lblMesBalance01 = New System.Windows.Forms.Label()
-        Me.lblMesBalance02 = New System.Windows.Forms.Label()
-        Me.lblMesBalance03 = New System.Windows.Forms.Label()
-        Me.lblMesBalance04 = New System.Windows.Forms.Label()
-        Me.lblMesBalance05 = New System.Windows.Forms.Label()
-        Me.lblMesBalance06 = New System.Windows.Forms.Label()
-        Me.lblMesBalance07 = New System.Windows.Forms.Label()
-        Me.lblMesBalance08 = New System.Windows.Forms.Label()
-        Me.lblMesBalance09 = New System.Windows.Forms.Label()
-        Me.lblMesBalance10 = New System.Windows.Forms.Label()
-        Me.lblMesBalance11 = New System.Windows.Forms.Label()
-        Me.lblMesBalance12 = New System.Windows.Forms.Label()
-        Me.lblMesBalance13 = New System.Windows.Forms.Label()
-        Me.lblMesBalance14 = New System.Windows.Forms.Label()
-        Me.lblMesBalance15 = New System.Windows.Forms.Label()
-        Me.lblMesBalance16 = New System.Windows.Forms.Label()
-        Me.lblMesBalance17 = New System.Windows.Forms.Label()
-        Me.lblMesBalance18 = New System.Windows.Forms.Label()
-        Me.lblMesBalance19 = New System.Windows.Forms.Label()
-        Me.lblMesBalance20 = New System.Windows.Forms.Label()
-        Me.lblMesBalance21 = New System.Windows.Forms.Label()
-        Me.lblMesBalance22 = New System.Windows.Forms.Label()
-        Me.lblMesBalance23 = New System.Windows.Forms.Label()
-        Me.lblMesBalance24 = New System.Windows.Forms.Label()
-        Me.lblMesBalance25 = New System.Windows.Forms.Label()
-        Me.lblMesBalance26 = New System.Windows.Forms.Label()
-        Me.lblMesBalance27 = New System.Windows.Forms.Label()
-        Me.lblMesBalance28 = New System.Windows.Forms.Label()
-        Me.lblMesBalance29 = New System.Windows.Forms.Label()
-        Me.lblMesBalance30 = New System.Windows.Forms.Label()
-        Me.lblPrecioMes = New System.Windows.Forms.Label()
-        Me.lblMesPrecio31 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio30 = New System.Windows.Forms.Label()
-        Me.lblMesBalance31 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio29 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio28 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio27 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio26 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio25 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio24 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio23 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio22 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio21 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio20 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio19 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio18 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio17 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio16 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio15 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio14 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio13 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio12 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio01 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio11 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio10 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio02 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio09 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio08 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio03 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio07 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio04 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio06 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio05 = New System.Windows.Forms.Label()
-        Me.lblTransasionesAño2022 = New System.Windows.Forms.Label()
-        Me.lblTransasionesAño2023 = New System.Windows.Forms.Label()
-        Me.lblTransasionesAño2021 = New System.Windows.Forms.Label()
-        Me.lblGanadoAño2021 = New System.Windows.Forms.Label()
-        Me.lblGanadoAño2022 = New System.Windows.Forms.Label()
-        Me.lblGanadoAño2023 = New System.Windows.Forms.Label()
-        Me.lblBalanceAño2021 = New System.Windows.Forms.Label()
-        Me.lblBalanceAño2022 = New System.Windows.Forms.Label()
-        Me.lblBalanceAño2023 = New System.Windows.Forms.Label()
-        Me.lblPrecioAño2021 = New System.Windows.Forms.Label()
-        Me.lblPrecioAño2022 = New System.Windows.Forms.Label()
-        Me.lblPrecioMedioTodosAños = New System.Windows.Forms.Label()
-        Me.lblPrecioAño2023 = New System.Windows.Forms.Label()
-        Me.lblGananciasAño01 = New System.Windows.Forms.Label()
-        Me.lblGananciasAño02 = New System.Windows.Forms.Label()
-        Me.lblGananciasAño07 = New System.Windows.Forms.Label()
-        Me.lblGananciasAño04 = New System.Windows.Forms.Label()
-        Me.lblGananciasAño08 = New System.Windows.Forms.Label()
-        Me.lblGananciasAño10 = New System.Windows.Forms.Label()
-        Me.lblGananciasAño05 = New System.Windows.Forms.Label()
-        Me.lblGananciasAño09 = New System.Windows.Forms.Label()
-        Me.lblGananciasAño06 = New System.Windows.Forms.Label()
-        Me.lblGananciasAño11 = New System.Windows.Forms.Label()
-        Me.lblGananciasAño12 = New System.Windows.Forms.Label()
-        Me.lblGananciasAño03 = New System.Windows.Forms.Label()
-        Me.lblBalanceAño01 = New System.Windows.Forms.Label()
-        Me.lblBalanceAño02 = New System.Windows.Forms.Label()
-        Me.lblBalanceAño03 = New System.Windows.Forms.Label()
-        Me.lblBalanceAño04 = New System.Windows.Forms.Label()
-        Me.lblBalanceAño05 = New System.Windows.Forms.Label()
-        Me.lblBalanceAño06 = New System.Windows.Forms.Label()
-        Me.lblBalanceAño07 = New System.Windows.Forms.Label()
-        Me.lblBalanceAño08 = New System.Windows.Forms.Label()
-        Me.lblBalanceAño09 = New System.Windows.Forms.Label()
-        Me.lblBalanceAño10 = New System.Windows.Forms.Label()
-        Me.lblBalanceAño11 = New System.Windows.Forms.Label()
-        Me.lblBalanceAño12 = New System.Windows.Forms.Label()
-        Me.lblPrecioAnual = New System.Windows.Forms.Label()
-        Me.lblPrecioAño12 = New System.Windows.Forms.Label()
-        Me.lblPrecioAño01 = New System.Windows.Forms.Label()
-        Me.lblPrecioAño11 = New System.Windows.Forms.Label()
-        Me.lblPrecioAño10 = New System.Windows.Forms.Label()
-        Me.lblPrecioAño02 = New System.Windows.Forms.Label()
-        Me.lblPrecioAño09 = New System.Windows.Forms.Label()
-        Me.lblPrecioAño08 = New System.Windows.Forms.Label()
-        Me.lblPrecioAño03 = New System.Windows.Forms.Label()
-        Me.lblPrecioAño07 = New System.Windows.Forms.Label()
-        Me.lblPrecioAño04 = New System.Windows.Forms.Label()
-        Me.lblPrecioAño06 = New System.Windows.Forms.Label()
-        Me.lblPrecioAño05 = New System.Windows.Forms.Label()
-        Me.lblTransasionesAño02 = New System.Windows.Forms.Label()
-        Me.lblTransasionesAño03 = New System.Windows.Forms.Label()
-        Me.lblTransasionesAño12 = New System.Windows.Forms.Label()
-        Me.lblTransasionesAño11 = New System.Windows.Forms.Label()
-        Me.lblTransasionesAño06 = New System.Windows.Forms.Label()
-        Me.lblTransasionesAño09 = New System.Windows.Forms.Label()
-        Me.lblTransasionesAño05 = New System.Windows.Forms.Label()
-        Me.lblTransasionesAño10 = New System.Windows.Forms.Label()
-        Me.lblTransasionesAño08 = New System.Windows.Forms.Label()
-        Me.lblTransasionesAño04 = New System.Windows.Forms.Label()
-        Me.lblTransasionesAño07 = New System.Windows.Forms.Label()
-        Me.lblTransasionesAño01 = New System.Windows.Forms.Label()
-        Me.txtFanAmarillo2 = New System.Windows.Forms.NumericUpDown()
-        Me.txtFanVerde2 = New System.Windows.Forms.NumericUpDown()
-        Me.txtGradosFan2 = New System.Windows.Forms.NumericUpDown()
-        Me.cmbLenguaje1 = New System.Windows.Forms.ComboBox()
-        Me.chkActivarMensajes2 = New System.Windows.Forms.CheckBox()
-        Me.lblUser = New System.Windows.Forms.Label()
+        Me.txtGradosFan = New System.Windows.Forms.NumericUpDown()
         Me.txtFanAmarillo = New System.Windows.Forms.NumericUpDown()
+        Me.lblReinicioApp = New System.Windows.Forms.Label()
         Me.txtUser = New System.Windows.Forms.TextBox()
         Me.txtFanVerde = New System.Windows.Forms.NumericUpDown()
-        Me.lblReinicioApp = New System.Windows.Forms.Label()
-        Me.txtGradosFan = New System.Windows.Forms.NumericUpDown()
-        Me.cmbDivisa1 = New System.Windows.Forms.ComboBox()
-        Me.cmbDivisa = New System.Windows.Forms.ComboBox()
+        Me.gbGananciasDolar = New System.Windows.Forms.GroupBox()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Chart2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.gbBalance.SuspendLayout()
@@ -660,6 +665,7 @@ Partial Class Form1
         Me.gbESP32.SuspendLayout()
         Me.gbESP8266.SuspendLayout()
         Me.gbCPU.SuspendLayout()
+        Me.gbAllMineros.SuspendLayout()
         Me.gbArduinos.SuspendLayout()
         Me.gbMineross.SuspendLayout()
         Me.TabPage5.SuspendLayout()
@@ -667,6 +673,9 @@ Partial Class Form1
         Me.TabPage6.SuspendLayout()
         Me.TabPage7.SuspendLayout()
         Me.gbTemperatura.SuspendLayout()
+        CType(Me.txtFanAmarillo2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtFanVerde2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtGradosFan2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.gbOpciones.SuspendLayout()
         Me.gbUser.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -679,13 +688,10 @@ Partial Class Form1
         CType(Me.picFan, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picFanAni, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelOculto.SuspendLayout()
-        Me.gbGananciasDolar.SuspendLayout()
-        CType(Me.txtFanAmarillo2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txtFanVerde2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txtGradosFan2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtGradosFan, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtFanAmarillo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtFanVerde, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txtGradosFan, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.gbGananciasDolar.SuspendLayout()
         Me.SuspendLayout()
         '
         'Timer1
@@ -1385,12 +1391,204 @@ Partial Class Form1
         Me.gbHoras.Name = "gbHoras"
         Me.gbHoras.TabStop = False
         '
+        'lblPrecioDia
+        '
+        Me.lblPrecioDia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioDia.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MediaPrecioDia", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecioDia, "lblPrecioDia")
+        Me.lblPrecioDia.Name = "lblPrecioDia"
+        Me.lblPrecioDia.Text = Global.EstadisticasDucos.My.MySettings.Default.MediaPrecioDia
+        '
+        'lblPrecio23
+        '
+        Me.lblPrecio23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio23.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio23", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio23, "lblPrecio23")
+        Me.lblPrecio23.Name = "lblPrecio23"
+        Me.lblPrecio23.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio23
+        '
         'lblEtiquetaPrecioHora
         '
         Me.lblEtiquetaPrecioHora.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
         Me.lblEtiquetaPrecioHora.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         resources.ApplyResources(Me.lblEtiquetaPrecioHora, "lblEtiquetaPrecioHora")
         Me.lblEtiquetaPrecioHora.Name = "lblEtiquetaPrecioHora"
+        '
+        'lblPrecio00
+        '
+        Me.lblPrecio00.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio00.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio00", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio00, "lblPrecio00")
+        Me.lblPrecio00.Name = "lblPrecio00"
+        Me.lblPrecio00.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio00
+        '
+        'lblPrecio22
+        '
+        Me.lblPrecio22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio22.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio22", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio22, "lblPrecio22")
+        Me.lblPrecio22.Name = "lblPrecio22"
+        Me.lblPrecio22.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio22
+        '
+        'lblPrecio21
+        '
+        Me.lblPrecio21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio21.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio21", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio21, "lblPrecio21")
+        Me.lblPrecio21.Name = "lblPrecio21"
+        Me.lblPrecio21.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio21
+        '
+        'lblPrecio20
+        '
+        Me.lblPrecio20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio20.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio20", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio20, "lblPrecio20")
+        Me.lblPrecio20.Name = "lblPrecio20"
+        Me.lblPrecio20.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio20
+        '
+        'lblPrecio19
+        '
+        Me.lblPrecio19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio19.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio19", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio19, "lblPrecio19")
+        Me.lblPrecio19.Name = "lblPrecio19"
+        Me.lblPrecio19.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio19
+        '
+        'lblPrecio18
+        '
+        Me.lblPrecio18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio18.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio18", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio18, "lblPrecio18")
+        Me.lblPrecio18.Name = "lblPrecio18"
+        Me.lblPrecio18.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio18
+        '
+        'lblPrecio17
+        '
+        Me.lblPrecio17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio17.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio17", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio17, "lblPrecio17")
+        Me.lblPrecio17.Name = "lblPrecio17"
+        Me.lblPrecio17.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio17
+        '
+        'lblPrecio16
+        '
+        Me.lblPrecio16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio16.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio16", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio16, "lblPrecio16")
+        Me.lblPrecio16.Name = "lblPrecio16"
+        Me.lblPrecio16.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio16
+        '
+        'lblPrecio15
+        '
+        Me.lblPrecio15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio15.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio15", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio15, "lblPrecio15")
+        Me.lblPrecio15.Name = "lblPrecio15"
+        Me.lblPrecio15.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio15
+        '
+        'lblPrecio14
+        '
+        Me.lblPrecio14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio14.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio14", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio14, "lblPrecio14")
+        Me.lblPrecio14.Name = "lblPrecio14"
+        Me.lblPrecio14.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio14
+        '
+        'lblPrecio13
+        '
+        Me.lblPrecio13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio13.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio13", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio13, "lblPrecio13")
+        Me.lblPrecio13.Name = "lblPrecio13"
+        Me.lblPrecio13.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio13
+        '
+        'lblPrecio12
+        '
+        Me.lblPrecio12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio12, "lblPrecio12")
+        Me.lblPrecio12.Name = "lblPrecio12"
+        Me.lblPrecio12.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio12
+        '
+        'lblPrecio11
+        '
+        Me.lblPrecio11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio11, "lblPrecio11")
+        Me.lblPrecio11.Name = "lblPrecio11"
+        Me.lblPrecio11.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio11
+        '
+        'lblPrecio10
+        '
+        Me.lblPrecio10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio10, "lblPrecio10")
+        Me.lblPrecio10.Name = "lblPrecio10"
+        Me.lblPrecio10.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio10
+        '
+        'lblPrecio09
+        '
+        Me.lblPrecio09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio09, "lblPrecio09")
+        Me.lblPrecio09.Name = "lblPrecio09"
+        Me.lblPrecio09.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio09
+        '
+        'lblPrecio08
+        '
+        Me.lblPrecio08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio08, "lblPrecio08")
+        Me.lblPrecio08.Name = "lblPrecio08"
+        Me.lblPrecio08.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio08
+        '
+        'lblPrecio07
+        '
+        Me.lblPrecio07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio07, "lblPrecio07")
+        Me.lblPrecio07.Name = "lblPrecio07"
+        Me.lblPrecio07.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio07
+        '
+        'lblPrecio06
+        '
+        Me.lblPrecio06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio06, "lblPrecio06")
+        Me.lblPrecio06.Name = "lblPrecio06"
+        Me.lblPrecio06.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio06
+        '
+        'lblPrecio05
+        '
+        Me.lblPrecio05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio05, "lblPrecio05")
+        Me.lblPrecio05.Name = "lblPrecio05"
+        Me.lblPrecio05.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio05
+        '
+        'lblPrecio04
+        '
+        Me.lblPrecio04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio04, "lblPrecio04")
+        Me.lblPrecio04.Name = "lblPrecio04"
+        Me.lblPrecio04.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio04
+        '
+        'lblPrecio03
+        '
+        Me.lblPrecio03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio03, "lblPrecio03")
+        Me.lblPrecio03.Name = "lblPrecio03"
+        Me.lblPrecio03.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio03
+        '
+        'lblPrecio02
+        '
+        Me.lblPrecio02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio02, "lblPrecio02")
+        Me.lblPrecio02.Name = "lblPrecio02"
+        Me.lblPrecio02.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio02
         '
         'lblEtiquetaGananciaHora
         '
@@ -1399,6 +1597,22 @@ Partial Class Form1
         resources.ApplyResources(Me.lblEtiquetaGananciaHora, "lblEtiquetaGananciaHora")
         Me.lblEtiquetaGananciaHora.Name = "lblEtiquetaGananciaHora"
         '
+        'lblHoraDiferencia00
+        '
+        Me.lblHoraDiferencia00.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblHoraDiferencia00.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "ValorHora00", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblHoraDiferencia00, "lblHoraDiferencia00")
+        Me.lblHoraDiferencia00.Name = "lblHoraDiferencia00"
+        Me.lblHoraDiferencia00.Text = Global.EstadisticasDucos.My.MySettings.Default.ValorHora00
+        '
+        'lblPrecio01
+        '
+        Me.lblPrecio01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio01, "lblPrecio01")
+        Me.lblPrecio01.Name = "lblPrecio01"
+        Me.lblPrecio01.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio01
+        '
         'lblEtiquetaHora
         '
         Me.lblEtiquetaHora.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
@@ -1406,12 +1620,204 @@ Partial Class Form1
         resources.ApplyResources(Me.lblEtiquetaHora, "lblEtiquetaHora")
         Me.lblEtiquetaHora.Name = "lblEtiquetaHora"
         '
+        'lblBalanceHora10
+        '
+        Me.lblBalanceHora10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora10, "lblBalanceHora10")
+        Me.lblBalanceHora10.Name = "lblBalanceHora10"
+        Me.lblBalanceHora10.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora10
+        '
+        'lblBalanceHora18
+        '
+        Me.lblBalanceHora18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora18.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora18", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora18, "lblBalanceHora18")
+        Me.lblBalanceHora18.Name = "lblBalanceHora18"
+        Me.lblBalanceHora18.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora18
+        '
         'Label29
         '
         Me.Label29.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
         Me.Label29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         resources.ApplyResources(Me.Label29, "Label29")
         Me.Label29.Name = "Label29"
+        '
+        'lblBalanceHora00
+        '
+        Me.lblBalanceHora00.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora00.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora00", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora00, "lblBalanceHora00")
+        Me.lblBalanceHora00.Name = "lblBalanceHora00"
+        Me.lblBalanceHora00.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora00
+        '
+        'lblBalanceHora01
+        '
+        Me.lblBalanceHora01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora01, "lblBalanceHora01")
+        Me.lblBalanceHora01.Name = "lblBalanceHora01"
+        Me.lblBalanceHora01.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora01
+        '
+        'lblBalanceHora23
+        '
+        Me.lblBalanceHora23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora23.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora23", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora23, "lblBalanceHora23")
+        Me.lblBalanceHora23.Name = "lblBalanceHora23"
+        Me.lblBalanceHora23.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora23
+        '
+        'lblBalanceHora22
+        '
+        Me.lblBalanceHora22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora22.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora22", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora22, "lblBalanceHora22")
+        Me.lblBalanceHora22.Name = "lblBalanceHora22"
+        Me.lblBalanceHora22.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora22
+        '
+        'lblBalanceHora02
+        '
+        Me.lblBalanceHora02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora02, "lblBalanceHora02")
+        Me.lblBalanceHora02.Name = "lblBalanceHora02"
+        Me.lblBalanceHora02.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora02
+        '
+        'lblBalanceHora21
+        '
+        Me.lblBalanceHora21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora21.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora21", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora21, "lblBalanceHora21")
+        Me.lblBalanceHora21.Name = "lblBalanceHora21"
+        Me.lblBalanceHora21.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora21
+        '
+        'lblBalanceHora20
+        '
+        Me.lblBalanceHora20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora20.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora20", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora20, "lblBalanceHora20")
+        Me.lblBalanceHora20.Name = "lblBalanceHora20"
+        Me.lblBalanceHora20.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora20
+        '
+        'lblBalanceHora03
+        '
+        Me.lblBalanceHora03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora03, "lblBalanceHora03")
+        Me.lblBalanceHora03.Name = "lblBalanceHora03"
+        Me.lblBalanceHora03.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora03
+        '
+        'lblBalanceHora19
+        '
+        Me.lblBalanceHora19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora19.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora19", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora19, "lblBalanceHora19")
+        Me.lblBalanceHora19.Name = "lblBalanceHora19"
+        Me.lblBalanceHora19.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora19
+        '
+        'lblBalanceHora17
+        '
+        Me.lblBalanceHora17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora17.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora17", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora17, "lblBalanceHora17")
+        Me.lblBalanceHora17.Name = "lblBalanceHora17"
+        Me.lblBalanceHora17.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora17
+        '
+        'lblBalanceHora04
+        '
+        Me.lblBalanceHora04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora04, "lblBalanceHora04")
+        Me.lblBalanceHora04.Name = "lblBalanceHora04"
+        Me.lblBalanceHora04.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora04
+        '
+        'lblBalanceHora16
+        '
+        Me.lblBalanceHora16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora16.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora16", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora16, "lblBalanceHora16")
+        Me.lblBalanceHora16.Name = "lblBalanceHora16"
+        Me.lblBalanceHora16.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora16
+        '
+        'lblBalanceHora15
+        '
+        Me.lblBalanceHora15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora15.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora15", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora15, "lblBalanceHora15")
+        Me.lblBalanceHora15.Name = "lblBalanceHora15"
+        Me.lblBalanceHora15.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora15
+        '
+        'lblBalanceHora05
+        '
+        Me.lblBalanceHora05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora05, "lblBalanceHora05")
+        Me.lblBalanceHora05.Name = "lblBalanceHora05"
+        Me.lblBalanceHora05.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora05
+        '
+        'lblBalanceHora14
+        '
+        Me.lblBalanceHora14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora14.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora14", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora14, "lblBalanceHora14")
+        Me.lblBalanceHora14.Name = "lblBalanceHora14"
+        Me.lblBalanceHora14.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora14
+        '
+        'lblBalanceHora13
+        '
+        Me.lblBalanceHora13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora13.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora13", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora13, "lblBalanceHora13")
+        Me.lblBalanceHora13.Name = "lblBalanceHora13"
+        Me.lblBalanceHora13.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora13
+        '
+        'lblBalanceHora06
+        '
+        Me.lblBalanceHora06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora06, "lblBalanceHora06")
+        Me.lblBalanceHora06.Name = "lblBalanceHora06"
+        Me.lblBalanceHora06.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora06
+        '
+        'lblBalanceHora12
+        '
+        Me.lblBalanceHora12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora12, "lblBalanceHora12")
+        Me.lblBalanceHora12.Name = "lblBalanceHora12"
+        Me.lblBalanceHora12.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora12
+        '
+        'lblBalanceHora11
+        '
+        Me.lblBalanceHora11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora11, "lblBalanceHora11")
+        Me.lblBalanceHora11.Name = "lblBalanceHora11"
+        Me.lblBalanceHora11.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora11
+        '
+        'lblBalanceHora07
+        '
+        Me.lblBalanceHora07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora07, "lblBalanceHora07")
+        Me.lblBalanceHora07.Name = "lblBalanceHora07"
+        Me.lblBalanceHora07.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora07
+        '
+        'lblBalanceHora09
+        '
+        Me.lblBalanceHora09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora09, "lblBalanceHora09")
+        Me.lblBalanceHora09.Name = "lblBalanceHora09"
+        Me.lblBalanceHora09.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora09
+        '
+        'lblBalanceHora08
+        '
+        Me.lblBalanceHora08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora08, "lblBalanceHora08")
+        Me.lblBalanceHora08.Name = "lblBalanceHora08"
+        Me.lblBalanceHora08.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora08
         '
         'lblMesDifencia01
         '
@@ -1796,6 +2202,198 @@ Partial Class Form1
         resources.ApplyResources(Me.Label35, "Label35")
         Me.Label35.Name = "Label35"
         '
+        'lblMesBalance01
+        '
+        Me.lblMesBalance01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance01, "lblMesBalance01")
+        Me.lblMesBalance01.Name = "lblMesBalance01"
+        Me.lblMesBalance01.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance01
+        '
+        'lblMesBalance02
+        '
+        Me.lblMesBalance02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance02, "lblMesBalance02")
+        Me.lblMesBalance02.Name = "lblMesBalance02"
+        Me.lblMesBalance02.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance02
+        '
+        'lblMesBalance03
+        '
+        Me.lblMesBalance03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance03, "lblMesBalance03")
+        Me.lblMesBalance03.Name = "lblMesBalance03"
+        Me.lblMesBalance03.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance03
+        '
+        'lblMesBalance04
+        '
+        Me.lblMesBalance04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance04, "lblMesBalance04")
+        Me.lblMesBalance04.Name = "lblMesBalance04"
+        Me.lblMesBalance04.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance04
+        '
+        'lblMesBalance05
+        '
+        Me.lblMesBalance05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance05, "lblMesBalance05")
+        Me.lblMesBalance05.Name = "lblMesBalance05"
+        Me.lblMesBalance05.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance05
+        '
+        'lblMesBalance06
+        '
+        Me.lblMesBalance06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance06, "lblMesBalance06")
+        Me.lblMesBalance06.Name = "lblMesBalance06"
+        Me.lblMesBalance06.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance06
+        '
+        'lblMesBalance07
+        '
+        Me.lblMesBalance07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance07, "lblMesBalance07")
+        Me.lblMesBalance07.Name = "lblMesBalance07"
+        Me.lblMesBalance07.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance07
+        '
+        'lblMesBalance08
+        '
+        Me.lblMesBalance08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance08, "lblMesBalance08")
+        Me.lblMesBalance08.Name = "lblMesBalance08"
+        Me.lblMesBalance08.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance08
+        '
+        'lblMesBalance09
+        '
+        Me.lblMesBalance09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance09, "lblMesBalance09")
+        Me.lblMesBalance09.Name = "lblMesBalance09"
+        Me.lblMesBalance09.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance09
+        '
+        'lblMesBalance10
+        '
+        Me.lblMesBalance10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance10, "lblMesBalance10")
+        Me.lblMesBalance10.Name = "lblMesBalance10"
+        Me.lblMesBalance10.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance10
+        '
+        'lblMesBalance11
+        '
+        Me.lblMesBalance11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance11, "lblMesBalance11")
+        Me.lblMesBalance11.Name = "lblMesBalance11"
+        Me.lblMesBalance11.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance11
+        '
+        'lblMesBalance12
+        '
+        Me.lblMesBalance12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance12, "lblMesBalance12")
+        Me.lblMesBalance12.Name = "lblMesBalance12"
+        Me.lblMesBalance12.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance12
+        '
+        'lblMesBalance13
+        '
+        Me.lblMesBalance13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance13.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance13", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance13, "lblMesBalance13")
+        Me.lblMesBalance13.Name = "lblMesBalance13"
+        Me.lblMesBalance13.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance13
+        '
+        'lblMesBalance14
+        '
+        Me.lblMesBalance14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance14.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance14", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance14, "lblMesBalance14")
+        Me.lblMesBalance14.Name = "lblMesBalance14"
+        Me.lblMesBalance14.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance14
+        '
+        'lblMesBalance15
+        '
+        Me.lblMesBalance15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance15.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance15", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance15, "lblMesBalance15")
+        Me.lblMesBalance15.Name = "lblMesBalance15"
+        Me.lblMesBalance15.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance15
+        '
+        'lblMesBalance16
+        '
+        Me.lblMesBalance16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance16.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance16", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance16, "lblMesBalance16")
+        Me.lblMesBalance16.Name = "lblMesBalance16"
+        Me.lblMesBalance16.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance16
+        '
+        'lblMesBalance17
+        '
+        Me.lblMesBalance17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance17.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance17", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance17, "lblMesBalance17")
+        Me.lblMesBalance17.Name = "lblMesBalance17"
+        Me.lblMesBalance17.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance17
+        '
+        'lblMesBalance18
+        '
+        Me.lblMesBalance18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance18.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance18", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance18, "lblMesBalance18")
+        Me.lblMesBalance18.Name = "lblMesBalance18"
+        Me.lblMesBalance18.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance18
+        '
+        'lblMesBalance19
+        '
+        Me.lblMesBalance19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance19.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance19", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance19, "lblMesBalance19")
+        Me.lblMesBalance19.Name = "lblMesBalance19"
+        Me.lblMesBalance19.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance19
+        '
+        'lblMesBalance20
+        '
+        Me.lblMesBalance20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance20.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance20", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance20, "lblMesBalance20")
+        Me.lblMesBalance20.Name = "lblMesBalance20"
+        Me.lblMesBalance20.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance20
+        '
+        'lblMesBalance21
+        '
+        Me.lblMesBalance21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance21.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance21", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance21, "lblMesBalance21")
+        Me.lblMesBalance21.Name = "lblMesBalance21"
+        Me.lblMesBalance21.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance21
+        '
+        'lblMesBalance22
+        '
+        Me.lblMesBalance22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance22.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance22", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance22, "lblMesBalance22")
+        Me.lblMesBalance22.Name = "lblMesBalance22"
+        Me.lblMesBalance22.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance22
+        '
+        'lblMesBalance23
+        '
+        Me.lblMesBalance23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance23.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance23", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance23, "lblMesBalance23")
+        Me.lblMesBalance23.Name = "lblMesBalance23"
+        Me.lblMesBalance23.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance23
+        '
+        'lblMesBalance24
+        '
+        Me.lblMesBalance24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance24.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance24", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance24, "lblMesBalance24")
+        Me.lblMesBalance24.Name = "lblMesBalance24"
+        Me.lblMesBalance24.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance24
+        '
         'lblEtiquetaDia
         '
         Me.lblEtiquetaDia.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
@@ -1803,12 +2401,325 @@ Partial Class Form1
         resources.ApplyResources(Me.lblEtiquetaDia, "lblEtiquetaDia")
         Me.lblEtiquetaDia.Name = "lblEtiquetaDia"
         '
+        'lblMesBalance25
+        '
+        Me.lblMesBalance25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance25.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance25", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance25, "lblMesBalance25")
+        Me.lblMesBalance25.Name = "lblMesBalance25"
+        Me.lblMesBalance25.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance25
+        '
+        'lblMesBalance26
+        '
+        Me.lblMesBalance26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance26.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance26", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance26, "lblMesBalance26")
+        Me.lblMesBalance26.Name = "lblMesBalance26"
+        Me.lblMesBalance26.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance26
+        '
+        'lblMesBalance27
+        '
+        Me.lblMesBalance27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance27.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance27", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance27, "lblMesBalance27")
+        Me.lblMesBalance27.Name = "lblMesBalance27"
+        Me.lblMesBalance27.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance27
+        '
+        'lblMesBalance28
+        '
+        Me.lblMesBalance28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance28.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance28", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance28, "lblMesBalance28")
+        Me.lblMesBalance28.Name = "lblMesBalance28"
+        Me.lblMesBalance28.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance28
+        '
+        'lblMesBalance29
+        '
+        Me.lblMesBalance29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance29.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance29", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance29, "lblMesBalance29")
+        Me.lblMesBalance29.Name = "lblMesBalance29"
+        Me.lblMesBalance29.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance29
+        '
+        'lblMesBalance30
+        '
+        Me.lblMesBalance30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance30.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance30", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance30, "lblMesBalance30")
+        Me.lblMesBalance30.Name = "lblMesBalance30"
+        Me.lblMesBalance30.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance30
+        '
+        'lblPrecioMes
+        '
+        Me.lblPrecioMes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioMes.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "PrecioMedioMes", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecioMes, "lblPrecioMes")
+        Me.lblPrecioMes.Name = "lblPrecioMes"
+        Me.lblPrecioMes.Text = Global.EstadisticasDucos.My.MySettings.Default.PrecioMedioMes
+        '
+        'lblMesPrecio31
+        '
+        Me.lblMesPrecio31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio31.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio31", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio31, "lblMesPrecio31")
+        Me.lblMesPrecio31.Name = "lblMesPrecio31"
+        Me.lblMesPrecio31.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio31
+        '
+        'lblMesPrecio30
+        '
+        Me.lblMesPrecio30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio30.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio30", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio30, "lblMesPrecio30")
+        Me.lblMesPrecio30.Name = "lblMesPrecio30"
+        Me.lblMesPrecio30.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio30
+        '
+        'lblMesBalance31
+        '
+        Me.lblMesBalance31.BackColor = System.Drawing.Color.White
+        Me.lblMesBalance31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance31.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance31", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance31, "lblMesBalance31")
+        Me.lblMesBalance31.Name = "lblMesBalance31"
+        Me.lblMesBalance31.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance31
+        '
+        'lblMesPrecio29
+        '
+        Me.lblMesPrecio29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio29.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio29", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio29, "lblMesPrecio29")
+        Me.lblMesPrecio29.Name = "lblMesPrecio29"
+        Me.lblMesPrecio29.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio29
+        '
+        'lblMesPrecio28
+        '
+        Me.lblMesPrecio28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio28.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio28", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio28, "lblMesPrecio28")
+        Me.lblMesPrecio28.Name = "lblMesPrecio28"
+        Me.lblMesPrecio28.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio28
+        '
+        'lblMesPrecio27
+        '
+        Me.lblMesPrecio27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio27.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio27", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio27, "lblMesPrecio27")
+        Me.lblMesPrecio27.Name = "lblMesPrecio27"
+        Me.lblMesPrecio27.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio27
+        '
+        'lblMesPrecio26
+        '
+        Me.lblMesPrecio26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio26.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio26", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio26, "lblMesPrecio26")
+        Me.lblMesPrecio26.Name = "lblMesPrecio26"
+        Me.lblMesPrecio26.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio26
+        '
+        'lblMesPrecio25
+        '
+        Me.lblMesPrecio25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio25.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio25", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio25, "lblMesPrecio25")
+        Me.lblMesPrecio25.Name = "lblMesPrecio25"
+        Me.lblMesPrecio25.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio25
+        '
+        'lblMesPrecio24
+        '
+        Me.lblMesPrecio24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio24.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio24", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio24, "lblMesPrecio24")
+        Me.lblMesPrecio24.Name = "lblMesPrecio24"
+        Me.lblMesPrecio24.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio24
+        '
+        'lblMesPrecio23
+        '
+        Me.lblMesPrecio23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio23.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio23", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio23, "lblMesPrecio23")
+        Me.lblMesPrecio23.Name = "lblMesPrecio23"
+        Me.lblMesPrecio23.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio23
+        '
+        'lblMesPrecio22
+        '
+        Me.lblMesPrecio22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio22.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio22", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio22, "lblMesPrecio22")
+        Me.lblMesPrecio22.Name = "lblMesPrecio22"
+        Me.lblMesPrecio22.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio22
+        '
+        'lblMesPrecio21
+        '
+        Me.lblMesPrecio21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio21.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio21", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio21, "lblMesPrecio21")
+        Me.lblMesPrecio21.Name = "lblMesPrecio21"
+        Me.lblMesPrecio21.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio21
+        '
+        'lblMesPrecio20
+        '
+        Me.lblMesPrecio20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio20.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio20", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio20, "lblMesPrecio20")
+        Me.lblMesPrecio20.Name = "lblMesPrecio20"
+        Me.lblMesPrecio20.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio20
+        '
+        'lblMesPrecio19
+        '
+        Me.lblMesPrecio19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio19.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio19", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio19, "lblMesPrecio19")
+        Me.lblMesPrecio19.Name = "lblMesPrecio19"
+        Me.lblMesPrecio19.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio19
+        '
+        'lblMesPrecio18
+        '
+        Me.lblMesPrecio18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio18.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio18", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio18, "lblMesPrecio18")
+        Me.lblMesPrecio18.Name = "lblMesPrecio18"
+        Me.lblMesPrecio18.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio18
+        '
+        'lblMesPrecio17
+        '
+        Me.lblMesPrecio17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio17.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio17", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio17, "lblMesPrecio17")
+        Me.lblMesPrecio17.Name = "lblMesPrecio17"
+        Me.lblMesPrecio17.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio17
+        '
+        'lblMesPrecio16
+        '
+        Me.lblMesPrecio16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio16.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio16", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio16, "lblMesPrecio16")
+        Me.lblMesPrecio16.Name = "lblMesPrecio16"
+        Me.lblMesPrecio16.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio16
+        '
+        'lblMesPrecio15
+        '
+        Me.lblMesPrecio15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio15.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio15", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio15, "lblMesPrecio15")
+        Me.lblMesPrecio15.Name = "lblMesPrecio15"
+        Me.lblMesPrecio15.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio15
+        '
+        'lblMesPrecio14
+        '
+        Me.lblMesPrecio14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio14.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio14", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio14, "lblMesPrecio14")
+        Me.lblMesPrecio14.Name = "lblMesPrecio14"
+        Me.lblMesPrecio14.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio14
+        '
+        'lblMesPrecio13
+        '
+        Me.lblMesPrecio13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio13.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio13", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio13, "lblMesPrecio13")
+        Me.lblMesPrecio13.Name = "lblMesPrecio13"
+        Me.lblMesPrecio13.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio13
+        '
         'lblEtiquetaPrecioMes
         '
         Me.lblEtiquetaPrecioMes.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
         Me.lblEtiquetaPrecioMes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         resources.ApplyResources(Me.lblEtiquetaPrecioMes, "lblEtiquetaPrecioMes")
         Me.lblEtiquetaPrecioMes.Name = "lblEtiquetaPrecioMes"
+        '
+        'lblMesPrecio12
+        '
+        Me.lblMesPrecio12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio12, "lblMesPrecio12")
+        Me.lblMesPrecio12.Name = "lblMesPrecio12"
+        Me.lblMesPrecio12.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio12
+        '
+        'lblMesPrecio01
+        '
+        Me.lblMesPrecio01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio01, "lblMesPrecio01")
+        Me.lblMesPrecio01.Name = "lblMesPrecio01"
+        Me.lblMesPrecio01.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio01
+        '
+        'lblMesPrecio11
+        '
+        Me.lblMesPrecio11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio11, "lblMesPrecio11")
+        Me.lblMesPrecio11.Name = "lblMesPrecio11"
+        Me.lblMesPrecio11.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio11
+        '
+        'lblMesPrecio10
+        '
+        Me.lblMesPrecio10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio10, "lblMesPrecio10")
+        Me.lblMesPrecio10.Name = "lblMesPrecio10"
+        Me.lblMesPrecio10.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio10
+        '
+        'lblMesPrecio02
+        '
+        Me.lblMesPrecio02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio02, "lblMesPrecio02")
+        Me.lblMesPrecio02.Name = "lblMesPrecio02"
+        Me.lblMesPrecio02.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio02
+        '
+        'lblMesPrecio09
+        '
+        Me.lblMesPrecio09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio09, "lblMesPrecio09")
+        Me.lblMesPrecio09.Name = "lblMesPrecio09"
+        Me.lblMesPrecio09.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio09
+        '
+        'lblMesPrecio08
+        '
+        Me.lblMesPrecio08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio08, "lblMesPrecio08")
+        Me.lblMesPrecio08.Name = "lblMesPrecio08"
+        Me.lblMesPrecio08.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio08
+        '
+        'lblMesPrecio03
+        '
+        Me.lblMesPrecio03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio03, "lblMesPrecio03")
+        Me.lblMesPrecio03.Name = "lblMesPrecio03"
+        Me.lblMesPrecio03.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio03
+        '
+        'lblMesPrecio07
+        '
+        Me.lblMesPrecio07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio07, "lblMesPrecio07")
+        Me.lblMesPrecio07.Name = "lblMesPrecio07"
+        Me.lblMesPrecio07.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio07
+        '
+        'lblMesPrecio04
+        '
+        Me.lblMesPrecio04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio04, "lblMesPrecio04")
+        Me.lblMesPrecio04.Name = "lblMesPrecio04"
+        Me.lblMesPrecio04.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio04
+        '
+        'lblMesPrecio06
+        '
+        Me.lblMesPrecio06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio06, "lblMesPrecio06")
+        Me.lblMesPrecio06.Name = "lblMesPrecio06"
+        Me.lblMesPrecio06.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio06
+        '
+        'lblMesPrecio05
+        '
+        Me.lblMesPrecio05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio05, "lblMesPrecio05")
+        Me.lblMesPrecio05.Name = "lblMesPrecio05"
+        Me.lblMesPrecio05.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio05
         '
         'lblTransacionMes31
         '
@@ -2127,6 +3038,11 @@ Partial Class Form1
         '
         'gbAños
         '
+        Me.gbAños.Controls.Add(Me.lblEtiquetaPreciosAños)
+        Me.gbAños.Controls.Add(Me.lblPrecioAño2021)
+        Me.gbAños.Controls.Add(Me.lblPrecioAño2022)
+        Me.gbAños.Controls.Add(Me.lblPrecioMedioTodosAños)
+        Me.gbAños.Controls.Add(Me.lblPrecioAño2023)
         Me.gbAños.Controls.Add(Me.lblTransasionesAñoTotal)
         Me.gbAños.Controls.Add(Me.lblTransasionesAño2022)
         Me.gbAños.Controls.Add(Me.lblTransasionesAño2023)
@@ -2147,14 +3063,48 @@ Partial Class Form1
         Me.gbAños.Controls.Add(Me.lblAño2021)
         Me.gbAños.Controls.Add(Me.Label137)
         Me.gbAños.Controls.Add(Me.Label138)
-        Me.gbAños.Controls.Add(Me.lblEtiquetaPreciosAños)
-        Me.gbAños.Controls.Add(Me.lblPrecioAño2021)
-        Me.gbAños.Controls.Add(Me.lblPrecioAño2022)
-        Me.gbAños.Controls.Add(Me.lblPrecioMedioTodosAños)
-        Me.gbAños.Controls.Add(Me.lblPrecioAño2023)
         resources.ApplyResources(Me.gbAños, "gbAños")
         Me.gbAños.Name = "gbAños"
         Me.gbAños.TabStop = False
+        '
+        'lblEtiquetaPreciosAños
+        '
+        Me.lblEtiquetaPreciosAños.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.lblEtiquetaPreciosAños.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblEtiquetaPreciosAños, "lblEtiquetaPreciosAños")
+        Me.lblEtiquetaPreciosAños.Name = "lblEtiquetaPreciosAños"
+        '
+        'lblPrecioAño2021
+        '
+        Me.lblPrecioAño2021.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioAño2021.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño2021", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecioAño2021, "lblPrecioAño2021")
+        Me.lblPrecioAño2021.Name = "lblPrecioAño2021"
+        Me.lblPrecioAño2021.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño2021
+        '
+        'lblPrecioAño2022
+        '
+        Me.lblPrecioAño2022.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioAño2022.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño2022", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecioAño2022, "lblPrecioAño2022")
+        Me.lblPrecioAño2022.Name = "lblPrecioAño2022"
+        Me.lblPrecioAño2022.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño2022
+        '
+        'lblPrecioMedioTodosAños
+        '
+        Me.lblPrecioMedioTodosAños.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioMedioTodosAños.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "PrecioMedioTodosAños", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecioMedioTodosAños, "lblPrecioMedioTodosAños")
+        Me.lblPrecioMedioTodosAños.Name = "lblPrecioMedioTodosAños"
+        Me.lblPrecioMedioTodosAños.Text = Global.EstadisticasDucos.My.MySettings.Default.PrecioMedioTodosAños
+        '
+        'lblPrecioAño2023
+        '
+        Me.lblPrecioAño2023.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioAño2023.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño2023", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecioAño2023, "lblPrecioAño2023")
+        Me.lblPrecioAño2023.Name = "lblPrecioAño2023"
+        Me.lblPrecioAño2023.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño2023
         '
         'lblTransasionesAñoTotal
         '
@@ -2163,12 +3113,36 @@ Partial Class Form1
         Me.lblTransasionesAñoTotal.ForeColor = System.Drawing.Color.Black
         Me.lblTransasionesAñoTotal.Name = "lblTransasionesAñoTotal"
         '
+        'lblTransasionesAño2022
+        '
+        Me.lblTransasionesAño2022.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransasionesAño2022.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño2022", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransasionesAño2022, "lblTransasionesAño2022")
+        Me.lblTransasionesAño2022.Name = "lblTransasionesAño2022"
+        Me.lblTransasionesAño2022.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño2022
+        '
+        'lblTransasionesAño2023
+        '
+        Me.lblTransasionesAño2023.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransasionesAño2023.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño2023", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransasionesAño2023, "lblTransasionesAño2023")
+        Me.lblTransasionesAño2023.Name = "lblTransasionesAño2023"
+        Me.lblTransasionesAño2023.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño2023
+        '
         'lblEtiquetaTransacionesAños
         '
         Me.lblEtiquetaTransacionesAños.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
         Me.lblEtiquetaTransacionesAños.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         resources.ApplyResources(Me.lblEtiquetaTransacionesAños, "lblEtiquetaTransacionesAños")
         Me.lblEtiquetaTransacionesAños.Name = "lblEtiquetaTransacionesAños"
+        '
+        'lblTransasionesAño2021
+        '
+        Me.lblTransasionesAño2021.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransasionesAño2021.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño2021", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransasionesAño2021, "lblTransasionesAño2021")
+        Me.lblTransasionesAño2021.Name = "lblTransasionesAño2021"
+        Me.lblTransasionesAño2021.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño2021
         '
         'gbEstadisticasGlobales
         '
@@ -2234,6 +3208,14 @@ Partial Class Form1
         Me.lblGanadoAñoTotal.ForeColor = System.Drawing.Color.DarkOrange
         Me.lblGanadoAñoTotal.Name = "lblGanadoAñoTotal"
         '
+        'lblGanadoAño2021
+        '
+        Me.lblGanadoAño2021.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGanadoAño2021.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoAño2021", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblGanadoAño2021, "lblGanadoAño2021")
+        Me.lblGanadoAño2021.Name = "lblGanadoAño2021"
+        Me.lblGanadoAño2021.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoAño2021
+        '
         'lblEtiquetaGananciasAños
         '
         Me.lblEtiquetaGananciasAños.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
@@ -2241,12 +3223,52 @@ Partial Class Form1
         resources.ApplyResources(Me.lblEtiquetaGananciasAños, "lblEtiquetaGananciasAños")
         Me.lblEtiquetaGananciasAños.Name = "lblEtiquetaGananciasAños"
         '
+        'lblGanadoAño2022
+        '
+        Me.lblGanadoAño2022.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGanadoAño2022.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoAño2022", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblGanadoAño2022, "lblGanadoAño2022")
+        Me.lblGanadoAño2022.Name = "lblGanadoAño2022"
+        Me.lblGanadoAño2022.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoAño2022
+        '
+        'lblGanadoAño2023
+        '
+        Me.lblGanadoAño2023.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGanadoAño2023.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoAño2023", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblGanadoAño2023, "lblGanadoAño2023")
+        Me.lblGanadoAño2023.Name = "lblGanadoAño2023"
+        Me.lblGanadoAño2023.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoAño2023
+        '
         'Label130
         '
         Me.Label130.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
         Me.Label130.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         resources.ApplyResources(Me.Label130, "Label130")
         Me.Label130.Name = "Label130"
+        '
+        'lblBalanceAño2021
+        '
+        Me.lblBalanceAño2021.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceAño2021.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño2021", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceAño2021, "lblBalanceAño2021")
+        Me.lblBalanceAño2021.Name = "lblBalanceAño2021"
+        Me.lblBalanceAño2021.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño2021
+        '
+        'lblBalanceAño2022
+        '
+        Me.lblBalanceAño2022.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceAño2022.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño2022", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceAño2022, "lblBalanceAño2022")
+        Me.lblBalanceAño2022.Name = "lblBalanceAño2022"
+        Me.lblBalanceAño2022.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño2022
+        '
+        'lblBalanceAño2023
+        '
+        Me.lblBalanceAño2023.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceAño2023.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño2023", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceAño2023, "lblBalanceAño2023")
+        Me.lblBalanceAño2023.Name = "lblBalanceAño2023"
+        Me.lblBalanceAño2023.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño2023
         '
         'lblEtiquetaAños
         '
@@ -2272,13 +3294,6 @@ Partial Class Form1
         Me.Label138.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         resources.ApplyResources(Me.Label138, "Label138")
         Me.Label138.Name = "Label138"
-        '
-        'lblEtiquetaPreciosAños
-        '
-        Me.lblEtiquetaPreciosAños.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
-        Me.lblEtiquetaPreciosAños.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblEtiquetaPreciosAños, "lblEtiquetaPreciosAños")
-        Me.lblEtiquetaPreciosAños.Name = "lblEtiquetaPreciosAños"
         '
         'gbAño
         '
@@ -2355,6 +3370,14 @@ Partial Class Form1
         Me.gbAño.Name = "gbAño"
         Me.gbAño.TabStop = False
         '
+        'lblGananciasAño01
+        '
+        Me.lblGananciasAño01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblGananciasAño01, "lblGananciasAño01")
+        Me.lblGananciasAño01.Name = "lblGananciasAño01"
+        Me.lblGananciasAño01.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes01
+        '
         'lblEtiquetaGanaciasAño
         '
         Me.lblEtiquetaGanaciasAño.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
@@ -2362,12 +3385,196 @@ Partial Class Form1
         resources.ApplyResources(Me.lblEtiquetaGanaciasAño, "lblEtiquetaGanaciasAño")
         Me.lblEtiquetaGanaciasAño.Name = "lblEtiquetaGanaciasAño"
         '
+        'lblGananciasAño02
+        '
+        Me.lblGananciasAño02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblGananciasAño02, "lblGananciasAño02")
+        Me.lblGananciasAño02.Name = "lblGananciasAño02"
+        Me.lblGananciasAño02.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes02
+        '
+        'lblGananciasAño07
+        '
+        Me.lblGananciasAño07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblGananciasAño07, "lblGananciasAño07")
+        Me.lblGananciasAño07.Name = "lblGananciasAño07"
+        Me.lblGananciasAño07.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes07
+        '
+        'lblGananciasAño04
+        '
+        Me.lblGananciasAño04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblGananciasAño04, "lblGananciasAño04")
+        Me.lblGananciasAño04.Name = "lblGananciasAño04"
+        Me.lblGananciasAño04.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes04
+        '
+        'lblGananciasAño08
+        '
+        Me.lblGananciasAño08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblGananciasAño08, "lblGananciasAño08")
+        Me.lblGananciasAño08.Name = "lblGananciasAño08"
+        Me.lblGananciasAño08.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes08
+        '
+        'lblGananciasAño10
+        '
+        Me.lblGananciasAño10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblGananciasAño10, "lblGananciasAño10")
+        Me.lblGananciasAño10.Name = "lblGananciasAño10"
+        Me.lblGananciasAño10.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes10
+        '
+        'lblGananciasAño05
+        '
+        Me.lblGananciasAño05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblGananciasAño05, "lblGananciasAño05")
+        Me.lblGananciasAño05.Name = "lblGananciasAño05"
+        Me.lblGananciasAño05.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes05
+        '
+        'lblGananciasAño09
+        '
+        Me.lblGananciasAño09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblGananciasAño09, "lblGananciasAño09")
+        Me.lblGananciasAño09.Name = "lblGananciasAño09"
+        Me.lblGananciasAño09.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes09
+        '
+        'lblGananciasAño06
+        '
+        Me.lblGananciasAño06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblGananciasAño06, "lblGananciasAño06")
+        Me.lblGananciasAño06.Name = "lblGananciasAño06"
+        Me.lblGananciasAño06.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes06
+        '
+        'lblGananciasAño11
+        '
+        Me.lblGananciasAño11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblGananciasAño11, "lblGananciasAño11")
+        Me.lblGananciasAño11.Name = "lblGananciasAño11"
+        Me.lblGananciasAño11.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes11
+        '
+        'lblGananciasAño12
+        '
+        Me.lblGananciasAño12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblGananciasAño12, "lblGananciasAño12")
+        Me.lblGananciasAño12.Name = "lblGananciasAño12"
+        Me.lblGananciasAño12.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes12
+        '
+        'lblGananciasAño03
+        '
+        Me.lblGananciasAño03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblGananciasAño03, "lblGananciasAño03")
+        Me.lblGananciasAño03.Name = "lblGananciasAño03"
+        Me.lblGananciasAño03.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes03
+        '
         'Label128
         '
         Me.Label128.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
         Me.Label128.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         resources.ApplyResources(Me.Label128, "Label128")
         Me.Label128.Name = "Label128"
+        '
+        'lblBalanceAño01
+        '
+        Me.lblBalanceAño01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceAño01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceAño01, "lblBalanceAño01")
+        Me.lblBalanceAño01.Name = "lblBalanceAño01"
+        Me.lblBalanceAño01.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño01
+        '
+        'lblBalanceAño02
+        '
+        Me.lblBalanceAño02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceAño02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceAño02, "lblBalanceAño02")
+        Me.lblBalanceAño02.Name = "lblBalanceAño02"
+        Me.lblBalanceAño02.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño02
+        '
+        'lblBalanceAño03
+        '
+        Me.lblBalanceAño03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceAño03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceAño03, "lblBalanceAño03")
+        Me.lblBalanceAño03.Name = "lblBalanceAño03"
+        Me.lblBalanceAño03.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño03
+        '
+        'lblBalanceAño04
+        '
+        Me.lblBalanceAño04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceAño04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceAño04, "lblBalanceAño04")
+        Me.lblBalanceAño04.Name = "lblBalanceAño04"
+        Me.lblBalanceAño04.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño04
+        '
+        'lblBalanceAño05
+        '
+        Me.lblBalanceAño05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceAño05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceAño05, "lblBalanceAño05")
+        Me.lblBalanceAño05.Name = "lblBalanceAño05"
+        Me.lblBalanceAño05.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño05
+        '
+        'lblBalanceAño06
+        '
+        Me.lblBalanceAño06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceAño06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceAño06, "lblBalanceAño06")
+        Me.lblBalanceAño06.Name = "lblBalanceAño06"
+        Me.lblBalanceAño06.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño06
+        '
+        'lblBalanceAño07
+        '
+        Me.lblBalanceAño07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceAño07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceAño07, "lblBalanceAño07")
+        Me.lblBalanceAño07.Name = "lblBalanceAño07"
+        Me.lblBalanceAño07.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño07
+        '
+        'lblBalanceAño08
+        '
+        Me.lblBalanceAño08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceAño08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceAño08, "lblBalanceAño08")
+        Me.lblBalanceAño08.Name = "lblBalanceAño08"
+        Me.lblBalanceAño08.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño08
+        '
+        'lblBalanceAño09
+        '
+        Me.lblBalanceAño09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceAño09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceAño09, "lblBalanceAño09")
+        Me.lblBalanceAño09.Name = "lblBalanceAño09"
+        Me.lblBalanceAño09.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño09
+        '
+        'lblBalanceAño10
+        '
+        Me.lblBalanceAño10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceAño10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceAño10, "lblBalanceAño10")
+        Me.lblBalanceAño10.Name = "lblBalanceAño10"
+        Me.lblBalanceAño10.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño10
+        '
+        'lblBalanceAño11
+        '
+        Me.lblBalanceAño11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceAño11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceAño11, "lblBalanceAño11")
+        Me.lblBalanceAño11.Name = "lblBalanceAño11"
+        Me.lblBalanceAño11.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño11
+        '
+        'lblBalanceAño12
+        '
+        Me.lblBalanceAño12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceAño12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceAño12, "lblBalanceAño12")
+        Me.lblBalanceAño12.Name = "lblBalanceAño12"
+        Me.lblBalanceAño12.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño12
         '
         'lblEtiquetaMes
         '
@@ -2455,11 +3662,203 @@ Partial Class Form1
         resources.ApplyResources(Me.lblEtiquetaPrecioAño, "lblEtiquetaPrecioAño")
         Me.lblEtiquetaPrecioAño.Name = "lblEtiquetaPrecioAño"
         '
+        'lblPrecioAnual
+        '
+        Me.lblPrecioAnual.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioAnual.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "PrecioMedioAnual", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecioAnual, "lblPrecioAnual")
+        Me.lblPrecioAnual.Name = "lblPrecioAnual"
+        Me.lblPrecioAnual.Text = Global.EstadisticasDucos.My.MySettings.Default.PrecioMedioAnual
+        '
+        'lblPrecioAño12
+        '
+        Me.lblPrecioAño12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioAño12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecioAño12, "lblPrecioAño12")
+        Me.lblPrecioAño12.Name = "lblPrecioAño12"
+        Me.lblPrecioAño12.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño12
+        '
+        'lblPrecioAño01
+        '
+        Me.lblPrecioAño01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioAño01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecioAño01, "lblPrecioAño01")
+        Me.lblPrecioAño01.Name = "lblPrecioAño01"
+        Me.lblPrecioAño01.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño01
+        '
+        'lblPrecioAño11
+        '
+        Me.lblPrecioAño11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioAño11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecioAño11, "lblPrecioAño11")
+        Me.lblPrecioAño11.Name = "lblPrecioAño11"
+        Me.lblPrecioAño11.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño11
+        '
+        'lblPrecioAño10
+        '
+        Me.lblPrecioAño10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioAño10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecioAño10, "lblPrecioAño10")
+        Me.lblPrecioAño10.Name = "lblPrecioAño10"
+        Me.lblPrecioAño10.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño10
+        '
+        'lblPrecioAño02
+        '
+        Me.lblPrecioAño02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioAño02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecioAño02, "lblPrecioAño02")
+        Me.lblPrecioAño02.Name = "lblPrecioAño02"
+        Me.lblPrecioAño02.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño02
+        '
+        'lblPrecioAño09
+        '
+        Me.lblPrecioAño09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioAño09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecioAño09, "lblPrecioAño09")
+        Me.lblPrecioAño09.Name = "lblPrecioAño09"
+        Me.lblPrecioAño09.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño09
+        '
+        'lblPrecioAño08
+        '
+        Me.lblPrecioAño08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioAño08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecioAño08, "lblPrecioAño08")
+        Me.lblPrecioAño08.Name = "lblPrecioAño08"
+        Me.lblPrecioAño08.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño08
+        '
+        'lblPrecioAño03
+        '
+        Me.lblPrecioAño03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioAño03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecioAño03, "lblPrecioAño03")
+        Me.lblPrecioAño03.Name = "lblPrecioAño03"
+        Me.lblPrecioAño03.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño03
+        '
+        'lblPrecioAño07
+        '
+        Me.lblPrecioAño07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioAño07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecioAño07, "lblPrecioAño07")
+        Me.lblPrecioAño07.Name = "lblPrecioAño07"
+        Me.lblPrecioAño07.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño07
+        '
+        'lblPrecioAño04
+        '
+        Me.lblPrecioAño04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioAño04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecioAño04, "lblPrecioAño04")
+        Me.lblPrecioAño04.Name = "lblPrecioAño04"
+        Me.lblPrecioAño04.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño04
+        '
+        'lblPrecioAño06
+        '
+        Me.lblPrecioAño06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioAño06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecioAño06, "lblPrecioAño06")
+        Me.lblPrecioAño06.Name = "lblPrecioAño06"
+        Me.lblPrecioAño06.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño06
+        '
+        'lblPrecioAño05
+        '
+        Me.lblPrecioAño05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioAño05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecioAño05, "lblPrecioAño05")
+        Me.lblPrecioAño05.Name = "lblPrecioAño05"
+        Me.lblPrecioAño05.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño05
+        '
         'lblEtiquetaAñoTotal
         '
         Me.lblEtiquetaAñoTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         resources.ApplyResources(Me.lblEtiquetaAñoTotal, "lblEtiquetaAñoTotal")
         Me.lblEtiquetaAñoTotal.Name = "lblEtiquetaAñoTotal"
+        '
+        'lblTransasionesAño02
+        '
+        Me.lblTransasionesAño02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransasionesAño02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransasionesAño02, "lblTransasionesAño02")
+        Me.lblTransasionesAño02.Name = "lblTransasionesAño02"
+        Me.lblTransasionesAño02.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño02
+        '
+        'lblTransasionesAño03
+        '
+        Me.lblTransasionesAño03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransasionesAño03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransasionesAño03, "lblTransasionesAño03")
+        Me.lblTransasionesAño03.Name = "lblTransasionesAño03"
+        Me.lblTransasionesAño03.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño03
+        '
+        'lblTransasionesAño12
+        '
+        Me.lblTransasionesAño12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransasionesAño12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransasionesAño12, "lblTransasionesAño12")
+        Me.lblTransasionesAño12.Name = "lblTransasionesAño12"
+        Me.lblTransasionesAño12.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño12
+        '
+        'lblTransasionesAño11
+        '
+        Me.lblTransasionesAño11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransasionesAño11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransasionesAño11, "lblTransasionesAño11")
+        Me.lblTransasionesAño11.Name = "lblTransasionesAño11"
+        Me.lblTransasionesAño11.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño11
+        '
+        'lblTransasionesAño06
+        '
+        Me.lblTransasionesAño06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransasionesAño06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransasionesAño06, "lblTransasionesAño06")
+        Me.lblTransasionesAño06.Name = "lblTransasionesAño06"
+        Me.lblTransasionesAño06.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño06
+        '
+        'lblTransasionesAño09
+        '
+        Me.lblTransasionesAño09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransasionesAño09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransasionesAño09, "lblTransasionesAño09")
+        Me.lblTransasionesAño09.Name = "lblTransasionesAño09"
+        Me.lblTransasionesAño09.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño09
+        '
+        'lblTransasionesAño05
+        '
+        Me.lblTransasionesAño05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransasionesAño05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransasionesAño05, "lblTransasionesAño05")
+        Me.lblTransasionesAño05.Name = "lblTransasionesAño05"
+        Me.lblTransasionesAño05.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño05
+        '
+        'lblTransasionesAño10
+        '
+        Me.lblTransasionesAño10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransasionesAño10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransasionesAño10, "lblTransasionesAño10")
+        Me.lblTransasionesAño10.Name = "lblTransasionesAño10"
+        Me.lblTransasionesAño10.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño10
+        '
+        'lblTransasionesAño08
+        '
+        Me.lblTransasionesAño08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransasionesAño08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransasionesAño08, "lblTransasionesAño08")
+        Me.lblTransasionesAño08.Name = "lblTransasionesAño08"
+        Me.lblTransasionesAño08.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño08
+        '
+        'lblTransasionesAño04
+        '
+        Me.lblTransasionesAño04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransasionesAño04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransasionesAño04, "lblTransasionesAño04")
+        Me.lblTransasionesAño04.Name = "lblTransasionesAño04"
+        Me.lblTransasionesAño04.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño04
+        '
+        'lblTransasionesAño07
+        '
+        Me.lblTransasionesAño07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransasionesAño07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransasionesAño07, "lblTransasionesAño07")
+        Me.lblTransasionesAño07.Name = "lblTransasionesAño07"
+        Me.lblTransasionesAño07.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño07
         '
         'lblEtiquetaTransacionAño
         '
@@ -2467,6 +3866,14 @@ Partial Class Form1
         Me.lblEtiquetaTransacionAño.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         resources.ApplyResources(Me.lblEtiquetaTransacionAño, "lblEtiquetaTransacionAño")
         Me.lblEtiquetaTransacionAño.Name = "lblEtiquetaTransacionAño"
+        '
+        'lblTransasionesAño01
+        '
+        Me.lblTransasionesAño01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransasionesAño01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransasionesAño01, "lblTransasionesAño01")
+        Me.lblTransasionesAño01.Name = "lblTransasionesAño01"
+        Me.lblTransasionesAño01.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño01
         '
         'lblTotalGananciaAño
         '
@@ -2553,8 +3960,8 @@ Partial Class Form1
         '
         'lstboxTop10
         '
-        Me.lstboxTop10.FormattingEnabled = True
         resources.ApplyResources(Me.lstboxTop10, "lstboxTop10")
+        Me.lstboxTop10.FormattingEnabled = True
         Me.lstboxTop10.Name = "lstboxTop10"
         '
         'gbPrecios
@@ -2692,9 +4099,9 @@ Partial Class Form1
         'gbKolka
         '
         Me.gbKolka.Controls.Add(Me.txtJailed)
-        Me.gbKolka.Controls.Add(Me.lblEtiquetaJailed)
         Me.gbKolka.Controls.Add(Me.txtBanned)
         Me.gbKolka.Controls.Add(Me.lblEtiquetaBanned)
+        Me.gbKolka.Controls.Add(Me.lblEtiquetaJailed)
         resources.ApplyResources(Me.gbKolka, "gbKolka")
         Me.gbKolka.Name = "gbKolka"
         Me.gbKolka.TabStop = False
@@ -2705,12 +4112,6 @@ Partial Class Form1
         resources.ApplyResources(Me.txtJailed, "txtJailed")
         Me.txtJailed.Name = "txtJailed"
         Me.txtJailed.ReadOnly = True
-        '
-        'lblEtiquetaJailed
-        '
-        Me.lblEtiquetaJailed.BackColor = System.Drawing.Color.White
-        resources.ApplyResources(Me.lblEtiquetaJailed, "lblEtiquetaJailed")
-        Me.lblEtiquetaJailed.Name = "lblEtiquetaJailed"
         '
         'txtBanned
         '
@@ -2724,6 +4125,12 @@ Partial Class Form1
         Me.lblEtiquetaBanned.BackColor = System.Drawing.Color.White
         resources.ApplyResources(Me.lblEtiquetaBanned, "lblEtiquetaBanned")
         Me.lblEtiquetaBanned.Name = "lblEtiquetaBanned"
+        '
+        'lblEtiquetaJailed
+        '
+        Me.lblEtiquetaJailed.BackColor = System.Drawing.Color.White
+        resources.ApplyResources(Me.lblEtiquetaJailed, "lblEtiquetaJailed")
+        Me.lblEtiquetaJailed.Name = "lblEtiquetaJailed"
         '
         'gbServer
         '
@@ -3059,6 +4466,7 @@ Partial Class Form1
         Me.TabPage4.Controls.Add(Me.gbESP32)
         Me.TabPage4.Controls.Add(Me.gbESP8266)
         Me.TabPage4.Controls.Add(Me.gbCPU)
+        Me.TabPage4.Controls.Add(Me.gbAllMineros)
         Me.TabPage4.Controls.Add(Me.gbArduinos)
         Me.TabPage4.Controls.Add(Me.gbMineross)
         resources.ApplyResources(Me.TabPage4, "TabPage4")
@@ -3274,6 +4682,36 @@ Partial Class Form1
         resources.ApplyResources(Me.txtMinerosNCPU, "txtMinerosNCPU")
         Me.txtMinerosNCPU.Name = "txtMinerosNCPU"
         '
+        'gbAllMineros
+        '
+        Me.gbAllMineros.Controls.Add(Me.Label28)
+        Me.gbAllMineros.Controls.Add(Me.Label30)
+        Me.gbAllMineros.Controls.Add(Me.txtTotalHases)
+        Me.gbAllMineros.Controls.Add(Me.txtTotalMineros)
+        resources.ApplyResources(Me.gbAllMineros, "gbAllMineros")
+        Me.gbAllMineros.Name = "gbAllMineros"
+        Me.gbAllMineros.TabStop = False
+        '
+        'Label28
+        '
+        resources.ApplyResources(Me.Label28, "Label28")
+        Me.Label28.Name = "Label28"
+        '
+        'Label30
+        '
+        resources.ApplyResources(Me.Label30, "Label30")
+        Me.Label30.Name = "Label30"
+        '
+        'txtTotalHases
+        '
+        resources.ApplyResources(Me.txtTotalHases, "txtTotalHases")
+        Me.txtTotalHases.Name = "txtTotalHases"
+        '
+        'txtTotalMineros
+        '
+        resources.ApplyResources(Me.txtTotalMineros, "txtTotalMineros")
+        Me.txtTotalMineros.Name = "txtTotalMineros"
+        '
         'gbArduinos
         '
         Me.gbArduinos.Controls.Add(Me.Label102)
@@ -3406,16 +4844,40 @@ Partial Class Form1
         Me.gbTemperatura.Name = "gbTemperatura"
         Me.gbTemperatura.TabStop = False
         '
+        'txtFanAmarillo2
+        '
+        Me.txtFanAmarillo2.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.EstadisticasDucos.My.MySettings.Default, "FanAmarillo", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.txtFanAmarillo2.ForeColor = System.Drawing.Color.DarkKhaki
+        resources.ApplyResources(Me.txtFanAmarillo2, "txtFanAmarillo2")
+        Me.txtFanAmarillo2.Name = "txtFanAmarillo2"
+        Me.txtFanAmarillo2.Value = Global.EstadisticasDucos.My.MySettings.Default.FanAmarillo
+        '
         'lblEtiquetaTempGreen
         '
         Me.lblEtiquetaTempGreen.ForeColor = System.Drawing.Color.Black
         resources.ApplyResources(Me.lblEtiquetaTempGreen, "lblEtiquetaTempGreen")
         Me.lblEtiquetaTempGreen.Name = "lblEtiquetaTempGreen"
         '
+        'txtFanVerde2
+        '
+        Me.txtFanVerde2.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.EstadisticasDucos.My.MySettings.Default, "FanVerde", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.txtFanVerde2.ForeColor = System.Drawing.Color.Green
+        resources.ApplyResources(Me.txtFanVerde2, "txtFanVerde2")
+        Me.txtFanVerde2.Name = "txtFanVerde2"
+        Me.txtFanVerde2.Value = Global.EstadisticasDucos.My.MySettings.Default.FanVerde
+        '
         'lblEtiquetaTempyellow
         '
         resources.ApplyResources(Me.lblEtiquetaTempyellow, "lblEtiquetaTempyellow")
         Me.lblEtiquetaTempyellow.Name = "lblEtiquetaTempyellow"
+        '
+        'txtGradosFan2
+        '
+        Me.txtGradosFan2.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.EstadisticasDucos.My.MySettings.Default, "FanRojo", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.txtGradosFan2.ForeColor = System.Drawing.Color.Red
+        resources.ApplyResources(Me.txtGradosFan2, "txtGradosFan2")
+        Me.txtGradosFan2.Name = "txtGradosFan2"
+        Me.txtGradosFan2.Value = Global.EstadisticasDucos.My.MySettings.Default.FanRojo
         '
         'lblEtiquetaTempMax
         '
@@ -3433,10 +4895,42 @@ Partial Class Form1
         Me.gbOpciones.Name = "gbOpciones"
         Me.gbOpciones.TabStop = False
         '
+        'Label1
+        '
+        resources.ApplyResources(Me.Label1, "Label1")
+        Me.Label1.Name = "Label1"
+        '
         'lblEtiquetaLenguaje
         '
         resources.ApplyResources(Me.lblEtiquetaLenguaje, "lblEtiquetaLenguaje")
         Me.lblEtiquetaLenguaje.Name = "lblEtiquetaLenguaje"
+        '
+        'cmbDivisa1
+        '
+        Me.cmbDivisa1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Moneda", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.cmbDivisa1.FormattingEnabled = True
+        Me.cmbDivisa1.Items.AddRange(New Object() {resources.GetString("cmbDivisa1.Items"), resources.GetString("cmbDivisa1.Items1")})
+        resources.ApplyResources(Me.cmbDivisa1, "cmbDivisa1")
+        Me.cmbDivisa1.Name = "cmbDivisa1"
+        Me.cmbDivisa1.Text = Global.EstadisticasDucos.My.MySettings.Default.Moneda
+        '
+        'cmbLenguaje1
+        '
+        Me.cmbLenguaje1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Lenguaje", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.cmbLenguaje1.FormattingEnabled = True
+        Me.cmbLenguaje1.Items.AddRange(New Object() {resources.GetString("cmbLenguaje1.Items"), resources.GetString("cmbLenguaje1.Items1")})
+        resources.ApplyResources(Me.cmbLenguaje1, "cmbLenguaje1")
+        Me.cmbLenguaje1.Name = "cmbLenguaje1"
+        Me.cmbLenguaje1.Text = Global.EstadisticasDucos.My.MySettings.Default.Lenguaje
+        '
+        'chkActivarMensajes2
+        '
+        resources.ApplyResources(Me.chkActivarMensajes2, "chkActivarMensajes2")
+        Me.chkActivarMensajes2.Checked = Global.EstadisticasDucos.My.MySettings.Default.MensajesError
+        Me.chkActivarMensajes2.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.chkActivarMensajes2.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.EstadisticasDucos.My.MySettings.Default, "MensajesError", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.chkActivarMensajes2.Name = "chkActivarMensajes2"
+        Me.chkActivarMensajes2.UseVisualStyleBackColor = True
         '
         'gbUser
         '
@@ -3455,6 +4949,14 @@ Partial Class Form1
         resources.ApplyResources(Me.PictureBox1, "PictureBox1")
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.TabStop = False
+        '
+        'lblUser
+        '
+        Me.lblUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblUser.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "User", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblUser, "lblUser")
+        Me.lblUser.Name = "lblUser"
+        Me.lblUser.Text = Global.EstadisticasDucos.My.MySettings.Default.User
         '
         'lblEtiquetaUsuario
         '
@@ -3551,11 +5053,6 @@ Partial Class Form1
         Me.gbMineros.Name = "gbMineros"
         Me.gbMineros.TabStop = False
         '
-        'Label121
-        '
-        resources.ApplyResources(Me.Label121, "Label121")
-        Me.Label121.Name = "Label121"
-        '
         'Label36
         '
         resources.ApplyResources(Me.Label36, "Label36")
@@ -3571,16 +5068,21 @@ Partial Class Form1
         resources.ApplyResources(Me.lblMineros, "lblMineros")
         Me.lblMineros.Name = "lblMineros"
         '
-        'lblEtiquetaMineros
-        '
-        resources.ApplyResources(Me.lblEtiquetaMineros, "lblEtiquetaMineros")
-        Me.lblEtiquetaMineros.Name = "lblEtiquetaMineros"
-        '
         'lblHases
         '
         resources.ApplyResources(Me.lblHases, "lblHases")
         Me.lblHases.ForeColor = System.Drawing.Color.RoyalBlue
         Me.lblHases.Name = "lblHases"
+        '
+        'Label121
+        '
+        resources.ApplyResources(Me.Label121, "Label121")
+        Me.Label121.Name = "Label121"
+        '
+        'lblEtiquetaMineros
+        '
+        resources.ApplyResources(Me.lblEtiquetaMineros, "lblEtiquetaMineros")
+        Me.lblEtiquetaMineros.Name = "lblEtiquetaMineros"
         '
         'lblHaseEstiquta
         '
@@ -3702,19 +5204,6 @@ Partial Class Form1
         resources.ApplyResources(Me.PanelOculto, "PanelOculto")
         Me.PanelOculto.Name = "PanelOculto"
         '
-        'gbGananciasDolar
-        '
-        Me.gbGananciasDolar.Controls.Add(Me.Label38)
-        Me.gbGananciasDolar.Controls.Add(Me.lblGanadoDolar)
-        resources.ApplyResources(Me.gbGananciasDolar, "gbGananciasDolar")
-        Me.gbGananciasDolar.Name = "gbGananciasDolar"
-        Me.gbGananciasDolar.TabStop = False
-        '
-        'Label1
-        '
-        resources.ApplyResources(Me.Label1, "Label1")
-        Me.Label1.Name = "Label1"
-        '
         'chkActivarMensajes
         '
         resources.ApplyResources(Me.chkActivarMensajes, "chkActivarMensajes")
@@ -3723,6 +5212,15 @@ Partial Class Form1
         Me.chkActivarMensajes.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.EstadisticasDucos.My.MySettings.Default, "MensajesError", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.chkActivarMensajes.Name = "chkActivarMensajes"
         Me.chkActivarMensajes.UseVisualStyleBackColor = True
+        '
+        'cmbDivisa
+        '
+        Me.cmbDivisa.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Moneda", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.cmbDivisa.FormattingEnabled = True
+        Me.cmbDivisa.Items.AddRange(New Object() {resources.GetString("cmbDivisa.Items"), resources.GetString("cmbDivisa.Items1")})
+        resources.ApplyResources(Me.cmbDivisa, "cmbDivisa")
+        Me.cmbDivisa.Name = "cmbDivisa"
+        Me.cmbDivisa.Text = Global.EstadisticasDucos.My.MySettings.Default.Moneda
         '
         'cmbLenguaje
         '
@@ -3733,1456 +5231,13 @@ Partial Class Form1
         Me.cmbLenguaje.Name = "cmbLenguaje"
         Me.cmbLenguaje.Text = Global.EstadisticasDucos.My.MySettings.Default.Lenguaje
         '
-        'lblPrecioDia
-        '
-        Me.lblPrecioDia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecioDia.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MediaPrecioDia", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecioDia, "lblPrecioDia")
-        Me.lblPrecioDia.Name = "lblPrecioDia"
-        Me.lblPrecioDia.Text = Global.EstadisticasDucos.My.MySettings.Default.MediaPrecioDia
-        '
-        'lblPrecio23
-        '
-        Me.lblPrecio23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio23.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio23", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio23, "lblPrecio23")
-        Me.lblPrecio23.Name = "lblPrecio23"
-        Me.lblPrecio23.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio23
-        '
-        'lblPrecio00
-        '
-        Me.lblPrecio00.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio00.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio00", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio00, "lblPrecio00")
-        Me.lblPrecio00.Name = "lblPrecio00"
-        Me.lblPrecio00.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio00
-        '
-        'lblPrecio22
-        '
-        Me.lblPrecio22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio22.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio22", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio22, "lblPrecio22")
-        Me.lblPrecio22.Name = "lblPrecio22"
-        Me.lblPrecio22.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio22
-        '
-        'lblPrecio21
-        '
-        Me.lblPrecio21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio21.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio21", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio21, "lblPrecio21")
-        Me.lblPrecio21.Name = "lblPrecio21"
-        Me.lblPrecio21.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio21
-        '
-        'lblPrecio20
-        '
-        Me.lblPrecio20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio20.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio20", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio20, "lblPrecio20")
-        Me.lblPrecio20.Name = "lblPrecio20"
-        Me.lblPrecio20.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio20
-        '
-        'lblPrecio19
-        '
-        Me.lblPrecio19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio19.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio19", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio19, "lblPrecio19")
-        Me.lblPrecio19.Name = "lblPrecio19"
-        Me.lblPrecio19.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio19
-        '
-        'lblPrecio18
-        '
-        Me.lblPrecio18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio18.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio18", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio18, "lblPrecio18")
-        Me.lblPrecio18.Name = "lblPrecio18"
-        Me.lblPrecio18.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio18
-        '
-        'lblPrecio17
-        '
-        Me.lblPrecio17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio17.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio17", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio17, "lblPrecio17")
-        Me.lblPrecio17.Name = "lblPrecio17"
-        Me.lblPrecio17.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio17
-        '
-        'lblPrecio16
-        '
-        Me.lblPrecio16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio16.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio16", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio16, "lblPrecio16")
-        Me.lblPrecio16.Name = "lblPrecio16"
-        Me.lblPrecio16.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio16
-        '
-        'lblPrecio15
-        '
-        Me.lblPrecio15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio15.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio15", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio15, "lblPrecio15")
-        Me.lblPrecio15.Name = "lblPrecio15"
-        Me.lblPrecio15.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio15
-        '
-        'lblPrecio14
-        '
-        Me.lblPrecio14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio14.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio14", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio14, "lblPrecio14")
-        Me.lblPrecio14.Name = "lblPrecio14"
-        Me.lblPrecio14.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio14
-        '
-        'lblPrecio13
-        '
-        Me.lblPrecio13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio13.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio13", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio13, "lblPrecio13")
-        Me.lblPrecio13.Name = "lblPrecio13"
-        Me.lblPrecio13.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio13
-        '
-        'lblPrecio12
-        '
-        Me.lblPrecio12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio12, "lblPrecio12")
-        Me.lblPrecio12.Name = "lblPrecio12"
-        Me.lblPrecio12.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio12
-        '
-        'lblPrecio11
-        '
-        Me.lblPrecio11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio11, "lblPrecio11")
-        Me.lblPrecio11.Name = "lblPrecio11"
-        Me.lblPrecio11.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio11
-        '
-        'lblPrecio10
-        '
-        Me.lblPrecio10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio10, "lblPrecio10")
-        Me.lblPrecio10.Name = "lblPrecio10"
-        Me.lblPrecio10.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio10
-        '
-        'lblPrecio09
-        '
-        Me.lblPrecio09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio09, "lblPrecio09")
-        Me.lblPrecio09.Name = "lblPrecio09"
-        Me.lblPrecio09.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio09
-        '
-        'lblPrecio08
-        '
-        Me.lblPrecio08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio08, "lblPrecio08")
-        Me.lblPrecio08.Name = "lblPrecio08"
-        Me.lblPrecio08.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio08
-        '
-        'lblPrecio07
-        '
-        Me.lblPrecio07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio07, "lblPrecio07")
-        Me.lblPrecio07.Name = "lblPrecio07"
-        Me.lblPrecio07.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio07
-        '
-        'lblPrecio06
-        '
-        Me.lblPrecio06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio06, "lblPrecio06")
-        Me.lblPrecio06.Name = "lblPrecio06"
-        Me.lblPrecio06.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio06
-        '
-        'lblPrecio05
-        '
-        Me.lblPrecio05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio05, "lblPrecio05")
-        Me.lblPrecio05.Name = "lblPrecio05"
-        Me.lblPrecio05.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio05
-        '
-        'lblPrecio04
-        '
-        Me.lblPrecio04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio04, "lblPrecio04")
-        Me.lblPrecio04.Name = "lblPrecio04"
-        Me.lblPrecio04.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio04
-        '
-        'lblPrecio03
-        '
-        Me.lblPrecio03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio03, "lblPrecio03")
-        Me.lblPrecio03.Name = "lblPrecio03"
-        Me.lblPrecio03.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio03
-        '
-        'lblPrecio02
-        '
-        Me.lblPrecio02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio02, "lblPrecio02")
-        Me.lblPrecio02.Name = "lblPrecio02"
-        Me.lblPrecio02.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio02
-        '
-        'lblHoraDiferencia00
-        '
-        Me.lblHoraDiferencia00.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblHoraDiferencia00.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "ValorHora00", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblHoraDiferencia00, "lblHoraDiferencia00")
-        Me.lblHoraDiferencia00.Name = "lblHoraDiferencia00"
-        Me.lblHoraDiferencia00.Text = Global.EstadisticasDucos.My.MySettings.Default.ValorHora00
-        '
-        'lblPrecio01
-        '
-        Me.lblPrecio01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio01, "lblPrecio01")
-        Me.lblPrecio01.Name = "lblPrecio01"
-        Me.lblPrecio01.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio01
-        '
-        'lblBalanceHora10
-        '
-        Me.lblBalanceHora10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora10, "lblBalanceHora10")
-        Me.lblBalanceHora10.Name = "lblBalanceHora10"
-        Me.lblBalanceHora10.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora10
-        '
-        'lblBalanceHora18
-        '
-        Me.lblBalanceHora18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora18.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora18", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora18, "lblBalanceHora18")
-        Me.lblBalanceHora18.Name = "lblBalanceHora18"
-        Me.lblBalanceHora18.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora18
-        '
-        'lblBalanceHora00
-        '
-        Me.lblBalanceHora00.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora00.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora00", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora00, "lblBalanceHora00")
-        Me.lblBalanceHora00.Name = "lblBalanceHora00"
-        Me.lblBalanceHora00.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora00
-        '
-        'lblBalanceHora01
-        '
-        Me.lblBalanceHora01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora01, "lblBalanceHora01")
-        Me.lblBalanceHora01.Name = "lblBalanceHora01"
-        Me.lblBalanceHora01.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora01
-        '
-        'lblBalanceHora23
-        '
-        Me.lblBalanceHora23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora23.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora23", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora23, "lblBalanceHora23")
-        Me.lblBalanceHora23.Name = "lblBalanceHora23"
-        Me.lblBalanceHora23.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora23
-        '
-        'lblBalanceHora22
-        '
-        Me.lblBalanceHora22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora22.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora22", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora22, "lblBalanceHora22")
-        Me.lblBalanceHora22.Name = "lblBalanceHora22"
-        Me.lblBalanceHora22.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora22
-        '
-        'lblBalanceHora02
-        '
-        Me.lblBalanceHora02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora02, "lblBalanceHora02")
-        Me.lblBalanceHora02.Name = "lblBalanceHora02"
-        Me.lblBalanceHora02.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora02
-        '
-        'lblBalanceHora21
-        '
-        Me.lblBalanceHora21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora21.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora21", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora21, "lblBalanceHora21")
-        Me.lblBalanceHora21.Name = "lblBalanceHora21"
-        Me.lblBalanceHora21.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora21
-        '
-        'lblBalanceHora20
-        '
-        Me.lblBalanceHora20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora20.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora20", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora20, "lblBalanceHora20")
-        Me.lblBalanceHora20.Name = "lblBalanceHora20"
-        Me.lblBalanceHora20.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora20
-        '
-        'lblBalanceHora03
-        '
-        Me.lblBalanceHora03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora03, "lblBalanceHora03")
-        Me.lblBalanceHora03.Name = "lblBalanceHora03"
-        Me.lblBalanceHora03.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora03
-        '
-        'lblBalanceHora19
-        '
-        Me.lblBalanceHora19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora19.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora19", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora19, "lblBalanceHora19")
-        Me.lblBalanceHora19.Name = "lblBalanceHora19"
-        Me.lblBalanceHora19.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora19
-        '
-        'lblBalanceHora17
-        '
-        Me.lblBalanceHora17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora17.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora17", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora17, "lblBalanceHora17")
-        Me.lblBalanceHora17.Name = "lblBalanceHora17"
-        Me.lblBalanceHora17.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora17
-        '
-        'lblBalanceHora04
-        '
-        Me.lblBalanceHora04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora04, "lblBalanceHora04")
-        Me.lblBalanceHora04.Name = "lblBalanceHora04"
-        Me.lblBalanceHora04.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora04
-        '
-        'lblBalanceHora16
-        '
-        Me.lblBalanceHora16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora16.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora16", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora16, "lblBalanceHora16")
-        Me.lblBalanceHora16.Name = "lblBalanceHora16"
-        Me.lblBalanceHora16.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora16
-        '
-        'lblBalanceHora15
-        '
-        Me.lblBalanceHora15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora15.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora15", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora15, "lblBalanceHora15")
-        Me.lblBalanceHora15.Name = "lblBalanceHora15"
-        Me.lblBalanceHora15.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora15
-        '
-        'lblBalanceHora05
-        '
-        Me.lblBalanceHora05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora05, "lblBalanceHora05")
-        Me.lblBalanceHora05.Name = "lblBalanceHora05"
-        Me.lblBalanceHora05.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora05
-        '
-        'lblBalanceHora14
-        '
-        Me.lblBalanceHora14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora14.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora14", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora14, "lblBalanceHora14")
-        Me.lblBalanceHora14.Name = "lblBalanceHora14"
-        Me.lblBalanceHora14.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora14
-        '
-        'lblBalanceHora13
-        '
-        Me.lblBalanceHora13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora13.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora13", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora13, "lblBalanceHora13")
-        Me.lblBalanceHora13.Name = "lblBalanceHora13"
-        Me.lblBalanceHora13.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora13
-        '
-        'lblBalanceHora06
-        '
-        Me.lblBalanceHora06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora06, "lblBalanceHora06")
-        Me.lblBalanceHora06.Name = "lblBalanceHora06"
-        Me.lblBalanceHora06.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora06
-        '
-        'lblBalanceHora12
-        '
-        Me.lblBalanceHora12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora12, "lblBalanceHora12")
-        Me.lblBalanceHora12.Name = "lblBalanceHora12"
-        Me.lblBalanceHora12.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora12
-        '
-        'lblBalanceHora11
-        '
-        Me.lblBalanceHora11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora11, "lblBalanceHora11")
-        Me.lblBalanceHora11.Name = "lblBalanceHora11"
-        Me.lblBalanceHora11.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora11
-        '
-        'lblBalanceHora07
-        '
-        Me.lblBalanceHora07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora07, "lblBalanceHora07")
-        Me.lblBalanceHora07.Name = "lblBalanceHora07"
-        Me.lblBalanceHora07.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora07
-        '
-        'lblBalanceHora09
-        '
-        Me.lblBalanceHora09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora09, "lblBalanceHora09")
-        Me.lblBalanceHora09.Name = "lblBalanceHora09"
-        Me.lblBalanceHora09.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora09
-        '
-        'lblBalanceHora08
-        '
-        Me.lblBalanceHora08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora08, "lblBalanceHora08")
-        Me.lblBalanceHora08.Name = "lblBalanceHora08"
-        Me.lblBalanceHora08.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora08
-        '
-        'lblMesBalance01
-        '
-        Me.lblMesBalance01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance01, "lblMesBalance01")
-        Me.lblMesBalance01.Name = "lblMesBalance01"
-        Me.lblMesBalance01.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance01
-        '
-        'lblMesBalance02
-        '
-        Me.lblMesBalance02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance02, "lblMesBalance02")
-        Me.lblMesBalance02.Name = "lblMesBalance02"
-        Me.lblMesBalance02.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance02
-        '
-        'lblMesBalance03
-        '
-        Me.lblMesBalance03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance03, "lblMesBalance03")
-        Me.lblMesBalance03.Name = "lblMesBalance03"
-        Me.lblMesBalance03.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance03
-        '
-        'lblMesBalance04
-        '
-        Me.lblMesBalance04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance04, "lblMesBalance04")
-        Me.lblMesBalance04.Name = "lblMesBalance04"
-        Me.lblMesBalance04.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance04
-        '
-        'lblMesBalance05
-        '
-        Me.lblMesBalance05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance05, "lblMesBalance05")
-        Me.lblMesBalance05.Name = "lblMesBalance05"
-        Me.lblMesBalance05.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance05
-        '
-        'lblMesBalance06
-        '
-        Me.lblMesBalance06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance06, "lblMesBalance06")
-        Me.lblMesBalance06.Name = "lblMesBalance06"
-        Me.lblMesBalance06.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance06
-        '
-        'lblMesBalance07
-        '
-        Me.lblMesBalance07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance07, "lblMesBalance07")
-        Me.lblMesBalance07.Name = "lblMesBalance07"
-        Me.lblMesBalance07.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance07
-        '
-        'lblMesBalance08
-        '
-        Me.lblMesBalance08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance08, "lblMesBalance08")
-        Me.lblMesBalance08.Name = "lblMesBalance08"
-        Me.lblMesBalance08.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance08
-        '
-        'lblMesBalance09
-        '
-        Me.lblMesBalance09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance09, "lblMesBalance09")
-        Me.lblMesBalance09.Name = "lblMesBalance09"
-        Me.lblMesBalance09.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance09
-        '
-        'lblMesBalance10
-        '
-        Me.lblMesBalance10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance10, "lblMesBalance10")
-        Me.lblMesBalance10.Name = "lblMesBalance10"
-        Me.lblMesBalance10.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance10
-        '
-        'lblMesBalance11
-        '
-        Me.lblMesBalance11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance11, "lblMesBalance11")
-        Me.lblMesBalance11.Name = "lblMesBalance11"
-        Me.lblMesBalance11.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance11
-        '
-        'lblMesBalance12
-        '
-        Me.lblMesBalance12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance12, "lblMesBalance12")
-        Me.lblMesBalance12.Name = "lblMesBalance12"
-        Me.lblMesBalance12.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance12
-        '
-        'lblMesBalance13
-        '
-        Me.lblMesBalance13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance13.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance13", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance13, "lblMesBalance13")
-        Me.lblMesBalance13.Name = "lblMesBalance13"
-        Me.lblMesBalance13.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance13
-        '
-        'lblMesBalance14
-        '
-        Me.lblMesBalance14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance14.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance14", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance14, "lblMesBalance14")
-        Me.lblMesBalance14.Name = "lblMesBalance14"
-        Me.lblMesBalance14.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance14
-        '
-        'lblMesBalance15
-        '
-        Me.lblMesBalance15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance15.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance15", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance15, "lblMesBalance15")
-        Me.lblMesBalance15.Name = "lblMesBalance15"
-        Me.lblMesBalance15.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance15
-        '
-        'lblMesBalance16
-        '
-        Me.lblMesBalance16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance16.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance16", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance16, "lblMesBalance16")
-        Me.lblMesBalance16.Name = "lblMesBalance16"
-        Me.lblMesBalance16.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance16
-        '
-        'lblMesBalance17
-        '
-        Me.lblMesBalance17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance17.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance17", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance17, "lblMesBalance17")
-        Me.lblMesBalance17.Name = "lblMesBalance17"
-        Me.lblMesBalance17.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance17
-        '
-        'lblMesBalance18
-        '
-        Me.lblMesBalance18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance18.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance18", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance18, "lblMesBalance18")
-        Me.lblMesBalance18.Name = "lblMesBalance18"
-        Me.lblMesBalance18.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance18
-        '
-        'lblMesBalance19
-        '
-        Me.lblMesBalance19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance19.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance19", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance19, "lblMesBalance19")
-        Me.lblMesBalance19.Name = "lblMesBalance19"
-        Me.lblMesBalance19.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance19
-        '
-        'lblMesBalance20
-        '
-        Me.lblMesBalance20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance20.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance20", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance20, "lblMesBalance20")
-        Me.lblMesBalance20.Name = "lblMesBalance20"
-        Me.lblMesBalance20.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance20
-        '
-        'lblMesBalance21
-        '
-        Me.lblMesBalance21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance21.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance21", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance21, "lblMesBalance21")
-        Me.lblMesBalance21.Name = "lblMesBalance21"
-        Me.lblMesBalance21.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance21
-        '
-        'lblMesBalance22
-        '
-        Me.lblMesBalance22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance22.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance22", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance22, "lblMesBalance22")
-        Me.lblMesBalance22.Name = "lblMesBalance22"
-        Me.lblMesBalance22.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance22
-        '
-        'lblMesBalance23
-        '
-        Me.lblMesBalance23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance23.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance23", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance23, "lblMesBalance23")
-        Me.lblMesBalance23.Name = "lblMesBalance23"
-        Me.lblMesBalance23.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance23
-        '
-        'lblMesBalance24
-        '
-        Me.lblMesBalance24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance24.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance24", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance24, "lblMesBalance24")
-        Me.lblMesBalance24.Name = "lblMesBalance24"
-        Me.lblMesBalance24.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance24
-        '
-        'lblMesBalance25
-        '
-        Me.lblMesBalance25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance25.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance25", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance25, "lblMesBalance25")
-        Me.lblMesBalance25.Name = "lblMesBalance25"
-        Me.lblMesBalance25.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance25
-        '
-        'lblMesBalance26
-        '
-        Me.lblMesBalance26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance26.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance26", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance26, "lblMesBalance26")
-        Me.lblMesBalance26.Name = "lblMesBalance26"
-        Me.lblMesBalance26.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance26
-        '
-        'lblMesBalance27
-        '
-        Me.lblMesBalance27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance27.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance27", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance27, "lblMesBalance27")
-        Me.lblMesBalance27.Name = "lblMesBalance27"
-        Me.lblMesBalance27.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance27
-        '
-        'lblMesBalance28
-        '
-        Me.lblMesBalance28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance28.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance28", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance28, "lblMesBalance28")
-        Me.lblMesBalance28.Name = "lblMesBalance28"
-        Me.lblMesBalance28.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance28
-        '
-        'lblMesBalance29
-        '
-        Me.lblMesBalance29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance29.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance29", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance29, "lblMesBalance29")
-        Me.lblMesBalance29.Name = "lblMesBalance29"
-        Me.lblMesBalance29.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance29
-        '
-        'lblMesBalance30
-        '
-        Me.lblMesBalance30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance30.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance30", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance30, "lblMesBalance30")
-        Me.lblMesBalance30.Name = "lblMesBalance30"
-        Me.lblMesBalance30.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance30
-        '
-        'lblPrecioMes
-        '
-        Me.lblPrecioMes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecioMes.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "PrecioMedioMes", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecioMes, "lblPrecioMes")
-        Me.lblPrecioMes.Name = "lblPrecioMes"
-        Me.lblPrecioMes.Text = Global.EstadisticasDucos.My.MySettings.Default.PrecioMedioMes
-        '
-        'lblMesPrecio31
-        '
-        Me.lblMesPrecio31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio31.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio31", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio31, "lblMesPrecio31")
-        Me.lblMesPrecio31.Name = "lblMesPrecio31"
-        Me.lblMesPrecio31.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio31
-        '
-        'lblMesPrecio30
-        '
-        Me.lblMesPrecio30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio30.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio30", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio30, "lblMesPrecio30")
-        Me.lblMesPrecio30.Name = "lblMesPrecio30"
-        Me.lblMesPrecio30.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio30
-        '
-        'lblMesBalance31
-        '
-        Me.lblMesBalance31.BackColor = System.Drawing.Color.White
-        Me.lblMesBalance31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance31.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance31", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance31, "lblMesBalance31")
-        Me.lblMesBalance31.Name = "lblMesBalance31"
-        Me.lblMesBalance31.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance31
-        '
-        'lblMesPrecio29
-        '
-        Me.lblMesPrecio29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio29.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio29", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio29, "lblMesPrecio29")
-        Me.lblMesPrecio29.Name = "lblMesPrecio29"
-        Me.lblMesPrecio29.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio29
-        '
-        'lblMesPrecio28
-        '
-        Me.lblMesPrecio28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio28.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio28", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio28, "lblMesPrecio28")
-        Me.lblMesPrecio28.Name = "lblMesPrecio28"
-        Me.lblMesPrecio28.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio28
-        '
-        'lblMesPrecio27
-        '
-        Me.lblMesPrecio27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio27.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio27", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio27, "lblMesPrecio27")
-        Me.lblMesPrecio27.Name = "lblMesPrecio27"
-        Me.lblMesPrecio27.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio27
-        '
-        'lblMesPrecio26
-        '
-        Me.lblMesPrecio26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio26.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio26", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio26, "lblMesPrecio26")
-        Me.lblMesPrecio26.Name = "lblMesPrecio26"
-        Me.lblMesPrecio26.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio26
-        '
-        'lblMesPrecio25
-        '
-        Me.lblMesPrecio25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio25.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio25", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio25, "lblMesPrecio25")
-        Me.lblMesPrecio25.Name = "lblMesPrecio25"
-        Me.lblMesPrecio25.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio25
-        '
-        'lblMesPrecio24
-        '
-        Me.lblMesPrecio24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio24.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio24", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio24, "lblMesPrecio24")
-        Me.lblMesPrecio24.Name = "lblMesPrecio24"
-        Me.lblMesPrecio24.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio24
-        '
-        'lblMesPrecio23
-        '
-        Me.lblMesPrecio23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio23.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio23", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio23, "lblMesPrecio23")
-        Me.lblMesPrecio23.Name = "lblMesPrecio23"
-        Me.lblMesPrecio23.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio23
-        '
-        'lblMesPrecio22
-        '
-        Me.lblMesPrecio22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio22.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio22", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio22, "lblMesPrecio22")
-        Me.lblMesPrecio22.Name = "lblMesPrecio22"
-        Me.lblMesPrecio22.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio22
-        '
-        'lblMesPrecio21
-        '
-        Me.lblMesPrecio21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio21.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio21", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio21, "lblMesPrecio21")
-        Me.lblMesPrecio21.Name = "lblMesPrecio21"
-        Me.lblMesPrecio21.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio21
-        '
-        'lblMesPrecio20
-        '
-        Me.lblMesPrecio20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio20.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio20", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio20, "lblMesPrecio20")
-        Me.lblMesPrecio20.Name = "lblMesPrecio20"
-        Me.lblMesPrecio20.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio20
-        '
-        'lblMesPrecio19
-        '
-        Me.lblMesPrecio19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio19.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio19", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio19, "lblMesPrecio19")
-        Me.lblMesPrecio19.Name = "lblMesPrecio19"
-        Me.lblMesPrecio19.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio19
-        '
-        'lblMesPrecio18
-        '
-        Me.lblMesPrecio18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio18.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio18", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio18, "lblMesPrecio18")
-        Me.lblMesPrecio18.Name = "lblMesPrecio18"
-        Me.lblMesPrecio18.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio18
-        '
-        'lblMesPrecio17
-        '
-        Me.lblMesPrecio17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio17.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio17", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio17, "lblMesPrecio17")
-        Me.lblMesPrecio17.Name = "lblMesPrecio17"
-        Me.lblMesPrecio17.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio17
-        '
-        'lblMesPrecio16
-        '
-        Me.lblMesPrecio16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio16.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio16", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio16, "lblMesPrecio16")
-        Me.lblMesPrecio16.Name = "lblMesPrecio16"
-        Me.lblMesPrecio16.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio16
-        '
-        'lblMesPrecio15
-        '
-        Me.lblMesPrecio15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio15.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio15", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio15, "lblMesPrecio15")
-        Me.lblMesPrecio15.Name = "lblMesPrecio15"
-        Me.lblMesPrecio15.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio15
-        '
-        'lblMesPrecio14
-        '
-        Me.lblMesPrecio14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio14.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio14", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio14, "lblMesPrecio14")
-        Me.lblMesPrecio14.Name = "lblMesPrecio14"
-        Me.lblMesPrecio14.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio14
-        '
-        'lblMesPrecio13
-        '
-        Me.lblMesPrecio13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio13.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio13", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio13, "lblMesPrecio13")
-        Me.lblMesPrecio13.Name = "lblMesPrecio13"
-        Me.lblMesPrecio13.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio13
-        '
-        'lblMesPrecio12
-        '
-        Me.lblMesPrecio12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio12, "lblMesPrecio12")
-        Me.lblMesPrecio12.Name = "lblMesPrecio12"
-        Me.lblMesPrecio12.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio12
-        '
-        'lblMesPrecio01
-        '
-        Me.lblMesPrecio01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio01, "lblMesPrecio01")
-        Me.lblMesPrecio01.Name = "lblMesPrecio01"
-        Me.lblMesPrecio01.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio01
-        '
-        'lblMesPrecio11
-        '
-        Me.lblMesPrecio11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio11, "lblMesPrecio11")
-        Me.lblMesPrecio11.Name = "lblMesPrecio11"
-        Me.lblMesPrecio11.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio11
-        '
-        'lblMesPrecio10
-        '
-        Me.lblMesPrecio10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio10, "lblMesPrecio10")
-        Me.lblMesPrecio10.Name = "lblMesPrecio10"
-        Me.lblMesPrecio10.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio10
-        '
-        'lblMesPrecio02
-        '
-        Me.lblMesPrecio02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio02, "lblMesPrecio02")
-        Me.lblMesPrecio02.Name = "lblMesPrecio02"
-        Me.lblMesPrecio02.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio02
-        '
-        'lblMesPrecio09
-        '
-        Me.lblMesPrecio09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio09, "lblMesPrecio09")
-        Me.lblMesPrecio09.Name = "lblMesPrecio09"
-        Me.lblMesPrecio09.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio09
-        '
-        'lblMesPrecio08
-        '
-        Me.lblMesPrecio08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio08, "lblMesPrecio08")
-        Me.lblMesPrecio08.Name = "lblMesPrecio08"
-        Me.lblMesPrecio08.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio08
-        '
-        'lblMesPrecio03
-        '
-        Me.lblMesPrecio03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio03, "lblMesPrecio03")
-        Me.lblMesPrecio03.Name = "lblMesPrecio03"
-        Me.lblMesPrecio03.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio03
-        '
-        'lblMesPrecio07
-        '
-        Me.lblMesPrecio07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio07, "lblMesPrecio07")
-        Me.lblMesPrecio07.Name = "lblMesPrecio07"
-        Me.lblMesPrecio07.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio07
-        '
-        'lblMesPrecio04
-        '
-        Me.lblMesPrecio04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio04, "lblMesPrecio04")
-        Me.lblMesPrecio04.Name = "lblMesPrecio04"
-        Me.lblMesPrecio04.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio04
-        '
-        'lblMesPrecio06
-        '
-        Me.lblMesPrecio06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio06, "lblMesPrecio06")
-        Me.lblMesPrecio06.Name = "lblMesPrecio06"
-        Me.lblMesPrecio06.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio06
-        '
-        'lblMesPrecio05
-        '
-        Me.lblMesPrecio05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio05, "lblMesPrecio05")
-        Me.lblMesPrecio05.Name = "lblMesPrecio05"
-        Me.lblMesPrecio05.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio05
-        '
-        'lblTransasionesAño2022
-        '
-        Me.lblTransasionesAño2022.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransasionesAño2022.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño2022", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransasionesAño2022, "lblTransasionesAño2022")
-        Me.lblTransasionesAño2022.Name = "lblTransasionesAño2022"
-        Me.lblTransasionesAño2022.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño2022
-        '
-        'lblTransasionesAño2023
-        '
-        Me.lblTransasionesAño2023.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransasionesAño2023.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño2023", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransasionesAño2023, "lblTransasionesAño2023")
-        Me.lblTransasionesAño2023.Name = "lblTransasionesAño2023"
-        Me.lblTransasionesAño2023.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño2023
-        '
-        'lblTransasionesAño2021
-        '
-        Me.lblTransasionesAño2021.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransasionesAño2021.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño2021", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransasionesAño2021, "lblTransasionesAño2021")
-        Me.lblTransasionesAño2021.Name = "lblTransasionesAño2021"
-        Me.lblTransasionesAño2021.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño2021
-        '
-        'lblGanadoAño2021
-        '
-        Me.lblGanadoAño2021.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblGanadoAño2021.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoAño2021", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblGanadoAño2021, "lblGanadoAño2021")
-        Me.lblGanadoAño2021.Name = "lblGanadoAño2021"
-        Me.lblGanadoAño2021.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoAño2021
-        '
-        'lblGanadoAño2022
-        '
-        Me.lblGanadoAño2022.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblGanadoAño2022.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoAño2022", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblGanadoAño2022, "lblGanadoAño2022")
-        Me.lblGanadoAño2022.Name = "lblGanadoAño2022"
-        Me.lblGanadoAño2022.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoAño2022
-        '
-        'lblGanadoAño2023
-        '
-        Me.lblGanadoAño2023.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblGanadoAño2023.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoAño2023", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblGanadoAño2023, "lblGanadoAño2023")
-        Me.lblGanadoAño2023.Name = "lblGanadoAño2023"
-        Me.lblGanadoAño2023.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoAño2023
-        '
-        'lblBalanceAño2021
-        '
-        Me.lblBalanceAño2021.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceAño2021.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño2021", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceAño2021, "lblBalanceAño2021")
-        Me.lblBalanceAño2021.Name = "lblBalanceAño2021"
-        Me.lblBalanceAño2021.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño2021
-        '
-        'lblBalanceAño2022
-        '
-        Me.lblBalanceAño2022.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceAño2022.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño2022", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceAño2022, "lblBalanceAño2022")
-        Me.lblBalanceAño2022.Name = "lblBalanceAño2022"
-        Me.lblBalanceAño2022.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño2022
-        '
-        'lblBalanceAño2023
-        '
-        Me.lblBalanceAño2023.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceAño2023.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño2023", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceAño2023, "lblBalanceAño2023")
-        Me.lblBalanceAño2023.Name = "lblBalanceAño2023"
-        Me.lblBalanceAño2023.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño2023
-        '
-        'lblPrecioAño2021
-        '
-        Me.lblPrecioAño2021.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecioAño2021.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño2021", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecioAño2021, "lblPrecioAño2021")
-        Me.lblPrecioAño2021.Name = "lblPrecioAño2021"
-        Me.lblPrecioAño2021.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño2021
-        '
-        'lblPrecioAño2022
-        '
-        Me.lblPrecioAño2022.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecioAño2022.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño2022", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecioAño2022, "lblPrecioAño2022")
-        Me.lblPrecioAño2022.Name = "lblPrecioAño2022"
-        Me.lblPrecioAño2022.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño2022
-        '
-        'lblPrecioMedioTodosAños
-        '
-        Me.lblPrecioMedioTodosAños.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecioMedioTodosAños.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "PrecioMedioTodosAños", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecioMedioTodosAños, "lblPrecioMedioTodosAños")
-        Me.lblPrecioMedioTodosAños.Name = "lblPrecioMedioTodosAños"
-        Me.lblPrecioMedioTodosAños.Text = Global.EstadisticasDucos.My.MySettings.Default.PrecioMedioTodosAños
-        '
-        'lblPrecioAño2023
-        '
-        Me.lblPrecioAño2023.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecioAño2023.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño2023", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecioAño2023, "lblPrecioAño2023")
-        Me.lblPrecioAño2023.Name = "lblPrecioAño2023"
-        Me.lblPrecioAño2023.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño2023
-        '
-        'lblGananciasAño01
-        '
-        Me.lblGananciasAño01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblGananciasAño01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblGananciasAño01, "lblGananciasAño01")
-        Me.lblGananciasAño01.Name = "lblGananciasAño01"
-        Me.lblGananciasAño01.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes01
-        '
-        'lblGananciasAño02
-        '
-        Me.lblGananciasAño02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblGananciasAño02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblGananciasAño02, "lblGananciasAño02")
-        Me.lblGananciasAño02.Name = "lblGananciasAño02"
-        Me.lblGananciasAño02.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes02
-        '
-        'lblGananciasAño07
-        '
-        Me.lblGananciasAño07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblGananciasAño07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblGananciasAño07, "lblGananciasAño07")
-        Me.lblGananciasAño07.Name = "lblGananciasAño07"
-        Me.lblGananciasAño07.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes07
-        '
-        'lblGananciasAño04
-        '
-        Me.lblGananciasAño04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblGananciasAño04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblGananciasAño04, "lblGananciasAño04")
-        Me.lblGananciasAño04.Name = "lblGananciasAño04"
-        Me.lblGananciasAño04.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes04
-        '
-        'lblGananciasAño08
-        '
-        Me.lblGananciasAño08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblGananciasAño08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblGananciasAño08, "lblGananciasAño08")
-        Me.lblGananciasAño08.Name = "lblGananciasAño08"
-        Me.lblGananciasAño08.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes08
-        '
-        'lblGananciasAño10
-        '
-        Me.lblGananciasAño10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblGananciasAño10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblGananciasAño10, "lblGananciasAño10")
-        Me.lblGananciasAño10.Name = "lblGananciasAño10"
-        Me.lblGananciasAño10.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes10
-        '
-        'lblGananciasAño05
-        '
-        Me.lblGananciasAño05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblGananciasAño05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblGananciasAño05, "lblGananciasAño05")
-        Me.lblGananciasAño05.Name = "lblGananciasAño05"
-        Me.lblGananciasAño05.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes05
-        '
-        'lblGananciasAño09
-        '
-        Me.lblGananciasAño09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblGananciasAño09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblGananciasAño09, "lblGananciasAño09")
-        Me.lblGananciasAño09.Name = "lblGananciasAño09"
-        Me.lblGananciasAño09.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes09
-        '
-        'lblGananciasAño06
-        '
-        Me.lblGananciasAño06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblGananciasAño06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblGananciasAño06, "lblGananciasAño06")
-        Me.lblGananciasAño06.Name = "lblGananciasAño06"
-        Me.lblGananciasAño06.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes06
-        '
-        'lblGananciasAño11
-        '
-        Me.lblGananciasAño11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblGananciasAño11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblGananciasAño11, "lblGananciasAño11")
-        Me.lblGananciasAño11.Name = "lblGananciasAño11"
-        Me.lblGananciasAño11.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes11
-        '
-        'lblGananciasAño12
-        '
-        Me.lblGananciasAño12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblGananciasAño12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblGananciasAño12, "lblGananciasAño12")
-        Me.lblGananciasAño12.Name = "lblGananciasAño12"
-        Me.lblGananciasAño12.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes12
-        '
-        'lblGananciasAño03
-        '
-        Me.lblGananciasAño03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblGananciasAño03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblGananciasAño03, "lblGananciasAño03")
-        Me.lblGananciasAño03.Name = "lblGananciasAño03"
-        Me.lblGananciasAño03.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes03
-        '
-        'lblBalanceAño01
-        '
-        Me.lblBalanceAño01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceAño01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceAño01, "lblBalanceAño01")
-        Me.lblBalanceAño01.Name = "lblBalanceAño01"
-        Me.lblBalanceAño01.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño01
-        '
-        'lblBalanceAño02
-        '
-        Me.lblBalanceAño02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceAño02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceAño02, "lblBalanceAño02")
-        Me.lblBalanceAño02.Name = "lblBalanceAño02"
-        Me.lblBalanceAño02.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño02
-        '
-        'lblBalanceAño03
-        '
-        Me.lblBalanceAño03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceAño03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceAño03, "lblBalanceAño03")
-        Me.lblBalanceAño03.Name = "lblBalanceAño03"
-        Me.lblBalanceAño03.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño03
-        '
-        'lblBalanceAño04
-        '
-        Me.lblBalanceAño04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceAño04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceAño04, "lblBalanceAño04")
-        Me.lblBalanceAño04.Name = "lblBalanceAño04"
-        Me.lblBalanceAño04.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño04
-        '
-        'lblBalanceAño05
-        '
-        Me.lblBalanceAño05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceAño05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceAño05, "lblBalanceAño05")
-        Me.lblBalanceAño05.Name = "lblBalanceAño05"
-        Me.lblBalanceAño05.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño05
-        '
-        'lblBalanceAño06
-        '
-        Me.lblBalanceAño06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceAño06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceAño06, "lblBalanceAño06")
-        Me.lblBalanceAño06.Name = "lblBalanceAño06"
-        Me.lblBalanceAño06.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño06
-        '
-        'lblBalanceAño07
-        '
-        Me.lblBalanceAño07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceAño07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceAño07, "lblBalanceAño07")
-        Me.lblBalanceAño07.Name = "lblBalanceAño07"
-        Me.lblBalanceAño07.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño07
-        '
-        'lblBalanceAño08
-        '
-        Me.lblBalanceAño08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceAño08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceAño08, "lblBalanceAño08")
-        Me.lblBalanceAño08.Name = "lblBalanceAño08"
-        Me.lblBalanceAño08.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño08
-        '
-        'lblBalanceAño09
-        '
-        Me.lblBalanceAño09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceAño09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceAño09, "lblBalanceAño09")
-        Me.lblBalanceAño09.Name = "lblBalanceAño09"
-        Me.lblBalanceAño09.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño09
-        '
-        'lblBalanceAño10
-        '
-        Me.lblBalanceAño10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceAño10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceAño10, "lblBalanceAño10")
-        Me.lblBalanceAño10.Name = "lblBalanceAño10"
-        Me.lblBalanceAño10.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño10
-        '
-        'lblBalanceAño11
-        '
-        Me.lblBalanceAño11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceAño11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceAño11, "lblBalanceAño11")
-        Me.lblBalanceAño11.Name = "lblBalanceAño11"
-        Me.lblBalanceAño11.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño11
-        '
-        'lblBalanceAño12
-        '
-        Me.lblBalanceAño12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceAño12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceAño12, "lblBalanceAño12")
-        Me.lblBalanceAño12.Name = "lblBalanceAño12"
-        Me.lblBalanceAño12.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño12
-        '
-        'lblPrecioAnual
-        '
-        Me.lblPrecioAnual.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecioAnual.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "PrecioMedioAnual", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecioAnual, "lblPrecioAnual")
-        Me.lblPrecioAnual.Name = "lblPrecioAnual"
-        Me.lblPrecioAnual.Text = Global.EstadisticasDucos.My.MySettings.Default.PrecioMedioAnual
-        '
-        'lblPrecioAño12
-        '
-        Me.lblPrecioAño12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecioAño12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecioAño12, "lblPrecioAño12")
-        Me.lblPrecioAño12.Name = "lblPrecioAño12"
-        Me.lblPrecioAño12.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño12
-        '
-        'lblPrecioAño01
-        '
-        Me.lblPrecioAño01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecioAño01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecioAño01, "lblPrecioAño01")
-        Me.lblPrecioAño01.Name = "lblPrecioAño01"
-        Me.lblPrecioAño01.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño01
-        '
-        'lblPrecioAño11
-        '
-        Me.lblPrecioAño11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecioAño11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecioAño11, "lblPrecioAño11")
-        Me.lblPrecioAño11.Name = "lblPrecioAño11"
-        Me.lblPrecioAño11.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño11
-        '
-        'lblPrecioAño10
-        '
-        Me.lblPrecioAño10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecioAño10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecioAño10, "lblPrecioAño10")
-        Me.lblPrecioAño10.Name = "lblPrecioAño10"
-        Me.lblPrecioAño10.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño10
-        '
-        'lblPrecioAño02
-        '
-        Me.lblPrecioAño02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecioAño02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecioAño02, "lblPrecioAño02")
-        Me.lblPrecioAño02.Name = "lblPrecioAño02"
-        Me.lblPrecioAño02.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño02
-        '
-        'lblPrecioAño09
-        '
-        Me.lblPrecioAño09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecioAño09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecioAño09, "lblPrecioAño09")
-        Me.lblPrecioAño09.Name = "lblPrecioAño09"
-        Me.lblPrecioAño09.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño09
-        '
-        'lblPrecioAño08
-        '
-        Me.lblPrecioAño08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecioAño08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecioAño08, "lblPrecioAño08")
-        Me.lblPrecioAño08.Name = "lblPrecioAño08"
-        Me.lblPrecioAño08.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño08
-        '
-        'lblPrecioAño03
-        '
-        Me.lblPrecioAño03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecioAño03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecioAño03, "lblPrecioAño03")
-        Me.lblPrecioAño03.Name = "lblPrecioAño03"
-        Me.lblPrecioAño03.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño03
-        '
-        'lblPrecioAño07
-        '
-        Me.lblPrecioAño07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecioAño07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecioAño07, "lblPrecioAño07")
-        Me.lblPrecioAño07.Name = "lblPrecioAño07"
-        Me.lblPrecioAño07.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño07
-        '
-        'lblPrecioAño04
-        '
-        Me.lblPrecioAño04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecioAño04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecioAño04, "lblPrecioAño04")
-        Me.lblPrecioAño04.Name = "lblPrecioAño04"
-        Me.lblPrecioAño04.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño04
-        '
-        'lblPrecioAño06
-        '
-        Me.lblPrecioAño06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecioAño06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecioAño06, "lblPrecioAño06")
-        Me.lblPrecioAño06.Name = "lblPrecioAño06"
-        Me.lblPrecioAño06.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño06
-        '
-        'lblPrecioAño05
-        '
-        Me.lblPrecioAño05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecioAño05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecioAño05, "lblPrecioAño05")
-        Me.lblPrecioAño05.Name = "lblPrecioAño05"
-        Me.lblPrecioAño05.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño05
-        '
-        'lblTransasionesAño02
-        '
-        Me.lblTransasionesAño02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransasionesAño02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransasionesAño02, "lblTransasionesAño02")
-        Me.lblTransasionesAño02.Name = "lblTransasionesAño02"
-        Me.lblTransasionesAño02.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño02
-        '
-        'lblTransasionesAño03
-        '
-        Me.lblTransasionesAño03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransasionesAño03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransasionesAño03, "lblTransasionesAño03")
-        Me.lblTransasionesAño03.Name = "lblTransasionesAño03"
-        Me.lblTransasionesAño03.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño03
-        '
-        'lblTransasionesAño12
-        '
-        Me.lblTransasionesAño12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransasionesAño12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransasionesAño12, "lblTransasionesAño12")
-        Me.lblTransasionesAño12.Name = "lblTransasionesAño12"
-        Me.lblTransasionesAño12.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño12
-        '
-        'lblTransasionesAño11
-        '
-        Me.lblTransasionesAño11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransasionesAño11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransasionesAño11, "lblTransasionesAño11")
-        Me.lblTransasionesAño11.Name = "lblTransasionesAño11"
-        Me.lblTransasionesAño11.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño11
-        '
-        'lblTransasionesAño06
-        '
-        Me.lblTransasionesAño06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransasionesAño06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransasionesAño06, "lblTransasionesAño06")
-        Me.lblTransasionesAño06.Name = "lblTransasionesAño06"
-        Me.lblTransasionesAño06.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño06
-        '
-        'lblTransasionesAño09
-        '
-        Me.lblTransasionesAño09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransasionesAño09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransasionesAño09, "lblTransasionesAño09")
-        Me.lblTransasionesAño09.Name = "lblTransasionesAño09"
-        Me.lblTransasionesAño09.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño09
-        '
-        'lblTransasionesAño05
-        '
-        Me.lblTransasionesAño05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransasionesAño05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransasionesAño05, "lblTransasionesAño05")
-        Me.lblTransasionesAño05.Name = "lblTransasionesAño05"
-        Me.lblTransasionesAño05.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño05
-        '
-        'lblTransasionesAño10
-        '
-        Me.lblTransasionesAño10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransasionesAño10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransasionesAño10, "lblTransasionesAño10")
-        Me.lblTransasionesAño10.Name = "lblTransasionesAño10"
-        Me.lblTransasionesAño10.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño10
-        '
-        'lblTransasionesAño08
-        '
-        Me.lblTransasionesAño08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransasionesAño08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransasionesAño08, "lblTransasionesAño08")
-        Me.lblTransasionesAño08.Name = "lblTransasionesAño08"
-        Me.lblTransasionesAño08.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño08
-        '
-        'lblTransasionesAño04
-        '
-        Me.lblTransasionesAño04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransasionesAño04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransasionesAño04, "lblTransasionesAño04")
-        Me.lblTransasionesAño04.Name = "lblTransasionesAño04"
-        Me.lblTransasionesAño04.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño04
-        '
-        'lblTransasionesAño07
-        '
-        Me.lblTransasionesAño07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransasionesAño07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransasionesAño07, "lblTransasionesAño07")
-        Me.lblTransasionesAño07.Name = "lblTransasionesAño07"
-        Me.lblTransasionesAño07.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño07
-        '
-        'lblTransasionesAño01
-        '
-        Me.lblTransasionesAño01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransasionesAño01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransasionesAño01, "lblTransasionesAño01")
-        Me.lblTransasionesAño01.Name = "lblTransasionesAño01"
-        Me.lblTransasionesAño01.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño01
-        '
-        'txtFanAmarillo2
-        '
-        Me.txtFanAmarillo2.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.EstadisticasDucos.My.MySettings.Default, "FanAmarillo", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.txtFanAmarillo2.ForeColor = System.Drawing.Color.DarkKhaki
-        resources.ApplyResources(Me.txtFanAmarillo2, "txtFanAmarillo2")
-        Me.txtFanAmarillo2.Name = "txtFanAmarillo2"
-        Me.txtFanAmarillo2.Value = Global.EstadisticasDucos.My.MySettings.Default.FanAmarillo
-        '
-        'txtFanVerde2
-        '
-        Me.txtFanVerde2.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.EstadisticasDucos.My.MySettings.Default, "FanVerde", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.txtFanVerde2.ForeColor = System.Drawing.Color.Green
-        resources.ApplyResources(Me.txtFanVerde2, "txtFanVerde2")
-        Me.txtFanVerde2.Name = "txtFanVerde2"
-        Me.txtFanVerde2.Value = Global.EstadisticasDucos.My.MySettings.Default.FanVerde
-        '
-        'txtGradosFan2
-        '
-        Me.txtGradosFan2.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.EstadisticasDucos.My.MySettings.Default, "FanRojo", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.txtGradosFan2.ForeColor = System.Drawing.Color.Red
-        resources.ApplyResources(Me.txtGradosFan2, "txtGradosFan2")
-        Me.txtGradosFan2.Name = "txtGradosFan2"
-        Me.txtGradosFan2.Value = Global.EstadisticasDucos.My.MySettings.Default.FanRojo
-        '
-        'cmbLenguaje1
-        '
-        Me.cmbLenguaje1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Lenguaje", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.cmbLenguaje1.FormattingEnabled = True
-        Me.cmbLenguaje1.Items.AddRange(New Object() {resources.GetString("cmbLenguaje1.Items"), resources.GetString("cmbLenguaje1.Items1")})
-        resources.ApplyResources(Me.cmbLenguaje1, "cmbLenguaje1")
-        Me.cmbLenguaje1.Name = "cmbLenguaje1"
-        Me.cmbLenguaje1.Text = Global.EstadisticasDucos.My.MySettings.Default.Lenguaje
-        '
-        'chkActivarMensajes2
-        '
-        resources.ApplyResources(Me.chkActivarMensajes2, "chkActivarMensajes2")
-        Me.chkActivarMensajes2.Checked = Global.EstadisticasDucos.My.MySettings.Default.MensajesError
-        Me.chkActivarMensajes2.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkActivarMensajes2.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.EstadisticasDucos.My.MySettings.Default, "MensajesError", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.chkActivarMensajes2.Name = "chkActivarMensajes2"
-        Me.chkActivarMensajes2.UseVisualStyleBackColor = True
-        '
-        'lblUser
-        '
-        Me.lblUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblUser.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "User", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblUser, "lblUser")
-        Me.lblUser.Name = "lblUser"
-        Me.lblUser.Text = Global.EstadisticasDucos.My.MySettings.Default.User
+        'txtGradosFan
+        '
+        Me.txtGradosFan.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.EstadisticasDucos.My.MySettings.Default, "FanRojo", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.txtGradosFan.ForeColor = System.Drawing.Color.Red
+        resources.ApplyResources(Me.txtGradosFan, "txtGradosFan")
+        Me.txtGradosFan.Name = "txtGradosFan"
+        Me.txtGradosFan.Value = Global.EstadisticasDucos.My.MySettings.Default.FanRojo
         '
         'txtFanAmarillo
         '
@@ -5191,6 +5246,13 @@ Partial Class Form1
         resources.ApplyResources(Me.txtFanAmarillo, "txtFanAmarillo")
         Me.txtFanAmarillo.Name = "txtFanAmarillo"
         Me.txtFanAmarillo.Value = Global.EstadisticasDucos.My.MySettings.Default.FanAmarillo
+        '
+        'lblReinicioApp
+        '
+        resources.ApplyResources(Me.lblReinicioApp, "lblReinicioApp")
+        Me.lblReinicioApp.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Reinicios", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lblReinicioApp.Name = "lblReinicioApp"
+        Me.lblReinicioApp.Text = Global.EstadisticasDucos.My.MySettings.Default.Reinicios
         '
         'txtUser
         '
@@ -5209,38 +5271,13 @@ Partial Class Form1
         Me.txtFanVerde.Name = "txtFanVerde"
         Me.txtFanVerde.Value = Global.EstadisticasDucos.My.MySettings.Default.FanVerde
         '
-        'lblReinicioApp
+        'gbGananciasDolar
         '
-        resources.ApplyResources(Me.lblReinicioApp, "lblReinicioApp")
-        Me.lblReinicioApp.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Reinicios", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.lblReinicioApp.Name = "lblReinicioApp"
-        Me.lblReinicioApp.Text = Global.EstadisticasDucos.My.MySettings.Default.Reinicios
-        '
-        'txtGradosFan
-        '
-        Me.txtGradosFan.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.EstadisticasDucos.My.MySettings.Default, "FanRojo", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.txtGradosFan.ForeColor = System.Drawing.Color.Red
-        resources.ApplyResources(Me.txtGradosFan, "txtGradosFan")
-        Me.txtGradosFan.Name = "txtGradosFan"
-        Me.txtGradosFan.Value = Global.EstadisticasDucos.My.MySettings.Default.FanRojo
-        '
-        'cmbDivisa1
-        '
-        Me.cmbDivisa1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Moneda", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.cmbDivisa1.FormattingEnabled = True
-        Me.cmbDivisa1.Items.AddRange(New Object() {resources.GetString("cmbDivisa1.Items"), resources.GetString("cmbDivisa1.Items1")})
-        resources.ApplyResources(Me.cmbDivisa1, "cmbDivisa1")
-        Me.cmbDivisa1.Name = "cmbDivisa1"
-        Me.cmbDivisa1.Text = Global.EstadisticasDucos.My.MySettings.Default.Moneda
-        '
-        'cmbDivisa
-        '
-        Me.cmbDivisa.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Moneda", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.cmbDivisa.FormattingEnabled = True
-        Me.cmbDivisa.Items.AddRange(New Object() {resources.GetString("cmbDivisa.Items"), resources.GetString("cmbDivisa.Items1")})
-        resources.ApplyResources(Me.cmbDivisa, "cmbDivisa")
-        Me.cmbDivisa.Name = "cmbDivisa"
-        Me.cmbDivisa.Text = Global.EstadisticasDucos.My.MySettings.Default.Moneda
+        Me.gbGananciasDolar.Controls.Add(Me.Label38)
+        Me.gbGananciasDolar.Controls.Add(Me.lblGanadoDolar)
+        resources.ApplyResources(Me.gbGananciasDolar, "gbGananciasDolar")
+        Me.gbGananciasDolar.Name = "gbGananciasDolar"
+        Me.gbGananciasDolar.TabStop = False
         '
         'Form1
         '
@@ -5307,6 +5344,8 @@ Partial Class Form1
         Me.gbESP8266.PerformLayout()
         Me.gbCPU.ResumeLayout(False)
         Me.gbCPU.PerformLayout()
+        Me.gbAllMineros.ResumeLayout(False)
+        Me.gbAllMineros.PerformLayout()
         Me.gbArduinos.ResumeLayout(False)
         Me.gbArduinos.PerformLayout()
         Me.gbMineross.ResumeLayout(False)
@@ -5316,6 +5355,9 @@ Partial Class Form1
         Me.TabPage6.PerformLayout()
         Me.TabPage7.ResumeLayout(False)
         Me.gbTemperatura.ResumeLayout(False)
+        CType(Me.txtFanAmarillo2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtFanVerde2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtGradosFan2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.gbOpciones.ResumeLayout(False)
         Me.gbOpciones.PerformLayout()
         Me.gbUser.ResumeLayout(False)
@@ -5333,14 +5375,11 @@ Partial Class Form1
         CType(Me.picFanAni, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelOculto.ResumeLayout(False)
         Me.PanelOculto.PerformLayout()
-        Me.gbGananciasDolar.ResumeLayout(False)
-        Me.gbGananciasDolar.PerformLayout()
-        CType(Me.txtFanAmarillo2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txtFanVerde2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txtGradosFan2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtGradosFan, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtFanAmarillo, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtFanVerde, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txtGradosFan, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.gbGananciasDolar.ResumeLayout(False)
+        Me.gbGananciasDolar.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -5926,4 +5965,9 @@ Partial Class Form1
     Friend WithEvents Label1 As Label
     Friend WithEvents cmbDivisa1 As ComboBox
     Friend WithEvents cmbDivisa As ComboBox
+    Friend WithEvents gbAllMineros As GroupBox
+    Friend WithEvents Label28 As Label
+    Friend WithEvents Label30 As Label
+    Friend WithEvents txtTotalHases As TextBox
+    Friend WithEvents txtTotalMineros As TextBox
 End Class

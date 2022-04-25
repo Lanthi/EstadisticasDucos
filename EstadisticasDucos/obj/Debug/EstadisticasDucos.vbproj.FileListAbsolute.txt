@@ -44,8 +44,6 @@ C:\Users\Clini\Documents\GitHub\EstadisticasDucos\EstadisticasDucos\obj\Debug\Es
 C:\Users\Clini\Documents\GitHub\EstadisticasDucos\EstadisticasDucos\obj\Debug\EstadisticasDucos.pdb
 C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\bin\Debug\duco.ico
 C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\bin\Debug\EstadisticasDucos.exe.config
-C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\bin\Debug\EstadisticasDucos.exe.manifest
-C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\bin\Debug\EstadisticasDucos.application
 C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\bin\Debug\EstadisticasDucos.exe
 C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\bin\Debug\EstadisticasDucos.pdb
 C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\bin\Debug\EstadisticasDucos.xml
@@ -53,11 +51,13 @@ C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\obj\Debug\Estadi
 C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\obj\Debug\EstadisticasDucos.Resources.resources
 C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\obj\Debug\EstadisticasDucos.vbproj.GenerateResource.cache
 C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\obj\Debug\EstadisticasDucos.vbproj.CoreCompileInputs.cache
-C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\obj\Debug\EstadisticasDucos.exe.manifest
-C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\obj\Debug\EstadisticasDucos.application
 C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\obj\Debug\EstadisticasDucos.exe
 C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\obj\Debug\EstadisticasDucos.xml
 C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\obj\Debug\EstadisticasDucos.pdb
 C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\obj\Debug\EstadisticasDucos.vbproj.AssemblyReference.cache
 C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\obj\Debug\EstadisticasDucos.vbproj.SuggestedBindingRedirects.cache
+C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\bin\Debug\EstadisticasDucos.exe.manifest
+C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\bin\Debug\EstadisticasDucos.application
 C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\obj\Debug\EstadisticasDucos.TrustInfo.xml
+C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\obj\Debug\EstadisticasDucos.exe.manifest
+C:\Users\lanth\Source\Repos\EstadisticasDucos\EstadisticasDucos\obj\Debug\EstadisticasDucos.application

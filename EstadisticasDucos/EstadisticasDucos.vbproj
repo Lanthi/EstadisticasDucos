@@ -29,10 +29,10 @@
     <TargetCulture>es</TargetCulture>
     <ProductName>Duco Estadisticas</ProductName>
     <PublisherName>Lanthi</PublisherName>
-    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
     <AutorunEnabled>true</AutorunEnabled>
-    <ApplicationRevision>327</ApplicationRevision>
+    <ApplicationRevision>353</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>

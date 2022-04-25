@@ -21,8 +21,8 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 
 CREATE TABLE `horas` (
   `ID` int(11) NOT NULL auto_increment,
+  `Fecha` varchar(25) NOT NULL default '0',
   `Hora00` varchar(25) NOT NULL default '0',
-  `Precio00` varchar(10) NOT NULL default '0',
   `Hora01` varchar(25) NOT NULL default '0',
   `Hora02` varchar(25) NOT NULL default '0',
   `Hora03` varchar(25) NOT NULL default '0',
@@ -46,6 +46,7 @@ CREATE TABLE `horas` (
   `Hora21` varchar(25) NOT NULL default '0',
   `Hora22` varchar(25) NOT NULL default '0',
   `Hora23` varchar(25) NOT NULL default '0',
+  `Precio00` varchar(10) NOT NULL default '0',
   `Precio01` varchar(25) NOT NULL default '0',
   `Precio02` varchar(25) NOT NULL default '0',
   `Precio03` varchar(10) NOT NULL default '0',
@@ -133,6 +134,7 @@ CREATE TABLE `horas` (
 
 CREATE TABLE `mes` (
   `ID` int(25) NOT NULL auto_increment,
+  `Fecha` varchar(25) NOT NULL default '0',
   `Dia01` varchar(25) NOT NULL default '0',
   `Dia02` varchar(25) NOT NULL default '0',
   `Dia03` varchar(25) NOT NULL default '0',

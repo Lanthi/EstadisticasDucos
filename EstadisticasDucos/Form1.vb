@@ -1816,51 +1816,51 @@ Public Class Form1
             Select Case Month(Now)
                 Case 1
                     If lblBalanceAño01.Text = 0 Then lblBalanceAño01.Text = FormatDuco(txtbalance.Text, 98)
-                    lblPrecioAño01.Text = CDec(lblPrecioMes.Text)
+                    lblPrecioAño01.Text = FormatDuco(CDec(lblPrecioMes.Text), 97)
                     lblTransasionesAño01.Text = Format(TransacionAño(1), "#0.0#") & "(" & TransacionPorAño(1) & ")"
                 Case 2
                     If lblBalanceAño02.Text = 0 Then lblBalanceAño02.Text = FormatDuco(txtbalance.Text, 98)
-                    lblPrecioAño02.Text = CDec(lblPrecioMes.Text)
+                    lblPrecioAño02.Text = FormatDuco(CDec(lblPrecioMes.Text), 97)
                     lblTransasionesAño02.Text = Format(TransacionAño(2), "#0.0#") & "(" & TransacionPorAño(2) & ")"
                 Case 3
                     If lblBalanceAño03.Text = 0 Then lblBalanceAño03.Text = FormatDuco(txtbalance.Text, 98)
-                    lblPrecioAño03.Text = CDec(lblPrecioMes.Text)
+                    lblPrecioAño03.Text = FormatDuco(CDec(lblPrecioMes.Text), 97)
                     lblTransasionesAño03.Text = Format(TransacionAño(3), "#0.0#") & "(" & TransacionPorAño(3) & ")"
                 Case 4
                     If lblBalanceAño04.Text = 0 Then lblBalanceAño04.Text = FormatDuco(txtbalance.Text, 98)
-                    lblPrecioAño04.Text = CDec(lblPrecioMes.Text)
+                    lblPrecioAño04.Text = FormatDuco(CDec(lblPrecioMes.Text), 97)
                     lblTransasionesAño04.Text = Format(TransacionAño(4), "#0.0#") & "(" & TransacionPorAño(4) & ")"
                 Case 5
                     If lblBalanceAño05.Text = 0 Then lblBalanceAño05.Text = FormatDuco(txtbalance.Text, 98)
-                    lblPrecioAño05.Text = CDec(lblPrecioMes.Text)
+                    lblPrecioAño05.Text = FormatDuco(CDec(lblPrecioMes.Text), 97)
                     lblTransasionesAño05.Text = Format(TransacionAño(5), "#0.0#") & "(" & TransacionPorAño(5) & ")"
                 Case 6
                     If lblBalanceAño06.Text = 0 Then lblBalanceAño06.Text = FormatDuco(txtbalance.Text, 98)
-                    lblPrecioAño06.Text = CDec(lblPrecioMes.Text)
+                    lblPrecioAño06.Text = FormatDuco(CDec(lblPrecioMes.Text), 97)
                     lblTransasionesAño06.Text = Format(TransacionAño(6), "#0.0#") & "(" & TransacionPorAño(6) & ")"
                 Case 7
                     If lblBalanceAño07.Text = 0 Then lblBalanceAño07.Text = FormatDuco(txtbalance.Text, 98)
-                    lblPrecioAño07.Text = CDec(lblPrecioMes.Text)
+                    lblPrecioAño07.Text = FormatDuco(CDec(lblPrecioMes.Text), 97)
                     lblTransasionesAño07.Text = Format(TransacionAño(7), "#0.0#") & "(" & TransacionPorAño(7) & ")"
                 Case 8
                     If lblBalanceAño08.Text = 0 Then lblBalanceAño08.Text = FormatDuco(txtbalance.Text, 98)
-                    lblPrecioAño08.Text = CDec(lblPrecioMes.Text)
+                    lblPrecioAño08.Text = FormatDuco(CDec(lblPrecioMes.Text), 97)
                     lblTransasionesAño08.Text = Format(TransacionAño(8), "#0.0#") & "(" & TransacionPorAño(8) & ")"
                 Case 9
                     If lblBalanceAño09.Text = 0 Then lblBalanceAño09.Text = FormatDuco(txtbalance.Text, 98)
-                    lblPrecioAño09.Text = CDec(lblPrecioMes.Text)
+                    lblPrecioAño09.Text = FormatDuco(CDec(lblPrecioMes.Text), 97)
                     lblTransasionesAño09.Text = Format(TransacionAño(9), "#0.0#") & "(" & TransacionPorAño(9) & ")"
                 Case 10
                     If lblBalanceAño10.Text = 0 Then lblBalanceAño10.Text = FormatDuco(txtbalance.Text, 98)
-                    lblPrecioAño10.Text = CDec(lblPrecioMes.Text)
+                    lblPrecioAño10.Text = FormatDuco(CDec(lblPrecioMes.Text), 97)
                     lblTransasionesAño10.Text = Format(TransacionAño(10), "#0.0#") & "(" & TransacionPorAño(10) & ")"
                 Case 11
                     If lblBalanceAño11.Text = 0 Then lblBalanceAño11.Text = FormatDuco(txtbalance.Text, 98)
-                    lblPrecioAño11.Text = CDec(lblPrecioMes.Text)
+                    lblPrecioAño11.Text = FormatDuco(CDec(lblPrecioMes.Text), 97)
                     lblTransasionesAño11.Text = Format(TransacionAño(11), "#0.0#") & "(" & TransacionPorAño(11) & ")"
                 Case 12
                     If lblBalanceAño12.Text = 0 Then lblBalanceAño12.Text = FormatDuco(txtbalance.Text, 98)
-                    lblPrecioAño12.Text = CDec(lblPrecioMes.Text)
+                    lblPrecioAño12.Text = FormatDuco(CDec(lblPrecioMes.Text), 97)
                     lblTransasionesAño12.Text = Format(TransacionAño(12), "#0.0#") & "(" & TransacionPorAño(12) & ")"
             End Select
             lblTransasionesAño01.Text = TransasionesAnuales("01")
@@ -2154,8 +2154,8 @@ Public Class Form1
             gbBalance.Text = "Balance:"
             gbPrecioDuco.Text = "Precio del Duco:"
             gbPrecioDolar.Text = "Precio del Dolar:"
-            gbGananciasEuro.Text = "Ganancias Euros:"
-            gbGananciasDolar.Text = "Ganancias Dolar:"
+            gbGananciasEuro.Text = "Ganancias en Euros:"
+            gbGananciasDolar.Text = "Ganancias en Dolar:"
             gbEstimado.Text = "Ganancias Estimadas:"
             gbMineros.Text = "Mineros:"
             gbStaking.Text = "Apuesta:"
@@ -2233,15 +2233,15 @@ Public Class Form1
             TabPage7.Text = "Opciones"
             gbServer.Text = "Estadisticas del Servidor:"
             gbAllMineros.Text = "Todos:"
-            lblHumedad.Left = 78
+            lblHumedad.Left = 79
             picFan.Left = 187
             picFanAni.Left = 187
         Else
             gbBalance.Text = "Balance:"
             gbPrecioDuco.Text = "Duco Price:"
             gbPrecioDolar.Text = "USD Equals:"
-            gbGananciasEuro.Text = "Gains Euro:"
-            gbGananciasDolar.Text = "Gains Dolar:"
+            gbGananciasEuro.Text = "Gains in Euro:"
+            gbGananciasDolar.Text = "Gains in Dolar:"
             gbEstimado.Text = "Earning about:"
             gbMineros.Text = "Miners:"
             gbStaking.Text = "Staking:"

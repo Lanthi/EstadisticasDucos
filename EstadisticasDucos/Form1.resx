@@ -2053,10 +2053,10 @@
     <value>0</value>
   </data>
   <data name="Chart1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-23, 203</value>
+    <value>-33, 203</value>
   </data>
   <data name="Chart1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>562, 190</value>
+    <value>572, 190</value>
   </data>
   <data name="Chart1.TabIndex" type="System.Int32, mscorlib">
     <value>135</value>
@@ -9022,10 +9022,10 @@
     <value>3</value>
   </data>
   <data name="Chart3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-19, 388</value>
+    <value>-5, 388</value>
   </data>
   <data name="Chart3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>558, 153</value>
+    <value>544, 153</value>
   </data>
   <data name="Chart3.TabIndex" type="System.Int32, mscorlib">
     <value>147</value>
@@ -9070,10 +9070,10 @@
     <value>Left</value>
   </data>
   <data name="Chart6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-478, -35</value>
+    <value>-478, 5</value>
   </data>
   <data name="Chart6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10000, 141</value>
+    <value>10000, 120</value>
   </data>
   <data name="Chart6.TabIndex" type="System.Int32, mscorlib">
     <value>151</value>
@@ -12352,10 +12352,10 @@
     <value>True</value>
   </data>
   <data name="Panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 540</value>
+    <value>0, 537</value>
   </data>
   <data name="Panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1083, 142</value>
+    <value>1083, 145</value>
   </data>
   <data name="Panel1.TabIndex" type="System.Int32, mscorlib">
     <value>152</value>
@@ -12373,10 +12373,10 @@
     <value>0</value>
   </data>
   <data name="Chart7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>499, 389</value>
+    <value>531, 389</value>
   </data>
   <data name="Chart7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>613, 142</value>
+    <value>581, 142</value>
   </data>
   <data name="Chart7.TabIndex" type="System.Int32, mscorlib">
     <value>149</value>
@@ -15836,7 +15836,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAACu
-        JQAAAk1TRnQBSQFMAgEBCQEAAfgBBQH4AQUBEAEAARABAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFA
+        JQAAAk1TRnQBSQFMAgEBCQEAARABBgEQAQYBEAEAARABAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFA
         AwABMAMAAQEBAAEgBgABMBIAA4AB/jz/wAADgAH+AYACAAH/AYACAAH/AwAB/wMAAf8DAAH/AgABvgH/
         AYACAAH/AYACAAH/AwAB/wIAAZgB/wGAAgAB/wGAAgAB/wGAAgAB/wGAAgAB/wGAAgAB/8AAA4AB/gGA
         AgAB/wGAAgAB/wGAAgAB/wGAAgAB/wGAAgAB/wGAAgAB/wGAAgAB/wGAAgAB/wGAAgAB/wGAAgAB/wGA
@@ -15911,13 +15911,13 @@
         Ae4CAAH/AeoCAAH/Ae4CAAH/Ae4CAAH/Ae4CAAH/Ae4CAAH/Ae4CAAH/Ae4CAAH/Ae4CAAH/AzMBUAgA
         AcYBAAHuLf8B3wEAAc0B/wgAAwYBBwIAAv8CAAL/AgAB/hX/AgAB3QH/AgAB/QH/AgAC/wIAAv8BAAGD
         Av8EAAL/Af0B/wGAAZ4B5AH/AaQBjgGbAf8DqwH/A7wB/wO0Af8DtAH/A7QB/wO0Af8DtAH/A7YB/wGo
-        AgAB/wMAAf8DAAH/AYsCAAP/Af0B/wQAA0ABcAIAAaQB/wGqAQABgwH/AlwBWwHNAoABdwH+AbwCAAH/
-        AbsCAAH/AbsCAAH/Ab0CAAH/AcgCAAH/Ab0CAAH/AbwCAAH/AbwCAAH/AbwCAAH/AzMBUAgAAYABeAGA
+        AgAB/wMAAf8DAAH/AYsCAAP/Af0B/wQAA0ABcAIAAaQB/wGqAQABgwH/AlwBWwHNAoABegH+AbwCAAH/
+        AbsCAAH/AbsCAAH/Ab0CAAH/AcgCAAH/Ab0CAAH/AbwCAAH/AbwCAAH/AbwCAAH/AzMBUAgAAYABewGA
         Af4BxgEAAe4F/wHKAQAB6QH/AcwBAAHmDf8B1QEAAdsB/wHXAQAB2AX/AdsBAAHTAf8B3QEAAdAB/w4A
         Av8CAAL/AgAC/wIAAf4B/wIAAf4B/wIAAf4B/wIAAf4B/wIAAf4B/wIAAv8CAAL/AgAC/wIAAv8CAAL/
         BAAC/wH+Af8BxgG1Ab0B/wGvAYwBiQH/A6IB/wO6Af8DtQH/A7UB/wO1Af8DtQH/A7UB/wO3Af8BqAIA
         Af8DAAH/AwAB/wMAA/8B/gH/BAADKgE/A0wBjwNMAY8DPgFrAUwCSwGPAUwCSwGPAUwCSwGPAUwCSwGP
-        AUwCSwGPAkwBSwGPAUwCSwGPAUwCSwGPAUwCSwGPAUwCSwGPAxUBHQwAAYABeAGAAf4BxgEAAe4B/wM1
+        AUwCSwGPAkwBSwGPAUwCSwGPAUwCSwGPAUwCSwGPAUwCSwGPAxUBHQwAAYABewGAAf4BxgEAAe4B/wM1
         AVUBygEAAekJ/wH2AeIB+QH/AdMBAAHeAf8DWwHFAdcBAAHZAf8B2QEAAdYB/xYAAv8CAAL/AgAC/wIA
         Av8CAAL/AgAC/wIAAv8CAAL/AgAC/wIAAv8CAAL/CAAC/wH9Af8BzAG4AbUB/wIAAYUB/wIAAagB/wIA
         AZ4B/wIAAaUB/wIAAaEB/wIAAZ8B/wIAAacB/wIAAZ4B/wIAAagB/wGOAgAB/wMAAf8DAAH/AaMCAAP/
@@ -17320,7 +17320,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblHases.Location" type="System.Drawing.Point, System.Drawing">
-    <value>108, 66</value>
+    <value>110, 67</value>
   </data>
   <data name="lblHases.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 18</value>
@@ -17437,7 +17437,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblHaseEstiquta.Location" type="System.Drawing.Point, System.Drawing">
-    <value>185, 69</value>
+    <value>187, 70</value>
   </data>
   <data name="lblHaseEstiquta.Size" type="System.Drawing.Size, System.Drawing">
     <value>33, 16</value>

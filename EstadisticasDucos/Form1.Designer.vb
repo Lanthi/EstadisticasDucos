@@ -571,6 +571,8 @@ Partial Class Form1
         Me.txtLogBalanceYprecio = New System.Windows.Forms.TextBox()
         Me.txtLog = New System.Windows.Forms.TextBox()
         Me.TabPage7 = New System.Windows.Forms.TabPage()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
         Me.gbTemperatura = New System.Windows.Forms.GroupBox()
         Me.txtFanAmarillo2 = New System.Windows.Forms.NumericUpDown()
         Me.lblEtiquetaTempGreen = New System.Windows.Forms.Label()
@@ -609,6 +611,7 @@ Partial Class Form1
         Me.Label121 = New System.Windows.Forms.Label()
         Me.lblEtiquetaMineros = New System.Windows.Forms.Label()
         Me.gbStaking = New System.Windows.Forms.GroupBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.lblEtiquetaDucoRecompensa = New System.Windows.Forms.Label()
         Me.lblRecompensa = New System.Windows.Forms.Label()
         Me.lblEtiquetaEstimadodeVuelto = New System.Windows.Forms.Label()
@@ -633,7 +636,7 @@ Partial Class Form1
         Me.txtUser = New System.Windows.Forms.TextBox()
         Me.txtFanVerde = New System.Windows.Forms.NumericUpDown()
         Me.gbGananciasDolar = New System.Windows.Forms.GroupBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label31 = New System.Windows.Forms.Label()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Chart2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.gbBalance.SuspendLayout()
@@ -4827,11 +4830,25 @@ Partial Class Form1
         'TabPage7
         '
         Me.TabPage7.BackColor = System.Drawing.Color.White
+        Me.TabPage7.Controls.Add(Me.Label31)
+        Me.TabPage7.Controls.Add(Me.Button2)
+        Me.TabPage7.Controls.Add(Me.WebBrowser1)
         Me.TabPage7.Controls.Add(Me.gbTemperatura)
         Me.TabPage7.Controls.Add(Me.gbOpciones)
         Me.TabPage7.Controls.Add(Me.gbUser)
         resources.ApplyResources(Me.TabPage7, "TabPage7")
         Me.TabPage7.Name = "TabPage7"
+        '
+        'Button2
+        '
+        resources.ApplyResources(Me.Button2, "Button2")
+        Me.Button2.Name = "Button2"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'WebBrowser1
+        '
+        resources.ApplyResources(Me.WebBrowser1, "WebBrowser1")
+        Me.WebBrowser1.Name = "WebBrowser1"
         '
         'gbTemperatura
         '
@@ -5107,6 +5124,12 @@ Partial Class Form1
         Me.gbStaking.Name = "gbStaking"
         Me.gbStaking.TabStop = False
         '
+        'Button1
+        '
+        resources.ApplyResources(Me.Button1, "Button1")
+        Me.Button1.Name = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'lblEtiquetaDucoRecompensa
         '
         resources.ApplyResources(Me.lblEtiquetaDucoRecompensa, "lblEtiquetaDucoRecompensa")
@@ -5281,11 +5304,10 @@ Partial Class Form1
         Me.gbGananciasDolar.Name = "gbGananciasDolar"
         Me.gbGananciasDolar.TabStop = False
         '
-        'Button1
+        'Label31
         '
-        resources.ApplyResources(Me.Button1, "Button1")
-        Me.Button1.Name = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        resources.ApplyResources(Me.Label31, "Label31")
+        Me.Label31.Name = "Label31"
         '
         'Form1
         '
@@ -5362,6 +5384,7 @@ Partial Class Form1
         Me.TabPage6.ResumeLayout(False)
         Me.TabPage6.PerformLayout()
         Me.TabPage7.ResumeLayout(False)
+        Me.TabPage7.PerformLayout()
         Me.gbTemperatura.ResumeLayout(False)
         CType(Me.txtFanAmarillo2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtFanVerde2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -5979,4 +6002,7 @@ Partial Class Form1
     Friend WithEvents txtTotalHases As TextBox
     Friend WithEvents txtTotalMineros As TextBox
     Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents WebBrowser1 As WebBrowser
+    Friend WithEvents Label31 As Label
 End Class

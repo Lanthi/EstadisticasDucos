@@ -2273,6 +2273,306 @@ Namespace My
                 Me("Moneda") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property TransacionesTotales() As String
+            Get
+                Return CType(Me("TransacionesTotales"),String)
+            End Get
+            Set
+                Me("TransacionesTotales") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Transaciones23() As String
+            Get
+                Return CType(Me("Transaciones23"),String)
+            End Get
+            Set
+                Me("Transaciones23") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Transaciones22() As String
+            Get
+                Return CType(Me("Transaciones22"),String)
+            End Get
+            Set
+                Me("Transaciones22") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Transaciones21() As String
+            Get
+                Return CType(Me("Transaciones21"),String)
+            End Get
+            Set
+                Me("Transaciones21") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Transaciones20() As String
+            Get
+                Return CType(Me("Transaciones20"),String)
+            End Get
+            Set
+                Me("Transaciones20") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Transaciones19() As String
+            Get
+                Return CType(Me("Transaciones19"),String)
+            End Get
+            Set
+                Me("Transaciones19") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Transaciones18() As String
+            Get
+                Return CType(Me("Transaciones18"),String)
+            End Get
+            Set
+                Me("Transaciones18") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Transaciones17() As String
+            Get
+                Return CType(Me("Transaciones17"),String)
+            End Get
+            Set
+                Me("Transaciones17") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Transaciones16() As String
+            Get
+                Return CType(Me("Transaciones16"),String)
+            End Get
+            Set
+                Me("Transaciones16") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Transaciones15() As String
+            Get
+                Return CType(Me("Transaciones15"),String)
+            End Get
+            Set
+                Me("Transaciones15") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Transaciones14() As String
+            Get
+                Return CType(Me("Transaciones14"),String)
+            End Get
+            Set
+                Me("Transaciones14") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Transaciones13() As String
+            Get
+                Return CType(Me("Transaciones13"),String)
+            End Get
+            Set
+                Me("Transaciones13") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Transaciones12() As String
+            Get
+                Return CType(Me("Transaciones12"),String)
+            End Get
+            Set
+                Me("Transaciones12") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Transaciones11() As String
+            Get
+                Return CType(Me("Transaciones11"),String)
+            End Get
+            Set
+                Me("Transaciones11") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Transaciones10() As String
+            Get
+                Return CType(Me("Transaciones10"),String)
+            End Get
+            Set
+                Me("Transaciones10") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Transaciones09() As String
+            Get
+                Return CType(Me("Transaciones09"),String)
+            End Get
+            Set
+                Me("Transaciones09") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Transaciones08() As String
+            Get
+                Return CType(Me("Transaciones08"),String)
+            End Get
+            Set
+                Me("Transaciones08") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Transaciones07() As String
+            Get
+                Return CType(Me("Transaciones07"),String)
+            End Get
+            Set
+                Me("Transaciones07") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Transaciones06() As String
+            Get
+                Return CType(Me("Transaciones06"),String)
+            End Get
+            Set
+                Me("Transaciones06") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Transaciones05() As String
+            Get
+                Return CType(Me("Transaciones05"),String)
+            End Get
+            Set
+                Me("Transaciones05") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Transaciones04() As String
+            Get
+                Return CType(Me("Transaciones04"),String)
+            End Get
+            Set
+                Me("Transaciones04") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Transaciones03() As String
+            Get
+                Return CType(Me("Transaciones03"),String)
+            End Get
+            Set
+                Me("Transaciones03") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Transaciones02() As String
+            Get
+                Return CType(Me("Transaciones02"),String)
+            End Get
+            Set
+                Me("Transaciones02") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Transaciones01() As String
+            Get
+                Return CType(Me("Transaciones01"),String)
+            End Get
+            Set
+                Me("Transaciones01") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Transaciones00() As String
+            Get
+                Return CType(Me("Transaciones00"),String)
+            End Get
+            Set
+                Me("Transaciones00") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

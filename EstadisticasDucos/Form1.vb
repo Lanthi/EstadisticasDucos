@@ -506,6 +506,10 @@ Public Class Form1
             txtMinerosNPhone.Text = 0
             txtMinerosNRPI.Text = 0
             txtMinerosNWeb.Text = 0
+            lblTemperatura.Text = "00°"
+            Temperatura = 0
+            lblHumedad.Text = "00%"
+            Humedad = 0
             TreeView2.Nodes.Add("Mineros" & " (" & Contador & ")")
             For T As Integer = 0 To Contador - 1
                 Mineros(T, 0) = dict2.item("result").item("miners").item(T).item("identifier") & " (" & CalcularHases(dict2.item("result").item("miners").item(T).item("hashrate")) & ")"
@@ -521,6 +525,10 @@ Public Class Form1
                 If Tmp <> "" Then
                     Mineros(T, 8) = "Temperature - Humidity : " & Mid(Tmp, 1, 2) & "° - " & Mid(Tmp, 4) & "%"
                     TreeView2.Nodes(0).Nodes.Add(Mineros(T, 0) & " [IOT]")
+                    lblTemperatura.Text = Mid(Tmp, 1, 2) & "°"
+                    Temperatura = Mid(Tmp, 1, 2)
+                    lblHumedad.Text = Mid(Tmp, 4) & "%"
+                    Humedad = Mid(Tmp, 4)
                 Else
                     TreeView2.Nodes(0).Nodes.Add(Mineros(T, 0))
                 End If
@@ -555,24 +563,10 @@ Public Class Form1
                         TreeView2.Nodes(0).Nodes(T).ImageIndex = 8
                         TreeView2.Nodes(0).Nodes(T).SelectedImageIndex = 8
                     Case Esp8266UltimaVersion
-                        Dim temp As String = dict2.item("result").item("miners").item(T).item("it")
                         txtMinerosNEsp8266.Text += 1
                         txtMinerosHEsp8266.Text += dict2.item("result").item("miners").item(T).item("hashrate")
                         TreeView2.Nodes(0).Nodes(T).ImageIndex = 8
                         TreeView2.Nodes(0).Nodes(T).SelectedImageIndex = 8
-                        If temp <> "" Then
-                            lblTemperatura.Text = Mid(temp, 1, 2) & "°"
-                            Temperatura = Mid(temp, 1, 2)
-                            lblHumedad.Text = Mid(temp, 4) & "%"
-                            Humedad = Mid(temp, 4)
-                        Else
-                            lblTemperatura.Text = "00°"
-                            Temperatura = 0
-                            lblHumedad.Text = "00%"
-                            Humedad = 0
-                            picFanAni.Visible = False
-                            picFan.Visible = True
-                        End If
                     Case "Official Web Miner 2.8"
                         txtMinerosNWeb.Text += 1
                         txtMinerosHWeb.Text += dict2.item("result").item("miners").item(T).item("hashrate")
@@ -2348,13 +2342,28 @@ Public Class Form1
             gbGananciasDolar.Visible = True
         End If
     End Sub
-
-
-
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        WebBrowser1.Navigate("http://localhostupdatehour.php?Fecha=25/04/2022&Dato=Hora00&Valor=140")
-        Label31.Text = RutaApp & "\php\updatehour.php?Fecha=25/04/2022&Dato=Hora00&Valor=140"
-
-        ' "http://localhost/AddDate.php?Fecha=25/04/2022&Hora=123.478210&Diferencia=1.0789"
+    Private Sub AñadirHoraSQL(ByVal Fecha As Date, ByVal Hora00 As Decimal, ByVal Precio As Decimal, ByVal Diferencia00 As Decimal)
+        WebBrowser1.Navigate("http://localhost/AddDateHour.php?Fecha=" & Fecha & "&Hora=" & Hora00 & "&Precio=" & Precio & "&Diferencia=" & Diferencia00 & "")
     End Sub
+    Private Sub ActualizarHoraCampoSQL(ByVal Fecha As Date, ByVal Campo As String, ByVal Valor As Decimal)
+        WebBrowser1.Navigate("Http://localhost/updateCampo.php?Fecha=" & Fecha & "&Dato=" & Campo & "&Valor=" & Valor & "")
+    End Sub
+    Private Sub ActualizarMesCampoSQL(ByVal Fecha As Date, ByVal Campo As String, ByVal Valor As String)
+        WebBrowser1.Navigate("Http://localhost/updateCampomes.php?Fecha=" & Fecha & "&Dato=" & Campo & "&Valor=" & Valor & "")
+    End Sub
+    Private Sub ActualizarHoraSQL(ByVal Fecha As Date, ByVal Hora As String, ByVal Balance As Decimal, ByVal Precio As Decimal, ByVal Diferencia As Decimal, ByVal Transaciones As Decimal)
+        WebBrowser1.Navigate("http://localhost/UpdateHora.php?Fecha=" & Fecha & "&Hora=" & Hora & "&Balance=" & Balance & "&Precio=" & Precio & "&Diferencia=" & Diferencia & "&Transaciones=" & Transaciones & "")
+    End Sub
+    Private Sub ActualizarMesSQL(ByVal Fecha As Date, ByVal Hora As String, ByVal Balance As Decimal, ByVal Precio As Decimal, ByVal Diferencia As Decimal, ByVal Transaciones As String)
+        WebBrowser1.Navigate("http://localhost/Updatemes.php?Fecha=" & Fecha & "&Hora=" & Hora & "&Balance=" & Balance & "&Precio=" & Precio & "&Diferencia=" & Diferencia & "&Transaciones=" & Transaciones & "")
+    End Sub
+    Private Sub AñadirMesSQL(ByVal Fecha As Date, ByVal Hora00 As Decimal, ByVal Balance As Decimal, ByVal Precio As Decimal, ByVal Diferencia00 As Decimal, ByVal Transaciones As Decimal)
+        WebBrowser1.Navigate("http://localhost/AddDateMes.php?Fecha=" & Fecha & "&Hora=" & Hora00 & "&Balance=" & Balance & "&Precio=" & Precio & "&Diferencia=" & Diferencia00 & "&Transaciones=" & Transaciones & "")
+    End Sub
+    'http://localhost/UpdateMes.php?Fecha=25/04/2022&Hora=31&Balance=225,3432970051400&Precio=0,000066&Diferencia=1,6790472&Transaciones=0
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        'ActualizarMesSQL("25/04/2022", "26", lblMesBalance26.Text, lblMesPrecio26.Text, lblMesDifencia26.Text, lblTransacionMes26.Text)
+        ActualizarMesCampoSQL("25/04/2022", "DucosTotal", lblTotalMes.Text)
+    End Sub
+
 End Class

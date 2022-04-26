@@ -1675,11 +1675,11 @@ Public Class Form1
         Try
             Select Case Hour(Now)
                 Case 0
+                    If Hour(Now) = 0 And Minute(Now) = 0 Then ResetDia()
                     lblReinicioApp.Text = -1
                     Select Case DateAndTime.Day(Now)
                         Case 1
                             If Hour(Now) = 0 And Minute(Now) = 0 Then
-                                ResetDia()
                                 lblMesBalance01.Text = "0"
                                 lblMesBalance02.Text = "0"
                                 lblMesBalance03.Text = "0"
@@ -1775,30 +1775,30 @@ Public Class Form1
                         Case 30 : If lblMesBalance30.Text = "0" Then lblMesBalance30.Text = FormatDuco(txtbalance.Text, 96) : lblMesPrecio30.Text = FormatDuco(CDec(lblPrecioDia.Text), 97)
                         Case 31 : If lblMesBalance31.Text = "0" Then lblMesBalance31.Text = FormatDuco(txtbalance.Text, 96) : lblMesPrecio31.Text = FormatDuco(CDec(lblPrecioDia.Text), 97)
                     End Select
-                    If lblBalanceHora00.Text = "0" Then lblBalanceHora00.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio00.Text = FormatDuco(CDec(txtDucoprice.Text), 97)
-                Case 1 : If lblBalanceHora01.Text = 0 Then lblBalanceHora01.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio01.Text = FormatDuco(CDec(txtDucoprice.Text), 97)
-                Case 2 : If lblBalanceHora02.Text = 0 Then lblBalanceHora02.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio02.Text = FormatDuco(CDec(txtDucoprice.Text), 97)
-                Case 3 : If lblBalanceHora03.Text = 0 Then lblBalanceHora03.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio03.Text = FormatDuco(CDec(txtDucoprice.Text), 97)
-                Case 4 : If lblBalanceHora04.Text = 0 Then lblBalanceHora04.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio04.Text = FormatDuco(CDec(txtDucoprice.Text), 97)
-                Case 5 : If lblBalanceHora05.Text = 0 Then lblBalanceHora05.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio05.Text = FormatDuco(CDec(txtDucoprice.Text), 97)
-                Case 6 : If lblBalanceHora06.Text = 0 Then lblBalanceHora06.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio06.Text = FormatDuco(CDec(txtDucoprice.Text), 97)
-                Case 7 : If lblBalanceHora07.Text = 0 Then lblBalanceHora07.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio07.Text = FormatDuco(CDec(txtDucoprice.Text), 97)
-                Case 8 : If lblBalanceHora08.Text = 0 Then lblBalanceHora08.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio08.Text = FormatDuco(CDec(txtDucoprice.Text), 97)
-                Case 9 : If lblBalanceHora09.Text = 0 Then lblBalanceHora09.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio09.Text = FormatDuco(CDec(txtDucoprice.Text), 97)
-                Case 10 : If lblBalanceHora10.Text = 0 Then lblBalanceHora10.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio10.Text = FormatDuco(CDec(txtDucoprice.Text), 97)
-                Case 11 : If lblBalanceHora11.Text = 0 Then lblBalanceHora11.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio11.Text = FormatDuco(CDec(txtDucoprice.Text), 97)
-                Case 12 : If lblBalanceHora12.Text = 0 Then lblBalanceHora12.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio12.Text = FormatDuco(CDec(txtDucoprice.Text), 97)
-                Case 13 : If lblBalanceHora13.Text = 0 Then lblBalanceHora13.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio13.Text = FormatDuco(CDec(txtDucoprice.Text), 97)
-                Case 14 : If lblBalanceHora14.Text = 0 Then lblBalanceHora14.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio14.Text = FormatDuco(CDec(txtDucoprice.Text), 97)
-                Case 15 : If lblBalanceHora15.Text = 0 Then lblBalanceHora15.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio15.Text = FormatDuco(CDec(txtDucoprice.Text), 97)
-                Case 16 : If lblBalanceHora16.Text = 0 Then lblBalanceHora16.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio16.Text = FormatDuco(CDec(txtDucoprice.Text), 97)
-                Case 17 : If lblBalanceHora17.Text = 0 Then lblBalanceHora17.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio17.Text = FormatDuco(CDec(txtDucoprice.Text), 97)
-                Case 18 : If lblBalanceHora18.Text = 0 Then lblBalanceHora18.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio18.Text = FormatDuco(CDec(txtDucoprice.Text), 97)
-                Case 19 : If lblBalanceHora19.Text = 0 Then lblBalanceHora19.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio19.Text = FormatDuco(CDec(txtDucoprice.Text), 97)
-                Case 20 : If lblBalanceHora20.Text = 0 Then lblBalanceHora20.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio20.Text = FormatDuco(CDec(txtDucoprice.Text), 97)
-                Case 21 : If lblBalanceHora21.Text = 0 Then lblBalanceHora21.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio21.Text = FormatDuco(CDec(txtDucoprice.Text), 97)
-                Case 22 : If lblBalanceHora22.Text = 0 Then lblBalanceHora22.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio22.Text = FormatDuco(CDec(txtDucoprice.Text), 97)
-                Case 23 : If lblBalanceHora23.Text = 0 Then lblBalanceHora23.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio23.Text = FormatDuco(CDec(txtDucoprice.Text), 97)
+                    If lblBalanceHora00.Text = "0" Then lblBalanceHora00.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio00.Text = FormatDuco(CDec(txtDucoprice.Text), 97) : AñadirHoraSQL(DateAndTime.DateValue(Now), lblBalanceHora00.Text, lblPrecio00.Text, 0)
+                Case 1 : If lblBalanceHora01.Text = 0 Then lblBalanceHora01.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio01.Text = FormatDuco(CDec(txtDucoprice.Text), 97) : ActualizarHoraSQL(DateAndTime.DateValue(Now), "01", lblBalanceHora01.Text, lblPrecio01.Text, 0, 0)
+                Case 2 : If lblBalanceHora02.Text = 0 Then lblBalanceHora02.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio02.Text = FormatDuco(CDec(txtDucoprice.Text), 97) : ActualizarHoraSQL(DateAndTime.DateValue(Now), "02", lblBalanceHora01.Text, lblPrecio02.Text, 0, 0)
+                Case 3 : If lblBalanceHora03.Text = 0 Then lblBalanceHora03.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio03.Text = FormatDuco(CDec(txtDucoprice.Text), 97) : ActualizarHoraSQL(DateAndTime.DateValue(Now), "03", lblBalanceHora01.Text, lblPrecio03.Text, 0, 0)
+                Case 4 : If lblBalanceHora04.Text = 0 Then lblBalanceHora04.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio04.Text = FormatDuco(CDec(txtDucoprice.Text), 97) : ActualizarHoraSQL(DateAndTime.DateValue(Now), "04", lblBalanceHora01.Text, lblPrecio04.Text, 0, 0)
+                Case 5 : If lblBalanceHora05.Text = 0 Then lblBalanceHora05.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio05.Text = FormatDuco(CDec(txtDucoprice.Text), 97) : ActualizarHoraSQL(DateAndTime.DateValue(Now), "05", lblBalanceHora01.Text, lblPrecio05.Text, 0, 0)
+                Case 6 : If lblBalanceHora06.Text = 0 Then lblBalanceHora06.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio06.Text = FormatDuco(CDec(txtDucoprice.Text), 97) : ActualizarHoraSQL(DateAndTime.DateValue(Now), "06", lblBalanceHora01.Text, lblPrecio06.Text, 0, 0)
+                Case 7 : If lblBalanceHora07.Text = 0 Then lblBalanceHora07.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio07.Text = FormatDuco(CDec(txtDucoprice.Text), 97) : ActualizarHoraSQL(DateAndTime.DateValue(Now), "07", lblBalanceHora01.Text, lblPrecio07.Text, 0, 0)
+                Case 8 : If lblBalanceHora08.Text = 0 Then lblBalanceHora08.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio08.Text = FormatDuco(CDec(txtDucoprice.Text), 97) : ActualizarHoraSQL(DateAndTime.DateValue(Now), "08", lblBalanceHora01.Text, lblPrecio08.Text, 0, 0)
+                Case 9 : If lblBalanceHora09.Text = 0 Then lblBalanceHora09.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio09.Text = FormatDuco(CDec(txtDucoprice.Text), 97) : ActualizarHoraSQL(DateAndTime.DateValue(Now), "09", lblBalanceHora01.Text, lblPrecio09.Text, 0, 0)
+                Case 10 : If lblBalanceHora10.Text = 0 Then lblBalanceHora10.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio10.Text = FormatDuco(CDec(txtDucoprice.Text), 97) : ActualizarHoraSQL(DateAndTime.DateValue(Now), "10", lblBalanceHora01.Text, lblPrecio10.Text, 0, 0)
+                Case 11 : If lblBalanceHora11.Text = 0 Then lblBalanceHora11.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio11.Text = FormatDuco(CDec(txtDucoprice.Text), 97) : ActualizarHoraSQL(DateAndTime.DateValue(Now), "11", lblBalanceHora01.Text, lblPrecio11.Text, 0, 0)
+                Case 12 : If lblBalanceHora12.Text = 0 Then lblBalanceHora12.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio12.Text = FormatDuco(CDec(txtDucoprice.Text), 97) : ActualizarHoraSQL(DateAndTime.DateValue(Now), "12", lblBalanceHora01.Text, lblPrecio12.Text, 0, 0)
+                Case 13 : If lblBalanceHora13.Text = 0 Then lblBalanceHora13.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio13.Text = FormatDuco(CDec(txtDucoprice.Text), 97) : ActualizarHoraSQL(DateAndTime.DateValue(Now), "13", lblBalanceHora01.Text, lblPrecio13.Text, 0, 0)
+                Case 14 : If lblBalanceHora14.Text = 0 Then lblBalanceHora14.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio14.Text = FormatDuco(CDec(txtDucoprice.Text), 97) : ActualizarHoraSQL(DateAndTime.DateValue(Now), "14", lblBalanceHora01.Text, lblPrecio14.Text, 0, 0)
+                Case 15 : If lblBalanceHora15.Text = 0 Then lblBalanceHora15.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio15.Text = FormatDuco(CDec(txtDucoprice.Text), 97) : ActualizarHoraSQL(DateAndTime.DateValue(Now), "15", lblBalanceHora01.Text, lblPrecio15.Text, 0, 0)
+                Case 16 : If lblBalanceHora16.Text = 0 Then lblBalanceHora16.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio16.Text = FormatDuco(CDec(txtDucoprice.Text), 97) : ActualizarHoraSQL(DateAndTime.DateValue(Now), "16", lblBalanceHora01.Text, lblPrecio16.Text, 0, 0)
+                Case 17 : If lblBalanceHora17.Text = 0 Then lblBalanceHora17.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio17.Text = FormatDuco(CDec(txtDucoprice.Text), 97) : ActualizarHoraSQL(DateAndTime.DateValue(Now), "17", lblBalanceHora01.Text, lblPrecio17.Text, 0, 0)
+                Case 18 : If lblBalanceHora18.Text = 0 Then lblBalanceHora18.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio18.Text = FormatDuco(CDec(txtDucoprice.Text), 97) : ActualizarHoraSQL(DateAndTime.DateValue(Now), "18", lblBalanceHora01.Text, lblPrecio18.Text, 0, 0)
+                Case 19 : If lblBalanceHora19.Text = 0 Then lblBalanceHora19.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio19.Text = FormatDuco(CDec(txtDucoprice.Text), 97) : ActualizarHoraSQL(DateAndTime.DateValue(Now), "19", lblBalanceHora01.Text, lblPrecio19.Text, 0, 0)
+                Case 20 : If lblBalanceHora20.Text = 0 Then lblBalanceHora20.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio20.Text = FormatDuco(CDec(txtDucoprice.Text), 97) : ActualizarHoraSQL(DateAndTime.DateValue(Now), "20", lblBalanceHora01.Text, lblPrecio20.Text, 0, 0)
+                Case 21 : If lblBalanceHora21.Text = 0 Then lblBalanceHora21.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio21.Text = FormatDuco(CDec(txtDucoprice.Text), 97) : ActualizarHoraSQL(DateAndTime.DateValue(Now), "21", lblBalanceHora01.Text, lblPrecio21.Text, 0, 0)
+                Case 22 : If lblBalanceHora22.Text = 0 Then lblBalanceHora22.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio22.Text = FormatDuco(CDec(txtDucoprice.Text), 97) : ActualizarHoraSQL(DateAndTime.DateValue(Now), "22", lblBalanceHora01.Text, lblPrecio22.Text, 0, 0)
+                Case 23 : If lblBalanceHora23.Text = 0 Then lblBalanceHora23.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio23.Text = FormatDuco(CDec(txtDucoprice.Text), 97) : ActualizarHoraSQL(DateAndTime.DateValue(Now), "23", lblBalanceHora01.Text, lblPrecio23.Text, 0, 0)
             End Select
             If lblHoraDiferencia00.Text <> 0 Then lblHoraDiferencia00.Text = FormatDuco(CDec(lblBalanceHora00.Text) - CDec(txtbalance.Text) - TransacionPorHora(0), 8)
             lblTotalHora.Text = lblHoraDiferencia00.Text
@@ -2360,10 +2360,4 @@ Public Class Form1
     Private Sub AñadirMesSQL(ByVal Fecha As Date, ByVal Hora00 As Decimal, ByVal Balance As Decimal, ByVal Precio As Decimal, ByVal Diferencia00 As Decimal, ByVal Transaciones As Decimal)
         WebBrowser1.Navigate("http://localhost/AddDateMes.php?Fecha=" & Fecha & "&Hora=" & Hora00 & "&Balance=" & Balance & "&Precio=" & Precio & "&Diferencia=" & Diferencia00 & "&Transaciones=" & Transaciones & "")
     End Sub
-    'http://localhost/UpdateMes.php?Fecha=25/04/2022&Hora=31&Balance=225,3432970051400&Precio=0,000066&Diferencia=1,6790472&Transaciones=0
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        'ActualizarMesSQL("25/04/2022", "26", lblMesBalance26.Text, lblMesPrecio26.Text, lblMesDifencia26.Text, lblTransacionMes26.Text)
-        ActualizarMesCampoSQL("25/04/2022", "DucosTotal", lblTotalMes.Text)
-    End Sub
-
 End Class

@@ -5,7 +5,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 if ($Fecha !=''){
-    $sql = "INSERT INTO horas (Fecha, Hora00, Precio00, Diferencia00)VALUES ('".$Fecha."', '".$Hora."', '".$Precio."','".$Diferencia."')";
+    $sql = "INSERT INTO mes (Fecha, Dia01, Precio01, Diferencia01,Transaciones01)VALUES ('".$Fecha."', '".$Balance."', '".$Precio."','".$Diferencia."', '".$Transaciones."')";
     if ($conn->query($sql) === TRUE) {
        echo "<br>Datos Introducidos Correctamente.";
     } else {

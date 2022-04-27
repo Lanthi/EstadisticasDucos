@@ -69,7 +69,7 @@ $password = "vb3507042";
 $database = "estadisticas"; 
 $fechaActual = date('d/m/Y');
 $mysqli = new mysqli("localhost", $username, $password, $database); 
-$query = "SELECT * FROM `horas` WHERE Fecha='25/04/2022'";
+$query = "SELECT * FROM `horas` WHERE Fecha='".$fechaActual."'";
 echo '<table border="1" width="500" cellspacing="2" cellpadding="2">
       <tr>
       <th colspan="5" scope="col">Balance por Hora</th>
@@ -229,7 +229,7 @@ if ($result = $mysqli->query($query)) {
                   <td align="center">'.$row["Hora20"].'</td> 
                   <td align="center">'.$row["Precio20"].'</td> 
                   <td align="center">'.$row["Transaciones20"].'</td> 
-                  <td align="center">'.$row["Diferencia01"].'</td> 
+                  <td align="center">'.$row["Diferencia20"].'</td> 
               </tr>';
 		echo '<tr> 
 				  <td align="center">21:00</td>

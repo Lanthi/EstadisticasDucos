@@ -24,28 +24,28 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea3 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend3 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series3 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea4 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend4 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series4 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea5 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend5 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series5 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea6 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend6 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series6 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea7 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend7 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series7 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim Series8 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea22 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend22 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series25 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea23 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend23 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series26 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea24 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend24 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series27 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea25 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend25 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series28 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea26 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend26 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series29 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea27 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend27 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series30 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea28 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend28 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series31 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Series32 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.lstBalanceTiempoReal = New System.Windows.Forms.ListBox()
         Me.lstDUCOTiempoReal = New System.Windows.Forms.ListBox()
@@ -65,6 +65,399 @@ Partial Class Form1
         Me.Chart6 = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.gbMes = New System.Windows.Forms.GroupBox()
+        Me.lblMesDifencia31 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia01 = New System.Windows.Forms.Label()
+        Me.lblEtiquetaGananciasMes = New System.Windows.Forms.Label()
+        Me.lblMesDifencia02 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia13 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia07 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia14 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia04 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia19 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia08 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia16 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia20 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia10 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia25 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia15 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia05 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia22 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia09 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia27 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia17 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia06 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia21 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia11 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia26 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia18 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia12 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia23 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia24 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia28 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia03 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia29 = New System.Windows.Forms.Label()
+        Me.Label35 = New System.Windows.Forms.Label()
+        Me.lblMesDifencia30 = New System.Windows.Forms.Label()
+        Me.lblMesBalance01 = New System.Windows.Forms.Label()
+        Me.lblMesBalance02 = New System.Windows.Forms.Label()
+        Me.lblMesBalance03 = New System.Windows.Forms.Label()
+        Me.lblMesBalance04 = New System.Windows.Forms.Label()
+        Me.lblMesBalance05 = New System.Windows.Forms.Label()
+        Me.lblMesBalance06 = New System.Windows.Forms.Label()
+        Me.lblMesBalance07 = New System.Windows.Forms.Label()
+        Me.lblMesBalance08 = New System.Windows.Forms.Label()
+        Me.lblMesBalance09 = New System.Windows.Forms.Label()
+        Me.lblMesBalance10 = New System.Windows.Forms.Label()
+        Me.lblMesBalance11 = New System.Windows.Forms.Label()
+        Me.lblMesBalance12 = New System.Windows.Forms.Label()
+        Me.lblMesBalance13 = New System.Windows.Forms.Label()
+        Me.lblMesBalance14 = New System.Windows.Forms.Label()
+        Me.lblMesBalance15 = New System.Windows.Forms.Label()
+        Me.lblMesBalance16 = New System.Windows.Forms.Label()
+        Me.lblMesBalance17 = New System.Windows.Forms.Label()
+        Me.lblMesBalance18 = New System.Windows.Forms.Label()
+        Me.lblMesBalance19 = New System.Windows.Forms.Label()
+        Me.lblMesBalance20 = New System.Windows.Forms.Label()
+        Me.lblMesBalance21 = New System.Windows.Forms.Label()
+        Me.lblMesBalance22 = New System.Windows.Forms.Label()
+        Me.lblMesBalance23 = New System.Windows.Forms.Label()
+        Me.lblMesBalance24 = New System.Windows.Forms.Label()
+        Me.lblEtiquetaDia = New System.Windows.Forms.Label()
+        Me.Label74 = New System.Windows.Forms.Label()
+        Me.lblMesBalance25 = New System.Windows.Forms.Label()
+        Me.Label73 = New System.Windows.Forms.Label()
+        Me.lblMesBalance26 = New System.Windows.Forms.Label()
+        Me.Label72 = New System.Windows.Forms.Label()
+        Me.lblMesBalance27 = New System.Windows.Forms.Label()
+        Me.Label71 = New System.Windows.Forms.Label()
+        Me.lblMesBalance28 = New System.Windows.Forms.Label()
+        Me.Label70 = New System.Windows.Forms.Label()
+        Me.lblMesBalance29 = New System.Windows.Forms.Label()
+        Me.Label69 = New System.Windows.Forms.Label()
+        Me.lblMesBalance30 = New System.Windows.Forms.Label()
+        Me.lblPrecioMes = New System.Windows.Forms.Label()
+        Me.lblMesPrecio31 = New System.Windows.Forms.Label()
+        Me.Label68 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio30 = New System.Windows.Forms.Label()
+        Me.lblMesBalance31 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio29 = New System.Windows.Forms.Label()
+        Me.Label67 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio28 = New System.Windows.Forms.Label()
+        Me.Label66 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio27 = New System.Windows.Forms.Label()
+        Me.Label65 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio26 = New System.Windows.Forms.Label()
+        Me.Label64 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio25 = New System.Windows.Forms.Label()
+        Me.Label63 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio24 = New System.Windows.Forms.Label()
+        Me.Label62 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio23 = New System.Windows.Forms.Label()
+        Me.Label61 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio22 = New System.Windows.Forms.Label()
+        Me.Label60 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio21 = New System.Windows.Forms.Label()
+        Me.Label59 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio20 = New System.Windows.Forms.Label()
+        Me.Label58 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio19 = New System.Windows.Forms.Label()
+        Me.Label57 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio18 = New System.Windows.Forms.Label()
+        Me.Label56 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio17 = New System.Windows.Forms.Label()
+        Me.Label55 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio16 = New System.Windows.Forms.Label()
+        Me.Label54 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio15 = New System.Windows.Forms.Label()
+        Me.Label53 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio14 = New System.Windows.Forms.Label()
+        Me.Label52 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio13 = New System.Windows.Forms.Label()
+        Me.Label100 = New System.Windows.Forms.Label()
+        Me.lblEtiquetaPrecioMes = New System.Windows.Forms.Label()
+        Me.lblMesPrecio12 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio01 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio11 = New System.Windows.Forms.Label()
+        Me.Label103 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio10 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio02 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio09 = New System.Windows.Forms.Label()
+        Me.Label106 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio08 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio03 = New System.Windows.Forms.Label()
+        Me.lbl31 = New System.Windows.Forms.Label()
+        Me.Label109 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio07 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio04 = New System.Windows.Forms.Label()
+        Me.lbl30 = New System.Windows.Forms.Label()
+        Me.lbl28 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio06 = New System.Windows.Forms.Label()
+        Me.lblMesPrecio05 = New System.Windows.Forms.Label()
+        Me.lbl29 = New System.Windows.Forms.Label()
+        Me.lblTotalMes = New System.Windows.Forms.Label()
+        Me.lblEtiquetaMesDaily = New System.Windows.Forms.Label()
+        Me.lblTransacionMes31 = New System.Windows.Forms.Label()
+        Me.lblTransacionMes30 = New System.Windows.Forms.Label()
+        Me.lblTransacionMes29 = New System.Windows.Forms.Label()
+        Me.lblTransacionMes28 = New System.Windows.Forms.Label()
+        Me.lblTransacionMes03 = New System.Windows.Forms.Label()
+        Me.lblTransacionMes24 = New System.Windows.Forms.Label()
+        Me.lblTransacionMes23 = New System.Windows.Forms.Label()
+        Me.lblTransacionMes12 = New System.Windows.Forms.Label()
+        Me.lblTransacionMes18 = New System.Windows.Forms.Label()
+        Me.lblTransacionMes26 = New System.Windows.Forms.Label()
+        Me.lblTransacionMes11 = New System.Windows.Forms.Label()
+        Me.lblTransacionMes21 = New System.Windows.Forms.Label()
+        Me.lblTransacionMes06 = New System.Windows.Forms.Label()
+        Me.lblTransacionMes17 = New System.Windows.Forms.Label()
+        Me.lblTransacionMes27 = New System.Windows.Forms.Label()
+        Me.lblTransacionMes09 = New System.Windows.Forms.Label()
+        Me.lblTransacionMes22 = New System.Windows.Forms.Label()
+        Me.lblTransacionMes05 = New System.Windows.Forms.Label()
+        Me.lblTransacionMes15 = New System.Windows.Forms.Label()
+        Me.lblTransacionMes25 = New System.Windows.Forms.Label()
+        Me.lblTransacionMes10 = New System.Windows.Forms.Label()
+        Me.lblTransacionMes20 = New System.Windows.Forms.Label()
+        Me.lblTransacionMes16 = New System.Windows.Forms.Label()
+        Me.lblTransacionMes08 = New System.Windows.Forms.Label()
+        Me.lblTransacionMes19 = New System.Windows.Forms.Label()
+        Me.lblTransacionMes04 = New System.Windows.Forms.Label()
+        Me.lblTransacionMes14 = New System.Windows.Forms.Label()
+        Me.lblTransacionMes07 = New System.Windows.Forms.Label()
+        Me.lblTransacionMes13 = New System.Windows.Forms.Label()
+        Me.lblTransacionMes02 = New System.Windows.Forms.Label()
+        Me.lblEtiquetaTransacionesMes = New System.Windows.Forms.Label()
+        Me.lblTransacionMes01 = New System.Windows.Forms.Label()
+        Me.lblTransacionMes = New System.Windows.Forms.Label()
+        Me.gbAños = New System.Windows.Forms.GroupBox()
+        Me.lblEtiquetaPreciosAños = New System.Windows.Forms.Label()
+        Me.lblPrecioAño2022 = New System.Windows.Forms.Label()
+        Me.lblPrecioMedioTodosAños = New System.Windows.Forms.Label()
+        Me.lblPrecioAño2023 = New System.Windows.Forms.Label()
+        Me.lblTransasionesAñoTotal = New System.Windows.Forms.Label()
+        Me.lblTransasionesAño2022 = New System.Windows.Forms.Label()
+        Me.lblTransasionesAño2023 = New System.Windows.Forms.Label()
+        Me.lblEtiquetaTransacionesAños = New System.Windows.Forms.Label()
+        Me.gbEstadisticasGlobales = New System.Windows.Forms.GroupBox()
+        Me.lblDucosTotales = New System.Windows.Forms.Label()
+        Me.lblEtiquetaDuco = New System.Windows.Forms.Label()
+        Me.lblTotalTransasiones = New System.Windows.Forms.Label()
+        Me.lblTotalGanadoAños = New System.Windows.Forms.Label()
+        Me.lblEtiquetaGananciaTotal = New System.Windows.Forms.Label()
+        Me.lblEtiquetaTrasacioneTotal = New System.Windows.Forms.Label()
+        Me.lblEtiquetaDucoTotal = New System.Windows.Forms.Label()
+        Me.lblEtiquetaAñosTotal = New System.Windows.Forms.Label()
+        Me.lblGanadoAñoTotal = New System.Windows.Forms.Label()
+        Me.lblEtiquetaGananciasAños = New System.Windows.Forms.Label()
+        Me.lblGanadoAño2022 = New System.Windows.Forms.Label()
+        Me.lblGanadoAño2023 = New System.Windows.Forms.Label()
+        Me.Label130 = New System.Windows.Forms.Label()
+        Me.lblBalanceAño2022 = New System.Windows.Forms.Label()
+        Me.lblBalanceAño2023 = New System.Windows.Forms.Label()
+        Me.lblEtiquetaAños = New System.Windows.Forms.Label()
+        Me.Label137 = New System.Windows.Forms.Label()
+        Me.Label138 = New System.Windows.Forms.Label()
+        Me.gbAño = New System.Windows.Forms.GroupBox()
+        Me.lblGananciasAño01 = New System.Windows.Forms.Label()
+        Me.lblEtiquetaGanaciasAño = New System.Windows.Forms.Label()
+        Me.lblGananciasAño02 = New System.Windows.Forms.Label()
+        Me.lblGananciasAño07 = New System.Windows.Forms.Label()
+        Me.lblGananciasAño04 = New System.Windows.Forms.Label()
+        Me.lblGananciasAño08 = New System.Windows.Forms.Label()
+        Me.lblGananciasAño10 = New System.Windows.Forms.Label()
+        Me.lblGananciasAño05 = New System.Windows.Forms.Label()
+        Me.lblGananciasAño09 = New System.Windows.Forms.Label()
+        Me.lblGananciasAño06 = New System.Windows.Forms.Label()
+        Me.lblGananciasAño11 = New System.Windows.Forms.Label()
+        Me.lblGananciasAño12 = New System.Windows.Forms.Label()
+        Me.lblGananciasAño03 = New System.Windows.Forms.Label()
+        Me.Label128 = New System.Windows.Forms.Label()
+        Me.lblBalanceAño01 = New System.Windows.Forms.Label()
+        Me.lblBalanceAño02 = New System.Windows.Forms.Label()
+        Me.lblBalanceAño03 = New System.Windows.Forms.Label()
+        Me.lblBalanceAño04 = New System.Windows.Forms.Label()
+        Me.lblBalanceAño05 = New System.Windows.Forms.Label()
+        Me.lblBalanceAño06 = New System.Windows.Forms.Label()
+        Me.lblBalanceAño07 = New System.Windows.Forms.Label()
+        Me.lblBalanceAño08 = New System.Windows.Forms.Label()
+        Me.lblBalanceAño09 = New System.Windows.Forms.Label()
+        Me.lblBalanceAño10 = New System.Windows.Forms.Label()
+        Me.lblBalanceAño11 = New System.Windows.Forms.Label()
+        Me.lblBalanceAño12 = New System.Windows.Forms.Label()
+        Me.lblEtiquetaMes = New System.Windows.Forms.Label()
+        Me.Label143 = New System.Windows.Forms.Label()
+        Me.Label144 = New System.Windows.Forms.Label()
+        Me.Label145 = New System.Windows.Forms.Label()
+        Me.Label146 = New System.Windows.Forms.Label()
+        Me.Label147 = New System.Windows.Forms.Label()
+        Me.Label148 = New System.Windows.Forms.Label()
+        Me.Label149 = New System.Windows.Forms.Label()
+        Me.Label150 = New System.Windows.Forms.Label()
+        Me.Label151 = New System.Windows.Forms.Label()
+        Me.Label152 = New System.Windows.Forms.Label()
+        Me.Label153 = New System.Windows.Forms.Label()
+        Me.Label154 = New System.Windows.Forms.Label()
+        Me.lblEtiquetaPrecioAño = New System.Windows.Forms.Label()
+        Me.lblPrecioAnual = New System.Windows.Forms.Label()
+        Me.lblPrecioAño12 = New System.Windows.Forms.Label()
+        Me.lblPrecioAño01 = New System.Windows.Forms.Label()
+        Me.lblPrecioAño11 = New System.Windows.Forms.Label()
+        Me.lblPrecioAño10 = New System.Windows.Forms.Label()
+        Me.lblPrecioAño02 = New System.Windows.Forms.Label()
+        Me.lblPrecioAño09 = New System.Windows.Forms.Label()
+        Me.lblPrecioAño08 = New System.Windows.Forms.Label()
+        Me.lblPrecioAño03 = New System.Windows.Forms.Label()
+        Me.lblPrecioAño07 = New System.Windows.Forms.Label()
+        Me.lblPrecioAño04 = New System.Windows.Forms.Label()
+        Me.lblPrecioAño06 = New System.Windows.Forms.Label()
+        Me.lblPrecioAño05 = New System.Windows.Forms.Label()
+        Me.lblEtiquetaAñoTotal = New System.Windows.Forms.Label()
+        Me.lblTransasionesAño02 = New System.Windows.Forms.Label()
+        Me.lblTransasionesAño03 = New System.Windows.Forms.Label()
+        Me.lblTransasionesAño12 = New System.Windows.Forms.Label()
+        Me.lblTransasionesAño11 = New System.Windows.Forms.Label()
+        Me.lblTransasionesAño06 = New System.Windows.Forms.Label()
+        Me.lblTransasionesAño09 = New System.Windows.Forms.Label()
+        Me.lblTransasionesAño05 = New System.Windows.Forms.Label()
+        Me.lblTransasionesAño10 = New System.Windows.Forms.Label()
+        Me.lblTransasionesAño08 = New System.Windows.Forms.Label()
+        Me.lblTransasionesAño04 = New System.Windows.Forms.Label()
+        Me.lblTransasionesAño07 = New System.Windows.Forms.Label()
+        Me.lblEtiquetaTransacionAño = New System.Windows.Forms.Label()
+        Me.lblTransasionesAño01 = New System.Windows.Forms.Label()
+        Me.lblTotalGananciaAño = New System.Windows.Forms.Label()
+        Me.lblTransacionesTotalAño = New System.Windows.Forms.Label()
+        Me.gbHoras = New System.Windows.Forms.GroupBox()
+        Me.lblTransacionHoraTotal = New System.Windows.Forms.Label()
+        Me.lblTransacionHora23 = New System.Windows.Forms.Label()
+        Me.lblPrecioDia = New System.Windows.Forms.Label()
+        Me.lblPrecio23 = New System.Windows.Forms.Label()
+        Me.lblHoraDiferencia23 = New System.Windows.Forms.Label()
+        Me.lblHoraDiferencia19 = New System.Windows.Forms.Label()
+        Me.lblHoraDiferencia18 = New System.Windows.Forms.Label()
+        Me.lblHoraDiferencia14 = New System.Windows.Forms.Label()
+        Me.lblHoraDiferencia13 = New System.Windows.Forms.Label()
+        Me.lblHoraDiferencia22 = New System.Windows.Forms.Label()
+        Me.lblHoraDiferencia09 = New System.Windows.Forms.Label()
+        Me.lblHoraDiferencia17 = New System.Windows.Forms.Label()
+        Me.lblHoraDiferencia08 = New System.Windows.Forms.Label()
+        Me.lblHoraDiferencia12 = New System.Windows.Forms.Label()
+        Me.lblHoraDiferencia21 = New System.Windows.Forms.Label()
+        Me.lblEtiquetaTransaacionesHora = New System.Windows.Forms.Label()
+        Me.lblHoraDiferencia04 = New System.Windows.Forms.Label()
+        Me.lblTransacionHora00 = New System.Windows.Forms.Label()
+        Me.lblEtiquetaPrecioHora = New System.Windows.Forms.Label()
+        Me.lblPrecio00 = New System.Windows.Forms.Label()
+        Me.lblTransacionHora22 = New System.Windows.Forms.Label()
+        Me.lblHoraDiferencia16 = New System.Windows.Forms.Label()
+        Me.lblTransacionHora21 = New System.Windows.Forms.Label()
+        Me.lblPrecio22 = New System.Windows.Forms.Label()
+        Me.lblPrecio21 = New System.Windows.Forms.Label()
+        Me.lblTransacionHora20 = New System.Windows.Forms.Label()
+        Me.lblHoraDiferencia07 = New System.Windows.Forms.Label()
+        Me.lblTransacionHora19 = New System.Windows.Forms.Label()
+        Me.lblPrecio20 = New System.Windows.Forms.Label()
+        Me.lblPrecio19 = New System.Windows.Forms.Label()
+        Me.lblTransacionHora18 = New System.Windows.Forms.Label()
+        Me.lblHoraDiferencia11 = New System.Windows.Forms.Label()
+        Me.lblTransacionHora17 = New System.Windows.Forms.Label()
+        Me.lblPrecio18 = New System.Windows.Forms.Label()
+        Me.lblPrecio17 = New System.Windows.Forms.Label()
+        Me.lblTransacionHora16 = New System.Windows.Forms.Label()
+        Me.lblHoraDiferencia20 = New System.Windows.Forms.Label()
+        Me.lblTransacionHora15 = New System.Windows.Forms.Label()
+        Me.lblPrecio16 = New System.Windows.Forms.Label()
+        Me.lblPrecio15 = New System.Windows.Forms.Label()
+        Me.lblTransacionHora14 = New System.Windows.Forms.Label()
+        Me.lblHoraDiferencia03 = New System.Windows.Forms.Label()
+        Me.lblTransacionHora13 = New System.Windows.Forms.Label()
+        Me.lblPrecio14 = New System.Windows.Forms.Label()
+        Me.lblPrecio13 = New System.Windows.Forms.Label()
+        Me.lblTransacionHora12 = New System.Windows.Forms.Label()
+        Me.lblHoraDiferencia15 = New System.Windows.Forms.Label()
+        Me.lblTransacionHora11 = New System.Windows.Forms.Label()
+        Me.lblPrecio12 = New System.Windows.Forms.Label()
+        Me.lblPrecio11 = New System.Windows.Forms.Label()
+        Me.lblTransacionHora10 = New System.Windows.Forms.Label()
+        Me.lblHoraDiferencia06 = New System.Windows.Forms.Label()
+        Me.lblTransacionHora09 = New System.Windows.Forms.Label()
+        Me.lblPrecio10 = New System.Windows.Forms.Label()
+        Me.lblPrecio09 = New System.Windows.Forms.Label()
+        Me.lblTransacionHora08 = New System.Windows.Forms.Label()
+        Me.lblHoraDiferencia10 = New System.Windows.Forms.Label()
+        Me.lblTransacionHora07 = New System.Windows.Forms.Label()
+        Me.lblPrecio08 = New System.Windows.Forms.Label()
+        Me.lblPrecio07 = New System.Windows.Forms.Label()
+        Me.lblTransacionHora06 = New System.Windows.Forms.Label()
+        Me.lblHoraDiferencia02 = New System.Windows.Forms.Label()
+        Me.lblTransacionHora05 = New System.Windows.Forms.Label()
+        Me.lblPrecio06 = New System.Windows.Forms.Label()
+        Me.lblPrecio05 = New System.Windows.Forms.Label()
+        Me.lblTransacionHora04 = New System.Windows.Forms.Label()
+        Me.lblHoraDiferencia05 = New System.Windows.Forms.Label()
+        Me.lblTransacionHora03 = New System.Windows.Forms.Label()
+        Me.lblPrecio04 = New System.Windows.Forms.Label()
+        Me.lblPrecio03 = New System.Windows.Forms.Label()
+        Me.lblTransacionHora02 = New System.Windows.Forms.Label()
+        Me.lblHoraDiferencia01 = New System.Windows.Forms.Label()
+        Me.lblPrecio02 = New System.Windows.Forms.Label()
+        Me.lblEtiquetaGananciaHora = New System.Windows.Forms.Label()
+        Me.lblTransacionHora01 = New System.Windows.Forms.Label()
+        Me.lblHoraDiferencia00 = New System.Windows.Forms.Label()
+        Me.lblPrecio01 = New System.Windows.Forms.Label()
+        Me.lblEtiquetaHora = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.Label22 = New System.Windows.Forms.Label()
+        Me.Label23 = New System.Windows.Forms.Label()
+        Me.Label24 = New System.Windows.Forms.Label()
+        Me.Label25 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora10 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora18 = New System.Windows.Forms.Label()
+        Me.Label29 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora00 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora01 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora23 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora22 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora02 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora21 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora20 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora03 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora19 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora17 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora04 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora16 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora15 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora05 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora14 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora13 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora06 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora12 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora11 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora07 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora09 = New System.Windows.Forms.Label()
+        Me.lblBalanceHora08 = New System.Windows.Forms.Label()
+        Me.lblEtiquetaDiaTotal = New System.Windows.Forms.Label()
+        Me.lblTotalHora = New System.Windows.Forms.Label()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Chart7 = New System.Windows.Forms.DataVisualization.Charting.Chart()
@@ -142,7 +535,6 @@ Partial Class Form1
         Me.txtArduinos = New System.Windows.Forms.TextBox()
         Me.lblEtiquetaAlls = New System.Windows.Forms.Label()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
-        Me.Label32 = New System.Windows.Forms.Label()
         Me.gbOtros = New System.Windows.Forms.GroupBox()
         Me.Label118 = New System.Windows.Forms.Label()
         Me.Label119 = New System.Windows.Forms.Label()
@@ -200,17 +592,24 @@ Partial Class Form1
         Me.txtLogBalanceYprecio = New System.Windows.Forms.TextBox()
         Me.txtLog = New System.Windows.Forms.TextBox()
         Me.TabPage7 = New System.Windows.Forms.TabPage()
+        Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
         Me.gbTemperatura = New System.Windows.Forms.GroupBox()
+        Me.txtFanAmarillo2 = New System.Windows.Forms.NumericUpDown()
         Me.lblEtiquetaTempGreen = New System.Windows.Forms.Label()
+        Me.txtFanVerde2 = New System.Windows.Forms.NumericUpDown()
         Me.lblEtiquetaTempyellow = New System.Windows.Forms.Label()
+        Me.txtGradosFan2 = New System.Windows.Forms.NumericUpDown()
         Me.lblEtiquetaTempMax = New System.Windows.Forms.Label()
         Me.gbOpciones = New System.Windows.Forms.GroupBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lblEtiquetaLenguaje = New System.Windows.Forms.Label()
+        Me.cmbDivisa1 = New System.Windows.Forms.ComboBox()
+        Me.cmbLenguaje1 = New System.Windows.Forms.ComboBox()
+        Me.chkActivarMensajes2 = New System.Windows.Forms.CheckBox()
         Me.gbUser = New System.Windows.Forms.GroupBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.lblUser = New System.Windows.Forms.Label()
         Me.lblEtiquetaUsuario = New System.Windows.Forms.Label()
-        Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
         Me.gbGananciasEuro = New System.Windows.Forms.GroupBox()
         Me.lblGanadoDolar = New System.Windows.Forms.Label()
         Me.Label38 = New System.Windows.Forms.Label()
@@ -247,415 +646,16 @@ Partial Class Form1
         Me.picFan = New System.Windows.Forms.PictureBox()
         Me.picFanAni = New System.Windows.Forms.PictureBox()
         Me.PanelOculto = New System.Windows.Forms.Panel()
-        Me.gbGananciasDolar = New System.Windows.Forms.GroupBox()
-        Me.gbAño = New System.Windows.Forms.GroupBox()
-        Me.lblTransacionesTotalAño = New System.Windows.Forms.Label()
-        Me.lblTotalGananciaAño = New System.Windows.Forms.Label()
-        Me.lblEtiquetaTransacionAño = New System.Windows.Forms.Label()
-        Me.lblEtiquetaAñoTotal = New System.Windows.Forms.Label()
-        Me.lblEtiquetaPrecioAño = New System.Windows.Forms.Label()
-        Me.Label154 = New System.Windows.Forms.Label()
-        Me.Label153 = New System.Windows.Forms.Label()
-        Me.Label152 = New System.Windows.Forms.Label()
-        Me.Label151 = New System.Windows.Forms.Label()
-        Me.Label150 = New System.Windows.Forms.Label()
-        Me.Label149 = New System.Windows.Forms.Label()
-        Me.Label148 = New System.Windows.Forms.Label()
-        Me.Label147 = New System.Windows.Forms.Label()
-        Me.Label146 = New System.Windows.Forms.Label()
-        Me.Label145 = New System.Windows.Forms.Label()
-        Me.Label144 = New System.Windows.Forms.Label()
-        Me.Label143 = New System.Windows.Forms.Label()
-        Me.lblEtiquetaMes = New System.Windows.Forms.Label()
-        Me.Label128 = New System.Windows.Forms.Label()
-        Me.lblEtiquetaGanaciasAño = New System.Windows.Forms.Label()
-        Me.gbAños = New System.Windows.Forms.GroupBox()
-        Me.Label138 = New System.Windows.Forms.Label()
-        Me.Label137 = New System.Windows.Forms.Label()
-        Me.lblEtiquetaAños = New System.Windows.Forms.Label()
-        Me.Label130 = New System.Windows.Forms.Label()
-        Me.lblEtiquetaGananciasAños = New System.Windows.Forms.Label()
-        Me.lblGanadoAñoTotal = New System.Windows.Forms.Label()
-        Me.lblEtiquetaAñosTotal = New System.Windows.Forms.Label()
-        Me.gbEstadisticasGlobales = New System.Windows.Forms.GroupBox()
-        Me.lblEtiquetaDucoTotal = New System.Windows.Forms.Label()
-        Me.lblEtiquetaTrasacioneTotal = New System.Windows.Forms.Label()
-        Me.lblEtiquetaGananciaTotal = New System.Windows.Forms.Label()
-        Me.lblTotalGanadoAños = New System.Windows.Forms.Label()
-        Me.lblTotalTransasiones = New System.Windows.Forms.Label()
-        Me.lblEtiquetaDuco = New System.Windows.Forms.Label()
-        Me.lblDucosTotales = New System.Windows.Forms.Label()
-        Me.lblEtiquetaTransacionesAños = New System.Windows.Forms.Label()
-        Me.lblTransasionesAñoTotal = New System.Windows.Forms.Label()
-        Me.lblEtiquetaPreciosAños = New System.Windows.Forms.Label()
-        Me.gbHoras = New System.Windows.Forms.GroupBox()
-        Me.lblTotalHora = New System.Windows.Forms.Label()
-        Me.lblEtiquetaDiaTotal = New System.Windows.Forms.Label()
-        Me.Label29 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label25 = New System.Windows.Forms.Label()
-        Me.Label24 = New System.Windows.Forms.Label()
-        Me.Label23 = New System.Windows.Forms.Label()
-        Me.Label22 = New System.Windows.Forms.Label()
-        Me.Label21 = New System.Windows.Forms.Label()
-        Me.Label20 = New System.Windows.Forms.Label()
-        Me.Label19 = New System.Windows.Forms.Label()
-        Me.Label18 = New System.Windows.Forms.Label()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.lblEtiquetaHora = New System.Windows.Forms.Label()
-        Me.lblEtiquetaGananciaHora = New System.Windows.Forms.Label()
-        Me.lblHoraDiferencia01 = New System.Windows.Forms.Label()
-        Me.lblHoraDiferencia05 = New System.Windows.Forms.Label()
-        Me.lblHoraDiferencia02 = New System.Windows.Forms.Label()
-        Me.lblHoraDiferencia10 = New System.Windows.Forms.Label()
-        Me.lblHoraDiferencia06 = New System.Windows.Forms.Label()
-        Me.lblHoraDiferencia15 = New System.Windows.Forms.Label()
-        Me.lblHoraDiferencia03 = New System.Windows.Forms.Label()
-        Me.lblHoraDiferencia20 = New System.Windows.Forms.Label()
-        Me.lblHoraDiferencia11 = New System.Windows.Forms.Label()
-        Me.lblHoraDiferencia07 = New System.Windows.Forms.Label()
-        Me.lblHoraDiferencia16 = New System.Windows.Forms.Label()
-        Me.lblEtiquetaPrecioHora = New System.Windows.Forms.Label()
-        Me.lblHoraDiferencia04 = New System.Windows.Forms.Label()
-        Me.lblHoraDiferencia21 = New System.Windows.Forms.Label()
-        Me.lblHoraDiferencia12 = New System.Windows.Forms.Label()
-        Me.lblHoraDiferencia08 = New System.Windows.Forms.Label()
-        Me.lblHoraDiferencia17 = New System.Windows.Forms.Label()
-        Me.lblHoraDiferencia09 = New System.Windows.Forms.Label()
-        Me.lblHoraDiferencia22 = New System.Windows.Forms.Label()
-        Me.lblHoraDiferencia13 = New System.Windows.Forms.Label()
-        Me.lblHoraDiferencia14 = New System.Windows.Forms.Label()
-        Me.lblHoraDiferencia18 = New System.Windows.Forms.Label()
-        Me.lblHoraDiferencia19 = New System.Windows.Forms.Label()
-        Me.lblHoraDiferencia23 = New System.Windows.Forms.Label()
-        Me.gbMes = New System.Windows.Forms.GroupBox()
-        Me.lblTransacionMes = New System.Windows.Forms.Label()
-        Me.lblTransacionMes01 = New System.Windows.Forms.Label()
-        Me.lblEtiquetaTransacionesMes = New System.Windows.Forms.Label()
-        Me.lblTransacionMes02 = New System.Windows.Forms.Label()
-        Me.lblTransacionMes13 = New System.Windows.Forms.Label()
-        Me.lblTransacionMes07 = New System.Windows.Forms.Label()
-        Me.lblTransacionMes14 = New System.Windows.Forms.Label()
-        Me.lblTransacionMes04 = New System.Windows.Forms.Label()
-        Me.lblTransacionMes19 = New System.Windows.Forms.Label()
-        Me.lblTransacionMes08 = New System.Windows.Forms.Label()
-        Me.lblTransacionMes16 = New System.Windows.Forms.Label()
-        Me.lblTransacionMes20 = New System.Windows.Forms.Label()
-        Me.lblTransacionMes10 = New System.Windows.Forms.Label()
-        Me.lblTransacionMes25 = New System.Windows.Forms.Label()
-        Me.lblTransacionMes15 = New System.Windows.Forms.Label()
-        Me.lblTransacionMes05 = New System.Windows.Forms.Label()
-        Me.lblTransacionMes22 = New System.Windows.Forms.Label()
-        Me.lblTransacionMes09 = New System.Windows.Forms.Label()
-        Me.lblTransacionMes27 = New System.Windows.Forms.Label()
-        Me.lblTransacionMes17 = New System.Windows.Forms.Label()
-        Me.lblTransacionMes06 = New System.Windows.Forms.Label()
-        Me.lblTransacionMes21 = New System.Windows.Forms.Label()
-        Me.lblTransacionMes11 = New System.Windows.Forms.Label()
-        Me.lblTransacionMes26 = New System.Windows.Forms.Label()
-        Me.lblTransacionMes18 = New System.Windows.Forms.Label()
-        Me.lblTransacionMes12 = New System.Windows.Forms.Label()
-        Me.lblTransacionMes23 = New System.Windows.Forms.Label()
-        Me.lblTransacionMes24 = New System.Windows.Forms.Label()
-        Me.lblTransacionMes03 = New System.Windows.Forms.Label()
-        Me.lblTransacionMes28 = New System.Windows.Forms.Label()
-        Me.lblTransacionMes29 = New System.Windows.Forms.Label()
-        Me.lblTransacionMes30 = New System.Windows.Forms.Label()
-        Me.lblTransacionMes31 = New System.Windows.Forms.Label()
-        Me.lblEtiquetaMesDaily = New System.Windows.Forms.Label()
-        Me.lblTotalMes = New System.Windows.Forms.Label()
-        Me.lbl29 = New System.Windows.Forms.Label()
-        Me.lbl28 = New System.Windows.Forms.Label()
-        Me.lbl30 = New System.Windows.Forms.Label()
-        Me.Label109 = New System.Windows.Forms.Label()
-        Me.lbl31 = New System.Windows.Forms.Label()
-        Me.Label106 = New System.Windows.Forms.Label()
-        Me.Label103 = New System.Windows.Forms.Label()
-        Me.lblEtiquetaPrecioMes = New System.Windows.Forms.Label()
-        Me.Label100 = New System.Windows.Forms.Label()
-        Me.Label52 = New System.Windows.Forms.Label()
-        Me.Label53 = New System.Windows.Forms.Label()
-        Me.Label54 = New System.Windows.Forms.Label()
-        Me.Label55 = New System.Windows.Forms.Label()
-        Me.Label56 = New System.Windows.Forms.Label()
-        Me.Label57 = New System.Windows.Forms.Label()
-        Me.Label58 = New System.Windows.Forms.Label()
-        Me.Label59 = New System.Windows.Forms.Label()
-        Me.Label60 = New System.Windows.Forms.Label()
-        Me.Label61 = New System.Windows.Forms.Label()
-        Me.Label62 = New System.Windows.Forms.Label()
-        Me.Label63 = New System.Windows.Forms.Label()
-        Me.Label64 = New System.Windows.Forms.Label()
-        Me.Label65 = New System.Windows.Forms.Label()
-        Me.Label66 = New System.Windows.Forms.Label()
-        Me.Label67 = New System.Windows.Forms.Label()
-        Me.Label68 = New System.Windows.Forms.Label()
-        Me.Label69 = New System.Windows.Forms.Label()
-        Me.Label70 = New System.Windows.Forms.Label()
-        Me.Label71 = New System.Windows.Forms.Label()
-        Me.Label72 = New System.Windows.Forms.Label()
-        Me.Label73 = New System.Windows.Forms.Label()
-        Me.Label74 = New System.Windows.Forms.Label()
-        Me.lblEtiquetaDia = New System.Windows.Forms.Label()
-        Me.lblMesDifencia30 = New System.Windows.Forms.Label()
-        Me.Label35 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia29 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia03 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia28 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia24 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia23 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia12 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia18 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia26 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia11 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia21 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia06 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia17 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia27 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia09 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia22 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia05 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia15 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia25 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia10 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia20 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia16 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia08 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia19 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia04 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia14 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia07 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia13 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia02 = New System.Windows.Forms.Label()
-        Me.lblEtiquetaGananciasMes = New System.Windows.Forms.Label()
-        Me.lblMesDifencia01 = New System.Windows.Forms.Label()
-        Me.lblMesDifencia31 = New System.Windows.Forms.Label()
-        Me.lblEtiquetaTransaacionesHora = New System.Windows.Forms.Label()
         Me.chkActivarMensajes = New System.Windows.Forms.CheckBox()
         Me.cmbDivisa = New System.Windows.Forms.ComboBox()
-        Me.txtFanAmarillo2 = New System.Windows.Forms.NumericUpDown()
-        Me.txtFanVerde2 = New System.Windows.Forms.NumericUpDown()
-        Me.txtGradosFan2 = New System.Windows.Forms.NumericUpDown()
-        Me.cmbDivisa1 = New System.Windows.Forms.ComboBox()
-        Me.cmbLenguaje1 = New System.Windows.Forms.ComboBox()
-        Me.chkActivarMensajes2 = New System.Windows.Forms.CheckBox()
-        Me.lblUser = New System.Windows.Forms.Label()
         Me.cmbLenguaje = New System.Windows.Forms.ComboBox()
         Me.txtGradosFan = New System.Windows.Forms.NumericUpDown()
         Me.txtFanAmarillo = New System.Windows.Forms.NumericUpDown()
         Me.lblReinicioApp = New System.Windows.Forms.Label()
         Me.txtUser = New System.Windows.Forms.TextBox()
         Me.txtFanVerde = New System.Windows.Forms.NumericUpDown()
-        Me.lblTransasionesAño01 = New System.Windows.Forms.Label()
-        Me.lblTransasionesAño07 = New System.Windows.Forms.Label()
-        Me.lblTransasionesAño04 = New System.Windows.Forms.Label()
-        Me.lblTransasionesAño08 = New System.Windows.Forms.Label()
-        Me.lblTransasionesAño10 = New System.Windows.Forms.Label()
-        Me.lblTransasionesAño05 = New System.Windows.Forms.Label()
-        Me.lblTransasionesAño09 = New System.Windows.Forms.Label()
-        Me.lblTransasionesAño06 = New System.Windows.Forms.Label()
-        Me.lblTransasionesAño11 = New System.Windows.Forms.Label()
-        Me.lblTransasionesAño12 = New System.Windows.Forms.Label()
-        Me.lblTransasionesAño03 = New System.Windows.Forms.Label()
-        Me.lblTransasionesAño02 = New System.Windows.Forms.Label()
-        Me.lblPrecioAño05 = New System.Windows.Forms.Label()
-        Me.lblPrecioAño06 = New System.Windows.Forms.Label()
-        Me.lblPrecioAño04 = New System.Windows.Forms.Label()
-        Me.lblPrecioAño07 = New System.Windows.Forms.Label()
-        Me.lblPrecioAño03 = New System.Windows.Forms.Label()
-        Me.lblPrecioAño08 = New System.Windows.Forms.Label()
-        Me.lblPrecioAño09 = New System.Windows.Forms.Label()
-        Me.lblPrecioAño02 = New System.Windows.Forms.Label()
-        Me.lblPrecioAño10 = New System.Windows.Forms.Label()
-        Me.lblPrecioAño11 = New System.Windows.Forms.Label()
-        Me.lblPrecioAño01 = New System.Windows.Forms.Label()
-        Me.lblPrecioAño12 = New System.Windows.Forms.Label()
-        Me.lblPrecioAnual = New System.Windows.Forms.Label()
-        Me.lblBalanceAño12 = New System.Windows.Forms.Label()
-        Me.lblBalanceAño11 = New System.Windows.Forms.Label()
-        Me.lblBalanceAño10 = New System.Windows.Forms.Label()
-        Me.lblBalanceAño09 = New System.Windows.Forms.Label()
-        Me.lblBalanceAño08 = New System.Windows.Forms.Label()
-        Me.lblBalanceAño07 = New System.Windows.Forms.Label()
-        Me.lblBalanceAño06 = New System.Windows.Forms.Label()
-        Me.lblBalanceAño05 = New System.Windows.Forms.Label()
-        Me.lblBalanceAño04 = New System.Windows.Forms.Label()
-        Me.lblBalanceAño03 = New System.Windows.Forms.Label()
-        Me.lblBalanceAño02 = New System.Windows.Forms.Label()
-        Me.lblBalanceAño01 = New System.Windows.Forms.Label()
-        Me.lblGananciasAño03 = New System.Windows.Forms.Label()
-        Me.lblGananciasAño12 = New System.Windows.Forms.Label()
-        Me.lblGananciasAño11 = New System.Windows.Forms.Label()
-        Me.lblGananciasAño06 = New System.Windows.Forms.Label()
-        Me.lblGananciasAño09 = New System.Windows.Forms.Label()
-        Me.lblGananciasAño05 = New System.Windows.Forms.Label()
-        Me.lblGananciasAño10 = New System.Windows.Forms.Label()
-        Me.lblGananciasAño08 = New System.Windows.Forms.Label()
-        Me.lblGananciasAño04 = New System.Windows.Forms.Label()
-        Me.lblGananciasAño07 = New System.Windows.Forms.Label()
-        Me.lblGananciasAño02 = New System.Windows.Forms.Label()
-        Me.lblGananciasAño01 = New System.Windows.Forms.Label()
-        Me.lblBalanceAño2023 = New System.Windows.Forms.Label()
-        Me.lblBalanceAño2022 = New System.Windows.Forms.Label()
-        Me.lblGanadoAño2023 = New System.Windows.Forms.Label()
-        Me.lblGanadoAño2022 = New System.Windows.Forms.Label()
-        Me.lblTransasionesAño2023 = New System.Windows.Forms.Label()
-        Me.lblTransasionesAño2022 = New System.Windows.Forms.Label()
-        Me.lblPrecioAño2023 = New System.Windows.Forms.Label()
-        Me.lblPrecioMedioTodosAños = New System.Windows.Forms.Label()
-        Me.lblPrecioAño2022 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora08 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora09 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora07 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora11 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora12 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora06 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora13 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora14 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora05 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora15 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora16 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora04 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora17 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora19 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora03 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora20 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora21 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora02 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora22 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora23 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora01 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora00 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora18 = New System.Windows.Forms.Label()
-        Me.lblBalanceHora10 = New System.Windows.Forms.Label()
-        Me.lblPrecio01 = New System.Windows.Forms.Label()
-        Me.lblHoraDiferencia00 = New System.Windows.Forms.Label()
-        Me.lblPrecio02 = New System.Windows.Forms.Label()
-        Me.lblPrecio03 = New System.Windows.Forms.Label()
-        Me.lblPrecio04 = New System.Windows.Forms.Label()
-        Me.lblPrecio05 = New System.Windows.Forms.Label()
-        Me.lblPrecio06 = New System.Windows.Forms.Label()
-        Me.lblPrecio07 = New System.Windows.Forms.Label()
-        Me.lblPrecio08 = New System.Windows.Forms.Label()
-        Me.lblPrecio09 = New System.Windows.Forms.Label()
-        Me.lblPrecio10 = New System.Windows.Forms.Label()
-        Me.lblPrecio11 = New System.Windows.Forms.Label()
-        Me.lblPrecio12 = New System.Windows.Forms.Label()
-        Me.lblPrecio13 = New System.Windows.Forms.Label()
-        Me.lblPrecio14 = New System.Windows.Forms.Label()
-        Me.lblPrecio15 = New System.Windows.Forms.Label()
-        Me.lblPrecio16 = New System.Windows.Forms.Label()
-        Me.lblPrecio17 = New System.Windows.Forms.Label()
-        Me.lblPrecio18 = New System.Windows.Forms.Label()
-        Me.lblPrecio19 = New System.Windows.Forms.Label()
-        Me.lblPrecio20 = New System.Windows.Forms.Label()
-        Me.lblPrecio21 = New System.Windows.Forms.Label()
-        Me.lblPrecio22 = New System.Windows.Forms.Label()
-        Me.lblPrecio00 = New System.Windows.Forms.Label()
-        Me.lblPrecio23 = New System.Windows.Forms.Label()
-        Me.lblPrecioDia = New System.Windows.Forms.Label()
-        Me.lblMesPrecio05 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio06 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio04 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio07 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio03 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio08 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio09 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio02 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio10 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio11 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio01 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio12 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio13 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio14 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio15 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio16 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio17 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio18 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio19 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio20 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio21 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio22 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio23 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio24 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio25 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio26 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio27 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio28 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio29 = New System.Windows.Forms.Label()
-        Me.lblMesBalance31 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio30 = New System.Windows.Forms.Label()
-        Me.lblMesPrecio31 = New System.Windows.Forms.Label()
-        Me.lblPrecioMes = New System.Windows.Forms.Label()
-        Me.lblMesBalance30 = New System.Windows.Forms.Label()
-        Me.lblMesBalance29 = New System.Windows.Forms.Label()
-        Me.lblMesBalance28 = New System.Windows.Forms.Label()
-        Me.lblMesBalance27 = New System.Windows.Forms.Label()
-        Me.lblMesBalance26 = New System.Windows.Forms.Label()
-        Me.lblMesBalance25 = New System.Windows.Forms.Label()
-        Me.lblMesBalance24 = New System.Windows.Forms.Label()
-        Me.lblMesBalance23 = New System.Windows.Forms.Label()
-        Me.lblMesBalance22 = New System.Windows.Forms.Label()
-        Me.lblMesBalance21 = New System.Windows.Forms.Label()
-        Me.lblMesBalance20 = New System.Windows.Forms.Label()
-        Me.lblMesBalance19 = New System.Windows.Forms.Label()
-        Me.lblMesBalance18 = New System.Windows.Forms.Label()
-        Me.lblMesBalance17 = New System.Windows.Forms.Label()
-        Me.lblMesBalance16 = New System.Windows.Forms.Label()
-        Me.lblMesBalance15 = New System.Windows.Forms.Label()
-        Me.lblMesBalance14 = New System.Windows.Forms.Label()
-        Me.lblMesBalance13 = New System.Windows.Forms.Label()
-        Me.lblMesBalance12 = New System.Windows.Forms.Label()
-        Me.lblMesBalance11 = New System.Windows.Forms.Label()
-        Me.lblMesBalance10 = New System.Windows.Forms.Label()
-        Me.lblMesBalance09 = New System.Windows.Forms.Label()
-        Me.lblMesBalance08 = New System.Windows.Forms.Label()
-        Me.lblMesBalance07 = New System.Windows.Forms.Label()
-        Me.lblMesBalance06 = New System.Windows.Forms.Label()
-        Me.lblMesBalance05 = New System.Windows.Forms.Label()
-        Me.lblMesBalance04 = New System.Windows.Forms.Label()
-        Me.lblMesBalance03 = New System.Windows.Forms.Label()
-        Me.lblMesBalance02 = New System.Windows.Forms.Label()
-        Me.lblMesBalance01 = New System.Windows.Forms.Label()
-        Me.lblTransacionHora01 = New System.Windows.Forms.Label()
-        Me.lblTransacionHora02 = New System.Windows.Forms.Label()
-        Me.lblTransacionHora03 = New System.Windows.Forms.Label()
-        Me.lblTransacionHora04 = New System.Windows.Forms.Label()
-        Me.lblTransacionHora05 = New System.Windows.Forms.Label()
-        Me.lblTransacionHora06 = New System.Windows.Forms.Label()
-        Me.lblTransacionHora07 = New System.Windows.Forms.Label()
-        Me.lblTransacionHora08 = New System.Windows.Forms.Label()
-        Me.lblTransacionHora09 = New System.Windows.Forms.Label()
-        Me.lblTransacionHora10 = New System.Windows.Forms.Label()
-        Me.lblTransacionHora11 = New System.Windows.Forms.Label()
-        Me.lblTransacionHora12 = New System.Windows.Forms.Label()
-        Me.lblTransacionHora13 = New System.Windows.Forms.Label()
-        Me.lblTransacionHora14 = New System.Windows.Forms.Label()
-        Me.lblTransacionHora15 = New System.Windows.Forms.Label()
-        Me.lblTransacionHora16 = New System.Windows.Forms.Label()
-        Me.lblTransacionHora17 = New System.Windows.Forms.Label()
-        Me.lblTransacionHora18 = New System.Windows.Forms.Label()
-        Me.lblTransacionHora19 = New System.Windows.Forms.Label()
-        Me.lblTransacionHora20 = New System.Windows.Forms.Label()
-        Me.lblTransacionHora21 = New System.Windows.Forms.Label()
-        Me.lblTransacionHora22 = New System.Windows.Forms.Label()
-        Me.lblTransacionHora00 = New System.Windows.Forms.Label()
-        Me.lblTransacionHora23 = New System.Windows.Forms.Label()
-        Me.lblTransacionHoraTotal = New System.Windows.Forms.Label()
+        Me.gbGananciasDolar = New System.Windows.Forms.GroupBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Chart2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.gbBalance.SuspendLayout()
@@ -666,6 +666,11 @@ Partial Class Form1
         CType(Me.Chart6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
+        Me.gbMes.SuspendLayout()
+        Me.gbAños.SuspendLayout()
+        Me.gbEstadisticasGlobales.SuspendLayout()
+        Me.gbAño.SuspendLayout()
+        Me.gbHoras.SuspendLayout()
         Me.TabPage2.SuspendLayout()
         Me.Panel1.SuspendLayout()
         CType(Me.Chart7, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -691,6 +696,9 @@ Partial Class Form1
         Me.TabPage6.SuspendLayout()
         Me.TabPage7.SuspendLayout()
         Me.gbTemperatura.SuspendLayout()
+        CType(Me.txtFanAmarillo2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtFanVerde2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtGradosFan2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.gbOpciones.SuspendLayout()
         Me.gbUser.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -703,18 +711,10 @@ Partial Class Form1
         CType(Me.picFan, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picFanAni, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelOculto.SuspendLayout()
-        Me.gbGananciasDolar.SuspendLayout()
-        Me.gbAño.SuspendLayout()
-        Me.gbAños.SuspendLayout()
-        Me.gbEstadisticasGlobales.SuspendLayout()
-        Me.gbHoras.SuspendLayout()
-        Me.gbMes.SuspendLayout()
-        CType(Me.txtFanAmarillo2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txtFanVerde2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txtGradosFan2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtGradosFan, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtFanAmarillo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtFanVerde, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.gbGananciasDolar.SuspendLayout()
         Me.SuspendLayout()
         '
         'Timer1
@@ -750,41 +750,41 @@ Partial Class Form1
         '
         'Chart1
         '
-        ChartArea1.Name = "ChartArea1"
-        Me.Chart1.ChartAreas.Add(ChartArea1)
-        Legend1.Name = "Legend1"
-        Me.Chart1.Legends.Add(Legend1)
+        ChartArea22.Name = "ChartArea1"
+        Me.Chart1.ChartAreas.Add(ChartArea22)
+        Legend22.Name = "Legend1"
+        Me.Chart1.Legends.Add(Legend22)
         resources.ApplyResources(Me.Chart1, "Chart1")
         Me.Chart1.Name = "Chart1"
-        Series1.BorderWidth = 3
-        Series1.ChartArea = "ChartArea1"
-        Series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
-        Series1.Color = System.Drawing.Color.Lime
-        Series1.IsVisibleInLegend = False
-        Series1.Legend = "Legend1"
-        Series1.Name = "Series1"
-        Series1.ToolTip = "#VAL"
-        Series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Me.Chart1.Series.Add(Series1)
+        Series25.BorderWidth = 3
+        Series25.ChartArea = "ChartArea1"
+        Series25.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
+        Series25.Color = System.Drawing.Color.Lime
+        Series25.IsVisibleInLegend = False
+        Series25.Legend = "Legend1"
+        Series25.Name = "Series1"
+        Series25.ToolTip = "#VAL"
+        Series25.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Me.Chart1.Series.Add(Series25)
         '
         'Chart2
         '
-        ChartArea2.Name = "ChartArea1"
-        Me.Chart2.ChartAreas.Add(ChartArea2)
-        Legend2.Name = "Legend1"
-        Me.Chart2.Legends.Add(Legend2)
+        ChartArea23.Name = "ChartArea1"
+        Me.Chart2.ChartAreas.Add(ChartArea23)
+        Legend23.Name = "Legend1"
+        Me.Chart2.Legends.Add(Legend23)
         resources.ApplyResources(Me.Chart2, "Chart2")
         Me.Chart2.Name = "Chart2"
-        Series2.BorderWidth = 3
-        Series2.ChartArea = "ChartArea1"
-        Series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
-        Series2.Color = System.Drawing.Color.DarkOrange
-        Series2.IsVisibleInLegend = False
-        Series2.Legend = "Legend1"
-        Series2.Name = "Series1"
-        Series2.ToolTip = "#VAL"
-        Series2.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Me.Chart2.Series.Add(Series2)
+        Series26.BorderWidth = 3
+        Series26.ChartArea = "ChartArea1"
+        Series26.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
+        Series26.Color = System.Drawing.Color.DarkOrange
+        Series26.IsVisibleInLegend = False
+        Series26.Legend = "Legend1"
+        Series26.Name = "Series1"
+        Series26.ToolTip = "#VAL"
+        Series26.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Me.Chart2.Series.Add(Series26)
         '
         'Label26
         '
@@ -826,94 +826,94 @@ Partial Class Form1
         '
         'Chart5
         '
-        ChartArea3.AxisX.MajorGrid.Interval = 0R
-        ChartArea3.AxisX.MajorGrid.IntervalOffset = 0R
-        ChartArea3.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
-        ChartArea3.Name = "ChartArea1"
-        Me.Chart5.ChartAreas.Add(ChartArea3)
-        Legend3.Name = "Legend1"
-        Me.Chart5.Legends.Add(Legend3)
+        ChartArea24.AxisX.MajorGrid.Interval = 0R
+        ChartArea24.AxisX.MajorGrid.IntervalOffset = 0R
+        ChartArea24.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
+        ChartArea24.Name = "ChartArea1"
+        Me.Chart5.ChartAreas.Add(ChartArea24)
+        Legend24.Name = "Legend1"
+        Me.Chart5.Legends.Add(Legend24)
         resources.ApplyResources(Me.Chart5, "Chart5")
         Me.Chart5.Name = "Chart5"
-        Series3.ChartArea = "ChartArea1"
-        Series3.Color = System.Drawing.Color.OrangeRed
-        Series3.IsVisibleInLegend = False
-        Series3.Legend = "Legend1"
-        Series3.Name = "Series1"
-        Series3.ToolTip = "#VAL"
-        Series3.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[String]
-        Series3.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
-        Me.Chart5.Series.Add(Series3)
+        Series27.ChartArea = "ChartArea1"
+        Series27.Color = System.Drawing.Color.OrangeRed
+        Series27.IsVisibleInLegend = False
+        Series27.Legend = "Legend1"
+        Series27.Name = "Series1"
+        Series27.ToolTip = "#VAL"
+        Series27.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[String]
+        Series27.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
+        Me.Chart5.Series.Add(Series27)
         '
         'Chart3
         '
-        ChartArea4.Name = "ChartArea1"
-        Me.Chart3.ChartAreas.Add(ChartArea4)
-        Legend4.Name = "Legend1"
-        Me.Chart3.Legends.Add(Legend4)
+        ChartArea25.Name = "ChartArea1"
+        Me.Chart3.ChartAreas.Add(ChartArea25)
+        Legend25.Name = "Legend1"
+        Me.Chart3.Legends.Add(Legend25)
         resources.ApplyResources(Me.Chart3, "Chart3")
         Me.Chart3.Name = "Chart3"
-        Series4.BorderWidth = 2
-        Series4.ChartArea = "ChartArea1"
-        Series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
-        Series4.Color = System.Drawing.Color.Fuchsia
-        Series4.EmptyPointStyle.IsValueShownAsLabel = True
-        Series4.EmptyPointStyle.IsVisibleInLegend = False
-        Series4.IsVisibleInLegend = False
-        Series4.LabelFormat = "0.00"
-        Series4.Legend = "Legend1"
-        Series4.Name = "Series1"
-        Series4.ToolTip = "#VAL"
-        Series4.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Series4.YValuesPerPoint = 4
-        Me.Chart3.Series.Add(Series4)
+        Series28.BorderWidth = 2
+        Series28.ChartArea = "ChartArea1"
+        Series28.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
+        Series28.Color = System.Drawing.Color.Fuchsia
+        Series28.EmptyPointStyle.IsValueShownAsLabel = True
+        Series28.EmptyPointStyle.IsVisibleInLegend = False
+        Series28.IsVisibleInLegend = False
+        Series28.LabelFormat = "0.00"
+        Series28.Legend = "Legend1"
+        Series28.Name = "Series1"
+        Series28.ToolTip = "#VAL"
+        Series28.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Series28.YValuesPerPoint = 4
+        Me.Chart3.Series.Add(Series28)
         '
         'Chart4
         '
-        ChartArea5.AxisX.MajorGrid.Interval = 0R
-        ChartArea5.AxisX.MajorGrid.IntervalOffset = 0R
-        ChartArea5.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
-        ChartArea5.Name = "ChartArea1"
-        Me.Chart4.ChartAreas.Add(ChartArea5)
-        Legend5.Name = "Legend1"
-        Me.Chart4.Legends.Add(Legend5)
+        ChartArea26.AxisX.MajorGrid.Interval = 0R
+        ChartArea26.AxisX.MajorGrid.IntervalOffset = 0R
+        ChartArea26.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
+        ChartArea26.Name = "ChartArea1"
+        Me.Chart4.ChartAreas.Add(ChartArea26)
+        Legend26.Name = "Legend1"
+        Me.Chart4.Legends.Add(Legend26)
         resources.ApplyResources(Me.Chart4, "Chart4")
         Me.Chart4.Name = "Chart4"
-        Series5.ChartArea = "ChartArea1"
-        Series5.Color = System.Drawing.Color.Lime
-        Series5.IsVisibleInLegend = False
-        Series5.Legend = "Legend1"
-        Series5.Name = "Series1"
-        Series5.ToolTip = "#VAL"
-        Series5.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[String]
-        Series5.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
-        Me.Chart4.Series.Add(Series5)
+        Series29.ChartArea = "ChartArea1"
+        Series29.Color = System.Drawing.Color.Lime
+        Series29.IsVisibleInLegend = False
+        Series29.Legend = "Legend1"
+        Series29.Name = "Series1"
+        Series29.ToolTip = "#VAL"
+        Series29.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[String]
+        Series29.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
+        Me.Chart4.Series.Add(Series29)
         '
         'Chart6
         '
         resources.ApplyResources(Me.Chart6, "Chart6")
-        ChartArea6.AxisX.MajorGrid.Interval = 0R
-        ChartArea6.AxisX.MajorGrid.IntervalOffset = 0R
-        ChartArea6.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
-        ChartArea6.IsSameFontSizeForAllAxes = True
-        ChartArea6.Name = "ChartArea1"
-        Me.Chart6.ChartAreas.Add(ChartArea6)
-        Legend6.Enabled = False
-        Legend6.Name = "Legend1"
-        Me.Chart6.Legends.Add(Legend6)
+        ChartArea27.AxisX.MajorGrid.Interval = 0R
+        ChartArea27.AxisX.MajorGrid.IntervalOffset = 0R
+        ChartArea27.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
+        ChartArea27.IsSameFontSizeForAllAxes = True
+        ChartArea27.Name = "ChartArea1"
+        Me.Chart6.ChartAreas.Add(ChartArea27)
+        Legend27.Enabled = False
+        Legend27.Name = "Legend1"
+        Me.Chart6.Legends.Add(Legend27)
         Me.Chart6.Name = "Chart6"
-        Series6.BorderWidth = 3
-        Series6.ChartArea = "ChartArea1"
-        Series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line
-        Series6.Color = System.Drawing.Color.DarkOrchid
-        Series6.IsVisibleInLegend = False
-        Series6.IsXValueIndexed = True
-        Series6.Legend = "Legend1"
-        Series6.Name = "Series1"
-        Series6.ToolTip = "#VAL"
-        Series6.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Series6.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
-        Me.Chart6.Series.Add(Series6)
+        Series30.BorderWidth = 3
+        Series30.ChartArea = "ChartArea1"
+        Series30.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line
+        Series30.Color = System.Drawing.Color.DarkOrchid
+        Series30.IsVisibleInLegend = False
+        Series30.IsXValueIndexed = True
+        Series30.Legend = "Legend1"
+        Series30.Name = "Series1"
+        Series30.ToolTip = "#VAL"
+        Series30.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Series30.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
+        Me.Chart6.Series.Add(Series30)
         '
         'TabControl1
         '
@@ -939,6 +939,3169 @@ Partial Class Form1
         Me.TabPage1.Controls.Add(Me.gbHoras)
         Me.TabPage1.Name = "TabPage1"
         '
+        'gbMes
+        '
+        Me.gbMes.Controls.Add(Me.lblMesDifencia31)
+        Me.gbMes.Controls.Add(Me.lblMesDifencia01)
+        Me.gbMes.Controls.Add(Me.lblEtiquetaGananciasMes)
+        Me.gbMes.Controls.Add(Me.lblMesDifencia02)
+        Me.gbMes.Controls.Add(Me.lblMesDifencia13)
+        Me.gbMes.Controls.Add(Me.lblMesDifencia07)
+        Me.gbMes.Controls.Add(Me.lblMesDifencia14)
+        Me.gbMes.Controls.Add(Me.lblMesDifencia04)
+        Me.gbMes.Controls.Add(Me.lblMesDifencia19)
+        Me.gbMes.Controls.Add(Me.lblMesDifencia08)
+        Me.gbMes.Controls.Add(Me.lblMesDifencia16)
+        Me.gbMes.Controls.Add(Me.lblMesDifencia20)
+        Me.gbMes.Controls.Add(Me.lblMesDifencia10)
+        Me.gbMes.Controls.Add(Me.lblMesDifencia25)
+        Me.gbMes.Controls.Add(Me.lblMesDifencia15)
+        Me.gbMes.Controls.Add(Me.lblMesDifencia05)
+        Me.gbMes.Controls.Add(Me.lblMesDifencia22)
+        Me.gbMes.Controls.Add(Me.lblMesDifencia09)
+        Me.gbMes.Controls.Add(Me.lblMesDifencia27)
+        Me.gbMes.Controls.Add(Me.lblMesDifencia17)
+        Me.gbMes.Controls.Add(Me.lblMesDifencia06)
+        Me.gbMes.Controls.Add(Me.lblMesDifencia21)
+        Me.gbMes.Controls.Add(Me.lblMesDifencia11)
+        Me.gbMes.Controls.Add(Me.lblMesDifencia26)
+        Me.gbMes.Controls.Add(Me.lblMesDifencia18)
+        Me.gbMes.Controls.Add(Me.lblMesDifencia12)
+        Me.gbMes.Controls.Add(Me.lblMesDifencia23)
+        Me.gbMes.Controls.Add(Me.lblMesDifencia24)
+        Me.gbMes.Controls.Add(Me.lblMesDifencia28)
+        Me.gbMes.Controls.Add(Me.lblMesDifencia03)
+        Me.gbMes.Controls.Add(Me.lblMesDifencia29)
+        Me.gbMes.Controls.Add(Me.Label35)
+        Me.gbMes.Controls.Add(Me.lblMesDifencia30)
+        Me.gbMes.Controls.Add(Me.lblMesBalance01)
+        Me.gbMes.Controls.Add(Me.lblMesBalance02)
+        Me.gbMes.Controls.Add(Me.lblMesBalance03)
+        Me.gbMes.Controls.Add(Me.lblMesBalance04)
+        Me.gbMes.Controls.Add(Me.lblMesBalance05)
+        Me.gbMes.Controls.Add(Me.lblMesBalance06)
+        Me.gbMes.Controls.Add(Me.lblMesBalance07)
+        Me.gbMes.Controls.Add(Me.lblMesBalance08)
+        Me.gbMes.Controls.Add(Me.lblMesBalance09)
+        Me.gbMes.Controls.Add(Me.lblMesBalance10)
+        Me.gbMes.Controls.Add(Me.lblMesBalance11)
+        Me.gbMes.Controls.Add(Me.lblMesBalance12)
+        Me.gbMes.Controls.Add(Me.lblMesBalance13)
+        Me.gbMes.Controls.Add(Me.lblMesBalance14)
+        Me.gbMes.Controls.Add(Me.lblMesBalance15)
+        Me.gbMes.Controls.Add(Me.lblMesBalance16)
+        Me.gbMes.Controls.Add(Me.lblMesBalance17)
+        Me.gbMes.Controls.Add(Me.lblMesBalance18)
+        Me.gbMes.Controls.Add(Me.lblMesBalance19)
+        Me.gbMes.Controls.Add(Me.lblMesBalance20)
+        Me.gbMes.Controls.Add(Me.lblMesBalance21)
+        Me.gbMes.Controls.Add(Me.lblMesBalance22)
+        Me.gbMes.Controls.Add(Me.lblMesBalance23)
+        Me.gbMes.Controls.Add(Me.lblMesBalance24)
+        Me.gbMes.Controls.Add(Me.lblEtiquetaDia)
+        Me.gbMes.Controls.Add(Me.Label74)
+        Me.gbMes.Controls.Add(Me.lblMesBalance25)
+        Me.gbMes.Controls.Add(Me.Label73)
+        Me.gbMes.Controls.Add(Me.lblMesBalance26)
+        Me.gbMes.Controls.Add(Me.Label72)
+        Me.gbMes.Controls.Add(Me.lblMesBalance27)
+        Me.gbMes.Controls.Add(Me.Label71)
+        Me.gbMes.Controls.Add(Me.lblMesBalance28)
+        Me.gbMes.Controls.Add(Me.Label70)
+        Me.gbMes.Controls.Add(Me.lblMesBalance29)
+        Me.gbMes.Controls.Add(Me.Label69)
+        Me.gbMes.Controls.Add(Me.lblMesBalance30)
+        Me.gbMes.Controls.Add(Me.lblPrecioMes)
+        Me.gbMes.Controls.Add(Me.lblMesPrecio31)
+        Me.gbMes.Controls.Add(Me.Label68)
+        Me.gbMes.Controls.Add(Me.lblMesPrecio30)
+        Me.gbMes.Controls.Add(Me.lblMesBalance31)
+        Me.gbMes.Controls.Add(Me.lblMesPrecio29)
+        Me.gbMes.Controls.Add(Me.Label67)
+        Me.gbMes.Controls.Add(Me.lblMesPrecio28)
+        Me.gbMes.Controls.Add(Me.Label66)
+        Me.gbMes.Controls.Add(Me.lblMesPrecio27)
+        Me.gbMes.Controls.Add(Me.Label65)
+        Me.gbMes.Controls.Add(Me.lblMesPrecio26)
+        Me.gbMes.Controls.Add(Me.Label64)
+        Me.gbMes.Controls.Add(Me.lblMesPrecio25)
+        Me.gbMes.Controls.Add(Me.Label63)
+        Me.gbMes.Controls.Add(Me.lblMesPrecio24)
+        Me.gbMes.Controls.Add(Me.Label62)
+        Me.gbMes.Controls.Add(Me.lblMesPrecio23)
+        Me.gbMes.Controls.Add(Me.Label61)
+        Me.gbMes.Controls.Add(Me.lblMesPrecio22)
+        Me.gbMes.Controls.Add(Me.Label60)
+        Me.gbMes.Controls.Add(Me.lblMesPrecio21)
+        Me.gbMes.Controls.Add(Me.Label59)
+        Me.gbMes.Controls.Add(Me.lblMesPrecio20)
+        Me.gbMes.Controls.Add(Me.Label58)
+        Me.gbMes.Controls.Add(Me.lblMesPrecio19)
+        Me.gbMes.Controls.Add(Me.Label57)
+        Me.gbMes.Controls.Add(Me.lblMesPrecio18)
+        Me.gbMes.Controls.Add(Me.Label56)
+        Me.gbMes.Controls.Add(Me.lblMesPrecio17)
+        Me.gbMes.Controls.Add(Me.Label55)
+        Me.gbMes.Controls.Add(Me.lblMesPrecio16)
+        Me.gbMes.Controls.Add(Me.Label54)
+        Me.gbMes.Controls.Add(Me.lblMesPrecio15)
+        Me.gbMes.Controls.Add(Me.Label53)
+        Me.gbMes.Controls.Add(Me.lblMesPrecio14)
+        Me.gbMes.Controls.Add(Me.Label52)
+        Me.gbMes.Controls.Add(Me.lblMesPrecio13)
+        Me.gbMes.Controls.Add(Me.Label100)
+        Me.gbMes.Controls.Add(Me.lblEtiquetaPrecioMes)
+        Me.gbMes.Controls.Add(Me.lblMesPrecio12)
+        Me.gbMes.Controls.Add(Me.lblMesPrecio01)
+        Me.gbMes.Controls.Add(Me.lblMesPrecio11)
+        Me.gbMes.Controls.Add(Me.Label103)
+        Me.gbMes.Controls.Add(Me.lblMesPrecio10)
+        Me.gbMes.Controls.Add(Me.lblMesPrecio02)
+        Me.gbMes.Controls.Add(Me.lblMesPrecio09)
+        Me.gbMes.Controls.Add(Me.Label106)
+        Me.gbMes.Controls.Add(Me.lblMesPrecio08)
+        Me.gbMes.Controls.Add(Me.lblMesPrecio03)
+        Me.gbMes.Controls.Add(Me.lbl31)
+        Me.gbMes.Controls.Add(Me.Label109)
+        Me.gbMes.Controls.Add(Me.lblMesPrecio07)
+        Me.gbMes.Controls.Add(Me.lblMesPrecio04)
+        Me.gbMes.Controls.Add(Me.lbl30)
+        Me.gbMes.Controls.Add(Me.lbl28)
+        Me.gbMes.Controls.Add(Me.lblMesPrecio06)
+        Me.gbMes.Controls.Add(Me.lblMesPrecio05)
+        Me.gbMes.Controls.Add(Me.lbl29)
+        Me.gbMes.Controls.Add(Me.lblTotalMes)
+        Me.gbMes.Controls.Add(Me.lblEtiquetaMesDaily)
+        Me.gbMes.Controls.Add(Me.lblTransacionMes31)
+        Me.gbMes.Controls.Add(Me.lblTransacionMes30)
+        Me.gbMes.Controls.Add(Me.lblTransacionMes29)
+        Me.gbMes.Controls.Add(Me.lblTransacionMes28)
+        Me.gbMes.Controls.Add(Me.lblTransacionMes03)
+        Me.gbMes.Controls.Add(Me.lblTransacionMes24)
+        Me.gbMes.Controls.Add(Me.lblTransacionMes23)
+        Me.gbMes.Controls.Add(Me.lblTransacionMes12)
+        Me.gbMes.Controls.Add(Me.lblTransacionMes18)
+        Me.gbMes.Controls.Add(Me.lblTransacionMes26)
+        Me.gbMes.Controls.Add(Me.lblTransacionMes11)
+        Me.gbMes.Controls.Add(Me.lblTransacionMes21)
+        Me.gbMes.Controls.Add(Me.lblTransacionMes06)
+        Me.gbMes.Controls.Add(Me.lblTransacionMes17)
+        Me.gbMes.Controls.Add(Me.lblTransacionMes27)
+        Me.gbMes.Controls.Add(Me.lblTransacionMes09)
+        Me.gbMes.Controls.Add(Me.lblTransacionMes22)
+        Me.gbMes.Controls.Add(Me.lblTransacionMes05)
+        Me.gbMes.Controls.Add(Me.lblTransacionMes15)
+        Me.gbMes.Controls.Add(Me.lblTransacionMes25)
+        Me.gbMes.Controls.Add(Me.lblTransacionMes10)
+        Me.gbMes.Controls.Add(Me.lblTransacionMes20)
+        Me.gbMes.Controls.Add(Me.lblTransacionMes16)
+        Me.gbMes.Controls.Add(Me.lblTransacionMes08)
+        Me.gbMes.Controls.Add(Me.lblTransacionMes19)
+        Me.gbMes.Controls.Add(Me.lblTransacionMes04)
+        Me.gbMes.Controls.Add(Me.lblTransacionMes14)
+        Me.gbMes.Controls.Add(Me.lblTransacionMes07)
+        Me.gbMes.Controls.Add(Me.lblTransacionMes13)
+        Me.gbMes.Controls.Add(Me.lblTransacionMes02)
+        Me.gbMes.Controls.Add(Me.lblEtiquetaTransacionesMes)
+        Me.gbMes.Controls.Add(Me.lblTransacionMes01)
+        Me.gbMes.Controls.Add(Me.lblTransacionMes)
+        resources.ApplyResources(Me.gbMes, "gbMes")
+        Me.gbMes.Name = "gbMes"
+        Me.gbMes.TabStop = False
+        '
+        'lblMesDifencia31
+        '
+        Me.lblMesDifencia31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblMesDifencia31, "lblMesDifencia31")
+        Me.lblMesDifencia31.Name = "lblMesDifencia31"
+        '
+        'lblMesDifencia01
+        '
+        Me.lblMesDifencia01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblMesDifencia01, "lblMesDifencia01")
+        Me.lblMesDifencia01.Name = "lblMesDifencia01"
+        '
+        'lblEtiquetaGananciasMes
+        '
+        Me.lblEtiquetaGananciasMes.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.lblEtiquetaGananciasMes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblEtiquetaGananciasMes, "lblEtiquetaGananciasMes")
+        Me.lblEtiquetaGananciasMes.Name = "lblEtiquetaGananciasMes"
+        '
+        'lblMesDifencia02
+        '
+        Me.lblMesDifencia02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblMesDifencia02, "lblMesDifencia02")
+        Me.lblMesDifencia02.Name = "lblMesDifencia02"
+        '
+        'lblMesDifencia13
+        '
+        Me.lblMesDifencia13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblMesDifencia13, "lblMesDifencia13")
+        Me.lblMesDifencia13.Name = "lblMesDifencia13"
+        '
+        'lblMesDifencia07
+        '
+        Me.lblMesDifencia07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblMesDifencia07, "lblMesDifencia07")
+        Me.lblMesDifencia07.Name = "lblMesDifencia07"
+        '
+        'lblMesDifencia14
+        '
+        Me.lblMesDifencia14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblMesDifencia14, "lblMesDifencia14")
+        Me.lblMesDifencia14.Name = "lblMesDifencia14"
+        '
+        'lblMesDifencia04
+        '
+        Me.lblMesDifencia04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblMesDifencia04, "lblMesDifencia04")
+        Me.lblMesDifencia04.Name = "lblMesDifencia04"
+        '
+        'lblMesDifencia19
+        '
+        Me.lblMesDifencia19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblMesDifencia19, "lblMesDifencia19")
+        Me.lblMesDifencia19.Name = "lblMesDifencia19"
+        '
+        'lblMesDifencia08
+        '
+        Me.lblMesDifencia08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblMesDifencia08, "lblMesDifencia08")
+        Me.lblMesDifencia08.Name = "lblMesDifencia08"
+        '
+        'lblMesDifencia16
+        '
+        Me.lblMesDifencia16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblMesDifencia16, "lblMesDifencia16")
+        Me.lblMesDifencia16.Name = "lblMesDifencia16"
+        '
+        'lblMesDifencia20
+        '
+        Me.lblMesDifencia20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblMesDifencia20, "lblMesDifencia20")
+        Me.lblMesDifencia20.Name = "lblMesDifencia20"
+        '
+        'lblMesDifencia10
+        '
+        Me.lblMesDifencia10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblMesDifencia10, "lblMesDifencia10")
+        Me.lblMesDifencia10.Name = "lblMesDifencia10"
+        '
+        'lblMesDifencia25
+        '
+        Me.lblMesDifencia25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblMesDifencia25, "lblMesDifencia25")
+        Me.lblMesDifencia25.Name = "lblMesDifencia25"
+        '
+        'lblMesDifencia15
+        '
+        Me.lblMesDifencia15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblMesDifencia15, "lblMesDifencia15")
+        Me.lblMesDifencia15.Name = "lblMesDifencia15"
+        '
+        'lblMesDifencia05
+        '
+        Me.lblMesDifencia05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblMesDifencia05, "lblMesDifencia05")
+        Me.lblMesDifencia05.Name = "lblMesDifencia05"
+        '
+        'lblMesDifencia22
+        '
+        Me.lblMesDifencia22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblMesDifencia22, "lblMesDifencia22")
+        Me.lblMesDifencia22.Name = "lblMesDifencia22"
+        '
+        'lblMesDifencia09
+        '
+        Me.lblMesDifencia09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblMesDifencia09, "lblMesDifencia09")
+        Me.lblMesDifencia09.Name = "lblMesDifencia09"
+        '
+        'lblMesDifencia27
+        '
+        Me.lblMesDifencia27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblMesDifencia27, "lblMesDifencia27")
+        Me.lblMesDifencia27.Name = "lblMesDifencia27"
+        '
+        'lblMesDifencia17
+        '
+        Me.lblMesDifencia17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblMesDifencia17, "lblMesDifencia17")
+        Me.lblMesDifencia17.Name = "lblMesDifencia17"
+        '
+        'lblMesDifencia06
+        '
+        Me.lblMesDifencia06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblMesDifencia06, "lblMesDifencia06")
+        Me.lblMesDifencia06.Name = "lblMesDifencia06"
+        '
+        'lblMesDifencia21
+        '
+        Me.lblMesDifencia21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblMesDifencia21, "lblMesDifencia21")
+        Me.lblMesDifencia21.Name = "lblMesDifencia21"
+        '
+        'lblMesDifencia11
+        '
+        Me.lblMesDifencia11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblMesDifencia11, "lblMesDifencia11")
+        Me.lblMesDifencia11.Name = "lblMesDifencia11"
+        '
+        'lblMesDifencia26
+        '
+        Me.lblMesDifencia26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblMesDifencia26, "lblMesDifencia26")
+        Me.lblMesDifencia26.Name = "lblMesDifencia26"
+        '
+        'lblMesDifencia18
+        '
+        Me.lblMesDifencia18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblMesDifencia18, "lblMesDifencia18")
+        Me.lblMesDifencia18.Name = "lblMesDifencia18"
+        '
+        'lblMesDifencia12
+        '
+        Me.lblMesDifencia12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblMesDifencia12, "lblMesDifencia12")
+        Me.lblMesDifencia12.Name = "lblMesDifencia12"
+        '
+        'lblMesDifencia23
+        '
+        Me.lblMesDifencia23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblMesDifencia23, "lblMesDifencia23")
+        Me.lblMesDifencia23.Name = "lblMesDifencia23"
+        '
+        'lblMesDifencia24
+        '
+        Me.lblMesDifencia24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblMesDifencia24, "lblMesDifencia24")
+        Me.lblMesDifencia24.Name = "lblMesDifencia24"
+        '
+        'lblMesDifencia28
+        '
+        Me.lblMesDifencia28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblMesDifencia28, "lblMesDifencia28")
+        Me.lblMesDifencia28.Name = "lblMesDifencia28"
+        '
+        'lblMesDifencia03
+        '
+        Me.lblMesDifencia03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblMesDifencia03, "lblMesDifencia03")
+        Me.lblMesDifencia03.Name = "lblMesDifencia03"
+        '
+        'lblMesDifencia29
+        '
+        Me.lblMesDifencia29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblMesDifencia29, "lblMesDifencia29")
+        Me.lblMesDifencia29.Name = "lblMesDifencia29"
+        '
+        'Label35
+        '
+        Me.Label35.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.Label35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label35, "Label35")
+        Me.Label35.Name = "Label35"
+        '
+        'lblMesDifencia30
+        '
+        Me.lblMesDifencia30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblMesDifencia30, "lblMesDifencia30")
+        Me.lblMesDifencia30.Name = "lblMesDifencia30"
+        '
+        'lblMesBalance01
+        '
+        Me.lblMesBalance01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance01, "lblMesBalance01")
+        Me.lblMesBalance01.Name = "lblMesBalance01"
+        Me.lblMesBalance01.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance01
+        '
+        'lblMesBalance02
+        '
+        Me.lblMesBalance02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance02, "lblMesBalance02")
+        Me.lblMesBalance02.Name = "lblMesBalance02"
+        Me.lblMesBalance02.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance02
+        '
+        'lblMesBalance03
+        '
+        Me.lblMesBalance03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance03, "lblMesBalance03")
+        Me.lblMesBalance03.Name = "lblMesBalance03"
+        Me.lblMesBalance03.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance03
+        '
+        'lblMesBalance04
+        '
+        Me.lblMesBalance04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance04, "lblMesBalance04")
+        Me.lblMesBalance04.Name = "lblMesBalance04"
+        Me.lblMesBalance04.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance04
+        '
+        'lblMesBalance05
+        '
+        Me.lblMesBalance05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance05, "lblMesBalance05")
+        Me.lblMesBalance05.Name = "lblMesBalance05"
+        Me.lblMesBalance05.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance05
+        '
+        'lblMesBalance06
+        '
+        Me.lblMesBalance06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance06, "lblMesBalance06")
+        Me.lblMesBalance06.Name = "lblMesBalance06"
+        Me.lblMesBalance06.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance06
+        '
+        'lblMesBalance07
+        '
+        Me.lblMesBalance07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance07, "lblMesBalance07")
+        Me.lblMesBalance07.Name = "lblMesBalance07"
+        Me.lblMesBalance07.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance07
+        '
+        'lblMesBalance08
+        '
+        Me.lblMesBalance08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance08, "lblMesBalance08")
+        Me.lblMesBalance08.Name = "lblMesBalance08"
+        Me.lblMesBalance08.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance08
+        '
+        'lblMesBalance09
+        '
+        Me.lblMesBalance09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance09, "lblMesBalance09")
+        Me.lblMesBalance09.Name = "lblMesBalance09"
+        Me.lblMesBalance09.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance09
+        '
+        'lblMesBalance10
+        '
+        Me.lblMesBalance10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance10, "lblMesBalance10")
+        Me.lblMesBalance10.Name = "lblMesBalance10"
+        Me.lblMesBalance10.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance10
+        '
+        'lblMesBalance11
+        '
+        Me.lblMesBalance11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance11, "lblMesBalance11")
+        Me.lblMesBalance11.Name = "lblMesBalance11"
+        Me.lblMesBalance11.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance11
+        '
+        'lblMesBalance12
+        '
+        Me.lblMesBalance12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance12, "lblMesBalance12")
+        Me.lblMesBalance12.Name = "lblMesBalance12"
+        Me.lblMesBalance12.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance12
+        '
+        'lblMesBalance13
+        '
+        Me.lblMesBalance13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance13.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance13", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance13, "lblMesBalance13")
+        Me.lblMesBalance13.Name = "lblMesBalance13"
+        Me.lblMesBalance13.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance13
+        '
+        'lblMesBalance14
+        '
+        Me.lblMesBalance14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance14.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance14", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance14, "lblMesBalance14")
+        Me.lblMesBalance14.Name = "lblMesBalance14"
+        Me.lblMesBalance14.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance14
+        '
+        'lblMesBalance15
+        '
+        Me.lblMesBalance15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance15.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance15", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance15, "lblMesBalance15")
+        Me.lblMesBalance15.Name = "lblMesBalance15"
+        Me.lblMesBalance15.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance15
+        '
+        'lblMesBalance16
+        '
+        Me.lblMesBalance16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance16.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance16", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance16, "lblMesBalance16")
+        Me.lblMesBalance16.Name = "lblMesBalance16"
+        Me.lblMesBalance16.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance16
+        '
+        'lblMesBalance17
+        '
+        Me.lblMesBalance17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance17.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance17", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance17, "lblMesBalance17")
+        Me.lblMesBalance17.Name = "lblMesBalance17"
+        Me.lblMesBalance17.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance17
+        '
+        'lblMesBalance18
+        '
+        Me.lblMesBalance18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance18.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance18", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance18, "lblMesBalance18")
+        Me.lblMesBalance18.Name = "lblMesBalance18"
+        Me.lblMesBalance18.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance18
+        '
+        'lblMesBalance19
+        '
+        Me.lblMesBalance19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance19.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance19", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance19, "lblMesBalance19")
+        Me.lblMesBalance19.Name = "lblMesBalance19"
+        Me.lblMesBalance19.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance19
+        '
+        'lblMesBalance20
+        '
+        Me.lblMesBalance20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance20.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance20", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance20, "lblMesBalance20")
+        Me.lblMesBalance20.Name = "lblMesBalance20"
+        Me.lblMesBalance20.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance20
+        '
+        'lblMesBalance21
+        '
+        Me.lblMesBalance21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance21.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance21", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance21, "lblMesBalance21")
+        Me.lblMesBalance21.Name = "lblMesBalance21"
+        Me.lblMesBalance21.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance21
+        '
+        'lblMesBalance22
+        '
+        Me.lblMesBalance22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance22.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance22", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance22, "lblMesBalance22")
+        Me.lblMesBalance22.Name = "lblMesBalance22"
+        Me.lblMesBalance22.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance22
+        '
+        'lblMesBalance23
+        '
+        Me.lblMesBalance23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance23.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance23", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance23, "lblMesBalance23")
+        Me.lblMesBalance23.Name = "lblMesBalance23"
+        Me.lblMesBalance23.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance23
+        '
+        'lblMesBalance24
+        '
+        Me.lblMesBalance24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance24.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance24", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance24, "lblMesBalance24")
+        Me.lblMesBalance24.Name = "lblMesBalance24"
+        Me.lblMesBalance24.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance24
+        '
+        'lblEtiquetaDia
+        '
+        Me.lblEtiquetaDia.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.lblEtiquetaDia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblEtiquetaDia, "lblEtiquetaDia")
+        Me.lblEtiquetaDia.Name = "lblEtiquetaDia"
+        '
+        'Label74
+        '
+        Me.Label74.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label74, "Label74")
+        Me.Label74.Name = "Label74"
+        '
+        'lblMesBalance25
+        '
+        Me.lblMesBalance25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance25.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance25", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance25, "lblMesBalance25")
+        Me.lblMesBalance25.Name = "lblMesBalance25"
+        Me.lblMesBalance25.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance25
+        '
+        'Label73
+        '
+        Me.Label73.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label73, "Label73")
+        Me.Label73.Name = "Label73"
+        '
+        'lblMesBalance26
+        '
+        Me.lblMesBalance26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance26.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance26", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance26, "lblMesBalance26")
+        Me.lblMesBalance26.Name = "lblMesBalance26"
+        Me.lblMesBalance26.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance26
+        '
+        'Label72
+        '
+        Me.Label72.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label72, "Label72")
+        Me.Label72.Name = "Label72"
+        '
+        'lblMesBalance27
+        '
+        Me.lblMesBalance27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance27.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance27", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance27, "lblMesBalance27")
+        Me.lblMesBalance27.Name = "lblMesBalance27"
+        Me.lblMesBalance27.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance27
+        '
+        'Label71
+        '
+        Me.Label71.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label71, "Label71")
+        Me.Label71.Name = "Label71"
+        '
+        'lblMesBalance28
+        '
+        Me.lblMesBalance28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance28.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance28", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance28, "lblMesBalance28")
+        Me.lblMesBalance28.Name = "lblMesBalance28"
+        Me.lblMesBalance28.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance28
+        '
+        'Label70
+        '
+        Me.Label70.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label70, "Label70")
+        Me.Label70.Name = "Label70"
+        '
+        'lblMesBalance29
+        '
+        Me.lblMesBalance29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance29.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance29", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance29, "lblMesBalance29")
+        Me.lblMesBalance29.Name = "lblMesBalance29"
+        Me.lblMesBalance29.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance29
+        '
+        'Label69
+        '
+        Me.Label69.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label69, "Label69")
+        Me.Label69.Name = "Label69"
+        '
+        'lblMesBalance30
+        '
+        Me.lblMesBalance30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance30.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance30", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance30, "lblMesBalance30")
+        Me.lblMesBalance30.Name = "lblMesBalance30"
+        Me.lblMesBalance30.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance30
+        '
+        'lblPrecioMes
+        '
+        Me.lblPrecioMes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioMes.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "PrecioMedioMes", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecioMes, "lblPrecioMes")
+        Me.lblPrecioMes.Name = "lblPrecioMes"
+        Me.lblPrecioMes.Text = Global.EstadisticasDucos.My.MySettings.Default.PrecioMedioMes
+        '
+        'lblMesPrecio31
+        '
+        Me.lblMesPrecio31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio31.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio31", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio31, "lblMesPrecio31")
+        Me.lblMesPrecio31.Name = "lblMesPrecio31"
+        Me.lblMesPrecio31.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio31
+        '
+        'Label68
+        '
+        Me.Label68.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label68, "Label68")
+        Me.Label68.Name = "Label68"
+        '
+        'lblMesPrecio30
+        '
+        Me.lblMesPrecio30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio30.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio30", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio30, "lblMesPrecio30")
+        Me.lblMesPrecio30.Name = "lblMesPrecio30"
+        Me.lblMesPrecio30.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio30
+        '
+        'lblMesBalance31
+        '
+        Me.lblMesBalance31.BackColor = System.Drawing.Color.White
+        Me.lblMesBalance31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesBalance31.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance31", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesBalance31, "lblMesBalance31")
+        Me.lblMesBalance31.Name = "lblMesBalance31"
+        Me.lblMesBalance31.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance31
+        '
+        'lblMesPrecio29
+        '
+        Me.lblMesPrecio29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio29.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio29", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio29, "lblMesPrecio29")
+        Me.lblMesPrecio29.Name = "lblMesPrecio29"
+        Me.lblMesPrecio29.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio29
+        '
+        'Label67
+        '
+        Me.Label67.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label67, "Label67")
+        Me.Label67.Name = "Label67"
+        '
+        'lblMesPrecio28
+        '
+        Me.lblMesPrecio28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio28.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio28", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio28, "lblMesPrecio28")
+        Me.lblMesPrecio28.Name = "lblMesPrecio28"
+        Me.lblMesPrecio28.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio28
+        '
+        'Label66
+        '
+        Me.Label66.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label66, "Label66")
+        Me.Label66.Name = "Label66"
+        '
+        'lblMesPrecio27
+        '
+        Me.lblMesPrecio27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio27.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio27", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio27, "lblMesPrecio27")
+        Me.lblMesPrecio27.Name = "lblMesPrecio27"
+        Me.lblMesPrecio27.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio27
+        '
+        'Label65
+        '
+        Me.Label65.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label65, "Label65")
+        Me.Label65.Name = "Label65"
+        '
+        'lblMesPrecio26
+        '
+        Me.lblMesPrecio26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio26.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio26", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio26, "lblMesPrecio26")
+        Me.lblMesPrecio26.Name = "lblMesPrecio26"
+        Me.lblMesPrecio26.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio26
+        '
+        'Label64
+        '
+        Me.Label64.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label64, "Label64")
+        Me.Label64.Name = "Label64"
+        '
+        'lblMesPrecio25
+        '
+        Me.lblMesPrecio25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio25.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio25", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio25, "lblMesPrecio25")
+        Me.lblMesPrecio25.Name = "lblMesPrecio25"
+        Me.lblMesPrecio25.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio25
+        '
+        'Label63
+        '
+        Me.Label63.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label63, "Label63")
+        Me.Label63.Name = "Label63"
+        '
+        'lblMesPrecio24
+        '
+        Me.lblMesPrecio24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio24.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio24", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio24, "lblMesPrecio24")
+        Me.lblMesPrecio24.Name = "lblMesPrecio24"
+        Me.lblMesPrecio24.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio24
+        '
+        'Label62
+        '
+        Me.Label62.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label62, "Label62")
+        Me.Label62.Name = "Label62"
+        '
+        'lblMesPrecio23
+        '
+        Me.lblMesPrecio23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio23.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio23", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio23, "lblMesPrecio23")
+        Me.lblMesPrecio23.Name = "lblMesPrecio23"
+        Me.lblMesPrecio23.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio23
+        '
+        'Label61
+        '
+        Me.Label61.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label61, "Label61")
+        Me.Label61.Name = "Label61"
+        '
+        'lblMesPrecio22
+        '
+        Me.lblMesPrecio22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio22.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio22", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio22, "lblMesPrecio22")
+        Me.lblMesPrecio22.Name = "lblMesPrecio22"
+        Me.lblMesPrecio22.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio22
+        '
+        'Label60
+        '
+        Me.Label60.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label60, "Label60")
+        Me.Label60.Name = "Label60"
+        '
+        'lblMesPrecio21
+        '
+        Me.lblMesPrecio21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio21.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio21", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio21, "lblMesPrecio21")
+        Me.lblMesPrecio21.Name = "lblMesPrecio21"
+        Me.lblMesPrecio21.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio21
+        '
+        'Label59
+        '
+        Me.Label59.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label59, "Label59")
+        Me.Label59.Name = "Label59"
+        '
+        'lblMesPrecio20
+        '
+        Me.lblMesPrecio20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio20.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio20", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio20, "lblMesPrecio20")
+        Me.lblMesPrecio20.Name = "lblMesPrecio20"
+        Me.lblMesPrecio20.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio20
+        '
+        'Label58
+        '
+        Me.Label58.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label58, "Label58")
+        Me.Label58.Name = "Label58"
+        '
+        'lblMesPrecio19
+        '
+        Me.lblMesPrecio19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio19.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio19", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio19, "lblMesPrecio19")
+        Me.lblMesPrecio19.Name = "lblMesPrecio19"
+        Me.lblMesPrecio19.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio19
+        '
+        'Label57
+        '
+        Me.Label57.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label57, "Label57")
+        Me.Label57.Name = "Label57"
+        '
+        'lblMesPrecio18
+        '
+        Me.lblMesPrecio18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio18.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio18", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio18, "lblMesPrecio18")
+        Me.lblMesPrecio18.Name = "lblMesPrecio18"
+        Me.lblMesPrecio18.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio18
+        '
+        'Label56
+        '
+        Me.Label56.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label56, "Label56")
+        Me.Label56.Name = "Label56"
+        '
+        'lblMesPrecio17
+        '
+        Me.lblMesPrecio17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio17.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio17", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio17, "lblMesPrecio17")
+        Me.lblMesPrecio17.Name = "lblMesPrecio17"
+        Me.lblMesPrecio17.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio17
+        '
+        'Label55
+        '
+        Me.Label55.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label55, "Label55")
+        Me.Label55.Name = "Label55"
+        '
+        'lblMesPrecio16
+        '
+        Me.lblMesPrecio16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio16.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio16", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio16, "lblMesPrecio16")
+        Me.lblMesPrecio16.Name = "lblMesPrecio16"
+        Me.lblMesPrecio16.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio16
+        '
+        'Label54
+        '
+        Me.Label54.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label54, "Label54")
+        Me.Label54.Name = "Label54"
+        '
+        'lblMesPrecio15
+        '
+        Me.lblMesPrecio15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio15.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio15", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio15, "lblMesPrecio15")
+        Me.lblMesPrecio15.Name = "lblMesPrecio15"
+        Me.lblMesPrecio15.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio15
+        '
+        'Label53
+        '
+        Me.Label53.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label53, "Label53")
+        Me.Label53.Name = "Label53"
+        '
+        'lblMesPrecio14
+        '
+        Me.lblMesPrecio14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio14.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio14", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio14, "lblMesPrecio14")
+        Me.lblMesPrecio14.Name = "lblMesPrecio14"
+        Me.lblMesPrecio14.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio14
+        '
+        'Label52
+        '
+        Me.Label52.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label52, "Label52")
+        Me.Label52.Name = "Label52"
+        '
+        'lblMesPrecio13
+        '
+        Me.lblMesPrecio13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio13.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio13", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio13, "lblMesPrecio13")
+        Me.lblMesPrecio13.Name = "lblMesPrecio13"
+        Me.lblMesPrecio13.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio13
+        '
+        'Label100
+        '
+        Me.Label100.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label100, "Label100")
+        Me.Label100.Name = "Label100"
+        '
+        'lblEtiquetaPrecioMes
+        '
+        Me.lblEtiquetaPrecioMes.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.lblEtiquetaPrecioMes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblEtiquetaPrecioMes, "lblEtiquetaPrecioMes")
+        Me.lblEtiquetaPrecioMes.Name = "lblEtiquetaPrecioMes"
+        '
+        'lblMesPrecio12
+        '
+        Me.lblMesPrecio12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio12, "lblMesPrecio12")
+        Me.lblMesPrecio12.Name = "lblMesPrecio12"
+        Me.lblMesPrecio12.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio12
+        '
+        'lblMesPrecio01
+        '
+        Me.lblMesPrecio01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio01, "lblMesPrecio01")
+        Me.lblMesPrecio01.Name = "lblMesPrecio01"
+        Me.lblMesPrecio01.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio01
+        '
+        'lblMesPrecio11
+        '
+        Me.lblMesPrecio11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio11, "lblMesPrecio11")
+        Me.lblMesPrecio11.Name = "lblMesPrecio11"
+        Me.lblMesPrecio11.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio11
+        '
+        'Label103
+        '
+        Me.Label103.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label103, "Label103")
+        Me.Label103.Name = "Label103"
+        '
+        'lblMesPrecio10
+        '
+        Me.lblMesPrecio10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio10, "lblMesPrecio10")
+        Me.lblMesPrecio10.Name = "lblMesPrecio10"
+        Me.lblMesPrecio10.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio10
+        '
+        'lblMesPrecio02
+        '
+        Me.lblMesPrecio02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio02, "lblMesPrecio02")
+        Me.lblMesPrecio02.Name = "lblMesPrecio02"
+        Me.lblMesPrecio02.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio02
+        '
+        'lblMesPrecio09
+        '
+        Me.lblMesPrecio09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio09, "lblMesPrecio09")
+        Me.lblMesPrecio09.Name = "lblMesPrecio09"
+        Me.lblMesPrecio09.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio09
+        '
+        'Label106
+        '
+        Me.Label106.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label106, "Label106")
+        Me.Label106.Name = "Label106"
+        '
+        'lblMesPrecio08
+        '
+        Me.lblMesPrecio08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio08, "lblMesPrecio08")
+        Me.lblMesPrecio08.Name = "lblMesPrecio08"
+        Me.lblMesPrecio08.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio08
+        '
+        'lblMesPrecio03
+        '
+        Me.lblMesPrecio03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio03, "lblMesPrecio03")
+        Me.lblMesPrecio03.Name = "lblMesPrecio03"
+        Me.lblMesPrecio03.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio03
+        '
+        'lbl31
+        '
+        Me.lbl31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lbl31, "lbl31")
+        Me.lbl31.Name = "lbl31"
+        '
+        'Label109
+        '
+        Me.Label109.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label109, "Label109")
+        Me.Label109.Name = "Label109"
+        '
+        'lblMesPrecio07
+        '
+        Me.lblMesPrecio07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio07, "lblMesPrecio07")
+        Me.lblMesPrecio07.Name = "lblMesPrecio07"
+        Me.lblMesPrecio07.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio07
+        '
+        'lblMesPrecio04
+        '
+        Me.lblMesPrecio04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio04, "lblMesPrecio04")
+        Me.lblMesPrecio04.Name = "lblMesPrecio04"
+        Me.lblMesPrecio04.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio04
+        '
+        'lbl30
+        '
+        Me.lbl30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lbl30, "lbl30")
+        Me.lbl30.Name = "lbl30"
+        '
+        'lbl28
+        '
+        Me.lbl28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lbl28, "lbl28")
+        Me.lbl28.Name = "lbl28"
+        '
+        'lblMesPrecio06
+        '
+        Me.lblMesPrecio06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio06, "lblMesPrecio06")
+        Me.lblMesPrecio06.Name = "lblMesPrecio06"
+        Me.lblMesPrecio06.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio06
+        '
+        'lblMesPrecio05
+        '
+        Me.lblMesPrecio05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMesPrecio05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblMesPrecio05, "lblMesPrecio05")
+        Me.lblMesPrecio05.Name = "lblMesPrecio05"
+        Me.lblMesPrecio05.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio05
+        '
+        'lbl29
+        '
+        Me.lbl29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lbl29, "lbl29")
+        Me.lbl29.Name = "lbl29"
+        '
+        'lblTotalMes
+        '
+        Me.lblTotalMes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblTotalMes, "lblTotalMes")
+        Me.lblTotalMes.ForeColor = System.Drawing.Color.DarkOrange
+        Me.lblTotalMes.Name = "lblTotalMes"
+        '
+        'lblEtiquetaMesDaily
+        '
+        Me.lblEtiquetaMesDaily.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblEtiquetaMesDaily, "lblEtiquetaMesDaily")
+        Me.lblEtiquetaMesDaily.Name = "lblEtiquetaMesDaily"
+        '
+        'lblTransacionMes31
+        '
+        Me.lblTransacionMes31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblTransacionMes31, "lblTransacionMes31")
+        Me.lblTransacionMes31.Name = "lblTransacionMes31"
+        '
+        'lblTransacionMes30
+        '
+        Me.lblTransacionMes30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblTransacionMes30, "lblTransacionMes30")
+        Me.lblTransacionMes30.Name = "lblTransacionMes30"
+        '
+        'lblTransacionMes29
+        '
+        Me.lblTransacionMes29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblTransacionMes29, "lblTransacionMes29")
+        Me.lblTransacionMes29.Name = "lblTransacionMes29"
+        '
+        'lblTransacionMes28
+        '
+        Me.lblTransacionMes28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblTransacionMes28, "lblTransacionMes28")
+        Me.lblTransacionMes28.Name = "lblTransacionMes28"
+        '
+        'lblTransacionMes03
+        '
+        Me.lblTransacionMes03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblTransacionMes03, "lblTransacionMes03")
+        Me.lblTransacionMes03.Name = "lblTransacionMes03"
+        '
+        'lblTransacionMes24
+        '
+        Me.lblTransacionMes24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblTransacionMes24, "lblTransacionMes24")
+        Me.lblTransacionMes24.Name = "lblTransacionMes24"
+        '
+        'lblTransacionMes23
+        '
+        Me.lblTransacionMes23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblTransacionMes23, "lblTransacionMes23")
+        Me.lblTransacionMes23.Name = "lblTransacionMes23"
+        '
+        'lblTransacionMes12
+        '
+        Me.lblTransacionMes12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblTransacionMes12, "lblTransacionMes12")
+        Me.lblTransacionMes12.Name = "lblTransacionMes12"
+        '
+        'lblTransacionMes18
+        '
+        Me.lblTransacionMes18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblTransacionMes18, "lblTransacionMes18")
+        Me.lblTransacionMes18.Name = "lblTransacionMes18"
+        '
+        'lblTransacionMes26
+        '
+        Me.lblTransacionMes26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblTransacionMes26, "lblTransacionMes26")
+        Me.lblTransacionMes26.Name = "lblTransacionMes26"
+        '
+        'lblTransacionMes11
+        '
+        Me.lblTransacionMes11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblTransacionMes11, "lblTransacionMes11")
+        Me.lblTransacionMes11.Name = "lblTransacionMes11"
+        '
+        'lblTransacionMes21
+        '
+        Me.lblTransacionMes21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblTransacionMes21, "lblTransacionMes21")
+        Me.lblTransacionMes21.Name = "lblTransacionMes21"
+        '
+        'lblTransacionMes06
+        '
+        Me.lblTransacionMes06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblTransacionMes06, "lblTransacionMes06")
+        Me.lblTransacionMes06.Name = "lblTransacionMes06"
+        '
+        'lblTransacionMes17
+        '
+        Me.lblTransacionMes17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblTransacionMes17, "lblTransacionMes17")
+        Me.lblTransacionMes17.Name = "lblTransacionMes17"
+        '
+        'lblTransacionMes27
+        '
+        Me.lblTransacionMes27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblTransacionMes27, "lblTransacionMes27")
+        Me.lblTransacionMes27.Name = "lblTransacionMes27"
+        '
+        'lblTransacionMes09
+        '
+        Me.lblTransacionMes09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblTransacionMes09, "lblTransacionMes09")
+        Me.lblTransacionMes09.Name = "lblTransacionMes09"
+        '
+        'lblTransacionMes22
+        '
+        Me.lblTransacionMes22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblTransacionMes22, "lblTransacionMes22")
+        Me.lblTransacionMes22.Name = "lblTransacionMes22"
+        '
+        'lblTransacionMes05
+        '
+        Me.lblTransacionMes05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblTransacionMes05, "lblTransacionMes05")
+        Me.lblTransacionMes05.Name = "lblTransacionMes05"
+        '
+        'lblTransacionMes15
+        '
+        Me.lblTransacionMes15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblTransacionMes15, "lblTransacionMes15")
+        Me.lblTransacionMes15.Name = "lblTransacionMes15"
+        '
+        'lblTransacionMes25
+        '
+        Me.lblTransacionMes25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblTransacionMes25, "lblTransacionMes25")
+        Me.lblTransacionMes25.Name = "lblTransacionMes25"
+        '
+        'lblTransacionMes10
+        '
+        Me.lblTransacionMes10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblTransacionMes10, "lblTransacionMes10")
+        Me.lblTransacionMes10.Name = "lblTransacionMes10"
+        '
+        'lblTransacionMes20
+        '
+        Me.lblTransacionMes20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblTransacionMes20, "lblTransacionMes20")
+        Me.lblTransacionMes20.Name = "lblTransacionMes20"
+        '
+        'lblTransacionMes16
+        '
+        Me.lblTransacionMes16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblTransacionMes16, "lblTransacionMes16")
+        Me.lblTransacionMes16.Name = "lblTransacionMes16"
+        '
+        'lblTransacionMes08
+        '
+        Me.lblTransacionMes08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblTransacionMes08, "lblTransacionMes08")
+        Me.lblTransacionMes08.Name = "lblTransacionMes08"
+        '
+        'lblTransacionMes19
+        '
+        Me.lblTransacionMes19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblTransacionMes19, "lblTransacionMes19")
+        Me.lblTransacionMes19.Name = "lblTransacionMes19"
+        '
+        'lblTransacionMes04
+        '
+        Me.lblTransacionMes04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblTransacionMes04, "lblTransacionMes04")
+        Me.lblTransacionMes04.Name = "lblTransacionMes04"
+        '
+        'lblTransacionMes14
+        '
+        Me.lblTransacionMes14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblTransacionMes14, "lblTransacionMes14")
+        Me.lblTransacionMes14.Name = "lblTransacionMes14"
+        '
+        'lblTransacionMes07
+        '
+        Me.lblTransacionMes07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblTransacionMes07, "lblTransacionMes07")
+        Me.lblTransacionMes07.Name = "lblTransacionMes07"
+        '
+        'lblTransacionMes13
+        '
+        Me.lblTransacionMes13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblTransacionMes13, "lblTransacionMes13")
+        Me.lblTransacionMes13.Name = "lblTransacionMes13"
+        '
+        'lblTransacionMes02
+        '
+        Me.lblTransacionMes02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblTransacionMes02, "lblTransacionMes02")
+        Me.lblTransacionMes02.Name = "lblTransacionMes02"
+        '
+        'lblEtiquetaTransacionesMes
+        '
+        Me.lblEtiquetaTransacionesMes.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.lblEtiquetaTransacionesMes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblEtiquetaTransacionesMes, "lblEtiquetaTransacionesMes")
+        Me.lblEtiquetaTransacionesMes.Name = "lblEtiquetaTransacionesMes"
+        '
+        'lblTransacionMes01
+        '
+        Me.lblTransacionMes01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblTransacionMes01, "lblTransacionMes01")
+        Me.lblTransacionMes01.Name = "lblTransacionMes01"
+        '
+        'lblTransacionMes
+        '
+        Me.lblTransacionMes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblTransacionMes, "lblTransacionMes")
+        Me.lblTransacionMes.ForeColor = System.Drawing.Color.Black
+        Me.lblTransacionMes.Name = "lblTransacionMes"
+        '
+        'gbAños
+        '
+        Me.gbAños.Controls.Add(Me.lblEtiquetaPreciosAños)
+        Me.gbAños.Controls.Add(Me.lblPrecioAño2022)
+        Me.gbAños.Controls.Add(Me.lblPrecioMedioTodosAños)
+        Me.gbAños.Controls.Add(Me.lblPrecioAño2023)
+        Me.gbAños.Controls.Add(Me.lblTransasionesAñoTotal)
+        Me.gbAños.Controls.Add(Me.lblTransasionesAño2022)
+        Me.gbAños.Controls.Add(Me.lblTransasionesAño2023)
+        Me.gbAños.Controls.Add(Me.lblEtiquetaTransacionesAños)
+        Me.gbAños.Controls.Add(Me.gbEstadisticasGlobales)
+        Me.gbAños.Controls.Add(Me.lblEtiquetaAñosTotal)
+        Me.gbAños.Controls.Add(Me.lblGanadoAñoTotal)
+        Me.gbAños.Controls.Add(Me.lblEtiquetaGananciasAños)
+        Me.gbAños.Controls.Add(Me.lblGanadoAño2022)
+        Me.gbAños.Controls.Add(Me.lblGanadoAño2023)
+        Me.gbAños.Controls.Add(Me.Label130)
+        Me.gbAños.Controls.Add(Me.lblBalanceAño2022)
+        Me.gbAños.Controls.Add(Me.lblBalanceAño2023)
+        Me.gbAños.Controls.Add(Me.lblEtiquetaAños)
+        Me.gbAños.Controls.Add(Me.Label137)
+        Me.gbAños.Controls.Add(Me.Label138)
+        resources.ApplyResources(Me.gbAños, "gbAños")
+        Me.gbAños.Name = "gbAños"
+        Me.gbAños.TabStop = False
+        '
+        'lblEtiquetaPreciosAños
+        '
+        Me.lblEtiquetaPreciosAños.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.lblEtiquetaPreciosAños.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblEtiquetaPreciosAños, "lblEtiquetaPreciosAños")
+        Me.lblEtiquetaPreciosAños.Name = "lblEtiquetaPreciosAños"
+        '
+        'lblPrecioAño2022
+        '
+        Me.lblPrecioAño2022.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioAño2022.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño2022", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecioAño2022, "lblPrecioAño2022")
+        Me.lblPrecioAño2022.Name = "lblPrecioAño2022"
+        Me.lblPrecioAño2022.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño2022
+        '
+        'lblPrecioMedioTodosAños
+        '
+        Me.lblPrecioMedioTodosAños.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioMedioTodosAños.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "PrecioMedioTodosAños", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecioMedioTodosAños, "lblPrecioMedioTodosAños")
+        Me.lblPrecioMedioTodosAños.Name = "lblPrecioMedioTodosAños"
+        Me.lblPrecioMedioTodosAños.Text = Global.EstadisticasDucos.My.MySettings.Default.PrecioMedioTodosAños
+        '
+        'lblPrecioAño2023
+        '
+        Me.lblPrecioAño2023.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioAño2023.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño2023", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecioAño2023, "lblPrecioAño2023")
+        Me.lblPrecioAño2023.Name = "lblPrecioAño2023"
+        Me.lblPrecioAño2023.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño2023
+        '
+        'lblTransasionesAñoTotal
+        '
+        Me.lblTransasionesAñoTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblTransasionesAñoTotal, "lblTransasionesAñoTotal")
+        Me.lblTransasionesAñoTotal.ForeColor = System.Drawing.Color.Black
+        Me.lblTransasionesAñoTotal.Name = "lblTransasionesAñoTotal"
+        '
+        'lblTransasionesAño2022
+        '
+        Me.lblTransasionesAño2022.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransasionesAño2022.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño2022", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransasionesAño2022, "lblTransasionesAño2022")
+        Me.lblTransasionesAño2022.Name = "lblTransasionesAño2022"
+        Me.lblTransasionesAño2022.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño2022
+        '
+        'lblTransasionesAño2023
+        '
+        Me.lblTransasionesAño2023.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransasionesAño2023.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño2023", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransasionesAño2023, "lblTransasionesAño2023")
+        Me.lblTransasionesAño2023.Name = "lblTransasionesAño2023"
+        Me.lblTransasionesAño2023.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño2023
+        '
+        'lblEtiquetaTransacionesAños
+        '
+        Me.lblEtiquetaTransacionesAños.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.lblEtiquetaTransacionesAños.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblEtiquetaTransacionesAños, "lblEtiquetaTransacionesAños")
+        Me.lblEtiquetaTransacionesAños.Name = "lblEtiquetaTransacionesAños"
+        '
+        'gbEstadisticasGlobales
+        '
+        Me.gbEstadisticasGlobales.Controls.Add(Me.lblDucosTotales)
+        Me.gbEstadisticasGlobales.Controls.Add(Me.lblEtiquetaDuco)
+        Me.gbEstadisticasGlobales.Controls.Add(Me.lblTotalTransasiones)
+        Me.gbEstadisticasGlobales.Controls.Add(Me.lblTotalGanadoAños)
+        Me.gbEstadisticasGlobales.Controls.Add(Me.lblEtiquetaGananciaTotal)
+        Me.gbEstadisticasGlobales.Controls.Add(Me.lblEtiquetaTrasacioneTotal)
+        Me.gbEstadisticasGlobales.Controls.Add(Me.lblEtiquetaDucoTotal)
+        resources.ApplyResources(Me.gbEstadisticasGlobales, "gbEstadisticasGlobales")
+        Me.gbEstadisticasGlobales.Name = "gbEstadisticasGlobales"
+        Me.gbEstadisticasGlobales.TabStop = False
+        '
+        'lblDucosTotales
+        '
+        resources.ApplyResources(Me.lblDucosTotales, "lblDucosTotales")
+        Me.lblDucosTotales.ForeColor = System.Drawing.Color.DarkOrange
+        Me.lblDucosTotales.Name = "lblDucosTotales"
+        '
+        'lblEtiquetaDuco
+        '
+        resources.ApplyResources(Me.lblEtiquetaDuco, "lblEtiquetaDuco")
+        Me.lblEtiquetaDuco.ForeColor = System.Drawing.Color.DarkOrange
+        Me.lblEtiquetaDuco.Name = "lblEtiquetaDuco"
+        '
+        'lblTotalTransasiones
+        '
+        resources.ApplyResources(Me.lblTotalTransasiones, "lblTotalTransasiones")
+        Me.lblTotalTransasiones.Name = "lblTotalTransasiones"
+        '
+        'lblTotalGanadoAños
+        '
+        resources.ApplyResources(Me.lblTotalGanadoAños, "lblTotalGanadoAños")
+        Me.lblTotalGanadoAños.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.lblTotalGanadoAños.Name = "lblTotalGanadoAños"
+        '
+        'lblEtiquetaGananciaTotal
+        '
+        resources.ApplyResources(Me.lblEtiquetaGananciaTotal, "lblEtiquetaGananciaTotal")
+        Me.lblEtiquetaGananciaTotal.Name = "lblEtiquetaGananciaTotal"
+        '
+        'lblEtiquetaTrasacioneTotal
+        '
+        resources.ApplyResources(Me.lblEtiquetaTrasacioneTotal, "lblEtiquetaTrasacioneTotal")
+        Me.lblEtiquetaTrasacioneTotal.Name = "lblEtiquetaTrasacioneTotal"
+        '
+        'lblEtiquetaDucoTotal
+        '
+        resources.ApplyResources(Me.lblEtiquetaDucoTotal, "lblEtiquetaDucoTotal")
+        Me.lblEtiquetaDucoTotal.Name = "lblEtiquetaDucoTotal"
+        '
+        'lblEtiquetaAñosTotal
+        '
+        Me.lblEtiquetaAñosTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblEtiquetaAñosTotal, "lblEtiquetaAñosTotal")
+        Me.lblEtiquetaAñosTotal.Name = "lblEtiquetaAñosTotal"
+        '
+        'lblGanadoAñoTotal
+        '
+        Me.lblGanadoAñoTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblGanadoAñoTotal, "lblGanadoAñoTotal")
+        Me.lblGanadoAñoTotal.ForeColor = System.Drawing.Color.DarkOrange
+        Me.lblGanadoAñoTotal.Name = "lblGanadoAñoTotal"
+        '
+        'lblEtiquetaGananciasAños
+        '
+        Me.lblEtiquetaGananciasAños.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.lblEtiquetaGananciasAños.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblEtiquetaGananciasAños, "lblEtiquetaGananciasAños")
+        Me.lblEtiquetaGananciasAños.Name = "lblEtiquetaGananciasAños"
+        '
+        'lblGanadoAño2022
+        '
+        Me.lblGanadoAño2022.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGanadoAño2022.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoAño2022", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblGanadoAño2022, "lblGanadoAño2022")
+        Me.lblGanadoAño2022.Name = "lblGanadoAño2022"
+        Me.lblGanadoAño2022.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoAño2022
+        '
+        'lblGanadoAño2023
+        '
+        Me.lblGanadoAño2023.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGanadoAño2023.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoAño2023", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblGanadoAño2023, "lblGanadoAño2023")
+        Me.lblGanadoAño2023.Name = "lblGanadoAño2023"
+        Me.lblGanadoAño2023.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoAño2023
+        '
+        'Label130
+        '
+        Me.Label130.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.Label130.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label130, "Label130")
+        Me.Label130.Name = "Label130"
+        '
+        'lblBalanceAño2022
+        '
+        Me.lblBalanceAño2022.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceAño2022.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño2022", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceAño2022, "lblBalanceAño2022")
+        Me.lblBalanceAño2022.Name = "lblBalanceAño2022"
+        Me.lblBalanceAño2022.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño2022
+        '
+        'lblBalanceAño2023
+        '
+        Me.lblBalanceAño2023.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceAño2023.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño2023", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceAño2023, "lblBalanceAño2023")
+        Me.lblBalanceAño2023.Name = "lblBalanceAño2023"
+        Me.lblBalanceAño2023.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño2023
+        '
+        'lblEtiquetaAños
+        '
+        Me.lblEtiquetaAños.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.lblEtiquetaAños.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblEtiquetaAños, "lblEtiquetaAños")
+        Me.lblEtiquetaAños.Name = "lblEtiquetaAños"
+        '
+        'Label137
+        '
+        Me.Label137.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label137, "Label137")
+        Me.Label137.Name = "Label137"
+        '
+        'Label138
+        '
+        Me.Label138.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label138, "Label138")
+        Me.Label138.Name = "Label138"
+        '
+        'gbAño
+        '
+        Me.gbAño.Controls.Add(Me.lblGananciasAño01)
+        Me.gbAño.Controls.Add(Me.lblEtiquetaGanaciasAño)
+        Me.gbAño.Controls.Add(Me.lblGananciasAño02)
+        Me.gbAño.Controls.Add(Me.lblGananciasAño07)
+        Me.gbAño.Controls.Add(Me.lblGananciasAño04)
+        Me.gbAño.Controls.Add(Me.lblGananciasAño08)
+        Me.gbAño.Controls.Add(Me.lblGananciasAño10)
+        Me.gbAño.Controls.Add(Me.lblGananciasAño05)
+        Me.gbAño.Controls.Add(Me.lblGananciasAño09)
+        Me.gbAño.Controls.Add(Me.lblGananciasAño06)
+        Me.gbAño.Controls.Add(Me.lblGananciasAño11)
+        Me.gbAño.Controls.Add(Me.lblGananciasAño12)
+        Me.gbAño.Controls.Add(Me.lblGananciasAño03)
+        Me.gbAño.Controls.Add(Me.Label128)
+        Me.gbAño.Controls.Add(Me.lblBalanceAño01)
+        Me.gbAño.Controls.Add(Me.lblBalanceAño02)
+        Me.gbAño.Controls.Add(Me.lblBalanceAño03)
+        Me.gbAño.Controls.Add(Me.lblBalanceAño04)
+        Me.gbAño.Controls.Add(Me.lblBalanceAño05)
+        Me.gbAño.Controls.Add(Me.lblBalanceAño06)
+        Me.gbAño.Controls.Add(Me.lblBalanceAño07)
+        Me.gbAño.Controls.Add(Me.lblBalanceAño08)
+        Me.gbAño.Controls.Add(Me.lblBalanceAño09)
+        Me.gbAño.Controls.Add(Me.lblBalanceAño10)
+        Me.gbAño.Controls.Add(Me.lblBalanceAño11)
+        Me.gbAño.Controls.Add(Me.lblBalanceAño12)
+        Me.gbAño.Controls.Add(Me.lblEtiquetaMes)
+        Me.gbAño.Controls.Add(Me.Label143)
+        Me.gbAño.Controls.Add(Me.Label144)
+        Me.gbAño.Controls.Add(Me.Label145)
+        Me.gbAño.Controls.Add(Me.Label146)
+        Me.gbAño.Controls.Add(Me.Label147)
+        Me.gbAño.Controls.Add(Me.Label148)
+        Me.gbAño.Controls.Add(Me.Label149)
+        Me.gbAño.Controls.Add(Me.Label150)
+        Me.gbAño.Controls.Add(Me.Label151)
+        Me.gbAño.Controls.Add(Me.Label152)
+        Me.gbAño.Controls.Add(Me.Label153)
+        Me.gbAño.Controls.Add(Me.Label154)
+        Me.gbAño.Controls.Add(Me.lblEtiquetaPrecioAño)
+        Me.gbAño.Controls.Add(Me.lblPrecioAnual)
+        Me.gbAño.Controls.Add(Me.lblPrecioAño12)
+        Me.gbAño.Controls.Add(Me.lblPrecioAño01)
+        Me.gbAño.Controls.Add(Me.lblPrecioAño11)
+        Me.gbAño.Controls.Add(Me.lblPrecioAño10)
+        Me.gbAño.Controls.Add(Me.lblPrecioAño02)
+        Me.gbAño.Controls.Add(Me.lblPrecioAño09)
+        Me.gbAño.Controls.Add(Me.lblPrecioAño08)
+        Me.gbAño.Controls.Add(Me.lblPrecioAño03)
+        Me.gbAño.Controls.Add(Me.lblPrecioAño07)
+        Me.gbAño.Controls.Add(Me.lblPrecioAño04)
+        Me.gbAño.Controls.Add(Me.lblPrecioAño06)
+        Me.gbAño.Controls.Add(Me.lblPrecioAño05)
+        Me.gbAño.Controls.Add(Me.lblEtiquetaAñoTotal)
+        Me.gbAño.Controls.Add(Me.lblTransasionesAño02)
+        Me.gbAño.Controls.Add(Me.lblTransasionesAño03)
+        Me.gbAño.Controls.Add(Me.lblTransasionesAño12)
+        Me.gbAño.Controls.Add(Me.lblTransasionesAño11)
+        Me.gbAño.Controls.Add(Me.lblTransasionesAño06)
+        Me.gbAño.Controls.Add(Me.lblTransasionesAño09)
+        Me.gbAño.Controls.Add(Me.lblTransasionesAño05)
+        Me.gbAño.Controls.Add(Me.lblTransasionesAño10)
+        Me.gbAño.Controls.Add(Me.lblTransasionesAño08)
+        Me.gbAño.Controls.Add(Me.lblTransasionesAño04)
+        Me.gbAño.Controls.Add(Me.lblTransasionesAño07)
+        Me.gbAño.Controls.Add(Me.lblEtiquetaTransacionAño)
+        Me.gbAño.Controls.Add(Me.lblTransasionesAño01)
+        Me.gbAño.Controls.Add(Me.lblTotalGananciaAño)
+        Me.gbAño.Controls.Add(Me.lblTransacionesTotalAño)
+        resources.ApplyResources(Me.gbAño, "gbAño")
+        Me.gbAño.Name = "gbAño"
+        Me.gbAño.TabStop = False
+        '
+        'lblGananciasAño01
+        '
+        Me.lblGananciasAño01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblGananciasAño01, "lblGananciasAño01")
+        Me.lblGananciasAño01.Name = "lblGananciasAño01"
+        Me.lblGananciasAño01.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes01
+        '
+        'lblEtiquetaGanaciasAño
+        '
+        Me.lblEtiquetaGanaciasAño.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.lblEtiquetaGanaciasAño.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblEtiquetaGanaciasAño, "lblEtiquetaGanaciasAño")
+        Me.lblEtiquetaGanaciasAño.Name = "lblEtiquetaGanaciasAño"
+        '
+        'lblGananciasAño02
+        '
+        Me.lblGananciasAño02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblGananciasAño02, "lblGananciasAño02")
+        Me.lblGananciasAño02.Name = "lblGananciasAño02"
+        Me.lblGananciasAño02.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes02
+        '
+        'lblGananciasAño07
+        '
+        Me.lblGananciasAño07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblGananciasAño07, "lblGananciasAño07")
+        Me.lblGananciasAño07.Name = "lblGananciasAño07"
+        Me.lblGananciasAño07.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes07
+        '
+        'lblGananciasAño04
+        '
+        Me.lblGananciasAño04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblGananciasAño04, "lblGananciasAño04")
+        Me.lblGananciasAño04.Name = "lblGananciasAño04"
+        Me.lblGananciasAño04.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes04
+        '
+        'lblGananciasAño08
+        '
+        Me.lblGananciasAño08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblGananciasAño08, "lblGananciasAño08")
+        Me.lblGananciasAño08.Name = "lblGananciasAño08"
+        Me.lblGananciasAño08.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes08
+        '
+        'lblGananciasAño10
+        '
+        Me.lblGananciasAño10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblGananciasAño10, "lblGananciasAño10")
+        Me.lblGananciasAño10.Name = "lblGananciasAño10"
+        Me.lblGananciasAño10.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes10
+        '
+        'lblGananciasAño05
+        '
+        Me.lblGananciasAño05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblGananciasAño05, "lblGananciasAño05")
+        Me.lblGananciasAño05.Name = "lblGananciasAño05"
+        Me.lblGananciasAño05.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes05
+        '
+        'lblGananciasAño09
+        '
+        Me.lblGananciasAño09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblGananciasAño09, "lblGananciasAño09")
+        Me.lblGananciasAño09.Name = "lblGananciasAño09"
+        Me.lblGananciasAño09.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes09
+        '
+        'lblGananciasAño06
+        '
+        Me.lblGananciasAño06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblGananciasAño06, "lblGananciasAño06")
+        Me.lblGananciasAño06.Name = "lblGananciasAño06"
+        Me.lblGananciasAño06.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes06
+        '
+        'lblGananciasAño11
+        '
+        Me.lblGananciasAño11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblGananciasAño11, "lblGananciasAño11")
+        Me.lblGananciasAño11.Name = "lblGananciasAño11"
+        Me.lblGananciasAño11.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes11
+        '
+        'lblGananciasAño12
+        '
+        Me.lblGananciasAño12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblGananciasAño12, "lblGananciasAño12")
+        Me.lblGananciasAño12.Name = "lblGananciasAño12"
+        Me.lblGananciasAño12.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes12
+        '
+        'lblGananciasAño03
+        '
+        Me.lblGananciasAño03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGananciasAño03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblGananciasAño03, "lblGananciasAño03")
+        Me.lblGananciasAño03.Name = "lblGananciasAño03"
+        Me.lblGananciasAño03.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes03
+        '
+        'Label128
+        '
+        Me.Label128.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.Label128.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label128, "Label128")
+        Me.Label128.Name = "Label128"
+        '
+        'lblBalanceAño01
+        '
+        Me.lblBalanceAño01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceAño01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceAño01, "lblBalanceAño01")
+        Me.lblBalanceAño01.Name = "lblBalanceAño01"
+        Me.lblBalanceAño01.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño01
+        '
+        'lblBalanceAño02
+        '
+        Me.lblBalanceAño02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceAño02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceAño02, "lblBalanceAño02")
+        Me.lblBalanceAño02.Name = "lblBalanceAño02"
+        Me.lblBalanceAño02.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño02
+        '
+        'lblBalanceAño03
+        '
+        Me.lblBalanceAño03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceAño03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceAño03, "lblBalanceAño03")
+        Me.lblBalanceAño03.Name = "lblBalanceAño03"
+        Me.lblBalanceAño03.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño03
+        '
+        'lblBalanceAño04
+        '
+        Me.lblBalanceAño04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceAño04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceAño04, "lblBalanceAño04")
+        Me.lblBalanceAño04.Name = "lblBalanceAño04"
+        Me.lblBalanceAño04.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño04
+        '
+        'lblBalanceAño05
+        '
+        Me.lblBalanceAño05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceAño05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceAño05, "lblBalanceAño05")
+        Me.lblBalanceAño05.Name = "lblBalanceAño05"
+        Me.lblBalanceAño05.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño05
+        '
+        'lblBalanceAño06
+        '
+        Me.lblBalanceAño06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceAño06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceAño06, "lblBalanceAño06")
+        Me.lblBalanceAño06.Name = "lblBalanceAño06"
+        Me.lblBalanceAño06.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño06
+        '
+        'lblBalanceAño07
+        '
+        Me.lblBalanceAño07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceAño07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceAño07, "lblBalanceAño07")
+        Me.lblBalanceAño07.Name = "lblBalanceAño07"
+        Me.lblBalanceAño07.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño07
+        '
+        'lblBalanceAño08
+        '
+        Me.lblBalanceAño08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceAño08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceAño08, "lblBalanceAño08")
+        Me.lblBalanceAño08.Name = "lblBalanceAño08"
+        Me.lblBalanceAño08.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño08
+        '
+        'lblBalanceAño09
+        '
+        Me.lblBalanceAño09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceAño09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceAño09, "lblBalanceAño09")
+        Me.lblBalanceAño09.Name = "lblBalanceAño09"
+        Me.lblBalanceAño09.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño09
+        '
+        'lblBalanceAño10
+        '
+        Me.lblBalanceAño10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceAño10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceAño10, "lblBalanceAño10")
+        Me.lblBalanceAño10.Name = "lblBalanceAño10"
+        Me.lblBalanceAño10.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño10
+        '
+        'lblBalanceAño11
+        '
+        Me.lblBalanceAño11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceAño11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceAño11, "lblBalanceAño11")
+        Me.lblBalanceAño11.Name = "lblBalanceAño11"
+        Me.lblBalanceAño11.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño11
+        '
+        'lblBalanceAño12
+        '
+        Me.lblBalanceAño12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceAño12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceAño12, "lblBalanceAño12")
+        Me.lblBalanceAño12.Name = "lblBalanceAño12"
+        Me.lblBalanceAño12.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño12
+        '
+        'lblEtiquetaMes
+        '
+        Me.lblEtiquetaMes.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.lblEtiquetaMes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblEtiquetaMes, "lblEtiquetaMes")
+        Me.lblEtiquetaMes.Name = "lblEtiquetaMes"
+        '
+        'Label143
+        '
+        Me.Label143.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label143, "Label143")
+        Me.Label143.Name = "Label143"
+        '
+        'Label144
+        '
+        Me.Label144.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label144, "Label144")
+        Me.Label144.Name = "Label144"
+        '
+        'Label145
+        '
+        Me.Label145.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label145, "Label145")
+        Me.Label145.Name = "Label145"
+        '
+        'Label146
+        '
+        Me.Label146.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label146, "Label146")
+        Me.Label146.Name = "Label146"
+        '
+        'Label147
+        '
+        Me.Label147.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label147, "Label147")
+        Me.Label147.Name = "Label147"
+        '
+        'Label148
+        '
+        Me.Label148.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label148, "Label148")
+        Me.Label148.Name = "Label148"
+        '
+        'Label149
+        '
+        Me.Label149.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label149, "Label149")
+        Me.Label149.Name = "Label149"
+        '
+        'Label150
+        '
+        Me.Label150.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label150, "Label150")
+        Me.Label150.Name = "Label150"
+        '
+        'Label151
+        '
+        Me.Label151.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label151, "Label151")
+        Me.Label151.Name = "Label151"
+        '
+        'Label152
+        '
+        Me.Label152.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label152, "Label152")
+        Me.Label152.Name = "Label152"
+        '
+        'Label153
+        '
+        Me.Label153.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label153, "Label153")
+        Me.Label153.Name = "Label153"
+        '
+        'Label154
+        '
+        Me.Label154.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label154, "Label154")
+        Me.Label154.Name = "Label154"
+        '
+        'lblEtiquetaPrecioAño
+        '
+        Me.lblEtiquetaPrecioAño.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.lblEtiquetaPrecioAño.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblEtiquetaPrecioAño, "lblEtiquetaPrecioAño")
+        Me.lblEtiquetaPrecioAño.Name = "lblEtiquetaPrecioAño"
+        '
+        'lblPrecioAnual
+        '
+        Me.lblPrecioAnual.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioAnual.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "PrecioMedioAnual", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecioAnual, "lblPrecioAnual")
+        Me.lblPrecioAnual.Name = "lblPrecioAnual"
+        Me.lblPrecioAnual.Text = Global.EstadisticasDucos.My.MySettings.Default.PrecioMedioAnual
+        '
+        'lblPrecioAño12
+        '
+        Me.lblPrecioAño12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioAño12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecioAño12, "lblPrecioAño12")
+        Me.lblPrecioAño12.Name = "lblPrecioAño12"
+        Me.lblPrecioAño12.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño12
+        '
+        'lblPrecioAño01
+        '
+        Me.lblPrecioAño01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioAño01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecioAño01, "lblPrecioAño01")
+        Me.lblPrecioAño01.Name = "lblPrecioAño01"
+        Me.lblPrecioAño01.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño01
+        '
+        'lblPrecioAño11
+        '
+        Me.lblPrecioAño11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioAño11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecioAño11, "lblPrecioAño11")
+        Me.lblPrecioAño11.Name = "lblPrecioAño11"
+        Me.lblPrecioAño11.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño11
+        '
+        'lblPrecioAño10
+        '
+        Me.lblPrecioAño10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioAño10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecioAño10, "lblPrecioAño10")
+        Me.lblPrecioAño10.Name = "lblPrecioAño10"
+        Me.lblPrecioAño10.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño10
+        '
+        'lblPrecioAño02
+        '
+        Me.lblPrecioAño02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioAño02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecioAño02, "lblPrecioAño02")
+        Me.lblPrecioAño02.Name = "lblPrecioAño02"
+        Me.lblPrecioAño02.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño02
+        '
+        'lblPrecioAño09
+        '
+        Me.lblPrecioAño09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioAño09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecioAño09, "lblPrecioAño09")
+        Me.lblPrecioAño09.Name = "lblPrecioAño09"
+        Me.lblPrecioAño09.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño09
+        '
+        'lblPrecioAño08
+        '
+        Me.lblPrecioAño08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioAño08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecioAño08, "lblPrecioAño08")
+        Me.lblPrecioAño08.Name = "lblPrecioAño08"
+        Me.lblPrecioAño08.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño08
+        '
+        'lblPrecioAño03
+        '
+        Me.lblPrecioAño03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioAño03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecioAño03, "lblPrecioAño03")
+        Me.lblPrecioAño03.Name = "lblPrecioAño03"
+        Me.lblPrecioAño03.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño03
+        '
+        'lblPrecioAño07
+        '
+        Me.lblPrecioAño07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioAño07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecioAño07, "lblPrecioAño07")
+        Me.lblPrecioAño07.Name = "lblPrecioAño07"
+        Me.lblPrecioAño07.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño07
+        '
+        'lblPrecioAño04
+        '
+        Me.lblPrecioAño04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioAño04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecioAño04, "lblPrecioAño04")
+        Me.lblPrecioAño04.Name = "lblPrecioAño04"
+        Me.lblPrecioAño04.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño04
+        '
+        'lblPrecioAño06
+        '
+        Me.lblPrecioAño06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioAño06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecioAño06, "lblPrecioAño06")
+        Me.lblPrecioAño06.Name = "lblPrecioAño06"
+        Me.lblPrecioAño06.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño06
+        '
+        'lblPrecioAño05
+        '
+        Me.lblPrecioAño05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioAño05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecioAño05, "lblPrecioAño05")
+        Me.lblPrecioAño05.Name = "lblPrecioAño05"
+        Me.lblPrecioAño05.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño05
+        '
+        'lblEtiquetaAñoTotal
+        '
+        Me.lblEtiquetaAñoTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblEtiquetaAñoTotal, "lblEtiquetaAñoTotal")
+        Me.lblEtiquetaAñoTotal.Name = "lblEtiquetaAñoTotal"
+        '
+        'lblTransasionesAño02
+        '
+        Me.lblTransasionesAño02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransasionesAño02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransasionesAño02, "lblTransasionesAño02")
+        Me.lblTransasionesAño02.Name = "lblTransasionesAño02"
+        Me.lblTransasionesAño02.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño02
+        '
+        'lblTransasionesAño03
+        '
+        Me.lblTransasionesAño03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransasionesAño03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransasionesAño03, "lblTransasionesAño03")
+        Me.lblTransasionesAño03.Name = "lblTransasionesAño03"
+        Me.lblTransasionesAño03.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño03
+        '
+        'lblTransasionesAño12
+        '
+        Me.lblTransasionesAño12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransasionesAño12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransasionesAño12, "lblTransasionesAño12")
+        Me.lblTransasionesAño12.Name = "lblTransasionesAño12"
+        Me.lblTransasionesAño12.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño12
+        '
+        'lblTransasionesAño11
+        '
+        Me.lblTransasionesAño11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransasionesAño11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransasionesAño11, "lblTransasionesAño11")
+        Me.lblTransasionesAño11.Name = "lblTransasionesAño11"
+        Me.lblTransasionesAño11.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño11
+        '
+        'lblTransasionesAño06
+        '
+        Me.lblTransasionesAño06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransasionesAño06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransasionesAño06, "lblTransasionesAño06")
+        Me.lblTransasionesAño06.Name = "lblTransasionesAño06"
+        Me.lblTransasionesAño06.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño06
+        '
+        'lblTransasionesAño09
+        '
+        Me.lblTransasionesAño09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransasionesAño09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransasionesAño09, "lblTransasionesAño09")
+        Me.lblTransasionesAño09.Name = "lblTransasionesAño09"
+        Me.lblTransasionesAño09.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño09
+        '
+        'lblTransasionesAño05
+        '
+        Me.lblTransasionesAño05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransasionesAño05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransasionesAño05, "lblTransasionesAño05")
+        Me.lblTransasionesAño05.Name = "lblTransasionesAño05"
+        Me.lblTransasionesAño05.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño05
+        '
+        'lblTransasionesAño10
+        '
+        Me.lblTransasionesAño10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransasionesAño10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransasionesAño10, "lblTransasionesAño10")
+        Me.lblTransasionesAño10.Name = "lblTransasionesAño10"
+        Me.lblTransasionesAño10.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño10
+        '
+        'lblTransasionesAño08
+        '
+        Me.lblTransasionesAño08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransasionesAño08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransasionesAño08, "lblTransasionesAño08")
+        Me.lblTransasionesAño08.Name = "lblTransasionesAño08"
+        Me.lblTransasionesAño08.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño08
+        '
+        'lblTransasionesAño04
+        '
+        Me.lblTransasionesAño04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransasionesAño04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransasionesAño04, "lblTransasionesAño04")
+        Me.lblTransasionesAño04.Name = "lblTransasionesAño04"
+        Me.lblTransasionesAño04.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño04
+        '
+        'lblTransasionesAño07
+        '
+        Me.lblTransasionesAño07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransasionesAño07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransasionesAño07, "lblTransasionesAño07")
+        Me.lblTransasionesAño07.Name = "lblTransasionesAño07"
+        Me.lblTransasionesAño07.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño07
+        '
+        'lblEtiquetaTransacionAño
+        '
+        Me.lblEtiquetaTransacionAño.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.lblEtiquetaTransacionAño.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblEtiquetaTransacionAño, "lblEtiquetaTransacionAño")
+        Me.lblEtiquetaTransacionAño.Name = "lblEtiquetaTransacionAño"
+        '
+        'lblTransasionesAño01
+        '
+        Me.lblTransasionesAño01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransasionesAño01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransasionesAño01, "lblTransasionesAño01")
+        Me.lblTransasionesAño01.Name = "lblTransasionesAño01"
+        Me.lblTransasionesAño01.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño01
+        '
+        'lblTotalGananciaAño
+        '
+        Me.lblTotalGananciaAño.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblTotalGananciaAño, "lblTotalGananciaAño")
+        Me.lblTotalGananciaAño.ForeColor = System.Drawing.Color.DarkOrange
+        Me.lblTotalGananciaAño.Name = "lblTotalGananciaAño"
+        '
+        'lblTransacionesTotalAño
+        '
+        Me.lblTransacionesTotalAño.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblTransacionesTotalAño, "lblTransacionesTotalAño")
+        Me.lblTransacionesTotalAño.ForeColor = System.Drawing.Color.Black
+        Me.lblTransacionesTotalAño.Name = "lblTransacionesTotalAño"
+        '
+        'gbHoras
+        '
+        Me.gbHoras.Controls.Add(Me.lblTransacionHoraTotal)
+        Me.gbHoras.Controls.Add(Me.lblTransacionHora23)
+        Me.gbHoras.Controls.Add(Me.lblPrecioDia)
+        Me.gbHoras.Controls.Add(Me.lblPrecio23)
+        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia23)
+        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia19)
+        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia18)
+        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia14)
+        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia13)
+        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia22)
+        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia09)
+        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia17)
+        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia08)
+        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia12)
+        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia21)
+        Me.gbHoras.Controls.Add(Me.lblEtiquetaTransaacionesHora)
+        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia04)
+        Me.gbHoras.Controls.Add(Me.lblTransacionHora00)
+        Me.gbHoras.Controls.Add(Me.lblEtiquetaPrecioHora)
+        Me.gbHoras.Controls.Add(Me.lblPrecio00)
+        Me.gbHoras.Controls.Add(Me.lblTransacionHora22)
+        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia16)
+        Me.gbHoras.Controls.Add(Me.lblTransacionHora21)
+        Me.gbHoras.Controls.Add(Me.lblPrecio22)
+        Me.gbHoras.Controls.Add(Me.lblPrecio21)
+        Me.gbHoras.Controls.Add(Me.lblTransacionHora20)
+        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia07)
+        Me.gbHoras.Controls.Add(Me.lblTransacionHora19)
+        Me.gbHoras.Controls.Add(Me.lblPrecio20)
+        Me.gbHoras.Controls.Add(Me.lblPrecio19)
+        Me.gbHoras.Controls.Add(Me.lblTransacionHora18)
+        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia11)
+        Me.gbHoras.Controls.Add(Me.lblTransacionHora17)
+        Me.gbHoras.Controls.Add(Me.lblPrecio18)
+        Me.gbHoras.Controls.Add(Me.lblPrecio17)
+        Me.gbHoras.Controls.Add(Me.lblTransacionHora16)
+        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia20)
+        Me.gbHoras.Controls.Add(Me.lblTransacionHora15)
+        Me.gbHoras.Controls.Add(Me.lblPrecio16)
+        Me.gbHoras.Controls.Add(Me.lblPrecio15)
+        Me.gbHoras.Controls.Add(Me.lblTransacionHora14)
+        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia03)
+        Me.gbHoras.Controls.Add(Me.lblTransacionHora13)
+        Me.gbHoras.Controls.Add(Me.lblPrecio14)
+        Me.gbHoras.Controls.Add(Me.lblPrecio13)
+        Me.gbHoras.Controls.Add(Me.lblTransacionHora12)
+        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia15)
+        Me.gbHoras.Controls.Add(Me.lblTransacionHora11)
+        Me.gbHoras.Controls.Add(Me.lblPrecio12)
+        Me.gbHoras.Controls.Add(Me.lblPrecio11)
+        Me.gbHoras.Controls.Add(Me.lblTransacionHora10)
+        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia06)
+        Me.gbHoras.Controls.Add(Me.lblTransacionHora09)
+        Me.gbHoras.Controls.Add(Me.lblPrecio10)
+        Me.gbHoras.Controls.Add(Me.lblPrecio09)
+        Me.gbHoras.Controls.Add(Me.lblTransacionHora08)
+        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia10)
+        Me.gbHoras.Controls.Add(Me.lblTransacionHora07)
+        Me.gbHoras.Controls.Add(Me.lblPrecio08)
+        Me.gbHoras.Controls.Add(Me.lblPrecio07)
+        Me.gbHoras.Controls.Add(Me.lblTransacionHora06)
+        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia02)
+        Me.gbHoras.Controls.Add(Me.lblTransacionHora05)
+        Me.gbHoras.Controls.Add(Me.lblPrecio06)
+        Me.gbHoras.Controls.Add(Me.lblPrecio05)
+        Me.gbHoras.Controls.Add(Me.lblTransacionHora04)
+        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia05)
+        Me.gbHoras.Controls.Add(Me.lblTransacionHora03)
+        Me.gbHoras.Controls.Add(Me.lblPrecio04)
+        Me.gbHoras.Controls.Add(Me.lblPrecio03)
+        Me.gbHoras.Controls.Add(Me.lblTransacionHora02)
+        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia01)
+        Me.gbHoras.Controls.Add(Me.lblPrecio02)
+        Me.gbHoras.Controls.Add(Me.lblEtiquetaGananciaHora)
+        Me.gbHoras.Controls.Add(Me.lblTransacionHora01)
+        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia00)
+        Me.gbHoras.Controls.Add(Me.lblPrecio01)
+        Me.gbHoras.Controls.Add(Me.lblEtiquetaHora)
+        Me.gbHoras.Controls.Add(Me.Label2)
+        Me.gbHoras.Controls.Add(Me.Label4)
+        Me.gbHoras.Controls.Add(Me.Label5)
+        Me.gbHoras.Controls.Add(Me.Label6)
+        Me.gbHoras.Controls.Add(Me.Label7)
+        Me.gbHoras.Controls.Add(Me.Label8)
+        Me.gbHoras.Controls.Add(Me.Label9)
+        Me.gbHoras.Controls.Add(Me.Label10)
+        Me.gbHoras.Controls.Add(Me.Label11)
+        Me.gbHoras.Controls.Add(Me.Label12)
+        Me.gbHoras.Controls.Add(Me.Label13)
+        Me.gbHoras.Controls.Add(Me.Label14)
+        Me.gbHoras.Controls.Add(Me.Label15)
+        Me.gbHoras.Controls.Add(Me.Label16)
+        Me.gbHoras.Controls.Add(Me.Label17)
+        Me.gbHoras.Controls.Add(Me.Label18)
+        Me.gbHoras.Controls.Add(Me.Label19)
+        Me.gbHoras.Controls.Add(Me.Label20)
+        Me.gbHoras.Controls.Add(Me.Label21)
+        Me.gbHoras.Controls.Add(Me.Label22)
+        Me.gbHoras.Controls.Add(Me.Label23)
+        Me.gbHoras.Controls.Add(Me.Label24)
+        Me.gbHoras.Controls.Add(Me.Label25)
+        Me.gbHoras.Controls.Add(Me.Label3)
+        Me.gbHoras.Controls.Add(Me.lblBalanceHora10)
+        Me.gbHoras.Controls.Add(Me.lblBalanceHora18)
+        Me.gbHoras.Controls.Add(Me.Label29)
+        Me.gbHoras.Controls.Add(Me.lblBalanceHora00)
+        Me.gbHoras.Controls.Add(Me.lblBalanceHora01)
+        Me.gbHoras.Controls.Add(Me.lblBalanceHora23)
+        Me.gbHoras.Controls.Add(Me.lblBalanceHora22)
+        Me.gbHoras.Controls.Add(Me.lblBalanceHora02)
+        Me.gbHoras.Controls.Add(Me.lblBalanceHora21)
+        Me.gbHoras.Controls.Add(Me.lblBalanceHora20)
+        Me.gbHoras.Controls.Add(Me.lblBalanceHora03)
+        Me.gbHoras.Controls.Add(Me.lblBalanceHora19)
+        Me.gbHoras.Controls.Add(Me.lblBalanceHora17)
+        Me.gbHoras.Controls.Add(Me.lblBalanceHora04)
+        Me.gbHoras.Controls.Add(Me.lblBalanceHora16)
+        Me.gbHoras.Controls.Add(Me.lblBalanceHora15)
+        Me.gbHoras.Controls.Add(Me.lblBalanceHora05)
+        Me.gbHoras.Controls.Add(Me.lblBalanceHora14)
+        Me.gbHoras.Controls.Add(Me.lblBalanceHora13)
+        Me.gbHoras.Controls.Add(Me.lblBalanceHora06)
+        Me.gbHoras.Controls.Add(Me.lblBalanceHora12)
+        Me.gbHoras.Controls.Add(Me.lblBalanceHora11)
+        Me.gbHoras.Controls.Add(Me.lblBalanceHora07)
+        Me.gbHoras.Controls.Add(Me.lblBalanceHora09)
+        Me.gbHoras.Controls.Add(Me.lblBalanceHora08)
+        Me.gbHoras.Controls.Add(Me.lblEtiquetaDiaTotal)
+        Me.gbHoras.Controls.Add(Me.lblTotalHora)
+        resources.ApplyResources(Me.gbHoras, "gbHoras")
+        Me.gbHoras.Name = "gbHoras"
+        Me.gbHoras.TabStop = False
+        '
+        'lblTransacionHoraTotal
+        '
+        Me.lblTransacionHoraTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransacionHoraTotal.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "TransacionesTotales", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransacionHoraTotal, "lblTransacionHoraTotal")
+        Me.lblTransacionHoraTotal.Name = "lblTransacionHoraTotal"
+        Me.lblTransacionHoraTotal.Text = Global.EstadisticasDucos.My.MySettings.Default.TransacionesTotales
+        '
+        'lblTransacionHora23
+        '
+        Me.lblTransacionHora23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransacionHora23.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones23", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransacionHora23, "lblTransacionHora23")
+        Me.lblTransacionHora23.Name = "lblTransacionHora23"
+        Me.lblTransacionHora23.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones23
+        '
+        'lblPrecioDia
+        '
+        Me.lblPrecioDia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecioDia.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MediaPrecioDia", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecioDia, "lblPrecioDia")
+        Me.lblPrecioDia.Name = "lblPrecioDia"
+        Me.lblPrecioDia.Text = Global.EstadisticasDucos.My.MySettings.Default.MediaPrecioDia
+        '
+        'lblPrecio23
+        '
+        Me.lblPrecio23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio23.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio23", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio23, "lblPrecio23")
+        Me.lblPrecio23.Name = "lblPrecio23"
+        Me.lblPrecio23.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio23
+        '
+        'lblHoraDiferencia23
+        '
+        Me.lblHoraDiferencia23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblHoraDiferencia23, "lblHoraDiferencia23")
+        Me.lblHoraDiferencia23.Name = "lblHoraDiferencia23"
+        '
+        'lblHoraDiferencia19
+        '
+        Me.lblHoraDiferencia19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblHoraDiferencia19, "lblHoraDiferencia19")
+        Me.lblHoraDiferencia19.Name = "lblHoraDiferencia19"
+        '
+        'lblHoraDiferencia18
+        '
+        Me.lblHoraDiferencia18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblHoraDiferencia18, "lblHoraDiferencia18")
+        Me.lblHoraDiferencia18.Name = "lblHoraDiferencia18"
+        '
+        'lblHoraDiferencia14
+        '
+        Me.lblHoraDiferencia14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblHoraDiferencia14, "lblHoraDiferencia14")
+        Me.lblHoraDiferencia14.Name = "lblHoraDiferencia14"
+        '
+        'lblHoraDiferencia13
+        '
+        Me.lblHoraDiferencia13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblHoraDiferencia13, "lblHoraDiferencia13")
+        Me.lblHoraDiferencia13.Name = "lblHoraDiferencia13"
+        '
+        'lblHoraDiferencia22
+        '
+        Me.lblHoraDiferencia22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblHoraDiferencia22, "lblHoraDiferencia22")
+        Me.lblHoraDiferencia22.Name = "lblHoraDiferencia22"
+        '
+        'lblHoraDiferencia09
+        '
+        Me.lblHoraDiferencia09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblHoraDiferencia09, "lblHoraDiferencia09")
+        Me.lblHoraDiferencia09.Name = "lblHoraDiferencia09"
+        '
+        'lblHoraDiferencia17
+        '
+        Me.lblHoraDiferencia17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblHoraDiferencia17, "lblHoraDiferencia17")
+        Me.lblHoraDiferencia17.Name = "lblHoraDiferencia17"
+        '
+        'lblHoraDiferencia08
+        '
+        Me.lblHoraDiferencia08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblHoraDiferencia08, "lblHoraDiferencia08")
+        Me.lblHoraDiferencia08.Name = "lblHoraDiferencia08"
+        '
+        'lblHoraDiferencia12
+        '
+        Me.lblHoraDiferencia12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblHoraDiferencia12, "lblHoraDiferencia12")
+        Me.lblHoraDiferencia12.Name = "lblHoraDiferencia12"
+        '
+        'lblHoraDiferencia21
+        '
+        Me.lblHoraDiferencia21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblHoraDiferencia21, "lblHoraDiferencia21")
+        Me.lblHoraDiferencia21.Name = "lblHoraDiferencia21"
+        '
+        'lblEtiquetaTransaacionesHora
+        '
+        Me.lblEtiquetaTransaacionesHora.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.lblEtiquetaTransaacionesHora.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblEtiquetaTransaacionesHora, "lblEtiquetaTransaacionesHora")
+        Me.lblEtiquetaTransaacionesHora.Name = "lblEtiquetaTransaacionesHora"
+        '
+        'lblHoraDiferencia04
+        '
+        Me.lblHoraDiferencia04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblHoraDiferencia04, "lblHoraDiferencia04")
+        Me.lblHoraDiferencia04.Name = "lblHoraDiferencia04"
+        '
+        'lblTransacionHora00
+        '
+        Me.lblTransacionHora00.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransacionHora00.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones00", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransacionHora00, "lblTransacionHora00")
+        Me.lblTransacionHora00.Name = "lblTransacionHora00"
+        Me.lblTransacionHora00.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones00
+        '
+        'lblEtiquetaPrecioHora
+        '
+        Me.lblEtiquetaPrecioHora.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.lblEtiquetaPrecioHora.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblEtiquetaPrecioHora, "lblEtiquetaPrecioHora")
+        Me.lblEtiquetaPrecioHora.Name = "lblEtiquetaPrecioHora"
+        '
+        'lblPrecio00
+        '
+        Me.lblPrecio00.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio00.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio00", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio00, "lblPrecio00")
+        Me.lblPrecio00.Name = "lblPrecio00"
+        Me.lblPrecio00.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio00
+        '
+        'lblTransacionHora22
+        '
+        Me.lblTransacionHora22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransacionHora22.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones22", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransacionHora22, "lblTransacionHora22")
+        Me.lblTransacionHora22.Name = "lblTransacionHora22"
+        Me.lblTransacionHora22.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones22
+        '
+        'lblHoraDiferencia16
+        '
+        Me.lblHoraDiferencia16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblHoraDiferencia16, "lblHoraDiferencia16")
+        Me.lblHoraDiferencia16.Name = "lblHoraDiferencia16"
+        '
+        'lblTransacionHora21
+        '
+        Me.lblTransacionHora21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransacionHora21.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones21", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransacionHora21, "lblTransacionHora21")
+        Me.lblTransacionHora21.Name = "lblTransacionHora21"
+        Me.lblTransacionHora21.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones21
+        '
+        'lblPrecio22
+        '
+        Me.lblPrecio22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio22.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio22", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio22, "lblPrecio22")
+        Me.lblPrecio22.Name = "lblPrecio22"
+        Me.lblPrecio22.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio22
+        '
+        'lblPrecio21
+        '
+        Me.lblPrecio21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio21.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio21", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio21, "lblPrecio21")
+        Me.lblPrecio21.Name = "lblPrecio21"
+        Me.lblPrecio21.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio21
+        '
+        'lblTransacionHora20
+        '
+        Me.lblTransacionHora20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransacionHora20.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones20", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransacionHora20, "lblTransacionHora20")
+        Me.lblTransacionHora20.Name = "lblTransacionHora20"
+        Me.lblTransacionHora20.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones20
+        '
+        'lblHoraDiferencia07
+        '
+        Me.lblHoraDiferencia07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblHoraDiferencia07, "lblHoraDiferencia07")
+        Me.lblHoraDiferencia07.Name = "lblHoraDiferencia07"
+        '
+        'lblTransacionHora19
+        '
+        Me.lblTransacionHora19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransacionHora19.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones19", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransacionHora19, "lblTransacionHora19")
+        Me.lblTransacionHora19.Name = "lblTransacionHora19"
+        Me.lblTransacionHora19.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones19
+        '
+        'lblPrecio20
+        '
+        Me.lblPrecio20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio20.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio20", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio20, "lblPrecio20")
+        Me.lblPrecio20.Name = "lblPrecio20"
+        Me.lblPrecio20.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio20
+        '
+        'lblPrecio19
+        '
+        Me.lblPrecio19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio19.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio19", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio19, "lblPrecio19")
+        Me.lblPrecio19.Name = "lblPrecio19"
+        Me.lblPrecio19.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio19
+        '
+        'lblTransacionHora18
+        '
+        Me.lblTransacionHora18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransacionHora18.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones18", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransacionHora18, "lblTransacionHora18")
+        Me.lblTransacionHora18.Name = "lblTransacionHora18"
+        Me.lblTransacionHora18.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones18
+        '
+        'lblHoraDiferencia11
+        '
+        Me.lblHoraDiferencia11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblHoraDiferencia11, "lblHoraDiferencia11")
+        Me.lblHoraDiferencia11.Name = "lblHoraDiferencia11"
+        '
+        'lblTransacionHora17
+        '
+        Me.lblTransacionHora17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransacionHora17.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones17", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransacionHora17, "lblTransacionHora17")
+        Me.lblTransacionHora17.Name = "lblTransacionHora17"
+        Me.lblTransacionHora17.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones17
+        '
+        'lblPrecio18
+        '
+        Me.lblPrecio18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio18.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio18", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio18, "lblPrecio18")
+        Me.lblPrecio18.Name = "lblPrecio18"
+        Me.lblPrecio18.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio18
+        '
+        'lblPrecio17
+        '
+        Me.lblPrecio17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio17.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio17", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio17, "lblPrecio17")
+        Me.lblPrecio17.Name = "lblPrecio17"
+        Me.lblPrecio17.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio17
+        '
+        'lblTransacionHora16
+        '
+        Me.lblTransacionHora16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransacionHora16.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones16", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransacionHora16, "lblTransacionHora16")
+        Me.lblTransacionHora16.Name = "lblTransacionHora16"
+        Me.lblTransacionHora16.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones16
+        '
+        'lblHoraDiferencia20
+        '
+        Me.lblHoraDiferencia20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblHoraDiferencia20, "lblHoraDiferencia20")
+        Me.lblHoraDiferencia20.Name = "lblHoraDiferencia20"
+        '
+        'lblTransacionHora15
+        '
+        Me.lblTransacionHora15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransacionHora15.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones15", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransacionHora15, "lblTransacionHora15")
+        Me.lblTransacionHora15.Name = "lblTransacionHora15"
+        Me.lblTransacionHora15.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones15
+        '
+        'lblPrecio16
+        '
+        Me.lblPrecio16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio16.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio16", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio16, "lblPrecio16")
+        Me.lblPrecio16.Name = "lblPrecio16"
+        Me.lblPrecio16.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio16
+        '
+        'lblPrecio15
+        '
+        Me.lblPrecio15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio15.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio15", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio15, "lblPrecio15")
+        Me.lblPrecio15.Name = "lblPrecio15"
+        Me.lblPrecio15.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio15
+        '
+        'lblTransacionHora14
+        '
+        Me.lblTransacionHora14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransacionHora14.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones14", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransacionHora14, "lblTransacionHora14")
+        Me.lblTransacionHora14.Name = "lblTransacionHora14"
+        Me.lblTransacionHora14.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones14
+        '
+        'lblHoraDiferencia03
+        '
+        Me.lblHoraDiferencia03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblHoraDiferencia03, "lblHoraDiferencia03")
+        Me.lblHoraDiferencia03.Name = "lblHoraDiferencia03"
+        '
+        'lblTransacionHora13
+        '
+        Me.lblTransacionHora13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransacionHora13.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones13", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransacionHora13, "lblTransacionHora13")
+        Me.lblTransacionHora13.Name = "lblTransacionHora13"
+        Me.lblTransacionHora13.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones13
+        '
+        'lblPrecio14
+        '
+        Me.lblPrecio14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio14.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio14", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio14, "lblPrecio14")
+        Me.lblPrecio14.Name = "lblPrecio14"
+        Me.lblPrecio14.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio14
+        '
+        'lblPrecio13
+        '
+        Me.lblPrecio13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio13.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio13", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio13, "lblPrecio13")
+        Me.lblPrecio13.Name = "lblPrecio13"
+        Me.lblPrecio13.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio13
+        '
+        'lblTransacionHora12
+        '
+        Me.lblTransacionHora12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransacionHora12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransacionHora12, "lblTransacionHora12")
+        Me.lblTransacionHora12.Name = "lblTransacionHora12"
+        Me.lblTransacionHora12.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones12
+        '
+        'lblHoraDiferencia15
+        '
+        Me.lblHoraDiferencia15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblHoraDiferencia15, "lblHoraDiferencia15")
+        Me.lblHoraDiferencia15.Name = "lblHoraDiferencia15"
+        '
+        'lblTransacionHora11
+        '
+        Me.lblTransacionHora11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransacionHora11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransacionHora11, "lblTransacionHora11")
+        Me.lblTransacionHora11.Name = "lblTransacionHora11"
+        Me.lblTransacionHora11.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones11
+        '
+        'lblPrecio12
+        '
+        Me.lblPrecio12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio12, "lblPrecio12")
+        Me.lblPrecio12.Name = "lblPrecio12"
+        Me.lblPrecio12.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio12
+        '
+        'lblPrecio11
+        '
+        Me.lblPrecio11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio11, "lblPrecio11")
+        Me.lblPrecio11.Name = "lblPrecio11"
+        Me.lblPrecio11.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio11
+        '
+        'lblTransacionHora10
+        '
+        Me.lblTransacionHora10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransacionHora10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransacionHora10, "lblTransacionHora10")
+        Me.lblTransacionHora10.Name = "lblTransacionHora10"
+        Me.lblTransacionHora10.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones10
+        '
+        'lblHoraDiferencia06
+        '
+        Me.lblHoraDiferencia06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblHoraDiferencia06, "lblHoraDiferencia06")
+        Me.lblHoraDiferencia06.Name = "lblHoraDiferencia06"
+        '
+        'lblTransacionHora09
+        '
+        Me.lblTransacionHora09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransacionHora09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransacionHora09, "lblTransacionHora09")
+        Me.lblTransacionHora09.Name = "lblTransacionHora09"
+        Me.lblTransacionHora09.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones09
+        '
+        'lblPrecio10
+        '
+        Me.lblPrecio10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio10, "lblPrecio10")
+        Me.lblPrecio10.Name = "lblPrecio10"
+        Me.lblPrecio10.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio10
+        '
+        'lblPrecio09
+        '
+        Me.lblPrecio09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio09, "lblPrecio09")
+        Me.lblPrecio09.Name = "lblPrecio09"
+        Me.lblPrecio09.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio09
+        '
+        'lblTransacionHora08
+        '
+        Me.lblTransacionHora08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransacionHora08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransacionHora08, "lblTransacionHora08")
+        Me.lblTransacionHora08.Name = "lblTransacionHora08"
+        Me.lblTransacionHora08.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones08
+        '
+        'lblHoraDiferencia10
+        '
+        Me.lblHoraDiferencia10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblHoraDiferencia10, "lblHoraDiferencia10")
+        Me.lblHoraDiferencia10.Name = "lblHoraDiferencia10"
+        '
+        'lblTransacionHora07
+        '
+        Me.lblTransacionHora07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransacionHora07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransacionHora07, "lblTransacionHora07")
+        Me.lblTransacionHora07.Name = "lblTransacionHora07"
+        Me.lblTransacionHora07.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones07
+        '
+        'lblPrecio08
+        '
+        Me.lblPrecio08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio08, "lblPrecio08")
+        Me.lblPrecio08.Name = "lblPrecio08"
+        Me.lblPrecio08.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio08
+        '
+        'lblPrecio07
+        '
+        Me.lblPrecio07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio07, "lblPrecio07")
+        Me.lblPrecio07.Name = "lblPrecio07"
+        Me.lblPrecio07.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio07
+        '
+        'lblTransacionHora06
+        '
+        Me.lblTransacionHora06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransacionHora06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransacionHora06, "lblTransacionHora06")
+        Me.lblTransacionHora06.Name = "lblTransacionHora06"
+        Me.lblTransacionHora06.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones06
+        '
+        'lblHoraDiferencia02
+        '
+        Me.lblHoraDiferencia02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblHoraDiferencia02, "lblHoraDiferencia02")
+        Me.lblHoraDiferencia02.Name = "lblHoraDiferencia02"
+        '
+        'lblTransacionHora05
+        '
+        Me.lblTransacionHora05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransacionHora05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransacionHora05, "lblTransacionHora05")
+        Me.lblTransacionHora05.Name = "lblTransacionHora05"
+        Me.lblTransacionHora05.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones05
+        '
+        'lblPrecio06
+        '
+        Me.lblPrecio06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio06, "lblPrecio06")
+        Me.lblPrecio06.Name = "lblPrecio06"
+        Me.lblPrecio06.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio06
+        '
+        'lblPrecio05
+        '
+        Me.lblPrecio05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio05, "lblPrecio05")
+        Me.lblPrecio05.Name = "lblPrecio05"
+        Me.lblPrecio05.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio05
+        '
+        'lblTransacionHora04
+        '
+        Me.lblTransacionHora04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransacionHora04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransacionHora04, "lblTransacionHora04")
+        Me.lblTransacionHora04.Name = "lblTransacionHora04"
+        Me.lblTransacionHora04.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones04
+        '
+        'lblHoraDiferencia05
+        '
+        Me.lblHoraDiferencia05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblHoraDiferencia05, "lblHoraDiferencia05")
+        Me.lblHoraDiferencia05.Name = "lblHoraDiferencia05"
+        '
+        'lblTransacionHora03
+        '
+        Me.lblTransacionHora03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransacionHora03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransacionHora03, "lblTransacionHora03")
+        Me.lblTransacionHora03.Name = "lblTransacionHora03"
+        Me.lblTransacionHora03.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones03
+        '
+        'lblPrecio04
+        '
+        Me.lblPrecio04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio04, "lblPrecio04")
+        Me.lblPrecio04.Name = "lblPrecio04"
+        Me.lblPrecio04.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio04
+        '
+        'lblPrecio03
+        '
+        Me.lblPrecio03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio03, "lblPrecio03")
+        Me.lblPrecio03.Name = "lblPrecio03"
+        Me.lblPrecio03.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio03
+        '
+        'lblTransacionHora02
+        '
+        Me.lblTransacionHora02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransacionHora02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransacionHora02, "lblTransacionHora02")
+        Me.lblTransacionHora02.Name = "lblTransacionHora02"
+        Me.lblTransacionHora02.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones02
+        '
+        'lblHoraDiferencia01
+        '
+        Me.lblHoraDiferencia01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblHoraDiferencia01, "lblHoraDiferencia01")
+        Me.lblHoraDiferencia01.Name = "lblHoraDiferencia01"
+        '
+        'lblPrecio02
+        '
+        Me.lblPrecio02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio02, "lblPrecio02")
+        Me.lblPrecio02.Name = "lblPrecio02"
+        Me.lblPrecio02.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio02
+        '
+        'lblEtiquetaGananciaHora
+        '
+        Me.lblEtiquetaGananciaHora.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.lblEtiquetaGananciaHora.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblEtiquetaGananciaHora, "lblEtiquetaGananciaHora")
+        Me.lblEtiquetaGananciaHora.Name = "lblEtiquetaGananciaHora"
+        '
+        'lblTransacionHora01
+        '
+        Me.lblTransacionHora01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTransacionHora01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblTransacionHora01, "lblTransacionHora01")
+        Me.lblTransacionHora01.Name = "lblTransacionHora01"
+        Me.lblTransacionHora01.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones01
+        '
+        'lblHoraDiferencia00
+        '
+        Me.lblHoraDiferencia00.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblHoraDiferencia00.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "ValorHora00", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblHoraDiferencia00, "lblHoraDiferencia00")
+        Me.lblHoraDiferencia00.Name = "lblHoraDiferencia00"
+        Me.lblHoraDiferencia00.Text = Global.EstadisticasDucos.My.MySettings.Default.ValorHora00
+        '
+        'lblPrecio01
+        '
+        Me.lblPrecio01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblPrecio01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblPrecio01, "lblPrecio01")
+        Me.lblPrecio01.Name = "lblPrecio01"
+        Me.lblPrecio01.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio01
+        '
+        'lblEtiquetaHora
+        '
+        Me.lblEtiquetaHora.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.lblEtiquetaHora.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblEtiquetaHora, "lblEtiquetaHora")
+        Me.lblEtiquetaHora.Name = "lblEtiquetaHora"
+        '
+        'Label2
+        '
+        Me.Label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label2, "Label2")
+        Me.Label2.Name = "Label2"
+        '
+        'Label4
+        '
+        Me.Label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label4, "Label4")
+        Me.Label4.Name = "Label4"
+        '
+        'Label5
+        '
+        Me.Label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label5, "Label5")
+        Me.Label5.Name = "Label5"
+        '
+        'Label6
+        '
+        Me.Label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label6, "Label6")
+        Me.Label6.Name = "Label6"
+        '
+        'Label7
+        '
+        Me.Label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label7, "Label7")
+        Me.Label7.Name = "Label7"
+        '
+        'Label8
+        '
+        Me.Label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label8, "Label8")
+        Me.Label8.Name = "Label8"
+        '
+        'Label9
+        '
+        Me.Label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label9, "Label9")
+        Me.Label9.Name = "Label9"
+        '
+        'Label10
+        '
+        Me.Label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label10, "Label10")
+        Me.Label10.Name = "Label10"
+        '
+        'Label11
+        '
+        Me.Label11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label11, "Label11")
+        Me.Label11.Name = "Label11"
+        '
+        'Label12
+        '
+        Me.Label12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label12, "Label12")
+        Me.Label12.Name = "Label12"
+        '
+        'Label13
+        '
+        Me.Label13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label13, "Label13")
+        Me.Label13.Name = "Label13"
+        '
+        'Label14
+        '
+        Me.Label14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label14, "Label14")
+        Me.Label14.Name = "Label14"
+        '
+        'Label15
+        '
+        Me.Label15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label15, "Label15")
+        Me.Label15.Name = "Label15"
+        '
+        'Label16
+        '
+        Me.Label16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label16, "Label16")
+        Me.Label16.Name = "Label16"
+        '
+        'Label17
+        '
+        Me.Label17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label17, "Label17")
+        Me.Label17.Name = "Label17"
+        '
+        'Label18
+        '
+        Me.Label18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label18, "Label18")
+        Me.Label18.Name = "Label18"
+        '
+        'Label19
+        '
+        Me.Label19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label19, "Label19")
+        Me.Label19.Name = "Label19"
+        '
+        'Label20
+        '
+        Me.Label20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label20, "Label20")
+        Me.Label20.Name = "Label20"
+        '
+        'Label21
+        '
+        Me.Label21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label21, "Label21")
+        Me.Label21.Name = "Label21"
+        '
+        'Label22
+        '
+        Me.Label22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label22, "Label22")
+        Me.Label22.Name = "Label22"
+        '
+        'Label23
+        '
+        Me.Label23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label23, "Label23")
+        Me.Label23.Name = "Label23"
+        '
+        'Label24
+        '
+        Me.Label24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label24, "Label24")
+        Me.Label24.Name = "Label24"
+        '
+        'Label25
+        '
+        Me.Label25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label25, "Label25")
+        Me.Label25.Name = "Label25"
+        '
+        'Label3
+        '
+        Me.Label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label3, "Label3")
+        Me.Label3.Name = "Label3"
+        '
+        'lblBalanceHora10
+        '
+        Me.lblBalanceHora10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora10, "lblBalanceHora10")
+        Me.lblBalanceHora10.Name = "lblBalanceHora10"
+        Me.lblBalanceHora10.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora10
+        '
+        'lblBalanceHora18
+        '
+        Me.lblBalanceHora18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora18.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora18", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora18, "lblBalanceHora18")
+        Me.lblBalanceHora18.Name = "lblBalanceHora18"
+        Me.lblBalanceHora18.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora18
+        '
+        'Label29
+        '
+        Me.Label29.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.Label29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.Label29, "Label29")
+        Me.Label29.Name = "Label29"
+        '
+        'lblBalanceHora00
+        '
+        Me.lblBalanceHora00.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora00.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora00", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora00, "lblBalanceHora00")
+        Me.lblBalanceHora00.Name = "lblBalanceHora00"
+        Me.lblBalanceHora00.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora00
+        '
+        'lblBalanceHora01
+        '
+        Me.lblBalanceHora01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora01, "lblBalanceHora01")
+        Me.lblBalanceHora01.Name = "lblBalanceHora01"
+        Me.lblBalanceHora01.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora01
+        '
+        'lblBalanceHora23
+        '
+        Me.lblBalanceHora23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora23.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora23", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora23, "lblBalanceHora23")
+        Me.lblBalanceHora23.Name = "lblBalanceHora23"
+        Me.lblBalanceHora23.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora23
+        '
+        'lblBalanceHora22
+        '
+        Me.lblBalanceHora22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora22.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora22", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora22, "lblBalanceHora22")
+        Me.lblBalanceHora22.Name = "lblBalanceHora22"
+        Me.lblBalanceHora22.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora22
+        '
+        'lblBalanceHora02
+        '
+        Me.lblBalanceHora02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora02, "lblBalanceHora02")
+        Me.lblBalanceHora02.Name = "lblBalanceHora02"
+        Me.lblBalanceHora02.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora02
+        '
+        'lblBalanceHora21
+        '
+        Me.lblBalanceHora21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora21.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora21", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora21, "lblBalanceHora21")
+        Me.lblBalanceHora21.Name = "lblBalanceHora21"
+        Me.lblBalanceHora21.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora21
+        '
+        'lblBalanceHora20
+        '
+        Me.lblBalanceHora20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora20.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora20", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora20, "lblBalanceHora20")
+        Me.lblBalanceHora20.Name = "lblBalanceHora20"
+        Me.lblBalanceHora20.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora20
+        '
+        'lblBalanceHora03
+        '
+        Me.lblBalanceHora03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora03, "lblBalanceHora03")
+        Me.lblBalanceHora03.Name = "lblBalanceHora03"
+        Me.lblBalanceHora03.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora03
+        '
+        'lblBalanceHora19
+        '
+        Me.lblBalanceHora19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora19.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora19", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora19, "lblBalanceHora19")
+        Me.lblBalanceHora19.Name = "lblBalanceHora19"
+        Me.lblBalanceHora19.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora19
+        '
+        'lblBalanceHora17
+        '
+        Me.lblBalanceHora17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora17.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora17", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora17, "lblBalanceHora17")
+        Me.lblBalanceHora17.Name = "lblBalanceHora17"
+        Me.lblBalanceHora17.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora17
+        '
+        'lblBalanceHora04
+        '
+        Me.lblBalanceHora04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora04, "lblBalanceHora04")
+        Me.lblBalanceHora04.Name = "lblBalanceHora04"
+        Me.lblBalanceHora04.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora04
+        '
+        'lblBalanceHora16
+        '
+        Me.lblBalanceHora16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora16.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora16", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora16, "lblBalanceHora16")
+        Me.lblBalanceHora16.Name = "lblBalanceHora16"
+        Me.lblBalanceHora16.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora16
+        '
+        'lblBalanceHora15
+        '
+        Me.lblBalanceHora15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora15.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora15", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora15, "lblBalanceHora15")
+        Me.lblBalanceHora15.Name = "lblBalanceHora15"
+        Me.lblBalanceHora15.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora15
+        '
+        'lblBalanceHora05
+        '
+        Me.lblBalanceHora05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora05, "lblBalanceHora05")
+        Me.lblBalanceHora05.Name = "lblBalanceHora05"
+        Me.lblBalanceHora05.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora05
+        '
+        'lblBalanceHora14
+        '
+        Me.lblBalanceHora14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora14.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora14", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora14, "lblBalanceHora14")
+        Me.lblBalanceHora14.Name = "lblBalanceHora14"
+        Me.lblBalanceHora14.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora14
+        '
+        'lblBalanceHora13
+        '
+        Me.lblBalanceHora13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora13.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora13", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora13, "lblBalanceHora13")
+        Me.lblBalanceHora13.Name = "lblBalanceHora13"
+        Me.lblBalanceHora13.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora13
+        '
+        'lblBalanceHora06
+        '
+        Me.lblBalanceHora06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora06, "lblBalanceHora06")
+        Me.lblBalanceHora06.Name = "lblBalanceHora06"
+        Me.lblBalanceHora06.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora06
+        '
+        'lblBalanceHora12
+        '
+        Me.lblBalanceHora12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora12, "lblBalanceHora12")
+        Me.lblBalanceHora12.Name = "lblBalanceHora12"
+        Me.lblBalanceHora12.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora12
+        '
+        'lblBalanceHora11
+        '
+        Me.lblBalanceHora11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora11, "lblBalanceHora11")
+        Me.lblBalanceHora11.Name = "lblBalanceHora11"
+        Me.lblBalanceHora11.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora11
+        '
+        'lblBalanceHora07
+        '
+        Me.lblBalanceHora07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora07, "lblBalanceHora07")
+        Me.lblBalanceHora07.Name = "lblBalanceHora07"
+        Me.lblBalanceHora07.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora07
+        '
+        'lblBalanceHora09
+        '
+        Me.lblBalanceHora09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora09, "lblBalanceHora09")
+        Me.lblBalanceHora09.Name = "lblBalanceHora09"
+        Me.lblBalanceHora09.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora09
+        '
+        'lblBalanceHora08
+        '
+        Me.lblBalanceHora08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBalanceHora08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblBalanceHora08, "lblBalanceHora08")
+        Me.lblBalanceHora08.Name = "lblBalanceHora08"
+        Me.lblBalanceHora08.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora08
+        '
+        'lblEtiquetaDiaTotal
+        '
+        Me.lblEtiquetaDiaTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblEtiquetaDiaTotal, "lblEtiquetaDiaTotal")
+        Me.lblEtiquetaDiaTotal.Name = "lblEtiquetaDiaTotal"
+        '
+        'lblTotalHora
+        '
+        Me.lblTotalHora.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.lblTotalHora, "lblTotalHora")
+        Me.lblTotalHora.ForeColor = System.Drawing.Color.DarkOrange
+        Me.lblTotalHora.Name = "lblTotalHora"
+        '
         'TabPage2
         '
         Me.TabPage2.BackColor = System.Drawing.Color.White
@@ -960,35 +4123,35 @@ Partial Class Form1
         '
         'Chart7
         '
-        ChartArea7.AxisX.MajorGrid.Interval = 0R
-        ChartArea7.AxisX.MajorGrid.IntervalOffset = 0R
-        ChartArea7.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
-        ChartArea7.Name = "ChartArea1"
-        Me.Chart7.ChartAreas.Add(ChartArea7)
-        Legend7.Name = "Legend1"
-        Me.Chart7.Legends.Add(Legend7)
+        ChartArea28.AxisX.MajorGrid.Interval = 0R
+        ChartArea28.AxisX.MajorGrid.IntervalOffset = 0R
+        ChartArea28.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
+        ChartArea28.Name = "ChartArea1"
+        Me.Chart7.ChartAreas.Add(ChartArea28)
+        Legend28.Name = "Legend1"
+        Me.Chart7.Legends.Add(Legend28)
         resources.ApplyResources(Me.Chart7, "Chart7")
         Me.Chart7.Name = "Chart7"
-        Series7.BorderWidth = 3
-        Series7.ChartArea = "ChartArea1"
-        Series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line
-        Series7.Color = System.Drawing.Color.OrangeRed
-        Series7.IsVisibleInLegend = False
-        Series7.Legend = "Legend1"
-        Series7.Name = "Series1"
-        Series7.ToolTip = "#VAL °"
-        Series7.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[String]
-        Series7.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
-        Series8.BorderWidth = 3
-        Series8.ChartArea = "ChartArea1"
-        Series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line
-        Series8.Color = System.Drawing.Color.DodgerBlue
-        Series8.IsVisibleInLegend = False
-        Series8.Legend = "Legend1"
-        Series8.Name = "Series2"
-        Series8.ToolTip = "#VAL %"
-        Me.Chart7.Series.Add(Series7)
-        Me.Chart7.Series.Add(Series8)
+        Series31.BorderWidth = 3
+        Series31.ChartArea = "ChartArea1"
+        Series31.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line
+        Series31.Color = System.Drawing.Color.OrangeRed
+        Series31.IsVisibleInLegend = False
+        Series31.Legend = "Legend1"
+        Series31.Name = "Series1"
+        Series31.ToolTip = "#VAL °"
+        Series31.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[String]
+        Series31.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
+        Series32.BorderWidth = 3
+        Series32.ChartArea = "ChartArea1"
+        Series32.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line
+        Series32.Color = System.Drawing.Color.DodgerBlue
+        Series32.IsVisibleInLegend = False
+        Series32.Legend = "Legend1"
+        Series32.Name = "Series2"
+        Series32.ToolTip = "#VAL %"
+        Me.Chart7.Series.Add(Series31)
+        Me.Chart7.Series.Add(Series32)
         '
         'TabPage3
         '
@@ -1509,7 +4672,6 @@ Partial Class Form1
         'TabPage4
         '
         Me.TabPage4.BackColor = System.Drawing.Color.White
-        Me.TabPage4.Controls.Add(Me.Label32)
         Me.TabPage4.Controls.Add(Me.gbOtros)
         Me.TabPage4.Controls.Add(Me.gbRPI)
         Me.TabPage4.Controls.Add(Me.gbPhone)
@@ -1522,11 +4684,6 @@ Partial Class Form1
         Me.TabPage4.Controls.Add(Me.gbMineross)
         resources.ApplyResources(Me.TabPage4, "TabPage4")
         Me.TabPage4.Name = "TabPage4"
-        '
-        'Label32
-        '
-        resources.ApplyResources(Me.Label32, "Label32")
-        Me.Label32.Name = "Label32"
         '
         'gbOtros
         '
@@ -1882,11 +5039,18 @@ Partial Class Form1
         'TabPage7
         '
         Me.TabPage7.BackColor = System.Drawing.Color.White
+        Me.TabPage7.Controls.Add(Me.Button1)
+        Me.TabPage7.Controls.Add(Me.WebBrowser1)
         Me.TabPage7.Controls.Add(Me.gbTemperatura)
         Me.TabPage7.Controls.Add(Me.gbOpciones)
         Me.TabPage7.Controls.Add(Me.gbUser)
         resources.ApplyResources(Me.TabPage7, "TabPage7")
         Me.TabPage7.Name = "TabPage7"
+        '
+        'WebBrowser1
+        '
+        resources.ApplyResources(Me.WebBrowser1, "WebBrowser1")
+        Me.WebBrowser1.Name = "WebBrowser1"
         '
         'gbTemperatura
         '
@@ -1900,16 +5064,40 @@ Partial Class Form1
         Me.gbTemperatura.Name = "gbTemperatura"
         Me.gbTemperatura.TabStop = False
         '
+        'txtFanAmarillo2
+        '
+        Me.txtFanAmarillo2.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.EstadisticasDucos.My.MySettings.Default, "FanAmarillo", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.txtFanAmarillo2.ForeColor = System.Drawing.Color.DarkKhaki
+        resources.ApplyResources(Me.txtFanAmarillo2, "txtFanAmarillo2")
+        Me.txtFanAmarillo2.Name = "txtFanAmarillo2"
+        Me.txtFanAmarillo2.Value = Global.EstadisticasDucos.My.MySettings.Default.FanAmarillo
+        '
         'lblEtiquetaTempGreen
         '
         Me.lblEtiquetaTempGreen.ForeColor = System.Drawing.Color.Black
         resources.ApplyResources(Me.lblEtiquetaTempGreen, "lblEtiquetaTempGreen")
         Me.lblEtiquetaTempGreen.Name = "lblEtiquetaTempGreen"
         '
+        'txtFanVerde2
+        '
+        Me.txtFanVerde2.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.EstadisticasDucos.My.MySettings.Default, "FanVerde", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.txtFanVerde2.ForeColor = System.Drawing.Color.Green
+        resources.ApplyResources(Me.txtFanVerde2, "txtFanVerde2")
+        Me.txtFanVerde2.Name = "txtFanVerde2"
+        Me.txtFanVerde2.Value = Global.EstadisticasDucos.My.MySettings.Default.FanVerde
+        '
         'lblEtiquetaTempyellow
         '
         resources.ApplyResources(Me.lblEtiquetaTempyellow, "lblEtiquetaTempyellow")
         Me.lblEtiquetaTempyellow.Name = "lblEtiquetaTempyellow"
+        '
+        'txtGradosFan2
+        '
+        Me.txtGradosFan2.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.EstadisticasDucos.My.MySettings.Default, "FanRojo", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.txtGradosFan2.ForeColor = System.Drawing.Color.Red
+        resources.ApplyResources(Me.txtGradosFan2, "txtGradosFan2")
+        Me.txtGradosFan2.Name = "txtGradosFan2"
+        Me.txtGradosFan2.Value = Global.EstadisticasDucos.My.MySettings.Default.FanRojo
         '
         'lblEtiquetaTempMax
         '
@@ -1937,6 +5125,33 @@ Partial Class Form1
         resources.ApplyResources(Me.lblEtiquetaLenguaje, "lblEtiquetaLenguaje")
         Me.lblEtiquetaLenguaje.Name = "lblEtiquetaLenguaje"
         '
+        'cmbDivisa1
+        '
+        Me.cmbDivisa1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Moneda", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.cmbDivisa1.FormattingEnabled = True
+        Me.cmbDivisa1.Items.AddRange(New Object() {resources.GetString("cmbDivisa1.Items"), resources.GetString("cmbDivisa1.Items1")})
+        resources.ApplyResources(Me.cmbDivisa1, "cmbDivisa1")
+        Me.cmbDivisa1.Name = "cmbDivisa1"
+        Me.cmbDivisa1.Text = Global.EstadisticasDucos.My.MySettings.Default.Moneda
+        '
+        'cmbLenguaje1
+        '
+        Me.cmbLenguaje1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Lenguaje", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.cmbLenguaje1.FormattingEnabled = True
+        Me.cmbLenguaje1.Items.AddRange(New Object() {resources.GetString("cmbLenguaje1.Items"), resources.GetString("cmbLenguaje1.Items1")})
+        resources.ApplyResources(Me.cmbLenguaje1, "cmbLenguaje1")
+        Me.cmbLenguaje1.Name = "cmbLenguaje1"
+        Me.cmbLenguaje1.Text = Global.EstadisticasDucos.My.MySettings.Default.Lenguaje
+        '
+        'chkActivarMensajes2
+        '
+        resources.ApplyResources(Me.chkActivarMensajes2, "chkActivarMensajes2")
+        Me.chkActivarMensajes2.Checked = Global.EstadisticasDucos.My.MySettings.Default.MensajesError
+        Me.chkActivarMensajes2.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.chkActivarMensajes2.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.EstadisticasDucos.My.MySettings.Default, "MensajesError", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.chkActivarMensajes2.Name = "chkActivarMensajes2"
+        Me.chkActivarMensajes2.UseVisualStyleBackColor = True
+        '
         'gbUser
         '
         Me.gbUser.Controls.Add(Me.PictureBox1)
@@ -1955,15 +5170,18 @@ Partial Class Form1
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.TabStop = False
         '
+        'lblUser
+        '
+        Me.lblUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblUser.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "User", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        resources.ApplyResources(Me.lblUser, "lblUser")
+        Me.lblUser.Name = "lblUser"
+        Me.lblUser.Text = Global.EstadisticasDucos.My.MySettings.Default.User
+        '
         'lblEtiquetaUsuario
         '
         resources.ApplyResources(Me.lblEtiquetaUsuario, "lblEtiquetaUsuario")
         Me.lblEtiquetaUsuario.Name = "lblEtiquetaUsuario"
-        '
-        'WebBrowser1
-        '
-        resources.ApplyResources(Me.WebBrowser1, "WebBrowser1")
-        Me.WebBrowser1.Name = "WebBrowser1"
         '
         'gbGananciasEuro
         '
@@ -2206,1608 +5424,6 @@ Partial Class Form1
         resources.ApplyResources(Me.PanelOculto, "PanelOculto")
         Me.PanelOculto.Name = "PanelOculto"
         '
-        'gbGananciasDolar
-        '
-        Me.gbGananciasDolar.Controls.Add(Me.Label38)
-        Me.gbGananciasDolar.Controls.Add(Me.lblGanadoDolar)
-        resources.ApplyResources(Me.gbGananciasDolar, "gbGananciasDolar")
-        Me.gbGananciasDolar.Name = "gbGananciasDolar"
-        Me.gbGananciasDolar.TabStop = False
-        '
-        'gbAño
-        '
-        Me.gbAño.Controls.Add(Me.lblGananciasAño01)
-        Me.gbAño.Controls.Add(Me.lblEtiquetaGanaciasAño)
-        Me.gbAño.Controls.Add(Me.lblGananciasAño02)
-        Me.gbAño.Controls.Add(Me.lblGananciasAño07)
-        Me.gbAño.Controls.Add(Me.lblGananciasAño04)
-        Me.gbAño.Controls.Add(Me.lblGananciasAño08)
-        Me.gbAño.Controls.Add(Me.lblGananciasAño10)
-        Me.gbAño.Controls.Add(Me.lblGananciasAño05)
-        Me.gbAño.Controls.Add(Me.lblGananciasAño09)
-        Me.gbAño.Controls.Add(Me.lblGananciasAño06)
-        Me.gbAño.Controls.Add(Me.lblGananciasAño11)
-        Me.gbAño.Controls.Add(Me.lblGananciasAño12)
-        Me.gbAño.Controls.Add(Me.lblGananciasAño03)
-        Me.gbAño.Controls.Add(Me.Label128)
-        Me.gbAño.Controls.Add(Me.lblBalanceAño01)
-        Me.gbAño.Controls.Add(Me.lblBalanceAño02)
-        Me.gbAño.Controls.Add(Me.lblBalanceAño03)
-        Me.gbAño.Controls.Add(Me.lblBalanceAño04)
-        Me.gbAño.Controls.Add(Me.lblBalanceAño05)
-        Me.gbAño.Controls.Add(Me.lblBalanceAño06)
-        Me.gbAño.Controls.Add(Me.lblBalanceAño07)
-        Me.gbAño.Controls.Add(Me.lblBalanceAño08)
-        Me.gbAño.Controls.Add(Me.lblBalanceAño09)
-        Me.gbAño.Controls.Add(Me.lblBalanceAño10)
-        Me.gbAño.Controls.Add(Me.lblBalanceAño11)
-        Me.gbAño.Controls.Add(Me.lblBalanceAño12)
-        Me.gbAño.Controls.Add(Me.lblEtiquetaMes)
-        Me.gbAño.Controls.Add(Me.Label143)
-        Me.gbAño.Controls.Add(Me.Label144)
-        Me.gbAño.Controls.Add(Me.Label145)
-        Me.gbAño.Controls.Add(Me.Label146)
-        Me.gbAño.Controls.Add(Me.Label147)
-        Me.gbAño.Controls.Add(Me.Label148)
-        Me.gbAño.Controls.Add(Me.Label149)
-        Me.gbAño.Controls.Add(Me.Label150)
-        Me.gbAño.Controls.Add(Me.Label151)
-        Me.gbAño.Controls.Add(Me.Label152)
-        Me.gbAño.Controls.Add(Me.Label153)
-        Me.gbAño.Controls.Add(Me.Label154)
-        Me.gbAño.Controls.Add(Me.lblEtiquetaPrecioAño)
-        Me.gbAño.Controls.Add(Me.lblPrecioAnual)
-        Me.gbAño.Controls.Add(Me.lblPrecioAño12)
-        Me.gbAño.Controls.Add(Me.lblPrecioAño01)
-        Me.gbAño.Controls.Add(Me.lblPrecioAño11)
-        Me.gbAño.Controls.Add(Me.lblPrecioAño10)
-        Me.gbAño.Controls.Add(Me.lblPrecioAño02)
-        Me.gbAño.Controls.Add(Me.lblPrecioAño09)
-        Me.gbAño.Controls.Add(Me.lblPrecioAño08)
-        Me.gbAño.Controls.Add(Me.lblPrecioAño03)
-        Me.gbAño.Controls.Add(Me.lblPrecioAño07)
-        Me.gbAño.Controls.Add(Me.lblPrecioAño04)
-        Me.gbAño.Controls.Add(Me.lblPrecioAño06)
-        Me.gbAño.Controls.Add(Me.lblPrecioAño05)
-        Me.gbAño.Controls.Add(Me.lblEtiquetaAñoTotal)
-        Me.gbAño.Controls.Add(Me.lblTransasionesAño02)
-        Me.gbAño.Controls.Add(Me.lblTransasionesAño03)
-        Me.gbAño.Controls.Add(Me.lblTransasionesAño12)
-        Me.gbAño.Controls.Add(Me.lblTransasionesAño11)
-        Me.gbAño.Controls.Add(Me.lblTransasionesAño06)
-        Me.gbAño.Controls.Add(Me.lblTransasionesAño09)
-        Me.gbAño.Controls.Add(Me.lblTransasionesAño05)
-        Me.gbAño.Controls.Add(Me.lblTransasionesAño10)
-        Me.gbAño.Controls.Add(Me.lblTransasionesAño08)
-        Me.gbAño.Controls.Add(Me.lblTransasionesAño04)
-        Me.gbAño.Controls.Add(Me.lblTransasionesAño07)
-        Me.gbAño.Controls.Add(Me.lblEtiquetaTransacionAño)
-        Me.gbAño.Controls.Add(Me.lblTransasionesAño01)
-        Me.gbAño.Controls.Add(Me.lblTotalGananciaAño)
-        Me.gbAño.Controls.Add(Me.lblTransacionesTotalAño)
-        resources.ApplyResources(Me.gbAño, "gbAño")
-        Me.gbAño.Name = "gbAño"
-        Me.gbAño.TabStop = False
-        '
-        'lblTransacionesTotalAño
-        '
-        Me.lblTransacionesTotalAño.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblTransacionesTotalAño, "lblTransacionesTotalAño")
-        Me.lblTransacionesTotalAño.ForeColor = System.Drawing.Color.Black
-        Me.lblTransacionesTotalAño.Name = "lblTransacionesTotalAño"
-        '
-        'lblTotalGananciaAño
-        '
-        Me.lblTotalGananciaAño.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblTotalGananciaAño, "lblTotalGananciaAño")
-        Me.lblTotalGananciaAño.ForeColor = System.Drawing.Color.DarkOrange
-        Me.lblTotalGananciaAño.Name = "lblTotalGananciaAño"
-        '
-        'lblEtiquetaTransacionAño
-        '
-        Me.lblEtiquetaTransacionAño.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
-        Me.lblEtiquetaTransacionAño.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblEtiquetaTransacionAño, "lblEtiquetaTransacionAño")
-        Me.lblEtiquetaTransacionAño.Name = "lblEtiquetaTransacionAño"
-        '
-        'lblEtiquetaAñoTotal
-        '
-        Me.lblEtiquetaAñoTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblEtiquetaAñoTotal, "lblEtiquetaAñoTotal")
-        Me.lblEtiquetaAñoTotal.Name = "lblEtiquetaAñoTotal"
-        '
-        'lblEtiquetaPrecioAño
-        '
-        Me.lblEtiquetaPrecioAño.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
-        Me.lblEtiquetaPrecioAño.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblEtiquetaPrecioAño, "lblEtiquetaPrecioAño")
-        Me.lblEtiquetaPrecioAño.Name = "lblEtiquetaPrecioAño"
-        '
-        'Label154
-        '
-        Me.Label154.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label154, "Label154")
-        Me.Label154.Name = "Label154"
-        '
-        'Label153
-        '
-        Me.Label153.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label153, "Label153")
-        Me.Label153.Name = "Label153"
-        '
-        'Label152
-        '
-        Me.Label152.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label152, "Label152")
-        Me.Label152.Name = "Label152"
-        '
-        'Label151
-        '
-        Me.Label151.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label151, "Label151")
-        Me.Label151.Name = "Label151"
-        '
-        'Label150
-        '
-        Me.Label150.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label150, "Label150")
-        Me.Label150.Name = "Label150"
-        '
-        'Label149
-        '
-        Me.Label149.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label149, "Label149")
-        Me.Label149.Name = "Label149"
-        '
-        'Label148
-        '
-        Me.Label148.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label148, "Label148")
-        Me.Label148.Name = "Label148"
-        '
-        'Label147
-        '
-        Me.Label147.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label147, "Label147")
-        Me.Label147.Name = "Label147"
-        '
-        'Label146
-        '
-        Me.Label146.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label146, "Label146")
-        Me.Label146.Name = "Label146"
-        '
-        'Label145
-        '
-        Me.Label145.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label145, "Label145")
-        Me.Label145.Name = "Label145"
-        '
-        'Label144
-        '
-        Me.Label144.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label144, "Label144")
-        Me.Label144.Name = "Label144"
-        '
-        'Label143
-        '
-        Me.Label143.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label143, "Label143")
-        Me.Label143.Name = "Label143"
-        '
-        'lblEtiquetaMes
-        '
-        Me.lblEtiquetaMes.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
-        Me.lblEtiquetaMes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblEtiquetaMes, "lblEtiquetaMes")
-        Me.lblEtiquetaMes.Name = "lblEtiquetaMes"
-        '
-        'Label128
-        '
-        Me.Label128.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
-        Me.Label128.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label128, "Label128")
-        Me.Label128.Name = "Label128"
-        '
-        'lblEtiquetaGanaciasAño
-        '
-        Me.lblEtiquetaGanaciasAño.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
-        Me.lblEtiquetaGanaciasAño.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblEtiquetaGanaciasAño, "lblEtiquetaGanaciasAño")
-        Me.lblEtiquetaGanaciasAño.Name = "lblEtiquetaGanaciasAño"
-        '
-        'gbAños
-        '
-        Me.gbAños.Controls.Add(Me.lblEtiquetaPreciosAños)
-        Me.gbAños.Controls.Add(Me.lblPrecioAño2022)
-        Me.gbAños.Controls.Add(Me.lblPrecioMedioTodosAños)
-        Me.gbAños.Controls.Add(Me.lblPrecioAño2023)
-        Me.gbAños.Controls.Add(Me.lblTransasionesAñoTotal)
-        Me.gbAños.Controls.Add(Me.lblTransasionesAño2022)
-        Me.gbAños.Controls.Add(Me.lblTransasionesAño2023)
-        Me.gbAños.Controls.Add(Me.lblEtiquetaTransacionesAños)
-        Me.gbAños.Controls.Add(Me.gbEstadisticasGlobales)
-        Me.gbAños.Controls.Add(Me.lblEtiquetaAñosTotal)
-        Me.gbAños.Controls.Add(Me.lblGanadoAñoTotal)
-        Me.gbAños.Controls.Add(Me.lblEtiquetaGananciasAños)
-        Me.gbAños.Controls.Add(Me.lblGanadoAño2022)
-        Me.gbAños.Controls.Add(Me.lblGanadoAño2023)
-        Me.gbAños.Controls.Add(Me.Label130)
-        Me.gbAños.Controls.Add(Me.lblBalanceAño2022)
-        Me.gbAños.Controls.Add(Me.lblBalanceAño2023)
-        Me.gbAños.Controls.Add(Me.lblEtiquetaAños)
-        Me.gbAños.Controls.Add(Me.Label137)
-        Me.gbAños.Controls.Add(Me.Label138)
-        resources.ApplyResources(Me.gbAños, "gbAños")
-        Me.gbAños.Name = "gbAños"
-        Me.gbAños.TabStop = False
-        '
-        'Label138
-        '
-        Me.Label138.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label138, "Label138")
-        Me.Label138.Name = "Label138"
-        '
-        'Label137
-        '
-        Me.Label137.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label137, "Label137")
-        Me.Label137.Name = "Label137"
-        '
-        'lblEtiquetaAños
-        '
-        Me.lblEtiquetaAños.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
-        Me.lblEtiquetaAños.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblEtiquetaAños, "lblEtiquetaAños")
-        Me.lblEtiquetaAños.Name = "lblEtiquetaAños"
-        '
-        'Label130
-        '
-        Me.Label130.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
-        Me.Label130.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label130, "Label130")
-        Me.Label130.Name = "Label130"
-        '
-        'lblEtiquetaGananciasAños
-        '
-        Me.lblEtiquetaGananciasAños.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
-        Me.lblEtiquetaGananciasAños.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblEtiquetaGananciasAños, "lblEtiquetaGananciasAños")
-        Me.lblEtiquetaGananciasAños.Name = "lblEtiquetaGananciasAños"
-        '
-        'lblGanadoAñoTotal
-        '
-        Me.lblGanadoAñoTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblGanadoAñoTotal, "lblGanadoAñoTotal")
-        Me.lblGanadoAñoTotal.ForeColor = System.Drawing.Color.DarkOrange
-        Me.lblGanadoAñoTotal.Name = "lblGanadoAñoTotal"
-        '
-        'lblEtiquetaAñosTotal
-        '
-        Me.lblEtiquetaAñosTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblEtiquetaAñosTotal, "lblEtiquetaAñosTotal")
-        Me.lblEtiquetaAñosTotal.Name = "lblEtiquetaAñosTotal"
-        '
-        'gbEstadisticasGlobales
-        '
-        Me.gbEstadisticasGlobales.Controls.Add(Me.lblDucosTotales)
-        Me.gbEstadisticasGlobales.Controls.Add(Me.lblEtiquetaDuco)
-        Me.gbEstadisticasGlobales.Controls.Add(Me.lblTotalTransasiones)
-        Me.gbEstadisticasGlobales.Controls.Add(Me.lblTotalGanadoAños)
-        Me.gbEstadisticasGlobales.Controls.Add(Me.lblEtiquetaGananciaTotal)
-        Me.gbEstadisticasGlobales.Controls.Add(Me.lblEtiquetaTrasacioneTotal)
-        Me.gbEstadisticasGlobales.Controls.Add(Me.lblEtiquetaDucoTotal)
-        resources.ApplyResources(Me.gbEstadisticasGlobales, "gbEstadisticasGlobales")
-        Me.gbEstadisticasGlobales.Name = "gbEstadisticasGlobales"
-        Me.gbEstadisticasGlobales.TabStop = False
-        '
-        'lblEtiquetaDucoTotal
-        '
-        resources.ApplyResources(Me.lblEtiquetaDucoTotal, "lblEtiquetaDucoTotal")
-        Me.lblEtiquetaDucoTotal.Name = "lblEtiquetaDucoTotal"
-        '
-        'lblEtiquetaTrasacioneTotal
-        '
-        resources.ApplyResources(Me.lblEtiquetaTrasacioneTotal, "lblEtiquetaTrasacioneTotal")
-        Me.lblEtiquetaTrasacioneTotal.Name = "lblEtiquetaTrasacioneTotal"
-        '
-        'lblEtiquetaGananciaTotal
-        '
-        resources.ApplyResources(Me.lblEtiquetaGananciaTotal, "lblEtiquetaGananciaTotal")
-        Me.lblEtiquetaGananciaTotal.Name = "lblEtiquetaGananciaTotal"
-        '
-        'lblTotalGanadoAños
-        '
-        resources.ApplyResources(Me.lblTotalGanadoAños, "lblTotalGanadoAños")
-        Me.lblTotalGanadoAños.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.lblTotalGanadoAños.Name = "lblTotalGanadoAños"
-        '
-        'lblTotalTransasiones
-        '
-        resources.ApplyResources(Me.lblTotalTransasiones, "lblTotalTransasiones")
-        Me.lblTotalTransasiones.Name = "lblTotalTransasiones"
-        '
-        'lblEtiquetaDuco
-        '
-        resources.ApplyResources(Me.lblEtiquetaDuco, "lblEtiquetaDuco")
-        Me.lblEtiquetaDuco.ForeColor = System.Drawing.Color.DarkOrange
-        Me.lblEtiquetaDuco.Name = "lblEtiquetaDuco"
-        '
-        'lblDucosTotales
-        '
-        resources.ApplyResources(Me.lblDucosTotales, "lblDucosTotales")
-        Me.lblDucosTotales.ForeColor = System.Drawing.Color.DarkOrange
-        Me.lblDucosTotales.Name = "lblDucosTotales"
-        '
-        'lblEtiquetaTransacionesAños
-        '
-        Me.lblEtiquetaTransacionesAños.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
-        Me.lblEtiquetaTransacionesAños.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblEtiquetaTransacionesAños, "lblEtiquetaTransacionesAños")
-        Me.lblEtiquetaTransacionesAños.Name = "lblEtiquetaTransacionesAños"
-        '
-        'lblTransasionesAñoTotal
-        '
-        Me.lblTransasionesAñoTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblTransasionesAñoTotal, "lblTransasionesAñoTotal")
-        Me.lblTransasionesAñoTotal.ForeColor = System.Drawing.Color.Black
-        Me.lblTransasionesAñoTotal.Name = "lblTransasionesAñoTotal"
-        '
-        'lblEtiquetaPreciosAños
-        '
-        Me.lblEtiquetaPreciosAños.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
-        Me.lblEtiquetaPreciosAños.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblEtiquetaPreciosAños, "lblEtiquetaPreciosAños")
-        Me.lblEtiquetaPreciosAños.Name = "lblEtiquetaPreciosAños"
-        '
-        'gbHoras
-        '
-        Me.gbHoras.Controls.Add(Me.lblTransacionHoraTotal)
-        Me.gbHoras.Controls.Add(Me.lblTransacionHora23)
-        Me.gbHoras.Controls.Add(Me.lblPrecioDia)
-        Me.gbHoras.Controls.Add(Me.lblPrecio23)
-        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia23)
-        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia19)
-        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia18)
-        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia14)
-        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia13)
-        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia22)
-        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia09)
-        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia17)
-        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia08)
-        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia12)
-        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia21)
-        Me.gbHoras.Controls.Add(Me.lblEtiquetaTransaacionesHora)
-        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia04)
-        Me.gbHoras.Controls.Add(Me.lblTransacionHora00)
-        Me.gbHoras.Controls.Add(Me.lblEtiquetaPrecioHora)
-        Me.gbHoras.Controls.Add(Me.lblPrecio00)
-        Me.gbHoras.Controls.Add(Me.lblTransacionHora22)
-        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia16)
-        Me.gbHoras.Controls.Add(Me.lblTransacionHora21)
-        Me.gbHoras.Controls.Add(Me.lblPrecio22)
-        Me.gbHoras.Controls.Add(Me.lblPrecio21)
-        Me.gbHoras.Controls.Add(Me.lblTransacionHora20)
-        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia07)
-        Me.gbHoras.Controls.Add(Me.lblTransacionHora19)
-        Me.gbHoras.Controls.Add(Me.lblPrecio20)
-        Me.gbHoras.Controls.Add(Me.lblPrecio19)
-        Me.gbHoras.Controls.Add(Me.lblTransacionHora18)
-        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia11)
-        Me.gbHoras.Controls.Add(Me.lblTransacionHora17)
-        Me.gbHoras.Controls.Add(Me.lblPrecio18)
-        Me.gbHoras.Controls.Add(Me.lblPrecio17)
-        Me.gbHoras.Controls.Add(Me.lblTransacionHora16)
-        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia20)
-        Me.gbHoras.Controls.Add(Me.lblTransacionHora15)
-        Me.gbHoras.Controls.Add(Me.lblPrecio16)
-        Me.gbHoras.Controls.Add(Me.lblPrecio15)
-        Me.gbHoras.Controls.Add(Me.lblTransacionHora14)
-        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia03)
-        Me.gbHoras.Controls.Add(Me.lblTransacionHora13)
-        Me.gbHoras.Controls.Add(Me.lblPrecio14)
-        Me.gbHoras.Controls.Add(Me.lblPrecio13)
-        Me.gbHoras.Controls.Add(Me.lblTransacionHora12)
-        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia15)
-        Me.gbHoras.Controls.Add(Me.lblTransacionHora11)
-        Me.gbHoras.Controls.Add(Me.lblPrecio12)
-        Me.gbHoras.Controls.Add(Me.lblPrecio11)
-        Me.gbHoras.Controls.Add(Me.lblTransacionHora10)
-        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia06)
-        Me.gbHoras.Controls.Add(Me.lblTransacionHora09)
-        Me.gbHoras.Controls.Add(Me.lblPrecio10)
-        Me.gbHoras.Controls.Add(Me.lblPrecio09)
-        Me.gbHoras.Controls.Add(Me.lblTransacionHora08)
-        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia10)
-        Me.gbHoras.Controls.Add(Me.lblTransacionHora07)
-        Me.gbHoras.Controls.Add(Me.lblPrecio08)
-        Me.gbHoras.Controls.Add(Me.lblPrecio07)
-        Me.gbHoras.Controls.Add(Me.lblTransacionHora06)
-        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia02)
-        Me.gbHoras.Controls.Add(Me.lblTransacionHora05)
-        Me.gbHoras.Controls.Add(Me.lblPrecio06)
-        Me.gbHoras.Controls.Add(Me.lblPrecio05)
-        Me.gbHoras.Controls.Add(Me.lblTransacionHora04)
-        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia05)
-        Me.gbHoras.Controls.Add(Me.lblTransacionHora03)
-        Me.gbHoras.Controls.Add(Me.lblPrecio04)
-        Me.gbHoras.Controls.Add(Me.lblPrecio03)
-        Me.gbHoras.Controls.Add(Me.lblTransacionHora02)
-        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia01)
-        Me.gbHoras.Controls.Add(Me.lblPrecio02)
-        Me.gbHoras.Controls.Add(Me.lblEtiquetaGananciaHora)
-        Me.gbHoras.Controls.Add(Me.lblTransacionHora01)
-        Me.gbHoras.Controls.Add(Me.lblHoraDiferencia00)
-        Me.gbHoras.Controls.Add(Me.lblPrecio01)
-        Me.gbHoras.Controls.Add(Me.lblEtiquetaHora)
-        Me.gbHoras.Controls.Add(Me.Label2)
-        Me.gbHoras.Controls.Add(Me.Label4)
-        Me.gbHoras.Controls.Add(Me.Label5)
-        Me.gbHoras.Controls.Add(Me.Label6)
-        Me.gbHoras.Controls.Add(Me.Label7)
-        Me.gbHoras.Controls.Add(Me.Label8)
-        Me.gbHoras.Controls.Add(Me.Label9)
-        Me.gbHoras.Controls.Add(Me.Label10)
-        Me.gbHoras.Controls.Add(Me.Label11)
-        Me.gbHoras.Controls.Add(Me.Label12)
-        Me.gbHoras.Controls.Add(Me.Label13)
-        Me.gbHoras.Controls.Add(Me.Label14)
-        Me.gbHoras.Controls.Add(Me.Label15)
-        Me.gbHoras.Controls.Add(Me.Label16)
-        Me.gbHoras.Controls.Add(Me.Label17)
-        Me.gbHoras.Controls.Add(Me.Label18)
-        Me.gbHoras.Controls.Add(Me.Label19)
-        Me.gbHoras.Controls.Add(Me.Label20)
-        Me.gbHoras.Controls.Add(Me.Label21)
-        Me.gbHoras.Controls.Add(Me.Label22)
-        Me.gbHoras.Controls.Add(Me.Label23)
-        Me.gbHoras.Controls.Add(Me.Label24)
-        Me.gbHoras.Controls.Add(Me.Label25)
-        Me.gbHoras.Controls.Add(Me.Label3)
-        Me.gbHoras.Controls.Add(Me.lblBalanceHora10)
-        Me.gbHoras.Controls.Add(Me.lblBalanceHora18)
-        Me.gbHoras.Controls.Add(Me.Label29)
-        Me.gbHoras.Controls.Add(Me.lblBalanceHora00)
-        Me.gbHoras.Controls.Add(Me.lblBalanceHora01)
-        Me.gbHoras.Controls.Add(Me.lblBalanceHora23)
-        Me.gbHoras.Controls.Add(Me.lblBalanceHora22)
-        Me.gbHoras.Controls.Add(Me.lblBalanceHora02)
-        Me.gbHoras.Controls.Add(Me.lblBalanceHora21)
-        Me.gbHoras.Controls.Add(Me.lblBalanceHora20)
-        Me.gbHoras.Controls.Add(Me.lblBalanceHora03)
-        Me.gbHoras.Controls.Add(Me.lblBalanceHora19)
-        Me.gbHoras.Controls.Add(Me.lblBalanceHora17)
-        Me.gbHoras.Controls.Add(Me.lblBalanceHora04)
-        Me.gbHoras.Controls.Add(Me.lblBalanceHora16)
-        Me.gbHoras.Controls.Add(Me.lblBalanceHora15)
-        Me.gbHoras.Controls.Add(Me.lblBalanceHora05)
-        Me.gbHoras.Controls.Add(Me.lblBalanceHora14)
-        Me.gbHoras.Controls.Add(Me.lblBalanceHora13)
-        Me.gbHoras.Controls.Add(Me.lblBalanceHora06)
-        Me.gbHoras.Controls.Add(Me.lblBalanceHora12)
-        Me.gbHoras.Controls.Add(Me.lblBalanceHora11)
-        Me.gbHoras.Controls.Add(Me.lblBalanceHora07)
-        Me.gbHoras.Controls.Add(Me.lblBalanceHora09)
-        Me.gbHoras.Controls.Add(Me.lblBalanceHora08)
-        Me.gbHoras.Controls.Add(Me.lblEtiquetaDiaTotal)
-        Me.gbHoras.Controls.Add(Me.lblTotalHora)
-        resources.ApplyResources(Me.gbHoras, "gbHoras")
-        Me.gbHoras.Name = "gbHoras"
-        Me.gbHoras.TabStop = False
-        '
-        'lblTotalHora
-        '
-        Me.lblTotalHora.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblTotalHora, "lblTotalHora")
-        Me.lblTotalHora.ForeColor = System.Drawing.Color.DarkOrange
-        Me.lblTotalHora.Name = "lblTotalHora"
-        '
-        'lblEtiquetaDiaTotal
-        '
-        Me.lblEtiquetaDiaTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblEtiquetaDiaTotal, "lblEtiquetaDiaTotal")
-        Me.lblEtiquetaDiaTotal.Name = "lblEtiquetaDiaTotal"
-        '
-        'Label29
-        '
-        Me.Label29.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
-        Me.Label29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label29, "Label29")
-        Me.Label29.Name = "Label29"
-        '
-        'Label3
-        '
-        Me.Label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label3, "Label3")
-        Me.Label3.Name = "Label3"
-        '
-        'Label25
-        '
-        Me.Label25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label25, "Label25")
-        Me.Label25.Name = "Label25"
-        '
-        'Label24
-        '
-        Me.Label24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label24, "Label24")
-        Me.Label24.Name = "Label24"
-        '
-        'Label23
-        '
-        Me.Label23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label23, "Label23")
-        Me.Label23.Name = "Label23"
-        '
-        'Label22
-        '
-        Me.Label22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label22, "Label22")
-        Me.Label22.Name = "Label22"
-        '
-        'Label21
-        '
-        Me.Label21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label21, "Label21")
-        Me.Label21.Name = "Label21"
-        '
-        'Label20
-        '
-        Me.Label20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label20, "Label20")
-        Me.Label20.Name = "Label20"
-        '
-        'Label19
-        '
-        Me.Label19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label19, "Label19")
-        Me.Label19.Name = "Label19"
-        '
-        'Label18
-        '
-        Me.Label18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label18, "Label18")
-        Me.Label18.Name = "Label18"
-        '
-        'Label17
-        '
-        Me.Label17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label17, "Label17")
-        Me.Label17.Name = "Label17"
-        '
-        'Label16
-        '
-        Me.Label16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label16, "Label16")
-        Me.Label16.Name = "Label16"
-        '
-        'Label15
-        '
-        Me.Label15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label15, "Label15")
-        Me.Label15.Name = "Label15"
-        '
-        'Label14
-        '
-        Me.Label14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label14, "Label14")
-        Me.Label14.Name = "Label14"
-        '
-        'Label13
-        '
-        Me.Label13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label13, "Label13")
-        Me.Label13.Name = "Label13"
-        '
-        'Label12
-        '
-        Me.Label12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label12, "Label12")
-        Me.Label12.Name = "Label12"
-        '
-        'Label11
-        '
-        Me.Label11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label11, "Label11")
-        Me.Label11.Name = "Label11"
-        '
-        'Label10
-        '
-        Me.Label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label10, "Label10")
-        Me.Label10.Name = "Label10"
-        '
-        'Label9
-        '
-        Me.Label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label9, "Label9")
-        Me.Label9.Name = "Label9"
-        '
-        'Label8
-        '
-        Me.Label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label8, "Label8")
-        Me.Label8.Name = "Label8"
-        '
-        'Label7
-        '
-        Me.Label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label7, "Label7")
-        Me.Label7.Name = "Label7"
-        '
-        'Label6
-        '
-        Me.Label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label6, "Label6")
-        Me.Label6.Name = "Label6"
-        '
-        'Label5
-        '
-        Me.Label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label5, "Label5")
-        Me.Label5.Name = "Label5"
-        '
-        'Label4
-        '
-        Me.Label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label4, "Label4")
-        Me.Label4.Name = "Label4"
-        '
-        'Label2
-        '
-        Me.Label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label2, "Label2")
-        Me.Label2.Name = "Label2"
-        '
-        'lblEtiquetaHora
-        '
-        Me.lblEtiquetaHora.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
-        Me.lblEtiquetaHora.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblEtiquetaHora, "lblEtiquetaHora")
-        Me.lblEtiquetaHora.Name = "lblEtiquetaHora"
-        '
-        'lblEtiquetaGananciaHora
-        '
-        Me.lblEtiquetaGananciaHora.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
-        Me.lblEtiquetaGananciaHora.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblEtiquetaGananciaHora, "lblEtiquetaGananciaHora")
-        Me.lblEtiquetaGananciaHora.Name = "lblEtiquetaGananciaHora"
-        '
-        'lblHoraDiferencia01
-        '
-        Me.lblHoraDiferencia01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblHoraDiferencia01, "lblHoraDiferencia01")
-        Me.lblHoraDiferencia01.Name = "lblHoraDiferencia01"
-        '
-        'lblHoraDiferencia05
-        '
-        Me.lblHoraDiferencia05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblHoraDiferencia05, "lblHoraDiferencia05")
-        Me.lblHoraDiferencia05.Name = "lblHoraDiferencia05"
-        '
-        'lblHoraDiferencia02
-        '
-        Me.lblHoraDiferencia02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblHoraDiferencia02, "lblHoraDiferencia02")
-        Me.lblHoraDiferencia02.Name = "lblHoraDiferencia02"
-        '
-        'lblHoraDiferencia10
-        '
-        Me.lblHoraDiferencia10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblHoraDiferencia10, "lblHoraDiferencia10")
-        Me.lblHoraDiferencia10.Name = "lblHoraDiferencia10"
-        '
-        'lblHoraDiferencia06
-        '
-        Me.lblHoraDiferencia06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblHoraDiferencia06, "lblHoraDiferencia06")
-        Me.lblHoraDiferencia06.Name = "lblHoraDiferencia06"
-        '
-        'lblHoraDiferencia15
-        '
-        Me.lblHoraDiferencia15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblHoraDiferencia15, "lblHoraDiferencia15")
-        Me.lblHoraDiferencia15.Name = "lblHoraDiferencia15"
-        '
-        'lblHoraDiferencia03
-        '
-        Me.lblHoraDiferencia03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblHoraDiferencia03, "lblHoraDiferencia03")
-        Me.lblHoraDiferencia03.Name = "lblHoraDiferencia03"
-        '
-        'lblHoraDiferencia20
-        '
-        Me.lblHoraDiferencia20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblHoraDiferencia20, "lblHoraDiferencia20")
-        Me.lblHoraDiferencia20.Name = "lblHoraDiferencia20"
-        '
-        'lblHoraDiferencia11
-        '
-        Me.lblHoraDiferencia11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblHoraDiferencia11, "lblHoraDiferencia11")
-        Me.lblHoraDiferencia11.Name = "lblHoraDiferencia11"
-        '
-        'lblHoraDiferencia07
-        '
-        Me.lblHoraDiferencia07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblHoraDiferencia07, "lblHoraDiferencia07")
-        Me.lblHoraDiferencia07.Name = "lblHoraDiferencia07"
-        '
-        'lblHoraDiferencia16
-        '
-        Me.lblHoraDiferencia16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblHoraDiferencia16, "lblHoraDiferencia16")
-        Me.lblHoraDiferencia16.Name = "lblHoraDiferencia16"
-        '
-        'lblEtiquetaPrecioHora
-        '
-        Me.lblEtiquetaPrecioHora.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
-        Me.lblEtiquetaPrecioHora.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblEtiquetaPrecioHora, "lblEtiquetaPrecioHora")
-        Me.lblEtiquetaPrecioHora.Name = "lblEtiquetaPrecioHora"
-        '
-        'lblHoraDiferencia04
-        '
-        Me.lblHoraDiferencia04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblHoraDiferencia04, "lblHoraDiferencia04")
-        Me.lblHoraDiferencia04.Name = "lblHoraDiferencia04"
-        '
-        'lblHoraDiferencia21
-        '
-        Me.lblHoraDiferencia21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblHoraDiferencia21, "lblHoraDiferencia21")
-        Me.lblHoraDiferencia21.Name = "lblHoraDiferencia21"
-        '
-        'lblHoraDiferencia12
-        '
-        Me.lblHoraDiferencia12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblHoraDiferencia12, "lblHoraDiferencia12")
-        Me.lblHoraDiferencia12.Name = "lblHoraDiferencia12"
-        '
-        'lblHoraDiferencia08
-        '
-        Me.lblHoraDiferencia08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblHoraDiferencia08, "lblHoraDiferencia08")
-        Me.lblHoraDiferencia08.Name = "lblHoraDiferencia08"
-        '
-        'lblHoraDiferencia17
-        '
-        Me.lblHoraDiferencia17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblHoraDiferencia17, "lblHoraDiferencia17")
-        Me.lblHoraDiferencia17.Name = "lblHoraDiferencia17"
-        '
-        'lblHoraDiferencia09
-        '
-        Me.lblHoraDiferencia09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblHoraDiferencia09, "lblHoraDiferencia09")
-        Me.lblHoraDiferencia09.Name = "lblHoraDiferencia09"
-        '
-        'lblHoraDiferencia22
-        '
-        Me.lblHoraDiferencia22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblHoraDiferencia22, "lblHoraDiferencia22")
-        Me.lblHoraDiferencia22.Name = "lblHoraDiferencia22"
-        '
-        'lblHoraDiferencia13
-        '
-        Me.lblHoraDiferencia13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblHoraDiferencia13, "lblHoraDiferencia13")
-        Me.lblHoraDiferencia13.Name = "lblHoraDiferencia13"
-        '
-        'lblHoraDiferencia14
-        '
-        Me.lblHoraDiferencia14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblHoraDiferencia14, "lblHoraDiferencia14")
-        Me.lblHoraDiferencia14.Name = "lblHoraDiferencia14"
-        '
-        'lblHoraDiferencia18
-        '
-        Me.lblHoraDiferencia18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblHoraDiferencia18, "lblHoraDiferencia18")
-        Me.lblHoraDiferencia18.Name = "lblHoraDiferencia18"
-        '
-        'lblHoraDiferencia19
-        '
-        Me.lblHoraDiferencia19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblHoraDiferencia19, "lblHoraDiferencia19")
-        Me.lblHoraDiferencia19.Name = "lblHoraDiferencia19"
-        '
-        'lblHoraDiferencia23
-        '
-        Me.lblHoraDiferencia23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblHoraDiferencia23, "lblHoraDiferencia23")
-        Me.lblHoraDiferencia23.Name = "lblHoraDiferencia23"
-        '
-        'gbMes
-        '
-        Me.gbMes.Controls.Add(Me.lblMesDifencia31)
-        Me.gbMes.Controls.Add(Me.lblMesDifencia01)
-        Me.gbMes.Controls.Add(Me.lblEtiquetaGananciasMes)
-        Me.gbMes.Controls.Add(Me.lblMesDifencia02)
-        Me.gbMes.Controls.Add(Me.lblMesDifencia13)
-        Me.gbMes.Controls.Add(Me.lblMesDifencia07)
-        Me.gbMes.Controls.Add(Me.lblMesDifencia14)
-        Me.gbMes.Controls.Add(Me.lblMesDifencia04)
-        Me.gbMes.Controls.Add(Me.lblMesDifencia19)
-        Me.gbMes.Controls.Add(Me.lblMesDifencia08)
-        Me.gbMes.Controls.Add(Me.lblMesDifencia16)
-        Me.gbMes.Controls.Add(Me.lblMesDifencia20)
-        Me.gbMes.Controls.Add(Me.lblMesDifencia10)
-        Me.gbMes.Controls.Add(Me.lblMesDifencia25)
-        Me.gbMes.Controls.Add(Me.lblMesDifencia15)
-        Me.gbMes.Controls.Add(Me.lblMesDifencia05)
-        Me.gbMes.Controls.Add(Me.lblMesDifencia22)
-        Me.gbMes.Controls.Add(Me.lblMesDifencia09)
-        Me.gbMes.Controls.Add(Me.lblMesDifencia27)
-        Me.gbMes.Controls.Add(Me.lblMesDifencia17)
-        Me.gbMes.Controls.Add(Me.lblMesDifencia06)
-        Me.gbMes.Controls.Add(Me.lblMesDifencia21)
-        Me.gbMes.Controls.Add(Me.lblMesDifencia11)
-        Me.gbMes.Controls.Add(Me.lblMesDifencia26)
-        Me.gbMes.Controls.Add(Me.lblMesDifencia18)
-        Me.gbMes.Controls.Add(Me.lblMesDifencia12)
-        Me.gbMes.Controls.Add(Me.lblMesDifencia23)
-        Me.gbMes.Controls.Add(Me.lblMesDifencia24)
-        Me.gbMes.Controls.Add(Me.lblMesDifencia28)
-        Me.gbMes.Controls.Add(Me.lblMesDifencia03)
-        Me.gbMes.Controls.Add(Me.lblMesDifencia29)
-        Me.gbMes.Controls.Add(Me.Label35)
-        Me.gbMes.Controls.Add(Me.lblMesDifencia30)
-        Me.gbMes.Controls.Add(Me.lblMesBalance01)
-        Me.gbMes.Controls.Add(Me.lblMesBalance02)
-        Me.gbMes.Controls.Add(Me.lblMesBalance03)
-        Me.gbMes.Controls.Add(Me.lblMesBalance04)
-        Me.gbMes.Controls.Add(Me.lblMesBalance05)
-        Me.gbMes.Controls.Add(Me.lblMesBalance06)
-        Me.gbMes.Controls.Add(Me.lblMesBalance07)
-        Me.gbMes.Controls.Add(Me.lblMesBalance08)
-        Me.gbMes.Controls.Add(Me.lblMesBalance09)
-        Me.gbMes.Controls.Add(Me.lblMesBalance10)
-        Me.gbMes.Controls.Add(Me.lblMesBalance11)
-        Me.gbMes.Controls.Add(Me.lblMesBalance12)
-        Me.gbMes.Controls.Add(Me.lblMesBalance13)
-        Me.gbMes.Controls.Add(Me.lblMesBalance14)
-        Me.gbMes.Controls.Add(Me.lblMesBalance15)
-        Me.gbMes.Controls.Add(Me.lblMesBalance16)
-        Me.gbMes.Controls.Add(Me.lblMesBalance17)
-        Me.gbMes.Controls.Add(Me.lblMesBalance18)
-        Me.gbMes.Controls.Add(Me.lblMesBalance19)
-        Me.gbMes.Controls.Add(Me.lblMesBalance20)
-        Me.gbMes.Controls.Add(Me.lblMesBalance21)
-        Me.gbMes.Controls.Add(Me.lblMesBalance22)
-        Me.gbMes.Controls.Add(Me.lblMesBalance23)
-        Me.gbMes.Controls.Add(Me.lblMesBalance24)
-        Me.gbMes.Controls.Add(Me.lblEtiquetaDia)
-        Me.gbMes.Controls.Add(Me.Label74)
-        Me.gbMes.Controls.Add(Me.lblMesBalance25)
-        Me.gbMes.Controls.Add(Me.Label73)
-        Me.gbMes.Controls.Add(Me.lblMesBalance26)
-        Me.gbMes.Controls.Add(Me.Label72)
-        Me.gbMes.Controls.Add(Me.lblMesBalance27)
-        Me.gbMes.Controls.Add(Me.Label71)
-        Me.gbMes.Controls.Add(Me.lblMesBalance28)
-        Me.gbMes.Controls.Add(Me.Label70)
-        Me.gbMes.Controls.Add(Me.lblMesBalance29)
-        Me.gbMes.Controls.Add(Me.Label69)
-        Me.gbMes.Controls.Add(Me.lblMesBalance30)
-        Me.gbMes.Controls.Add(Me.lblPrecioMes)
-        Me.gbMes.Controls.Add(Me.lblMesPrecio31)
-        Me.gbMes.Controls.Add(Me.Label68)
-        Me.gbMes.Controls.Add(Me.lblMesPrecio30)
-        Me.gbMes.Controls.Add(Me.lblMesBalance31)
-        Me.gbMes.Controls.Add(Me.lblMesPrecio29)
-        Me.gbMes.Controls.Add(Me.Label67)
-        Me.gbMes.Controls.Add(Me.lblMesPrecio28)
-        Me.gbMes.Controls.Add(Me.Label66)
-        Me.gbMes.Controls.Add(Me.lblMesPrecio27)
-        Me.gbMes.Controls.Add(Me.Label65)
-        Me.gbMes.Controls.Add(Me.lblMesPrecio26)
-        Me.gbMes.Controls.Add(Me.Label64)
-        Me.gbMes.Controls.Add(Me.lblMesPrecio25)
-        Me.gbMes.Controls.Add(Me.Label63)
-        Me.gbMes.Controls.Add(Me.lblMesPrecio24)
-        Me.gbMes.Controls.Add(Me.Label62)
-        Me.gbMes.Controls.Add(Me.lblMesPrecio23)
-        Me.gbMes.Controls.Add(Me.Label61)
-        Me.gbMes.Controls.Add(Me.lblMesPrecio22)
-        Me.gbMes.Controls.Add(Me.Label60)
-        Me.gbMes.Controls.Add(Me.lblMesPrecio21)
-        Me.gbMes.Controls.Add(Me.Label59)
-        Me.gbMes.Controls.Add(Me.lblMesPrecio20)
-        Me.gbMes.Controls.Add(Me.Label58)
-        Me.gbMes.Controls.Add(Me.lblMesPrecio19)
-        Me.gbMes.Controls.Add(Me.Label57)
-        Me.gbMes.Controls.Add(Me.lblMesPrecio18)
-        Me.gbMes.Controls.Add(Me.Label56)
-        Me.gbMes.Controls.Add(Me.lblMesPrecio17)
-        Me.gbMes.Controls.Add(Me.Label55)
-        Me.gbMes.Controls.Add(Me.lblMesPrecio16)
-        Me.gbMes.Controls.Add(Me.Label54)
-        Me.gbMes.Controls.Add(Me.lblMesPrecio15)
-        Me.gbMes.Controls.Add(Me.Label53)
-        Me.gbMes.Controls.Add(Me.lblMesPrecio14)
-        Me.gbMes.Controls.Add(Me.Label52)
-        Me.gbMes.Controls.Add(Me.lblMesPrecio13)
-        Me.gbMes.Controls.Add(Me.Label100)
-        Me.gbMes.Controls.Add(Me.lblEtiquetaPrecioMes)
-        Me.gbMes.Controls.Add(Me.lblMesPrecio12)
-        Me.gbMes.Controls.Add(Me.lblMesPrecio01)
-        Me.gbMes.Controls.Add(Me.lblMesPrecio11)
-        Me.gbMes.Controls.Add(Me.Label103)
-        Me.gbMes.Controls.Add(Me.lblMesPrecio10)
-        Me.gbMes.Controls.Add(Me.lblMesPrecio02)
-        Me.gbMes.Controls.Add(Me.lblMesPrecio09)
-        Me.gbMes.Controls.Add(Me.Label106)
-        Me.gbMes.Controls.Add(Me.lblMesPrecio08)
-        Me.gbMes.Controls.Add(Me.lblMesPrecio03)
-        Me.gbMes.Controls.Add(Me.lbl31)
-        Me.gbMes.Controls.Add(Me.Label109)
-        Me.gbMes.Controls.Add(Me.lblMesPrecio07)
-        Me.gbMes.Controls.Add(Me.lblMesPrecio04)
-        Me.gbMes.Controls.Add(Me.lbl30)
-        Me.gbMes.Controls.Add(Me.lbl28)
-        Me.gbMes.Controls.Add(Me.lblMesPrecio06)
-        Me.gbMes.Controls.Add(Me.lblMesPrecio05)
-        Me.gbMes.Controls.Add(Me.lbl29)
-        Me.gbMes.Controls.Add(Me.lblTotalMes)
-        Me.gbMes.Controls.Add(Me.lblEtiquetaMesDaily)
-        Me.gbMes.Controls.Add(Me.lblTransacionMes31)
-        Me.gbMes.Controls.Add(Me.lblTransacionMes30)
-        Me.gbMes.Controls.Add(Me.lblTransacionMes29)
-        Me.gbMes.Controls.Add(Me.lblTransacionMes28)
-        Me.gbMes.Controls.Add(Me.lblTransacionMes03)
-        Me.gbMes.Controls.Add(Me.lblTransacionMes24)
-        Me.gbMes.Controls.Add(Me.lblTransacionMes23)
-        Me.gbMes.Controls.Add(Me.lblTransacionMes12)
-        Me.gbMes.Controls.Add(Me.lblTransacionMes18)
-        Me.gbMes.Controls.Add(Me.lblTransacionMes26)
-        Me.gbMes.Controls.Add(Me.lblTransacionMes11)
-        Me.gbMes.Controls.Add(Me.lblTransacionMes21)
-        Me.gbMes.Controls.Add(Me.lblTransacionMes06)
-        Me.gbMes.Controls.Add(Me.lblTransacionMes17)
-        Me.gbMes.Controls.Add(Me.lblTransacionMes27)
-        Me.gbMes.Controls.Add(Me.lblTransacionMes09)
-        Me.gbMes.Controls.Add(Me.lblTransacionMes22)
-        Me.gbMes.Controls.Add(Me.lblTransacionMes05)
-        Me.gbMes.Controls.Add(Me.lblTransacionMes15)
-        Me.gbMes.Controls.Add(Me.lblTransacionMes25)
-        Me.gbMes.Controls.Add(Me.lblTransacionMes10)
-        Me.gbMes.Controls.Add(Me.lblTransacionMes20)
-        Me.gbMes.Controls.Add(Me.lblTransacionMes16)
-        Me.gbMes.Controls.Add(Me.lblTransacionMes08)
-        Me.gbMes.Controls.Add(Me.lblTransacionMes19)
-        Me.gbMes.Controls.Add(Me.lblTransacionMes04)
-        Me.gbMes.Controls.Add(Me.lblTransacionMes14)
-        Me.gbMes.Controls.Add(Me.lblTransacionMes07)
-        Me.gbMes.Controls.Add(Me.lblTransacionMes13)
-        Me.gbMes.Controls.Add(Me.lblTransacionMes02)
-        Me.gbMes.Controls.Add(Me.lblEtiquetaTransacionesMes)
-        Me.gbMes.Controls.Add(Me.lblTransacionMes01)
-        Me.gbMes.Controls.Add(Me.lblTransacionMes)
-        resources.ApplyResources(Me.gbMes, "gbMes")
-        Me.gbMes.Name = "gbMes"
-        Me.gbMes.TabStop = False
-        '
-        'lblTransacionMes
-        '
-        Me.lblTransacionMes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblTransacionMes, "lblTransacionMes")
-        Me.lblTransacionMes.ForeColor = System.Drawing.Color.Black
-        Me.lblTransacionMes.Name = "lblTransacionMes"
-        '
-        'lblTransacionMes01
-        '
-        Me.lblTransacionMes01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblTransacionMes01, "lblTransacionMes01")
-        Me.lblTransacionMes01.Name = "lblTransacionMes01"
-        '
-        'lblEtiquetaTransacionesMes
-        '
-        Me.lblEtiquetaTransacionesMes.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
-        Me.lblEtiquetaTransacionesMes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblEtiquetaTransacionesMes, "lblEtiquetaTransacionesMes")
-        Me.lblEtiquetaTransacionesMes.Name = "lblEtiquetaTransacionesMes"
-        '
-        'lblTransacionMes02
-        '
-        Me.lblTransacionMes02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblTransacionMes02, "lblTransacionMes02")
-        Me.lblTransacionMes02.Name = "lblTransacionMes02"
-        '
-        'lblTransacionMes13
-        '
-        Me.lblTransacionMes13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblTransacionMes13, "lblTransacionMes13")
-        Me.lblTransacionMes13.Name = "lblTransacionMes13"
-        '
-        'lblTransacionMes07
-        '
-        Me.lblTransacionMes07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblTransacionMes07, "lblTransacionMes07")
-        Me.lblTransacionMes07.Name = "lblTransacionMes07"
-        '
-        'lblTransacionMes14
-        '
-        Me.lblTransacionMes14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblTransacionMes14, "lblTransacionMes14")
-        Me.lblTransacionMes14.Name = "lblTransacionMes14"
-        '
-        'lblTransacionMes04
-        '
-        Me.lblTransacionMes04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblTransacionMes04, "lblTransacionMes04")
-        Me.lblTransacionMes04.Name = "lblTransacionMes04"
-        '
-        'lblTransacionMes19
-        '
-        Me.lblTransacionMes19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblTransacionMes19, "lblTransacionMes19")
-        Me.lblTransacionMes19.Name = "lblTransacionMes19"
-        '
-        'lblTransacionMes08
-        '
-        Me.lblTransacionMes08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblTransacionMes08, "lblTransacionMes08")
-        Me.lblTransacionMes08.Name = "lblTransacionMes08"
-        '
-        'lblTransacionMes16
-        '
-        Me.lblTransacionMes16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblTransacionMes16, "lblTransacionMes16")
-        Me.lblTransacionMes16.Name = "lblTransacionMes16"
-        '
-        'lblTransacionMes20
-        '
-        Me.lblTransacionMes20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblTransacionMes20, "lblTransacionMes20")
-        Me.lblTransacionMes20.Name = "lblTransacionMes20"
-        '
-        'lblTransacionMes10
-        '
-        Me.lblTransacionMes10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblTransacionMes10, "lblTransacionMes10")
-        Me.lblTransacionMes10.Name = "lblTransacionMes10"
-        '
-        'lblTransacionMes25
-        '
-        Me.lblTransacionMes25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblTransacionMes25, "lblTransacionMes25")
-        Me.lblTransacionMes25.Name = "lblTransacionMes25"
-        '
-        'lblTransacionMes15
-        '
-        Me.lblTransacionMes15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblTransacionMes15, "lblTransacionMes15")
-        Me.lblTransacionMes15.Name = "lblTransacionMes15"
-        '
-        'lblTransacionMes05
-        '
-        Me.lblTransacionMes05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblTransacionMes05, "lblTransacionMes05")
-        Me.lblTransacionMes05.Name = "lblTransacionMes05"
-        '
-        'lblTransacionMes22
-        '
-        Me.lblTransacionMes22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblTransacionMes22, "lblTransacionMes22")
-        Me.lblTransacionMes22.Name = "lblTransacionMes22"
-        '
-        'lblTransacionMes09
-        '
-        Me.lblTransacionMes09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblTransacionMes09, "lblTransacionMes09")
-        Me.lblTransacionMes09.Name = "lblTransacionMes09"
-        '
-        'lblTransacionMes27
-        '
-        Me.lblTransacionMes27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblTransacionMes27, "lblTransacionMes27")
-        Me.lblTransacionMes27.Name = "lblTransacionMes27"
-        '
-        'lblTransacionMes17
-        '
-        Me.lblTransacionMes17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblTransacionMes17, "lblTransacionMes17")
-        Me.lblTransacionMes17.Name = "lblTransacionMes17"
-        '
-        'lblTransacionMes06
-        '
-        Me.lblTransacionMes06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblTransacionMes06, "lblTransacionMes06")
-        Me.lblTransacionMes06.Name = "lblTransacionMes06"
-        '
-        'lblTransacionMes21
-        '
-        Me.lblTransacionMes21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblTransacionMes21, "lblTransacionMes21")
-        Me.lblTransacionMes21.Name = "lblTransacionMes21"
-        '
-        'lblTransacionMes11
-        '
-        Me.lblTransacionMes11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblTransacionMes11, "lblTransacionMes11")
-        Me.lblTransacionMes11.Name = "lblTransacionMes11"
-        '
-        'lblTransacionMes26
-        '
-        Me.lblTransacionMes26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblTransacionMes26, "lblTransacionMes26")
-        Me.lblTransacionMes26.Name = "lblTransacionMes26"
-        '
-        'lblTransacionMes18
-        '
-        Me.lblTransacionMes18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblTransacionMes18, "lblTransacionMes18")
-        Me.lblTransacionMes18.Name = "lblTransacionMes18"
-        '
-        'lblTransacionMes12
-        '
-        Me.lblTransacionMes12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblTransacionMes12, "lblTransacionMes12")
-        Me.lblTransacionMes12.Name = "lblTransacionMes12"
-        '
-        'lblTransacionMes23
-        '
-        Me.lblTransacionMes23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblTransacionMes23, "lblTransacionMes23")
-        Me.lblTransacionMes23.Name = "lblTransacionMes23"
-        '
-        'lblTransacionMes24
-        '
-        Me.lblTransacionMes24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblTransacionMes24, "lblTransacionMes24")
-        Me.lblTransacionMes24.Name = "lblTransacionMes24"
-        '
-        'lblTransacionMes03
-        '
-        Me.lblTransacionMes03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblTransacionMes03, "lblTransacionMes03")
-        Me.lblTransacionMes03.Name = "lblTransacionMes03"
-        '
-        'lblTransacionMes28
-        '
-        Me.lblTransacionMes28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblTransacionMes28, "lblTransacionMes28")
-        Me.lblTransacionMes28.Name = "lblTransacionMes28"
-        '
-        'lblTransacionMes29
-        '
-        Me.lblTransacionMes29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblTransacionMes29, "lblTransacionMes29")
-        Me.lblTransacionMes29.Name = "lblTransacionMes29"
-        '
-        'lblTransacionMes30
-        '
-        Me.lblTransacionMes30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblTransacionMes30, "lblTransacionMes30")
-        Me.lblTransacionMes30.Name = "lblTransacionMes30"
-        '
-        'lblTransacionMes31
-        '
-        Me.lblTransacionMes31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblTransacionMes31, "lblTransacionMes31")
-        Me.lblTransacionMes31.Name = "lblTransacionMes31"
-        '
-        'lblEtiquetaMesDaily
-        '
-        Me.lblEtiquetaMesDaily.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblEtiquetaMesDaily, "lblEtiquetaMesDaily")
-        Me.lblEtiquetaMesDaily.Name = "lblEtiquetaMesDaily"
-        '
-        'lblTotalMes
-        '
-        Me.lblTotalMes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblTotalMes, "lblTotalMes")
-        Me.lblTotalMes.ForeColor = System.Drawing.Color.DarkOrange
-        Me.lblTotalMes.Name = "lblTotalMes"
-        '
-        'lbl29
-        '
-        Me.lbl29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lbl29, "lbl29")
-        Me.lbl29.Name = "lbl29"
-        '
-        'lbl28
-        '
-        Me.lbl28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lbl28, "lbl28")
-        Me.lbl28.Name = "lbl28"
-        '
-        'lbl30
-        '
-        Me.lbl30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lbl30, "lbl30")
-        Me.lbl30.Name = "lbl30"
-        '
-        'Label109
-        '
-        Me.Label109.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label109, "Label109")
-        Me.Label109.Name = "Label109"
-        '
-        'lbl31
-        '
-        Me.lbl31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lbl31, "lbl31")
-        Me.lbl31.Name = "lbl31"
-        '
-        'Label106
-        '
-        Me.Label106.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label106, "Label106")
-        Me.Label106.Name = "Label106"
-        '
-        'Label103
-        '
-        Me.Label103.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label103, "Label103")
-        Me.Label103.Name = "Label103"
-        '
-        'lblEtiquetaPrecioMes
-        '
-        Me.lblEtiquetaPrecioMes.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
-        Me.lblEtiquetaPrecioMes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblEtiquetaPrecioMes, "lblEtiquetaPrecioMes")
-        Me.lblEtiquetaPrecioMes.Name = "lblEtiquetaPrecioMes"
-        '
-        'Label100
-        '
-        Me.Label100.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label100, "Label100")
-        Me.Label100.Name = "Label100"
-        '
-        'Label52
-        '
-        Me.Label52.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label52, "Label52")
-        Me.Label52.Name = "Label52"
-        '
-        'Label53
-        '
-        Me.Label53.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label53, "Label53")
-        Me.Label53.Name = "Label53"
-        '
-        'Label54
-        '
-        Me.Label54.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label54, "Label54")
-        Me.Label54.Name = "Label54"
-        '
-        'Label55
-        '
-        Me.Label55.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label55, "Label55")
-        Me.Label55.Name = "Label55"
-        '
-        'Label56
-        '
-        Me.Label56.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label56, "Label56")
-        Me.Label56.Name = "Label56"
-        '
-        'Label57
-        '
-        Me.Label57.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label57, "Label57")
-        Me.Label57.Name = "Label57"
-        '
-        'Label58
-        '
-        Me.Label58.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label58, "Label58")
-        Me.Label58.Name = "Label58"
-        '
-        'Label59
-        '
-        Me.Label59.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label59, "Label59")
-        Me.Label59.Name = "Label59"
-        '
-        'Label60
-        '
-        Me.Label60.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label60, "Label60")
-        Me.Label60.Name = "Label60"
-        '
-        'Label61
-        '
-        Me.Label61.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label61, "Label61")
-        Me.Label61.Name = "Label61"
-        '
-        'Label62
-        '
-        Me.Label62.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label62, "Label62")
-        Me.Label62.Name = "Label62"
-        '
-        'Label63
-        '
-        Me.Label63.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label63, "Label63")
-        Me.Label63.Name = "Label63"
-        '
-        'Label64
-        '
-        Me.Label64.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label64, "Label64")
-        Me.Label64.Name = "Label64"
-        '
-        'Label65
-        '
-        Me.Label65.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label65, "Label65")
-        Me.Label65.Name = "Label65"
-        '
-        'Label66
-        '
-        Me.Label66.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label66, "Label66")
-        Me.Label66.Name = "Label66"
-        '
-        'Label67
-        '
-        Me.Label67.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label67, "Label67")
-        Me.Label67.Name = "Label67"
-        '
-        'Label68
-        '
-        Me.Label68.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label68, "Label68")
-        Me.Label68.Name = "Label68"
-        '
-        'Label69
-        '
-        Me.Label69.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label69, "Label69")
-        Me.Label69.Name = "Label69"
-        '
-        'Label70
-        '
-        Me.Label70.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label70, "Label70")
-        Me.Label70.Name = "Label70"
-        '
-        'Label71
-        '
-        Me.Label71.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label71, "Label71")
-        Me.Label71.Name = "Label71"
-        '
-        'Label72
-        '
-        Me.Label72.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label72, "Label72")
-        Me.Label72.Name = "Label72"
-        '
-        'Label73
-        '
-        Me.Label73.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label73, "Label73")
-        Me.Label73.Name = "Label73"
-        '
-        'Label74
-        '
-        Me.Label74.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label74, "Label74")
-        Me.Label74.Name = "Label74"
-        '
-        'lblEtiquetaDia
-        '
-        Me.lblEtiquetaDia.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
-        Me.lblEtiquetaDia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblEtiquetaDia, "lblEtiquetaDia")
-        Me.lblEtiquetaDia.Name = "lblEtiquetaDia"
-        '
-        'lblMesDifencia30
-        '
-        Me.lblMesDifencia30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblMesDifencia30, "lblMesDifencia30")
-        Me.lblMesDifencia30.Name = "lblMesDifencia30"
-        '
-        'Label35
-        '
-        Me.Label35.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
-        Me.Label35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.Label35, "Label35")
-        Me.Label35.Name = "Label35"
-        '
-        'lblMesDifencia29
-        '
-        Me.lblMesDifencia29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblMesDifencia29, "lblMesDifencia29")
-        Me.lblMesDifencia29.Name = "lblMesDifencia29"
-        '
-        'lblMesDifencia03
-        '
-        Me.lblMesDifencia03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblMesDifencia03, "lblMesDifencia03")
-        Me.lblMesDifencia03.Name = "lblMesDifencia03"
-        '
-        'lblMesDifencia28
-        '
-        Me.lblMesDifencia28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblMesDifencia28, "lblMesDifencia28")
-        Me.lblMesDifencia28.Name = "lblMesDifencia28"
-        '
-        'lblMesDifencia24
-        '
-        Me.lblMesDifencia24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblMesDifencia24, "lblMesDifencia24")
-        Me.lblMesDifencia24.Name = "lblMesDifencia24"
-        '
-        'lblMesDifencia23
-        '
-        Me.lblMesDifencia23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblMesDifencia23, "lblMesDifencia23")
-        Me.lblMesDifencia23.Name = "lblMesDifencia23"
-        '
-        'lblMesDifencia12
-        '
-        Me.lblMesDifencia12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblMesDifencia12, "lblMesDifencia12")
-        Me.lblMesDifencia12.Name = "lblMesDifencia12"
-        '
-        'lblMesDifencia18
-        '
-        Me.lblMesDifencia18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblMesDifencia18, "lblMesDifencia18")
-        Me.lblMesDifencia18.Name = "lblMesDifencia18"
-        '
-        'lblMesDifencia26
-        '
-        Me.lblMesDifencia26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblMesDifencia26, "lblMesDifencia26")
-        Me.lblMesDifencia26.Name = "lblMesDifencia26"
-        '
-        'lblMesDifencia11
-        '
-        Me.lblMesDifencia11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblMesDifencia11, "lblMesDifencia11")
-        Me.lblMesDifencia11.Name = "lblMesDifencia11"
-        '
-        'lblMesDifencia21
-        '
-        Me.lblMesDifencia21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblMesDifencia21, "lblMesDifencia21")
-        Me.lblMesDifencia21.Name = "lblMesDifencia21"
-        '
-        'lblMesDifencia06
-        '
-        Me.lblMesDifencia06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblMesDifencia06, "lblMesDifencia06")
-        Me.lblMesDifencia06.Name = "lblMesDifencia06"
-        '
-        'lblMesDifencia17
-        '
-        Me.lblMesDifencia17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblMesDifencia17, "lblMesDifencia17")
-        Me.lblMesDifencia17.Name = "lblMesDifencia17"
-        '
-        'lblMesDifencia27
-        '
-        Me.lblMesDifencia27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblMesDifencia27, "lblMesDifencia27")
-        Me.lblMesDifencia27.Name = "lblMesDifencia27"
-        '
-        'lblMesDifencia09
-        '
-        Me.lblMesDifencia09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblMesDifencia09, "lblMesDifencia09")
-        Me.lblMesDifencia09.Name = "lblMesDifencia09"
-        '
-        'lblMesDifencia22
-        '
-        Me.lblMesDifencia22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblMesDifencia22, "lblMesDifencia22")
-        Me.lblMesDifencia22.Name = "lblMesDifencia22"
-        '
-        'lblMesDifencia05
-        '
-        Me.lblMesDifencia05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblMesDifencia05, "lblMesDifencia05")
-        Me.lblMesDifencia05.Name = "lblMesDifencia05"
-        '
-        'lblMesDifencia15
-        '
-        Me.lblMesDifencia15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblMesDifencia15, "lblMesDifencia15")
-        Me.lblMesDifencia15.Name = "lblMesDifencia15"
-        '
-        'lblMesDifencia25
-        '
-        Me.lblMesDifencia25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblMesDifencia25, "lblMesDifencia25")
-        Me.lblMesDifencia25.Name = "lblMesDifencia25"
-        '
-        'lblMesDifencia10
-        '
-        Me.lblMesDifencia10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblMesDifencia10, "lblMesDifencia10")
-        Me.lblMesDifencia10.Name = "lblMesDifencia10"
-        '
-        'lblMesDifencia20
-        '
-        Me.lblMesDifencia20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblMesDifencia20, "lblMesDifencia20")
-        Me.lblMesDifencia20.Name = "lblMesDifencia20"
-        '
-        'lblMesDifencia16
-        '
-        Me.lblMesDifencia16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblMesDifencia16, "lblMesDifencia16")
-        Me.lblMesDifencia16.Name = "lblMesDifencia16"
-        '
-        'lblMesDifencia08
-        '
-        Me.lblMesDifencia08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblMesDifencia08, "lblMesDifencia08")
-        Me.lblMesDifencia08.Name = "lblMesDifencia08"
-        '
-        'lblMesDifencia19
-        '
-        Me.lblMesDifencia19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblMesDifencia19, "lblMesDifencia19")
-        Me.lblMesDifencia19.Name = "lblMesDifencia19"
-        '
-        'lblMesDifencia04
-        '
-        Me.lblMesDifencia04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblMesDifencia04, "lblMesDifencia04")
-        Me.lblMesDifencia04.Name = "lblMesDifencia04"
-        '
-        'lblMesDifencia14
-        '
-        Me.lblMesDifencia14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblMesDifencia14, "lblMesDifencia14")
-        Me.lblMesDifencia14.Name = "lblMesDifencia14"
-        '
-        'lblMesDifencia07
-        '
-        Me.lblMesDifencia07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblMesDifencia07, "lblMesDifencia07")
-        Me.lblMesDifencia07.Name = "lblMesDifencia07"
-        '
-        'lblMesDifencia13
-        '
-        Me.lblMesDifencia13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblMesDifencia13, "lblMesDifencia13")
-        Me.lblMesDifencia13.Name = "lblMesDifencia13"
-        '
-        'lblMesDifencia02
-        '
-        Me.lblMesDifencia02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblMesDifencia02, "lblMesDifencia02")
-        Me.lblMesDifencia02.Name = "lblMesDifencia02"
-        '
-        'lblEtiquetaGananciasMes
-        '
-        Me.lblEtiquetaGananciasMes.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
-        Me.lblEtiquetaGananciasMes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblEtiquetaGananciasMes, "lblEtiquetaGananciasMes")
-        Me.lblEtiquetaGananciasMes.Name = "lblEtiquetaGananciasMes"
-        '
-        'lblMesDifencia01
-        '
-        Me.lblMesDifencia01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblMesDifencia01, "lblMesDifencia01")
-        Me.lblMesDifencia01.Name = "lblMesDifencia01"
-        '
-        'lblMesDifencia31
-        '
-        Me.lblMesDifencia31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblMesDifencia31, "lblMesDifencia31")
-        Me.lblMesDifencia31.Name = "lblMesDifencia31"
-        '
-        'lblEtiquetaTransaacionesHora
-        '
-        Me.lblEtiquetaTransaacionesHora.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(234, Byte), Integer))
-        Me.lblEtiquetaTransaacionesHora.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        resources.ApplyResources(Me.lblEtiquetaTransaacionesHora, "lblEtiquetaTransaacionesHora")
-        Me.lblEtiquetaTransaacionesHora.Name = "lblEtiquetaTransaacionesHora"
-        '
         'chkActivarMensajes
         '
         resources.ApplyResources(Me.chkActivarMensajes, "chkActivarMensajes")
@@ -3825,65 +5441,6 @@ Partial Class Form1
         resources.ApplyResources(Me.cmbDivisa, "cmbDivisa")
         Me.cmbDivisa.Name = "cmbDivisa"
         Me.cmbDivisa.Text = Global.EstadisticasDucos.My.MySettings.Default.Moneda
-        '
-        'txtFanAmarillo2
-        '
-        Me.txtFanAmarillo2.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.EstadisticasDucos.My.MySettings.Default, "FanAmarillo", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.txtFanAmarillo2.ForeColor = System.Drawing.Color.DarkKhaki
-        resources.ApplyResources(Me.txtFanAmarillo2, "txtFanAmarillo2")
-        Me.txtFanAmarillo2.Name = "txtFanAmarillo2"
-        Me.txtFanAmarillo2.Value = Global.EstadisticasDucos.My.MySettings.Default.FanAmarillo
-        '
-        'txtFanVerde2
-        '
-        Me.txtFanVerde2.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.EstadisticasDucos.My.MySettings.Default, "FanVerde", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.txtFanVerde2.ForeColor = System.Drawing.Color.Green
-        resources.ApplyResources(Me.txtFanVerde2, "txtFanVerde2")
-        Me.txtFanVerde2.Name = "txtFanVerde2"
-        Me.txtFanVerde2.Value = Global.EstadisticasDucos.My.MySettings.Default.FanVerde
-        '
-        'txtGradosFan2
-        '
-        Me.txtGradosFan2.DataBindings.Add(New System.Windows.Forms.Binding("Value", Global.EstadisticasDucos.My.MySettings.Default, "FanRojo", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.txtGradosFan2.ForeColor = System.Drawing.Color.Red
-        resources.ApplyResources(Me.txtGradosFan2, "txtGradosFan2")
-        Me.txtGradosFan2.Name = "txtGradosFan2"
-        Me.txtGradosFan2.Value = Global.EstadisticasDucos.My.MySettings.Default.FanRojo
-        '
-        'cmbDivisa1
-        '
-        Me.cmbDivisa1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Moneda", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.cmbDivisa1.FormattingEnabled = True
-        Me.cmbDivisa1.Items.AddRange(New Object() {resources.GetString("cmbDivisa1.Items"), resources.GetString("cmbDivisa1.Items1")})
-        resources.ApplyResources(Me.cmbDivisa1, "cmbDivisa1")
-        Me.cmbDivisa1.Name = "cmbDivisa1"
-        Me.cmbDivisa1.Text = Global.EstadisticasDucos.My.MySettings.Default.Moneda
-        '
-        'cmbLenguaje1
-        '
-        Me.cmbLenguaje1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Lenguaje", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.cmbLenguaje1.FormattingEnabled = True
-        Me.cmbLenguaje1.Items.AddRange(New Object() {resources.GetString("cmbLenguaje1.Items"), resources.GetString("cmbLenguaje1.Items1")})
-        resources.ApplyResources(Me.cmbLenguaje1, "cmbLenguaje1")
-        Me.cmbLenguaje1.Name = "cmbLenguaje1"
-        Me.cmbLenguaje1.Text = Global.EstadisticasDucos.My.MySettings.Default.Lenguaje
-        '
-        'chkActivarMensajes2
-        '
-        resources.ApplyResources(Me.chkActivarMensajes2, "chkActivarMensajes2")
-        Me.chkActivarMensajes2.Checked = Global.EstadisticasDucos.My.MySettings.Default.MensajesError
-        Me.chkActivarMensajes2.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkActivarMensajes2.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.EstadisticasDucos.My.MySettings.Default, "MensajesError", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.chkActivarMensajes2.Name = "chkActivarMensajes2"
-        Me.chkActivarMensajes2.UseVisualStyleBackColor = True
-        '
-        'lblUser
-        '
-        Me.lblUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblUser.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "User", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblUser, "lblUser")
-        Me.lblUser.Name = "lblUser"
-        Me.lblUser.Text = Global.EstadisticasDucos.My.MySettings.Default.User
         '
         'cmbLenguaje
         '
@@ -3934,1581 +5491,25 @@ Partial Class Form1
         Me.txtFanVerde.Name = "txtFanVerde"
         Me.txtFanVerde.Value = Global.EstadisticasDucos.My.MySettings.Default.FanVerde
         '
-        'lblTransasionesAño01
-        '
-        Me.lblTransasionesAño01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransasionesAño01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransasionesAño01, "lblTransasionesAño01")
-        Me.lblTransasionesAño01.Name = "lblTransasionesAño01"
-        Me.lblTransasionesAño01.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño01
-        '
-        'lblTransasionesAño07
-        '
-        Me.lblTransasionesAño07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransasionesAño07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransasionesAño07, "lblTransasionesAño07")
-        Me.lblTransasionesAño07.Name = "lblTransasionesAño07"
-        Me.lblTransasionesAño07.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño07
-        '
-        'lblTransasionesAño04
-        '
-        Me.lblTransasionesAño04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransasionesAño04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransasionesAño04, "lblTransasionesAño04")
-        Me.lblTransasionesAño04.Name = "lblTransasionesAño04"
-        Me.lblTransasionesAño04.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño04
-        '
-        'lblTransasionesAño08
-        '
-        Me.lblTransasionesAño08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransasionesAño08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransasionesAño08, "lblTransasionesAño08")
-        Me.lblTransasionesAño08.Name = "lblTransasionesAño08"
-        Me.lblTransasionesAño08.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño08
-        '
-        'lblTransasionesAño10
-        '
-        Me.lblTransasionesAño10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransasionesAño10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransasionesAño10, "lblTransasionesAño10")
-        Me.lblTransasionesAño10.Name = "lblTransasionesAño10"
-        Me.lblTransasionesAño10.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño10
-        '
-        'lblTransasionesAño05
-        '
-        Me.lblTransasionesAño05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransasionesAño05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransasionesAño05, "lblTransasionesAño05")
-        Me.lblTransasionesAño05.Name = "lblTransasionesAño05"
-        Me.lblTransasionesAño05.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño05
-        '
-        'lblTransasionesAño09
-        '
-        Me.lblTransasionesAño09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransasionesAño09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransasionesAño09, "lblTransasionesAño09")
-        Me.lblTransasionesAño09.Name = "lblTransasionesAño09"
-        Me.lblTransasionesAño09.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño09
-        '
-        'lblTransasionesAño06
-        '
-        Me.lblTransasionesAño06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransasionesAño06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransasionesAño06, "lblTransasionesAño06")
-        Me.lblTransasionesAño06.Name = "lblTransasionesAño06"
-        Me.lblTransasionesAño06.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño06
-        '
-        'lblTransasionesAño11
-        '
-        Me.lblTransasionesAño11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransasionesAño11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransasionesAño11, "lblTransasionesAño11")
-        Me.lblTransasionesAño11.Name = "lblTransasionesAño11"
-        Me.lblTransasionesAño11.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño11
-        '
-        'lblTransasionesAño12
-        '
-        Me.lblTransasionesAño12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransasionesAño12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransasionesAño12, "lblTransasionesAño12")
-        Me.lblTransasionesAño12.Name = "lblTransasionesAño12"
-        Me.lblTransasionesAño12.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño12
-        '
-        'lblTransasionesAño03
-        '
-        Me.lblTransasionesAño03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransasionesAño03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransasionesAño03, "lblTransasionesAño03")
-        Me.lblTransasionesAño03.Name = "lblTransasionesAño03"
-        Me.lblTransasionesAño03.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño03
-        '
-        'lblTransasionesAño02
-        '
-        Me.lblTransasionesAño02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransasionesAño02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransasionesAño02, "lblTransasionesAño02")
-        Me.lblTransasionesAño02.Name = "lblTransasionesAño02"
-        Me.lblTransasionesAño02.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño02
-        '
-        'lblPrecioAño05
-        '
-        Me.lblPrecioAño05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecioAño05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecioAño05, "lblPrecioAño05")
-        Me.lblPrecioAño05.Name = "lblPrecioAño05"
-        Me.lblPrecioAño05.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño05
-        '
-        'lblPrecioAño06
-        '
-        Me.lblPrecioAño06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecioAño06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecioAño06, "lblPrecioAño06")
-        Me.lblPrecioAño06.Name = "lblPrecioAño06"
-        Me.lblPrecioAño06.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño06
-        '
-        'lblPrecioAño04
-        '
-        Me.lblPrecioAño04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecioAño04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecioAño04, "lblPrecioAño04")
-        Me.lblPrecioAño04.Name = "lblPrecioAño04"
-        Me.lblPrecioAño04.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño04
-        '
-        'lblPrecioAño07
-        '
-        Me.lblPrecioAño07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecioAño07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecioAño07, "lblPrecioAño07")
-        Me.lblPrecioAño07.Name = "lblPrecioAño07"
-        Me.lblPrecioAño07.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño07
-        '
-        'lblPrecioAño03
-        '
-        Me.lblPrecioAño03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecioAño03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecioAño03, "lblPrecioAño03")
-        Me.lblPrecioAño03.Name = "lblPrecioAño03"
-        Me.lblPrecioAño03.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño03
-        '
-        'lblPrecioAño08
-        '
-        Me.lblPrecioAño08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecioAño08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecioAño08, "lblPrecioAño08")
-        Me.lblPrecioAño08.Name = "lblPrecioAño08"
-        Me.lblPrecioAño08.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño08
-        '
-        'lblPrecioAño09
-        '
-        Me.lblPrecioAño09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecioAño09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecioAño09, "lblPrecioAño09")
-        Me.lblPrecioAño09.Name = "lblPrecioAño09"
-        Me.lblPrecioAño09.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño09
-        '
-        'lblPrecioAño02
-        '
-        Me.lblPrecioAño02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecioAño02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecioAño02, "lblPrecioAño02")
-        Me.lblPrecioAño02.Name = "lblPrecioAño02"
-        Me.lblPrecioAño02.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño02
-        '
-        'lblPrecioAño10
-        '
-        Me.lblPrecioAño10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecioAño10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecioAño10, "lblPrecioAño10")
-        Me.lblPrecioAño10.Name = "lblPrecioAño10"
-        Me.lblPrecioAño10.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño10
-        '
-        'lblPrecioAño11
-        '
-        Me.lblPrecioAño11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecioAño11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecioAño11, "lblPrecioAño11")
-        Me.lblPrecioAño11.Name = "lblPrecioAño11"
-        Me.lblPrecioAño11.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño11
-        '
-        'lblPrecioAño01
-        '
-        Me.lblPrecioAño01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecioAño01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecioAño01, "lblPrecioAño01")
-        Me.lblPrecioAño01.Name = "lblPrecioAño01"
-        Me.lblPrecioAño01.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño01
-        '
-        'lblPrecioAño12
-        '
-        Me.lblPrecioAño12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecioAño12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecioAño12, "lblPrecioAño12")
-        Me.lblPrecioAño12.Name = "lblPrecioAño12"
-        Me.lblPrecioAño12.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño12
-        '
-        'lblPrecioAnual
-        '
-        Me.lblPrecioAnual.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecioAnual.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "PrecioMedioAnual", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecioAnual, "lblPrecioAnual")
-        Me.lblPrecioAnual.Name = "lblPrecioAnual"
-        Me.lblPrecioAnual.Text = Global.EstadisticasDucos.My.MySettings.Default.PrecioMedioAnual
-        '
-        'lblBalanceAño12
-        '
-        Me.lblBalanceAño12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceAño12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceAño12, "lblBalanceAño12")
-        Me.lblBalanceAño12.Name = "lblBalanceAño12"
-        Me.lblBalanceAño12.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño12
-        '
-        'lblBalanceAño11
-        '
-        Me.lblBalanceAño11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceAño11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceAño11, "lblBalanceAño11")
-        Me.lblBalanceAño11.Name = "lblBalanceAño11"
-        Me.lblBalanceAño11.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño11
-        '
-        'lblBalanceAño10
-        '
-        Me.lblBalanceAño10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceAño10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceAño10, "lblBalanceAño10")
-        Me.lblBalanceAño10.Name = "lblBalanceAño10"
-        Me.lblBalanceAño10.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño10
-        '
-        'lblBalanceAño09
-        '
-        Me.lblBalanceAño09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceAño09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceAño09, "lblBalanceAño09")
-        Me.lblBalanceAño09.Name = "lblBalanceAño09"
-        Me.lblBalanceAño09.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño09
-        '
-        'lblBalanceAño08
-        '
-        Me.lblBalanceAño08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceAño08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceAño08, "lblBalanceAño08")
-        Me.lblBalanceAño08.Name = "lblBalanceAño08"
-        Me.lblBalanceAño08.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño08
-        '
-        'lblBalanceAño07
-        '
-        Me.lblBalanceAño07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceAño07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceAño07, "lblBalanceAño07")
-        Me.lblBalanceAño07.Name = "lblBalanceAño07"
-        Me.lblBalanceAño07.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño07
-        '
-        'lblBalanceAño06
-        '
-        Me.lblBalanceAño06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceAño06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceAño06, "lblBalanceAño06")
-        Me.lblBalanceAño06.Name = "lblBalanceAño06"
-        Me.lblBalanceAño06.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño06
-        '
-        'lblBalanceAño05
-        '
-        Me.lblBalanceAño05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceAño05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceAño05, "lblBalanceAño05")
-        Me.lblBalanceAño05.Name = "lblBalanceAño05"
-        Me.lblBalanceAño05.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño05
-        '
-        'lblBalanceAño04
-        '
-        Me.lblBalanceAño04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceAño04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceAño04, "lblBalanceAño04")
-        Me.lblBalanceAño04.Name = "lblBalanceAño04"
-        Me.lblBalanceAño04.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño04
-        '
-        'lblBalanceAño03
-        '
-        Me.lblBalanceAño03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceAño03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceAño03, "lblBalanceAño03")
-        Me.lblBalanceAño03.Name = "lblBalanceAño03"
-        Me.lblBalanceAño03.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño03
-        '
-        'lblBalanceAño02
-        '
-        Me.lblBalanceAño02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceAño02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceAño02, "lblBalanceAño02")
-        Me.lblBalanceAño02.Name = "lblBalanceAño02"
-        Me.lblBalanceAño02.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño02
-        '
-        'lblBalanceAño01
-        '
-        Me.lblBalanceAño01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceAño01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceAño01, "lblBalanceAño01")
-        Me.lblBalanceAño01.Name = "lblBalanceAño01"
-        Me.lblBalanceAño01.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño01
-        '
-        'lblGananciasAño03
-        '
-        Me.lblGananciasAño03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblGananciasAño03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblGananciasAño03, "lblGananciasAño03")
-        Me.lblGananciasAño03.Name = "lblGananciasAño03"
-        Me.lblGananciasAño03.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes03
-        '
-        'lblGananciasAño12
-        '
-        Me.lblGananciasAño12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblGananciasAño12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblGananciasAño12, "lblGananciasAño12")
-        Me.lblGananciasAño12.Name = "lblGananciasAño12"
-        Me.lblGananciasAño12.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes12
-        '
-        'lblGananciasAño11
-        '
-        Me.lblGananciasAño11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblGananciasAño11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblGananciasAño11, "lblGananciasAño11")
-        Me.lblGananciasAño11.Name = "lblGananciasAño11"
-        Me.lblGananciasAño11.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes11
-        '
-        'lblGananciasAño06
-        '
-        Me.lblGananciasAño06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblGananciasAño06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblGananciasAño06, "lblGananciasAño06")
-        Me.lblGananciasAño06.Name = "lblGananciasAño06"
-        Me.lblGananciasAño06.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes06
-        '
-        'lblGananciasAño09
-        '
-        Me.lblGananciasAño09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblGananciasAño09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblGananciasAño09, "lblGananciasAño09")
-        Me.lblGananciasAño09.Name = "lblGananciasAño09"
-        Me.lblGananciasAño09.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes09
-        '
-        'lblGananciasAño05
-        '
-        Me.lblGananciasAño05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblGananciasAño05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblGananciasAño05, "lblGananciasAño05")
-        Me.lblGananciasAño05.Name = "lblGananciasAño05"
-        Me.lblGananciasAño05.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes05
-        '
-        'lblGananciasAño10
-        '
-        Me.lblGananciasAño10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblGananciasAño10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblGananciasAño10, "lblGananciasAño10")
-        Me.lblGananciasAño10.Name = "lblGananciasAño10"
-        Me.lblGananciasAño10.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes10
-        '
-        'lblGananciasAño08
-        '
-        Me.lblGananciasAño08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblGananciasAño08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblGananciasAño08, "lblGananciasAño08")
-        Me.lblGananciasAño08.Name = "lblGananciasAño08"
-        Me.lblGananciasAño08.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes08
-        '
-        'lblGananciasAño04
-        '
-        Me.lblGananciasAño04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblGananciasAño04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblGananciasAño04, "lblGananciasAño04")
-        Me.lblGananciasAño04.Name = "lblGananciasAño04"
-        Me.lblGananciasAño04.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes04
-        '
-        'lblGananciasAño07
-        '
-        Me.lblGananciasAño07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblGananciasAño07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblGananciasAño07, "lblGananciasAño07")
-        Me.lblGananciasAño07.Name = "lblGananciasAño07"
-        Me.lblGananciasAño07.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes07
-        '
-        'lblGananciasAño02
-        '
-        Me.lblGananciasAño02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblGananciasAño02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblGananciasAño02, "lblGananciasAño02")
-        Me.lblGananciasAño02.Name = "lblGananciasAño02"
-        Me.lblGananciasAño02.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes02
-        '
-        'lblGananciasAño01
-        '
-        Me.lblGananciasAño01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblGananciasAño01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoMes01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblGananciasAño01, "lblGananciasAño01")
-        Me.lblGananciasAño01.Name = "lblGananciasAño01"
-        Me.lblGananciasAño01.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoMes01
-        '
-        'lblBalanceAño2023
-        '
-        Me.lblBalanceAño2023.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceAño2023.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño2023", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceAño2023, "lblBalanceAño2023")
-        Me.lblBalanceAño2023.Name = "lblBalanceAño2023"
-        Me.lblBalanceAño2023.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño2023
-        '
-        'lblBalanceAño2022
-        '
-        Me.lblBalanceAño2022.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceAño2022.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblBalanceAño2022", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceAño2022, "lblBalanceAño2022")
-        Me.lblBalanceAño2022.Name = "lblBalanceAño2022"
-        Me.lblBalanceAño2022.Text = Global.EstadisticasDucos.My.MySettings.Default.lblBalanceAño2022
-        '
-        'lblGanadoAño2023
-        '
-        Me.lblGanadoAño2023.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblGanadoAño2023.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoAño2023", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblGanadoAño2023, "lblGanadoAño2023")
-        Me.lblGanadoAño2023.Name = "lblGanadoAño2023"
-        Me.lblGanadoAño2023.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoAño2023
-        '
-        'lblGanadoAño2022
-        '
-        Me.lblGanadoAño2022.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblGanadoAño2022.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblGanadoAño2022", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblGanadoAño2022, "lblGanadoAño2022")
-        Me.lblGanadoAño2022.Name = "lblGanadoAño2022"
-        Me.lblGanadoAño2022.Text = Global.EstadisticasDucos.My.MySettings.Default.lblGanadoAño2022
-        '
-        'lblTransasionesAño2023
-        '
-        Me.lblTransasionesAño2023.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransasionesAño2023.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño2023", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransasionesAño2023, "lblTransasionesAño2023")
-        Me.lblTransasionesAño2023.Name = "lblTransasionesAño2023"
-        Me.lblTransasionesAño2023.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño2023
-        '
-        'lblTransasionesAño2022
-        '
-        Me.lblTransasionesAño2022.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransasionesAño2022.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblTransasionesAño2022", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransasionesAño2022, "lblTransasionesAño2022")
-        Me.lblTransasionesAño2022.Name = "lblTransasionesAño2022"
-        Me.lblTransasionesAño2022.Text = Global.EstadisticasDucos.My.MySettings.Default.lblTransasionesAño2022
-        '
-        'lblPrecioAño2023
-        '
-        Me.lblPrecioAño2023.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecioAño2023.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño2023", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecioAño2023, "lblPrecioAño2023")
-        Me.lblPrecioAño2023.Name = "lblPrecioAño2023"
-        Me.lblPrecioAño2023.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño2023
-        '
-        'lblPrecioMedioTodosAños
-        '
-        Me.lblPrecioMedioTodosAños.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecioMedioTodosAños.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "PrecioMedioTodosAños", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecioMedioTodosAños, "lblPrecioMedioTodosAños")
-        Me.lblPrecioMedioTodosAños.Name = "lblPrecioMedioTodosAños"
-        Me.lblPrecioMedioTodosAños.Text = Global.EstadisticasDucos.My.MySettings.Default.PrecioMedioTodosAños
-        '
-        'lblPrecioAño2022
-        '
-        Me.lblPrecioAño2022.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecioAño2022.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "lblPrecioAño2022", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecioAño2022, "lblPrecioAño2022")
-        Me.lblPrecioAño2022.Name = "lblPrecioAño2022"
-        Me.lblPrecioAño2022.Text = Global.EstadisticasDucos.My.MySettings.Default.lblPrecioAño2022
-        '
-        'lblBalanceHora08
-        '
-        Me.lblBalanceHora08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora08, "lblBalanceHora08")
-        Me.lblBalanceHora08.Name = "lblBalanceHora08"
-        Me.lblBalanceHora08.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora08
-        '
-        'lblBalanceHora09
-        '
-        Me.lblBalanceHora09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora09, "lblBalanceHora09")
-        Me.lblBalanceHora09.Name = "lblBalanceHora09"
-        Me.lblBalanceHora09.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora09
-        '
-        'lblBalanceHora07
-        '
-        Me.lblBalanceHora07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora07, "lblBalanceHora07")
-        Me.lblBalanceHora07.Name = "lblBalanceHora07"
-        Me.lblBalanceHora07.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora07
-        '
-        'lblBalanceHora11
-        '
-        Me.lblBalanceHora11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora11, "lblBalanceHora11")
-        Me.lblBalanceHora11.Name = "lblBalanceHora11"
-        Me.lblBalanceHora11.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora11
-        '
-        'lblBalanceHora12
-        '
-        Me.lblBalanceHora12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora12, "lblBalanceHora12")
-        Me.lblBalanceHora12.Name = "lblBalanceHora12"
-        Me.lblBalanceHora12.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora12
-        '
-        'lblBalanceHora06
-        '
-        Me.lblBalanceHora06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora06, "lblBalanceHora06")
-        Me.lblBalanceHora06.Name = "lblBalanceHora06"
-        Me.lblBalanceHora06.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora06
-        '
-        'lblBalanceHora13
-        '
-        Me.lblBalanceHora13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora13.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora13", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora13, "lblBalanceHora13")
-        Me.lblBalanceHora13.Name = "lblBalanceHora13"
-        Me.lblBalanceHora13.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora13
-        '
-        'lblBalanceHora14
-        '
-        Me.lblBalanceHora14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora14.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora14", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora14, "lblBalanceHora14")
-        Me.lblBalanceHora14.Name = "lblBalanceHora14"
-        Me.lblBalanceHora14.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora14
-        '
-        'lblBalanceHora05
-        '
-        Me.lblBalanceHora05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora05, "lblBalanceHora05")
-        Me.lblBalanceHora05.Name = "lblBalanceHora05"
-        Me.lblBalanceHora05.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora05
-        '
-        'lblBalanceHora15
-        '
-        Me.lblBalanceHora15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora15.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora15", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora15, "lblBalanceHora15")
-        Me.lblBalanceHora15.Name = "lblBalanceHora15"
-        Me.lblBalanceHora15.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora15
-        '
-        'lblBalanceHora16
-        '
-        Me.lblBalanceHora16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora16.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora16", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora16, "lblBalanceHora16")
-        Me.lblBalanceHora16.Name = "lblBalanceHora16"
-        Me.lblBalanceHora16.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora16
-        '
-        'lblBalanceHora04
-        '
-        Me.lblBalanceHora04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora04, "lblBalanceHora04")
-        Me.lblBalanceHora04.Name = "lblBalanceHora04"
-        Me.lblBalanceHora04.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora04
-        '
-        'lblBalanceHora17
-        '
-        Me.lblBalanceHora17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora17.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora17", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora17, "lblBalanceHora17")
-        Me.lblBalanceHora17.Name = "lblBalanceHora17"
-        Me.lblBalanceHora17.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora17
-        '
-        'lblBalanceHora19
-        '
-        Me.lblBalanceHora19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora19.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora19", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora19, "lblBalanceHora19")
-        Me.lblBalanceHora19.Name = "lblBalanceHora19"
-        Me.lblBalanceHora19.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora19
-        '
-        'lblBalanceHora03
-        '
-        Me.lblBalanceHora03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora03, "lblBalanceHora03")
-        Me.lblBalanceHora03.Name = "lblBalanceHora03"
-        Me.lblBalanceHora03.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora03
-        '
-        'lblBalanceHora20
-        '
-        Me.lblBalanceHora20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora20.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora20", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora20, "lblBalanceHora20")
-        Me.lblBalanceHora20.Name = "lblBalanceHora20"
-        Me.lblBalanceHora20.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora20
-        '
-        'lblBalanceHora21
-        '
-        Me.lblBalanceHora21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora21.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora21", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora21, "lblBalanceHora21")
-        Me.lblBalanceHora21.Name = "lblBalanceHora21"
-        Me.lblBalanceHora21.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora21
-        '
-        'lblBalanceHora02
-        '
-        Me.lblBalanceHora02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora02, "lblBalanceHora02")
-        Me.lblBalanceHora02.Name = "lblBalanceHora02"
-        Me.lblBalanceHora02.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora02
-        '
-        'lblBalanceHora22
-        '
-        Me.lblBalanceHora22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora22.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora22", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora22, "lblBalanceHora22")
-        Me.lblBalanceHora22.Name = "lblBalanceHora22"
-        Me.lblBalanceHora22.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora22
-        '
-        'lblBalanceHora23
-        '
-        Me.lblBalanceHora23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora23.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora23", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora23, "lblBalanceHora23")
-        Me.lblBalanceHora23.Name = "lblBalanceHora23"
-        Me.lblBalanceHora23.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora23
-        '
-        'lblBalanceHora01
-        '
-        Me.lblBalanceHora01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora01, "lblBalanceHora01")
-        Me.lblBalanceHora01.Name = "lblBalanceHora01"
-        Me.lblBalanceHora01.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora01
-        '
-        'lblBalanceHora00
-        '
-        Me.lblBalanceHora00.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora00.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora00", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora00, "lblBalanceHora00")
-        Me.lblBalanceHora00.Name = "lblBalanceHora00"
-        Me.lblBalanceHora00.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora00
-        '
-        'lblBalanceHora18
-        '
-        Me.lblBalanceHora18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora18.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora18", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora18, "lblBalanceHora18")
-        Me.lblBalanceHora18.Name = "lblBalanceHora18"
-        Me.lblBalanceHora18.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora18
-        '
-        'lblBalanceHora10
-        '
-        Me.lblBalanceHora10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBalanceHora10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Hora10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblBalanceHora10, "lblBalanceHora10")
-        Me.lblBalanceHora10.Name = "lblBalanceHora10"
-        Me.lblBalanceHora10.Text = Global.EstadisticasDucos.My.MySettings.Default.Hora10
-        '
-        'lblPrecio01
-        '
-        Me.lblPrecio01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio01, "lblPrecio01")
-        Me.lblPrecio01.Name = "lblPrecio01"
-        Me.lblPrecio01.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio01
-        '
-        'lblHoraDiferencia00
-        '
-        Me.lblHoraDiferencia00.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblHoraDiferencia00.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "ValorHora00", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblHoraDiferencia00, "lblHoraDiferencia00")
-        Me.lblHoraDiferencia00.Name = "lblHoraDiferencia00"
-        Me.lblHoraDiferencia00.Text = Global.EstadisticasDucos.My.MySettings.Default.ValorHora00
-        '
-        'lblPrecio02
-        '
-        Me.lblPrecio02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio02, "lblPrecio02")
-        Me.lblPrecio02.Name = "lblPrecio02"
-        Me.lblPrecio02.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio02
-        '
-        'lblPrecio03
-        '
-        Me.lblPrecio03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio03, "lblPrecio03")
-        Me.lblPrecio03.Name = "lblPrecio03"
-        Me.lblPrecio03.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio03
-        '
-        'lblPrecio04
-        '
-        Me.lblPrecio04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio04, "lblPrecio04")
-        Me.lblPrecio04.Name = "lblPrecio04"
-        Me.lblPrecio04.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio04
-        '
-        'lblPrecio05
-        '
-        Me.lblPrecio05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio05, "lblPrecio05")
-        Me.lblPrecio05.Name = "lblPrecio05"
-        Me.lblPrecio05.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio05
-        '
-        'lblPrecio06
-        '
-        Me.lblPrecio06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio06, "lblPrecio06")
-        Me.lblPrecio06.Name = "lblPrecio06"
-        Me.lblPrecio06.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio06
-        '
-        'lblPrecio07
-        '
-        Me.lblPrecio07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio07, "lblPrecio07")
-        Me.lblPrecio07.Name = "lblPrecio07"
-        Me.lblPrecio07.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio07
-        '
-        'lblPrecio08
-        '
-        Me.lblPrecio08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio08, "lblPrecio08")
-        Me.lblPrecio08.Name = "lblPrecio08"
-        Me.lblPrecio08.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio08
-        '
-        'lblPrecio09
-        '
-        Me.lblPrecio09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio09, "lblPrecio09")
-        Me.lblPrecio09.Name = "lblPrecio09"
-        Me.lblPrecio09.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio09
-        '
-        'lblPrecio10
-        '
-        Me.lblPrecio10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio10, "lblPrecio10")
-        Me.lblPrecio10.Name = "lblPrecio10"
-        Me.lblPrecio10.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio10
-        '
-        'lblPrecio11
-        '
-        Me.lblPrecio11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio11, "lblPrecio11")
-        Me.lblPrecio11.Name = "lblPrecio11"
-        Me.lblPrecio11.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio11
-        '
-        'lblPrecio12
-        '
-        Me.lblPrecio12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio12, "lblPrecio12")
-        Me.lblPrecio12.Name = "lblPrecio12"
-        Me.lblPrecio12.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio12
-        '
-        'lblPrecio13
-        '
-        Me.lblPrecio13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio13.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio13", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio13, "lblPrecio13")
-        Me.lblPrecio13.Name = "lblPrecio13"
-        Me.lblPrecio13.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio13
-        '
-        'lblPrecio14
-        '
-        Me.lblPrecio14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio14.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio14", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio14, "lblPrecio14")
-        Me.lblPrecio14.Name = "lblPrecio14"
-        Me.lblPrecio14.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio14
-        '
-        'lblPrecio15
-        '
-        Me.lblPrecio15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio15.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio15", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio15, "lblPrecio15")
-        Me.lblPrecio15.Name = "lblPrecio15"
-        Me.lblPrecio15.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio15
-        '
-        'lblPrecio16
-        '
-        Me.lblPrecio16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio16.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio16", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio16, "lblPrecio16")
-        Me.lblPrecio16.Name = "lblPrecio16"
-        Me.lblPrecio16.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio16
-        '
-        'lblPrecio17
-        '
-        Me.lblPrecio17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio17.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio17", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio17, "lblPrecio17")
-        Me.lblPrecio17.Name = "lblPrecio17"
-        Me.lblPrecio17.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio17
-        '
-        'lblPrecio18
-        '
-        Me.lblPrecio18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio18.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio18", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio18, "lblPrecio18")
-        Me.lblPrecio18.Name = "lblPrecio18"
-        Me.lblPrecio18.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio18
-        '
-        'lblPrecio19
-        '
-        Me.lblPrecio19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio19.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio19", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio19, "lblPrecio19")
-        Me.lblPrecio19.Name = "lblPrecio19"
-        Me.lblPrecio19.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio19
-        '
-        'lblPrecio20
-        '
-        Me.lblPrecio20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio20.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio20", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio20, "lblPrecio20")
-        Me.lblPrecio20.Name = "lblPrecio20"
-        Me.lblPrecio20.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio20
-        '
-        'lblPrecio21
-        '
-        Me.lblPrecio21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio21.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio21", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio21, "lblPrecio21")
-        Me.lblPrecio21.Name = "lblPrecio21"
-        Me.lblPrecio21.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio21
-        '
-        'lblPrecio22
-        '
-        Me.lblPrecio22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio22.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio22", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio22, "lblPrecio22")
-        Me.lblPrecio22.Name = "lblPrecio22"
-        Me.lblPrecio22.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio22
-        '
-        'lblPrecio00
-        '
-        Me.lblPrecio00.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio00.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio00", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio00, "lblPrecio00")
-        Me.lblPrecio00.Name = "lblPrecio00"
-        Me.lblPrecio00.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio00
-        '
-        'lblPrecio23
-        '
-        Me.lblPrecio23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecio23.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Precio23", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecio23, "lblPrecio23")
-        Me.lblPrecio23.Name = "lblPrecio23"
-        Me.lblPrecio23.Text = Global.EstadisticasDucos.My.MySettings.Default.Precio23
-        '
-        'lblPrecioDia
-        '
-        Me.lblPrecioDia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecioDia.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MediaPrecioDia", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecioDia, "lblPrecioDia")
-        Me.lblPrecioDia.Name = "lblPrecioDia"
-        Me.lblPrecioDia.Text = Global.EstadisticasDucos.My.MySettings.Default.MediaPrecioDia
-        '
-        'lblMesPrecio05
-        '
-        Me.lblMesPrecio05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio05, "lblMesPrecio05")
-        Me.lblMesPrecio05.Name = "lblMesPrecio05"
-        Me.lblMesPrecio05.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio05
-        '
-        'lblMesPrecio06
-        '
-        Me.lblMesPrecio06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio06, "lblMesPrecio06")
-        Me.lblMesPrecio06.Name = "lblMesPrecio06"
-        Me.lblMesPrecio06.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio06
-        '
-        'lblMesPrecio04
-        '
-        Me.lblMesPrecio04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio04, "lblMesPrecio04")
-        Me.lblMesPrecio04.Name = "lblMesPrecio04"
-        Me.lblMesPrecio04.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio04
-        '
-        'lblMesPrecio07
-        '
-        Me.lblMesPrecio07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio07, "lblMesPrecio07")
-        Me.lblMesPrecio07.Name = "lblMesPrecio07"
-        Me.lblMesPrecio07.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio07
-        '
-        'lblMesPrecio03
-        '
-        Me.lblMesPrecio03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio03, "lblMesPrecio03")
-        Me.lblMesPrecio03.Name = "lblMesPrecio03"
-        Me.lblMesPrecio03.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio03
-        '
-        'lblMesPrecio08
-        '
-        Me.lblMesPrecio08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio08, "lblMesPrecio08")
-        Me.lblMesPrecio08.Name = "lblMesPrecio08"
-        Me.lblMesPrecio08.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio08
-        '
-        'lblMesPrecio09
-        '
-        Me.lblMesPrecio09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio09, "lblMesPrecio09")
-        Me.lblMesPrecio09.Name = "lblMesPrecio09"
-        Me.lblMesPrecio09.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio09
-        '
-        'lblMesPrecio02
-        '
-        Me.lblMesPrecio02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio02, "lblMesPrecio02")
-        Me.lblMesPrecio02.Name = "lblMesPrecio02"
-        Me.lblMesPrecio02.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio02
-        '
-        'lblMesPrecio10
-        '
-        Me.lblMesPrecio10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio10, "lblMesPrecio10")
-        Me.lblMesPrecio10.Name = "lblMesPrecio10"
-        Me.lblMesPrecio10.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio10
-        '
-        'lblMesPrecio11
-        '
-        Me.lblMesPrecio11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio11, "lblMesPrecio11")
-        Me.lblMesPrecio11.Name = "lblMesPrecio11"
-        Me.lblMesPrecio11.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio11
-        '
-        'lblMesPrecio01
-        '
-        Me.lblMesPrecio01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio01, "lblMesPrecio01")
-        Me.lblMesPrecio01.Name = "lblMesPrecio01"
-        Me.lblMesPrecio01.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio01
-        '
-        'lblMesPrecio12
-        '
-        Me.lblMesPrecio12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio12, "lblMesPrecio12")
-        Me.lblMesPrecio12.Name = "lblMesPrecio12"
-        Me.lblMesPrecio12.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio12
-        '
-        'lblMesPrecio13
-        '
-        Me.lblMesPrecio13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio13.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio13", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio13, "lblMesPrecio13")
-        Me.lblMesPrecio13.Name = "lblMesPrecio13"
-        Me.lblMesPrecio13.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio13
-        '
-        'lblMesPrecio14
-        '
-        Me.lblMesPrecio14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio14.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio14", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio14, "lblMesPrecio14")
-        Me.lblMesPrecio14.Name = "lblMesPrecio14"
-        Me.lblMesPrecio14.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio14
-        '
-        'lblMesPrecio15
-        '
-        Me.lblMesPrecio15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio15.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio15", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio15, "lblMesPrecio15")
-        Me.lblMesPrecio15.Name = "lblMesPrecio15"
-        Me.lblMesPrecio15.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio15
-        '
-        'lblMesPrecio16
-        '
-        Me.lblMesPrecio16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio16.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio16", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio16, "lblMesPrecio16")
-        Me.lblMesPrecio16.Name = "lblMesPrecio16"
-        Me.lblMesPrecio16.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio16
-        '
-        'lblMesPrecio17
-        '
-        Me.lblMesPrecio17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio17.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio17", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio17, "lblMesPrecio17")
-        Me.lblMesPrecio17.Name = "lblMesPrecio17"
-        Me.lblMesPrecio17.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio17
-        '
-        'lblMesPrecio18
-        '
-        Me.lblMesPrecio18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio18.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio18", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio18, "lblMesPrecio18")
-        Me.lblMesPrecio18.Name = "lblMesPrecio18"
-        Me.lblMesPrecio18.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio18
-        '
-        'lblMesPrecio19
-        '
-        Me.lblMesPrecio19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio19.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio19", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio19, "lblMesPrecio19")
-        Me.lblMesPrecio19.Name = "lblMesPrecio19"
-        Me.lblMesPrecio19.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio19
-        '
-        'lblMesPrecio20
-        '
-        Me.lblMesPrecio20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio20.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio20", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio20, "lblMesPrecio20")
-        Me.lblMesPrecio20.Name = "lblMesPrecio20"
-        Me.lblMesPrecio20.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio20
-        '
-        'lblMesPrecio21
-        '
-        Me.lblMesPrecio21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio21.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio21", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio21, "lblMesPrecio21")
-        Me.lblMesPrecio21.Name = "lblMesPrecio21"
-        Me.lblMesPrecio21.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio21
-        '
-        'lblMesPrecio22
-        '
-        Me.lblMesPrecio22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio22.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio22", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio22, "lblMesPrecio22")
-        Me.lblMesPrecio22.Name = "lblMesPrecio22"
-        Me.lblMesPrecio22.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio22
-        '
-        'lblMesPrecio23
-        '
-        Me.lblMesPrecio23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio23.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio23", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio23, "lblMesPrecio23")
-        Me.lblMesPrecio23.Name = "lblMesPrecio23"
-        Me.lblMesPrecio23.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio23
-        '
-        'lblMesPrecio24
-        '
-        Me.lblMesPrecio24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio24.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio24", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio24, "lblMesPrecio24")
-        Me.lblMesPrecio24.Name = "lblMesPrecio24"
-        Me.lblMesPrecio24.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio24
-        '
-        'lblMesPrecio25
-        '
-        Me.lblMesPrecio25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio25.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio25", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio25, "lblMesPrecio25")
-        Me.lblMesPrecio25.Name = "lblMesPrecio25"
-        Me.lblMesPrecio25.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio25
-        '
-        'lblMesPrecio26
-        '
-        Me.lblMesPrecio26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio26.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio26", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio26, "lblMesPrecio26")
-        Me.lblMesPrecio26.Name = "lblMesPrecio26"
-        Me.lblMesPrecio26.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio26
-        '
-        'lblMesPrecio27
-        '
-        Me.lblMesPrecio27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio27.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio27", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio27, "lblMesPrecio27")
-        Me.lblMesPrecio27.Name = "lblMesPrecio27"
-        Me.lblMesPrecio27.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio27
-        '
-        'lblMesPrecio28
-        '
-        Me.lblMesPrecio28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio28.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio28", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio28, "lblMesPrecio28")
-        Me.lblMesPrecio28.Name = "lblMesPrecio28"
-        Me.lblMesPrecio28.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio28
-        '
-        'lblMesPrecio29
-        '
-        Me.lblMesPrecio29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio29.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio29", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio29, "lblMesPrecio29")
-        Me.lblMesPrecio29.Name = "lblMesPrecio29"
-        Me.lblMesPrecio29.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio29
-        '
-        'lblMesBalance31
-        '
-        Me.lblMesBalance31.BackColor = System.Drawing.Color.White
-        Me.lblMesBalance31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance31.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance31", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance31, "lblMesBalance31")
-        Me.lblMesBalance31.Name = "lblMesBalance31"
-        Me.lblMesBalance31.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance31
-        '
-        'lblMesPrecio30
-        '
-        Me.lblMesPrecio30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio30.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio30", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio30, "lblMesPrecio30")
-        Me.lblMesPrecio30.Name = "lblMesPrecio30"
-        Me.lblMesPrecio30.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio30
-        '
-        'lblMesPrecio31
-        '
-        Me.lblMesPrecio31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesPrecio31.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesPrecio31", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesPrecio31, "lblMesPrecio31")
-        Me.lblMesPrecio31.Name = "lblMesPrecio31"
-        Me.lblMesPrecio31.Text = Global.EstadisticasDucos.My.MySettings.Default.MesPrecio31
-        '
-        'lblPrecioMes
-        '
-        Me.lblPrecioMes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblPrecioMes.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "PrecioMedioMes", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblPrecioMes, "lblPrecioMes")
-        Me.lblPrecioMes.Name = "lblPrecioMes"
-        Me.lblPrecioMes.Text = Global.EstadisticasDucos.My.MySettings.Default.PrecioMedioMes
-        '
-        'lblMesBalance30
-        '
-        Me.lblMesBalance30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance30.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance30", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance30, "lblMesBalance30")
-        Me.lblMesBalance30.Name = "lblMesBalance30"
-        Me.lblMesBalance30.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance30
-        '
-        'lblMesBalance29
-        '
-        Me.lblMesBalance29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance29.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance29", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance29, "lblMesBalance29")
-        Me.lblMesBalance29.Name = "lblMesBalance29"
-        Me.lblMesBalance29.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance29
-        '
-        'lblMesBalance28
-        '
-        Me.lblMesBalance28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance28.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance28", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance28, "lblMesBalance28")
-        Me.lblMesBalance28.Name = "lblMesBalance28"
-        Me.lblMesBalance28.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance28
-        '
-        'lblMesBalance27
-        '
-        Me.lblMesBalance27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance27.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance27", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance27, "lblMesBalance27")
-        Me.lblMesBalance27.Name = "lblMesBalance27"
-        Me.lblMesBalance27.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance27
-        '
-        'lblMesBalance26
-        '
-        Me.lblMesBalance26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance26.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance26", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance26, "lblMesBalance26")
-        Me.lblMesBalance26.Name = "lblMesBalance26"
-        Me.lblMesBalance26.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance26
-        '
-        'lblMesBalance25
-        '
-        Me.lblMesBalance25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance25.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance25", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance25, "lblMesBalance25")
-        Me.lblMesBalance25.Name = "lblMesBalance25"
-        Me.lblMesBalance25.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance25
-        '
-        'lblMesBalance24
-        '
-        Me.lblMesBalance24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance24.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance24", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance24, "lblMesBalance24")
-        Me.lblMesBalance24.Name = "lblMesBalance24"
-        Me.lblMesBalance24.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance24
-        '
-        'lblMesBalance23
-        '
-        Me.lblMesBalance23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance23.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance23", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance23, "lblMesBalance23")
-        Me.lblMesBalance23.Name = "lblMesBalance23"
-        Me.lblMesBalance23.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance23
-        '
-        'lblMesBalance22
-        '
-        Me.lblMesBalance22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance22.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance22", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance22, "lblMesBalance22")
-        Me.lblMesBalance22.Name = "lblMesBalance22"
-        Me.lblMesBalance22.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance22
-        '
-        'lblMesBalance21
-        '
-        Me.lblMesBalance21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance21.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance21", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance21, "lblMesBalance21")
-        Me.lblMesBalance21.Name = "lblMesBalance21"
-        Me.lblMesBalance21.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance21
-        '
-        'lblMesBalance20
-        '
-        Me.lblMesBalance20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance20.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance20", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance20, "lblMesBalance20")
-        Me.lblMesBalance20.Name = "lblMesBalance20"
-        Me.lblMesBalance20.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance20
-        '
-        'lblMesBalance19
-        '
-        Me.lblMesBalance19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance19.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance19", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance19, "lblMesBalance19")
-        Me.lblMesBalance19.Name = "lblMesBalance19"
-        Me.lblMesBalance19.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance19
-        '
-        'lblMesBalance18
-        '
-        Me.lblMesBalance18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance18.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance18", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance18, "lblMesBalance18")
-        Me.lblMesBalance18.Name = "lblMesBalance18"
-        Me.lblMesBalance18.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance18
-        '
-        'lblMesBalance17
-        '
-        Me.lblMesBalance17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance17.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance17", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance17, "lblMesBalance17")
-        Me.lblMesBalance17.Name = "lblMesBalance17"
-        Me.lblMesBalance17.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance17
-        '
-        'lblMesBalance16
-        '
-        Me.lblMesBalance16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance16.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance16", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance16, "lblMesBalance16")
-        Me.lblMesBalance16.Name = "lblMesBalance16"
-        Me.lblMesBalance16.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance16
-        '
-        'lblMesBalance15
-        '
-        Me.lblMesBalance15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance15.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance15", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance15, "lblMesBalance15")
-        Me.lblMesBalance15.Name = "lblMesBalance15"
-        Me.lblMesBalance15.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance15
-        '
-        'lblMesBalance14
-        '
-        Me.lblMesBalance14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance14.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance14", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance14, "lblMesBalance14")
-        Me.lblMesBalance14.Name = "lblMesBalance14"
-        Me.lblMesBalance14.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance14
-        '
-        'lblMesBalance13
-        '
-        Me.lblMesBalance13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance13.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance13", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance13, "lblMesBalance13")
-        Me.lblMesBalance13.Name = "lblMesBalance13"
-        Me.lblMesBalance13.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance13
-        '
-        'lblMesBalance12
-        '
-        Me.lblMesBalance12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance12, "lblMesBalance12")
-        Me.lblMesBalance12.Name = "lblMesBalance12"
-        Me.lblMesBalance12.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance12
-        '
-        'lblMesBalance11
-        '
-        Me.lblMesBalance11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance11, "lblMesBalance11")
-        Me.lblMesBalance11.Name = "lblMesBalance11"
-        Me.lblMesBalance11.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance11
-        '
-        'lblMesBalance10
-        '
-        Me.lblMesBalance10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance10, "lblMesBalance10")
-        Me.lblMesBalance10.Name = "lblMesBalance10"
-        Me.lblMesBalance10.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance10
-        '
-        'lblMesBalance09
-        '
-        Me.lblMesBalance09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance09, "lblMesBalance09")
-        Me.lblMesBalance09.Name = "lblMesBalance09"
-        Me.lblMesBalance09.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance09
-        '
-        'lblMesBalance08
-        '
-        Me.lblMesBalance08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance08, "lblMesBalance08")
-        Me.lblMesBalance08.Name = "lblMesBalance08"
-        Me.lblMesBalance08.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance08
-        '
-        'lblMesBalance07
-        '
-        Me.lblMesBalance07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance07, "lblMesBalance07")
-        Me.lblMesBalance07.Name = "lblMesBalance07"
-        Me.lblMesBalance07.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance07
-        '
-        'lblMesBalance06
-        '
-        Me.lblMesBalance06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance06, "lblMesBalance06")
-        Me.lblMesBalance06.Name = "lblMesBalance06"
-        Me.lblMesBalance06.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance06
-        '
-        'lblMesBalance05
-        '
-        Me.lblMesBalance05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance05, "lblMesBalance05")
-        Me.lblMesBalance05.Name = "lblMesBalance05"
-        Me.lblMesBalance05.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance05
-        '
-        'lblMesBalance04
-        '
-        Me.lblMesBalance04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance04, "lblMesBalance04")
-        Me.lblMesBalance04.Name = "lblMesBalance04"
-        Me.lblMesBalance04.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance04
-        '
-        'lblMesBalance03
-        '
-        Me.lblMesBalance03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance03, "lblMesBalance03")
-        Me.lblMesBalance03.Name = "lblMesBalance03"
-        Me.lblMesBalance03.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance03
-        '
-        'lblMesBalance02
-        '
-        Me.lblMesBalance02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance02, "lblMesBalance02")
-        Me.lblMesBalance02.Name = "lblMesBalance02"
-        Me.lblMesBalance02.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance02
-        '
-        'lblMesBalance01
-        '
-        Me.lblMesBalance01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMesBalance01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "MesBalance01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblMesBalance01, "lblMesBalance01")
-        Me.lblMesBalance01.Name = "lblMesBalance01"
-        Me.lblMesBalance01.Text = Global.EstadisticasDucos.My.MySettings.Default.MesBalance01
-        '
-        'lblTransacionHora01
-        '
-        Me.lblTransacionHora01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransacionHora01.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones01", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransacionHora01, "lblTransacionHora01")
-        Me.lblTransacionHora01.Name = "lblTransacionHora01"
-        Me.lblTransacionHora01.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones01
-        '
-        'lblTransacionHora02
-        '
-        Me.lblTransacionHora02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransacionHora02.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones02", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransacionHora02, "lblTransacionHora02")
-        Me.lblTransacionHora02.Name = "lblTransacionHora02"
-        Me.lblTransacionHora02.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones02
-        '
-        'lblTransacionHora03
-        '
-        Me.lblTransacionHora03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransacionHora03.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones03", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransacionHora03, "lblTransacionHora03")
-        Me.lblTransacionHora03.Name = "lblTransacionHora03"
-        Me.lblTransacionHora03.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones03
-        '
-        'lblTransacionHora04
-        '
-        Me.lblTransacionHora04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransacionHora04.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones04", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransacionHora04, "lblTransacionHora04")
-        Me.lblTransacionHora04.Name = "lblTransacionHora04"
-        Me.lblTransacionHora04.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones04
-        '
-        'lblTransacionHora05
-        '
-        Me.lblTransacionHora05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransacionHora05.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones05", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransacionHora05, "lblTransacionHora05")
-        Me.lblTransacionHora05.Name = "lblTransacionHora05"
-        Me.lblTransacionHora05.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones05
-        '
-        'lblTransacionHora06
-        '
-        Me.lblTransacionHora06.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransacionHora06.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones06", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransacionHora06, "lblTransacionHora06")
-        Me.lblTransacionHora06.Name = "lblTransacionHora06"
-        Me.lblTransacionHora06.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones06
-        '
-        'lblTransacionHora07
-        '
-        Me.lblTransacionHora07.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransacionHora07.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones07", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransacionHora07, "lblTransacionHora07")
-        Me.lblTransacionHora07.Name = "lblTransacionHora07"
-        Me.lblTransacionHora07.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones07
-        '
-        'lblTransacionHora08
-        '
-        Me.lblTransacionHora08.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransacionHora08.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones08", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransacionHora08, "lblTransacionHora08")
-        Me.lblTransacionHora08.Name = "lblTransacionHora08"
-        Me.lblTransacionHora08.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones08
-        '
-        'lblTransacionHora09
-        '
-        Me.lblTransacionHora09.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransacionHora09.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones09", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransacionHora09, "lblTransacionHora09")
-        Me.lblTransacionHora09.Name = "lblTransacionHora09"
-        Me.lblTransacionHora09.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones09
-        '
-        'lblTransacionHora10
-        '
-        Me.lblTransacionHora10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransacionHora10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones10", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransacionHora10, "lblTransacionHora10")
-        Me.lblTransacionHora10.Name = "lblTransacionHora10"
-        Me.lblTransacionHora10.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones10
-        '
-        'lblTransacionHora11
-        '
-        Me.lblTransacionHora11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransacionHora11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones11", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransacionHora11, "lblTransacionHora11")
-        Me.lblTransacionHora11.Name = "lblTransacionHora11"
-        Me.lblTransacionHora11.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones11
-        '
-        'lblTransacionHora12
-        '
-        Me.lblTransacionHora12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransacionHora12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones12", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransacionHora12, "lblTransacionHora12")
-        Me.lblTransacionHora12.Name = "lblTransacionHora12"
-        Me.lblTransacionHora12.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones12
-        '
-        'lblTransacionHora13
-        '
-        Me.lblTransacionHora13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransacionHora13.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones13", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransacionHora13, "lblTransacionHora13")
-        Me.lblTransacionHora13.Name = "lblTransacionHora13"
-        Me.lblTransacionHora13.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones13
-        '
-        'lblTransacionHora14
-        '
-        Me.lblTransacionHora14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransacionHora14.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones14", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransacionHora14, "lblTransacionHora14")
-        Me.lblTransacionHora14.Name = "lblTransacionHora14"
-        Me.lblTransacionHora14.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones14
-        '
-        'lblTransacionHora15
-        '
-        Me.lblTransacionHora15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransacionHora15.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones15", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransacionHora15, "lblTransacionHora15")
-        Me.lblTransacionHora15.Name = "lblTransacionHora15"
-        Me.lblTransacionHora15.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones15
-        '
-        'lblTransacionHora16
-        '
-        Me.lblTransacionHora16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransacionHora16.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones16", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransacionHora16, "lblTransacionHora16")
-        Me.lblTransacionHora16.Name = "lblTransacionHora16"
-        Me.lblTransacionHora16.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones16
-        '
-        'lblTransacionHora17
-        '
-        Me.lblTransacionHora17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransacionHora17.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones17", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransacionHora17, "lblTransacionHora17")
-        Me.lblTransacionHora17.Name = "lblTransacionHora17"
-        Me.lblTransacionHora17.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones17
-        '
-        'lblTransacionHora18
-        '
-        Me.lblTransacionHora18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransacionHora18.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones18", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransacionHora18, "lblTransacionHora18")
-        Me.lblTransacionHora18.Name = "lblTransacionHora18"
-        Me.lblTransacionHora18.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones18
-        '
-        'lblTransacionHora19
-        '
-        Me.lblTransacionHora19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransacionHora19.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones19", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransacionHora19, "lblTransacionHora19")
-        Me.lblTransacionHora19.Name = "lblTransacionHora19"
-        Me.lblTransacionHora19.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones19
-        '
-        'lblTransacionHora20
-        '
-        Me.lblTransacionHora20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransacionHora20.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones20", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransacionHora20, "lblTransacionHora20")
-        Me.lblTransacionHora20.Name = "lblTransacionHora20"
-        Me.lblTransacionHora20.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones20
-        '
-        'lblTransacionHora21
-        '
-        Me.lblTransacionHora21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransacionHora21.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones21", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransacionHora21, "lblTransacionHora21")
-        Me.lblTransacionHora21.Name = "lblTransacionHora21"
-        Me.lblTransacionHora21.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones21
-        '
-        'lblTransacionHora22
-        '
-        Me.lblTransacionHora22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransacionHora22.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones22", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransacionHora22, "lblTransacionHora22")
-        Me.lblTransacionHora22.Name = "lblTransacionHora22"
-        Me.lblTransacionHora22.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones22
-        '
-        'lblTransacionHora00
-        '
-        Me.lblTransacionHora00.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransacionHora00.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones00", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransacionHora00, "lblTransacionHora00")
-        Me.lblTransacionHora00.Name = "lblTransacionHora00"
-        Me.lblTransacionHora00.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones00
-        '
-        'lblTransacionHora23
-        '
-        Me.lblTransacionHora23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransacionHora23.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Transaciones23", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransacionHora23, "lblTransacionHora23")
-        Me.lblTransacionHora23.Name = "lblTransacionHora23"
-        Me.lblTransacionHora23.Text = Global.EstadisticasDucos.My.MySettings.Default.Transaciones23
-        '
-        'lblTransacionHoraTotal
-        '
-        Me.lblTransacionHoraTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTransacionHoraTotal.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "TransacionesTotales", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        resources.ApplyResources(Me.lblTransacionHoraTotal, "lblTransacionHoraTotal")
-        Me.lblTransacionHoraTotal.Name = "lblTransacionHoraTotal"
-        Me.lblTransacionHoraTotal.Text = Global.EstadisticasDucos.My.MySettings.Default.TransacionesTotales
+        'gbGananciasDolar
+        '
+        Me.gbGananciasDolar.Controls.Add(Me.Label38)
+        Me.gbGananciasDolar.Controls.Add(Me.lblGanadoDolar)
+        resources.ApplyResources(Me.gbGananciasDolar, "gbGananciasDolar")
+        Me.gbGananciasDolar.Name = "gbGananciasDolar"
+        Me.gbGananciasDolar.TabStop = False
+        '
+        'Button1
+        '
+        resources.ApplyResources(Me.Button1, "Button1")
+        Me.Button1.Name = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Form1
         '
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.Controls.Add(Me.WebBrowser1)
         Me.Controls.Add(Me.PanelOculto)
         Me.Controls.Add(Me.gbTemp)
         Me.Controls.Add(Me.gbPrecioDolar)
@@ -5535,6 +5536,12 @@ Partial Class Form1
         CType(Me.Chart6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
+        Me.gbMes.ResumeLayout(False)
+        Me.gbAños.ResumeLayout(False)
+        Me.gbEstadisticasGlobales.ResumeLayout(False)
+        Me.gbEstadisticasGlobales.PerformLayout()
+        Me.gbAño.ResumeLayout(False)
+        Me.gbHoras.ResumeLayout(False)
         Me.TabPage2.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
         CType(Me.Chart7, System.ComponentModel.ISupportInitialize).EndInit()
@@ -5549,7 +5556,6 @@ Partial Class Form1
         Me.gbNumeroMineros.ResumeLayout(False)
         Me.gbNumeroMineros.PerformLayout()
         Me.TabPage4.ResumeLayout(False)
-        Me.TabPage4.PerformLayout()
         Me.gbOtros.ResumeLayout(False)
         Me.gbOtros.PerformLayout()
         Me.gbRPI.ResumeLayout(False)
@@ -5575,6 +5581,9 @@ Partial Class Form1
         Me.TabPage6.PerformLayout()
         Me.TabPage7.ResumeLayout(False)
         Me.gbTemperatura.ResumeLayout(False)
+        CType(Me.txtFanAmarillo2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtFanVerde2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtGradosFan2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.gbOpciones.ResumeLayout(False)
         Me.gbOpciones.PerformLayout()
         Me.gbUser.ResumeLayout(False)
@@ -5592,20 +5601,11 @@ Partial Class Form1
         CType(Me.picFanAni, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelOculto.ResumeLayout(False)
         Me.PanelOculto.PerformLayout()
-        Me.gbGananciasDolar.ResumeLayout(False)
-        Me.gbGananciasDolar.PerformLayout()
-        Me.gbAño.ResumeLayout(False)
-        Me.gbAños.ResumeLayout(False)
-        Me.gbEstadisticasGlobales.ResumeLayout(False)
-        Me.gbEstadisticasGlobales.PerformLayout()
-        Me.gbHoras.ResumeLayout(False)
-        Me.gbMes.ResumeLayout(False)
-        CType(Me.txtFanAmarillo2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txtFanVerde2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txtGradosFan2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtGradosFan, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtFanAmarillo, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtFanVerde, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.gbGananciasDolar.ResumeLayout(False)
+        Me.gbGananciasDolar.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -5825,7 +5825,6 @@ Partial Class Form1
     Friend WithEvents txtTotalHases As TextBox
     Friend WithEvents txtTotalMineros As TextBox
     Friend WithEvents WebBrowser1 As WebBrowser
-    Friend WithEvents Label32 As Label
     Friend WithEvents gbMes As GroupBox
     Friend WithEvents lblMesDifencia31 As Label
     Friend WithEvents lblMesDifencia01 As Label
@@ -6219,4 +6218,5 @@ Partial Class Form1
     Friend WithEvents lblTransacionHora03 As Label
     Friend WithEvents lblTransacionHora02 As Label
     Friend WithEvents lblTransacionHora01 As Label
+    Friend WithEvents Button1 As Button
 End Class

@@ -5,8 +5,8 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 if ($Fecha !=''){
-    echo $Fecha. " - ".$Dato ."= " .$Valor;
-    $sql = "UPDATE horas SET ".$Dato."='".$Valor."' WHERE Fecha='".$Fecha."'";
+    echo $Fecha. " - ".$Hora ."= " .$Valor;
+    $sql = "UPDATE horas SET ".$Hora."='".$Valor."' WHERE Fecha='".$Fecha."'";
     if ($conn->query($sql) === TRUE) {
      echo "<br>Datos Modificados Correctamente.";
     } else {

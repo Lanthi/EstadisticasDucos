@@ -565,7 +565,7 @@
     <value>Left</value>
   </data>
   <data name="Chart6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-478, -18</value>
+    <value>-478, -26</value>
   </data>
   <data name="Chart6.Size" type="System.Drawing.Size, System.Drawing">
     <value>10000, 120</value>
@@ -23162,7 +23162,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAACk
-        JQAAAk1TRnQBSQFMAgEBCQEAAVABBwFQAQcBEAEAARABAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFA
+        JQAAAk1TRnQBSQFMAgEBCQEAAVgBBwFYAQcBEAEAARABAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFA
         AwABMAMAAQEBAAEgBgABMBIAA4AB/jz/wAADgAH+AYACAAH/AYACAAH/AwAB/wMAAf8DAAH/AgABvgH/
         AYACAAH/AYACAAH/AwAB/wIAAZgB/wGAAgAB/wGAAgAB/wGAAgAB/wGAAgAB/wGAAgAB/8AAA4AB/gGA
         AgAB/wGAAgAB/wGAAgAB/wGAAgAB/wGAAgAB/wGAAgAB/wGAAgAB/wGAAgAB/wGAAgAB/wGAAgAB/wGA
@@ -24771,6 +24771,141 @@
   <data name="&gt;&gt;lblEtiquetaMineros.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <data name="&gt;&gt;lblEtiquetaDucoRecompensa.Name" xml:space="preserve">
+    <value>lblEtiquetaDucoRecompensa</value>
+  </data>
+  <data name="&gt;&gt;lblEtiquetaDucoRecompensa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblEtiquetaDucoRecompensa.Parent" xml:space="preserve">
+    <value>gbStaking</value>
+  </data>
+  <data name="&gt;&gt;lblEtiquetaDucoRecompensa.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblRecompensa.Name" xml:space="preserve">
+    <value>lblRecompensa</value>
+  </data>
+  <data name="&gt;&gt;lblRecompensa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblRecompensa.Parent" xml:space="preserve">
+    <value>gbStaking</value>
+  </data>
+  <data name="&gt;&gt;lblRecompensa.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lblEtiquetaEstimadodeVuelto.Name" xml:space="preserve">
+    <value>lblEtiquetaEstimadodeVuelto</value>
+  </data>
+  <data name="&gt;&gt;lblEtiquetaEstimadodeVuelto.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblEtiquetaEstimadodeVuelto.Parent" xml:space="preserve">
+    <value>gbStaking</value>
+  </data>
+  <data name="&gt;&gt;lblEtiquetaEstimadodeVuelto.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lblDeposito.Name" xml:space="preserve">
+    <value>lblDeposito</value>
+  </data>
+  <data name="&gt;&gt;lblDeposito.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblDeposito.Parent" xml:space="preserve">
+    <value>gbStaking</value>
+  </data>
+  <data name="&gt;&gt;lblDeposito.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;lblTiempoRestante.Name" xml:space="preserve">
+    <value>lblTiempoRestante</value>
+  </data>
+  <data name="&gt;&gt;lblTiempoRestante.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTiempoRestante.Parent" xml:space="preserve">
+    <value>gbStaking</value>
+  </data>
+  <data name="&gt;&gt;lblTiempoRestante.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;lblFechaFinDeposito.Name" xml:space="preserve">
+    <value>lblFechaFinDeposito</value>
+  </data>
+  <data name="&gt;&gt;lblFechaFinDeposito.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblFechaFinDeposito.Parent" xml:space="preserve">
+    <value>gbStaking</value>
+  </data>
+  <data name="&gt;&gt;lblFechaFinDeposito.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;lblEtiquetaFinDeposito.Name" xml:space="preserve">
+    <value>lblEtiquetaFinDeposito</value>
+  </data>
+  <data name="&gt;&gt;lblEtiquetaFinDeposito.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblEtiquetaFinDeposito.Parent" xml:space="preserve">
+    <value>gbStaking</value>
+  </data>
+  <data name="&gt;&gt;lblEtiquetaFinDeposito.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;lblEtiquetaStaking.Name" xml:space="preserve">
+    <value>lblEtiquetaStaking</value>
+  </data>
+  <data name="&gt;&gt;lblEtiquetaStaking.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblEtiquetaStaking.Parent" xml:space="preserve">
+    <value>gbStaking</value>
+  </data>
+  <data name="&gt;&gt;lblEtiquetaStaking.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;lblDucoDeposito.Name" xml:space="preserve">
+    <value>lblDucoDeposito</value>
+  </data>
+  <data name="&gt;&gt;lblDucoDeposito.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblDucoDeposito.Parent" xml:space="preserve">
+    <value>gbStaking</value>
+  </data>
+  <data name="&gt;&gt;lblDucoDeposito.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="gbStaking.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="gbStaking.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 460</value>
+  </data>
+  <data name="gbStaking.Size" type="System.Drawing.Size, System.Drawing">
+    <value>237, 130</value>
+  </data>
+  <data name="gbStaking.TabIndex" type="System.Int32, mscorlib">
+    <value>153</value>
+  </data>
+  <data name="gbStaking.Text" xml:space="preserve">
+    <value>Staking:</value>
+  </data>
+  <data name="&gt;&gt;gbStaking.Name" xml:space="preserve">
+    <value>gbStaking</value>
+  </data>
+  <data name="&gt;&gt;gbStaking.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbStaking.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gbStaking.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="lblEtiquetaDucoRecompensa.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -25106,33 +25241,6 @@
   </data>
   <data name="&gt;&gt;lblDucoDeposito.ZOrder" xml:space="preserve">
     <value>8</value>
-  </data>
-  <data name="gbStaking.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
-  </data>
-  <data name="gbStaking.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 460</value>
-  </data>
-  <data name="gbStaking.Size" type="System.Drawing.Size, System.Drawing">
-    <value>237, 130</value>
-  </data>
-  <data name="gbStaking.TabIndex" type="System.Int32, mscorlib">
-    <value>153</value>
-  </data>
-  <data name="gbStaking.Text" xml:space="preserve">
-    <value>Staking:</value>
-  </data>
-  <data name="&gt;&gt;gbStaking.Name" xml:space="preserve">
-    <value>gbStaking</value>
-  </data>
-  <data name="&gt;&gt;gbStaking.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gbStaking.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;gbStaking.ZOrder" xml:space="preserve">
-    <value>3</value>
   </data>
   <data name="&gt;&gt;lblHumedad.Name" xml:space="preserve">
     <value>lblHumedad</value>

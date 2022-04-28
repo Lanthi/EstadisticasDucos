@@ -76,6 +76,12 @@ Public Class Form1
     Private myCmd As SqlCommand
     Private myReader As SqlDataReader
     Private results As String
+    Dim VarResetDia As Boolean = False
+    Dim TotalDia As Decimal
+    Dim TotalMes As Decimal
+    Dim TotalAño As Decimal
+    Dim MesActual As String
+
     Private Sub BalanceHora()
         Try
             If lblBalanceHora01.Text <> 0 And lblBalanceHora00.Text <> 0 Then lblHoraDiferencia00.Text = FormatDuco(CDec(lblBalanceHora01.Text) - CDec(lblBalanceHora00.Text) - TransacionPorHora(0), 8)
@@ -260,6 +266,11 @@ Public Class Form1
                 For K As Integer = 0 To 9
                     lstboxTop10.Items.Add(dict.item("Top 10 richest miners").item(K))
                 Next
+            End If
+            If DateAndTime.Month(Now) <= 9 Then
+                MesActual = "0" & DateAndTime.Month(Now)
+            Else
+                MesActual = DateAndTime.Month(Now)
             End If
             Dim HasesUsuario As Integer = 0
             Dim uriString2 As String = "https://server.duinocoin.com/users/" & txtUser.Text & "?limit=5000"
@@ -1409,7 +1420,7 @@ Public Class Form1
             TotalHoras += CDec(lblHoraDiferencia22.Text)
             TotalHoras += CDec(lblHoraDiferencia23.Text)
             lblTotalHora.Text = FormatDuco(TotalHoras, 6) & "¬"
-
+            TotalDia = FormatDuco(TotalHoras, 6)
             lblTotalMes.Text = 0
             lblTotalMes.Text += CDec(lblMesDifencia01.Text)
             lblTotalMes.Text += CDec(lblMesDifencia02.Text)
@@ -1442,7 +1453,9 @@ Public Class Form1
             lblTotalMes.Text += CDec(lblMesDifencia29.Text)
             lblTotalMes.Text += CDec(lblMesDifencia30.Text)
             lblTotalMes.Text += CDec(lblMesDifencia31.Text)
+            TotalMes = FormatDuco(lblTotalMes.Text, 99)
             lblTotalMes.Text = FormatDuco(lblTotalMes.Text, 99) & "¬"
+
         Catch ex As Exception
             If ActivarMensajesError = True Then MsgBox("Error!!" & vbCrLf & ex.Message)
         End Try
@@ -1750,7 +1763,10 @@ Public Class Form1
         Try
             Select Case Hour(Now)
                 Case 0
-                    If Hour(Now) = 0 And Minute(Now) = 0 Then ResetDia()
+                    If Minute(Now) = 0 And VarResetDia = False Then
+                        VarResetDia = True
+                        ResetDia()
+                    End If
                     lblReinicioApp.Text = -1
                     If lblBalanceHora00.Text = "0" Then lblBalanceHora00.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio00.Text = FormatDuco(CDec(txtDucoprice.Text), 97) : AñadirHoraSQL(DateAndTime.DateValue(Now), lblBalanceHora00.Text, lblPrecio00.Text, lblHoraDiferencia00.Text)
                     Select Case DateAndTime.Day(Now)
@@ -1851,7 +1867,7 @@ Public Class Form1
                         Case 30 : If lblMesBalance30.Text = "0" Then lblMesBalance30.Text = FormatDuco(txtbalance.Text, 96) : lblMesPrecio30.Text = FormatDuco(CDec(lblPrecioDia.Text), 97)
                         Case 31 : If lblMesBalance31.Text = "0" Then lblMesBalance31.Text = FormatDuco(txtbalance.Text, 96) : lblMesPrecio31.Text = FormatDuco(CDec(lblPrecioDia.Text), 97)
                     End Select
-                Case 1 : If lblBalanceHora01.Text = 0 Then lblBalanceHora01.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio01.Text = FormatDuco(CDec(txtDucoprice.Text), 97) : ActualizarHoraSQL(DateAndTime.DateValue(Now), "01", lblBalanceHora01.Text, lblPrecio01.Text, lblTransacionHora01.Text, lblHoraDiferencia01.Text)
+                Case 1 : VarResetDia = False : If lblBalanceHora01.Text = 0 Then lblBalanceHora01.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio01.Text = FormatDuco(CDec(txtDucoprice.Text), 97) : ActualizarHoraSQL(DateAndTime.DateValue(Now), "01", lblBalanceHora01.Text, lblPrecio01.Text, lblTransacionHora01.Text, lblHoraDiferencia01.Text)
                 Case 2 : If lblBalanceHora02.Text = 0 Then lblBalanceHora02.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio02.Text = FormatDuco(CDec(txtDucoprice.Text), 97) : ActualizarHoraSQL(DateAndTime.DateValue(Now), "02", lblBalanceHora02.Text, lblPrecio02.Text, lblTransacionHora02.Text, lblHoraDiferencia02.Text)
                 Case 3 : If lblBalanceHora03.Text = 0 Then lblBalanceHora03.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio03.Text = FormatDuco(CDec(txtDucoprice.Text), 97) : ActualizarHoraSQL(DateAndTime.DateValue(Now), "03", lblBalanceHora03.Text, lblPrecio03.Text, lblTransacionHora03.Text, lblHoraDiferencia03.Text)
                 Case 4 : If lblBalanceHora04.Text = 0 Then lblBalanceHora04.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio04.Text = FormatDuco(CDec(txtDucoprice.Text), 97) : ActualizarHoraSQL(DateAndTime.DateValue(Now), "04", lblBalanceHora04.Text, lblPrecio04.Text, lblTransacionHora04.Text, lblHoraDiferencia04.Text)
@@ -1979,6 +1995,7 @@ Public Class Form1
             Suma += lblGananciasAño10.Text
             Suma += lblGananciasAño11.Text
             Suma += lblGananciasAño12.Text
+            TotalAño = FormatDuco(Suma, 96)
             lblTotalGananciaAño.Text = FormatDuco(Suma, 96) & "¬"
             lblGanadoAño2022.Text = FormatDuco(Suma, 10)
             Suma = CDec(lblTransasionesAño01.Text)
@@ -2067,12 +2084,14 @@ Public Class Form1
             lblHora.Text = HoraString & ":" & MinutosString & ":" & SegundosString
             Select Case Segundos
                 Case 0 : Actualizar()
-                Case 5 : ActualizarHoraCampoSQL(DateValue(Now), "DucosTotal", lblTotalHora.Text)
+                Case 5 : ActualizarHoraCampoSQL(DateValue(Now), "DucosTotal", TotalDia)
                 Case 10 : ActualizarHoraCampoSQL(DateValue(Now), "PrecioMedio", lblPrecioDia.Text)
                 Case 15 : SubirTransacionesSQL()
                 Case 20 : ActualizaDiferenciaHoraSQL()
+                Case 24 : ActualizarMesCampoSQL(MesActual, "DucosTotal", TotalMes)
+                Case 28 : ActualizarMesCampoSQL(MesActual, "PrecioMedio", lblPrecioMes.Text)
                 Case 30 : Actualizar()
-                Case 35 : ActualizarHoraCampoSQL(DateValue(Now), "DucosTotal", lblTotalHora.Text)
+                Case 35 : ActualizarHoraCampoSQL(DateValue(Now), "DucosTotal", TotalDia)
                 Case 40 : ActualizarHoraCampoSQL(DateValue(Now), "PrecioMedio", lblPrecioDia.Text)
                 Case 45 : ActualizaDiferenciaHoraSQL()
             End Select
@@ -2430,13 +2449,13 @@ Public Class Form1
     Private Sub ActualizarHoraCampoSQL(ByVal Fecha As Date, ByVal Campo As String, ByVal Valor As String)
         WebBrowser1.Navigate("Http://localhost/updateCampo.php?Fecha=" & Fecha & "&Dato=" & Campo & "&Valor=" & Valor & "")
     End Sub
-    Private Sub ActualizarMesCampoSQL(ByVal Fecha As Date, ByVal Campo As String, ByVal Valor As String)
+    Private Sub ActualizarMesCampoSQL(ByVal Fecha As String, ByVal Campo As String, ByVal Valor As String)
         WebBrowser1.Navigate("Http://localhost/updateCampomes.php?Fecha=" & Fecha & "&Dato=" & Campo & "&Valor=" & Valor & "")
     End Sub
     Private Sub ActualizarHoraSQL(ByVal Fecha As Date, ByVal Hora As String, ByVal Balance As Decimal, ByVal Precio As Decimal, ByVal Diferencia As Decimal, ByVal Transaciones As Decimal)
         WebBrowser1.Navigate("http://localhost/UpdateHora.php?Fecha=" & Fecha & "&Hora=" & Hora & "&Balance=" & Balance & "&Precio=" & Precio & "&Diferencia=" & Diferencia & "&Transaciones=" & Transaciones & "")
     End Sub
-    Private Sub ActualizarMesSQL(ByVal Fecha As Date, ByVal Hora As String, ByVal Balance As Decimal, ByVal Precio As Decimal, ByVal Diferencia As Decimal, ByVal Transaciones As String)
+    Private Sub ActualizarMesSQL(ByVal Fecha As String, ByVal Hora As String, ByVal Balance As Decimal, ByVal Precio As Decimal, ByVal Diferencia As Decimal, ByVal Transaciones As String)
         WebBrowser1.Navigate("http://localhost/Updatemes.php?Fecha=" & Fecha & "&Hora=" & Hora & "&Balance=" & Balance & "&Precio=" & Precio & "&Diferencia=" & Diferencia & "&Transaciones=" & Transaciones & "")
     End Sub
     Private Sub AñadirMesSQL(ByVal Fecha As Date, ByVal Hora00 As Decimal, ByVal Balance As Decimal, ByVal Precio As Decimal, ByVal Diferencia00 As Decimal, ByVal Transaciones As Decimal)
@@ -2444,9 +2463,5 @@ Public Class Form1
     End Sub
     Private Sub ActualizarUsuarioSQL(ByVal ID As String, Balance As String, Precio As String, PrecioDolar As String, Ganancias As String, EstimadoDiario As String, EstimadoMes As String, Mineros As String, Hases As String, HasesLetras As String, Apuesta As String, Finaliza As String, Premio As String, Restante As String, Temp As String, Humedad As String, Fan As String)
         WebBrowser1.Navigate("http://localhost/UpdateUsuario.php?ID=" & ID & "&Balance=" & Balance & "&Precio=" & Precio & "&PrecioDolar=" & PrecioDolar & "&Ganancias=" & Ganancias & "&EstimadoDiario=" & EstimadoDiario & "&EstimadoMes=" & EstimadoMes & "&Mineros=" & Mineros & "&Hases=" & Hases & "&HasesLetras=" & HasesLetras & "&Apuesta=" & Apuesta & "&Finaliza=" & Finaliza & "&Premio=" & Premio & "&Restante=" & Restante & "&Temp=" & Temp & "&Humedad=" & Humedad & "&Fan=" & Fan & "")
-    End Sub
-
-    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
-        ActualizarHoraCampoSQL(DateValue(Now), "Precio02", lblPrecio02.Text)
     End Sub
 End Class

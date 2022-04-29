@@ -70,8 +70,9 @@ Public Class Form1
     Dim FanRojo As Integer
     Dim FanAmarillo As Integer
     Dim FanVerde As Integer
-    'Inherits System.Windows.Forms.Form
-    'Create ADO.NET objects.
+    Dim Fan As Boolean = False
+    Dim PrecioDolar As Decimal
+    Dim Restante As String
     Private myConn As SqlConnection
     Private myCmd As SqlCommand
     Private myReader As SqlDataReader
@@ -81,6 +82,10 @@ Public Class Form1
     Dim TotalMes As Decimal
     Dim TotalAño As Decimal
     Dim MesActual As String
+    Dim HoraActual As String
+    Dim Ganado As Decimal
+    Dim EstimadoDiaDetalle As Decimal
+    Dim EstimadoMesDetalle As Decimal
 
     Private Sub BalanceHora()
         Try
@@ -198,6 +203,19 @@ Public Class Form1
         '  THora = THora & Str(DateDiff("s", dInicio, dFin) Mod 60)
         sTiempo &= Format(CDate(THora), "HH:mm") & "h."
     End Function
+    Function ssTiempo(dInicio As Date, dFin As Date) As String
+        If cmbLenguaje.Text = "Spanish" Or cmbLenguaje.Text = "Español" Then
+            ssTiempo = Str((DateDiff("s", dInicio, dFin) \ 86400) Mod 365) & " dias, "
+        Else
+            ssTiempo = Str((DateDiff("s", dInicio, dFin) \ 86400) Mod 365) & " days, "
+        End If
+        Dim THora As String
+
+        THora = Str((DateDiff("s", dInicio, dFin) \ 3600) Mod 24) & ":"
+        THora &= Str((DateDiff("s", dInicio, dFin) \ 60) Mod 60) '& ":"
+        '  THora = THora & Str(DateDiff("s", dInicio, dFin) Mod 60)
+        ssTiempo &= Format(CDate(THora), "HH:mm") & "h."
+    End Function
     Function dTiempo(dInicio As Date, dFin As Date) As String
         dTiempo = Str((DateDiff("s", dInicio, dFin) \ 86400) Mod 365) & " days, "
         Dim THora As String
@@ -272,6 +290,11 @@ Public Class Form1
             Else
                 MesActual = DateAndTime.Month(Now)
             End If
+            If DateAndTime.Hour(Now) <= 9 Then
+                HoraActual = "0" & DateAndTime.Hour(Now)
+            Else
+                HoraActual = DateAndTime.Hour(Now)
+            End If
             Dim HasesUsuario As Integer = 0
             Dim uriString2 As String = "https://server.duinocoin.com/users/" & txtUser.Text & "?limit=5000"
             Dim uri2 As New Uri(uriString2)
@@ -296,6 +319,7 @@ Public Class Form1
                 lblFechaFinDeposito.Text = UnixTimeToDate(FechafinDeposito)
                 If cmbLenguaje.Text = "Spanish" Or cmbLenguaje.Text = "Español" Then
                     lblTiempoRestante.Text = "Restante:" & sTiempo(Now, lblFechaFinDeposito.Text)
+                    Restante = ssTiempo(Now, lblFechaFinDeposito.Text)
                 Else
                     lblTiempoRestante.Text = "Time Left:" & sTiempo(Now, lblFechaFinDeposito.Text)
                 End If
@@ -319,6 +343,8 @@ Public Class Form1
             lblEstimadoMes.Text = Format(ValorEstimadoMes, "###0.00")
             If cmbLenguaje.Text = "Spanish" Or cmbLenguaje.Text = "Español" Then
                 lblEstimadoDetalle.Text = "Diario (≈" & Format(ValorEstimado * CDec(txtDucoprice.Text), "0.000") & "$)"
+                EstimadoDiaDetalle = Format(ValorEstimado * CDec(txtDucoprice.Text), "0.000")
+                EstimadoMesDetalle = Format(ValorEstimadoMes * CDec(txtDucoprice.Text), "0.000")
                 lblEstimadoMesDetalle.Text = "Mensual (≈" & Format(ValorEstimadoMes * CDec(txtDucoprice.Text), "0.000") & "$)"
             Else
                 lblEstimadoDetalle.Text = "Daily (≈" & Format(ValorEstimado * CDec(txtDucoprice.Text), "0.000") & "$)"
@@ -358,6 +384,7 @@ Public Class Form1
             Chart6.ChartAreas(0).RecalculateAxesScale()
             lblValorEuro.Text = Euro & "€"
             lblGanado.Text = Format(CDec(txtbalance.Text) * CDec(txtDucoprice.Text) * Euro, "###0.0000") & "€"
+            Ganado = Format(CDec(txtbalance.Text) * CDec(txtDucoprice.Text) * Euro, "###0.0000")
             lblGanadoDolar.Text = Format(CDec(txtbalance.Text) * CDec(txtDucoprice.Text), "###0.0000")
             lstBalanceTiempoReal.Items.Add(txtbalance.Text)
             lstDUCOTiempoReal.Items.Add(txtDucoprice.Text)
@@ -2094,6 +2121,57 @@ Public Class Form1
                 Case 35 : ActualizarHoraCampoSQL(DateValue(Now), "DucosTotal", TotalDia)
                 Case 40 : ActualizarHoraCampoSQL(DateValue(Now), "PrecioMedio", lblPrecioDia.Text)
                 Case 45 : ActualizaDiferenciaHoraSQL()
+                Case 49 : ActualizarUsuarioSQL("Lanthi", txtbalance.Text, txtDucoprice.Text, Euro, Ganado, lblEstimado.Text, EstimadoDiaDetalle, lblEstimadoMes.Text, EstimadoMesDetalle, lblMineros.Text, lblHases.Text, lblHaseEstiquta.Text, lblDeposito.Text, lblFechaFinDeposito.Text, lblRecompensa.Text, Restante, Temperatura, Humedad, Fan, lblTotalTransasiones.Text, lblDucosTotales.Text, lblTotalGanadoAños.Text)
+                Case 53
+                    Select Case DateAndTime.Day(Now)
+                        Case 1 : ActualizarMesSQL(MesActual, "01", lblMesBalance01.Text, lblMesPrecio01.Text, lblMesDifencia01.Text, lblTransacionMes01.Text)
+                        Case 2 : ActualizarMesSQL(MesActual, "02", lblMesBalance02.Text, lblMesPrecio02.Text, lblMesDifencia02.Text, lblTransacionMes02.Text)
+                        Case 3 : ActualizarMesSQL(MesActual, "03", lblMesBalance03.Text, lblMesPrecio03.Text, lblMesDifencia03.Text, lblTransacionMes03.Text)
+                        Case 4 : ActualizarMesSQL(MesActual, "04", lblMesBalance04.Text, lblMesPrecio04.Text, lblMesDifencia04.Text, lblTransacionMes04.Text)
+                        Case 5 : ActualizarMesSQL(MesActual, "05", lblMesBalance05.Text, lblMesPrecio05.Text, lblMesDifencia05.Text, lblTransacionMes05.Text)
+                        Case 6 : ActualizarMesSQL(MesActual, "06", lblMesBalance06.Text, lblMesPrecio06.Text, lblMesDifencia06.Text, lblTransacionMes06.Text)
+                        Case 7 : ActualizarMesSQL(MesActual, "07", lblMesBalance07.Text, lblMesPrecio07.Text, lblMesDifencia07.Text, lblTransacionMes07.Text)
+                        Case 8 : ActualizarMesSQL(MesActual, "08", lblMesBalance08.Text, lblMesPrecio08.Text, lblMesDifencia08.Text, lblTransacionMes08.Text)
+                        Case 9 : ActualizarMesSQL(MesActual, "09", lblMesBalance09.Text, lblMesPrecio09.Text, lblMesDifencia09.Text, lblTransacionMes09.Text)
+                        Case 10 : ActualizarMesSQL(MesActual, "10", lblMesBalance10.Text, lblMesPrecio10.Text, lblMesDifencia10.Text, lblTransacionMes10.Text)
+                        Case 11 : ActualizarMesSQL(MesActual, "11", lblMesBalance11.Text, lblMesPrecio11.Text, lblMesDifencia11.Text, lblTransacionMes11.Text)
+                        Case 12 : ActualizarMesSQL(MesActual, "12", lblMesBalance12.Text, lblMesPrecio12.Text, lblMesDifencia12.Text, lblTransacionMes12.Text)
+                        Case 13 : ActualizarMesSQL(MesActual, "13", lblMesBalance13.Text, lblMesPrecio13.Text, lblMesDifencia13.Text, lblTransacionMes13.Text)
+                        Case 14 : ActualizarMesSQL(MesActual, "14", lblMesBalance14.Text, lblMesPrecio14.Text, lblMesDifencia14.Text, lblTransacionMes14.Text)
+                        Case 15 : ActualizarMesSQL(MesActual, "15", lblMesBalance15.Text, lblMesPrecio15.Text, lblMesDifencia15.Text, lblTransacionMes15.Text)
+                        Case 16 : ActualizarMesSQL(MesActual, "16", lblMesBalance16.Text, lblMesPrecio16.Text, lblMesDifencia16.Text, lblTransacionMes16.Text)
+                        Case 17 : ActualizarMesSQL(MesActual, "17", lblMesBalance17.Text, lblMesPrecio17.Text, lblMesDifencia17.Text, lblTransacionMes17.Text)
+                        Case 18 : ActualizarMesSQL(MesActual, "18", lblMesBalance18.Text, lblMesPrecio18.Text, lblMesDifencia18.Text, lblTransacionMes18.Text)
+                        Case 19 : ActualizarMesSQL(MesActual, "19", lblMesBalance19.Text, lblMesPrecio19.Text, lblMesDifencia19.Text, lblTransacionMes19.Text)
+                        Case 20 : ActualizarMesSQL(MesActual, "20", lblMesBalance20.Text, lblMesPrecio20.Text, lblMesDifencia20.Text, lblTransacionMes20.Text)
+                        Case 21 : ActualizarMesSQL(MesActual, "21", lblMesBalance21.Text, lblMesPrecio21.Text, lblMesDifencia21.Text, lblTransacionMes21.Text)
+                        Case 22 : ActualizarMesSQL(MesActual, "22", lblMesBalance22.Text, lblMesPrecio22.Text, lblMesDifencia22.Text, lblTransacionMes22.Text)
+                        Case 23 : ActualizarMesSQL(MesActual, "23", lblMesBalance23.Text, lblMesPrecio23.Text, lblMesDifencia23.Text, lblTransacionMes23.Text)
+                        Case 24 : ActualizarMesSQL(MesActual, "24", lblMesBalance24.Text, lblMesPrecio24.Text, lblMesDifencia24.Text, lblTransacionMes24.Text)
+                        Case 25 : ActualizarMesSQL(MesActual, "25", lblMesBalance25.Text, lblMesPrecio25.Text, lblMesDifencia25.Text, lblTransacionMes25.Text)
+                        Case 26 : ActualizarMesSQL(MesActual, "26", lblMesBalance26.Text, lblMesPrecio26.Text, lblMesDifencia26.Text, lblTransacionMes26.Text)
+                        Case 27 : ActualizarMesSQL(MesActual, "27", lblMesBalance27.Text, lblMesPrecio27.Text, lblMesDifencia27.Text, lblTransacionMes27.Text)
+                        Case 28 : ActualizarMesSQL(MesActual, "28", lblMesBalance28.Text, lblMesPrecio28.Text, lblMesDifencia28.Text, lblTransacionMes28.Text)
+                        Case 29 : ActualizarMesSQL(MesActual, "29", lblMesBalance29.Text, lblMesPrecio29.Text, lblMesDifencia29.Text, lblTransacionMes29.Text)
+                        Case 30 : ActualizarMesSQL(MesActual, "30", lblMesBalance30.Text, lblMesPrecio30.Text, lblMesDifencia30.Text, lblTransacionMes30.Text)
+                        Case 31 : ActualizarMesSQL(MesActual, "31", lblMesBalance31.Text, lblMesPrecio31.Text, lblMesDifencia31.Text, lblTransacionMes31.Text)
+                    End Select
+                Case 56
+                    Select Case DateAndTime.Month(Now)
+                        Case 1 : ActualizarAñoSQL(MesActual, "2022", lblBalanceAño01.Text, lblPrecioAño01.Text, lblGananciasAño01.Text, lblTransasionesAño01.Text)
+                        Case 2 : ActualizarAñoSQL(MesActual, "2022", lblBalanceAño02.Text, lblPrecioAño02.Text, lblGananciasAño02.Text, lblTransasionesAño02.Text)
+                        Case 3 : ActualizarAñoSQL(MesActual, "03", lblBalanceAño03.Text, lblPrecioAño03.Text, lblGananciasAño03.Text, lblTransasionesAño03.Text)
+                        Case 4 : ActualizarAñoSQL(MesActual, "04", lblBalanceAño04.Text, lblPrecioAño04.Text, lblGananciasAño04.Text, lblTransasionesAño04.Text)
+                        Case 5 : ActualizarAñoSQL(MesActual, "05", lblBalanceAño05.Text, lblPrecioAño05.Text, lblGananciasAño05.Text, lblTransasionesAño05.Text)
+                        Case 6 : ActualizarAñoSQL(MesActual, "06", lblBalanceAño06.Text, lblPrecioAño06.Text, lblGananciasAño06.Text, lblTransasionesAño06.Text)
+                        Case 7 : ActualizarAñoSQL(MesActual, "07", lblBalanceAño07.Text, lblPrecioAño07.Text, lblGananciasAño07.Text, lblTransasionesAño07.Text)
+                        Case 8 : ActualizarAñoSQL(MesActual, "08", lblBalanceAño08.Text, lblPrecioAño08.Text, lblGananciasAño08.Text, lblTransasionesAño08.Text)
+                        Case 9 : ActualizarAñoSQL(MesActual, "09", lblBalanceAño09.Text, lblPrecioAño09.Text, lblGananciasAño09.Text, lblTransasionesAño09.Text)
+                        Case 10 : ActualizarAñoSQL(MesActual, "10", lblBalanceAño10.Text, lblPrecioAño10.Text, lblGananciasAño10.Text, lblTransasionesAño10.Text)
+                        Case 11 : ActualizarAñoSQL(MesActual, "11", lblBalanceAño11.Text, lblPrecioAño11.Text, lblGananciasAño11.Text, lblTransasionesAño11.Text)
+                        Case 12 : ActualizarAñoSQL(MesActual, "12", lblBalanceAño12.Text, lblPrecioAño12.Text, lblGananciasAño12.Text, lblTransasionesAño12.Text)
+                    End Select
+
             End Select
             Select Case Minutos
                 Case 0, "00" : If LogAñadido = False Then Log()
@@ -2105,9 +2183,11 @@ Public Class Form1
             If CInt(Temperatura) >= CInt(txtGradosFan.Value) Then
                 picFan.Visible = False
                 picFanAni.Visible = True
+                Fan = True
             Else
                 picFan.Visible = True
                 picFanAni.Visible = False
+                Fan = False
             End If
             If Temperatura >= CInt(txtGradosFan.Value) Then
                 lblTemperatura.ForeColor = Color.Red
@@ -2461,7 +2541,10 @@ Public Class Form1
     Private Sub AñadirMesSQL(ByVal Fecha As Date, ByVal Hora00 As Decimal, ByVal Balance As Decimal, ByVal Precio As Decimal, ByVal Diferencia00 As Decimal, ByVal Transaciones As Decimal)
         WebBrowser1.Navigate("http://localhost/AddDateMes.php?Fecha=" & Fecha & "&Hora=" & Hora00 & "&Balance=" & Balance & "&Precio=" & Precio & "&Diferencia=" & Diferencia00 & "&Transaciones=" & Transaciones & "")
     End Sub
-    Private Sub ActualizarUsuarioSQL(ByVal ID As String, Balance As String, Precio As String, PrecioDolar As String, Ganancias As String, EstimadoDiario As String, EstimadoMes As String, Mineros As String, Hases As String, HasesLetras As String, Apuesta As String, Finaliza As String, Premio As String, Restante As String, Temp As String, Humedad As String, Fan As String)
-        WebBrowser1.Navigate("http://localhost/UpdateUsuario.php?ID=" & ID & "&Balance=" & Balance & "&Precio=" & Precio & "&PrecioDolar=" & PrecioDolar & "&Ganancias=" & Ganancias & "&EstimadoDiario=" & EstimadoDiario & "&EstimadoMes=" & EstimadoMes & "&Mineros=" & Mineros & "&Hases=" & Hases & "&HasesLetras=" & HasesLetras & "&Apuesta=" & Apuesta & "&Finaliza=" & Finaliza & "&Premio=" & Premio & "&Restante=" & Restante & "&Temp=" & Temp & "&Humedad=" & Humedad & "&Fan=" & Fan & "")
+    Private Sub ActualizarUsuarioSQL(ByVal Usuario As String, Balance As String, Precio As String, PrecioDolar As String, Ganancias As String, EstimadoDiario As String, EstimadoDiarioDetalle As String, EstimadoMes As String, EstimadoMesDetalle As String, Mineros As String, Hases As String, HasesLetras As String, Apuesta As String, Finaliza As String, Premio As String, Restante As String, Temp As String, Humedad As String, Fan As String, TransacionesTotales As String, DucosTotal As String, GananciasTotal As String)
+        WebBrowser1.Navigate("http://localhost/UpdateUsuario.php?Usuario=" & Usuario & "&Balance=" & Balance & "&Precio=" & Precio & "&PrecioDolar=" & PrecioDolar & "&Ganancias=" & Ganancias & "&EstimadoDiario=" & EstimadoDiario & "&EstimadoDiarioDetalle=" & EstimadoDiarioDetalle & "&EstimadoMes=" & EstimadoMes & "&EstimadoMesDetalle=" & EstimadoMesDetalle & "&Mineros=" & Mineros & "&Hases=" & Hases & "&HasesLetras=" & HasesLetras & "&Apuesta=" & Apuesta & "&Finaliza=" & Finaliza & "&Premio=" & Premio & "&Restante=" & Restante & "&Temp=" & Temp & "&Humedad=" & Humedad & "&Fan=" & Fan & "&TransacionesTotales=" & TransacionesTotales & "&DucosTotal=" & DucosTotal & "&GananciasTotal=" & GananciasTotal & "")
+    End Sub
+    Private Sub ActualizarAñoSQL(ByVal Fecha As String, ByVal Hora As String, ByVal Balance As Decimal, ByVal Precio As Decimal, ByVal Diferencia As Decimal, ByVal Transaciones As String)
+        WebBrowser1.Navigate("http://localhost/UpdateAno.php?Fecha=" & Fecha & "&Hora=" & Hora & "&Balance=" & Balance & "&Precio=" & Precio & "&Diferencia=" & Diferencia & "&Transaciones=" & Transaciones & "")
     End Sub
 End Class

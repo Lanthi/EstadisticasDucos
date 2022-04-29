@@ -2115,8 +2115,12 @@ Public Class Form1
             lblHora.Text = HoraString & ":" & MinutosString & ":" & SegundosString
             Select Case Segundos
                 Case 0 : Actualizar()
-                Case 5 : ActualizarHoraCampoSQL(DateValue(Now), "DucosTotal", TotalDia)
-                Case 10 : ActualizarHoraCampoSQL(DateValue(Now), "PrecioMedio", lblPrecioDia.Text)
+                Case 2 : ActualizarHoraCampoSQL(DateValue(Now), "DucosTotal", TotalDia)
+                Case 4 : ActualizarHoraCampoSQL(DateValue(Now), "PrecioMedio", lblPrecioDia.Text)
+                Case 6 : ActualizarAñosSQL("2022", "2022", lblBalanceAño2022.Text, lblPrecioAño2022.Text, lblGanadoAño2022.Text, lblTransasionesAño2022.Text)
+                Case 8 : ActualizarAñosCampoSQL("2022", "PrecioMedio", lblPrecioMedioTodosAños.Text)
+                Case 10 : ActualizarAñosCampoSQL("2022", "TransacionesTotal", lblTransasionesAñoTotal.Text)
+                Case 12 : ActualizarAñosCampoSQL("2022", "DucosTotal", lblGanadoAñoTotal.Text)
                 Case 15 : SubirTransacionesSQL()
                 Case 18 : ActualizarAñoCampoSQL("2022", "TransacionesTotal", lblTransacionesTotalAño.Text)
                 Case 22 : ActualizarAñoCampoSQL("2022", "DucosTotal", GanadoAño)
@@ -2540,6 +2544,9 @@ Public Class Form1
     Private Sub ActualizarAñoCampoSQL(ByVal Fecha As String, ByVal Campo As String, ByVal Valor As String)
         WebBrowser1.Navigate("Http://localhost/updateCampoAno.php?Fecha=" & Fecha & "&Dato=" & Campo & "&Valor=" & Valor & "")
     End Sub
+    Private Sub ActualizarAñosCampoSQL(ByVal Fecha As String, ByVal Campo As String, ByVal Valor As String)
+        WebBrowser1.Navigate("Http://localhost/updateCampoAnos.php?Fecha=" & Fecha & "&Dato=" & Campo & "&Valor=" & Valor & "")
+    End Sub
     Private Sub ActualizarHoraSQL(ByVal Fecha As Date, ByVal Hora As String, ByVal Balance As Decimal, ByVal Precio As Decimal, ByVal Diferencia As Decimal, ByVal Transaciones As Decimal)
         WebBrowser1.Navigate("http://localhost/UpdateHora.php?Fecha=" & Fecha & "&Hora=" & Hora & "&Balance=" & Balance & "&Precio=" & Precio & "&Diferencia=" & Diferencia & "&Transaciones=" & Transaciones & "")
     End Sub
@@ -2555,33 +2562,7 @@ Public Class Form1
     Private Sub ActualizarAñoSQL(ByVal Fecha As String, ByVal Hora As String, ByVal Balance As Decimal, ByVal Precio As Decimal, ByVal Diferencia As Decimal, ByVal Transaciones As String)
         WebBrowser1.Navigate("http://localhost/UpdateAno.php?Fecha=" & Fecha & "&Hora=" & Hora & "&Balance=" & Balance & "&Precio=" & Precio & "&Diferencia=" & Diferencia & "&Transaciones=" & Transaciones & "")
     End Sub
-
-    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
-        ActualizarAñoSQL("2022", "01", lblBalanceAño01.Text, lblPrecioAño01.Text, lblGananciasAño01.Text, lblTransasionesAño01.Text)
+    Private Sub ActualizarAñosSQL(ByVal Fecha As String, ByVal Hora As String, ByVal Balance As Decimal, ByVal Precio As Decimal, ByVal Diferencia As Decimal, ByVal Transaciones As String)
+        WebBrowser1.Navigate("http://localhost/UpdateAnos.php?Fecha=" & Fecha & "&Hora=" & Hora & "&Balance=" & Balance & "&Precio=" & Precio & "&Diferencia=" & Diferencia & "&Transaciones=" & Transaciones & "")
     End Sub
-
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        ActualizarAñoSQL("2022", "02", lblBalanceAño02.Text, lblPrecioAño02.Text, lblGananciasAño02.Text, lblTransasionesAño02.Text)
-    End Sub
-
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        ActualizarAñoSQL("2022", "03", lblBalanceAño03.Text, lblPrecioAño03.Text, lblGananciasAño03.Text, lblTransasionesAño03.Text)
-    End Sub
-
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        ActualizarAñoSQL("2022", "04", lblBalanceAño04.Text, lblPrecioAño04.Text, lblGananciasAño04.Text, lblTransasionesAño04.Text)
-    End Sub
-
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        ActualizarAñoCampoSQL("2022", "PrecioMedio", lblPrecioAnual.Text)
-    End Sub
-
-    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
-        ActualizarAñoCampoSQL("2022", "TransacionesTotal", lblTransacionesTotalAño.Text)
-    End Sub
-
-    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
-        ActualizarAñoCampoSQL("2022", "DucosTotal", GanadoAño)
-    End Sub
-
 End Class

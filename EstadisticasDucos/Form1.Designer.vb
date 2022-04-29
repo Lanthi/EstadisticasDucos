@@ -24,28 +24,28 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Dim ChartArea15 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend15 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series17 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea16 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend16 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series18 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea17 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend17 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series19 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea18 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend18 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series20 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea19 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend19 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series21 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea20 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend20 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series22 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea21 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend21 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series23 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim Series24 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea3 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend3 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series3 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea4 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend4 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series4 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea5 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend5 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series5 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea6 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend6 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series6 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea7 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend7 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series7 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Series8 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.lstBalanceTiempoReal = New System.Windows.Forms.ListBox()
         Me.lstDUCOTiempoReal = New System.Windows.Forms.ListBox()
@@ -592,13 +592,6 @@ Partial Class Form1
         Me.txtLogBalanceYprecio = New System.Windows.Forms.TextBox()
         Me.txtLog = New System.Windows.Forms.TextBox()
         Me.TabPage7 = New System.Windows.Forms.TabPage()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
         Me.gbTemperatura = New System.Windows.Forms.GroupBox()
         Me.txtFanAmarillo2 = New System.Windows.Forms.NumericUpDown()
@@ -607,12 +600,6 @@ Partial Class Form1
         Me.lblEtiquetaTempyellow = New System.Windows.Forms.Label()
         Me.txtGradosFan2 = New System.Windows.Forms.NumericUpDown()
         Me.lblEtiquetaTempMax = New System.Windows.Forms.Label()
-        Me.gbOpciones = New System.Windows.Forms.GroupBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.lblEtiquetaLenguaje = New System.Windows.Forms.Label()
-        Me.cmbDivisa1 = New System.Windows.Forms.ComboBox()
-        Me.cmbLenguaje1 = New System.Windows.Forms.ComboBox()
-        Me.chkActivarMensajes2 = New System.Windows.Forms.CheckBox()
         Me.gbUser = New System.Windows.Forms.GroupBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.lblUser = New System.Windows.Forms.Label()
@@ -662,6 +649,12 @@ Partial Class Form1
         Me.txtUser = New System.Windows.Forms.TextBox()
         Me.txtFanVerde = New System.Windows.Forms.NumericUpDown()
         Me.gbGananciasDolar = New System.Windows.Forms.GroupBox()
+        Me.chkActivarMensajes2 = New System.Windows.Forms.CheckBox()
+        Me.cmbLenguaje1 = New System.Windows.Forms.ComboBox()
+        Me.cmbDivisa1 = New System.Windows.Forms.ComboBox()
+        Me.lblEtiquetaLenguaje = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.gbOpciones = New System.Windows.Forms.GroupBox()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Chart2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.gbBalance.SuspendLayout()
@@ -705,7 +698,6 @@ Partial Class Form1
         CType(Me.txtFanAmarillo2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtFanVerde2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtGradosFan2, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.gbOpciones.SuspendLayout()
         Me.gbUser.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.gbGananciasEuro.SuspendLayout()
@@ -721,6 +713,7 @@ Partial Class Form1
         CType(Me.txtFanAmarillo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtFanVerde, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.gbGananciasDolar.SuspendLayout()
+        Me.gbOpciones.SuspendLayout()
         Me.SuspendLayout()
         '
         'Timer1
@@ -756,41 +749,41 @@ Partial Class Form1
         '
         'Chart1
         '
-        ChartArea15.Name = "ChartArea1"
-        Me.Chart1.ChartAreas.Add(ChartArea15)
-        Legend15.Name = "Legend1"
-        Me.Chart1.Legends.Add(Legend15)
+        ChartArea1.Name = "ChartArea1"
+        Me.Chart1.ChartAreas.Add(ChartArea1)
+        Legend1.Name = "Legend1"
+        Me.Chart1.Legends.Add(Legend1)
         resources.ApplyResources(Me.Chart1, "Chart1")
         Me.Chart1.Name = "Chart1"
-        Series17.BorderWidth = 3
-        Series17.ChartArea = "ChartArea1"
-        Series17.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
-        Series17.Color = System.Drawing.Color.Lime
-        Series17.IsVisibleInLegend = False
-        Series17.Legend = "Legend1"
-        Series17.Name = "Series1"
-        Series17.ToolTip = "#VAL"
-        Series17.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Me.Chart1.Series.Add(Series17)
+        Series1.BorderWidth = 3
+        Series1.ChartArea = "ChartArea1"
+        Series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
+        Series1.Color = System.Drawing.Color.Lime
+        Series1.IsVisibleInLegend = False
+        Series1.Legend = "Legend1"
+        Series1.Name = "Series1"
+        Series1.ToolTip = "#VAL"
+        Series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Me.Chart1.Series.Add(Series1)
         '
         'Chart2
         '
-        ChartArea16.Name = "ChartArea1"
-        Me.Chart2.ChartAreas.Add(ChartArea16)
-        Legend16.Name = "Legend1"
-        Me.Chart2.Legends.Add(Legend16)
+        ChartArea2.Name = "ChartArea1"
+        Me.Chart2.ChartAreas.Add(ChartArea2)
+        Legend2.Name = "Legend1"
+        Me.Chart2.Legends.Add(Legend2)
         resources.ApplyResources(Me.Chart2, "Chart2")
         Me.Chart2.Name = "Chart2"
-        Series18.BorderWidth = 3
-        Series18.ChartArea = "ChartArea1"
-        Series18.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
-        Series18.Color = System.Drawing.Color.DarkOrange
-        Series18.IsVisibleInLegend = False
-        Series18.Legend = "Legend1"
-        Series18.Name = "Series1"
-        Series18.ToolTip = "#VAL"
-        Series18.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Me.Chart2.Series.Add(Series18)
+        Series2.BorderWidth = 3
+        Series2.ChartArea = "ChartArea1"
+        Series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
+        Series2.Color = System.Drawing.Color.DarkOrange
+        Series2.IsVisibleInLegend = False
+        Series2.Legend = "Legend1"
+        Series2.Name = "Series1"
+        Series2.ToolTip = "#VAL"
+        Series2.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Me.Chart2.Series.Add(Series2)
         '
         'Label26
         '
@@ -832,94 +825,94 @@ Partial Class Form1
         '
         'Chart5
         '
-        ChartArea17.AxisX.MajorGrid.Interval = 0R
-        ChartArea17.AxisX.MajorGrid.IntervalOffset = 0R
-        ChartArea17.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
-        ChartArea17.Name = "ChartArea1"
-        Me.Chart5.ChartAreas.Add(ChartArea17)
-        Legend17.Name = "Legend1"
-        Me.Chart5.Legends.Add(Legend17)
+        ChartArea3.AxisX.MajorGrid.Interval = 0R
+        ChartArea3.AxisX.MajorGrid.IntervalOffset = 0R
+        ChartArea3.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
+        ChartArea3.Name = "ChartArea1"
+        Me.Chart5.ChartAreas.Add(ChartArea3)
+        Legend3.Name = "Legend1"
+        Me.Chart5.Legends.Add(Legend3)
         resources.ApplyResources(Me.Chart5, "Chart5")
         Me.Chart5.Name = "Chart5"
-        Series19.ChartArea = "ChartArea1"
-        Series19.Color = System.Drawing.Color.OrangeRed
-        Series19.IsVisibleInLegend = False
-        Series19.Legend = "Legend1"
-        Series19.Name = "Series1"
-        Series19.ToolTip = "#VAL"
-        Series19.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[String]
-        Series19.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
-        Me.Chart5.Series.Add(Series19)
+        Series3.ChartArea = "ChartArea1"
+        Series3.Color = System.Drawing.Color.OrangeRed
+        Series3.IsVisibleInLegend = False
+        Series3.Legend = "Legend1"
+        Series3.Name = "Series1"
+        Series3.ToolTip = "#VAL"
+        Series3.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[String]
+        Series3.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
+        Me.Chart5.Series.Add(Series3)
         '
         'Chart3
         '
-        ChartArea18.Name = "ChartArea1"
-        Me.Chart3.ChartAreas.Add(ChartArea18)
-        Legend18.Name = "Legend1"
-        Me.Chart3.Legends.Add(Legend18)
+        ChartArea4.Name = "ChartArea1"
+        Me.Chart3.ChartAreas.Add(ChartArea4)
+        Legend4.Name = "Legend1"
+        Me.Chart3.Legends.Add(Legend4)
         resources.ApplyResources(Me.Chart3, "Chart3")
         Me.Chart3.Name = "Chart3"
-        Series20.BorderWidth = 2
-        Series20.ChartArea = "ChartArea1"
-        Series20.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
-        Series20.Color = System.Drawing.Color.Fuchsia
-        Series20.EmptyPointStyle.IsValueShownAsLabel = True
-        Series20.EmptyPointStyle.IsVisibleInLegend = False
-        Series20.IsVisibleInLegend = False
-        Series20.LabelFormat = "0.00"
-        Series20.Legend = "Legend1"
-        Series20.Name = "Series1"
-        Series20.ToolTip = "#VAL"
-        Series20.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Series20.YValuesPerPoint = 4
-        Me.Chart3.Series.Add(Series20)
+        Series4.BorderWidth = 2
+        Series4.ChartArea = "ChartArea1"
+        Series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine
+        Series4.Color = System.Drawing.Color.Fuchsia
+        Series4.EmptyPointStyle.IsValueShownAsLabel = True
+        Series4.EmptyPointStyle.IsVisibleInLegend = False
+        Series4.IsVisibleInLegend = False
+        Series4.LabelFormat = "0.00"
+        Series4.Legend = "Legend1"
+        Series4.Name = "Series1"
+        Series4.ToolTip = "#VAL"
+        Series4.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Series4.YValuesPerPoint = 4
+        Me.Chart3.Series.Add(Series4)
         '
         'Chart4
         '
-        ChartArea19.AxisX.MajorGrid.Interval = 0R
-        ChartArea19.AxisX.MajorGrid.IntervalOffset = 0R
-        ChartArea19.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
-        ChartArea19.Name = "ChartArea1"
-        Me.Chart4.ChartAreas.Add(ChartArea19)
-        Legend19.Name = "Legend1"
-        Me.Chart4.Legends.Add(Legend19)
+        ChartArea5.AxisX.MajorGrid.Interval = 0R
+        ChartArea5.AxisX.MajorGrid.IntervalOffset = 0R
+        ChartArea5.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
+        ChartArea5.Name = "ChartArea1"
+        Me.Chart4.ChartAreas.Add(ChartArea5)
+        Legend5.Name = "Legend1"
+        Me.Chart4.Legends.Add(Legend5)
         resources.ApplyResources(Me.Chart4, "Chart4")
         Me.Chart4.Name = "Chart4"
-        Series21.ChartArea = "ChartArea1"
-        Series21.Color = System.Drawing.Color.Lime
-        Series21.IsVisibleInLegend = False
-        Series21.Legend = "Legend1"
-        Series21.Name = "Series1"
-        Series21.ToolTip = "#VAL"
-        Series21.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[String]
-        Series21.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
-        Me.Chart4.Series.Add(Series21)
+        Series5.ChartArea = "ChartArea1"
+        Series5.Color = System.Drawing.Color.Lime
+        Series5.IsVisibleInLegend = False
+        Series5.Legend = "Legend1"
+        Series5.Name = "Series1"
+        Series5.ToolTip = "#VAL"
+        Series5.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[String]
+        Series5.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
+        Me.Chart4.Series.Add(Series5)
         '
         'Chart6
         '
         resources.ApplyResources(Me.Chart6, "Chart6")
-        ChartArea20.AxisX.MajorGrid.Interval = 0R
-        ChartArea20.AxisX.MajorGrid.IntervalOffset = 0R
-        ChartArea20.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
-        ChartArea20.IsSameFontSizeForAllAxes = True
-        ChartArea20.Name = "ChartArea1"
-        Me.Chart6.ChartAreas.Add(ChartArea20)
-        Legend20.Enabled = False
-        Legend20.Name = "Legend1"
-        Me.Chart6.Legends.Add(Legend20)
+        ChartArea6.AxisX.MajorGrid.Interval = 0R
+        ChartArea6.AxisX.MajorGrid.IntervalOffset = 0R
+        ChartArea6.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
+        ChartArea6.IsSameFontSizeForAllAxes = True
+        ChartArea6.Name = "ChartArea1"
+        Me.Chart6.ChartAreas.Add(ChartArea6)
+        Legend6.Enabled = False
+        Legend6.Name = "Legend1"
+        Me.Chart6.Legends.Add(Legend6)
         Me.Chart6.Name = "Chart6"
-        Series22.BorderWidth = 3
-        Series22.ChartArea = "ChartArea1"
-        Series22.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line
-        Series22.Color = System.Drawing.Color.DarkOrchid
-        Series22.IsVisibleInLegend = False
-        Series22.IsXValueIndexed = True
-        Series22.Legend = "Legend1"
-        Series22.Name = "Series1"
-        Series22.ToolTip = "#VAL"
-        Series22.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Series22.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
-        Me.Chart6.Series.Add(Series22)
+        Series6.BorderWidth = 3
+        Series6.ChartArea = "ChartArea1"
+        Series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line
+        Series6.Color = System.Drawing.Color.DarkOrchid
+        Series6.IsVisibleInLegend = False
+        Series6.IsXValueIndexed = True
+        Series6.Legend = "Legend1"
+        Series6.Name = "Series1"
+        Series6.ToolTip = "#VAL"
+        Series6.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Series6.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
+        Me.Chart6.Series.Add(Series6)
         '
         'TabControl1
         '
@@ -4129,35 +4122,35 @@ Partial Class Form1
         '
         'Chart7
         '
-        ChartArea21.AxisX.MajorGrid.Interval = 0R
-        ChartArea21.AxisX.MajorGrid.IntervalOffset = 0R
-        ChartArea21.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
-        ChartArea21.Name = "ChartArea1"
-        Me.Chart7.ChartAreas.Add(ChartArea21)
-        Legend21.Name = "Legend1"
-        Me.Chart7.Legends.Add(Legend21)
+        ChartArea7.AxisX.MajorGrid.Interval = 0R
+        ChartArea7.AxisX.MajorGrid.IntervalOffset = 0R
+        ChartArea7.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
+        ChartArea7.Name = "ChartArea1"
+        Me.Chart7.ChartAreas.Add(ChartArea7)
+        Legend7.Name = "Legend1"
+        Me.Chart7.Legends.Add(Legend7)
         resources.ApplyResources(Me.Chart7, "Chart7")
         Me.Chart7.Name = "Chart7"
-        Series23.BorderWidth = 3
-        Series23.ChartArea = "ChartArea1"
-        Series23.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line
-        Series23.Color = System.Drawing.Color.OrangeRed
-        Series23.IsVisibleInLegend = False
-        Series23.Legend = "Legend1"
-        Series23.Name = "Series1"
-        Series23.ToolTip = "#VAL °"
-        Series23.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[String]
-        Series23.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
-        Series24.BorderWidth = 3
-        Series24.ChartArea = "ChartArea1"
-        Series24.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line
-        Series24.Color = System.Drawing.Color.DodgerBlue
-        Series24.IsVisibleInLegend = False
-        Series24.Legend = "Legend1"
-        Series24.Name = "Series2"
-        Series24.ToolTip = "#VAL %"
-        Me.Chart7.Series.Add(Series23)
-        Me.Chart7.Series.Add(Series24)
+        Series7.BorderWidth = 3
+        Series7.ChartArea = "ChartArea1"
+        Series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line
+        Series7.Color = System.Drawing.Color.OrangeRed
+        Series7.IsVisibleInLegend = False
+        Series7.Legend = "Legend1"
+        Series7.Name = "Series1"
+        Series7.ToolTip = "#VAL °"
+        Series7.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[String]
+        Series7.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Single]
+        Series8.BorderWidth = 3
+        Series8.ChartArea = "ChartArea1"
+        Series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line
+        Series8.Color = System.Drawing.Color.DodgerBlue
+        Series8.IsVisibleInLegend = False
+        Series8.Legend = "Legend1"
+        Series8.Name = "Series2"
+        Series8.ToolTip = "#VAL %"
+        Me.Chart7.Series.Add(Series7)
+        Me.Chart7.Series.Add(Series8)
         '
         'TabPage3
         '
@@ -5045,61 +5038,12 @@ Partial Class Form1
         'TabPage7
         '
         Me.TabPage7.BackColor = System.Drawing.Color.White
-        Me.TabPage7.Controls.Add(Me.Button7)
-        Me.TabPage7.Controls.Add(Me.Button6)
-        Me.TabPage7.Controls.Add(Me.Button5)
-        Me.TabPage7.Controls.Add(Me.Button4)
-        Me.TabPage7.Controls.Add(Me.Button3)
-        Me.TabPage7.Controls.Add(Me.Button2)
-        Me.TabPage7.Controls.Add(Me.Button1)
         Me.TabPage7.Controls.Add(Me.WebBrowser1)
         Me.TabPage7.Controls.Add(Me.gbTemperatura)
         Me.TabPage7.Controls.Add(Me.gbOpciones)
         Me.TabPage7.Controls.Add(Me.gbUser)
         resources.ApplyResources(Me.TabPage7, "TabPage7")
         Me.TabPage7.Name = "TabPage7"
-        '
-        'Button7
-        '
-        resources.ApplyResources(Me.Button7, "Button7")
-        Me.Button7.Name = "Button7"
-        Me.Button7.UseVisualStyleBackColor = True
-        '
-        'Button6
-        '
-        resources.ApplyResources(Me.Button6, "Button6")
-        Me.Button6.Name = "Button6"
-        Me.Button6.UseVisualStyleBackColor = True
-        '
-        'Button5
-        '
-        resources.ApplyResources(Me.Button5, "Button5")
-        Me.Button5.Name = "Button5"
-        Me.Button5.UseVisualStyleBackColor = True
-        '
-        'Button4
-        '
-        resources.ApplyResources(Me.Button4, "Button4")
-        Me.Button4.Name = "Button4"
-        Me.Button4.UseVisualStyleBackColor = True
-        '
-        'Button3
-        '
-        resources.ApplyResources(Me.Button3, "Button3")
-        Me.Button3.Name = "Button3"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        resources.ApplyResources(Me.Button2, "Button2")
-        Me.Button2.Name = "Button2"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button1
-        '
-        resources.ApplyResources(Me.Button1, "Button1")
-        Me.Button1.Name = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
         '
         'WebBrowser1
         '
@@ -5157,54 +5101,6 @@ Partial Class Form1
         '
         resources.ApplyResources(Me.lblEtiquetaTempMax, "lblEtiquetaTempMax")
         Me.lblEtiquetaTempMax.Name = "lblEtiquetaTempMax"
-        '
-        'gbOpciones
-        '
-        Me.gbOpciones.Controls.Add(Me.Label1)
-        Me.gbOpciones.Controls.Add(Me.lblEtiquetaLenguaje)
-        Me.gbOpciones.Controls.Add(Me.cmbDivisa1)
-        Me.gbOpciones.Controls.Add(Me.cmbLenguaje1)
-        Me.gbOpciones.Controls.Add(Me.chkActivarMensajes2)
-        resources.ApplyResources(Me.gbOpciones, "gbOpciones")
-        Me.gbOpciones.Name = "gbOpciones"
-        Me.gbOpciones.TabStop = False
-        '
-        'Label1
-        '
-        resources.ApplyResources(Me.Label1, "Label1")
-        Me.Label1.Name = "Label1"
-        '
-        'lblEtiquetaLenguaje
-        '
-        resources.ApplyResources(Me.lblEtiquetaLenguaje, "lblEtiquetaLenguaje")
-        Me.lblEtiquetaLenguaje.Name = "lblEtiquetaLenguaje"
-        '
-        'cmbDivisa1
-        '
-        Me.cmbDivisa1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Moneda", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.cmbDivisa1.FormattingEnabled = True
-        Me.cmbDivisa1.Items.AddRange(New Object() {resources.GetString("cmbDivisa1.Items"), resources.GetString("cmbDivisa1.Items1")})
-        resources.ApplyResources(Me.cmbDivisa1, "cmbDivisa1")
-        Me.cmbDivisa1.Name = "cmbDivisa1"
-        Me.cmbDivisa1.Text = Global.EstadisticasDucos.My.MySettings.Default.Moneda
-        '
-        'cmbLenguaje1
-        '
-        Me.cmbLenguaje1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Lenguaje", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.cmbLenguaje1.FormattingEnabled = True
-        Me.cmbLenguaje1.Items.AddRange(New Object() {resources.GetString("cmbLenguaje1.Items"), resources.GetString("cmbLenguaje1.Items1")})
-        resources.ApplyResources(Me.cmbLenguaje1, "cmbLenguaje1")
-        Me.cmbLenguaje1.Name = "cmbLenguaje1"
-        Me.cmbLenguaje1.Text = Global.EstadisticasDucos.My.MySettings.Default.Lenguaje
-        '
-        'chkActivarMensajes2
-        '
-        resources.ApplyResources(Me.chkActivarMensajes2, "chkActivarMensajes2")
-        Me.chkActivarMensajes2.Checked = Global.EstadisticasDucos.My.MySettings.Default.MensajesError
-        Me.chkActivarMensajes2.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkActivarMensajes2.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.EstadisticasDucos.My.MySettings.Default, "MensajesError", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.chkActivarMensajes2.Name = "chkActivarMensajes2"
-        Me.chkActivarMensajes2.UseVisualStyleBackColor = True
         '
         'gbUser
         '
@@ -5553,6 +5449,54 @@ Partial Class Form1
         Me.gbGananciasDolar.Name = "gbGananciasDolar"
         Me.gbGananciasDolar.TabStop = False
         '
+        'chkActivarMensajes2
+        '
+        resources.ApplyResources(Me.chkActivarMensajes2, "chkActivarMensajes2")
+        Me.chkActivarMensajes2.Checked = Global.EstadisticasDucos.My.MySettings.Default.MensajesError
+        Me.chkActivarMensajes2.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.chkActivarMensajes2.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.EstadisticasDucos.My.MySettings.Default, "MensajesError", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.chkActivarMensajes2.Name = "chkActivarMensajes2"
+        Me.chkActivarMensajes2.UseVisualStyleBackColor = True
+        '
+        'cmbLenguaje1
+        '
+        Me.cmbLenguaje1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Lenguaje", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.cmbLenguaje1.FormattingEnabled = True
+        Me.cmbLenguaje1.Items.AddRange(New Object() {resources.GetString("cmbLenguaje1.Items"), resources.GetString("cmbLenguaje1.Items1")})
+        resources.ApplyResources(Me.cmbLenguaje1, "cmbLenguaje1")
+        Me.cmbLenguaje1.Name = "cmbLenguaje1"
+        Me.cmbLenguaje1.Text = Global.EstadisticasDucos.My.MySettings.Default.Lenguaje
+        '
+        'cmbDivisa1
+        '
+        Me.cmbDivisa1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Moneda", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.cmbDivisa1.FormattingEnabled = True
+        Me.cmbDivisa1.Items.AddRange(New Object() {resources.GetString("cmbDivisa1.Items"), resources.GetString("cmbDivisa1.Items1")})
+        resources.ApplyResources(Me.cmbDivisa1, "cmbDivisa1")
+        Me.cmbDivisa1.Name = "cmbDivisa1"
+        Me.cmbDivisa1.Text = Global.EstadisticasDucos.My.MySettings.Default.Moneda
+        '
+        'lblEtiquetaLenguaje
+        '
+        resources.ApplyResources(Me.lblEtiquetaLenguaje, "lblEtiquetaLenguaje")
+        Me.lblEtiquetaLenguaje.Name = "lblEtiquetaLenguaje"
+        '
+        'Label1
+        '
+        resources.ApplyResources(Me.Label1, "Label1")
+        Me.Label1.Name = "Label1"
+        '
+        'gbOpciones
+        '
+        Me.gbOpciones.Controls.Add(Me.Label1)
+        Me.gbOpciones.Controls.Add(Me.lblEtiquetaLenguaje)
+        Me.gbOpciones.Controls.Add(Me.cmbDivisa1)
+        Me.gbOpciones.Controls.Add(Me.cmbLenguaje1)
+        Me.gbOpciones.Controls.Add(Me.chkActivarMensajes2)
+        resources.ApplyResources(Me.gbOpciones, "gbOpciones")
+        Me.gbOpciones.Name = "gbOpciones"
+        Me.gbOpciones.TabStop = False
+        '
         'Form1
         '
         resources.ApplyResources(Me, "$this")
@@ -5632,8 +5576,6 @@ Partial Class Form1
         CType(Me.txtFanAmarillo2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtFanVerde2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtGradosFan2, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.gbOpciones.ResumeLayout(False)
-        Me.gbOpciones.PerformLayout()
         Me.gbUser.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.gbGananciasEuro.ResumeLayout(False)
@@ -5654,6 +5596,8 @@ Partial Class Form1
         CType(Me.txtFanVerde, System.ComponentModel.ISupportInitialize).EndInit()
         Me.gbGananciasDolar.ResumeLayout(False)
         Me.gbGananciasDolar.PerformLayout()
+        Me.gbOpciones.ResumeLayout(False)
+        Me.gbOpciones.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -5852,20 +5796,14 @@ Partial Class Form1
     Friend WithEvents txtUser As TextBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents lblUser As Label
-    Friend WithEvents gbOpciones As GroupBox
     Friend WithEvents chkActivarMensajes As CheckBox
     Friend WithEvents Panel1 As Panel
     Friend WithEvents txtGradosFan As NumericUpDown
     Friend WithEvents txtFanVerde As NumericUpDown
     Friend WithEvents txtFanAmarillo As NumericUpDown
-    Friend WithEvents chkActivarMensajes2 As CheckBox
-    Friend WithEvents lblEtiquetaLenguaje As Label
-    Friend WithEvents cmbLenguaje1 As ComboBox
     Friend WithEvents cmbLenguaje As ComboBox
     Friend WithEvents PanelOculto As Panel
     Friend WithEvents gbGananciasDolar As GroupBox
-    Friend WithEvents Label1 As Label
-    Friend WithEvents cmbDivisa1 As ComboBox
     Friend WithEvents cmbDivisa As ComboBox
     Friend WithEvents gbAllMineros As GroupBox
     Friend WithEvents Label28 As Label
@@ -6266,11 +6204,10 @@ Partial Class Form1
     Friend WithEvents lblTransacionHora03 As Label
     Friend WithEvents lblTransacionHora02 As Label
     Friend WithEvents lblTransacionHora01 As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button7 As Button
-    Friend WithEvents Button6 As Button
-    Friend WithEvents Button5 As Button
+    Friend WithEvents gbOpciones As GroupBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents lblEtiquetaLenguaje As Label
+    Friend WithEvents cmbDivisa1 As ComboBox
+    Friend WithEvents cmbLenguaje1 As ComboBox
+    Friend WithEvents chkActivarMensajes2 As CheckBox
 End Class

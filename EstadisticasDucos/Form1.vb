@@ -84,6 +84,8 @@ Public Class Form1
     Dim MesActual As String
     Dim HoraActual As String
     Dim Ganado As Decimal
+    Dim GanadoAño As Decimal
+    Dim GanadoTotal As Decimal
     Dim EstimadoDiaDetalle As Decimal
     Dim EstimadoMesDetalle As Decimal
 
@@ -2023,7 +2025,8 @@ Public Class Form1
             Suma += lblGananciasAño11.Text
             Suma += lblGananciasAño12.Text
             TotalAño = FormatDuco(Suma, 96)
-            lblTotalGananciaAño.Text = FormatDuco(Suma, 96) & "¬"
+            lblTotalGananciaAño.Text = Format(Suma, "#0.00") & "¬"
+            GanadoAño = Format(Suma, "#0.00")
             lblGanadoAño2022.Text = FormatDuco(Suma, 10)
             Suma = CDec(lblTransasionesAño01.Text)
             Suma += CDec(lblTransasionesAño02.Text)
@@ -2049,6 +2052,7 @@ Public Class Form1
             lblDucosTotales.Text = Format(CDec(txtbalance.Text - Suma2), "###0.00")
             lblBalanceAño2022.Text = FormatDuco(CDec(txtbalance.Text - Suma2), 9)
             lblTotalGanadoAños.Text = Format(CDec(txtbalance.Text - Suma2) * CDec(txtDucoprice.Text) * Euro, "###0.00") & "€"
+            GanadoTotal = Format(CDec(txtbalance.Text - Suma2) * CDec(txtDucoprice.Text) * Euro, "###0.00")
             lblEtiquetaDuco.Left = lblDucosTotales.Left + lblDucosTotales.Width - 5
             My.Settings.Save()
         Catch ex As Exception
@@ -2114,14 +2118,15 @@ Public Class Form1
                 Case 5 : ActualizarHoraCampoSQL(DateValue(Now), "DucosTotal", TotalDia)
                 Case 10 : ActualizarHoraCampoSQL(DateValue(Now), "PrecioMedio", lblPrecioDia.Text)
                 Case 15 : SubirTransacionesSQL()
-                Case 20 : ActualizaDiferenciaHoraSQL()
+                Case 18 : ActualizarAñoCampoSQL("2022", "TransacionesTotal", lblTransacionesTotalAño.Text)
+                Case 22 : ActualizarAñoCampoSQL("2022", "DucosTotal", GanadoAño)
                 Case 24 : ActualizarMesCampoSQL(MesActual, "DucosTotal", TotalMes)
                 Case 28 : ActualizarMesCampoSQL(MesActual, "PrecioMedio", lblPrecioMes.Text)
                 Case 30 : Actualizar()
                 Case 35 : ActualizarHoraCampoSQL(DateValue(Now), "DucosTotal", TotalDia)
                 Case 40 : ActualizarHoraCampoSQL(DateValue(Now), "PrecioMedio", lblPrecioDia.Text)
                 Case 45 : ActualizaDiferenciaHoraSQL()
-                Case 49 : ActualizarUsuarioSQL("Lanthi", txtbalance.Text, txtDucoprice.Text, Euro, Ganado, lblEstimado.Text, EstimadoDiaDetalle, lblEstimadoMes.Text, EstimadoMesDetalle, lblMineros.Text, lblHases.Text, lblHaseEstiquta.Text, lblDeposito.Text, lblFechaFinDeposito.Text, lblRecompensa.Text, Restante, Temperatura, Humedad, Fan, lblTotalTransasiones.Text, lblDucosTotales.Text, lblTotalGanadoAños.Text)
+                Case 49 : ActualizarUsuarioSQL("Lanthi", txtbalance.Text, txtDucoprice.Text, Euro, Ganado, lblEstimado.Text, EstimadoDiaDetalle, lblEstimadoMes.Text, EstimadoMesDetalle, lblMineros.Text, lblHases.Text, lblHaseEstiquta.Text, lblDeposito.Text, lblFechaFinDeposito.Text, lblRecompensa.Text, Restante, Temperatura, Humedad, Fan, lblTotalTransasiones.Text, lblDucosTotales.Text, GanadoTotal)
                 Case 53
                     Select Case DateAndTime.Day(Now)
                         Case 1 : ActualizarMesSQL(MesActual, "01", lblMesBalance01.Text, lblMesPrecio01.Text, lblMesDifencia01.Text, lblTransacionMes01.Text)
@@ -2158,11 +2163,11 @@ Public Class Form1
                     End Select
                 Case 56
                     Select Case DateAndTime.Month(Now)
-                        Case 1 : ActualizarAñoSQL(MesActual, "2022", lblBalanceAño01.Text, lblPrecioAño01.Text, lblGananciasAño01.Text, lblTransasionesAño01.Text)
-                        Case 2 : ActualizarAñoSQL(MesActual, "2022", lblBalanceAño02.Text, lblPrecioAño02.Text, lblGananciasAño02.Text, lblTransasionesAño02.Text)
-                        Case 3 : ActualizarAñoSQL(MesActual, "03", lblBalanceAño03.Text, lblPrecioAño03.Text, lblGananciasAño03.Text, lblTransasionesAño03.Text)
-                        Case 4 : ActualizarAñoSQL(MesActual, "04", lblBalanceAño04.Text, lblPrecioAño04.Text, lblGananciasAño04.Text, lblTransasionesAño04.Text)
-                        Case 5 : ActualizarAñoSQL(MesActual, "05", lblBalanceAño05.Text, lblPrecioAño05.Text, lblGananciasAño05.Text, lblTransasionesAño05.Text)
+                        Case 1 : ActualizarAñoSQL("2022", "01", lblBalanceAño01.Text, lblPrecioAño01.Text, lblGananciasAño01.Text, lblTransasionesAño01.Text)
+                        Case 2 : ActualizarAñoSQL("2022", "02", lblBalanceAño02.Text, lblPrecioAño02.Text, lblGananciasAño02.Text, lblTransasionesAño02.Text)
+                        Case 3 : ActualizarAñoSQL("2022", "03", lblBalanceAño03.Text, lblPrecioAño03.Text, lblGananciasAño03.Text, lblTransasionesAño03.Text)
+                        Case 4 : ActualizarAñoSQL("2022", "04", lblBalanceAño04.Text, lblPrecioAño04.Text, lblGananciasAño04.Text, lblTransasionesAño04.Text)
+                        Case 5 : ActualizarAñoSQL("2022", "05", lblBalanceAño05.Text, lblPrecioAño05.Text, lblGananciasAño05.Text, lblTransasionesAño05.Text)
                         Case 6 : ActualizarAñoSQL(MesActual, "06", lblBalanceAño06.Text, lblPrecioAño06.Text, lblGananciasAño06.Text, lblTransasionesAño06.Text)
                         Case 7 : ActualizarAñoSQL(MesActual, "07", lblBalanceAño07.Text, lblPrecioAño07.Text, lblGananciasAño07.Text, lblTransasionesAño07.Text)
                         Case 8 : ActualizarAñoSQL(MesActual, "08", lblBalanceAño08.Text, lblPrecioAño08.Text, lblGananciasAño08.Text, lblTransasionesAño08.Text)
@@ -2171,7 +2176,7 @@ Public Class Form1
                         Case 11 : ActualizarAñoSQL(MesActual, "11", lblBalanceAño11.Text, lblPrecioAño11.Text, lblGananciasAño11.Text, lblTransasionesAño11.Text)
                         Case 12 : ActualizarAñoSQL(MesActual, "12", lblBalanceAño12.Text, lblPrecioAño12.Text, lblGananciasAño12.Text, lblTransasionesAño12.Text)
                     End Select
-
+                Case 58 : ActualizarAñoCampoSQL("2022", "PrecioMedio", lblPrecioAnual.Text)
             End Select
             Select Case Minutos
                 Case 0, "00" : If LogAñadido = False Then Log()
@@ -2532,6 +2537,9 @@ Public Class Form1
     Private Sub ActualizarMesCampoSQL(ByVal Fecha As String, ByVal Campo As String, ByVal Valor As String)
         WebBrowser1.Navigate("Http://localhost/updateCampomes.php?Fecha=" & Fecha & "&Dato=" & Campo & "&Valor=" & Valor & "")
     End Sub
+    Private Sub ActualizarAñoCampoSQL(ByVal Fecha As String, ByVal Campo As String, ByVal Valor As String)
+        WebBrowser1.Navigate("Http://localhost/updateCampoAno.php?Fecha=" & Fecha & "&Dato=" & Campo & "&Valor=" & Valor & "")
+    End Sub
     Private Sub ActualizarHoraSQL(ByVal Fecha As Date, ByVal Hora As String, ByVal Balance As Decimal, ByVal Precio As Decimal, ByVal Diferencia As Decimal, ByVal Transaciones As Decimal)
         WebBrowser1.Navigate("http://localhost/UpdateHora.php?Fecha=" & Fecha & "&Hora=" & Hora & "&Balance=" & Balance & "&Precio=" & Precio & "&Diferencia=" & Diferencia & "&Transaciones=" & Transaciones & "")
     End Sub
@@ -2547,4 +2555,33 @@ Public Class Form1
     Private Sub ActualizarAñoSQL(ByVal Fecha As String, ByVal Hora As String, ByVal Balance As Decimal, ByVal Precio As Decimal, ByVal Diferencia As Decimal, ByVal Transaciones As String)
         WebBrowser1.Navigate("http://localhost/UpdateAno.php?Fecha=" & Fecha & "&Hora=" & Hora & "&Balance=" & Balance & "&Precio=" & Precio & "&Diferencia=" & Diferencia & "&Transaciones=" & Transaciones & "")
     End Sub
+
+    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
+        ActualizarAñoSQL("2022", "01", lblBalanceAño01.Text, lblPrecioAño01.Text, lblGananciasAño01.Text, lblTransasionesAño01.Text)
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        ActualizarAñoSQL("2022", "02", lblBalanceAño02.Text, lblPrecioAño02.Text, lblGananciasAño02.Text, lblTransasionesAño02.Text)
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        ActualizarAñoSQL("2022", "03", lblBalanceAño03.Text, lblPrecioAño03.Text, lblGananciasAño03.Text, lblTransasionesAño03.Text)
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        ActualizarAñoSQL("2022", "04", lblBalanceAño04.Text, lblPrecioAño04.Text, lblGananciasAño04.Text, lblTransasionesAño04.Text)
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        ActualizarAñoCampoSQL("2022", "PrecioMedio", lblPrecioAnual.Text)
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        ActualizarAñoCampoSQL("2022", "TransacionesTotal", lblTransacionesTotalAño.Text)
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        ActualizarAñoCampoSQL("2022", "DucosTotal", GanadoAño)
+    End Sub
+
 End Class

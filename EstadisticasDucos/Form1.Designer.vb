@@ -600,6 +600,12 @@ Partial Class Form1
         Me.lblEtiquetaTempyellow = New System.Windows.Forms.Label()
         Me.txtGradosFan2 = New System.Windows.Forms.NumericUpDown()
         Me.lblEtiquetaTempMax = New System.Windows.Forms.Label()
+        Me.gbOpciones = New System.Windows.Forms.GroupBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblEtiquetaLenguaje = New System.Windows.Forms.Label()
+        Me.cmbDivisa1 = New System.Windows.Forms.ComboBox()
+        Me.cmbLenguaje1 = New System.Windows.Forms.ComboBox()
+        Me.chkActivarMensajes2 = New System.Windows.Forms.CheckBox()
         Me.gbUser = New System.Windows.Forms.GroupBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.lblUser = New System.Windows.Forms.Label()
@@ -649,12 +655,7 @@ Partial Class Form1
         Me.txtUser = New System.Windows.Forms.TextBox()
         Me.txtFanVerde = New System.Windows.Forms.NumericUpDown()
         Me.gbGananciasDolar = New System.Windows.Forms.GroupBox()
-        Me.chkActivarMensajes2 = New System.Windows.Forms.CheckBox()
-        Me.cmbLenguaje1 = New System.Windows.Forms.ComboBox()
-        Me.cmbDivisa1 = New System.Windows.Forms.ComboBox()
-        Me.lblEtiquetaLenguaje = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.gbOpciones = New System.Windows.Forms.GroupBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Chart2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.gbBalance.SuspendLayout()
@@ -698,6 +699,7 @@ Partial Class Form1
         CType(Me.txtFanAmarillo2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtFanVerde2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtGradosFan2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.gbOpciones.SuspendLayout()
         Me.gbUser.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.gbGananciasEuro.SuspendLayout()
@@ -713,7 +715,6 @@ Partial Class Form1
         CType(Me.txtFanAmarillo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtFanVerde, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.gbGananciasDolar.SuspendLayout()
-        Me.gbOpciones.SuspendLayout()
         Me.SuspendLayout()
         '
         'Timer1
@@ -5038,6 +5039,7 @@ Partial Class Form1
         'TabPage7
         '
         Me.TabPage7.BackColor = System.Drawing.Color.White
+        Me.TabPage7.Controls.Add(Me.Button1)
         Me.TabPage7.Controls.Add(Me.WebBrowser1)
         Me.TabPage7.Controls.Add(Me.gbTemperatura)
         Me.TabPage7.Controls.Add(Me.gbOpciones)
@@ -5101,6 +5103,54 @@ Partial Class Form1
         '
         resources.ApplyResources(Me.lblEtiquetaTempMax, "lblEtiquetaTempMax")
         Me.lblEtiquetaTempMax.Name = "lblEtiquetaTempMax"
+        '
+        'gbOpciones
+        '
+        Me.gbOpciones.Controls.Add(Me.Label1)
+        Me.gbOpciones.Controls.Add(Me.lblEtiquetaLenguaje)
+        Me.gbOpciones.Controls.Add(Me.cmbDivisa1)
+        Me.gbOpciones.Controls.Add(Me.cmbLenguaje1)
+        Me.gbOpciones.Controls.Add(Me.chkActivarMensajes2)
+        resources.ApplyResources(Me.gbOpciones, "gbOpciones")
+        Me.gbOpciones.Name = "gbOpciones"
+        Me.gbOpciones.TabStop = False
+        '
+        'Label1
+        '
+        resources.ApplyResources(Me.Label1, "Label1")
+        Me.Label1.Name = "Label1"
+        '
+        'lblEtiquetaLenguaje
+        '
+        resources.ApplyResources(Me.lblEtiquetaLenguaje, "lblEtiquetaLenguaje")
+        Me.lblEtiquetaLenguaje.Name = "lblEtiquetaLenguaje"
+        '
+        'cmbDivisa1
+        '
+        Me.cmbDivisa1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Moneda", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.cmbDivisa1.FormattingEnabled = True
+        Me.cmbDivisa1.Items.AddRange(New Object() {resources.GetString("cmbDivisa1.Items"), resources.GetString("cmbDivisa1.Items1")})
+        resources.ApplyResources(Me.cmbDivisa1, "cmbDivisa1")
+        Me.cmbDivisa1.Name = "cmbDivisa1"
+        Me.cmbDivisa1.Text = Global.EstadisticasDucos.My.MySettings.Default.Moneda
+        '
+        'cmbLenguaje1
+        '
+        Me.cmbLenguaje1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Lenguaje", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.cmbLenguaje1.FormattingEnabled = True
+        Me.cmbLenguaje1.Items.AddRange(New Object() {resources.GetString("cmbLenguaje1.Items"), resources.GetString("cmbLenguaje1.Items1")})
+        resources.ApplyResources(Me.cmbLenguaje1, "cmbLenguaje1")
+        Me.cmbLenguaje1.Name = "cmbLenguaje1"
+        Me.cmbLenguaje1.Text = Global.EstadisticasDucos.My.MySettings.Default.Lenguaje
+        '
+        'chkActivarMensajes2
+        '
+        resources.ApplyResources(Me.chkActivarMensajes2, "chkActivarMensajes2")
+        Me.chkActivarMensajes2.Checked = Global.EstadisticasDucos.My.MySettings.Default.MensajesError
+        Me.chkActivarMensajes2.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.chkActivarMensajes2.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.EstadisticasDucos.My.MySettings.Default, "MensajesError", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.chkActivarMensajes2.Name = "chkActivarMensajes2"
+        Me.chkActivarMensajes2.UseVisualStyleBackColor = True
         '
         'gbUser
         '
@@ -5449,53 +5499,11 @@ Partial Class Form1
         Me.gbGananciasDolar.Name = "gbGananciasDolar"
         Me.gbGananciasDolar.TabStop = False
         '
-        'chkActivarMensajes2
+        'Button1
         '
-        resources.ApplyResources(Me.chkActivarMensajes2, "chkActivarMensajes2")
-        Me.chkActivarMensajes2.Checked = Global.EstadisticasDucos.My.MySettings.Default.MensajesError
-        Me.chkActivarMensajes2.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkActivarMensajes2.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.EstadisticasDucos.My.MySettings.Default, "MensajesError", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.chkActivarMensajes2.Name = "chkActivarMensajes2"
-        Me.chkActivarMensajes2.UseVisualStyleBackColor = True
-        '
-        'cmbLenguaje1
-        '
-        Me.cmbLenguaje1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Lenguaje", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.cmbLenguaje1.FormattingEnabled = True
-        Me.cmbLenguaje1.Items.AddRange(New Object() {resources.GetString("cmbLenguaje1.Items"), resources.GetString("cmbLenguaje1.Items1")})
-        resources.ApplyResources(Me.cmbLenguaje1, "cmbLenguaje1")
-        Me.cmbLenguaje1.Name = "cmbLenguaje1"
-        Me.cmbLenguaje1.Text = Global.EstadisticasDucos.My.MySettings.Default.Lenguaje
-        '
-        'cmbDivisa1
-        '
-        Me.cmbDivisa1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.EstadisticasDucos.My.MySettings.Default, "Moneda", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.cmbDivisa1.FormattingEnabled = True
-        Me.cmbDivisa1.Items.AddRange(New Object() {resources.GetString("cmbDivisa1.Items"), resources.GetString("cmbDivisa1.Items1")})
-        resources.ApplyResources(Me.cmbDivisa1, "cmbDivisa1")
-        Me.cmbDivisa1.Name = "cmbDivisa1"
-        Me.cmbDivisa1.Text = Global.EstadisticasDucos.My.MySettings.Default.Moneda
-        '
-        'lblEtiquetaLenguaje
-        '
-        resources.ApplyResources(Me.lblEtiquetaLenguaje, "lblEtiquetaLenguaje")
-        Me.lblEtiquetaLenguaje.Name = "lblEtiquetaLenguaje"
-        '
-        'Label1
-        '
-        resources.ApplyResources(Me.Label1, "Label1")
-        Me.Label1.Name = "Label1"
-        '
-        'gbOpciones
-        '
-        Me.gbOpciones.Controls.Add(Me.Label1)
-        Me.gbOpciones.Controls.Add(Me.lblEtiquetaLenguaje)
-        Me.gbOpciones.Controls.Add(Me.cmbDivisa1)
-        Me.gbOpciones.Controls.Add(Me.cmbLenguaje1)
-        Me.gbOpciones.Controls.Add(Me.chkActivarMensajes2)
-        resources.ApplyResources(Me.gbOpciones, "gbOpciones")
-        Me.gbOpciones.Name = "gbOpciones"
-        Me.gbOpciones.TabStop = False
+        resources.ApplyResources(Me.Button1, "Button1")
+        Me.Button1.Name = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -5576,6 +5584,8 @@ Partial Class Form1
         CType(Me.txtFanAmarillo2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtFanVerde2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtGradosFan2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.gbOpciones.ResumeLayout(False)
+        Me.gbOpciones.PerformLayout()
         Me.gbUser.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.gbGananciasEuro.ResumeLayout(False)
@@ -5596,8 +5606,6 @@ Partial Class Form1
         CType(Me.txtFanVerde, System.ComponentModel.ISupportInitialize).EndInit()
         Me.gbGananciasDolar.ResumeLayout(False)
         Me.gbGananciasDolar.PerformLayout()
-        Me.gbOpciones.ResumeLayout(False)
-        Me.gbOpciones.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -6210,4 +6218,5 @@ Partial Class Form1
     Friend WithEvents cmbDivisa1 As ComboBox
     Friend WithEvents cmbLenguaje1 As ComboBox
     Friend WithEvents chkActivarMensajes2 As CheckBox
+    Friend WithEvents Button1 As Button
 End Class

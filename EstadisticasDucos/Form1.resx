@@ -541,7 +541,7 @@
     <value>Left</value>
   </data>
   <data name="Chart6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-478, -82</value>
+    <value>-478, -90</value>
   </data>
   <data name="Chart6.Size" type="System.Drawing.Size, System.Drawing">
     <value>10000, 120</value>
@@ -16469,7 +16469,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAACk
-        JQAAAk1TRnQBSQFMAgEBCQEAAZABBwGQAQcBEAEAARABAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFA
+        JQAAAk1TRnQBSQFMAgEBCQEAAZgBBwGYAQcBEAEAARABAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFA
         AwABMAMAAQEBAAEgBgABMBIAA4AB/jz/wAADgAH+AYACAAH/AYACAAH/AwAB/wMAAf8DAAH/AgABvgH/
         AYACAAH/AYACAAH/AwAB/wIAAZgB/wGAAgAB/wGAAgAB/wGAAgAB/wGAAgAB/wGAAgAB/8AAA4AB/gGA
         AgAB/wGAAgAB/wGAAgAB/wGAAgAB/wGAAgAB/wGAAgAB/wGAAgAB/wGAAgAB/wGAAgAB/wGAAgAB/wGA
@@ -16914,6 +16914,30 @@
   <data name="&gt;&gt;TabPage6.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <data name="Button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>593, 386</value>
+  </data>
+  <data name="Button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="Button1.TabIndex" type="System.Int32, mscorlib">
+    <value>159</value>
+  </data>
+  <data name="Button1.Text" xml:space="preserve">
+    <value>Button1</value>
+  </data>
+  <data name="&gt;&gt;Button1.Name" xml:space="preserve">
+    <value>Button1</value>
+  </data>
+  <data name="&gt;&gt;Button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Button1.Parent" xml:space="preserve">
+    <value>TabPage7</value>
+  </data>
+  <data name="&gt;&gt;Button1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="WebBrowser1.Location" type="System.Drawing.Point, System.Drawing">
     <value>370, 25</value>
   </data>
@@ -16936,7 +16960,7 @@
     <value>TabPage7</value>
   </data>
   <data name="&gt;&gt;WebBrowser1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="txtFanAmarillo2.Location" type="System.Drawing.Point, System.Drawing">
     <value>187, 61</value>
@@ -17125,7 +17149,7 @@
     <value>TabPage7</value>
   </data>
   <data name="&gt;&gt;gbTemperatura.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="Label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -17296,7 +17320,7 @@
     <value>TabPage7</value>
   </data>
   <data name="&gt;&gt;gbOpciones.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="PictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -17407,7 +17431,7 @@
     <value>TabPage7</value>
   </data>
   <data name="&gt;&gt;gbUser.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="TabPage7.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>

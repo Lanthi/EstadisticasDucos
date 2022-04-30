@@ -86,6 +86,7 @@ Public Class Form1
     Dim Ganado As Decimal
     Dim GanadoAño As Decimal
     Dim GanadoTotal As Decimal
+    Dim GanadoGlobal As Decimal
     Dim EstimadoDiaDetalle As Decimal
     Dim EstimadoMesDetalle As Decimal
 
@@ -1864,7 +1865,7 @@ Public Class Form1
                                 lblMesPrecio30.Text = "0"
                                 lblMesPrecio31.Text = "0"
                             End If
-                            If lblMesBalance01.Text = "0" Then lblMesBalance01.Text = FormatDuco(txtbalance.Text, 96) : lblMesPrecio01.Text = FormatDuco(CDec(lblPrecioDia.Text), 97)
+                            If lblMesBalance01.Text = "0" Then lblMesBalance01.Text = FormatDuco(txtbalance.Text, 96) : lblMesPrecio01.Text = FormatDuco(CDec(lblPrecioDia.Text), 97) : AñadirMesSQL(MesActual, lblMesBalance01.Text, lblMesPrecio01.Text, lblMesDifencia01.Text, lblTransacionMes01.Text)
                         Case 2 : If lblMesBalance02.Text = "0" Then lblMesBalance02.Text = FormatDuco(txtbalance.Text, 96) : lblMesPrecio02.Text = FormatDuco(CDec(lblPrecioDia.Text), 97)
                         Case 3 : If lblMesBalance03.Text = "0" Then lblMesBalance03.Text = FormatDuco(txtbalance.Text, 96) : lblMesPrecio03.Text = FormatDuco(CDec(lblPrecioDia.Text), 97)
                         Case 4 : If lblMesBalance04.Text = "0" Then lblMesBalance04.Text = FormatDuco(txtbalance.Text, 96) : lblMesPrecio04.Text = FormatDuco(CDec(lblPrecioDia.Text), 97)
@@ -2045,14 +2046,15 @@ Public Class Form1
             Suma = CDec(lblGanadoAño2022.Text)
             Suma += CDec(lblGanadoAño2023.Text)
             lblGanadoAñoTotal.Text = FormatDuco(Suma, 6) & "¬"
+            GanadoTotal = FormatDuco(Suma, 6)
             Suma2 = CDec(lblTransasionesAño2022.Text)
             Suma2 += CDec(lblTransasionesAño2023.Text)
             lblTransasionesAñoTotal.Text = Suma2
             lblTotalTransasiones.Text = CInt(ContaTransa + 1)
-            lblDucosTotales.Text = Format(CDec(txtbalance.Text - Suma2), "###0.00")
+            lblDucosTotales.Text = Format(CDec(txtbalance.Text - Suma2), "####0.00")
             lblBalanceAño2022.Text = FormatDuco(CDec(txtbalance.Text - Suma2), 9)
             lblTotalGanadoAños.Text = Format(CDec(txtbalance.Text - Suma2) * CDec(txtDucoprice.Text) * Euro, "###0.00") & "€"
-            GanadoTotal = Format(CDec(txtbalance.Text - Suma2) * CDec(txtDucoprice.Text) * Euro, "###0.00")
+            GanadoGlobal = Format(CDec(txtbalance.Text - Suma2) * CDec(txtDucoprice.Text) * Euro, "###0.00")
             lblEtiquetaDuco.Left = lblDucosTotales.Left + lblDucosTotales.Width - 5
             My.Settings.Save()
         Catch ex As Exception
@@ -2120,7 +2122,7 @@ Public Class Form1
                 Case 6 : ActualizarAñosSQL("2022", "2022", lblBalanceAño2022.Text, lblPrecioAño2022.Text, lblGanadoAño2022.Text, lblTransasionesAño2022.Text)
                 Case 8 : ActualizarAñosCampoSQL("2022", "PrecioMedio", lblPrecioMedioTodosAños.Text)
                 Case 10 : ActualizarAñosCampoSQL("2022", "TransacionesTotal", lblTransasionesAñoTotal.Text)
-                Case 12 : ActualizarAñosCampoSQL("2022", "DucosTotal", lblGanadoAñoTotal.Text)
+                Case 12 : ActualizarAñosCampoSQL("2022", "DucosTotal", GanadoTotal)
                 Case 15 : SubirTransacionesSQL()
                 Case 18 : ActualizarAñoCampoSQL("2022", "TransacionesTotal", lblTransacionesTotalAño.Text)
                 Case 22 : ActualizarAñoCampoSQL("2022", "DucosTotal", GanadoAño)
@@ -2130,7 +2132,7 @@ Public Class Form1
                 Case 35 : ActualizarHoraCampoSQL(DateValue(Now), "DucosTotal", TotalDia)
                 Case 40 : ActualizarHoraCampoSQL(DateValue(Now), "PrecioMedio", lblPrecioDia.Text)
                 Case 45 : ActualizaDiferenciaHoraSQL()
-                Case 49 : ActualizarUsuarioSQL("Lanthi", txtbalance.Text, txtDucoprice.Text, Euro, Ganado, lblEstimado.Text, EstimadoDiaDetalle, lblEstimadoMes.Text, EstimadoMesDetalle, lblMineros.Text, lblHases.Text, lblHaseEstiquta.Text, lblDeposito.Text, lblFechaFinDeposito.Text, lblRecompensa.Text, Restante, Temperatura, Humedad, Fan, lblTotalTransasiones.Text, lblDucosTotales.Text, GanadoTotal)
+                Case 49 : ActualizarUsuarioSQL("Lanthi", txtbalance.Text, txtDucoprice.Text, Euro, Ganado, lblEstimado.Text, EstimadoDiaDetalle, lblEstimadoMes.Text, EstimadoMesDetalle, lblMineros.Text, lblHases.Text, lblHaseEstiquta.Text, lblDeposito.Text, lblFechaFinDeposito.Text, lblRecompensa.Text, Restante, Temperatura, Humedad, Fan, lblTotalTransasiones.Text, lblDucosTotales.Text, GanadoGlobal)
                 Case 53
                     Select Case DateAndTime.Day(Now)
                         Case 1 : ActualizarMesSQL(MesActual, "01", lblMesBalance01.Text, lblMesPrecio01.Text, lblMesDifencia01.Text, lblTransacionMes01.Text)
@@ -2553,8 +2555,8 @@ Public Class Form1
     Private Sub ActualizarMesSQL(ByVal Fecha As String, ByVal Hora As String, ByVal Balance As Decimal, ByVal Precio As Decimal, ByVal Diferencia As Decimal, ByVal Transaciones As String)
         WebBrowser1.Navigate("http://localhost/Updatemes.php?Fecha=" & Fecha & "&Hora=" & Hora & "&Balance=" & Balance & "&Precio=" & Precio & "&Diferencia=" & Diferencia & "&Transaciones=" & Transaciones & "")
     End Sub
-    Private Sub AñadirMesSQL(ByVal Fecha As Date, ByVal Hora00 As Decimal, ByVal Balance As Decimal, ByVal Precio As Decimal, ByVal Diferencia00 As Decimal, ByVal Transaciones As Decimal)
-        WebBrowser1.Navigate("http://localhost/AddDateMes.php?Fecha=" & Fecha & "&Hora=" & Hora00 & "&Balance=" & Balance & "&Precio=" & Precio & "&Diferencia=" & Diferencia00 & "&Transaciones=" & Transaciones & "")
+    Private Sub AñadirMesSQL(ByVal Fecha As String, ByVal Balance As Decimal, ByVal Precio As Decimal, ByVal Diferencia00 As Decimal, ByVal Transaciones As Decimal)
+        WebBrowser1.Navigate("http://localhost/AddDateMes.php?Fecha=" & Fecha & "&Balance=" & Balance & "&Precio=" & Precio & "&Diferencia=" & Diferencia00 & "&Transaciones=" & Transaciones & "")
     End Sub
     Private Sub ActualizarUsuarioSQL(ByVal Usuario As String, Balance As String, Precio As String, PrecioDolar As String, Ganancias As String, EstimadoDiario As String, EstimadoDiarioDetalle As String, EstimadoMes As String, EstimadoMesDetalle As String, Mineros As String, Hases As String, HasesLetras As String, Apuesta As String, Finaliza As String, Premio As String, Restante As String, Temp As String, Humedad As String, Fan As String, TransacionesTotales As String, DucosTotal As String, GananciasTotal As String)
         WebBrowser1.Navigate("http://localhost/UpdateUsuario.php?Usuario=" & Usuario & "&Balance=" & Balance & "&Precio=" & Precio & "&PrecioDolar=" & PrecioDolar & "&Ganancias=" & Ganancias & "&EstimadoDiario=" & EstimadoDiario & "&EstimadoDiarioDetalle=" & EstimadoDiarioDetalle & "&EstimadoMes=" & EstimadoMes & "&EstimadoMesDetalle=" & EstimadoMesDetalle & "&Mineros=" & Mineros & "&Hases=" & Hases & "&HasesLetras=" & HasesLetras & "&Apuesta=" & Apuesta & "&Finaliza=" & Finaliza & "&Premio=" & Premio & "&Restante=" & Restante & "&Temp=" & Temp & "&Humedad=" & Humedad & "&Fan=" & Fan & "&TransacionesTotales=" & TransacionesTotales & "&DucosTotal=" & DucosTotal & "&GananciasTotal=" & GananciasTotal & "")

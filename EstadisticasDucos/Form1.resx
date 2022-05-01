@@ -517,7 +517,7 @@
     <value>3</value>
   </data>
   <data name="Chart3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-5, 388</value>
+    <value>-10, 386</value>
   </data>
   <data name="Chart3.Size" type="System.Drawing.Size, System.Drawing">
     <value>544, 153</value>
@@ -560,30 +560,6 @@
   </data>
   <data name="&gt;&gt;Chart4.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="Chart6.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="Chart6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-478, -98</value>
-  </data>
-  <data name="Chart6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10000, 120</value>
-  </data>
-  <data name="Chart6.TabIndex" type="System.Int32, mscorlib">
-    <value>151</value>
-  </data>
-  <data name="&gt;&gt;Chart6.Name" xml:space="preserve">
-    <value>Chart6</value>
-  </data>
-  <data name="&gt;&gt;Chart6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
-  </data>
-  <data name="&gt;&gt;Chart6.Parent" xml:space="preserve">
-    <value>Panel1</value>
-  </data>
-  <data name="&gt;&gt;Chart6.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="TabPage1.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4672,7 +4648,7 @@
     <value>143</value>
   </data>
   <data name="lblTotalMes.Text" xml:space="preserve">
-    <value>0000.00¬</value>
+    <value>0000,00¬</value>
   </data>
   <data name="lblTotalMes.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
@@ -5838,6 +5814,27 @@
   <data name="&gt;&gt;gbMes.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="lblEtiquetaPreciosAños.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="lblEtiquetaPreciosAños.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblEtiquetaPreciosAños.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 25</value>
+  </data>
+  <data name="lblEtiquetaPreciosAños.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 23</value>
+  </data>
+  <data name="lblEtiquetaPreciosAños.TabIndex" type="System.Int32, mscorlib">
+    <value>253</value>
+  </data>
+  <data name="lblEtiquetaPreciosAños.Text" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="lblEtiquetaPreciosAños.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
   <data name="&gt;&gt;lblEtiquetaPreciosAños.Name" xml:space="preserve">
     <value>lblEtiquetaPreciosAños</value>
   </data>
@@ -5849,6 +5846,24 @@
   </data>
   <data name="&gt;&gt;lblEtiquetaPreciosAños.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="lblPrecioAño2022.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Duco, 11.25pt</value>
+  </data>
+  <data name="lblPrecioAño2022.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblPrecioAño2022.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 47</value>
+  </data>
+  <data name="lblPrecioAño2022.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 25</value>
+  </data>
+  <data name="lblPrecioAño2022.TabIndex" type="System.Int32, mscorlib">
+    <value>251</value>
+  </data>
+  <data name="lblPrecioAño2022.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="&gt;&gt;lblPrecioAño2022.Name" xml:space="preserve">
     <value>lblPrecioAño2022</value>
@@ -5862,6 +5877,24 @@
   <data name="&gt;&gt;lblPrecioAño2022.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="lblPrecioMedioTodosAños.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Duco, 12pt, style=Bold</value>
+  </data>
+  <data name="lblPrecioMedioTodosAños.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblPrecioMedioTodosAños.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 95</value>
+  </data>
+  <data name="lblPrecioMedioTodosAños.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 31</value>
+  </data>
+  <data name="lblPrecioMedioTodosAños.TabIndex" type="System.Int32, mscorlib">
+    <value>250</value>
+  </data>
+  <data name="lblPrecioMedioTodosAños.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
   <data name="&gt;&gt;lblPrecioMedioTodosAños.Name" xml:space="preserve">
     <value>lblPrecioMedioTodosAños</value>
   </data>
@@ -5873,6 +5906,24 @@
   </data>
   <data name="&gt;&gt;lblPrecioMedioTodosAños.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="lblPrecioAño2023.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Duco, 11.25pt</value>
+  </data>
+  <data name="lblPrecioAño2023.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblPrecioAño2023.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 71</value>
+  </data>
+  <data name="lblPrecioAño2023.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 25</value>
+  </data>
+  <data name="lblPrecioAño2023.TabIndex" type="System.Int32, mscorlib">
+    <value>250</value>
+  </data>
+  <data name="lblPrecioAño2023.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="&gt;&gt;lblPrecioAño2023.Name" xml:space="preserve">
     <value>lblPrecioAño2023</value>
@@ -5886,6 +5937,27 @@
   <data name="&gt;&gt;lblPrecioAño2023.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="lblTransasionesAñoTotal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Duco, 12pt, style=Bold</value>
+  </data>
+  <data name="lblTransasionesAñoTotal.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblTransasionesAñoTotal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 95</value>
+  </data>
+  <data name="lblTransasionesAñoTotal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 31</value>
+  </data>
+  <data name="lblTransasionesAñoTotal.TabIndex" type="System.Int32, mscorlib">
+    <value>263</value>
+  </data>
+  <data name="lblTransasionesAñoTotal.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblTransasionesAñoTotal.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
   <data name="&gt;&gt;lblTransasionesAñoTotal.Name" xml:space="preserve">
     <value>lblTransasionesAñoTotal</value>
   </data>
@@ -5897,6 +5969,24 @@
   </data>
   <data name="&gt;&gt;lblTransasionesAñoTotal.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="lblTransasionesAño2022.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Duco, 11.25pt</value>
+  </data>
+  <data name="lblTransasionesAño2022.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblTransasionesAño2022.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 47</value>
+  </data>
+  <data name="lblTransasionesAño2022.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 25</value>
+  </data>
+  <data name="lblTransasionesAño2022.TabIndex" type="System.Int32, mscorlib">
+    <value>259</value>
+  </data>
+  <data name="lblTransasionesAño2022.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="&gt;&gt;lblTransasionesAño2022.Name" xml:space="preserve">
     <value>lblTransasionesAño2022</value>
@@ -5910,6 +6000,24 @@
   <data name="&gt;&gt;lblTransasionesAño2022.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <data name="lblTransasionesAño2023.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Duco, 11.25pt</value>
+  </data>
+  <data name="lblTransasionesAño2023.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblTransasionesAño2023.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 71</value>
+  </data>
+  <data name="lblTransasionesAño2023.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 25</value>
+  </data>
+  <data name="lblTransasionesAño2023.TabIndex" type="System.Int32, mscorlib">
+    <value>258</value>
+  </data>
+  <data name="lblTransasionesAño2023.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
   <data name="&gt;&gt;lblTransasionesAño2023.Name" xml:space="preserve">
     <value>lblTransasionesAño2023</value>
   </data>
@@ -5921,6 +6029,27 @@
   </data>
   <data name="&gt;&gt;lblTransasionesAño2023.ZOrder" xml:space="preserve">
     <value>6</value>
+  </data>
+  <data name="lblEtiquetaTransacionesAños.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="lblEtiquetaTransacionesAños.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblEtiquetaTransacionesAños.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 25</value>
+  </data>
+  <data name="lblEtiquetaTransacionesAños.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 23</value>
+  </data>
+  <data name="lblEtiquetaTransacionesAños.TabIndex" type="System.Int32, mscorlib">
+    <value>260</value>
+  </data>
+  <data name="lblEtiquetaTransacionesAños.Text" xml:space="preserve">
+    <value>Transa.</value>
+  </data>
+  <data name="lblEtiquetaTransacionesAños.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="&gt;&gt;lblEtiquetaTransacionesAños.Name" xml:space="preserve">
     <value>lblEtiquetaTransacionesAños</value>
@@ -5934,6 +6063,285 @@
   <data name="&gt;&gt;lblEtiquetaTransacionesAños.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <data name="lblDucosTotales.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblDucosTotales.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Digital Display, 20.25pt, style=Bold</value>
+  </data>
+  <data name="lblDucosTotales.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="lblDucosTotales.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblDucosTotales.Location" type="System.Drawing.Point, System.Drawing">
+    <value>165, 67</value>
+  </data>
+  <data name="lblDucosTotales.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 18</value>
+  </data>
+  <data name="lblDucosTotales.TabIndex" type="System.Int32, mscorlib">
+    <value>268</value>
+  </data>
+  <data name="lblDucosTotales.Text" xml:space="preserve">
+    <value>000000,00</value>
+  </data>
+  <data name="lblDucosTotales.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;lblDucosTotales.Name" xml:space="preserve">
+    <value>lblDucosTotales</value>
+  </data>
+  <data name="&gt;&gt;lblDucosTotales.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblDucosTotales.Parent" xml:space="preserve">
+    <value>gbEstadisticasGlobales</value>
+  </data>
+  <data name="&gt;&gt;lblDucosTotales.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblEtiquetaDuco.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblEtiquetaDuco.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Duco, 20.25pt, style=Bold</value>
+  </data>
+  <data name="lblEtiquetaDuco.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblEtiquetaDuco.Location" type="System.Drawing.Point, System.Drawing">
+    <value>281, 65</value>
+  </data>
+  <data name="lblEtiquetaDuco.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 25</value>
+  </data>
+  <data name="lblEtiquetaDuco.TabIndex" type="System.Int32, mscorlib">
+    <value>269</value>
+  </data>
+  <data name="lblEtiquetaDuco.Text" xml:space="preserve">
+    <value>¬</value>
+  </data>
+  <data name="&gt;&gt;lblEtiquetaDuco.Name" xml:space="preserve">
+    <value>lblEtiquetaDuco</value>
+  </data>
+  <data name="&gt;&gt;lblEtiquetaDuco.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblEtiquetaDuco.Parent" xml:space="preserve">
+    <value>gbEstadisticasGlobales</value>
+  </data>
+  <data name="&gt;&gt;lblEtiquetaDuco.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblTotalTransasiones.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblTotalTransasiones.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Digital Display, 21.75pt</value>
+  </data>
+  <data name="lblTotalTransasiones.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="lblTotalTransasiones.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblTotalTransasiones.Location" type="System.Drawing.Point, System.Drawing">
+    <value>249, 31</value>
+  </data>
+  <data name="lblTotalTransasiones.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 19</value>
+  </data>
+  <data name="lblTotalTransasiones.TabIndex" type="System.Int32, mscorlib">
+    <value>266</value>
+  </data>
+  <data name="lblTotalTransasiones.Text" xml:space="preserve">
+    <value>999</value>
+  </data>
+  <data name="lblTotalTransasiones.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;lblTotalTransasiones.Name" xml:space="preserve">
+    <value>lblTotalTransasiones</value>
+  </data>
+  <data name="&gt;&gt;lblTotalTransasiones.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTotalTransasiones.Parent" xml:space="preserve">
+    <value>gbEstadisticasGlobales</value>
+  </data>
+  <data name="&gt;&gt;lblTotalTransasiones.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblTotalGanadoAños.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblTotalGanadoAños.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Digital Display, 27.75pt, style=Bold</value>
+  </data>
+  <data name="lblTotalGanadoAños.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="lblTotalGanadoAños.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblTotalGanadoAños.Location" type="System.Drawing.Point, System.Drawing">
+    <value>181, 104</value>
+  </data>
+  <data name="lblTotalGanadoAños.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 24</value>
+  </data>
+  <data name="lblTotalGanadoAños.TabIndex" type="System.Int32, mscorlib">
+    <value>136</value>
+  </data>
+  <data name="lblTotalGanadoAños.Text" xml:space="preserve">
+    <value>000,00€</value>
+  </data>
+  <data name="lblTotalGanadoAños.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;lblTotalGanadoAños.Name" xml:space="preserve">
+    <value>lblTotalGanadoAños</value>
+  </data>
+  <data name="&gt;&gt;lblTotalGanadoAños.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTotalGanadoAños.Parent" xml:space="preserve">
+    <value>gbEstadisticasGlobales</value>
+  </data>
+  <data name="&gt;&gt;lblTotalGanadoAños.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblEtiquetaGananciaTotal.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblEtiquetaGananciaTotal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 20.25pt</value>
+  </data>
+  <data name="lblEtiquetaGananciaTotal.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="lblEtiquetaGananciaTotal.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblEtiquetaGananciaTotal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 101</value>
+  </data>
+  <data name="lblEtiquetaGananciaTotal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>186, 31</value>
+  </data>
+  <data name="lblEtiquetaGananciaTotal.TabIndex" type="System.Int32, mscorlib">
+    <value>135</value>
+  </data>
+  <data name="lblEtiquetaGananciaTotal.Text" xml:space="preserve">
+    <value>Ganado Total:</value>
+  </data>
+  <data name="lblEtiquetaGananciaTotal.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;lblEtiquetaGananciaTotal.Name" xml:space="preserve">
+    <value>lblEtiquetaGananciaTotal</value>
+  </data>
+  <data name="&gt;&gt;lblEtiquetaGananciaTotal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblEtiquetaGananciaTotal.Parent" xml:space="preserve">
+    <value>gbEstadisticasGlobales</value>
+  </data>
+  <data name="&gt;&gt;lblEtiquetaGananciaTotal.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblEtiquetaTrasacioneTotal.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblEtiquetaTrasacioneTotal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 20.25pt</value>
+  </data>
+  <data name="lblEtiquetaTrasacioneTotal.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="lblEtiquetaTrasacioneTotal.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblEtiquetaTrasacioneTotal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 23</value>
+  </data>
+  <data name="lblEtiquetaTrasacioneTotal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>254, 31</value>
+  </data>
+  <data name="lblEtiquetaTrasacioneTotal.TabIndex" type="System.Int32, mscorlib">
+    <value>265</value>
+  </data>
+  <data name="lblEtiquetaTrasacioneTotal.Text" xml:space="preserve">
+    <value>Transaciones Total:</value>
+  </data>
+  <data name="lblEtiquetaTrasacioneTotal.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;lblEtiquetaTrasacioneTotal.Name" xml:space="preserve">
+    <value>lblEtiquetaTrasacioneTotal</value>
+  </data>
+  <data name="&gt;&gt;lblEtiquetaTrasacioneTotal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblEtiquetaTrasacioneTotal.Parent" xml:space="preserve">
+    <value>gbEstadisticasGlobales</value>
+  </data>
+  <data name="&gt;&gt;lblEtiquetaTrasacioneTotal.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblEtiquetaDucoTotal.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblEtiquetaDucoTotal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 20.25pt</value>
+  </data>
+  <data name="lblEtiquetaDucoTotal.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="lblEtiquetaDucoTotal.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblEtiquetaDucoTotal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 58</value>
+  </data>
+  <data name="lblEtiquetaDucoTotal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 31</value>
+  </data>
+  <data name="lblEtiquetaDucoTotal.TabIndex" type="System.Int32, mscorlib">
+    <value>267</value>
+  </data>
+  <data name="lblEtiquetaDucoTotal.Text" xml:space="preserve">
+    <value>Ducos Total:</value>
+  </data>
+  <data name="lblEtiquetaDucoTotal.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;lblEtiquetaDucoTotal.Name" xml:space="preserve">
+    <value>lblEtiquetaDucoTotal</value>
+  </data>
+  <data name="&gt;&gt;lblEtiquetaDucoTotal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblEtiquetaDucoTotal.Parent" xml:space="preserve">
+    <value>gbEstadisticasGlobales</value>
+  </data>
+  <data name="&gt;&gt;lblEtiquetaDucoTotal.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="gbEstadisticasGlobales.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 129</value>
+  </data>
+  <data name="gbEstadisticasGlobales.Size" type="System.Drawing.Size, System.Drawing">
+    <value>319, 149</value>
+  </data>
+  <data name="gbEstadisticasGlobales.TabIndex" type="System.Int32, mscorlib">
+    <value>270</value>
+  </data>
+  <data name="gbEstadisticasGlobales.Text" xml:space="preserve">
+    <value>Global Statistics</value>
+  </data>
   <data name="&gt;&gt;gbEstadisticasGlobales.Name" xml:space="preserve">
     <value>gbEstadisticasGlobales</value>
   </data>
@@ -5945,6 +6353,30 @@
   </data>
   <data name="&gt;&gt;gbEstadisticasGlobales.ZOrder" xml:space="preserve">
     <value>8</value>
+  </data>
+  <data name="lblEtiquetaAñosTotal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt, style=Bold</value>
+  </data>
+  <data name="lblEtiquetaAñosTotal.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="lblEtiquetaAñosTotal.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblEtiquetaAñosTotal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 95</value>
+  </data>
+  <data name="lblEtiquetaAñosTotal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 31</value>
+  </data>
+  <data name="lblEtiquetaAñosTotal.TabIndex" type="System.Int32, mscorlib">
+    <value>264</value>
+  </data>
+  <data name="lblEtiquetaAñosTotal.Text" xml:space="preserve">
+    <value>Annual Total:</value>
+  </data>
+  <data name="lblEtiquetaAñosTotal.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
   </data>
   <data name="&gt;&gt;lblEtiquetaAñosTotal.Name" xml:space="preserve">
     <value>lblEtiquetaAñosTotal</value>
@@ -5958,6 +6390,27 @@
   <data name="&gt;&gt;lblEtiquetaAñosTotal.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
+  <data name="lblGanadoAñoTotal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Duco, 12pt, style=Bold</value>
+  </data>
+  <data name="lblGanadoAñoTotal.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblGanadoAñoTotal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>249, 95</value>
+  </data>
+  <data name="lblGanadoAñoTotal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 31</value>
+  </data>
+  <data name="lblGanadoAñoTotal.TabIndex" type="System.Int32, mscorlib">
+    <value>262</value>
+  </data>
+  <data name="lblGanadoAñoTotal.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblGanadoAñoTotal.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
   <data name="&gt;&gt;lblGanadoAñoTotal.Name" xml:space="preserve">
     <value>lblGanadoAñoTotal</value>
   </data>
@@ -5969,6 +6422,27 @@
   </data>
   <data name="&gt;&gt;lblGanadoAñoTotal.ZOrder" xml:space="preserve">
     <value>10</value>
+  </data>
+  <data name="lblEtiquetaGananciasAños.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="lblEtiquetaGananciasAños.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblEtiquetaGananciasAños.Location" type="System.Drawing.Point, System.Drawing">
+    <value>249, 25</value>
+  </data>
+  <data name="lblEtiquetaGananciasAños.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="lblEtiquetaGananciasAños.TabIndex" type="System.Int32, mscorlib">
+    <value>256</value>
+  </data>
+  <data name="lblEtiquetaGananciasAños.Text" xml:space="preserve">
+    <value>Gain</value>
+  </data>
+  <data name="lblEtiquetaGananciasAños.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="&gt;&gt;lblEtiquetaGananciasAños.Name" xml:space="preserve">
     <value>lblEtiquetaGananciasAños</value>
@@ -5982,6 +6456,24 @@
   <data name="&gt;&gt;lblEtiquetaGananciasAños.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
+  <data name="lblGanadoAño2022.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Duco, 11.25pt</value>
+  </data>
+  <data name="lblGanadoAño2022.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblGanadoAño2022.Location" type="System.Drawing.Point, System.Drawing">
+    <value>249, 47</value>
+  </data>
+  <data name="lblGanadoAño2022.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 25</value>
+  </data>
+  <data name="lblGanadoAño2022.TabIndex" type="System.Int32, mscorlib">
+    <value>257</value>
+  </data>
+  <data name="lblGanadoAño2022.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
   <data name="&gt;&gt;lblGanadoAño2022.Name" xml:space="preserve">
     <value>lblGanadoAño2022</value>
   </data>
@@ -5993,6 +6485,24 @@
   </data>
   <data name="&gt;&gt;lblGanadoAño2022.ZOrder" xml:space="preserve">
     <value>12</value>
+  </data>
+  <data name="lblGanadoAño2023.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Duco, 11.25pt</value>
+  </data>
+  <data name="lblGanadoAño2023.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblGanadoAño2023.Location" type="System.Drawing.Point, System.Drawing">
+    <value>249, 71</value>
+  </data>
+  <data name="lblGanadoAño2023.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 25</value>
+  </data>
+  <data name="lblGanadoAño2023.TabIndex" type="System.Int32, mscorlib">
+    <value>254</value>
+  </data>
+  <data name="lblGanadoAño2023.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="&gt;&gt;lblGanadoAño2023.Name" xml:space="preserve">
     <value>lblGanadoAño2023</value>
@@ -6006,6 +6516,27 @@
   <data name="&gt;&gt;lblGanadoAño2023.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
+  <data name="Label130.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="Label130.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label130.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 25</value>
+  </data>
+  <data name="Label130.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 23</value>
+  </data>
+  <data name="Label130.TabIndex" type="System.Int32, mscorlib">
+    <value>243</value>
+  </data>
+  <data name="Label130.Text" xml:space="preserve">
+    <value>Ducos</value>
+  </data>
+  <data name="Label130.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
   <data name="&gt;&gt;Label130.Name" xml:space="preserve">
     <value>Label130</value>
   </data>
@@ -6017,6 +6548,24 @@
   </data>
   <data name="&gt;&gt;Label130.ZOrder" xml:space="preserve">
     <value>14</value>
+  </data>
+  <data name="lblBalanceAño2022.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Duco, 11.25pt</value>
+  </data>
+  <data name="lblBalanceAño2022.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblBalanceAño2022.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 47</value>
+  </data>
+  <data name="lblBalanceAño2022.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 25</value>
+  </data>
+  <data name="lblBalanceAño2022.TabIndex" type="System.Int32, mscorlib">
+    <value>245</value>
+  </data>
+  <data name="lblBalanceAño2022.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="&gt;&gt;lblBalanceAño2022.Name" xml:space="preserve">
     <value>lblBalanceAño2022</value>
@@ -6030,6 +6579,24 @@
   <data name="&gt;&gt;lblBalanceAño2022.ZOrder" xml:space="preserve">
     <value>15</value>
   </data>
+  <data name="lblBalanceAño2023.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Duco, 11.25pt</value>
+  </data>
+  <data name="lblBalanceAño2023.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblBalanceAño2023.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 71</value>
+  </data>
+  <data name="lblBalanceAño2023.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 25</value>
+  </data>
+  <data name="lblBalanceAño2023.TabIndex" type="System.Int32, mscorlib">
+    <value>244</value>
+  </data>
+  <data name="lblBalanceAño2023.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
   <data name="&gt;&gt;lblBalanceAño2023.Name" xml:space="preserve">
     <value>lblBalanceAño2023</value>
   </data>
@@ -6041,6 +6608,27 @@
   </data>
   <data name="&gt;&gt;lblBalanceAño2023.ZOrder" xml:space="preserve">
     <value>16</value>
+  </data>
+  <data name="lblEtiquetaAños.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="lblEtiquetaAños.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblEtiquetaAños.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 25</value>
+  </data>
+  <data name="lblEtiquetaAños.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 23</value>
+  </data>
+  <data name="lblEtiquetaAños.TabIndex" type="System.Int32, mscorlib">
+    <value>248</value>
+  </data>
+  <data name="lblEtiquetaAños.Text" xml:space="preserve">
+    <value>Year</value>
+  </data>
+  <data name="lblEtiquetaAños.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="&gt;&gt;lblEtiquetaAños.Name" xml:space="preserve">
     <value>lblEtiquetaAños</value>
@@ -6054,6 +6642,27 @@
   <data name="&gt;&gt;lblEtiquetaAños.ZOrder" xml:space="preserve">
     <value>17</value>
   </data>
+  <data name="Label137.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Duco, 11.25pt, style=Bold</value>
+  </data>
+  <data name="Label137.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label137.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 47</value>
+  </data>
+  <data name="Label137.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 25</value>
+  </data>
+  <data name="Label137.TabIndex" type="System.Int32, mscorlib">
+    <value>247</value>
+  </data>
+  <data name="Label137.Text" xml:space="preserve">
+    <value>2022</value>
+  </data>
+  <data name="Label137.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
   <data name="&gt;&gt;Label137.Name" xml:space="preserve">
     <value>Label137</value>
   </data>
@@ -6065,6 +6674,27 @@
   </data>
   <data name="&gt;&gt;Label137.ZOrder" xml:space="preserve">
     <value>18</value>
+  </data>
+  <data name="Label138.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Duco, 11.25pt, style=Bold</value>
+  </data>
+  <data name="Label138.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label138.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 71</value>
+  </data>
+  <data name="Label138.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 25</value>
+  </data>
+  <data name="Label138.TabIndex" type="System.Int32, mscorlib">
+    <value>246</value>
+  </data>
+  <data name="Label138.Text" xml:space="preserve">
+    <value>2023</value>
+  </data>
+  <data name="Label138.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="&gt;&gt;Label138.Name" xml:space="preserve">
     <value>Label138</value>
@@ -10978,7 +11608,7 @@
     <value>141</value>
   </data>
   <data name="lblTotalHora.Text" xml:space="preserve">
-    <value>00.0000¬</value>
+    <value>0000,00¬</value>
   </data>
   <data name="lblTotalHora.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
@@ -11049,16 +11679,16 @@
   <data name="&gt;&gt;TabPage1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;Panel1.Name" xml:space="preserve">
-    <value>Panel1</value>
+  <data name="&gt;&gt;Chart6.Name" xml:space="preserve">
+    <value>Chart6</value>
   </data>
-  <data name="&gt;&gt;Panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;Chart6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
   </data>
-  <data name="&gt;&gt;Panel1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Chart6.Parent" xml:space="preserve">
     <value>TabPage2</value>
   </data>
-  <data name="&gt;&gt;Panel1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;Chart6.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="&gt;&gt;Chart7.Name" xml:space="preserve">
@@ -11436,18 +12066,6 @@
   <data name="&gt;&gt;TabPage6.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="&gt;&gt;Button1.Name" xml:space="preserve">
-    <value>Button1</value>
-  </data>
-  <data name="&gt;&gt;Button1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Button1.Parent" xml:space="preserve">
-    <value>TabPage7</value>
-  </data>
-  <data name="&gt;&gt;Button1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="&gt;&gt;WebBrowser1.Name" xml:space="preserve">
     <value>WebBrowser1</value>
   </data>
@@ -11458,7 +12076,7 @@
     <value>TabPage7</value>
   </data>
   <data name="&gt;&gt;WebBrowser1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="&gt;&gt;gbTemperatura.Name" xml:space="preserve">
     <value>gbTemperatura</value>
@@ -11470,7 +12088,7 @@
     <value>TabPage7</value>
   </data>
   <data name="&gt;&gt;gbTemperatura.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="&gt;&gt;gbOpciones.Name" xml:space="preserve">
     <value>gbOpciones</value>
@@ -11482,7 +12100,7 @@
     <value>TabPage7</value>
   </data>
   <data name="&gt;&gt;gbOpciones.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="&gt;&gt;gbUser.Name" xml:space="preserve">
     <value>gbUser</value>
@@ -11494,7 +12112,7 @@
     <value>TabPage7</value>
   </data>
   <data name="&gt;&gt;gbUser.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="TabPage7.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
@@ -11540,984 +12158,6 @@
   </data>
   <data name="&gt;&gt;TabControl1.ZOrder" xml:space="preserve">
     <value>6</value>
-  </data>
-  <data name="lblEtiquetaPreciosAños.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
-  </data>
-  <data name="lblEtiquetaPreciosAños.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblEtiquetaPreciosAños.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 25</value>
-  </data>
-  <data name="lblEtiquetaPreciosAños.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 23</value>
-  </data>
-  <data name="lblEtiquetaPreciosAños.TabIndex" type="System.Int32, mscorlib">
-    <value>253</value>
-  </data>
-  <data name="lblEtiquetaPreciosAños.Text" xml:space="preserve">
-    <value>Price</value>
-  </data>
-  <data name="lblEtiquetaPreciosAños.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaPreciosAños.Name" xml:space="preserve">
-    <value>lblEtiquetaPreciosAños</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaPreciosAños.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaPreciosAños.Parent" xml:space="preserve">
-    <value>gbAños</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaPreciosAños.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="lblPrecioAño2022.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Duco, 11.25pt</value>
-  </data>
-  <data name="lblPrecioAño2022.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblPrecioAño2022.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 47</value>
-  </data>
-  <data name="lblPrecioAño2022.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 25</value>
-  </data>
-  <data name="lblPrecioAño2022.TabIndex" type="System.Int32, mscorlib">
-    <value>251</value>
-  </data>
-  <data name="lblPrecioAño2022.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lblPrecioAño2022.Name" xml:space="preserve">
-    <value>lblPrecioAño2022</value>
-  </data>
-  <data name="&gt;&gt;lblPrecioAño2022.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblPrecioAño2022.Parent" xml:space="preserve">
-    <value>gbAños</value>
-  </data>
-  <data name="&gt;&gt;lblPrecioAño2022.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="lblPrecioMedioTodosAños.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Duco, 12pt, style=Bold</value>
-  </data>
-  <data name="lblPrecioMedioTodosAños.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblPrecioMedioTodosAños.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 95</value>
-  </data>
-  <data name="lblPrecioMedioTodosAños.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 31</value>
-  </data>
-  <data name="lblPrecioMedioTodosAños.TabIndex" type="System.Int32, mscorlib">
-    <value>250</value>
-  </data>
-  <data name="lblPrecioMedioTodosAños.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lblPrecioMedioTodosAños.Name" xml:space="preserve">
-    <value>lblPrecioMedioTodosAños</value>
-  </data>
-  <data name="&gt;&gt;lblPrecioMedioTodosAños.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblPrecioMedioTodosAños.Parent" xml:space="preserve">
-    <value>gbAños</value>
-  </data>
-  <data name="&gt;&gt;lblPrecioMedioTodosAños.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="lblPrecioAño2023.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Duco, 11.25pt</value>
-  </data>
-  <data name="lblPrecioAño2023.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblPrecioAño2023.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 71</value>
-  </data>
-  <data name="lblPrecioAño2023.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 25</value>
-  </data>
-  <data name="lblPrecioAño2023.TabIndex" type="System.Int32, mscorlib">
-    <value>250</value>
-  </data>
-  <data name="lblPrecioAño2023.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lblPrecioAño2023.Name" xml:space="preserve">
-    <value>lblPrecioAño2023</value>
-  </data>
-  <data name="&gt;&gt;lblPrecioAño2023.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblPrecioAño2023.Parent" xml:space="preserve">
-    <value>gbAños</value>
-  </data>
-  <data name="&gt;&gt;lblPrecioAño2023.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="lblTransasionesAñoTotal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Duco, 12pt, style=Bold</value>
-  </data>
-  <data name="lblTransasionesAñoTotal.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblTransasionesAñoTotal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>184, 95</value>
-  </data>
-  <data name="lblTransasionesAñoTotal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 31</value>
-  </data>
-  <data name="lblTransasionesAñoTotal.TabIndex" type="System.Int32, mscorlib">
-    <value>263</value>
-  </data>
-  <data name="lblTransasionesAñoTotal.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="lblTransasionesAñoTotal.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lblTransasionesAñoTotal.Name" xml:space="preserve">
-    <value>lblTransasionesAñoTotal</value>
-  </data>
-  <data name="&gt;&gt;lblTransasionesAñoTotal.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblTransasionesAñoTotal.Parent" xml:space="preserve">
-    <value>gbAños</value>
-  </data>
-  <data name="&gt;&gt;lblTransasionesAñoTotal.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="lblTransasionesAño2022.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Duco, 11.25pt</value>
-  </data>
-  <data name="lblTransasionesAño2022.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblTransasionesAño2022.Location" type="System.Drawing.Point, System.Drawing">
-    <value>184, 47</value>
-  </data>
-  <data name="lblTransasionesAño2022.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 25</value>
-  </data>
-  <data name="lblTransasionesAño2022.TabIndex" type="System.Int32, mscorlib">
-    <value>259</value>
-  </data>
-  <data name="lblTransasionesAño2022.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lblTransasionesAño2022.Name" xml:space="preserve">
-    <value>lblTransasionesAño2022</value>
-  </data>
-  <data name="&gt;&gt;lblTransasionesAño2022.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblTransasionesAño2022.Parent" xml:space="preserve">
-    <value>gbAños</value>
-  </data>
-  <data name="&gt;&gt;lblTransasionesAño2022.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="lblTransasionesAño2023.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Duco, 11.25pt</value>
-  </data>
-  <data name="lblTransasionesAño2023.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblTransasionesAño2023.Location" type="System.Drawing.Point, System.Drawing">
-    <value>184, 71</value>
-  </data>
-  <data name="lblTransasionesAño2023.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 25</value>
-  </data>
-  <data name="lblTransasionesAño2023.TabIndex" type="System.Int32, mscorlib">
-    <value>258</value>
-  </data>
-  <data name="lblTransasionesAño2023.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lblTransasionesAño2023.Name" xml:space="preserve">
-    <value>lblTransasionesAño2023</value>
-  </data>
-  <data name="&gt;&gt;lblTransasionesAño2023.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblTransasionesAño2023.Parent" xml:space="preserve">
-    <value>gbAños</value>
-  </data>
-  <data name="&gt;&gt;lblTransasionesAño2023.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="lblEtiquetaTransacionesAños.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
-  </data>
-  <data name="lblEtiquetaTransacionesAños.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblEtiquetaTransacionesAños.Location" type="System.Drawing.Point, System.Drawing">
-    <value>184, 25</value>
-  </data>
-  <data name="lblEtiquetaTransacionesAños.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 23</value>
-  </data>
-  <data name="lblEtiquetaTransacionesAños.TabIndex" type="System.Int32, mscorlib">
-    <value>260</value>
-  </data>
-  <data name="lblEtiquetaTransacionesAños.Text" xml:space="preserve">
-    <value>Transa.</value>
-  </data>
-  <data name="lblEtiquetaTransacionesAños.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaTransacionesAños.Name" xml:space="preserve">
-    <value>lblEtiquetaTransacionesAños</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaTransacionesAños.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaTransacionesAños.Parent" xml:space="preserve">
-    <value>gbAños</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaTransacionesAños.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;lblDucosTotales.Name" xml:space="preserve">
-    <value>lblDucosTotales</value>
-  </data>
-  <data name="&gt;&gt;lblDucosTotales.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblDucosTotales.Parent" xml:space="preserve">
-    <value>gbEstadisticasGlobales</value>
-  </data>
-  <data name="&gt;&gt;lblDucosTotales.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaDuco.Name" xml:space="preserve">
-    <value>lblEtiquetaDuco</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaDuco.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaDuco.Parent" xml:space="preserve">
-    <value>gbEstadisticasGlobales</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaDuco.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;lblTotalTransasiones.Name" xml:space="preserve">
-    <value>lblTotalTransasiones</value>
-  </data>
-  <data name="&gt;&gt;lblTotalTransasiones.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblTotalTransasiones.Parent" xml:space="preserve">
-    <value>gbEstadisticasGlobales</value>
-  </data>
-  <data name="&gt;&gt;lblTotalTransasiones.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;lblTotalGanadoAños.Name" xml:space="preserve">
-    <value>lblTotalGanadoAños</value>
-  </data>
-  <data name="&gt;&gt;lblTotalGanadoAños.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblTotalGanadoAños.Parent" xml:space="preserve">
-    <value>gbEstadisticasGlobales</value>
-  </data>
-  <data name="&gt;&gt;lblTotalGanadoAños.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaGananciaTotal.Name" xml:space="preserve">
-    <value>lblEtiquetaGananciaTotal</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaGananciaTotal.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaGananciaTotal.Parent" xml:space="preserve">
-    <value>gbEstadisticasGlobales</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaGananciaTotal.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaTrasacioneTotal.Name" xml:space="preserve">
-    <value>lblEtiquetaTrasacioneTotal</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaTrasacioneTotal.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaTrasacioneTotal.Parent" xml:space="preserve">
-    <value>gbEstadisticasGlobales</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaTrasacioneTotal.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaDucoTotal.Name" xml:space="preserve">
-    <value>lblEtiquetaDucoTotal</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaDucoTotal.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaDucoTotal.Parent" xml:space="preserve">
-    <value>gbEstadisticasGlobales</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaDucoTotal.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="gbEstadisticasGlobales.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 129</value>
-  </data>
-  <data name="gbEstadisticasGlobales.Size" type="System.Drawing.Size, System.Drawing">
-    <value>319, 149</value>
-  </data>
-  <data name="gbEstadisticasGlobales.TabIndex" type="System.Int32, mscorlib">
-    <value>270</value>
-  </data>
-  <data name="gbEstadisticasGlobales.Text" xml:space="preserve">
-    <value>Global Statistics</value>
-  </data>
-  <data name="&gt;&gt;gbEstadisticasGlobales.Name" xml:space="preserve">
-    <value>gbEstadisticasGlobales</value>
-  </data>
-  <data name="&gt;&gt;gbEstadisticasGlobales.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gbEstadisticasGlobales.Parent" xml:space="preserve">
-    <value>gbAños</value>
-  </data>
-  <data name="&gt;&gt;gbEstadisticasGlobales.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="lblDucosTotales.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblDucosTotales.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Digital Display, 20.25pt, style=Bold</value>
-  </data>
-  <data name="lblDucosTotales.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="lblDucosTotales.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblDucosTotales.Location" type="System.Drawing.Point, System.Drawing">
-    <value>165, 67</value>
-  </data>
-  <data name="lblDucosTotales.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 18</value>
-  </data>
-  <data name="lblDucosTotales.TabIndex" type="System.Int32, mscorlib">
-    <value>268</value>
-  </data>
-  <data name="lblDucosTotales.Text" xml:space="preserve">
-    <value>000000,00</value>
-  </data>
-  <data name="lblDucosTotales.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;lblDucosTotales.Name" xml:space="preserve">
-    <value>lblDucosTotales</value>
-  </data>
-  <data name="&gt;&gt;lblDucosTotales.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblDucosTotales.Parent" xml:space="preserve">
-    <value>gbEstadisticasGlobales</value>
-  </data>
-  <data name="&gt;&gt;lblDucosTotales.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="lblEtiquetaDuco.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblEtiquetaDuco.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Duco, 20.25pt, style=Bold</value>
-  </data>
-  <data name="lblEtiquetaDuco.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblEtiquetaDuco.Location" type="System.Drawing.Point, System.Drawing">
-    <value>281, 65</value>
-  </data>
-  <data name="lblEtiquetaDuco.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 25</value>
-  </data>
-  <data name="lblEtiquetaDuco.TabIndex" type="System.Int32, mscorlib">
-    <value>269</value>
-  </data>
-  <data name="lblEtiquetaDuco.Text" xml:space="preserve">
-    <value>¬</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaDuco.Name" xml:space="preserve">
-    <value>lblEtiquetaDuco</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaDuco.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaDuco.Parent" xml:space="preserve">
-    <value>gbEstadisticasGlobales</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaDuco.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="lblTotalTransasiones.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblTotalTransasiones.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Digital Display, 21.75pt</value>
-  </data>
-  <data name="lblTotalTransasiones.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="lblTotalTransasiones.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblTotalTransasiones.Location" type="System.Drawing.Point, System.Drawing">
-    <value>249, 31</value>
-  </data>
-  <data name="lblTotalTransasiones.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 19</value>
-  </data>
-  <data name="lblTotalTransasiones.TabIndex" type="System.Int32, mscorlib">
-    <value>266</value>
-  </data>
-  <data name="lblTotalTransasiones.Text" xml:space="preserve">
-    <value>999</value>
-  </data>
-  <data name="lblTotalTransasiones.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;lblTotalTransasiones.Name" xml:space="preserve">
-    <value>lblTotalTransasiones</value>
-  </data>
-  <data name="&gt;&gt;lblTotalTransasiones.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblTotalTransasiones.Parent" xml:space="preserve">
-    <value>gbEstadisticasGlobales</value>
-  </data>
-  <data name="&gt;&gt;lblTotalTransasiones.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="lblTotalGanadoAños.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblTotalGanadoAños.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Digital Display, 27.75pt, style=Bold</value>
-  </data>
-  <data name="lblTotalGanadoAños.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="lblTotalGanadoAños.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblTotalGanadoAños.Location" type="System.Drawing.Point, System.Drawing">
-    <value>181, 104</value>
-  </data>
-  <data name="lblTotalGanadoAños.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 24</value>
-  </data>
-  <data name="lblTotalGanadoAños.TabIndex" type="System.Int32, mscorlib">
-    <value>136</value>
-  </data>
-  <data name="lblTotalGanadoAños.Text" xml:space="preserve">
-    <value>000,00€</value>
-  </data>
-  <data name="lblTotalGanadoAños.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;lblTotalGanadoAños.Name" xml:space="preserve">
-    <value>lblTotalGanadoAños</value>
-  </data>
-  <data name="&gt;&gt;lblTotalGanadoAños.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblTotalGanadoAños.Parent" xml:space="preserve">
-    <value>gbEstadisticasGlobales</value>
-  </data>
-  <data name="&gt;&gt;lblTotalGanadoAños.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="lblEtiquetaGananciaTotal.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblEtiquetaGananciaTotal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 20.25pt</value>
-  </data>
-  <data name="lblEtiquetaGananciaTotal.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="lblEtiquetaGananciaTotal.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblEtiquetaGananciaTotal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 101</value>
-  </data>
-  <data name="lblEtiquetaGananciaTotal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>186, 31</value>
-  </data>
-  <data name="lblEtiquetaGananciaTotal.TabIndex" type="System.Int32, mscorlib">
-    <value>135</value>
-  </data>
-  <data name="lblEtiquetaGananciaTotal.Text" xml:space="preserve">
-    <value>Ganado Total:</value>
-  </data>
-  <data name="lblEtiquetaGananciaTotal.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaGananciaTotal.Name" xml:space="preserve">
-    <value>lblEtiquetaGananciaTotal</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaGananciaTotal.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaGananciaTotal.Parent" xml:space="preserve">
-    <value>gbEstadisticasGlobales</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaGananciaTotal.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="lblEtiquetaTrasacioneTotal.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblEtiquetaTrasacioneTotal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 20.25pt</value>
-  </data>
-  <data name="lblEtiquetaTrasacioneTotal.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="lblEtiquetaTrasacioneTotal.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblEtiquetaTrasacioneTotal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 23</value>
-  </data>
-  <data name="lblEtiquetaTrasacioneTotal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>254, 31</value>
-  </data>
-  <data name="lblEtiquetaTrasacioneTotal.TabIndex" type="System.Int32, mscorlib">
-    <value>265</value>
-  </data>
-  <data name="lblEtiquetaTrasacioneTotal.Text" xml:space="preserve">
-    <value>Transaciones Total:</value>
-  </data>
-  <data name="lblEtiquetaTrasacioneTotal.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaTrasacioneTotal.Name" xml:space="preserve">
-    <value>lblEtiquetaTrasacioneTotal</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaTrasacioneTotal.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaTrasacioneTotal.Parent" xml:space="preserve">
-    <value>gbEstadisticasGlobales</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaTrasacioneTotal.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="lblEtiquetaDucoTotal.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblEtiquetaDucoTotal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 20.25pt</value>
-  </data>
-  <data name="lblEtiquetaDucoTotal.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="lblEtiquetaDucoTotal.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblEtiquetaDucoTotal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 58</value>
-  </data>
-  <data name="lblEtiquetaDucoTotal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 31</value>
-  </data>
-  <data name="lblEtiquetaDucoTotal.TabIndex" type="System.Int32, mscorlib">
-    <value>267</value>
-  </data>
-  <data name="lblEtiquetaDucoTotal.Text" xml:space="preserve">
-    <value>Ducos Total:</value>
-  </data>
-  <data name="lblEtiquetaDucoTotal.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaDucoTotal.Name" xml:space="preserve">
-    <value>lblEtiquetaDucoTotal</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaDucoTotal.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaDucoTotal.Parent" xml:space="preserve">
-    <value>gbEstadisticasGlobales</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaDucoTotal.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="lblEtiquetaAñosTotal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11.25pt, style=Bold</value>
-  </data>
-  <data name="lblEtiquetaAñosTotal.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="lblEtiquetaAñosTotal.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblEtiquetaAñosTotal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 95</value>
-  </data>
-  <data name="lblEtiquetaAñosTotal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 31</value>
-  </data>
-  <data name="lblEtiquetaAñosTotal.TabIndex" type="System.Int32, mscorlib">
-    <value>264</value>
-  </data>
-  <data name="lblEtiquetaAñosTotal.Text" xml:space="preserve">
-    <value>Annual Total:</value>
-  </data>
-  <data name="lblEtiquetaAñosTotal.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaAñosTotal.Name" xml:space="preserve">
-    <value>lblEtiquetaAñosTotal</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaAñosTotal.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaAñosTotal.Parent" xml:space="preserve">
-    <value>gbAños</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaAñosTotal.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="lblGanadoAñoTotal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Duco, 12pt, style=Bold</value>
-  </data>
-  <data name="lblGanadoAñoTotal.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblGanadoAñoTotal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>249, 95</value>
-  </data>
-  <data name="lblGanadoAñoTotal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 31</value>
-  </data>
-  <data name="lblGanadoAñoTotal.TabIndex" type="System.Int32, mscorlib">
-    <value>262</value>
-  </data>
-  <data name="lblGanadoAñoTotal.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="lblGanadoAñoTotal.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lblGanadoAñoTotal.Name" xml:space="preserve">
-    <value>lblGanadoAñoTotal</value>
-  </data>
-  <data name="&gt;&gt;lblGanadoAñoTotal.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblGanadoAñoTotal.Parent" xml:space="preserve">
-    <value>gbAños</value>
-  </data>
-  <data name="&gt;&gt;lblGanadoAñoTotal.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="lblEtiquetaGananciasAños.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
-  </data>
-  <data name="lblEtiquetaGananciasAños.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblEtiquetaGananciasAños.Location" type="System.Drawing.Point, System.Drawing">
-    <value>249, 25</value>
-  </data>
-  <data name="lblEtiquetaGananciasAños.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="lblEtiquetaGananciasAños.TabIndex" type="System.Int32, mscorlib">
-    <value>256</value>
-  </data>
-  <data name="lblEtiquetaGananciasAños.Text" xml:space="preserve">
-    <value>Gain</value>
-  </data>
-  <data name="lblEtiquetaGananciasAños.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaGananciasAños.Name" xml:space="preserve">
-    <value>lblEtiquetaGananciasAños</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaGananciasAños.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaGananciasAños.Parent" xml:space="preserve">
-    <value>gbAños</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaGananciasAños.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="lblGanadoAño2022.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Duco, 11.25pt</value>
-  </data>
-  <data name="lblGanadoAño2022.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblGanadoAño2022.Location" type="System.Drawing.Point, System.Drawing">
-    <value>249, 47</value>
-  </data>
-  <data name="lblGanadoAño2022.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 25</value>
-  </data>
-  <data name="lblGanadoAño2022.TabIndex" type="System.Int32, mscorlib">
-    <value>257</value>
-  </data>
-  <data name="lblGanadoAño2022.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lblGanadoAño2022.Name" xml:space="preserve">
-    <value>lblGanadoAño2022</value>
-  </data>
-  <data name="&gt;&gt;lblGanadoAño2022.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblGanadoAño2022.Parent" xml:space="preserve">
-    <value>gbAños</value>
-  </data>
-  <data name="&gt;&gt;lblGanadoAño2022.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="lblGanadoAño2023.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Duco, 11.25pt</value>
-  </data>
-  <data name="lblGanadoAño2023.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblGanadoAño2023.Location" type="System.Drawing.Point, System.Drawing">
-    <value>249, 71</value>
-  </data>
-  <data name="lblGanadoAño2023.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 25</value>
-  </data>
-  <data name="lblGanadoAño2023.TabIndex" type="System.Int32, mscorlib">
-    <value>254</value>
-  </data>
-  <data name="lblGanadoAño2023.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lblGanadoAño2023.Name" xml:space="preserve">
-    <value>lblGanadoAño2023</value>
-  </data>
-  <data name="&gt;&gt;lblGanadoAño2023.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblGanadoAño2023.Parent" xml:space="preserve">
-    <value>gbAños</value>
-  </data>
-  <data name="&gt;&gt;lblGanadoAño2023.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="Label130.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
-  </data>
-  <data name="Label130.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Label130.Location" type="System.Drawing.Point, System.Drawing">
-    <value>49, 25</value>
-  </data>
-  <data name="Label130.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 23</value>
-  </data>
-  <data name="Label130.TabIndex" type="System.Int32, mscorlib">
-    <value>243</value>
-  </data>
-  <data name="Label130.Text" xml:space="preserve">
-    <value>Ducos</value>
-  </data>
-  <data name="Label130.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;Label130.Name" xml:space="preserve">
-    <value>Label130</value>
-  </data>
-  <data name="&gt;&gt;Label130.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Label130.Parent" xml:space="preserve">
-    <value>gbAños</value>
-  </data>
-  <data name="&gt;&gt;Label130.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="lblBalanceAño2022.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Duco, 11.25pt</value>
-  </data>
-  <data name="lblBalanceAño2022.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblBalanceAño2022.Location" type="System.Drawing.Point, System.Drawing">
-    <value>49, 47</value>
-  </data>
-  <data name="lblBalanceAño2022.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 25</value>
-  </data>
-  <data name="lblBalanceAño2022.TabIndex" type="System.Int32, mscorlib">
-    <value>245</value>
-  </data>
-  <data name="lblBalanceAño2022.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lblBalanceAño2022.Name" xml:space="preserve">
-    <value>lblBalanceAño2022</value>
-  </data>
-  <data name="&gt;&gt;lblBalanceAño2022.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblBalanceAño2022.Parent" xml:space="preserve">
-    <value>gbAños</value>
-  </data>
-  <data name="&gt;&gt;lblBalanceAño2022.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="lblBalanceAño2023.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Duco, 11.25pt</value>
-  </data>
-  <data name="lblBalanceAño2023.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblBalanceAño2023.Location" type="System.Drawing.Point, System.Drawing">
-    <value>49, 71</value>
-  </data>
-  <data name="lblBalanceAño2023.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 25</value>
-  </data>
-  <data name="lblBalanceAño2023.TabIndex" type="System.Int32, mscorlib">
-    <value>244</value>
-  </data>
-  <data name="lblBalanceAño2023.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lblBalanceAño2023.Name" xml:space="preserve">
-    <value>lblBalanceAño2023</value>
-  </data>
-  <data name="&gt;&gt;lblBalanceAño2023.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblBalanceAño2023.Parent" xml:space="preserve">
-    <value>gbAños</value>
-  </data>
-  <data name="&gt;&gt;lblBalanceAño2023.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="lblEtiquetaAños.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
-  </data>
-  <data name="lblEtiquetaAños.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblEtiquetaAños.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 25</value>
-  </data>
-  <data name="lblEtiquetaAños.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="lblEtiquetaAños.TabIndex" type="System.Int32, mscorlib">
-    <value>248</value>
-  </data>
-  <data name="lblEtiquetaAños.Text" xml:space="preserve">
-    <value>Year</value>
-  </data>
-  <data name="lblEtiquetaAños.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaAños.Name" xml:space="preserve">
-    <value>lblEtiquetaAños</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaAños.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaAños.Parent" xml:space="preserve">
-    <value>gbAños</value>
-  </data>
-  <data name="&gt;&gt;lblEtiquetaAños.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="Label137.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Duco, 11.25pt, style=Bold</value>
-  </data>
-  <data name="Label137.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Label137.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 47</value>
-  </data>
-  <data name="Label137.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 25</value>
-  </data>
-  <data name="Label137.TabIndex" type="System.Int32, mscorlib">
-    <value>247</value>
-  </data>
-  <data name="Label137.Text" xml:space="preserve">
-    <value>2022</value>
-  </data>
-  <data name="Label137.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;Label137.Name" xml:space="preserve">
-    <value>Label137</value>
-  </data>
-  <data name="&gt;&gt;Label137.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Label137.Parent" xml:space="preserve">
-    <value>gbAños</value>
-  </data>
-  <data name="&gt;&gt;Label137.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="Label138.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Duco, 11.25pt, style=Bold</value>
-  </data>
-  <data name="Label138.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Label138.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 71</value>
-  </data>
-  <data name="Label138.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 25</value>
-  </data>
-  <data name="Label138.TabIndex" type="System.Int32, mscorlib">
-    <value>246</value>
-  </data>
-  <data name="Label138.Text" xml:space="preserve">
-    <value>2023</value>
-  </data>
-  <data name="Label138.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;Label138.Name" xml:space="preserve">
-    <value>Label138</value>
-  </data>
-  <data name="&gt;&gt;Label138.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Label138.Parent" xml:space="preserve">
-    <value>gbAños</value>
-  </data>
-  <data name="&gt;&gt;Label138.ZOrder" xml:space="preserve">
-    <value>19</value>
   </data>
   <data name="lblGananciasAño01.Font" type="System.Drawing.Font, System.Drawing">
     <value>Duco, 11.25pt</value>
@@ -14651,30 +14291,6 @@
   </data>
   <data name="&gt;&gt;lblTransacionesTotalAño.ZOrder" xml:space="preserve">
     <value>68</value>
-  </data>
-  <data name="Panel1.AutoScroll" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="Panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 537</value>
-  </data>
-  <data name="Panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1083, 145</value>
-  </data>
-  <data name="Panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>152</value>
-  </data>
-  <data name="&gt;&gt;Panel1.Name" xml:space="preserve">
-    <value>Panel1</value>
-  </data>
-  <data name="&gt;&gt;Panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Panel1.Parent" xml:space="preserve">
-    <value>TabPage2</value>
-  </data>
-  <data name="&gt;&gt;Panel1.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="Chart7.Location" type="System.Drawing.Point, System.Drawing">
     <value>531, 389</value>
@@ -19364,7 +18980,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAACk
-        JQAAAk1TRnQBSQFMAgEBCQEAAaABBwGgAQcBEAEAARABAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFA
+        JQAAAk1TRnQBSQFMAgEBCQEAAbABBwGwAQcBEAEAARABAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFA
         AwABMAMAAQEBAAEgBgABMBIAA4AB/jz/wAADgAH+AYACAAH/AYACAAH/AwAB/wMAAf8DAAH/AgABvgH/
         AYACAAH/AYACAAH/AwAB/wIAAZgB/wGAAgAB/wGAAgAB/wGAAgAB/wGAAgAB/wGAAgAB/8AAA4AB/gGA
         AgAB/wGAAgAB/wGAAgAB/wGAAgAB/wGAAgAB/wGAAgAB/wGAAgAB/wGAAgAB/wGAAgAB/wGAAgAB/wGA
@@ -19722,30 +19338,6 @@
   <data name="&gt;&gt;txtLog.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="Button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>593, 386</value>
-  </data>
-  <data name="Button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="Button1.TabIndex" type="System.Int32, mscorlib">
-    <value>159</value>
-  </data>
-  <data name="Button1.Text" xml:space="preserve">
-    <value>Button1</value>
-  </data>
-  <data name="&gt;&gt;Button1.Name" xml:space="preserve">
-    <value>Button1</value>
-  </data>
-  <data name="&gt;&gt;Button1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Button1.Parent" xml:space="preserve">
-    <value>TabPage7</value>
-  </data>
-  <data name="&gt;&gt;Button1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="WebBrowser1.Location" type="System.Drawing.Point, System.Drawing">
     <value>370, 25</value>
   </data>
@@ -19768,7 +19360,7 @@
     <value>TabPage7</value>
   </data>
   <data name="&gt;&gt;WebBrowser1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="&gt;&gt;txtFanAmarillo2.Name" xml:space="preserve">
     <value>txtFanAmarillo2</value>
@@ -19867,7 +19459,7 @@
     <value>TabPage7</value>
   </data>
   <data name="&gt;&gt;gbTemperatura.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="txtFanAmarillo2.Location" type="System.Drawing.Point, System.Drawing">
     <value>187, 61</value>
@@ -20116,7 +19708,7 @@
     <value>TabPage7</value>
   </data>
   <data name="&gt;&gt;gbOpciones.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="Label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -20323,7 +19915,7 @@
     <value>TabPage7</value>
   </data>
   <data name="&gt;&gt;gbUser.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="PictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -21826,7 +21418,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblHumedad.Location" type="System.Drawing.Point, System.Drawing">
-    <value>75, 18</value>
+    <value>75, 16</value>
   </data>
   <data name="lblHumedad.Size" type="System.Drawing.Size, System.Drawing">
     <value>95, 36</value>
@@ -21862,7 +21454,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblTemperatura.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 20</value>
+    <value>3, 18</value>
   </data>
   <data name="lblTemperatura.Size" type="System.Drawing.Size, System.Drawing">
     <value>72, 34</value>
@@ -22295,6 +21887,30 @@
   </data>
   <data name="&gt;&gt;gbGananciasDolar.ZOrder" xml:space="preserve">
     <value>11</value>
+  </data>
+  <data name="Chart6.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="Chart6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 538</value>
+  </data>
+  <data name="Chart6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1084, 142</value>
+  </data>
+  <data name="Chart6.TabIndex" type="System.Int32, mscorlib">
+    <value>152</value>
+  </data>
+  <data name="&gt;&gt;Chart6.Name" xml:space="preserve">
+    <value>Chart6</value>
+  </data>
+  <data name="&gt;&gt;Chart6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;Chart6.Parent" xml:space="preserve">
+    <value>TabPage2</value>
+  </data>
+  <data name="&gt;&gt;Chart6.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -24317,9 +23933,6 @@
         AAAAAAAAAADwDwAAwAMAAIABAACAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAQAA
         gAEAAMADAADwDwAA
 </value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Ducos Statistics v0.5</value>

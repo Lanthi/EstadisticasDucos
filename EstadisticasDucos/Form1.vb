@@ -78,6 +78,7 @@ Public Class Form1
     Private myReader As SqlDataReader
     Private results As String
     Dim VarResetDia As Boolean = False
+    Dim VarReserMes As Boolean = False
     Dim TotalDia As Decimal
     Dim TotalMes As Decimal
     Dim TotalAño As Decimal
@@ -1798,10 +1799,15 @@ Public Class Form1
                         ResetDia()
                     End If
                     lblReinicioApp.Text = -1
-                    If lblBalanceHora00.Text = "0" Then lblBalanceHora00.Text = FormatDuco(txtbalance.Text, 96) : lblPrecio00.Text = FormatDuco(CDec(txtDucoprice.Text), 97) : AñadirHoraSQL(DateAndTime.DateValue(Now), lblBalanceHora00.Text, lblPrecio00.Text, lblHoraDiferencia00.Text)
+                    If lblBalanceHora00.Text = "0" Then
+                        lblBalanceHora00.Text = FormatDuco(txtbalance.Text, 96)
+                        lblPrecio00.Text = FormatDuco(CDec(txtDucoprice.Text), 97)
+                        AñadirHoraSQL(DateAndTime.DateValue(Now), lblBalanceHora00.Text, lblPrecio00.Text, lblHoraDiferencia00.Text)
+                    End If
                     Select Case DateAndTime.Day(Now)
                         Case 1
-                            If Hour(Now) = 0 And Minute(Now) = 0 Then
+                            If Hour(Now) = 0 And Minute(Now) = 0 And VarReserMes = False Then
+                                VarReserMes = True
                                 lblMesBalance01.Text = "0"
                                 lblMesBalance02.Text = "0"
                                 lblMesBalance03.Text = "0"
@@ -1864,9 +1870,45 @@ Public Class Form1
                                 lblMesPrecio29.Text = "0"
                                 lblMesPrecio30.Text = "0"
                                 lblMesPrecio31.Text = "0"
+                                lblMesDifencia01.Text = "0"
+                                lblMesDifencia02.Text = "0"
+                                lblMesDifencia03.Text = "0"
+                                lblMesDifencia04.Text = "0"
+                                lblMesDifencia05.Text = "0"
+                                lblMesDifencia06.Text = "0"
+                                lblMesDifencia07.Text = "0"
+                                lblMesDifencia08.Text = "0"
+                                lblMesDifencia09.Text = "0"
+                                lblMesDifencia10.Text = "0"
+                                lblMesDifencia11.Text = "0"
+                                lblMesDifencia12.Text = "0"
+                                lblMesDifencia13.Text = "0"
+                                lblMesDifencia14.Text = "0"
+                                lblMesDifencia15.Text = "0"
+                                lblMesDifencia16.Text = "0"
+                                lblMesDifencia17.Text = "0"
+                                lblMesDifencia18.Text = "0"
+                                lblMesDifencia19.Text = "0"
+                                lblMesDifencia20.Text = "0"
+                                lblMesDifencia21.Text = "0"
+                                lblMesDifencia22.Text = "0"
+                                lblMesDifencia23.Text = "0"
+                                lblMesDifencia24.Text = "0"
+                                lblMesDifencia25.Text = "0"
+                                lblMesDifencia26.Text = "0"
+                                lblMesDifencia27.Text = "0"
+                                lblMesDifencia28.Text = "0"
+                                lblMesDifencia29.Text = "0"
+                                lblMesDifencia30.Text = "0"
+                                lblMesDifencia31.Text = "0"
+
                             End If
-                            If lblMesBalance01.Text = "0" Then lblMesBalance01.Text = FormatDuco(txtbalance.Text, 96) : lblMesPrecio01.Text = FormatDuco(CDec(lblPrecioDia.Text), 97) : AñadirMesSQL(MesActual, lblMesBalance01.Text, lblMesPrecio01.Text, lblMesDifencia01.Text, lblTransacionMes01.Text)
-                        Case 2 : If lblMesBalance02.Text = "0" Then lblMesBalance02.Text = FormatDuco(txtbalance.Text, 96) : lblMesPrecio02.Text = FormatDuco(CDec(lblPrecioDia.Text), 97)
+                            If lblMesBalance01.Text = "0" Then
+                                lblMesBalance01.Text = lblBalanceHora00.Text
+                                lblMesPrecio01.Text = lblPrecio00.Text
+                                AñadirMesSQL(MesActual, lblMesBalance01.Text, lblMesPrecio01.Text, lblMesDifencia01.Text, lblTransacionMes01.Text)
+                            End If
+                        Case 2 : If lblMesBalance02.Text = "0" Then lblMesBalance02.Text = FormatDuco(txtbalance.Text, 96) : lblMesPrecio02.Text = FormatDuco(CDec(lblPrecioDia.Text), 97) : VarReserMes = False
                         Case 3 : If lblMesBalance03.Text = "0" Then lblMesBalance03.Text = FormatDuco(txtbalance.Text, 96) : lblMesPrecio03.Text = FormatDuco(CDec(lblPrecioDia.Text), 97)
                         Case 4 : If lblMesBalance04.Text = "0" Then lblMesBalance04.Text = FormatDuco(txtbalance.Text, 96) : lblMesPrecio04.Text = FormatDuco(CDec(lblPrecioDia.Text), 97)
                         Case 5 : If lblMesBalance05.Text = "0" Then lblMesBalance05.Text = FormatDuco(txtbalance.Text, 96) : lblMesPrecio05.Text = FormatDuco(CDec(lblPrecioDia.Text), 97)
@@ -2567,5 +2609,10 @@ Public Class Form1
     End Sub
     Private Sub ActualizarAñosSQL(ByVal Fecha As String, ByVal Hora As String, ByVal Balance As Decimal, ByVal Precio As Decimal, ByVal Diferencia As Decimal, ByVal Transaciones As String)
         WebBrowser1.Navigate("http://localhost/UpdateAnos.php?Fecha=" & Fecha & "&Hora=" & Hora & "&Balance=" & Balance & "&Precio=" & Precio & "&Diferencia=" & Diferencia & "&Transaciones=" & Transaciones & "")
+    End Sub
+
+    Private Sub Button1_Click_1(sender As Object, e As EventArgs)
+        AñadirHoraSQL(DateAndTime.DateValue(Now), lblBalanceHora00.Text, lblPrecio00.Text, lblHoraDiferencia00.Text)
+        lblMesBalance01.Text = lblBalanceHora00.Text
     End Sub
 End Class

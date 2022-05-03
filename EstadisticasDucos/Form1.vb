@@ -965,7 +965,6 @@ Public Class Form1
             lblTransasionesAñoTotal.Text = Suma2
             lblTotalTransasiones.Text = CInt(ContaTransa + 1)
             lblDucosTotales.Text = Format(CDec(Suma), "####0.00")
-            lblBalanceAño2022.Text = FormatDuco(CDec(txtbalance.Text - Suma2), 9)
             lblTotalGanadoAños.Text = Format(CDec(txtbalance.Text - Suma2) * CDec(txtDucoprice.Text) * Euro, "###0.00") & "€"
             GanadoGlobal = Format(CDec(txtbalance.Text - Suma2) * CDec(txtDucoprice.Text) * Euro, "###0.00")
             lblEtiquetaDuco.Left = lblDucosTotales.Left + lblDucosTotales.Width - 5

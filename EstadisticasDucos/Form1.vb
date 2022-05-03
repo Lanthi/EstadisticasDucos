@@ -757,6 +757,32 @@ Public Class Form1
                 Case 30 : If lblMesBalance30.Text <> 0 Then lblMesDifencia30.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance30.Text) - CDec(Transacion(30)), 13)
                 Case 31 : If lblMesBalance31.Text <> 0 Then lblMesDifencia31.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblMesBalance31.Text) - CDec(Transacion(31)), 13)
             End Select
+            lblTransasionesAño01.Text = TransasionesAnuales("01")
+            lblTransasionesAño02.Text = TransasionesAnuales("02")
+            lblTransasionesAño03.Text = TransasionesAnuales("03")
+            lblTransasionesAño04.Text = TransasionesAnuales("04")
+            lblTransasionesAño05.Text = TransasionesAnuales("05")
+            lblTransasionesAño06.Text = TransasionesAnuales("06")
+            lblTransasionesAño07.Text = TransasionesAnuales("07")
+            lblTransasionesAño08.Text = TransasionesAnuales("08")
+            lblTransasionesAño09.Text = TransasionesAnuales("09")
+            lblTransasionesAño10.Text = TransasionesAnuales("10")
+            lblTransasionesAño11.Text = TransasionesAnuales("11")
+            lblTransasionesAño12.Text = TransasionesAnuales("12")
+            Select Case Month(Now)
+                Case 1 : If lblBalanceAño01.Text <> 0 Then lblGananciasAño01.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceAño01.Text) - CDec(lblTransasionesAño01.Text), 100)
+                Case 2 : If lblBalanceAño02.Text <> 0 Then lblGananciasAño02.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceAño02.Text) - CDec(lblTransasionesAño02.Text), 100)
+                Case 3 : If lblBalanceAño03.Text <> 0 Then lblGananciasAño03.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceAño03.Text) - CDec(lblTransasionesAño03.Text), 100)
+                Case 4 : If lblBalanceAño04.Text <> 0 Then lblGananciasAño04.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceAño04.Text) - CDec(lblTransasionesAño04.Text), 100)
+                Case 5 : If lblBalanceAño05.Text <> 0 Then lblGananciasAño05.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceAño05.Text) - CDec(lblTransasionesAño05.Text), 100)
+                Case 6 : If lblBalanceAño06.Text <> 0 Then lblGananciasAño06.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceAño06.Text) - CDec(lblTransasionesAño06.Text), 100)
+                Case 7 : If lblBalanceAño07.Text <> 0 Then lblGananciasAño07.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceAño07.Text) - CDec(lblTransasionesAño07.Text), 100)
+                Case 8 : If lblBalanceAño08.Text <> 0 Then lblGananciasAño08.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceAño08.Text) - CDec(lblTransasionesAño08.Text), 100)
+                Case 9 : If lblBalanceAño09.Text <> 0 Then lblGananciasAño09.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceAño09.Text) - CDec(lblTransasionesAño09.Text), 100)
+                Case 10 : If lblBalanceAño10.Text <> 0 Then lblGananciasAño10.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceAño10.Text) - CDec(lblTransasionesAño10.Text), 100)
+                Case 11 : If lblBalanceAño11.Text <> 0 Then lblGananciasAño11.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceAño11.Text) - CDec(lblTransasionesAño11.Text), 100)
+                Case 12 : If lblBalanceAño12.Text <> 0 Then lblGananciasAño12.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceAño12.Text) - CDec(lblTransasionesAño12.Text), 100)
+            End Select
             MostrarTotales()
             Chart1.Series(0).Points.Clear()
             Chart1.Series(0).Points.AddXY(TimeValue("00:00"), CDec(lblPrecio00.Text))
@@ -898,6 +924,51 @@ Public Class Form1
             Chart5.Series(0).Points.AddXY("Day 30", CDec(lblMesPrecio30.Text))
             Chart4.Series(0).Points.AddXY("Day 31", CDec(lblMesBalance31.Text))
             Chart5.Series(0).Points.AddXY("Day 31", CDec(lblMesPrecio31.Text))
+            Dim Suma As Decimal
+            Dim Suma2 As Decimal
+            Suma = lblGananciasAño01.Text
+            Suma += lblGananciasAño02.Text
+            Suma += lblGananciasAño03.Text
+            Suma += lblGananciasAño04.Text
+            Suma += lblGananciasAño05.Text
+            Suma += lblGananciasAño06.Text
+            Suma += lblGananciasAño07.Text
+            Suma += lblGananciasAño08.Text
+            Suma += lblGananciasAño09.Text
+            Suma += lblGananciasAño10.Text
+            Suma += lblGananciasAño11.Text
+            Suma += lblGananciasAño12.Text
+            TotalAño = FormatDuco(Suma, 96)
+            lblTotalGananciaAño.Text = Format(Suma, "#0.00") & "¬"
+            GanadoAño = Format(Suma, "#0.00")
+            lblGanadoAño2022.Text = FormatDuco(Suma, 10)
+            Suma = CDec(lblTransasionesAño01.Text)
+            Suma += CDec(lblTransasionesAño02.Text)
+            Suma += CDec(lblTransasionesAño03.Text)
+            Suma += CDec(lblTransasionesAño04.Text)
+            Suma += CDec(lblTransasionesAño05.Text)
+            Suma += CDec(lblTransasionesAño06.Text)
+            Suma += CDec(lblTransasionesAño07.Text)
+            Suma += CDec(lblTransasionesAño08.Text)
+            Suma += CDec(lblTransasionesAño09.Text)
+            Suma += CDec(lblTransasionesAño10.Text)
+            Suma += CDec(lblTransasionesAño11.Text)
+            Suma += CDec(lblTransasionesAño12.Text)
+            lblTransacionesTotalAño.Text = Suma
+            lblTransasionesAño2022.Text = lblTransacionesTotalAño.Text
+            Suma = CDec(lblGanadoAño2022.Text)
+            Suma += CDec(lblGanadoAño2023.Text)
+            lblGanadoAñoTotal.Text = FormatDuco(Suma, 6) & "¬"
+            GanadoTotal = FormatDuco(Suma, 6)
+            Suma2 = CDec(lblTransasionesAño2022.Text)
+            Suma2 += CDec(lblTransasionesAño2023.Text)
+            lblTransasionesAñoTotal.Text = Suma2
+            lblTotalTransasiones.Text = CInt(ContaTransa + 1)
+            lblDucosTotales.Text = Format(CDec(Suma), "####0.00")
+            lblBalanceAño2022.Text = FormatDuco(CDec(txtbalance.Text - Suma2), 9)
+            lblTotalGanadoAños.Text = Format(CDec(txtbalance.Text - Suma2) * CDec(txtDucoprice.Text) * Euro, "###0.00") & "€"
+            GanadoGlobal = Format(CDec(txtbalance.Text - Suma2) * CDec(txtDucoprice.Text) * Euro, "###0.00")
+            lblEtiquetaDuco.Left = lblDucosTotales.Left + lblDucosTotales.Width - 5
             My.Settings.Save()
         Catch ex As Exception
             If ActivarMensajesError = True Then MsgBox("Error!!" & vbCrLf & ex.Message)
@@ -2027,77 +2098,8 @@ Public Class Form1
                     lblPrecioAño12.Text = FormatDuco(CDec(lblPrecioMes.Text), 97)
                     lblTransasionesAño12.Text = Format(TransacionAño(12), "#0.0#") & "(" & TransacionPorAño(12) & ")"
             End Select
-            lblTransasionesAño01.Text = TransasionesAnuales("01")
-            lblTransasionesAño02.Text = TransasionesAnuales("02")
-            lblTransasionesAño03.Text = TransasionesAnuales("03")
-            lblTransasionesAño04.Text = TransasionesAnuales("04")
-            lblTransasionesAño05.Text = TransasionesAnuales("05")
-            lblTransasionesAño06.Text = TransasionesAnuales("06")
-            lblTransasionesAño07.Text = TransasionesAnuales("07")
-            lblTransasionesAño08.Text = TransasionesAnuales("08")
-            lblTransasionesAño09.Text = TransasionesAnuales("09")
-            lblTransasionesAño10.Text = TransasionesAnuales("10")
-            lblTransasionesAño11.Text = TransasionesAnuales("11")
-            lblTransasionesAño12.Text = TransasionesAnuales("12")
-            Select Case Month(Now)
-                Case 1 : If lblBalanceAño01.Text <> 0 Then lblGananciasAño01.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceAño01.Text) - CDec(lblTransasionesAño01.Text), 100)
-                Case 2 : If lblBalanceAño02.Text <> 0 Then lblGananciasAño02.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceAño02.Text) - CDec(lblTransasionesAño02.Text), 100)
-                Case 3 : If lblBalanceAño03.Text <> 0 Then lblGananciasAño03.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceAño03.Text) - CDec(lblTransasionesAño03.Text), 100)
-                Case 4 : If lblBalanceAño04.Text <> 0 Then lblGananciasAño04.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceAño04.Text) - CDec(lblTransasionesAño04.Text), 100)
-                Case 5 : If lblBalanceAño05.Text <> 0 Then lblGananciasAño05.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceAño05.Text) - CDec(lblTransasionesAño05.Text), 100)
-                Case 6 : If lblBalanceAño06.Text <> 0 Then lblGananciasAño06.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceAño06.Text) - CDec(lblTransasionesAño06.Text), 100)
-                Case 7 : If lblBalanceAño07.Text <> 0 Then lblGananciasAño07.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceAño07.Text) - CDec(lblTransasionesAño07.Text), 100)
-                Case 8 : If lblBalanceAño08.Text <> 0 Then lblGananciasAño08.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceAño08.Text) - CDec(lblTransasionesAño08.Text), 100)
-                Case 9 : If lblBalanceAño09.Text <> 0 Then lblGananciasAño09.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceAño09.Text) - CDec(lblTransasionesAño09.Text), 100)
-                Case 10 : If lblBalanceAño10.Text <> 0 Then lblGananciasAño10.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceAño10.Text) - CDec(lblTransasionesAño10.Text), 100)
-                Case 11 : If lblBalanceAño11.Text <> 0 Then lblGananciasAño11.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceAño11.Text) - CDec(lblTransasionesAño11.Text), 100)
-                Case 12 : If lblBalanceAño12.Text <> 0 Then lblGananciasAño12.Text = FormatDuco(CDec(txtbalance.Text) - CDec(lblBalanceAño12.Text) - CDec(lblTransasionesAño12.Text), 100)
-            End Select
-            Dim Suma As Decimal
-            Dim Suma2 As Decimal
-            Suma = lblGananciasAño01.Text
-            Suma += lblGananciasAño02.Text
-            Suma += lblGananciasAño03.Text
-            Suma += lblGananciasAño04.Text
-            Suma += lblGananciasAño05.Text
-            Suma += lblGananciasAño06.Text
-            Suma += lblGananciasAño07.Text
-            Suma += lblGananciasAño08.Text
-            Suma += lblGananciasAño09.Text
-            Suma += lblGananciasAño10.Text
-            Suma += lblGananciasAño11.Text
-            Suma += lblGananciasAño12.Text
-            TotalAño = FormatDuco(Suma, 96)
-            lblTotalGananciaAño.Text = Format(Suma, "#0.00") & "¬"
-            GanadoAño = Format(Suma, "#0.00")
-            lblGanadoAño2022.Text = FormatDuco(Suma, 10)
-            Suma = CDec(lblTransasionesAño01.Text)
-            Suma += CDec(lblTransasionesAño02.Text)
-            Suma += CDec(lblTransasionesAño03.Text)
-            Suma += CDec(lblTransasionesAño04.Text)
-            Suma += CDec(lblTransasionesAño05.Text)
-            Suma += CDec(lblTransasionesAño06.Text)
-            Suma += CDec(lblTransasionesAño07.Text)
-            Suma += CDec(lblTransasionesAño08.Text)
-            Suma += CDec(lblTransasionesAño09.Text)
-            Suma += CDec(lblTransasionesAño10.Text)
-            Suma += CDec(lblTransasionesAño11.Text)
-            Suma += CDec(lblTransasionesAño12.Text)
-            lblTransacionesTotalAño.Text = Suma
-            lblTransasionesAño2022.Text = lblTransacionesTotalAño.Text
-            Suma = CDec(lblGanadoAño2022.Text)
-            Suma += CDec(lblGanadoAño2023.Text)
-            lblGanadoAñoTotal.Text = FormatDuco(Suma, 6) & "¬"
-            GanadoTotal = FormatDuco(Suma, 6)
-            Suma2 = CDec(lblTransasionesAño2022.Text)
-            Suma2 += CDec(lblTransasionesAño2023.Text)
-            lblTransasionesAñoTotal.Text = Suma2
-            lblTotalTransasiones.Text = CInt(ContaTransa + 1)
-            lblDucosTotales.Text = Format(CDec(txtbalance.Text - Suma2), "####0.00")
-            lblBalanceAño2022.Text = FormatDuco(CDec(txtbalance.Text - Suma2), 9)
-            lblTotalGanadoAños.Text = Format(CDec(txtbalance.Text - Suma2) * CDec(txtDucoprice.Text) * Euro, "###0.00") & "€"
-            GanadoGlobal = Format(CDec(txtbalance.Text - Suma2) * CDec(txtDucoprice.Text) * Euro, "###0.00")
-            lblEtiquetaDuco.Left = lblDucosTotales.Left + lblDucosTotales.Width - 5
+
+
             My.Settings.Save()
         Catch ex As Exception
             If ActivarMensajesError = True Then MsgBox("Error!!" & vbCrLf & ex.Message)
@@ -2611,8 +2613,4 @@ Public Class Form1
         WebBrowser1.Navigate("http://localhost/UpdateAnos.php?Fecha=" & Fecha & "&Hora=" & Hora & "&Balance=" & Balance & "&Precio=" & Precio & "&Diferencia=" & Diferencia & "&Transaciones=" & Transaciones & "")
     End Sub
 
-    Private Sub Button1_Click_1(sender As Object, e As EventArgs)
-        AñadirHoraSQL(DateAndTime.DateValue(Now), lblBalanceHora00.Text, lblPrecio00.Text, lblHoraDiferencia00.Text)
-        lblMesBalance01.Text = lblBalanceHora00.Text
-    End Sub
 End Class

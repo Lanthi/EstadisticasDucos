@@ -29,12 +29,12 @@ Public Class Form1
     '
     'Do not change
     ReadOnly Remover As Integer = 30
-    ReadOnly RemoverGraficos As Integer = 3000
+    ReadOnly RemoverGraficos As Integer = 1000
     ReadOnly ArduinosUltimaVersion As String = "Official AVR Miner 3.18"
     ReadOnly Esp8266UltimaVersion As String = "Official ESP8266 Miner 3.18"
     ReadOnly PCUltimaVersion As String = "Official PC Miner 3.18"
-    ReadOnly Esp32UltimaVersion As String = "Official ESP32 Miner 3.1"
-    ReadOnly WebUltimaVersion As String = "Official Web Miner 3.18"
+    ReadOnly Esp32UltimaVersion As String = "Official ESP32 Miner 3.18"
+    ReadOnly WebUltimaVersion As String = "Official Web Miner 3.1"
     Dim ContadorRemove As Integer = 0
     Dim Hora As Integer
     Dim Minutos As Integer = DateAndTime.Minute(Now)
@@ -61,8 +61,8 @@ Public Class Form1
     Dim FechaLog As Date
     Dim ContaTransa As Integer
     Dim Dict2Public As Object
-    Dim Temperatura As Integer = 0
-    Dim Humedad As Integer = 0
+    Dim Temperatura As String = 0
+    Dim Humedad As String = 0
     Dim Cargado As Boolean = True
     Dim DucosNuevoDia As Decimal
     Dim ActivarMensajesError As Boolean = True
@@ -90,7 +90,6 @@ Public Class Form1
     Dim GanadoGlobal As Decimal
     Dim EstimadoDiaDetalle As Decimal
     Dim EstimadoMesDetalle As Decimal
-
     Private Sub BalanceHora()
         Try
             If lblBalanceHora01.Text <> 0 And lblBalanceHora00.Text <> 0 Then lblHoraDiferencia00.Text = FormatDuco(CDec(lblBalanceHora01.Text) - CDec(lblBalanceHora00.Text) - TransacionPorHora(0), 8)
@@ -616,7 +615,7 @@ Public Class Form1
                 Mineros(T, 6) = "Rejected: " & dict2.item("result").item("miners").item(T).item("rejected")
                 Mineros(T, 7) = "Soft.: " & dict2.item("result").item("miners").item(T).item("software")
                 Dim Tmp As String = dict2.item("result").item("miners").item(T).item("it")
-                If Tmp <> "" Then
+                If Tmp <> "" And Mid(Tmp, 1, 2) <> "er" Then
                     Mineros(T, 8) = "Temperature - Humidity : " & Mid(Tmp, 1, 2) & "° - " & Mid(Tmp, 4) & "%"
                     TreeView2.Nodes(0).Nodes.Add(Mineros(T, 0) & " [IOT]")
                     lblTemperatura.Text = Mid(Tmp, 1, 2) & "°"
@@ -661,7 +660,7 @@ Public Class Form1
                         txtMinerosHEsp8266.Text += dict2.item("result").item("miners").item(T).item("hashrate")
                         TreeView2.Nodes(0).Nodes(T).ImageIndex = 8
                         TreeView2.Nodes(0).Nodes(T).SelectedImageIndex = 8
-                    Case "Official Web Miner 2.8"
+                    Case "Official Web Miner 3.1"
                         txtMinerosNWeb.Text += 1
                         txtMinerosHWeb.Text += dict2.item("result").item("miners").item(T).item("hashrate")
                         TreeView2.Nodes(0).Nodes(T).ImageIndex = 2

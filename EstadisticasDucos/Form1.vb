@@ -232,15 +232,7 @@ Public Class Form1
         Try
             If Minute(Now) = 0 Or Cargado = True Then
                 Cargado = False
-                Dim uriString3 As String = "http://www.floatrates.com/daily/eur.json"
-                Dim uri3 As New Uri(uriString3)
-                Dim Request3 As HttpWebRequest = HttpWebRequest.Create(uri3)
-                Request3.Method = "GET"
-                Dim Response3 As HttpWebResponse = Request3.GetResponse()
-                Dim Read3 = New StreamReader(Response3.GetResponseStream())
-                Dim Raw3 As String = Read3.ReadToEnd()
-                Dim dict3 As Object = New JavaScriptSerializer().Deserialize(Of Dictionary(Of String, Object))(Raw3)
-                Euro = CDec(dict3.item("usd").item("rate"))
+
                 Dim uriString As String = "https://server.duinocoin.com/api.json"
                 Dim uri As New Uri(uriString)
                 Dim Request As HttpWebRequest = HttpWebRequest.Create(uri)
@@ -614,8 +606,9 @@ Public Class Form1
                 Mineros(T, 5) = "Pool: " & dict2.item("result").item("miners").item(T).item("pool")
                 Mineros(T, 6) = "Rejected: " & dict2.item("result").item("miners").item(T).item("rejected")
                 Mineros(T, 7) = "Soft.: " & dict2.item("result").item("miners").item(T).item("software")
+                Label31.Text = dict2.item("result").item("miners").item(T).item("it")
                 Dim Tmp As String = dict2.item("result").item("miners").item(T).item("it")
-                If Tmp <> "" And Mid(Tmp, 1, 2) <> "er" Then
+                If Tmp <> "" And Mid(Tmp, 2, 2) <> "er" Then
                     Mineros(T, 8) = "Temperature - Humidity : " & Mid(Tmp, 1, 2) & "° - " & Mid(Tmp, 4) & "%"
                     TreeView2.Nodes(0).Nodes.Add(Mineros(T, 0) & " [IOT]")
                     lblTemperatura.Text = Mid(Tmp, 1, 2) & "°"

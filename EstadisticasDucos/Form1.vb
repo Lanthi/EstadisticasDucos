@@ -232,7 +232,15 @@ Public Class Form1
         Try
             If Minute(Now) = 0 Or Cargado = True Then
                 Cargado = False
-
+                Dim uriString3 As String = "http://www.floatrates.com/daily/eur.json"
+                Dim uri3 As New Uri(uriString3)
+                Dim Request3 As HttpWebRequest = HttpWebRequest.Create(uri3)
+                Request3.Method = "GET"
+                Dim Response3 As HttpWebResponse = Request3.GetResponse()
+                Dim Read3 = New StreamReader(Response3.GetResponseStream())
+                Dim Raw3 As String = Read3.ReadToEnd()
+                Dim dict3 As Object = New JavaScriptSerializer().Deserialize(Of Dictionary(Of String, Object))(Raw3)
+                Euro = CDec(dict3.item("usd").item("rate"))
                 Dim uriString As String = "https://server.duinocoin.com/api.json"
                 Dim uri As New Uri(uriString)
                 Dim Request As HttpWebRequest = HttpWebRequest.Create(uri)

@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EstadisticasDucos.exe" size="1561088">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EstadisticasDucos.exe" size="1561600">
       <assemblyIdentity name="EstadisticasDucos" version="0.5.0.25" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>PtY7XC2tD4FeeF72fNstDp5q2OSeEyfqFc/0i2P5w9I=</dsig:DigestValue>
+        <dsig:DigestValue>iyJUiR+BWPb27iaccWf+dgC7jsNNTqi3Z3iuy2Cb4Io=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

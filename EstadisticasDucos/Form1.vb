@@ -330,6 +330,8 @@ Public Class Form1
                 gbStaking.Enabled = True
             Else
                 gbStaking.Enabled = False
+                lblRecompensa.Text = 0
+
             End If
             lblDucoDeposito.Left = lblDeposito.Left + lblDeposito.Width - 5
             lblEtiquetaDucoRecompensa.Left = lblRecompensa.Left + lblRecompensa.Width - 5
@@ -1392,7 +1394,7 @@ Public Class Form1
             If lblPrecioAño01.Text <> "0" Then
                 If PrecioAñoMin > CDec(lblPrecioAño01.Text) Then
                     PrecioAñoMin = CDec(lblPrecioAño01.Text)
-                ElseIf PrecioañoMax < CDec(lblPrecioAño01.Text) Then
+                ElseIf PrecioAñoMax < CDec(lblPrecioAño01.Text) Then
                     PrecioAñoMax = CDec(lblPrecioAño01.Text)
                 End If
             End If
@@ -1740,6 +1742,12 @@ Public Class Form1
                     FormatDuco = Format(Ducos, "000.00000000000000")
                 ElseIf Ducos < 10000 And Ducos >= 1000 Then
                     FormatDuco = Format(Ducos, "0000.0000000000000")
+                ElseIf Ducos < 100000 And Ducos >= 10000 Then
+                    FormatDuco = Format(Ducos, "0000.000000000000")
+                ElseIf Ducos < 1000000 And Ducos >= 100000 Then
+                    FormatDuco = Format(Ducos, "0000.00000000000")
+                ElseIf Ducos < 10000000 And Ducos >= 1000000 Then
+                    FormatDuco = Format(Ducos, "0000.0000000000")
                 End If
             Case 18
                 If Ducos < 10 Then
@@ -2425,7 +2433,7 @@ Public Class Form1
             lblEtiquetaMes.Text = "Mes"
             lblEtiquetaAños.Text = "Año"
             gbEstadisticasGlobales.Text = "Estadísticas Globales:"
-            lblEtiquetaTrasacioneTotal.Text = "Transaciones Totales:"
+            lblEtiquetaTrasacioneTotal.Text = "Transaciones Total:"
             lblEtiquetaGananciaTotal.Text = "Ganado Total:"
             lblEtiquetaActivos.Text = "Conexiones Activas:"
             lblEtiquetaEnergia.Text = "Energia Usada Red:"

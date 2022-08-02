@@ -616,7 +616,6 @@ Public Class Form1
                 Mineros(T, 5) = "Pool: " & dict2.item("result").item("miners").item(T).item("pool")
                 Mineros(T, 6) = "Rejected: " & dict2.item("result").item("miners").item(T).item("rejected")
                 Mineros(T, 7) = "Soft.: " & dict2.item("result").item("miners").item(T).item("software")
-                Label31.Text = dict2.item("result").item("miners").item(T).item("it")
                 Dim Tmp As String = dict2.item("result").item("miners").item(T).item("it")
                 If Tmp <> "" And Mid(Tmp, 2, 2) <> "er" Then
                     Mineros(T, 8) = "Temperature - Humidity : " & Mid(Tmp, 1, 2) & "° - " & Mid(Tmp, 4) & "%"
@@ -1525,7 +1524,6 @@ Public Class Form1
             lblTotalHora.Text = FormatDuco(TotalHoras, 6) & "¬"
             TotalDia = FormatDuco(TotalHoras, 6)
             lblTotalMes.Text = 0
-            lblTotalMes.Text += CDec(lblMesDifencia01.Text)
             lblTotalMes.Text += CDec(lblMesDifencia02.Text)
             lblTotalMes.Text += CDec(lblMesDifencia03.Text)
             lblTotalMes.Text += CDec(lblMesDifencia04.Text)
@@ -1574,6 +1572,8 @@ Public Class Form1
                     FormatDuco = Format(Ducos, "000")
                 ElseIf Ducos < 10000 And Ducos >= 1000 Then
                     FormatDuco = Format(Ducos, "000")
+                ElseIf Ducos < 100000 And Ducos >= 10000 Then
+                    FormatDuco = Format(Ducos, "000")
                 End If
             Case 4
                 If Ducos < 100 Then
@@ -1582,6 +1582,8 @@ Public Class Form1
                     FormatDuco = Format(Ducos, "000.0")
                 ElseIf Ducos < 10000 And Ducos >= 1000 Then
                     FormatDuco = Format(Ducos, "0000")
+                ElseIf Ducos < 100000 And Ducos >= 10000 Then
+                    FormatDuco = Format(Ducos, "00000")
                 End If
             Case 5
                 If Ducos < 10 Then
@@ -1592,6 +1594,8 @@ Public Class Form1
                     FormatDuco = Format(Ducos, "000.00")
                 ElseIf Ducos < 10000 And Ducos >= 1000 Then
                     FormatDuco = Format(Ducos, "0000.0")
+                ElseIf Ducos < 100000 And Ducos >= 10000 Then
+                    FormatDuco = Format(Ducos, "00000.0")
                 End If
             Case 6
                 If Ducos < 10 Then
@@ -1602,6 +1606,8 @@ Public Class Form1
                     FormatDuco = Format(Ducos, "000.000")
                 ElseIf Ducos < 10000 And Ducos >= 1000 Then
                     FormatDuco = Format(Ducos, "0000.00")
+                ElseIf Ducos < 100000 And Ducos >= 10000 Then
+                    FormatDuco = Format(Ducos, "00000.00")
                 End If
             Case 99
                 FormatDuco = Format(Ducos, "###0.00")
@@ -1610,7 +1616,7 @@ Public Class Form1
             Case 7
                 If Ducos < 1000 Then
                     FormatDuco = Format(Ducos, "###0.00")
-                ElseIf Ducos < 10000 And Ducos >= 1000 Then
+                ElseIf Ducos < 10000000 And Ducos >= 1000 Then
                     FormatDuco = Format(Ducos, "###0.00")
                 End If
             Case 98
@@ -1633,15 +1639,18 @@ Public Class Form1
                     FormatDuco = Format(Ducos, "000.00000")
                 ElseIf Ducos < 10000 And Ducos >= 1000 Then
                     FormatDuco = Format(Ducos, "0000.0000")
+                ElseIf Ducos < 100000 And Ducos >= 10000 Then
+                    FormatDuco = Format(Ducos, "00000.000")
                 End If
             Case 9
                 If Ducos < 100 Then
                     FormatDuco = Format(Ducos, "00.0000000")
-
                 ElseIf Ducos < 1000 And Ducos >= 100 Then
                     FormatDuco = Format(Ducos, "000.000000")
                 ElseIf Ducos < 10000 And Ducos >= 1000 Then
                     FormatDuco = Format(Ducos, "0000.00000")
+                ElseIf Ducos < 100000 And Ducos >= 10000 Then
+                    FormatDuco = Format(Ducos, "00000.0000")
                 End If
             Case 10
                 If Ducos < 10 Then
@@ -1652,6 +1661,10 @@ Public Class Form1
                     FormatDuco = Format(Ducos, "000.0000000")
                 ElseIf Ducos < 10000 And Ducos >= 1000 Then
                     FormatDuco = Format(Ducos, "0000.000000")
+                ElseIf Ducos < 100000 And Ducos >= 10000 Then
+                    FormatDuco = Format(Ducos, "0000.00000")
+                ElseIf Ducos < 1000000 And Ducos >= 100000 Then
+                    FormatDuco = Format(Ducos, "00000.0000")
                 End If
             Case 100
                 If Ducos < 10000 Then
@@ -1674,6 +1687,8 @@ Public Class Form1
                     FormatDuco = Format(Ducos, "000.00000000")
                 ElseIf Ducos < 10000 And Ducos >= 1000 Then
                     FormatDuco = Format(Ducos, "0000.0000000")
+                ElseIf Ducos < 100000 And Ducos >= 10000 Then
+                    FormatDuco = Format(Ducos, "00000.000000")
                 End If
             Case 12
                 If Ducos < 10 Then
@@ -1684,6 +1699,8 @@ Public Class Form1
                     FormatDuco = Format(Ducos, "000.000000000")
                 ElseIf Ducos < 10000 And Ducos >= 1000 Then
                     FormatDuco = Format(Ducos, "0000.00000000")
+                ElseIf Ducos < 100000 And Ducos >= 10000 Then
+                    FormatDuco = Format(Ducos, "00000.0000000")
                 End If
             Case 13
                 If Ducos < 100 Then
@@ -1693,6 +1710,8 @@ Public Class Form1
                     FormatDuco = Format(Ducos, "000.0000000000")
                 ElseIf Ducos < 10000 And Ducos >= 1000 Then
                     FormatDuco = Format(Ducos, "0000.000000000")
+                ElseIf Ducos < 100000 And Ducos >= 10000 Then
+                    FormatDuco = Format(Ducos, "00000.00000000")
                 End If
             Case 14
                 If Ducos < 100 Then
@@ -1702,6 +1721,8 @@ Public Class Form1
                     FormatDuco = Format(Ducos, "000.00000000000")
                 ElseIf Ducos < 10000 And Ducos >= 1000 Then
                     FormatDuco = Format(Ducos, "0000.0000000000")
+                ElseIf Ducos < 100000 And Ducos >= 10000 Then
+                    FormatDuco = Format(Ducos, "00000.000000000")
                 End If
             Case 15
                 If Ducos < 10 Then
@@ -1712,6 +1733,8 @@ Public Class Form1
                     FormatDuco = Format(Ducos, "000.000000000000")
                 ElseIf Ducos < 10000 And Ducos >= 1000 Then
                     FormatDuco = Format(Ducos, "0000.00000000000")
+                ElseIf Ducos < 100000 And Ducos >= 10000 Then
+                    FormatDuco = Format(Ducos, "00000.0000000000")
                 End If
             Case 96
                 If Ducos < 10 Then
@@ -1722,6 +1745,8 @@ Public Class Form1
                     FormatDuco = Format(Ducos, "000.0000000000000")
                 ElseIf Ducos < 10000 And Ducos >= 1000 Then
                     FormatDuco = Format(Ducos, "0000.000000000000")
+                ElseIf Ducos < 100000 And Ducos >= 10000 Then
+                    FormatDuco = Format(Ducos, "00000.00000000000")
                 End If
             Case 16
                 If Ducos < 10 Then
@@ -1732,6 +1757,8 @@ Public Class Form1
                     FormatDuco = Format(Ducos, "000.0000000000000")
                 ElseIf Ducos < 10000 And Ducos >= 1000 Then
                     FormatDuco = Format(Ducos, "0000.000000000000")
+                ElseIf Ducos < 100000 And Ducos >= 10000 Then
+                    FormatDuco = Format(Ducos, "00000.00000000000")
                 End If
             Case 17
                 If Ducos < 10 Then
@@ -1743,11 +1770,11 @@ Public Class Form1
                 ElseIf Ducos < 10000 And Ducos >= 1000 Then
                     FormatDuco = Format(Ducos, "0000.0000000000000")
                 ElseIf Ducos < 100000 And Ducos >= 10000 Then
-                    FormatDuco = Format(Ducos, "0000.000000000000")
+                    FormatDuco = Format(Ducos, "00000.000000000000")
                 ElseIf Ducos < 1000000 And Ducos >= 100000 Then
-                    FormatDuco = Format(Ducos, "0000.00000000000")
+                    FormatDuco = Format(Ducos, "000000.00000000000")
                 ElseIf Ducos < 10000000 And Ducos >= 1000000 Then
-                    FormatDuco = Format(Ducos, "0000.0000000000")
+                    FormatDuco = Format(Ducos, "0000000.0000000000")
                 End If
             Case 18
                 If Ducos < 10 Then
@@ -1758,6 +1785,8 @@ Public Class Form1
                     FormatDuco = Format(Ducos, "000.000000000000000")
                 ElseIf Ducos < 10000 And Ducos >= 1000 Then
                     FormatDuco = Format(Ducos, "0000.00000000000000")
+                ElseIf Ducos < 100000 And Ducos >= 10000 Then
+                    FormatDuco = Format(Ducos, "00000.0000000000000")
                 End If
             Case 19
                 If Ducos < 10 Then
@@ -1768,6 +1797,8 @@ Public Class Form1
                     FormatDuco = Format(Ducos, "000.0000000000000000")
                 ElseIf Ducos < 10000 And Ducos >= 1000 Then
                     FormatDuco = Format(Ducos, "0000.000000000000000")
+                ElseIf Ducos < 100000 And Ducos >= 10000 Then
+                    FormatDuco = Format(Ducos, "00000.00000000000000")
                 End If
             Case Else
                 FormatDuco = Ducos
@@ -2620,4 +2651,8 @@ Public Class Form1
         WebBrowser1.Navigate("http://localhost/UpdateAnos.php?Fecha=" & Fecha & "&Hora=" & Hora & "&Balance=" & Balance & "&Precio=" & Precio & "&Diferencia=" & Diferencia & "&Transaciones=" & Transaciones & "")
     End Sub
 
+    Private Sub Button1_Click_1(sender As Object, e As EventArgs)
+        lblPrecioMes.Text = 0
+        lblTotalMes.Text = 0
+    End Sub
 End Class

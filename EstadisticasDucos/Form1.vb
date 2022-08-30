@@ -30,10 +30,10 @@ Public Class Form1
     'Do not change
     ReadOnly Remover As Integer = 30
     ReadOnly RemoverGraficos As Integer = 1000
-    ReadOnly ArduinosUltimaVersion As String = "Official AVR Miner 3.18"
-    ReadOnly Esp8266UltimaVersion As String = "Official ESP8266 Miner 3.18"
+    ReadOnly ArduinosUltimaVersion As String = "Official AVR Miner 3.25"
+    ReadOnly Esp8266UltimaVersion As String = "Official ESP8266 Miner 3.3"
     ReadOnly PCUltimaVersion As String = "Official PC Miner 3.18"
-    ReadOnly Esp32UltimaVersion As String = "Official ESP32 Miner 3.18"
+    ReadOnly Esp32UltimaVersion As String = "Official ESP32 Miner 3.3"
     ReadOnly WebUltimaVersion As String = "Official Web Miner 3.1"
     Dim ContadorRemove As Integer = 0
     Dim Hora As Integer
@@ -622,8 +622,8 @@ Public Class Form1
                     TreeView2.Nodes(0).Nodes.Add(Mineros(T, 0) & " [IOT]")
                     lblTemperatura.Text = Mid(Tmp, 1, 2) & "°"
                     Temperatura = Mid(Tmp, 1, 2)
-                    lblHumedad.Text = Mid(Tmp, 4) & "%"
-                    Humedad = Mid(Tmp, 4)
+                    lblHumedad.Text = Mid(Tmp, 7, 2) & "%"
+                    Humedad = Mid(Tmp, 7, 2)
                 Else
                     TreeView2.Nodes(0).Nodes.Add(Mineros(T, 0))
                 End If

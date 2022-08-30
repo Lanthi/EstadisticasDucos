@@ -14,7 +14,7 @@
     <framework targetVersion="4.8" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="EstadisticasDucos.exe.manifest" size="5198">
+    <dependentAssembly dependencyType="install" codebase="Application Files\EstadisticasDucos_1_0_0_443\EstadisticasDucos.exe.manifest" size="5198">
       <assemblyIdentity name="EstadisticasDucos.exe" version="1.0.0.443" publicKeyToken="0000000000000000" language="es" processorArchitecture="amd64" type="win32" />
       <hash>
         <dsig:Transforms>

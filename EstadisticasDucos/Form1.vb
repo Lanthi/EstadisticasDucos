@@ -329,9 +329,14 @@ Public Class Form1
                 lblRecompensa.Text = Format(Deposito * (1.5 / 100), "#0.00")
                 gbStaking.Enabled = True
             Else
+                lblFechaFinDeposito.Text = 0
                 gbStaking.Enabled = False
                 lblRecompensa.Text = 0
-
+                If cmbLenguaje.Text = "Spanish" Or cmbLenguaje.Text = "Español" Then
+                    lblTiempoRestante.Text = "Restante:"
+                Else
+                    lblTiempoRestante.Text = "Time Left:"
+                End If
             End If
             lblDucoDeposito.Left = lblDeposito.Left + lblDeposito.Width - 5
             lblEtiquetaDucoRecompensa.Left = lblRecompensa.Left + lblRecompensa.Width - 5
@@ -2216,7 +2221,8 @@ Public Class Form1
                 Case 40 : ActualizarHoraCampoSQL(DateValue(Now), "PrecioMedio", lblPrecioDia.Text)
                 Case 45 : ActualizaDiferenciaHoraSQL()
                 Case 49 : ActualizarUsuarioSQL("Lanthi", txtbalance.Text, txtDucoprice.Text, Euro, Ganado, lblEstimado.Text, EstimadoDiaDetalle, lblEstimadoMes.Text, EstimadoMesDetalle, lblMineros.Text, lblHases.Text, lblHaseEstiquta.Text, lblDeposito.Text, lblFechaFinDeposito.Text, lblRecompensa.Text, Restante, Temperatura, Humedad, Fan, lblTotalTransasiones.Text, lblDucosTotales.Text, GanadoGlobal)
-                Case 53
+                Case 52 : ActualizarSeguidores(DateValue(Now), lblHora.Text, FormatDuco(txtbalance.Text, 8), Temperatura, Humedad, lblMineros.Text, lblHases.Text & " " & lblHaseEstiquta.Text)
+                Case 54
                     Select Case DateAndTime.Day(Now)
                         Case 1 : ActualizarMesSQL(MesActual, "01", lblMesBalance01.Text, lblMesPrecio01.Text, lblMesDifencia01.Text, lblTransacionMes01.Text)
                         Case 2 : ActualizarMesSQL(MesActual, "02", lblMesBalance02.Text, lblMesPrecio02.Text, lblMesDifencia02.Text, lblTransacionMes02.Text)
@@ -2650,7 +2656,9 @@ Public Class Form1
     Private Sub ActualizarAñosSQL(ByVal Fecha As String, ByVal Hora As String, ByVal Balance As Decimal, ByVal Precio As Decimal, ByVal Diferencia As Decimal, ByVal Transaciones As String)
         WebBrowser1.Navigate("http://localhost/UpdateAnos.php?Fecha=" & Fecha & "&Hora=" & Hora & "&Balance=" & Balance & "&Precio=" & Precio & "&Diferencia=" & Diferencia & "&Transaciones=" & Transaciones & "")
     End Sub
-
+    Private Sub ActualizarSeguidores(ByVal Fecha As String, ByVal Hora As String, Balance As Decimal, Temp As Decimal, Hum As Decimal, Mineros As Integer, Hases As String)
+        WebBrowser1.Navigate("http://localhost/UpdateEstadisticasDUCO.php?Balance=" & Balance & "&Temp=" & Temp & "&Hum=" & Hum & "&Mineros=" & Mineros & "&Hases=" & Hases & "&Fecha=" & Fecha & "&Hora=" & Hora & "")
+    End Sub
     Private Sub Button1_Click_1(sender As Object, e As EventArgs)
         lblPrecioMes.Text = 0
         lblTotalMes.Text = 0
